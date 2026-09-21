@@ -1,4 +1,3 @@
-\ifdefined\LNCS
 \documentclass[runningheads]{llncs}
 
 \usepackage[T1]{fontenc}
@@ -44,246 +43,6 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 \email{heyvan@cs.toronto.edu}}
 
 \maketitle
-\else
-
-%%%%%%%% ICML 2026 EXAMPLE LATEX SUBMISSION FILE %%%%%%%%%%%%%%%%%
-
-\documentclass{article}
-
-
-% Added by Van
-\usepackage{svg}
-\svgsetup{inkscapelatex=false}
-\usepackage{float}
-\usepackage{placeins}
-% Preamble
-\usepackage[most]{tcolorbox}
-
-\newtcolorbox{positionbox}{
-  enhanced,
-  colback=white,
-  colframe=black,
-  boxrule=0.8pt,
-  sharp corners,
-  left=1em,
-  right=1em,
-  top=0.5em,
-  bottom=0.5em,
-  before skip=1.2em,
-  after skip=1.2em,
-  title=Our position,
-  coltitle=white,
-  fonttitle=\bfseries,
-  colbacktitle=black,
-  attach boxed title to top left={xshift=0pt,yshift=0pt},
-  boxed title style={
-    sharp corners,
-    boxrule=0pt,
-    colback=black,
-    width=\linewidth,
-    left=0.5em,
-    top=0.15em,
-    bottom=0.15em
-  }
-}
-
-% Preamble
-\definecolor{feedbackblue}{HTML}{EEF7FF}
-\definecolor{feedbackline}{HTML}{5B9BD5}
-\definecolor{feedbacktext}{HTML}{1F3A5F}
-
-\newtcolorbox{feedbackbox}{
-  enhanced,
-  colback=feedbackblue,
-  colframe=feedbackline,
-  boxrule=0pt,
-  leftrule=4pt,
-  arc=2pt,
-  left=0.9em,
-  right=0.9em,
-  top=0.6em,
-  bottom=0.6em,
-  before skip=1em,
-  after skip=1em,
-  fontupper=\small\color{feedbacktext}
-}
-
-% Added by Sam
-\usepackage{tcolorbox}
-
-% Added by charlie
-\usepackage{listings}
-
-
-
-% ====================================
-% --------- ANGELO'S ADD-ONS ---------
-% ====================================
-% For theorems and such
-\usepackage{amsmath}
-\usepackage{amssymb}% http://ctan.org/pkg/amssymb
-\usepackage{mathtools}
-\usepackage{amsthm}
-\usepackage{epigraph} % in preamble
-
-\usepackage{xcolor}
-\newtheorem{example}{Example}
-% For tables with multi-row cells
-\usepackage{multirow}
-\usepackage[inline]{enumitem}
-
-\usepackage{xurl}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% THEOREMS
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \theoremstyle{plain}
-% \newtheorem{theorem}{Theorem}[section]
-% \newtheorem{proposition}[theorem]{Proposition}
-% \newtheorem{lemma}[theorem]{Lemma}
-% \newtheorem{corollary}[theorem]{Corollary}
-% \theoremstyle{definition}
-% \newtheorem{definition}[theorem]{Definition}
-% \newtheorem{assumption}[theorem]{Assumption}
-% \theoremstyle{remark}
-% \newtheorem{remark}[theorem]{Remark}
-
-% Todonotes is useful during development; simply uncomment the next line
-%    and comment out the line below the next line to turn off comments
-%\usepackage[disable,textsize=tiny]{todonotes}
-\usepackage[textsize=tiny]{todonotes}
-
-
-% Recommended, but optional, packages for figures and better typesetting:
-\usepackage{microtype}
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{booktabs} % for professional tables
-
-% hyperref makes hyperlinks in the resulting PDF.
-% If your build breaks (sometimes temporarily if a hyperlink spans a page)
-% please comment out the following usepackage line and replace
-% \usepackage{icml2026} with \usepackage[nohyperref]{icml2026} above.
-\usepackage{hyperref}
-
-
-% Attempt to make hyperref and algorithmic work together better:
-\newcommand{\theHalgorithm}{\arabic{algorithm}}
-
-% Use the following line for the initial blind version submitted for review:
-% \usepackage{icml2026}
-
-% For preprint, use
-\usepackage[preprint]{icml2026}
-
-% If accepted, instead use the following line for the camera-ready submission:
-% \usepackage[accepted]{icml2026}
-
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{mathtools}
-\usepackage{amsthm}
-
-% if you use cleveref..
-\usepackage[capitalize,noabbrev]{cleveref}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% THEOREMS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{assumption}[theorem]{Assumption}
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
-
-% Todonotes is useful during development; simply uncomment the next line
-%    and comment out the line below the next line to turn off comments
-%\usepackage[disable,textsize=tiny]{todonotes}
-\usepackage[textsize=tiny]{todonotes}
-
-% The \icmltitle you define below is probably too long as a header.
-% Therefore, a short form for the running title is supplied here:
-\icmltitlerunning{Spotlight paper at the ICML 2026 Trustworthy AI4GOOD Workshop}
-
-
-
-
-\begin{document}
-
-\twocolumn[
-  \icmltitle{Multi-Agent AI Systems Need Institutional Design,\\
-  Not Just Model-Level Alignment}
-
-  % It is OKAY to include author information, even for blind submissions: the
-  % style file will automatically remove it for you unless you've provided
-  % the [accepted] option to the icml2026 package.
-
-  % List of affiliations: The first argument should be a (short) identifier you
-  % will use later to specify author affiliations Academic affiliations
-  % should list Department, University, City, Region, Country Industry
-  % affiliations should list Company, City, Region, Country
-
-  % You can specify symbols, otherwise they are numbered in order. Ideally, you
-  % should not use this facility. Affiliations will be numbered in order of
-  % appearance and this is the preferred way.
-  \icmlsetsymbol{cofirst}{*}
-  \icmlsetsymbol{colast}{\textdagger}
-
-  \begin{icmlauthorlist}
-    \icmlauthor{Van QT Truong}{cofirst,upenn,utor,euro}
-    \icmlauthor{Xuanqiang Angelo Huang}{cofirst,utor,euro,eth,idai}
-    \icmlauthor{Erivan Inan}{utor,euro}
-    \icmlauthor{Ryan Faulkner}{utor,euro}
-    \icmlauthor{Jo{\"e}l Naoki Christoph}{harvard}
-    \icmlauthor{Terry Jingchen Zhang}{colast,utor,euro}
-    %\icmlauthor{}{sch}
-    \icmlauthor{David Guzman Piedrahita}{colast,utor,euro,eth}
-    \icmlauthor{Zhijing Jin}{colast,utor,euro,maxp}
-  \end{icmlauthorlist}
-
-  \icmlaffiliation{upenn}{University of Pennsylvania}
-  \icmlaffiliation{utor}{Jinesis Lab, University of Toronto \& Vector Institute}
-  \icmlaffiliation{euro}{EuroSafeAI}
-  \icmlaffiliation{eth}{ETH Z\"urich}
-  \icmlaffiliation{idai}{Institute for Decentralized AI, Oxford}
-  \icmlaffiliation{maxp}{Max Planck Institute for Intelligent Systems, Tübingen, Germany}
-  \icmlaffiliation{harvard}{Harvard Kennedy School}
-
-  \icmlcorrespondingauthor{Van QT Truong}{heyvan@cs.toronto.edu}
-  \icmlcorrespondingauthor{Xuanqiang Angelo Huang}{hxuanqiang@ethz.ch}
-  \icmlcorrespondingauthor{Zhijing Jin}{zjin@cs.toronto.edu}
-
-  % You may provide any keywords that you find helpful for describing your
-  % paper; these are used to populate the "keywords" metadata in the PDF but
-  % will not be shown in the document
-  \icmlkeywords{large language models (LLMs), multi-agent systems, mechanism design, AI agents}
-
-  \vskip 0.3in
-]
-
-% this must go after the closing bracket ] following \twocolumn[ ...
-
-% Use ONE of the following lines. DO NOT remove the command.
-% If you have no special notice, KEEP empty braces:
-\printAffiliationsAndNotice{
-\textsuperscript{*}Equal co-first authors.
-\textsuperscript{\textdagger}Equal co-last authors.} % no special notice (required even if empty)
-% Or, if applicable, use the standard equal contribution text:
-% \printAffiliationsAndNotice{\icmlEqualContribution}
-
-
-% \textbf{Primary area:} Socio-technical aspects of AI
-% \textbf{Secondary:} Language
-
-% \textbf{Keywords:} multi-agent AI, AI agents, cooperation, institutional design, AI safety, sanctioning mechanisms, public goods games, mechanism design, agent societies}
-
-
-\fi
 
 % ====================================
 % , , , , - ABSTRACT , , , , -
@@ -327,9 +86,7 @@ We make three contributions.
 \textbf{Third}, we propose an evaluation agenda for testing cooperation-shaping institutions across repeated multi-agent dilemmas, varying not only model family and task, but also resource structure, group composition, enforcement architecture, and repair pathways.
 \textbf{Our goal is to design agent institutions that sustain \emph{beneficial} forms of cooperation, rather than simply maximizing cooperation as an end in itself.}
 
-\ifdefined\LNCS
 \keywords{Multi-agent AI \and AI agents \and Cooperation \and Institutional design \and AI safety}
-\fi
 
  % \RYAN{It may helpful to qualify the strength of our claim here. For instance are we saying that sanctions are a necessary condition for functioning agent societies? Also, do we need the following sentence about punishment?} \VAN{Done! June 29 @Ryan n @Angelo can you check now?} \RYAN{Nice, looks good to me now!}
 \end{abstract}
@@ -956,12 +713,8 @@ This work was supported in part by the German Federal Ministry of Education and 
 % , , , -- REFERENCES , , , , -
 % ====================================
 
-\ifdefined\LNCS
 \bibliographystyle{splncs04}
-\else
-\bibliographystyle{abbrvnat}
-\fi
-\bibliography{references,angelo} % angelo section is automatically managed by his zotero, pls, don't write or change things there.
+\bibliography{references}
 \cleardoublepage
 
 % ====================================
