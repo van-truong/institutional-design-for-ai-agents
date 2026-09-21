@@ -1,6 +1,6 @@
 # Institutional Design for AI Agents
 
-Paper and poster materials for *Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment*, presented at the ICML 2026 Trustworthy AI4GOOD Workshop.
+Springer LNCS proceedings source for *Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment*, presented at the ICML 2026 Trustworthy AI4GOOD Workshop.
 
 Build the paper with:
 
@@ -8,5 +8,4 @@ Build the paper with:
 make pdf
 ```
 
-The output is `icml2026-ai4good-camera-ready.pdf`.
-
+The build regenerates vector figures from the editable HTML files in `figs/` and writes `springer-lncs-proceedings.pdf`. Inkscape is not required.

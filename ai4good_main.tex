@@ -1,3 +1,51 @@
+\ifdefined\LNCS
+\documentclass[runningheads]{llncs}
+
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage[varvw]{newtxmath}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[inline]{enumitem}
+\usepackage{xurl}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{natbib}
+\setcitestyle{numbers,square,comma}
+\usepackage{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\begin{document}
+
+\title{Multi-Agent AI Systems Need Institutional Design,\\
+Not Just Model-Level Alignment}
+\titlerunning{Institutional Design for Multi-Agent AI Systems}
+
+\author{Van QT Truong\inst{1,2,3} \and
+Xuanqiang Angelo Huang\inst{2,3,4,5} \and
+Erivan Inan\inst{2,3} \and
+Ryan Faulkner\inst{2,3} \and
+Jo\"el Naoki Christoph\inst{6} \and
+Terry Jingchen Zhang\inst{2,3} \and
+David Guzman Piedrahita\inst{2,3,4} \and
+Zhijing Jin\inst{2,3,7}}
+\authorrunning{V. Q. Truong et al.}
+
+\institute{University of Pennsylvania, Philadelphia, PA, USA \and
+Jinesis Lab, University of Toronto and Vector Institute, Toronto, Canada \and
+EuroSafeAI \and
+ETH Z\"urich, Z\"urich, Switzerland \and
+Institute for Decentralized AI, Oxford, UK \and
+Harvard Kennedy School, Cambridge, MA, USA \and
+Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
+\email{heyvan@cs.toronto.edu}}
+
+\maketitle
+\else
+
 %%%%%%%% ICML 2026 EXAMPLE LATEX SUBMISSION FILE %%%%%%%%%%%%%%%%%
 
 \documentclass{article}
@@ -235,6 +283,8 @@
 % \textbf{Keywords:} multi-agent AI, AI agents, cooperation, institutional design, AI safety, sanctioning mechanisms, public goods games, mechanism design, agent societies}
 
 
+\fi
+
 % ====================================
 % , , , , - ABSTRACT , , , , -
 % The abstract must briefly state the position (e.g., “This position paper argues that <statement of the position>.”).
@@ -277,6 +327,10 @@ We make three contributions.
 \textbf{Third}, we propose an evaluation agenda for testing cooperation-shaping institutions across repeated multi-agent dilemmas, varying not only model family and task, but also resource structure, group composition, enforcement architecture, and repair pathways.
 \textbf{Our goal is to design agent institutions that sustain \emph{beneficial} forms of cooperation, rather than simply maximizing cooperation as an end in itself.}
 
+\ifdefined\LNCS
+\keywords{Multi-agent AI \and AI agents \and Cooperation \and Institutional design \and AI safety}
+\fi
+
  % \RYAN{It may helpful to qualify the strength of our claim here. For instance are we saying that sanctions are a necessary condition for functioning agent societies? Also, do we need the following sentence about punishment?} \VAN{Done! June 29 @Ryan n @Angelo can you check now?} \RYAN{Nice, looks good to me now!}
 \end{abstract}
 
@@ -306,7 +360,7 @@ Consider two ways an autonomous agent might execute a \$10M purchase on behalf o
 % JULY 2 TODO = \VAN{. TODO still need to doublecheck text examples and manuscript body one final pass. Also make fig examples match the list on Latex line 330 for Tragedy of the Commons and institutional responses}
 \begin{figure*}[!t]
     \centering
-    \includegraphics[width=0.92\linewidth]{figs/figure1_position-summary_v05.pdf}
+    \includegraphics[width=0.92\linewidth]{.build/figures/figure1_position-summary.pdf}
     \caption{From individual alignment to institutional design. Familiar human commons exhibit recurring cooperation dilemmas; analogous dynamics arise when LLM agents share computational resources; and the institutional design space includes seven institutional functions and six mechanism families.}
     \label{fig:summary}
 \end{figure*}
@@ -400,7 +454,7 @@ One might object that a sufficiently capable agent community could itself design
 % \ANG{a curiosity: are there dilemmas higher than the second in terms of order?}
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.95\linewidth]{figs/figure2_four-cooperation-dilemmas_v02.png}
+  \includegraphics[width=0.95\linewidth]{.build/figures/figure2_four-cooperation-dilemmas.pdf}
   % \includesvg[width=\textwidth]{figs/dilemmas-response.svg}
   \caption{Four cooperation dilemmas that recur in shared-resource settings, each shown with its core tension and parallel examples in human and LLM-agent systems.}
   \label{fig:dilemmas-response}
@@ -412,6 +466,13 @@ formalizes \citep{anshelevichPriceStabilityNetwork2008,papadimitriouAlgorithmsGa
 % \ANG{1 July: I'm currently unsure about this second paragraph, the arguments are repeated w.r.t. to the paragrpah before, it says little about the limits.}
 
 This becomes especially salient in settings where multi-agent systems are embedded in human environments \citep{dafoe2021cooperative}. In such hybrid systems, purely AI-generated institutions risk becoming self-consistent, but misaligned with human purposes~\citep{shenAIOrganizationsAre2026, sorensen2024roadmap}. An analogy of this paradox is when text is syntactically correct, but semantically irrelevant~\citep{norvigColorlessGreenIdeas2012}. For this reason, we assert that institutional design should not be left as an afterthought, or even delegated to AI agents to sort out among themselves.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.95\textwidth]{.build/figures/figure4_multi-layer-institutions.pdf}
+  \caption{Agent-in-context and the design space of agent institutions. Individual models are nested within agent--group interactions and governing institutions; institutional mechanisms shape behavior through information, consequence, and influence channels.}
+  \label{fig:model-in-institution}
+\end{figure*}
 % Human-designed institutions may be imperfect when applied to AI systems, but centuries of process and practice offer a tractable place to start.
 % \VAN{I tried rewriting from my viewpoint that meaning for systems and societies can only be ascribed via FUBU (for us, by us), but not yet sure how much I like it. Going to another section and will revisit but lmk what u think} \ANG{Yeah, I think roughly what we want to say is that if we let them alone they just go doing their own thing, which could be bad since atm nothing binds them to still follow human values }
 
@@ -527,7 +588,7 @@ Monitoring can miss relevant behavior or expose too much. Adjudication can miscl
 % \ANG{I really like this image just a kudos comment :)}
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=\textwidth]{figs/figure3_institutional-design-dimensions_v01.pdf}
+  \includegraphics[width=\textwidth]{.build/figures/figure3_institutional-design-dimensions.pdf}
   \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design.}
   \label{fig:design-dimensions}
 \end{figure*}
@@ -563,7 +624,6 @@ For example, shared compute clusters face a well-known version of this problem. 
 Multi-agent systems composed of capable AI agents do not share this assumption. Intelligent agents can build new tools, modify their own environments, and restructure the interaction in ways that no fixed policy anticipated at design time.
 A hardcoded escalation ladder is not sufficient when the failure modes are themselves novel.
 Graduated sanctions must instead be implemented generalizably, adapted to each case as it arises.
-A possible escalation pathway within this direction is shown in Figure~\ref{fig:graduated-sanctions}.
 This framing avoids treating all failures as equally severe. It also foregrounds reversibility. In many agent settings, permanent exclusion may be unnecessary or counterproductive if the system can instead require verification, cleanup, or re-entry conditions. 
 % \VAN{Also mention other examples of institutional design in Appendix~\ref{app:example-institutions}}
 
@@ -896,7 +956,11 @@ This work was supported in part by the German Federal Ministry of Education and 
 % , , , -- REFERENCES , , , , -
 % ====================================
 
+\ifdefined\LNCS
+\bibliographystyle{splncs04}
+\else
 \bibliographystyle{abbrvnat}
+\fi
 \bibliography{references,angelo} % angelo section is automatically managed by his zotero, pls, don't write or change things there.
 \cleardoublepage
 
@@ -915,7 +979,7 @@ Figure~\ref{fig:cooperation_taxonomy_tree} presents a unified taxonomy of cooper
 % \VAN{TODO need to enlarge font in Inkscape} \ANG{Beautifuuuuuuuul} 
 \begin{figure*}[!t]
   \centering
-  \includegraphics[width=0.95\textwidth]{figs/figure5_cooperation-taxonomy-circle_v03.png}
+  \includegraphics[width=0.95\textwidth]{.build/figures/figure5_cooperation-taxonomy-circle.pdf}
   \caption{A unified taxonomy of cooperation-shaping mechanisms for artificial agent societies, drawing on sociology, anthropology, law, governance, economics, behavioural science, computer science, cryptography, solidarity economics, and restorative justice. Six families (coloured wedges) organise 73 mechanisms across 25 sub-clades (hollow hubs).}
   \label{fig:cooperation_taxonomy_tree}
 \end{figure*}
