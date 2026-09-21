@@ -1,0 +1,16 @@
+# Local archival drafts
+old/
+
+# LaTeX build directory and generated files
+.build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+ai4good_main.pdf
+
