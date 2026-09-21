@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100%"
+   viewBox="0 0 680 312"
+   role="img"
+   font-family="'Anthropic Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+   version="1.1"
+   id="svg66"
+   sodipodi:docname="design-dimensions.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview66"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.75"
+     inkscape:cx="332.28571"
+     inkscape:cy="155.71429"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="stage-enforcer" />
+  <title
+     id="title1">Design dimensions for cooperation-shaping institutions</title>
+  <desc
+     id="desc1">Top row: three enforcement-stage cards arranged left to right and connected by arrows, depicting observation, adjudication, and enforcement. Bottom row: seven small property tiles for timing, reversibility, adaptivity, observability, gameability, repair, and scale. Each tile names a design dimension and gives a short example contrast in LLM-agent systems.</desc>
+  <defs
+     id="defs1">
+    <rect
+       x="-10.285714"
+       y="-18.857143"
+       width="708"
+       height="201.71429"
+       id="rect67" />
+    <marker
+       id="ah-amber"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M2 1L8 5L2 9"
+         fill="none"
+         stroke="#854F0B"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+  </defs>
+  <text
+     x="336"
+     y="20"
+     text-anchor="middle"
+     font-size="14"
+     font-weight="500"
+     fill="#26215c"
+     id="text1"
+     style="font-size:17.3333px">Design dimensions for cooperation-shaping institutions</text>
+  <text
+     x="336"
+     y="38"
+     text-anchor="middle"
+     font-size="11"
+     fill="#854f0b"
+     font-style="italic"
+     id="text2"
+     style="font-size:14.6667px">Three enforcement stages — from observation to consequence</text>
+  <g
+     id="stage-observer"
+     transform="translate(-4,-6)">
+    <rect
+       x="10.005372"
+       y="58.005371"
+       width="199.98926"
+       height="123.13211"
+       rx="7.9995704"
+       fill="#faeeda"
+       stroke="#854f0b"
+       stroke-width="0.510744"
+       id="rect2" />
+    <rect
+       x="10"
+       y="58"
+       width="200"
+       height="26"
+       rx="8"
+       fill="#854f0b"
+       id="rect3" />
+    <rect
+       x="10"
+       y="72"
+       width="200"
+       height="12"
+       fill="#854f0b"
+       id="rect4" />
+    <g
+       transform="translate(28,71)"
+       id="g4">
+      <circle
+         cx="0"
+         cy="0"
+         r="9"
+         fill="#faeeda"
+         stroke="#faeeda"
+         stroke-width="0.5"
+         id="circle4" />
+      <text
+         x="0"
+         y="0"
+         text-anchor="middle"
+         dominant-baseline="central"
+         font-size="11px"
+         font-weight="500"
+         fill="#854f0b"
+         id="text4">1</text>
+    </g>
+    <text
+       x="120"
+       y="76"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="500"
+       fill="#faeeda"
+       id="text5">Observer</text>
+    <text
+       x="110"
+       y="104"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#412402"
+       font-style="italic"
+       id="text6">Who can see relevant</text>
+    <text
+       x="110"
+       y="118"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#412402"
+       font-style="italic"
+       id="text7">behavior?</text>
+    <line
+       x1="22"
+       y1="128"
+       x2="198"
+       y2="128"
+       stroke="#ba7517"
+       stroke-width="0.4"
+       opacity="0.5"
+       id="line7" />
+    <text
+       x="22"
+       y="144"
+       font-size="10px"
+       font-weight="500"
+       fill="#854f0b"
+       id="text8">In LLM agents</text>
+    <text
+       x="22"
+       y="158"
+       font-size="10px"
+       fill="#5f5e5a"
+       id="text9">peer agents, logs, monitor</text>
+    <text
+       x="22"
+       y="170"
+       font-size="10px"
+       fill="#5f5e5a"
+       id="text10">agents, human auditors</text>
+  </g>
+  <line
+     x1="210"
+     y1="111"
+     x2="236"
+     y2="111"
+     stroke="#854f0b"
+     stroke-width="1.5"
+     stroke-linecap="round"
+     marker-end="url(#ah-amber)"
+     id="line10" />
+  <g
+     id="stage-adjudicator"
+     transform="translate(-4,-6)">
+    <rect
+       x="244.00714"
+       y="58.007137"
+       width="199.98572"
+       height="124.84286"
+       rx="7.9994292"
+       fill="#faeeda"
+       stroke="#854f0b"
+       stroke-width="0.514275"
+       id="rect10" />
+    <rect
+       x="244"
+       y="58"
+       width="200"
+       height="26"
+       rx="8"
+       fill="#854f0b"
+       id="rect11" />
+    <rect
+       x="244"
+       y="72"
+       width="200"
+       height="12"
+       fill="#854f0b"
+       id="rect12" />
+    <g
+       transform="translate(262,71)"
+       id="g12">
+      <circle
+         cx="0"
+         cy="0"
+         r="9"
+         fill="#faeeda"
+         stroke="#faeeda"
+         stroke-width="0.5"
+         id="circle12" />
+      <text
+         x="0"
+         y="0"
+         text-anchor="middle"
+         dominant-baseline="central"
+         font-size="11px"
+         font-weight="500"
+         fill="#854f0b"
+         id="text12">2</text>
+    </g>
+    <text
+       x="354"
+       y="76"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="500"
+       fill="#faeeda"
+       id="text13">Adjudicator</text>
+    <text
+       x="344"
+       y="104"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#412402"
+       font-style="italic"
+       id="text14">Who decides whether a</text>
+    <text
+       x="344"
+       y="118"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#412402"
+       font-style="italic"
+       id="text15">violation occurred?</text>
+    <line
+       x1="256"
+       y1="128"
+       x2="432"
+       y2="128"
+       stroke="#ba7517"
+       stroke-width="0.4"
+       opacity="0.5"
+       id="line15" />
+    <text
+       x="256"
+       y="144"
+       font-size="10px"
+       font-weight="500"
+       fill="#854f0b"
+       id="text16">In LLM agents</text>
+    <text
+       x="256"
+       y="158"
+       font-size="10px"
+       fill="#5f5e5a"
+       id="text17">rule-based checker, mediator</text>
+    <text
+       x="256"
+       y="170"
+       font-size="10px"
+       fill="#5f5e5a"
+       id="text18">agent, voting, human review</text>
+  </g>
+  <line
+     x1="444"
+     y1="111"
+     x2="470"
+     y2="111"
+     stroke="#854f0b"
+     stroke-width="1.5"
+     stroke-linecap="round"
+     marker-end="url(#ah-amber)"
+     id="line18" />
+  <g
+     id="stage-enforcer"
+     transform="translate(-4,-6)">
+    <rect
+       x="478.00714"
+       y="58.007137"
+       width="199.98572"
+       height="124.84286"
+       rx="7.9994292"
+       fill="#faeeda"
+       stroke="#854f0b"
+       stroke-width="0.514275"
+       id="rect18" />
+    <rect
+       x="478"
+       y="58"
+       width="200"
+       height="26"
+       rx="8"
+       fill="#854f0b"
+       id="rect19" />
+    <rect
+       x="478"
+       y="72"
+       width="200"
+       height="12"
+       fill="#854f0b"
+       id="rect20" />
+    <g
+       transform="translate(496,71)"
+       id="g20">
+      <circle
+         cx="0"
+         cy="0"
+         r="9"
+         fill="#faeeda"
+         stroke="#faeeda"
+         stroke-width="0.5"
+         id="circle20" />
+      <text
+         x="0"
+         y="0"
+         text-anchor="middle"
+         dominant-baseline="central"
+         font-size="11px"
+         font-weight="500"
+         fill="#854f0b"
+         id="text20">3</text>
+    </g>
+    <text
+       x="588"
+       y="76"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="500"
+       fill="#faeeda"
+       id="text21">Enforcer</text>
+    <text
+       x="578"
+       y="104"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#412402"
+       font-style="italic"
+       id="text22">Who applies the</text>
+    <text
+       x="578"
+       y="118"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#412402"
+       font-style="italic"
+       id="text23">sanction?</text>
+    <line
+       x1="490"
+       y1="128"
+       x2="666"
+       y2="128"
+       stroke="#ba7517"
+       stroke-width="0.4"
+       opacity="0.5"
+       id="line23" />
+    <text
+       x="490"
+       y="144"
+       font-size="10px"
+       font-weight="500"
+       fill="#854f0b"
+       id="text24">In LLM agents</text>
+    <text
+       x="490"
+       y="158"
+       font-size="10px"
+       fill="#5f5e5a"
+       id="text25">peer agents, platform, tool</text>
+    <text
+       x="490"
+       y="170"
+       font-size="10px"
+       fill="#5f5e5a"
+       id="text26">layer, orchestrator, contracts</text>
+  </g>
+  <text
+     x="340"
+     y="204"
+     text-anchor="middle"
+     font-size="11"
+     fill="#534ab7"
+     font-style="italic"
+     id="text27"
+     style="font-size:14.6667px">Seven properties to evaluate across the institution</text>
+  <g
+     id="prop-timing">
+    <rect
+       x="6"
+       y="216"
+       width="93"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect27" />
+    <rect
+       x="6"
+       y="216"
+       width="93"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect28" />
+    <rect
+       x="6"
+       y="226"
+       width="93"
+       height="12"
+       fill="#EEEDFE"
+       id="rect29" />
+    <text
+       x="52.5"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text29">Timing</text>
+    <text
+       x="52.5"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text30">before or after harm?</text>
+    <line
+       x1="14"
+       y1="260"
+       x2="91"
+       y2="260"
+       stroke="#7f77dd"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line30" />
+    <text
+       x="52.5"
+       y="274"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text31">ex ante rate limits</text>
+    <text
+       x="52.5"
+       y="286"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#888780"
+       id="text32">vs.</text>
+    <text
+       x="52.5"
+       y="295"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text33">ex post fines</text>
+  </g>
+  <g
+     id="prop-reversibility">
+    <rect
+       x="103"
+       y="216"
+       width="93"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect33" />
+    <rect
+       x="103"
+       y="216"
+       width="93"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect34" />
+    <rect
+       x="103"
+       y="226"
+       width="93"
+       height="12"
+       fill="#EEEDFE"
+       id="rect35" />
+    <text
+       x="149.5"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text35">Reversibility</text>
+    <text
+       x="149.5"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text36">can it be undone?</text>
+    <line
+       x1="111"
+       y1="260"
+       x2="188"
+       y2="260"
+       stroke="#7f77dd"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line36" />
+    <text
+       x="149.5"
+       y="274"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text37">warning</text>
+    <text
+       x="149.5"
+       y="286"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#888780"
+       id="text38">vs.</text>
+    <text
+       x="149.5"
+       y="295"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text39">permanent exclusion</text>
+  </g>
+  <g
+     id="prop-adaptivity">
+    <rect
+       x="200"
+       y="216"
+       width="93"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect39" />
+    <rect
+       x="200"
+       y="216"
+       width="93"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect40" />
+    <rect
+       x="200"
+       y="226"
+       width="93"
+       height="12"
+       fill="#EEEDFE"
+       id="rect41" />
+    <text
+       x="246.5"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text41">Adaptivity</text>
+    <text
+       x="246.5"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text42">does it escalate?</text>
+    <line
+       x1="208"
+       y1="262"
+       x2="285"
+       y2="262"
+       stroke="#7F77DD"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line42" />
+    <text
+       x="246.5"
+       y="278"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       id="text43">graduated sanctions,</text>
+    <text
+       x="246.5"
+       y="290"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       id="text44">re-entry conditions</text>
+  </g>
+  <g
+     id="prop-observability">
+    <rect
+       x="297"
+       y="216"
+       width="93"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect44" />
+    <rect
+       x="297"
+       y="216"
+       width="93"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect45" />
+    <rect
+       x="297"
+       y="226"
+       width="93"
+       height="12"
+       fill="#EEEDFE"
+       id="rect46" />
+    <text
+       x="343.5"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text46">Observability</text>
+    <text
+       x="343.5"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text47">visible or hidden?</text>
+    <line
+       x1="305"
+       y1="260"
+       x2="382"
+       y2="260"
+       stroke="#7f77dd"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line47" />
+    <text
+       x="343.5"
+       y="274"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text48">tool logs</text>
+    <text
+       x="343.5"
+       y="286"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#888780"
+       id="text49">vs.</text>
+    <text
+       x="343.5"
+       y="295"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text50">private reasoning</text>
+  </g>
+  <g
+     id="prop-gameability">
+    <rect
+       x="394"
+       y="216"
+       width="93"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect50" />
+    <rect
+       x="394"
+       y="216"
+       width="93"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect51" />
+    <rect
+       x="394"
+       y="226"
+       width="93"
+       height="12"
+       fill="#EEEDFE"
+       id="rect52" />
+    <text
+       x="440.5"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text52">Gameability</text>
+    <text
+       x="440.5"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text53">can it be exploited?</text>
+    <line
+       x1="402"
+       y1="260"
+       x2="479"
+       y2="260"
+       stroke="#7f77dd"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line53" />
+    <text
+       x="440.5"
+       y="276"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text54">reputation farming,</text>
+    <text
+       x="440.5"
+       y="288"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text55">surface compliance</text>
+  </g>
+  <g
+     id="prop-repair">
+    <rect
+       x="491"
+       y="216"
+       width="93"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect55" />
+    <rect
+       x="491"
+       y="216"
+       width="93"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect56" />
+    <rect
+       x="491"
+       y="226"
+       width="93"
+       height="12"
+       fill="#EEEDFE"
+       id="rect57" />
+    <text
+       x="537.5"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text57">Repair</text>
+    <text
+       x="537.5"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text58">does it restore?</text>
+    <line
+       x1="499"
+       y1="260"
+       x2="576"
+       y2="260"
+       stroke="#7f77dd"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line58" />
+    <text
+       x="537.5"
+       y="276"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text59">memory cleanup,</text>
+    <text
+       x="537.5"
+       y="288"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text60">output correction</text>
+  </g>
+  <g
+     id="prop-scale">
+    <rect
+       x="588"
+       y="216"
+       width="86"
+       height="86"
+       rx="6"
+       fill="#FFF"
+       stroke="#534AB7"
+       stroke-width="0.5"
+       id="rect60" />
+    <rect
+       x="588"
+       y="216"
+       width="86"
+       height="22"
+       rx="6"
+       fill="#EEEDFE"
+       id="rect61" />
+    <rect
+       x="588"
+       y="226"
+       width="86"
+       height="12"
+       fill="#EEEDFE"
+       id="rect62" />
+    <text
+       x="631"
+       y="231"
+       text-anchor="middle"
+       font-size="11"
+       font-weight="500"
+       fill="#26215C"
+       id="text62">Scale</text>
+    <text
+       x="631"
+       y="252"
+       text-anchor="middle"
+       font-size="9"
+       fill="#5F5E5A"
+       font-style="italic"
+       id="text63">across many agents?</text>
+    <line
+       x1="596"
+       y1="260"
+       x2="666"
+       y2="260"
+       stroke="#7f77dd"
+       stroke-width="0.3"
+       opacity="0.5"
+       id="line63" />
+    <text
+       x="631"
+       y="274"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text64">local trust</text>
+    <text
+       x="631"
+       y="286"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#888780"
+       id="text65">vs.</text>
+    <text
+       x="631"
+       y="295"
+       text-anchor="middle"
+       font-size="9px"
+       fill="#5f5e5a"
+       id="text66">platform-wide</text>
+  </g>
+  <text
+     xml:space="preserve"
+     id="text67"
+     style="font-size:14.6667px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect67);display:inline;fill:none;stroke:#c77aa3;stroke-width:2" />
+  <metadata
+     id="metadata67">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Design dimensions for cooperation-shaping institutions</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

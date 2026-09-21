@@ -1,0 +1,379 @@
+\documentclass{article}
+
+% ====================================
+% --------- ANGELO'S ADD-ONS ---------
+% ====================================
+% For theorems and such
+\usepackage{amsmath}
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{epigraph} % in preamble
+\usepackage{emoji}
+
+\usepackage{xcolor}
+\newtheorem{example}{Example}
+% For tables with multi-row cells
+\usepackage{multirow}
+\usepackage[inline]{enumitem}
+
+% if you use cleveref..
+\usepackage[capitalize,noabbrev]{cleveref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THEOREMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% Todonotes is useful during development; simply uncomment the next line
+%    and comment out the line below the next line to turn off comments
+%\usepackage[disable,textsize=tiny]{todonotes}
+\usepackage[textsize=tiny]{todonotes}
+
+\newcommand{\ANG}[1]{
+  {\color{orange} ANG: #1
+  }}
+\newcommand{\elm}[1]{\textcolor{red}{[EMA: #1]}}
+\newcommand{\cmt}[1]{\textcolor{blue}{[CHAR: #1]}}
+
+% \newcommand{\SAM}[1]{
+%   {\color{green} SAM: #1
+%   }}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2026
+
+% The authors should use one of these tracks.
+% Before accepting by the NeurIPS conference, select one of the options below.
+% 0. "default" for submission
+\usepackage{neurips_2026}
+% the "default" option is equal to the "main" option, which is used for the Main Track with double-blind reviewing.
+% 1. "main" option is used for the Main Track
+ \usepackage[position]{neurips_2026}
+
+% After being accepted, the authors should add "final" behind the track to compile a camera-ready version.
+% 1. Main Track
+ % \usepackage[main, final]{neurips_2026}
+% 2. Position Paper Track
+%  \usepackage[position, final]{neurips_2026}
+% 3. Evaluations & Datasets Track
+ % \usepackage[eandd, final]{neurips_2026}
+% 4. Creative AI Track
+%  \usepackage[creativeai, final]{neurips_2026}
+% 5. Workshop with single-blind reviewing
+%  \usepackage[sglblindworkshop, final]{neurips_2026}
+% 6. Workshop with double-blind reviewing
+%  \usepackage[dblblindworkshop, final]{neurips_2026}
+% Note. For the workshop paper template, both \title{} and \workshoptitle{} are required, with the former indicating the paper title shown in the title and the latter indicating the workshop title displayed in the footnote.
+% For workshops (5., 6.), the authors should add the name of the workshop, "\workshoptitle" command is used to set the workshop title.
+% \workshoptitle{WORKSHOP TITLE}
+
+% "preprint" option is used for arXiv or other preprint submissions
+ % \usepackage[preprint]{neurips_2026}
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2026}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+% \usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=black]{hyperref}
+% Note. For the workshop paper template, both \title{} and \workshoptitle{} are required, with the former indicating the paper title shown in the title and the latter indicating the workshop title displayed in the footnote. 
+
+
+% ====================================
+% ----------- VAN'S ADD-ONS ----------
+% ====================================
+% Van's separate add-ons
+% Added by VQT 2026-03-19
+% \newcommand\VAN[1]{{\color{blue} {#1}}} % Li Shen's trick to flag to-dos/notes 
+% \newcommand\ls[1]{{\color{blue} {[*VQT: #1*]}}} % Li Shen's trick to flag to-dos/notes
+
+
+% ====================================
+% --------- TERRY'S ADD-ONS ----------
+% ====================================
+% %%%%
+% \PassOptionsToPackage{numbers, compress}{natbib}
+% \usepackage{neurips_2025}
+% \usepackage[dandb]{neurips_2025}
+% \usepackage[preprint]{neurips_2025}
+% camera-ready [final]
+
+
+\usepackage{fontawesome5}   % icons (e.g., GitHub)
+\usepackage{array}          % improved tabular column definitions
+\usepackage{makecell}       % multiline cells in tables
+\usepackage{siunitx}        % number/unit formatting and decimal alignment
+\usepackage{threeparttable} % table notes
+\usepackage{multirow}
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usepackage{xspace}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{graphicx}
+\usepackage{floatflt}  
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{etoolbox}
+\usepackage{titletoc}
+\usepackage{comment}        % comment out blocks via \begin{comment} ... \end{comment}
+
+\newcommand\DoToC{%
+  \startcontents
+  \printcontents{}{1}{%
+    \section*{Appendix} % 标题样式与主目录一致
+    \vskip3pt\hrule\vskip5pt
+  }
+  \titlecontents{section}[0em]{\vspace{2pt}}{\bfseries \thecontentslabel \quad}{}{\titlerule*[0.5em]{.}\contentspage}
+  \titlecontents{subsection}[2em]{\vspace{2pt}}{\thecontentslabel\quad}{}{\titlerule*[0.5em]{.}\contentspage}
+}
+
+% --- Nature-style palette (used throughout the paper) ---
+\definecolor{NaturePine}{HTML}{2F6F3E}  % deep forest green
+\definecolor{NatureClay}{HTML}{A14A3B}  % earthy clay red
+\definecolor{NatureRiver}{HTML}{2C6E9E} % muted river blue
+
+\newcommand{\gcheck}{{\color{NaturePine}\ding{51}}}%
+\newcommand{\cross}{{\color{NatureClay}\ding{55}}}%
+\newcommand{\bolddash}{\textbf{--}}
+
+\newcommand{\ourWork}{{\textsc{\textbf{Define-ourWork}}}\xspace}
+
+\hypersetup{
+    colorlinks=true,
+    % linkcolor=black,
+    % filecolor=black,
+    urlcolor=NatureRiver,
+    % citecolor=NaturePine,
+}
+
+\newcommand{\logo}{%
+    \raisebox{-0.8ex}{% 微调垂直位置
+        \includegraphics[width=2em,keepaspectratio]{images/logo.png}%
+    }%
+} 
+
+% ====================================
+% --------- TITLE & SUBTITLE ---------
+% The title should state the position
+% Good examples include:
+% “Quantum Atelic Learning Methods Should Employ Psychic Insights"
+% “Stop Research on Psychic Properties of Machine Learning"
+% ====================================
+
+\title{Multi-Agent AI Systems Need Institutional Design,\\ Not Just Model-Level Alignment
+}
+%\subtitle{Subject Section}
+
+% ====================================
+% ------------ AUTHOR INFO -----------
+% ====================================
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{%
+  Van Quynh Thi Truong \thanks{Use footnote for providing
+    about author (webpage, alternative address)---\emph{not} for acknowledging
+    funding agencies.} \\
+  University of Pennsylvania\\
+  Philadelphia, PA 19104 \\
+  \texttt{scientistvan@gmail.com} \\
+  % examples of more authors
+  % \And
+  Xuanqiang Angelo Huang \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  Erivan Inan \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  Ryan Faulkner \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  Joel Christoph \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  Terry Jingchen Zhang* \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  David Guzman Piedrahita* \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  Zhijing Jin* \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+% Affiliations to add
+% University of Toronto, Toronto, Canada
+% \icmlaffiliation{euro}{EuroSafeAI, Zurich, Switzerland}
+% \icmlaffiliation{mpi}{Max Planck Institute, Tubingen, Germany}
+
+% \icmlcorrespondingauthor{Van Quynh Thi Truong}{scientistvan@gmail.com}
+% \icmlcorrespondingauthor{Zhijing Jin}{zjin@cs.toronto.edu}
+
+
+
+% \textbf{Primary area:} Socio-technical aspects of AI
+% \textbf{Secondary:} Language
+
+% \textbf{Keywords:} multi-agent AI, AI agents, cooperation, institutional design, AI safety, sanctioning mechanisms, public goods games, mechanism design, agent societies}
+
+% Added by Van
+\usepackage{svg}
+\svgsetup{inkscapelatex=false}
+\usepackage{float}
+
+% Preamble
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{positionbox}{
+  enhanced,
+  colback=white,
+  colframe=black,
+  boxrule=0.8pt,
+  sharp corners,
+  left=1em,
+  right=1em,
+  top=0.25em,
+  bottom=0.25em,
+  before skip=1.2em,
+  after skip=1.2em,
+  title=Our position,
+  coltitle=white,
+  fonttitle=\bfseries,
+  colbacktitle=black,
+  attach boxed title to top left={xshift=0pt,yshift=0pt},
+  boxed title style={
+    sharp corners,
+    boxrule=0pt,
+    colback=black,
+    width=\linewidth,
+    left=0.5em,
+    top=0.15em,
+    bottom=0.15em
+  }
+}
+
+% Preamble
+\definecolor{feedbackblue}{HTML}{EEF7FF}
+\definecolor{feedbackline}{HTML}{5B9BD5}
+\definecolor{feedbacktext}{HTML}{1F3A5F}
+
+\newtcolorbox{feedbackbox}{
+  enhanced,
+  colback=feedbackblue,
+  colframe=feedbackline,
+  boxrule=0pt,
+  leftrule=4pt,
+  arc=2pt,
+  left=0.9em,
+  right=0.9em,
+  top=0.6em,
+  bottom=0.6em,
+  before skip=1em,
+  after skip=1em,
+  fontupper=\small\color{feedbacktext}
+}
+
+% Added by Sam
+\usepackage{tcolorbox}
+
+% Added by charlie
+\usepackage{listings}
+
+
+\begin{document}
+
+
+\maketitle
+
+% ==========================================
+% ------ RATIONALE FOR POSITION TRACK --------
+% --------- LEAVE COMMENTED OUT -----------
+% ==========================================
+% Note the new requirement to include a written rationale for why your submission is suited to the position paper track this year
+% Authors  will be prompted at submission time to enter a short paragraph (250 words max) on why their submission is suitable for the Position Paper Track. This should not be included in the main paper. 
+
+
+% \section{Rationale for the Position Paper Track}
+% This submission is suitable for the Position Paper Track because it advances a clear, contestable position: multi-agent AI safety needs institutional design in addition to individual model alignment. Rather than presenting a conventional benchmark or purely empirical result, the paper synthesizes ideas from AI safety, multi-agent systems, economics, sociology, anthropology, law, governance, and human cooperation research to argue that cooperative LLM agent societies require explicit cooperation-shaping mechanisms. This position is timely because LLM agents increasingly interact in digital commons where they share tools, memory, compute, API budgets, and decision-making environments. These settings create familiar social dilemmas, including free-riding, overuse of shared resources, reputation failures, costly punishment, miscoordination, and failures of repair. We argue that sanctions should be evaluated as first-class infrastructure for multi-agent AI systems, using “sanctions” broadly to include norms, warnings, reputation, monitoring, incentives, access limits, mediation, punishment, and restorative repair. The paper fits the track because its contribution is conceptual and agenda-setting via a unified taxonomy, design dimensions, and research agenda for evaluating cooperation-shaping mechanisms across LLM agent groups. It also invites debate by considering when sanctions may backfire, crowd out cooperation, amplify surveillance, or create punishment cascades.
+
+% This content.tex file was changed to 
+\input{content.tex}
+
+
+\newpage
+\input{checklist.tex}
+
+
+\end{document}
+
+% =====================================
+% ------------- USE OF AI -------------
+% =====================================
+% Use of AI: While we recognise the productivity gains that can be realised through judicious use of AI in research, due to the risk to the integrity of individual projects and of the review system as a whole, the position paper track is establishing the following explicit guardrails on AI use in preparing and reviewing submissions.
+
+% While AI tools may be used in the research that leads to the final paper, the final paper must itself be substantially written by human authors, meaning that AI is used only for copy-editing or similar peripheral changes to the main text.
+
+% At submission time, authors will be required to state how AI tools were used in the preparation of the paper, if at all, and to attest that they have not used AI in ways contrary to the above rule.
+
+% Because papers submitted to the position paper track are confidential, reviewers will be required to commit to not using AI tools to write their reviews.
+
+% Note that the Position Paper Track’s LLM policy differs from the Main Program’s LLM policy. Authors are responsible for understanding policy pertaining to the specific track they are submitting to, and abiding by it.
+
+% ====================================
+% ----------- PAGE LIMIT -------------
+% https://neurips.cc/Conferences/2026/CallForPositionPapers
+% https://neurips.cc/Conferences/2026/MainTrackHandbook
+% ====================================
+% The main text of a submitted paper is limited to nine content pages, including all figures and tables.
+
+% Additional pages containing references, optional technical appendices and mandatory paper checklist do not count as content pages
+
+% If your submission is accepted, you will be allowed an additional content page for the camera-ready version. The maximum file size is 50MB. 
+
+% \TODO{Inspiration papers:
+% \begin{enumerate}
+%     \item \VAN{Good list of traps + recs: https://openreview.net/pdf?id=FjxyAotxtT}
+%     \item https://neurips.cc/virtual/2025/loc/san-diego/poster/121946
+%     \item https://openreview.net/forum?id=CWHroHFYYj 
+% \end{enumerate}
+% }

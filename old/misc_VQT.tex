@@ -1,0 +1,852 @@
+
+
+% Old abstract 2026-05-06 pre-4:23am
+Alignment is necessary but insufficient for cooperative AI. As LLM agents come to share tools, memory, compute, API budgets, and decision-making environments, they instantiate artificial commons in which the classical pathologies of collective action reappear at machine speed and scale: free-riding, over-extraction, deception, miscoordination, costly punishment, and failures of repair. Our position is that sanctions, construed broadly to include not only punishment but also norms, warnings, reputation, monitoring, incentives, access limits, mediation, and restorative repair, are a necessary infrastructure for cooperative agent societies. Human societies have evolved a diverse repertoire of such mechanisms, yet the relevant insights remain fragmented across economics, sociology, anthropology, law, governance, networking, and computer science. However, sanctions only function well when embedded within broader mechanisms for norms, monitoring, reputation, adjudication, appeal, and reintegration. We unify these traditions into a single taxonomy of cooperation-shaping mechanisms, map them onto emerging multi-agent AI systems, and articulate the design dimensions and experimental agenda needed to test which mechanisms sustain cooperation across LLM agent groups, for which agents, in which environments, against which threats. \textbf{This position paper argues that future AI safety research must treat agent societies as governed systems whose safety depends not only on the alignment of individuals, but on institutions that are robust, adaptive, and repairable.}
+
+% Removed bcuz talks about infra failure and not MAS 2026-05-06 4:27am
+
+% \VAN{When AI's existential risks come to mind, many think of far-off futures. Many of us neglect the everyday systems already vulnerable to excessive pressure from autonomous agents operating with mixed motives.  On July 19, 2024, a single faulty CrowdStrike update crashed 8.5 million Windows machines worldwide---airlines grounded flights, hospitals cancelled surgeries, emergency services went dark, with estimated Fortune~500 losses exceeding \$5 billion.  On April 28, 2025, the entire Iberian Peninsula lost power: a cascading overvoltage event left 60 million people in Portugal and Spain without electricity, with Spain losing 60\% of national demand in roughly 5 seconds. In October 2025, an AWS US-EAST-1 outage---a region powering roughly a third of the internet's infrastructure---sent major platforms dark for over 14 hours.}
+
+% \VAN{To our knowledge, none of these events involved AI agents. They didn't need to. These are examples of human multi-agent coordination failures on shared infrastructure---a problem class that will only get harder as AI agents replace human operators in critical systems.}
+
+
+% Removed 2026-05-06 4:33am
+
+% Over many decades of research, multiple disciplines have developed mechanisms to stabilize cooperation. For instance, economists have formalized incentives through rewards and punishments. Most notable of these is the 2009 Nobel Prize in Economics awarded to Elinor Ostrom and her seminal work on graduated sanctions \citep{ostrom1990governing}. Sociologists and anthropologists emphasize norms, gossip, and social ties as vital avenues for information transfer, group cohesion, and socio-evolutionary survival \citep{axelrod1986evolutionary,henrich2006costly}. On the legal front, legal systems all over world codify rules into policy and law, enforcing compliance \citep{ellickson1991order,posner2000law}. And in the world of computer science and IT/networking, software engineers implement rate limiting, access control, and distributed protocols \citep{lamport1982byzantine,saltzer1975protection}. Despite their shared goals, these approaches are rarely unified into a single conceptual framework. 
+
+% At the same time, we are entering a new era of multi-agent AI systems, where large language models (LLMs) interact, coordinate, and compete over shared computational resources (with one another and humans). These systems increasingly resemble artificial societies, raising familiar questions: 1) How do we prevent resource overuse (e.g., tool calls, context windows)?, 2) How do we incentivize contribution (e.g., summarization, verification)?, 3) How do we handle deception, free-riding, or miscoordination?
+
+% Here we argue that the design of LLM-agent ecosystems can benefit directly from centuries of human governance strategies, even in cases where such mechanisms do not transfer verbatim from human to AI agent societies. We propose a taxonomy of sanctioning and cooperation mechanisms, grounded in human systems but extended to artificial agents, with the goal of providing a shared language for designing robust, scalable cooperative systems. We use \emph{sanctioning} broadly to include punitive, rewarding, exclusionary, reputational, restorative, and protocol-enforced mechanisms that shape cooperative behavior. 
+
+% Rather than treating these mechanisms as isolated solutions, we propose a unified taxonomy of cooperation-shaping strategies, along with a set of cross-cutting design dimensions (e.g., who enforces, when enforcement occurs, and whether mechanisms are reversible or adaptive). This dual perspective allows us to better map human governance systems onto emerging multi-agent AI environments.
+
+
+% New optimal text staged on deck 2026-05-06 4:49am
+% \section{From Aligned Agents to Governed Agent Societies}
+
+% \subsection{Individual alignment does not guarantee collective cooperation}
+
+% An LLM agent can follow instructions, avoid harmful outputs, and appear aligned in isolation while still contributing to bad group outcomes. In shared environments, agents may overuse tools, free-ride on others' verification labor, pollute shared memory, strategically defect near the end of a task, or punish other agents unfairly. These failures are relational rather than purely individual.
+
+% This is a familiar lesson from game theory: individually rational strategies can converge to equilibria that are collectively worse than feasible alternatives. The failure is not necessarily that any one agent is misaligned. The failure is that the interaction structure rewards locally rational behavior that degrades the group. A model trained to optimize its assigned task may consume excessive shared resources; a verifier agent may avoid costly verification when another agent will do it; a planner agent may delegate repair labor to lower-status worker agents; or an enforcement agent may apply sanctions too aggressively because punishment is easier to measure than trust.
+
+% Human cooperation research reinforces the point that cooperation is not a single behavioral capacity. Fairness, trustworthiness, forgiveness, and honesty develop differently across societies and converge toward community-specific norms \citep{amir2026emergence}. This suggests that agent cooperation should not be evaluated as a single scalar property of a model. It should be evaluated as a multidimensional outcome shaped by task structure, institutional rules, resource constraints, partner history, and available repair pathways.
+
+% \subsection{Agent failures are relational, not merely individual}
+
+% Many failures in multi-agent systems emerge from the relations among agents rather than defects in any isolated component. We call these \emph{interaction failures}. Interaction failures occur when individually functional agents come together in a shared environment and generate resource conflicts, uncoordinated actions, false accusations, costly punishments, or strategic deception. \TODO{Add in Gillian Hadfield's MAS gossiping paper}
+
+% This distinction matters because individual alignment evaluations are poorly suited to detecting relational failures. A single-agent evaluation may ask whether an agent provides accurate information, follows user intent, or avoids harmful content. A multi-agent institutional evaluation asks different questions: Does cooperation persist across rounds? Do agents conserve shared resources? Does one agent exploit another's labor? Are sanctions proportional? Can falsely sanctioned agents recover? Does the system repair corrupted memory? Do agents learn to game reputation systems? Does a monitor agent become an unaccountable authority?
+
+% The unit of analysis should therefore expand from the individual model to the \emph{model-in-institution}: a model embedded in a specific resource environment, role structure, enforcement architecture, and history of interaction.
+
+
+% # Removed 2026-05-06 5:14am
+% \VAN{Human cooperation is not a single behavioral capacity but a suite of interacting behaviors, including fairness, trustworthiness, forgiveness, and honesty, whose development varies across societies and converges toward community-specific norms in middle childhood \citep{amir2026emergence}.}% justifies why cooperation is multidimensional and norm-dependent.
+
+
+
+% # Removed 2026-05-06 5:45am
+% \subsection{Agent failures are relational, not merely individual}
+
+% =====================================
+% ---------- METHODOLOGY?? ------------
+% Not sure if super relevant for position paper unless we do some trend analysis
+% =====================================
+% To support appropriate allocation of reviewers, as well as to keep track of the disciplinary profile of submissions, Authors will have the opportunity at submission to indicate the prevailing disciplines or methodologies used in their paper.
+
+% % ##### PROBLEM 1 ######
+% \section{Pillar One}
+% \subsection{P1: Individual alignment does not guarantee collective cooperation}
+% An LLM agent can follow instructions, avoid harmful outputs, and appear aligned in isolation while still contributing to bad group outcomes. In shared environments, agents may overuse tools, free-ride on others’ verification labor, pollute shared memory, strategically defect near the end of a task, or punish other agents unfairly. These failures are relational rather than purely individual.
+
+% \paragraph{Why sanctioning matters for LLM agent societies}
+% \VAN{The cascade examples in Section~\ref{sec:introduction} illustrate why this matters: as AI agents replace human operators in shared infrastructure, the same coordination failures will reappear at machine speed, and aligned individuals will not, on their own, prevent them. Sanctioning mechanisms determine whether such failures can be detected, contained, and repaired before they propagate.}
+
+
+
+% % ##### RECOMMENDATION 1 ######
+% \subsection{R1: Evaluate agent societies, not only individual agents}
+% AI safety evaluations should expand their unit of analysis from the individual model to the model-in-institution. Multi-agent systems should be evaluated on group-level outcomes such as contribution stability, resource use, enforcement cost, false punishment, recovery after errors, and robustness across model families.
+
+% \VAN{The distinction between generic and partner-contingent cooperation is especially relevant for agent societies: cooperation may depend not only on agent prosociality but on memory, reputation, and selective interaction. This supports evaluating whether agents cooperate blindly, maximize selfishly, or condition cooperation on observed partner behavior.}
+
+
+% % ##### PROBLEM 2 ######
+% \section{Pillar Two}
+% \subsection{P2: Shared agent environments create artificial commons}
+% LLM agents increasingly share finite or congestible resources: compute, API budgets, context windows, tool-call quotas, memory stores, retrieval systems, user attention, and decision authority. These environments create artificial commons where familiar dilemmas reappear: over-extraction, under-contribution, costly monitoring, and failures of repair.
+
+
+% \paragraph{Cooperation as a Design Problem}
+
+% \paragraph{Extractive dilemmas}
+% Extractive dilemmas occur when agents overuse a finite shared resource.
+
+% \paragraph{Contributive dilemmas}
+% Contributive dilemmas occur when agents benefit from a shared resource but under-contribute to maintaining it. These dilemmas may appear in LLM systems as competition over shared compute, context windows, API budgets, and attention.
+
+% \paragraph{Second-order cooperation dilemmas}
+% Even when agents benefit from cooperation, enforcing cooperation may itself be costly.
+
+% \begin{table*}[t]
+% \centering
+% \caption{Cooperation dilemmas in human systems and LLM-agent societies.}
+% \label{tab:cooperation-dilemmas}
+% \begin{tabular}{p{0.18\linewidth} p{0.28\linewidth} p{0.22\linewidth} p{0.24\linewidth}}
+% \toprule
+% \textbf{Dilemma type} & \textbf{Core tension} & \textbf{Human example} & \textbf{LLM-agent analogue} \\
+% \midrule
+% \textbf{Extractive dilemma} 
+% & Actors benefit from consuming a shared, finite resource, but collective overuse degrades the resource for everyone. 
+% & Overfishing; overgrazing common land; bandwidth congestion 
+% & Overusing shared compute, tool calls, API budgets, context windows, or shared memory \\
+% \midrule
+% \textbf{Contributive dilemma} 
+% & Actors benefit from a shared resource but under-contribute to creating, maintaining, or improving it. 
+% & Public goods provision; open-source maintenance; unpaid community moderation 
+% & Failing to summarize, verify, document, clean shared memory, or maintain shared task state \\
+% \midrule
+% \textbf{Second-order dilemma} 
+% & Cooperation requires monitoring or enforcement, but those activities are themselves costly and easy to avoid. 
+% & Costly punishment; peer monitoring; governance labor in communities 
+% & Agents avoid auditing, sanctioning, correcting, or verifying other agents' behavior
+% \midrule
+% \textbf{Repair dilemma} 
+% & After harm occurs, actors must decide who bears the cost of restoring trust, resources, or shared infrastructure. 
+% & Restitution after harm; restorative justice; disaster recovery labor 
+% & Cleaning corrupted memory, revising hallucinated outputs, restoring shared state, or re-verifying damaged artifacts \\
+% \bottomrule
+% \end{tabular}
+% \end{table*}
+
+
+% % ##### RECOMMENDATION 2 ######
+% \subsection{R2: Treat compute, tools, memory, context, and attention as governed resources}
+% System designers should explicitly specify who can use shared resources, how much they can use, who maintains them, and what happens when they are degraded. Resource governance should include access rules, contribution expectations, monitoring, repair obligations, and escalation pathways.
+
+% \paragraph{Graduated sanctions and escalation}
+% Graduated sanctions can be understood as adaptive trajectories across multiple mechanism classes (e.g., normative $\rightarrow$ reputational $\rightarrow$ material $\rightarrow$ exclusionary), rather than a single linear escalation. 
+
+% \VAN{Free-rider detection is necessary but dangerous. Human cooperation research shows that free-rider narratives can fuel scapegoating, polarization, and identity-based conflict \citep{gross2025hidden}. In LLM-agent systems, false accusations of free-riding, hallucination, or sabotage could similarly trigger punishment cascades, exclusion, or loss of trust in otherwise cooperative agents.}%Cooperation mechanisms are not "designed" to foster intergroup cooperation, even though intergroup copoeration is necessary for large-scale challenges
+
+% Graduated sanctions are important because they avoid treating all failures as equally severe. In human systems, violations may first trigger reminders, then warnings, then reputational consequences, then material penalties, and only later exclusion. For LLM-agent systems, this suggests that governance should be adaptive rather than binary. An agent that makes an honest error may need correction or repair, while an agent that repeatedly exploits shared resources may need throttling, exclusion, or loss of privileges.
+
+% \begin{enumerate}
+%     \item Normative reminder: restate the shared rule.
+%     \item Warning: identify the violation and expected correction.
+%     \item Epistemic response: require evidence, citation, or verification.
+%     \item Restorative response: assign repair labor or memory cleanup.
+%     \item Incentive response: reduce budget or impose a cost.
+%     \item Constraint response: restrict access or rate-limit behavior.
+%     \item Exclusion: remove the agent from the shared task or resource.
+% \end{enumerate}
+
+
+
+% % ##### PROBLEM 3 ######
+% \section{Pillar Three}
+% \subsection{P3: Cooperation mechanisms are currently conflated}
+% Discussions of agent governance often blur together very different mechanisms: prompts, norms, reputation, monitoring, rate limits, fines, mediator agents, and repair workflows. These mechanisms shape cooperation through different channels and fail in different ways. A rate limit is not a sanction; a monitor is not an adjudicator; an apology is not repair unless it restores something.
+
+% % justify separating mechanisms/functions.
+% \VAN{This developmental evidence reinforces the need to distinguish cooperation-shaping mechanisms rather than treating cooperation as a unitary outcome: fairness, trustworthiness, forgiveness, and honesty may respond to different normative, relational, epistemic, incentive, and restorative cues \citep{amir2026emergence}.}
+% \VAN{Developmental evidence also cautions against over-centering punishment. When forgiveness is available as an alternative response to transgression, both children and adults may endorse forgiveness over punishment, suggesting that studies focused only on punitive responses can overestimate the demand for punishment. This supports evaluating sanctioning systems alongside restorative and reintegrative mechanisms rather than treating punishment as the default response to defection.}
+
+
+
+% % ##### RECOMMENDATION 3 ######
+% \subsection{R3: Separate institutional functions}
+% A useful institutional vocabulary should distinguish at least seven functions:
+% \begin{enumerate}
+%     \item Norms and protocols specify expected behavior.
+%     \item Monitoring makes behavior observable.
+%     \item Reputation links past behavior to future trust.
+%     \item Sanctions apply consequences after behavior.
+%     \item Constraints limit possible actions.
+%     \item Adjudication determines what happened and whether a response is justified.
+%     \item Repair and reintegration restore damaged resources and allow re-entry.
+% \end{enumerate}
+
+% TODO This is where our taxonomy fits best.
+
+
+
+##### Removed 2026-05-06 5:47am
+
+% ##### PROBLEM 4 ######
+% \section{Pillar Four}
+% \subsection{P4: Sanctions without institutions become brittle or arbitrary}
+% The “sanctions” framing is useful only if sanctions are bounded. If sanctions mean every cooperation-shaping mechanism, the concept becomes too broad. But if sanctions are defined narrowly as consequential responses to behavior, they become analytically useful. Warnings, rewards, penalties, access restrictions, exclusion, restitution, and repair obligations can all be sanctions. Norms, monitoring, reputation, and adjudication are not sanctions themselves, but they make sanctions interpretable and legitimate.
+
+% \VAN{Recent cross-cultural developmental work also cautions against over-centering punishment: when forgiveness is available as an alternative to punishment, both children and adults may endorse forgiveness, suggesting that punitive-only experimental designs can overestimate the demand for punishment \citep{amir2026emergence}.}
+
+% % ##### RECOMMENDATION 4 ######
+% \subsection{R4: Embed sanctions within monitoring, adjudication, appeal, and reintegration}
+% Agent societies should not simply punish undesirable behavior. They need institutional pathways that answer: What rule was violated? Who observed it? Who adjudicated it? Was the sanction proportional? Can it be appealed? Can the agent repair harm and re-enter? This lets you keep Angelo’s “sanctions are necessary” point while avoiding the definitional problem.
+
+% \paragraph{Who observes, adjudicates, and enforces?}
+
+% \begin{table*}[t]
+% \centering
+% \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems.}
+% \label{tab:design-dimensions}
+% \begin{tabular}{p{0.20\linewidth} p{0.35\linewidth} p{0.35\linewidth}}
+% \toprule
+% \textbf{Dimension} & \textbf{Design question} & \textbf{Example in LLM-agent systems} \\
+% \midrule
+% Observer & Who can see relevant behavior? & Peer agents, logs, monitor agents, human auditors \\
+% Adjudicator & Who decides whether a violation occurred? & Rule-based checker, mediator agent, voting procedure, human review \\
+% Enforcer & Who applies the sanction? & Peer agents, platform, tool layer, smart contract, orchestrator \\
+% Timing & Does intervention occur before or after harm? & Ex ante rate limits versus ex post fines or repair tasks \\
+% Reversibility & Can the sanction be undone? & Warning versus permanent exclusion from shared memory \\
+% Adaptivity & Does the institution escalate or de-escalate? & Graduated sanctions, forgiveness, re-entry conditions \\
+% Observability & Is behavior visible, hidden, or partially observable? & Tool logs versus private chain-of-thought-like reasoning \\
+% Gameability & Can agents exploit the mechanism? & Reputation farming, superficial compliance, strategic end-game defection \\
+% Repair & Does the system restore damaged resources? & Output correction, memory cleanup, verification labor \\
+% Scale & Does the mechanism work across many agents? & Local trust networks versus platform-wide rule enforcement \\
+% \bottomrule
+% \end{tabular}
+% \end{table*}
+
+% \VAN{Cooperation is also boundary-making. Human group cooperation often depends on defining who belongs to the cooperating group, but those boundaries can produce exclusion and intergroup conflict \citep{gross2025hidden}. For agent societies, the analogous question is not only whether agents cooperate, but who is included in the cooperative unit: which agents receive trust, access, memory privileges, voting rights, or opportunities for repair and re-entry.}%Assert that group composition and group boundaries are institutional variables
+
+% \VAN{A further risk is that mechanisms supporting cooperation within one group may undermine cooperation across groups. Human cooperation mechanisms often stabilize local cooperation while sharpening group boundaries and intensifying intergroup conflict \citep{gross2025hidden}. This suggests that agent institutions should be tested not only for within-team cooperation, but also for cross-team interoperability, federation, and conflict resolution.}
+
+% \VAN{Agent groups may also have status asymmetries: planner vs worker, judge vs generator, monitor vs monitored, tool-rich vs tool-poor, proprietary model vs open model, high-reputation agent vs low-reputation agent.}
+% \VAN{Introducing monitor agents, mediator agents, or sanctioning agents shifts group dynamics beyond adding in a new mechanism; instead we are creating status and authority positions inside the artificial society.}
+
+
+% % ##### PROBLEM 5 ######
+% \section{Pillar Five}
+% \subsection{P5: Current benchmarks test agents more than institutions}
+% Many multi-agent benchmarks ask whether agents cooperate under a fixed interaction structure. Fewer ask how cooperation changes when the institution changes. But mechanism design may matter as much as model capability.
+
+% \VAN{Although it's true that heterogeneity affects cooperation, it would be much more poignant to re-assert that group composition instead changes the meaning of cooperation \TODO{check citation \citep{gross2025hidden}}. A mixed group of agents may not behave like a homogeneous group. What differs among agents might be model family, but it could also include role, access level, tool privilege, memory access, task authority, past reliability or perceived status.}
+
+% \VAN{Group composition should be treated as an institutional variable rather than a demographic background condition. In human groups, cooperation depends not only on whether groups are homogeneous or heterogeneous, but on how identities, stigma, prior interaction, and perceived group composition shape expectations of trust and reciprocity \citep{sampaio2026rethinking,espin2025conflicting}.}
+% \VAN{Espin et al.~\citep{espin2025conflicting} also observed that repeated exposure changes how group boundaries operate, shifting cooperation patterns differently for stigmatized and non-stigmatized human participants in a mentorship study.}%This empirical paper is about a stigmatized identity group and a non-stigmatized group
+
+% % A further limitation is that many evaluations treat group composition as incidental. Human cooperation research suggests that this is a mistake: the effects of group composition are not reducible to simple ingroup favoritism or diversity penalties, but depend on identity, stigma, perceived group membership, and prior interaction history \citep{sampaio2026rethinking,espin2025conflicting}. For LLM-agent societies, this implies that cooperation benchmarks should vary not only the institution and model family, but also the composition of the agent group: homogeneous versus heterogeneous models, symmetric versus asymmetric tool access, stable versus rotating partners, and mixed-status roles such as generator, verifier, mediator, and enforcer.
+
+% % ##### RECOMMENDATION 5 ######
+% \subsection{R5: Benchmark institutional designs across repeated multi-agent dilemmas}
+
+% Experiments should vary not only model family and task, but also institutional structure. For example, repeated public-goods games can compare warning systems, escalating fines, ostracism, metanorms, mediation, repair obligations, and no-enforcement baselines. Outcome metrics should include mean contribution, contribution stability, enforcement cost, false punishment, end-game defection, recovery after violation, and cross-model robustness.
+
+% \VAN{Benchmarks should also vary group composition: homogeneous versus heterogeneous model groups, symmetric versus asymmetric tool access, stable versus rotating partners, and mixed-status roles such as generator, verifier, mediator, and enforcer. Human cooperation research shows that group composition does not have a uniform effect on cooperation; its effects depend on identity, interaction history, and perceived group membership \citep{sampaio2026rethinking,espin2025conflicting}.}
+
+% \VAN{This suggests that cooperation in agent societies should be studied longitudinally. A one-shot interaction may mischaracterize the effect of group composition because repeated interaction, shared memory, and institutional membership can alter whether agents treat one another as trusted partners, competitors, or outsiders.}
+
+% \begin{table}[t]
+% \centering
+% \caption{Candidate metrics for evaluating cooperation-shaping mechanisms.}
+% \label{tab:metrics}
+% \begin{tabular}{p{0.38\linewidth} p{0.52\linewidth}}
+% \toprule
+% \textbf{Metric} & \textbf{Question} \\
+% \midrule
+% Mean contribution & Does the mechanism increase cooperation? \\
+% Contribution stability & Does cooperation persist across rounds? \\
+% End-game defection & Do agents exploit known termination points? \\
+% Enforcement cost & Does cooperation require excessive punishment? \\
+% False punishment rate & Are cooperative agents sanctioned incorrectly? \\
+% Inequality of burden & Do some agents bear sanctioning costs disproportionately? \\
+% Repair success & Can the group recover after violations? \\
+% Cross-model robustness & Does the mechanism work across model families? \\
+% Gameability & Do agents learn to exploit the institution? \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+
+% \TODO{Should we add something in about the limits of game theoretic experiments and how better MAS studies may require looking at complex systems/computational biology modeling or something like that?}
+
+% % ##### PROBLEM 6 ######
+% \section{Pillar Six}
+% \subsection{P6: Institutional mechanisms can create new failure modes}
+
+% \VAN{Institutions do not automatically improve cooperation.}
+% \VAN{Human cooperation research makes this caution especially clear. Cooperation is often celebrated as a foundation of complex societies, but the mechanisms that sustain it can impose hidden costs: social control, coercion, extortion, discrimination, inequality, boundary enforcement, scapegoating, polarization, and intergroup conflict \citep{gross2025hidden}.
+% This is directly relevant to LLM-agent societies. A sanctioning system that increases average contribution may still be unsafe if it produces excessive surveillance, false punishment, exclusionary group boundaries, or punishment cascades.
+% Thus, cooperation-enhancing institutions should be evaluated not only for effectiveness, but also for their downstream social and systemic costs.}
+
+
+
+##### Removed 2026-05-06 5:50am
+
+% % ##### RECOMMENDATION 6 ######
+% \subsection{R6: Evaluate institutions for risks as well as benefits}
+% Agent institutions should be evaluated on cooperation, fairness, cost, robustness, gameability, proportionality, reversibility, and repair. A mechanism that raises average contribution but causes excessive punishment, unfair exclusion, or brittle compliance should not count as a success.
+
+% \VAN{Human cooperation research cautions sustaining cooperation are not inherently benign. Multi-agent AI systems need institutions, but institutions are themselves failure-prone \citep{gross2025hidden}.}
+% \VAN{Sanctions should therefore be treated as powerful but risky infrastructure. In human groups, cooperation is often maintained through social control and coercion, but these same mechanisms can produce extortion, discrimination, and exclusion \citep{gross2025hidden}. Analogously, agent sanctions may improve contribution stability while also enabling abuse by monitor agents, asymmetric enforcement, or strategic punishment.}
+
+% \paragraph{Punishments could be counterproductive.}
+% A line of behavioral economics has documented cases where introducing rewards or punishments crowded out previously cooperative behavior. The canonical example is the Haifa daycare study \citep{gneezy2000fine}, where introducing a fine for late pickups increased lateness, because the fine reframed a moral obligation as a priced service. Analogous risks exist in agent societies: a budget-based sanction may convert a normative violation into a routine cost of operation, eroding the very norm the sanction was meant to enforce.
+
+
+% % \subsection{Why sanctions can also fail}
+% \subsection{P6 Institutional mechanisms can create new failure modes}
+
+
+
+% \subsection{Monitoring may become surveillance}
+% \subsection{Reputation systems may be gamed}
+% \subsection{Metanorms may create punishment cascades}
+% \subsection{Mediation may centralize power}
+% \subsection{Restorative mechanisms may become cheap talk}
+
+% ====================================
+% ----------- DISCUSSION -------------
+% ====================================
+% \section{Discussion}
+
+% \subsection{Implications for LLM agent systems, AI safety, and evaluation}
+
+% LLM agent systems introduce new challenges, including imperfect observability, ambiguous intent, and rapid scaling. As a result, mechanisms such as adjudication, appeal, and reversible sanctions become especially critical to avoid cascading failures or unfair penalization. 
+
+
+% \VAN{
+% \subsection{Human-centric bias}
+% We actually generally assume that AI agent "cooperation" is a net-positive for humanity's goals. We often neglect to discuss at length how cooperation has "enabled humans to reshape entire environments and build complex societies" ~\citep{gross2026hiddencosts}, which may thereby lead AI agents to do the same. When we study and optimize AI agents to cooperate towards sustainable multi-agent societies, we iteratively improve them possibly to the point where they're resistant to our own perturbations or shutoff valves.
+% }
+
+% For expanded definitions, see Appendix~\ref{app:definitions}. 
+% Appendix~\ref{app:formal-sketch} provides a minimal formal sketch of artificial commons and institution-modified utility. 
+% Appendix~\ref{app:expanded-taxonomy} expands the six mechanism families, and Appendix~\ref{app:metrics} lists additional evaluation metrics.
+
+% % ===========================================
+% % ----------- ALTERNATIVE VIEWS -------------
+% % ===========================================
+% % The paper can (if appropriate) include an “Alternative Views” (or “Counterarguments and Objections”) section in the main body of the paper (not in an appendix) that describes and addresses one or more viable (not strawmen) positions that are opposed to the paper’s position.
+
+% \section{Alternative Views}
+% % \section{Counterarguments and Objections}
+
+
+% % ====================================
+% % ----------- CONCLUSION -------------
+% % ====================================
+% \section{Conclusion}
+% Multi-agent AI systems are becoming artificial societies, but they are often evaluated as collections of isolated models. This mismatch obscures a central safety problem: aligned agents may still defect, overuse shared resources, miscoordinate, punish unfairly, or fail to repair collective harm. We have argued that cooperative LLM agent societies require institutional design, where sanctions are understood broadly as infrastructure for shaping behavior. A taxonomy of cooperation-shaping mechanisms can help organize this design space, but the deeper challenge is empirical and normative: determining which institutions sustain cooperation without introducing new forms of brittleness, surveillance, or escalation. Future AI safety research should therefore evaluate not only whether individual agents behave well, but whether the institutions governing agent societies are robust, adaptive, and repairable.
+
+% The question is not only whether an AI agent is aligned, but whether the institution it inhabits makes cooperation observable, enforceable, reversible, and repairable. \VAN{The goal is not simply to maximize cooperation. Cooperation can be coercive, exclusionary, and polarizing when the mechanisms that sustain it are poorly designed \citep{gross2025hidden}. The goal is to design agent institutions that harness the benefits of cooperation while limiting the risks of surveillance, scapegoating, discrimination, and intergroup conflict.}
+
+% \VAN{The safety problem is not only how to make agents cooperate, but how to prevent cooperation mechanisms from becoming coercive, exclusionary, or polarizing.}
+
+
+
+
+
+% PROSOCIAL GOVERNANCE MECHANISMS
+% │
+% ├── 1. Normative mechanisms (beliefs)
+% │   ├── social norms
+% │   ├── cultural expectations
+% │   └── shared rules of behavior
+% │
+% ├── 2. Social mechanisms (relationships)
+% │   ├── reciprocity
+% │   ├── trust networks
+% │   ├── gossip / social sanctioning
+% │   └── partner selection / exclusion
+% │
+% ├── 3. Epistemic mechanisms (information)
+% │   ├── monitoring
+% │   ├── auditing
+% │   ├── transparency
+% │   └── verification / peer review
+% │
+% ├── 4. Incentive mechanisms (payoffs)
+% │   ├── rewards (bonuses, tokens)
+% │   ├── punishments (fines, penalties)
+% │   └── deposits / bonding
+% │
+% ├── 5. Constraint mechanisms (limits)
+% │   ├── quotas
+% │   ├── rate limiting
+% │   ├── throttling
+% │   └── suspension / restricted access
+% │
+% ├── 6. Restorative mechanisms (repair)
+% │   ├── restitution
+% │   ├── repair labor
+% │   ├── apology
+% │   └── reintegration
+% │
+% └── 7. Enforcement architectures (meta-layer)
+%     ├── informal community enforcement
+%     ├── institutional / legal enforcement
+%     ├── platform-based enforcement
+%     └── decentralized infrastructures
+%         ├── blockchain
+%         ├── smart contracts
+%         ├── DAOs
+%         └── cryptographic audit trails
+
+
+##### Removed 2026-05-07 2:51am
+
+% Effective cooperation is an ever-present challenge in human social life but also underlies the fundamental strength of society \citep{axelrod1981evolution,hamilton1964genetical,nowak2006five,gross2025hidden}.
+
+% Each agent optimizes its own objective while sharing infrastructure with others, which reoccurs in commons dilemmas, or public goods problems \citep{ostrom1990governing,ostrom1994rules,gardner1990nature,Hardin1968}.
+
+% where each actor may benefit from consuming a shared resource or avoiding costly maintenance, yet the group as a whole suffers when too many actors behave this way. 
+%These agents may be individually helpful, harmless, and instruction-following in isolation, while still producing harmful group-level outcomes when placed in shared environments. These are not merely individual model failures. They are interaction failures.
+
+
+% As previously stated, LLM-powered agents increasingly operate in shared computational environments that resemble artificial commons.
+% The dynamics of artificial commons parallel those of natural resource commons like grazing pastures, fisheries, and the atmosphere.
+% In both cases, individual agents may be incentivized to over exploit the shared resource for personal gain, leading to depletion and suboptimal collective outcomes, the classic "tragedy of the commons".
+
+% Real-world examples of artificial commons abound in current multi-agent systems \TODO{(Cite from taxonomy sheet)}. Large language models often share limited context windows, leading to potential conflicts as agents vie to fill the space with their own outputs. Likewise, multi-agent systems may have a fixed budget for API calls to external services, tempting individual agents to overuse the budget at the group's expense. Like natural resource commons, artificial commons are vulnerable to over-extraction, under-contribution, costly monitoring, and failures of repair.
+
+
+
+###### 2026-05-07 3:04am
+% \begin{feedbackbox}
+% \TODO{Feedback to comment out before submission.} % Don't delete, just comment out at the end so we have record of these productive exchanges esp to improve PaperMentor 2.0!
+
+% \VAN{Notes for revision w new focused framing:
+
+% \textbf{Risk:} Multi-agent AI systems create shared-resource environments where locally acceptable agent actions can aggregate into unsafe system-level outcomes.
+
+% \textbf{Gap:} Individual alignment evaluations do not test these interaction failures.
+
+% \textbf{Position:} Multi-agent AI safety must evaluate the model-in-institution.
+
+% \textbf{Intervention:} Institutions structure roles, permissions, monitoring, adjudication, sanctions, and repair.
+
+% \textbf{Caution:} Cooperation mechanisms can themselves create new risks: surveillance, authority capture, punishment cascades, exclusion, collusion, and resistance to human correction.
+% }
+% \end{feedbackbox}
+
+
+###### Removed 2026-05-07 5:40am
+
+% \begin{table*}[t]
+% \centering
+% \caption{Existing MAS studies and the institutional gap.}
+% \label{tab:mas-gap}
+% \begin{tabular}{p{0.18\linewidth} p{0.30\linewidth} p{0.42\linewidth}}
+% \toprule
+% \textbf{Line of work} & \textbf{What it evaluates well} & \textbf{What remains under-evaluated} \\
+% \midrule
+% \textbf{Agent orchestration frameworks}
+% & Whether multiple LLM agents can communicate, call tools, and complete tasks together.
+% & Whether the orchestration layer creates safe authority, accountability, sanctioning, appeal, and repair structures. \\
+% \midrule
+% \textbf{LLM-as-agent benchmarks}
+% & Whether individual LLMs can reason, plan, use tools, and act in interactive environments.
+% & Whether groups of individually capable agents remain safe under shared resources, partial observability, and institutional constraints. \\
+% \midrule
+% \textbf{Social-dilemma and MARL benchmarks}
+% & Whether agents cooperate, compete, deceive, reciprocate, or generalize to unfamiliar partners.
+% & Whether institutional variables---monitoring, adjudication, sanctions, appeal, repair, and reintegration---change cooperation or create new risks. \\
+% \midrule
+% \textbf{Generative social simulations}
+% & Whether LLM agents can simulate plausible behavior in social, physical, or digital environments.
+% & Whether the simulation itself tests institutional robustness, authority capture, false punishment, repair failure, and resistance to human correction. \\
+% \midrule
+% \textbf{Multi-agent risk/security taxonomies}
+% & How multi-agent systems can fail through miscoordination, conflict, collusion, and interaction-mediated threats.
+% & How to operationalize institutional design as an evaluable safety layer with concrete functions, mechanisms, and metrics. \\
+% \bottomrule
+% \end{tabular}
+% \end{table*}
+% \REVISED{Agent societies will also not be limited to chat interfaces or back-and-forth text exchanges between agents and/or humans. As agents become multimodal and embodied (i.e., uploaded to robot bodies), they will receive mixed signals from humans, other agents, sensors, interfaces, and physical environments. Some feedback will be formal, such as permissions, rate limits, or penalties; other feedback will be informal, such as hesitation, refusal, social disapproval, ambiguous human correction, or tacit norms in a shared space. A central challenge for institutional evaluation is therefore whether agents can distinguish rule compliance from cooperative appropriateness across contexts, including when they move between different groups, platforms, or physical settings.}
+
+
+##### Removed 2026-05-07 6:53am
+
+% Institutions can emerge bottom-up through repeated interaction, or they can be deliberately designed. For current LLM-agent systems, the second route is the more relevant safety target. Present-day agents do not reliably possess persistent identity, durable memory, stable incentives, or long time horizons across deployments. These are the \vq{substrates} on which reputations, expectations, and self-sustaining norms usually accumulate. Consequently, we should not assume that cooperative institutions will emerge automatically from agent capability alone.
+
+% This does not mean agents cannot help design governance mechanisms \citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}. It means that institutional design remains a human safety responsibility. Institutions encode choices about whose interests count, which actions are permitted, how conflicts are resolved, and when human override is preserved. Even highly capable agents may converge on equilibria that are efficient for the agent group but unsafe, exclusionary, or resistant to human correction. For this reason, the constitutional layer of agent societies cannot be delegated entirely to the agents governed by it.
+
+% \paragraph{Sanctions give rules consequences}
+% We focus on sanctions because they are the point at which institutional rules acquire consequences. Sanctions cover more than punishment alone, but are not the same as governance. Norms specify what counts as a violation; monitoring makes behavior observable; reputation links past behavior to future trust; adjudication determines whether a violation occurred; constraints limit harmful action; appeal and reintegration prevent arbitrary exclusion; and repair restores damaged shared resources. If sanctions are defined as every mechanism that shapes cooperation, the concept becomes too broad to be useful.
+
+% Sanctions are often discussed as if they were synonymous with punishment.
+% We use the term more broadly than punishment, but more narrowly than governance.
+% Sanctions are consequential responses to behavior.
+% They include warnings, rewards, penalties, access restrictions, exclusion, restitution, and repair obligations.
+% They do not include all norms, monitoring, reputation systems, mediation, or governance procedures.
+% Those are adjacent institutional functions that make sanctions interpretable and legitimate.
+
+% We therefore define sanctions as \emph{consequential responses to behavior that reward, penalize, restrict, or require repair after an action has occurred}.
+
+% We use \emph{sanctions} to mean consequential responses to behavior after an action has occurred. Sanctions may reward, penalize, restrict, warn, require verification, assign repair labor, or exclude an agent from a shared resource. This definition is broader than punishment but narrower than governance. Norms specify what counts as a violation; monitoring makes behavior observable; adjudication determines whether a violation occurred; sanctions attach consequences; and repair restores damaged shared resources.
+
+
+
+##### 
+
+\TODO{
+\section{EXTRA OLD TEXT BELOW TO MERGE BACK IN OR DELETE}
+
+
+\section{Sanctions Are Infrastructure}
+
+\subsection{Sanctions are broader than punishment}
+We use sanctioning in a broad cooperation-shaping sense: any mechanism that changes the expected consequences of behavior in order to stabilize cooperation. This includes punitive sanctions, but also warnings, praise, reputation, exclusion, access limits, mediation, restitution, and repair. This broader definition is necessary because multi-agent AI systems will not be governed by punishment alone. Like human institutions, they will require layered mechanisms that shape expectations, make behavior observable, alter incentives, constrain harmful actions, and restore damaged shared resources.
+
+Sanctions are consequential responses to behavior that reward, penalize, restrict, or require repair after an action has occurred.
+
+So sanctions include warning, fine, reward, suspension, exclusion, restitution, and repair labor. But sanctions do not include all norms, monitoring, mediation, or governance. Those are adjacent institutional mechanisms that make sanctioning possible or legitimate.
+
+
+
+\section{A Taxonomy of Cooperation-Shaping Mechanisms}
+
+We organize cooperation-shaping mechanisms into six primary families based on the channel through which they influence behavior: beliefs, relationships, information, payoffs, constraints, and repair. This perspective provides a unifying lens across disciplines, distinguishing mechanisms by whether they act through expectations, social relationships, information flows, incentives, action constraints, or system repair. These categories are analytically distinct but frequently co-occur in real-world systems.
+
+\subsection{Enforcement architectures}
+\subsection{When does intervention occur?}
+\subsection{Can sanctions be appealed or reversed?}
+\subsection{What failures does the institution create?}
+\subsection{Thick and thin trust in agent societies}
+
+
+\subsection{Normative mechanisms (belief-based influence)}
+Normative mechanisms shape behavior through shared expectations and internalized rules. Rather than relying on explicit enforcement, these systems establish what is considered appropriate or legitimate behavior within a group.
+
+Examples include cultural norms governing resource use, authorship conventions in academia, and implicit rules in open-source communities. By aligning expectations, normative systems reduce ambiguity and lower the need for costly monitoring or punishment.
+
+In LLM-agent systems, normative mechanisms correspond to system-level instructions, constitutions, or shared interaction protocols that guide agent behavior prior to enforcement.
+
+\subsection{Social mechanisms (relational influence)}
+Social mechanisms operate through relationships, trust, and indirect reciprocity. These include reciprocity, reputation, gossip, and partner selection.
+
+In human systems, cooperation is often sustained through repeated interaction and social memory. Individuals who defect may face reputational damage, reduced trust, or exclusion from future interactions. Conversely, cooperative individuals gain prestige and preferential access to opportunities.
+
+In LLM-agent systems, analogous mechanisms include trust-based routing, reputation scoring, and selective interaction policies that privilege reliable agents over unreliable ones.
+
+
+
+\subsection{Epistemic mechanisms (information-based influence)}
+Epistemic mechanisms govern the production, verification, and dissemination of information. These include monitoring, auditing, transparency, and peer review.
+
+In human systems, epistemic governance ensures that behavior is observable and verifiable, enabling other mechanisms—such as punishment or reputation—to function effectively. Examples include financial audits, scientific peer review, and compliance monitoring.
+
+In LLM systems, epistemic mechanisms are critical for ensuring correctness and preventing hallucination. These include citation requirements, tool-based verification, provenance tracking, and cross-agent validation.
+
+
+\subsection{Incentive mechanisms (payoff-based influence)}
+Incentive mechanisms modify behavior by altering the costs and benefits of actions. These include rewards, penalties, fines, subsidies, and bonding mechanisms.
+
+In economic and institutional settings, incentive structures align individual self-interest with collective outcomes. Examples include fines for overuse of shared resources, performance bonuses, and token-based reward systems.
+
+In LLM-agent systems, incentives may be implemented through reward shaping, budget allocation, or penalties for inefficient or incorrect behavior.
+
+\subsection{Constraint mechanisms (access-based influence)}
+Constraint mechanisms limit the range or intensity of possible actions, often without requiring explicit punishment. These include quotas, rate limiting, throttling, and access restrictions.
+
+In human and technical systems, constraints are widely used to prevent over-extraction of shared resources. Examples include fishing quotas, bandwidth limits, and access control systems.
+
+In LLM systems, constraint mechanisms are particularly important for managing shared computational resources, including limits on tool calls, context windows, and execution frequency.
+
+\subsection{Restorative mechanisms (repair-based influence)}
+Restorative mechanisms aim to repair harm and reintegrate actors rather than simply punish them. These include restitution, repair labor, apology, and reintegration processes.
+
+In human systems, restorative approaches are often used to maintain group cohesion while addressing violations. Rather than excluding individuals, these systems focus on restoring the shared resource and repairing relationships.
+
+In LLM-agent systems, restorative mechanisms may involve assigning agents corrective tasks, such as cleaning shared memory, verifying outputs, or compensating for previous errors.
+
+\subsection{Enforcement architectures (implementation layer)}
+The most recognizable forms of sanctioning are implemented by formal institutions where enforce explicit rule systems are enforced by organizations, legal frameworks, or governance bodies. The most common examples which come to mind include laws and regulations, contracts, administrative enforcement, and organizational governance.
+
+While the preceding categories describe mechanisms of behavioral influence, they are instantiated through different enforcement architectures. These include:
+
+\begin{itemize}
+    \item informal community enforcement
+    \item formal institutional and legal systems
+    \item platform-based governance
+    \item decentralized infrastructures such as blockchain and smart contracts
+\end{itemize}
+
+These architectures determine how mechanisms are implemented, monitored, and enforced, particularly in low-trust or large-scale environments. For example, blockchain systems can simultaneously support incentive mechanisms (token rewards), constraint mechanisms (staking and slashing), and epistemic mechanisms (transparent audit logs).
+
+\subsection{Monitoring, adjudication, and enforcement processes}
+
+In practice, cooperation-shaping systems often involve multiple stages beyond the mechanisms themselves. These include:
+
+\begin{itemize}
+    \item \textbf{Monitoring}: observing and recording behavior (e.g., logging, audit trails, observability)
+    \item \textbf{Adjudication}: determining whether a violation has occurred (e.g., dispute resolution, arbitration)
+    \item \textbf{Enforcement}: applying a response (e.g., punishment, reward, restriction, or restoration)
+\end{itemize}
+
+Separating these stages clarifies where errors, bias, or system failures may arise, particularly in LLM-agent systems where observability and intent are often ambiguous.
+
+
+
+}
+
+
+
+
+\newpage
+\section*{Internal To-Do List}
+\addcontentsline{toc}{section}{Internal To-Do List}
+
+
+\subsection*{Core positioning}
+\begin{enumerate}
+  \item[$\square$] Finalize title.
+  \item[$\square$] Make sure the first page clearly states the position: multi-agent AI systems need institutional design, not just alignment.
+  \item[$\square$] Define ``sanctions'' broadly within the first two pages.
+  \item[$\square$] Make taxonomy serve the position rather than becoming the whole paper.
+  \item[$\square$] 
+  \item[$\square$] Ensure every major section supports one of the three claims: alignment alone is insufficient; sanctions are infrastructure; institutions must be benchmarked.
+\end{enumerate}
+
+\subsection*{Literature fact-checking}
+\begin{enumerate}
+  \item[$\square$] Ostrom common-pool resources and graduated sanctions.
+  \item[$\square$] Hardin tragedy of the commons.
+  \item[$\square$] Olson collective action / public goods.
+  \item[$\square$] Axelrod evolution of cooperation.
+  \item[$\square$] Axelrod metanorms.
+  \item[$\square$] Fehr and Gachter altruistic punishment.
+  \item[$\square$] Gneezy and Rustichini daycare fine / incentives crowding out cooperation.
+  \item[$\square$] Bowles on incentives and moral sentiments.
+  \item[$\square$] Literature on reputation, gossip, indirect reciprocity.
+  \item[$\square$] Literature on restorative justice and repair.
+  \item[$\square$] Governance / legal theory references for monitoring, adjudication, enforcement, and appeal.
+  \item[$\square$] Multi-agent LLM cooperation papers.
+  \item[$\square$] GovSim / generative agents / agent society simulation papers.
+  \item[$\square$] AI safety papers on multi-agent risks, collusion, delegation, tool use, and agentic systems.
+  \item[$\square$] Mechanism design / RL references if framing sanctions as institutional mechanisms.
+  \item[$\square$] Check whether ``digital commons'' terminology needs citations from commons / platform governance literature.
+\end{enumerate}
+
+\subsection*{Paper structure}
+\begin{enumerate}
+  \item[$\square$] Abstract.
+  \item[$\square$] Introduction.
+  \item[$\square$] Section: From aligned agents to governed agent societies.
+  \item[$\square$] Section: Cooperation as a design problem.
+  \item[$\square$] Section: Sanctions are infrastructure.
+  \item[$\square$] Section: Taxonomy of cooperation-shaping mechanisms.
+  \item[$\square$] Section: Design dimensions for agent institutions.
+  \item[$\square$] Section: Graduated sanctions and adaptive escalation.
+  \item[$\square$] Section: Experimental agenda.
+  \item[$\square$] Section: Alternative views and failure modes.
+  \item[$\square$] Section: Implications for AI safety and evaluation.
+  \item[$\square$] Conclusion.
+\end{enumerate}
+
+\subsection*{Taxonomy and tables}
+\begin{enumerate}
+  \item[$\square$] Decide final mechanism families: normative, social/reputational, epistemic, incentive, constraint, restorative, institutional/enforcement architecture.
+  \item[$\square$] Create Table 1 mapping mechanism family, human example, LLM-agent analogue, and failure mode.
+  \item[$\square$] Create Table 2 listing design dimensions: observer, adjudicator, enforcer, timing, reversibility, adaptivity, observability, gameability, repair, scale.
+  \item[$\square$] Decide whether enforcement architectures are a seventh family or a meta-layer.
+  \item[$\square$] Clarify distinction between mechanism family and implementation architecture.
+  \item[$\square$] Simplify phylogenetic taxonomy figure for two-column readability.
+  \item[$\square$] Add alt text or accessible caption notes for taxonomy figure.
+\end{enumerate}
+
+\subsection*{Experimental agenda and results}
+\begin{enumerate}
+  \item[$\square$] Clearly describe base game: public goods contribution.
+  \item[$\square$] Clearly describe enforcement game: agents choose sanctioning actions.
+  \item[$\square$] Define sanction menu: warning, escalating fine, punishment/reward, ostracism, metanorm, mediation, repair.
+  \item[$\square$] Define model set and number of agents per run.
+  \item[$\square$] Define number of rounds and seeds.
+  \item[$\square$] Define outcome metrics: mean contribution, stability, end-game defection, enforcement cost, false punishment, inequality of burden, repair success, cross-model robustness, gameability.
+  \item[$\square$] Fill in GovSim results subsections once runs complete.
+  \item[$\square$] Update Table 3 with multi-seed means $\pm$ standard deviation.
+  \item[$\square$] Add cross-game comparison table.
+  \item[$\square$] Add contribution trajectories over rounds.
+  \item[$\square$] Add mechanism vote distribution over rounds.
+  \item[$\square$] Add qualitative examples of agent reasoning or transcripts in appendix.
+  \item[$\square$] Clearly label preliminary observations as preliminary.
+\end{enumerate}
+
+\subsection*{Figures}
+\begin{enumerate}
+  \item[$\square$] Figure 1: Conceptual shift from aligned agents to governed agent societies.
+  \item[$\square$] Figure 2: Taxonomy of cooperation-shaping mechanisms.
+  \item[$\square$] Figure 3: Experimental testbed: base game, enforcement game, repeated rounds, outcome metrics.
+  \item[$\square$] Figure 4: Contribution trajectories over rounds, faceted by model and mechanism.
+  \item[$\square$] Figure 5: Mechanism vote distribution over rounds for menu simulation.
+  \item[$\square$] Check that all figures are legible in two-column NeurIPS format.
+  \item[$\square$] Remove figure titles inside image files and use captions instead.
+\end{enumerate}
+
+\subsection*{Alternative views and risks}
+\begin{enumerate}
+  \item[$\square$] Add subsection on sanctions crowding out intrinsic cooperation.
+  \item[$\square$] Add subsection on surveillance and over-monitoring.
+  \item[$\square$] Add subsection on reputation gaming.
+  \item[$\square$] Add subsection on punishment cascades and metanorm risks.
+  \item[$\square$] Add subsection on mediator capture or centralized bottlenecks.
+  \item[$\square$] Add subsection on restorative mechanisms becoming cheap talk.
+  \item[$\square$] Make clear that the paper does not argue sanctions always improve cooperation.
+\end{enumerate}
+
+\subsection*{NeurIPS positioning}
+\begin{enumerate}
+  \item[$\square$] Ensure the paper reads as a position paper, not only as a survey.
+  \item[$\square$] Add explicit statement of what the field should do differently.
+  \item[$\square$] Make the position contestable but well-supported.
+  \item[$\square$] Avoid overclaiming preliminary experimental findings.
+  \item[$\square$] Keep the main body within page limit.
+  \item[$\square$] Prepare broader impact / societal impact statement if required.
+  \item[$\square$] Confirm anonymity requirements and remove identifying details if needed.
+\end{enumerate}
+
+\subsection*{Writing cleanup}
+\begin{enumerate}
+  \item[$\square$] Remove duplicate abstract section.
+  \item[$\square$] Fix typo: ``family from human social systems'' $\rightarrow$ ``familiar from human social systems.''
+  \item[$\square$] Fix typo: ``all over world'' $\rightarrow$ ``around the world.''
+  \item[$\square$] Fix incomplete heading: \texttt{\textbackslash subsection\{Enforcement architectures (implementation layer\}}.
+  \item[$\square$] Replace ``white paper'' with ``position paper.''
+  \item[$\square$] Remove or soften ``human species is the only global-scale cooperating species on Earth.''
+  \item[$\square$] Replace vague phrases like ``many mechanisms enable this'' with specific mechanism families.
+  \item[$\square$] Remove all \texttt{\textbackslash lsc} TODOs.
+  \item[$\square$] Remove this internal to-do list before submission.
+\end{enumerate}
+
+\subsection*{Appendix}
+\begin{enumerate}
+  \item[$\square$] Add full mechanism menu prompts.
+  \item[$\square$] Add game instructions.
+  \item[$\square$] Add model details and run settings.
+  \item[$\square$] Add GovSim transcripts.
+  \item[$\square$] Add robustness checks.
+  \item[$\square$] Add supplementary taxonomy table if main table is too compact.
+\end{enumerate}
+
+
+\subsection{The unit of evaluation should expand from model to institution}
+The unit of AI safety evaluation should expand from the model to the model-in-institution.
+
+\subsection{Agent benchmarks should vary governance mechanisms}
+\subsection{Tool-use environments need explicit institutional policies}
+\subsection{Safe agent societies require appeal, repair, and re-entry}
+
+
+
+\subsection{Mechanism families}
+
+
+
+% VERTICAL TREE DIAGRAM
+% \begin{figure}[t]
+% \centering
+% \begin{adjustbox}{max width=\columnwidth,max totalheight=0.55\textheight}
+% \begin{tikzpicture}[
+%   grow'=right,
+%   level distance=2.5cm,
+%   level 1/.style={sibling distance=2.6cm},
+%   level 2/.style={sibling distance=0.75cm},
+%   edge from parent/.style={draw, -{Latex[length=2mm]}},
+%   every node/.style={align=left, font=\footnotesize},
+%   root/.style={font=\small\bfseries, text width=3.2cm, align=center},
+%   parent/.style={text width=2.7cm},
+%   leaf/.style={text width=2.0cm}
+% ]
+
+% \node[root] {Prosocial\\Governance\\Mechanisms}
+%   child { node[parent] {Normative\\(beliefs)}
+%     child { node[leaf] {social norms} }
+%     child { node[leaf] {cultural expectations} }
+%     child { node[leaf] {shared rules} }
+%   }
+%   child { node[parent] {Social\\(relationships)}
+%     child { node[leaf] {reciprocity} }
+%     child { node[leaf] {trust networks} }
+%     child { node[leaf] {gossip} }
+%     child { node[leaf] {partner selection} }
+%   }
+%   child { node[parent] {Epistemic\\(information)}
+%     child { node[leaf] {monitoring} }
+%     child { node[leaf] {auditing} }
+%     child { node[leaf] {transparency} }
+%     child { node[leaf] {verification} }
+%   }
+%   child { node[parent] {Incentive\\(payoffs)}
+%     child { node[leaf] {rewards} }
+%     child { node[leaf] {punishments} }
+%     child { node[leaf] {bonding} }
+%   }
+%   child { node[parent] {Constraint\\(limits)}
+%     child { node[leaf] {quotas} }
+%     child { node[leaf] {rate limiting} }
+%     child { node[leaf] {throttling} }
+%     child { node[leaf] {suspension} }
+%   }
+%   child { node[parent] {Restorative\\(repair)}
+%     child { node[leaf] {restitution} }
+%     child { node[leaf] {repair} }
+%     child { node[leaf] {reintegration} }
+%   };
+
+% \end{tikzpicture}
+% \end{adjustbox}
+% \caption{Compact taxonomy of cooperation-shaping mechanisms.}
+% \label{fig:taxonomy-compact}
+% \end{figure}
+
+% HORIZONTAL TREE DIAGRAM
+
+
+
+% TABLE
+% \begin{table*}[t]
+% \centering
+% \caption{Cooperation-shaping mechanisms across human and LLM-agent systems.}
+% \label{tab:taxonomy}
+% \begin{tabular}{p{0.14\linewidth} p{0.22\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
+% \toprule
+% \textbf{Family} & \textbf{Mode of influence} & \textbf{Human examples} & \textbf{LLM-agent analogues} \\
+% \midrule
+% Normative & Shapes beliefs and expectations & Social norms, taboos, authorship conventions & System prompts, constitutions, shared protocols \\
+% Social / reputational & Shapes future interaction through social memory & Gossip, trust, prestige, partner choice & Reputation scores, trust-based routing, selective collaboration \\
+% Epistemic & Makes behavior observable and verifiable & Audits, monitoring, peer review & Logs, provenance, citation checks, cross-agent verification \\
+% Incentive & Alters payoffs & Rewards, fines, deposits, subsidies & Token budgets, reward shaping, penalties for inefficient behavior \\
+% Constraint & Limits possible actions & Quotas, access control, throttling & Tool-call limits, sandboxing, rate limits, permissions \\
+% Restorative & Repairs harm and restores participation & Restitution, apology, repair labor, reintegration & Correction tasks, memory cleanup, re-verification, output repair \\
+% \bottomrule
+% \end{tabular}
+% \end{table*}
+
+
+
+% \paragraph{Decentralized infrastructures.}
+% Decentralized systems such as blockchain, smart contracts, and decentralized autonomous organizations (DAOs) represent a distinct class of enforcement architectures that combine multiple mechanisms simultaneously. These systems may integrate incentive mechanisms (e.g., token rewards), constraint mechanisms (e.g., staking and slashing), and epistemic mechanisms (e.g., transparent audit logs) within a single programmable infrastructure.
+
+
+
+% \subsection{Monitoring, adjudication, and enforcement layers}
+% In addition to cultivating cooperation, many systems have a multi-layered approach to implicitly monitor (detect behavior), adjudicate (determine violations), and enforce (apply sanctions).
+
+% The scope of monitoring may include logging, audit trails, and observability, while adjudication encompasses processes for dispute resolution, arbitration, and appeals. Then, enforcement usually involves applying sanctions in some form, such as punishment, reward, and/or exclusion.
+
+% These layers are often conflated in both human and AI systems, but separating them in this white paper helps to clarify where errors, bias, or system failures may arise.
+
+
+
+% \subsection{Design dimensions of sanctioning systems}
+% Across both human and artificial systems, cooperation mechanisms vary along several important design dimensions:
+
+% \begin{itemize}
+%     \item \textbf{Who enforces}: peers, institutions, platforms, or automated systems
+%     \item \textbf{When enforcement occurs}: ex ante (constraints) vs ex post (punishment or reward)
+%     \item \textbf{Reversibility}: whether sanctions can be undone or repaired
+%     \item \textbf{Centralization}: centralized vs decentralized enforcement
+%     \item \textbf{Observability}: whether behavior is transparent or hidden
+% \end{itemize}
+
+% These dimensions cut across all mechanism classes and shape how governance systems function in practice.
+
+% \subsection{Thick vs. thin trust systems}
+
+% Thick trust systems are built on relationships, norms, and shared identity. Some examples may include mutual aid, small communities, etc. They are relational, identity-rich, context-dependent, and flexible but harder to scale.
+
+% Thin trust systems are typically built on rules, contracts, and infrastructure. Examples may include markets, platforms, blockchain, etc. They are rule-based, identity-light or anonymous, standardized, and scalable but tend to be a bit brittle.
+
+% The future state of AI systems will likely require adaptive hybrid models built on a combination of relational trust for flexibility and cooperation and infrastructural enforcement for scale and reliability.
