@@ -14,3 +14,7 @@ ARCHIVAL_HANDOFF.md
 *.synctex.gz
 *.toc
 ai4good_main.pdf
+
+# Local poster design sources (reference only)
+archive/icml2026/ICML_Vangelo_24inx36in_Institution_Design_Poster.pptx
+archive/icml2026/ICML_Vangelo_24inx36in_Institution_Design_Poster.svg
