@@ -1,5 +1,6 @@
 # Local archival drafts
 old/
+ARCHIVAL_HANDOFF.md
 
 # LaTeX build directory and generated files
 .build/
@@ -13,4 +14,3 @@ old/
 *.synctex.gz
 *.toc
 ai4good_main.pdf
-
