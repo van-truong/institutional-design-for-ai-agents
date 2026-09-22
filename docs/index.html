@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A position paper and evolving evidence map for institutional design in multi-agent AI systems.">
+  <title>Institutional Design for AI Agents</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="poster-header" id="top">
+    <div class="header-grid">
+      <div>
+        <p class="kicker">AI4GOOD @ ICML 2026 · Spotlight paper</p>
+        <h1>Multi-Agent AI Systems Need Institutional Design,</h1>
+        <p class="title-second">Not Just Model-Level Alignment</p>
+      </div>
+      <a class="workshop-mark" href="https://github.com/van-truong/institutional-design-for-ai-agents">Paper<br>companion <span>↗</span></a>
+    </div>
+  </header>
+
+  <div class="author-strip-scroller">
+    <div class="author-strip" aria-label="Paper authors">
+      <div class="author">
+        <div class="portrait"><img src="assets/van-truong.jpg" alt="Van QT Truong"></div>
+        <p><sup>*</sup>Van QT<br>Truong</p>
+      </div>
+      <div class="author">
+        <div class="portrait portrait-angelo"><img src="assets/xuanqiang-angelo-huang.jpg" alt="Xuanqiang Angelo Huang"></div>
+        <p><sup>*</sup>X. Angelo<br>Huang</p>
+      </div>
+      <div class="author">
+        <div class="portrait"><img src="assets/erivan-inan.jpg" alt="Erivan Inan"></div>
+        <p>Erivan<br>Inan</p>
+      </div>
+      <div class="author">
+        <div class="portrait"><img src="assets/ryan-faulkner.jpg" alt="Ryan Faulkner"></div>
+        <p>Ryan<br>Faulkner</p>
+      </div>
+      <div class="author">
+        <div class="portrait"><img src="assets/joel-naoki-christoph.jpg" alt="Joël Naoki Christoph"></div>
+        <p>Joël N.<br>Christoph</p>
+      </div>
+      <div class="author">
+        <div class="portrait"><img src="assets/terry-jingchen-zhang.jpg" alt="Terry Jingchen Zhang"></div>
+        <p>Terry JC<br>Zhang</p>
+      </div>
+      <div class="author">
+        <div class="portrait"><img src="assets/david-guzman-piedrahita.jpg" alt="David Guzman Piedrahita"></div>
+        <p>David Guzman<br>Piedrahita</p>
+      </div>
+      <div class="author">
+        <div class="portrait"><img src="assets/zhijing-jin.jpg" alt="Zhijing Jin"></div>
+        <p>Zhijing<br>Jin</p>
+      </div>
+      <p class="author-note">* Equal co-first authors</p>
+    </div>
+  </div>
+
+  <nav aria-label="Primary navigation">
+    <a href="#position">Our position</a>
+    <a href="#framework">Framework</a>
+    <a href="#taxonomy">Taxonomy</a>
+    <a href="#parting-words">Parting words</a>
+  </nav>
+
+  <main>
+    <section id="position">
+      <h2>Our position</h2>
+      <div class="position-box">
+        Multi-agent AI safety requires intentional institutional design. Even individually aligned agents can produce collectively <em>unsafe</em> outcomes when sharing finite resources. We believe agent systems should be studied as <strong>governed systems</strong> whose institutions shape collective behavior.
+      </div>
+    </section>
+
+    <section class="problem-grid">
+      <div class="copy-block">
+        <h2>Problem</h2>
+        <h3>LLM agents are already embedded in real-world settings.</h3>
+        <p>Every day, teams of sub-agents—on your computer or on the Internet—must vie for and share finite tools and resources. Shared codebases, public databases, and compute form <em>artificial commons</em>, where classic collective-action failures can reappear.</p>
+        <p class="red-strip">Aligned individual agents do not simply add up to a cooperative society.</p>
+      </div>
+      <figure class="framed-figure poster-crop-figure">
+        <div class="crop-headings" aria-hidden="true">
+          <span>Familiar commons examples<br><small>in human social dilemmas</small></span>
+          <span>Artificial commons examples<br><small>in LLM-agent systems</small></span>
+        </div>
+        <div class="poster-crop">
+          <img src="assets/poster-position-framework.png" alt="Familiar human commons—pasture, river, and pond—alongside artificial commons shared by LLM agents: a power grid, database, and codebase.">
+        </div>
+        <figcaption>Human and artificial commons can face related collective-action problems.</figcaption>
+      </figure>
+    </section>
+
+    <section class="motivation rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>Motivational design space</h2>
+          <h3>We see cooperation-shaping patterns everywhere.</h3>
+        </div>
+        <p>Human communities have spent centuries trying warnings, sanctions, norms, appeals, repair, and other ways of living with shared resources. Some serve the greater good; others become coercive regimes.</p>
+      </div>
+      <div class="motivation-layout">
+        <figure class="paper-collage">
+          <img src="assets/cooperation-patterns.svg" alt="Nine hand-drawn notes showing people sharing fridges, quiet buildings, sidewalks, ponds, pastures, rivers, codebases, electrical grids, and shared knowledge.">
+        </figure>
+        <aside class="margin-thought">
+          <strong>The point is not to copy human institutions wholesale.</strong>
+          <p>It is to notice the range of arrangements people have already tried—and ask what transfers, what fails, and what must be designed differently for agent societies.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="framework" class="rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>Our current framework</h2>
+          <h3>Aligned individuals are not enough; group-level design is needed.</h3>
+        </div>
+        <p>We start with four cooperation dilemmas in human and LLM-agent systems. There are likely many, many more worth discussing too!</p>
+      </div>
+      <figure class="wide-figure">
+        <img src="assets/cooperation-dilemmas.svg" alt="Extractive, contributive, second-order, and repair dilemmas shown with human and LLM-agent examples.">
+      </figure>
+    </section>
+
+    <section id="taxonomy" class="taxonomy-section">
+      <div class="taxonomy-copy">
+        <div>
+          <h2>We mapped what’s in the literature to a unified taxonomy.</h2>
+          <p>Across legal and justice settings, economics, computing, anthropology, and community practice, we found recurring ways to shape cooperation. We brought examples of sanctioning, policy, social norms, mechanism design, and interaction protocols into one work-in-progress visual.</p>
+        </div>
+        <aside class="sticky-note">Our plan is to make every leaf clickable—and to keep the missing evidence visible.</aside>
+      </div>
+      <div class="taxonomy-interactive">
+        <figure class="taxonomy-figure">
+          <object id="taxonomy-map" data="assets/cooperation-taxonomy.svg" type="image/svg+xml" aria-label="Interactive radial taxonomy grouping cooperation-shaping mechanisms into six families.">
+            <img src="assets/cooperation-taxonomy.svg" alt="A radial taxonomy grouping cooperation-shaping mechanisms into six families.">
+          </object>
+        </figure>
+        <aside class="leaf-card" id="leaf-card" aria-live="polite">
+          <p class="leaf-card-label">Interactive taxonomy</p>
+          <h3 id="leaf-name">Choose a leaf</h3>
+          <p class="leaf-family" id="leaf-family">Hover, tap, or use the Tab key to explore.</p>
+          <p id="leaf-description">Each leaf will eventually connect to exact studies, examples, limitations, and open questions.</p>
+          <p class="evidence-status" id="leaf-status"><span></span> Evidence record not yet selected</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="research-agenda rule-top">
+      <h2>Charting a promising research agenda</h2>
+      <h3>It is worth asking: what are the best ways to capture cooperative outcomes?</h3>
+      <p>Capturing cooperation may require empirical, quantitative, qualitative, and interpretive methods. The practical question is which interaction levels and metrics are feasible to evaluate as group- and population-level dynamics become more complex.</p>
+      <div class="agenda-cards">
+        <article><span>01</span><strong>See the evidence</strong><p>Connect leaves to exact human, LLM-agent, and computational-agent studies.</p></article>
+        <article><span>02</span><strong>See the gaps</strong><p>Distinguish strong, weak, conflicting, and not-yet-curated coverage.</p></article>
+        <article><span>03</span><strong>Question the map</strong><p>Show limitations and open questions instead of treating citation count as quality.</p></article>
+        <article><span>04</span><strong>Help it grow</strong><p>Welcome reviewed corrections and additions through GitHub.</p></article>
+      </div>
+    </section>
+
+    <section id="parting-words" class="parting-words">
+      <p class="hand-note">Final parting words</p>
+      <blockquote>So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions.</blockquote>
+      <p>Even if capable AI systems eventually design and run those institutions themselves, today’s choices may be amplified in future AI agent economies and societies.</p>
+      <div class="closing-links">
+        <a href="https://github.com/van-truong/institutional-design-for-ai-agents">Explore the project on GitHub →</a>
+        <a href="mailto:scientistvan@gmail.com">Please reach out if you ever want to chat!</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Institutional Design for AI Agents</strong>
+    <span>An evolving companion to the archival paper</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
