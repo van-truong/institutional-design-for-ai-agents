@@ -55,7 +55,7 @@ Draft spreadsheet values to verify:
 - **Title:** `Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment`
 - **Given names:** `Van QT; Xuanqiang Angelo; Erivan; Ryan; Joël Naoki; Terry Jingchen; David; Zhijing`
 - **Family names:** `Truong; Huang; Inan; Faulkner; Christoph; Zhang; Guzman Piedrahita; Jin` — confirm that `Guzman Piedrahita` is indexed as one compound family name.
-- **Affiliation mapping:** Truong (1, 2, 3); Huang (2, 3, 4, 5); Inan (2, 3); Faulkner (2, 3); Christoph (6); Zhang (2, 3); Guzman Piedrahita (2, 3, 4); Jin (2, 3, 7). Confirm the seven numbered affiliations against the paper before transcribing them.
+- **Affiliation mapping:** Truong (1, 2); Huang (2, 3, 4, 5); Inan (2, 3); Faulkner (2, 3); Christoph (6); Zhang (2, 3); Guzman Piedrahita (2, 3, 4); Jin (2, 3, 7). Van QT Truong is no longer affiliated with EuroSafeAI. Confirm the seven numbered affiliations against the paper before transcribing them.
 - **Affiliations:** 1—University of Pennsylvania, Philadelphia, PA, USA; 2—Jinesis Lab, University of Toronto and Vector Institute, Toronto, Canada; 3—EuroSafeAI; 4—ETH Zürich, Zürich, Switzerland; 5—Institute for Decentralized AI, Oxford, UK; 6—Harvard Kennedy School, Cambridge, MA, USA; 7—Max Planck Institute for Intelligent Systems, Tübingen, Germany.
 - **Corresponding author:** `Van QT Truong`; `scientistvan@gmail.com`. The manuscript still needs an explicit corresponding-author marker.
 - **Still needed from authors:** all remaining author emails; all ORCIDs; optional indexing notes; final title approval; and confirmation of supplementary material and third-party permissions.
