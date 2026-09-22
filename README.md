@@ -29,12 +29,24 @@ The review PDF shows flagged claims in red. The switches near the top of `manusc
 - [x] **Citation rendering:** replace incompatible author-bearing citations; the review PDF no longer contains `(author?)`.
 - [ ] **Final PDF check:** turn off review colors, resolve remaining bibliography metadata warnings, and check for unresolved references, visible comments, clipping, and source/PDF mismatch.
 
-## LNCS final submission
+## LNCS final submission (Van will submit after co-authors verify their info)
 
 - [x] Use the official Springer LNCS proceedings template.
 - [ ] Finalize the title, author names and order, affiliations, running head, and name-rendering instructions. Mark **exactly one** corresponding author and include that person's email; authorship cannot change after delivery to Springer.
 - [ ] Include the required Disclosure of Interests statement. Resolve any third-party permissions and approved supplementary-material files; add figure alt text if available.
 - [ ] Complete the [AI4GOOD author metadata sheet](https://docs.google.com/spreadsheets/d/1Y90xfC0UPxPT60WwL3coFsegIEaLlC78iyCaVnYzb9I/edit?usp=sharing) with the OpenReview submission number, final title, separated given/family names, affiliations, exactly one corresponding author, corresponding-author email, every author email, and every ORCID. Preserve the publication order and separate multiple entries with semicolons.
+
+Draft spreadsheet values to verify:
+
+- **Title:** `Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment`
+- **Given names:** `Van QT; Xuanqiang Angelo; Erivan; Ryan; Joël Naoki; Terry Jingchen; David; Zhijing`
+- **Family names:** `Truong; Huang; Inan; Faulkner; Christoph; Zhang; Guzman Piedrahita; Jin` — confirm that `Guzman Piedrahita` is indexed as one compound family name.
+- **Affiliation mapping:** Truong (1, 2, 3); Huang (2, 3, 4, 5); Inan (2, 3); Faulkner (2, 3); Christoph (6); Zhang (2, 3); Guzman Piedrahita (2, 3, 4); Jin (2, 3, 7). Confirm the seven numbered affiliations against the paper before transcribing them.
+- **Affiliations:** 1—University of Pennsylvania, Philadelphia, PA, USA; 2—Jinesis Lab, University of Toronto and Vector Institute, Toronto, Canada; 3—EuroSafeAI; 4—ETH Zürich, Zürich, Switzerland; 5—Institute for Decentralized AI, Oxford, UK; 6—Harvard Kennedy School, Cambridge, MA, USA; 7—Max Planck Institute for Intelligent Systems, Tübingen, Germany.
+- **Still needed from authors:** OpenReview number; explicit choice of one corresponding author; all author emails; all ORCIDs; optional indexing notes; and confirmation of supplementary material and third-party permissions. The paper currently contains only `scientistvan@gmail.com` and does not explicitly mark correspondence.
+- **Current status fields:** source format is `LaTeX`; Disclosure of Interests and signed LTP are not yet complete; final authorship/order and final PDF/source match remain pending.
+- Leave `Organizer: Part / Topical Section`, `Organizer: Starting Page / Sequence No.`, and `Organizer: Paper Number in Submission Folder` blank for the organizers unless instructed otherwise.
+
 - [ ] Complete the [pre-filled Springer Licence-to-Publish form](https://docs.google.com/document/d/1JD0O4ZdV08ZwD7Os7CmzxDF3gm_FQFae/edit?usp=sharing). The corresponding author must match the paper and metadata sheet, have authority to sign for all authors, and provide a handwritten signature. The proceedings field must read `Trustworthy AI for Good Workshop (AI4GOOD@ICML 2026)`. Contact the organizers first for Open Choice or special copyright forms.
 - [ ] Prepare one clean final source set using short filenames: all TeX, figures, required style/font files, bibliography files including `.bib` and `.bbl`, and the exactly matching final PDF. Include actual files—not links—and exclude older versions.
 - [ ] Create exactly one `OpenReview_<SubmissionNumber>_<FirstAuthorLastName>.zip` containing the final PDF, complete source, signed LTP, and any applicable permissions or supplementary material. Upload it to the [AI4GOOD author-submissions folder](https://drive.google.com/drive/folders/1Pt1cvqcWZGlNgVKuyEwlLPJ_Hm3sA_oI?usp=sharing).
