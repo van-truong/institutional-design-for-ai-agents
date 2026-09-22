@@ -16,6 +16,13 @@ The build regenerates vector figures from the editable HTML files in `manuscript
 
 The review PDF shows flagged claims in red. The switches near the top of `manuscript.tex` can hide those flags for the final PDF or show named `\VAN{}`, `\ANG{}`, `\ERI{}`/`\ERIVAN{}`, and other inline author comments during editing.
 
+### Review PDF color key
+
+- **Blue body text:** prose proposed by Van for the archival revision (`\vqt{}`).
+- **Dark red body text:** claims or wording that need the human review listed below (`\REVIEWFLAG{}`).
+- **Named inline comments:** hidden by default; when enabled, Van is blue, Angelo is orange, Erivan is violet, Ryan is teal, and Joel is magenta.
+- Review colors are controlled by the switches near the top of `manuscript.tex` and should be disabled in the final archival PDF.
+
 ## Co-author review
 
 - [ ] **Author metadata:** confirm co-first authorship for Van Truong and Xuanqiang Angelo Huang; Van QT Truong as the sole corresponding author (`scientistvan@gmail.com`); affiliations; ORCIDs; disclosures; and contribution statement. The corresponding-author designation still needs to be marked explicitly in the manuscript.
@@ -28,7 +35,7 @@ The review PDF shows flagged claims in red. The switches near the top of `manusc
 - [ ] **Flash Crash:** correct the claim that trade-cancellation rules were created only after 2010; the SEC approved cross-exchange rules in 2009.
 - [ ] **Evidence claims:** verify the daycare-study interpretation, AWS smart-bed anecdote, Amazon textbook price, 1929 comparison, Ostrom community-size figures, claims that surveys or benchmarks demonstrate deployed AI systems, and categorical claims about current agents' institutional capacities.
 - [ ] **Scope and voice:** approve only small, source-backed corrections. Avoid restructuring the paper, adding new empirical claims, or flattening the authors' voice.
-- [ ] **Conceptual bridge:** consider a short explanation connecting cooperation dilemmas, institutional functions, mechanism families, and evaluation dimensions.
+- [x] **Conceptual bridge:** added a short explanation connecting cooperation dilemmas, institutional functions, mechanism families, and evaluation dimensions; awaiting co-author approval in blue.
 - [ ] **Evaluation example:** consider sharpening one existing example with a baseline, intervention, repeated trials, and success and failure measures.
 - [ ] **Figure source refinement:** fix overrunning or clipped text in the editable HTML figures, refine spacing and visual hierarchy, regenerate every vector PDF, and inspect the figures at their final LNCS print size.
 - [ ] **Figures and format:** verify Figure 5's stated counts, figure order and captions, readability, corresponding-author placement, and all LNCS submission requirements.

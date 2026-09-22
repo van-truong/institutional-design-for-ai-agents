@@ -58,7 +58,6 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 \ifshowauthorcomments
   \newcommand{\ANG}[1]{{\color{orange}*ANG: #1}}
   \newcommand{\VAN}[1]{{\color{blue}VAN: #1}}
-  \newcommand{\vqt}[1]{{\color{blue}#1}}
   \newcommand{\TODO}[1]{{\color{red}*TODO: #1}}
   \newcommand{\REVISED}[1]{{\color{purple}#1}}
   \newcommand{\ERI}[1]{{\color{violet}ERIVAN: #1}}
@@ -67,7 +66,6 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 \else
   \newcommand{\ANG}[1]{}
   \newcommand{\VAN}[1]{}
-  \newcommand{\vqt}[1]{#1}
   \newcommand{\TODO}[1]{}
   \newcommand{\REVISED}[1]{#1}
   \newcommand{\ERI}[1]{}
@@ -78,6 +76,8 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 
 % Red text marks claims that need the co-author review listed in README.md.
 \newcommand{\REVIEWFLAG}[1]{\ifshowreviewflags{\color{red!75!black}#1}\else#1\fi}
+% Blue text marks prose proposed by Van for the archival revision.
+\newcommand{\vqt}[1]{\ifshowreviewflags{{\color{blue}#1}}\else#1\fi}
 
 % Color list: https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
     
@@ -158,6 +158,8 @@ The institutional question is also no longer confined to software. Autonomous sy
 \citep{ackerman2026humanoid,korosec2025waymo,robotreport2025serve, dafoe2021cooperative}.
 These systems need not constitute a fully autonomous ``AI economy'' to raise institutional questions: once agents share scarce resources and common spaces, their behavior is shaped by the rules, oversight, and repair procedures of the environment along with their individual training~\citep{huang2026mechanismdesignenoughprosocial,piatti2024govsim}. %\ERI{"as much as" is a strong claim with no citation. Is this established anywhere in the literature or is this our conjecture?} \VAN{This is our conjecture and I'm very fine with it because this is a position paper so we have to take strong opinions (w/ supporting cues) to steer people's thinking and research applications. This way we can all go forth \& establish exactly this in future literature.} \ERI{Makes sense!}
 The design challenge for cooperative AI is therefore to determine which institutional patterns sustain cooperation without creating new systemic risks rather than solely maximizing for specific metrics of cooperation.
+
+\vqt{Here is how we approach the problem. We begin with familiar commons and then ask what changes when the actors are AI agents. From there, we distinguish what institutions need to do from the mechanisms they use to shape behavior, before considering how these systems might be evaluated.}
 
 
 \textbf{Our contributions.} This position paper makes three contributions. \textbf{First}, we show how institutions are necessary for AI safety, building on Hammond et al.'s statement that group-level failures can arise even when individual agents appear aligned~\citep{hammond2025multiagentrisksadvancedai}.
@@ -667,6 +669,8 @@ This paper has argued that multi-agent AI safety requires evaluating the \emph{m
 Sanctions are central to this agenda because they are where institutional rules acquire consequences. \ANG{Have we ever defined how does it have \textit{consequences?} have we defined the why it has to be embeeded later?} \VAN{we don't, but we could easily define anything semantic in appendix like a dictionary key and refer like that to keep brevity. I think this is just a paraphrase of a some definitions that poli sci ppl probably know by heart but CS/AI ppl don't} \ANG{1 July, I think if that is central we should define or describe it somewhere in the middle. we use the same term in the abstract afaik}
 Yet sanctions and internal model guardrails, alone, are not enough. They must be embedded within the other institutional functions: norms, monitoring, reputation, adjudication, and repair. Poorly designed sanctions can crowd out cooperation, encourage malicious compliance, amplify surveillance, produce punishment cascades, entrench authority asymmetries, or enable collusion against human oversight. Human cooperation research makes the broader lesson clear: the mechanisms that sustain cooperation can also create hidden costs.
 The safety problem is therefore not only how to make agents cooperate. It is how to prevent cooperation mechanisms from becoming coercive, exclusionary, polarizing, or brittle. Future AI safety research should evaluate not only whether individual agents behave well, but whether the institutions governing agent societies can prevent interaction failures without creating new systemic risks.
+
+\vqt{We do not yet have all the answers for this research agenda. We offer this framework as something researchers can test, question, and improve as multi-agent systems become more capable and consequential. So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions---even if capable AI systems can eventually design and run those institutions themselves.}
 
 % \begin{feedbackbox}
 % \TODO{Feedback to comment out before submission.} % Don't delete, just comment out at the end so we have record of these productive exchanges esp to improve PaperMentor 2.0!
