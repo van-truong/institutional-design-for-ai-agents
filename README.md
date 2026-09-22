@@ -21,6 +21,7 @@ The review PDF shows flagged claims in red. The switches near the top of `manusc
 - **Blue body text:** prose proposed by Van for the archival revision (`\vqt{}`).
 - **Dark red body text:** claims or wording that need the human review listed below (`\REVIEWFLAG{}`).
 - **Named inline comments:** hidden by default; when enabled, Van is blue, Angelo is orange, Erivan is violet, Ryan is teal, and Joel is magenta.
+- **Other editing markup:** when inline comments are enabled, general revised text is purple (`\REVISED{}`) and TODO notes are red (`\TODO{}`).
 - Review colors are controlled by the switches near the top of `manuscript.tex` and should be disabled in the final archival PDF.
 
 ## Co-author review
