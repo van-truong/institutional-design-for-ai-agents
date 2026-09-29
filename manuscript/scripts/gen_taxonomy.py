@@ -106,9 +106,14 @@ def build():
         for i in range(MAX_SQ):
             x = xr - (MAX_SQ - i) * (SQ + SQ_GAP)
             fill = mid if i < n else '#FFFFFF'
-            stroke = mid if i < n else HAIR
+            stroke = mid
             s.append(f'<rect x="{x:.1f}" y="{y - SQ / 2:.1f}" width="{SQ}" height="{SQ}" rx="1" fill="{fill}" stroke="{stroke}" stroke-width="0.8"/>')
         return ''.join(s)
+
+    def elbow(ax, ay, bx, by, mid):
+        """Website-style connector: a smooth elbow from a parent node down and across to a child node."""
+        return (f'<path d="M{ax:.1f} {ay:.1f} C{ax:.1f} {by:.1f} {ax:.1f} {by:.1f} {bx:.1f} {by:.1f}" '
+                f'fill="none" stroke="{mid}" stroke-width="1.2" opacity="0.6"/>')
 
     for ci, col in enumerate(COLUMNS):
         x0 = PAD + ci * (COL_W + COL_GAP); xr = x0 + COL_W
@@ -117,21 +122,23 @@ def build():
             label, dark, mid, tids = FAMILIES[f]
             o.append(f'<text class="fam" x="{x0:.1f}" y="{y + 9:.1f}" fill="{dark}">{esc(label.upper())}</text>')
             o.append(f'<line x1="{x0:.1f}" y1="{y + 15:.1f}" x2="{xr:.1f}" y2="{y + 15:.1f}" stroke="{mid}" stroke-width="1.6"/>')
+            fam_node = (x0 + 3, y + 15)
             y += FAM_ROW
             for t in tids:
                 tname, mechs = themes[t]
-                ty = y + 9
-                o.append(f'<text class="theme" x="{x0 + 6:.1f}" y="{ty:.1f}" fill="{dark}">{esc(THEME_SHORT.get(tname, tname))}</text>')
+                ty = y + 5
+                theme_node = (x0 + 12, ty)
+                o.append(elbow(*fam_node, theme_node[0] - 3.4, ty, mid))
+                o.append(f'<circle cx="{theme_node[0]:.1f}" cy="{ty:.1f}" r="3.2" fill="#FFFFFF" stroke="{mid}" stroke-width="1.6"/>')
+                o.append(f'<text class="theme" x="{x0 + 20:.1f}" y="{ty + FS["theme"] * 0.35:.1f}" fill="{dark}">{esc(THEME_SHORT.get(tname, tname))}</text>')
                 y += THEME_ROW
-                spine_top = y - 3
                 for r in mechs:
                     ly = y + ROW / 2 - 2
-                    o.append(f'<line x1="{x0 + 10:.1f}" y1="{ly:.1f}" x2="{x0 + 18:.1f}" y2="{ly:.1f}" stroke="{mid}" stroke-width="1.1" opacity="0.7"/>')
-                    o.append(llm_marker(x0 + 24, ly, r, dark))
-                    o.append(f'<text class="leaf" x="{x0 + 33:.1f}" y="{ly + FS["leaf"] * 0.35:.1f}">{esc(SHORT.get(r["mechanism"], r["mechanism"]))}</text>')
+                    o.append(elbow(theme_node[0], ty + 3.2, x0 + 24.5, ly, mid))
+                    o.append(llm_marker(x0 + 28, ly, r, dark))
+                    o.append(f'<text class="leaf" x="{x0 + 37:.1f}" y="{ly + FS["leaf"] * 0.35:.1f}">{esc(SHORT.get(r["mechanism"], r["mechanism"]))}</text>')
                     o.append(squares(xr, ly, breadth(r), mid))
                     y += ROW
-                o.append(f'<line x1="{x0 + 10:.1f}" y1="{spine_top:.1f}" x2="{x0 + 10:.1f}" y2="{y - ROW / 2 - 2:.1f}" stroke="{mid}" stroke-width="1.6"/>')
                 y += GAP_THEME
             y += GAP_FAM
 
