@@ -50,7 +50,16 @@ evidence supports it.
 5. **Group.** Mechanisms are grouped into higher-level themes (the primitives). The 17 seed
    primitives are the starting frame, and they are revised when the coded mechanisms do not
    fit them.
-6. **Ending conditions** (Nickerson, Varshney & Muntermann, 2013). Iteration stops when
+6. **Configurations (`configurations.csv`).** Mechanisms stay single levers, so each
+   instance has one home. Named combinations of levers are recorded one layer up as
+   configurations: Ostrom's design principles, carrot-and-stick, proof-of-stake, an agent
+   governance stack. Each lists its component mechanisms, how it was evaluated
+   (`combination_tested`, `comparison`, `system`, `proposal`, `review`, `theory`), and how
+   the levers interact (`complementary`, `substitute`, `interference`, `not_assessed`). The
+   interaction code is taken only from the evidence the source reports. Codes that name a
+   combination, not one lever, are moved to this layer (e.g., the former M24 "combined
+   carrot & stick" is now C03).
+7. **Ending conditions** (Nickerson, Varshney & Muntermann, 2013). Iteration stops when
    the last pass over new instances produces no new mechanism and no merge or split, and
    every mechanism has at least one instance.
 
