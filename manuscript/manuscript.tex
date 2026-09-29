@@ -98,11 +98,11 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 % \section{Abstract}
 Autonomous AI agents powered by large language models are increasingly embedded in multi-agent settings, where success depends on cooperation and sharing tools, finite resources, and decision authority. These shared resources form artificial commons, where well-known collective-action failures can reappear. Current alignment techniques, which primarily evaluate individual models for their appropriate responses to humans, are insufficient to address these emergent system-level dynamics.
 \textbf{This position paper argues that future AI safety research should evaluate agent societies as governed systems, in addition to collections of individually aligned models.}
-We use sanctions to illustrate one axis where institutional rules acquire practical consequences and reveal the broader institutional structures that shape cooperation.
+% CUT (reviewer pass, #2): "We use sanctions to illustrate one axis where institutional rules acquire practical consequences and reveal the broader institutional structures that shape cooperation." -- sanctions are now folded into contribution 2.
 We make three contributions.
-\textbf{First}, we argue for evaluating the \emph{model-in-institution}, since individually aligned agents can still produce collectively harmful outcomes through agent-group interactions.
-\textbf{Second}, we distinguish sanctions from the broader institutional functions that give them meaning and legitimacy.
-\textbf{Third}, we propose an evaluation agenda for testing cooperation-shaping institutions across repeated multi-agent dilemmas, varying not only model family and task, but also resource structure, group composition, enforcement architecture, and repair pathways.
+\voice{\textbf{First}, we argue that the \emph{model-in-institution}, not the individual model, should be the unit of design and evaluation, since individually aligned agents can still produce collectively harmful outcomes, and that humans should choose the values an institution enforces.}
+\voice{\textbf{Second}, we distinguish seven institutional functions (what an institution must do) from six mechanism families (how it shapes behavior), grounded in a cross-disciplinary taxonomy of 73 cooperation-shaping mechanisms; sanctions emerge as one function among seven, meaningful only alongside norms, monitoring, adjudication, and repair.}
+\voice{\textbf{Third}, we propose a two-way evaluation design that varies both the agents and the institution (resource structure, group composition, enforcement architecture, and repair pathways) and scores cooperation together with its costs, including enforcement burden, false punishment, and resistance to human oversight.}
 \textbf{Our goal is to design agent institutions that sustain \emph{beneficial} forms of cooperation, rather than simply maximizing cooperation as an end in itself.}
 
 \keywords{Multi-agent AI \and AI agents \and Cooperation \and Institutional design \and AI safety}
@@ -172,9 +172,10 @@ The design challenge for cooperative AI is therefore to determine which institut
 \vqt{Here is how we approach the problem. We begin with familiar commons and then ask what changes when the actors are AI agents. From there, we distinguish what institutions need to do from the mechanisms they use to shape behavior, before considering how these systems might be evaluated.}
 
 
-\textbf{Our contributions.} This position paper makes three contributions. \textbf{First}, we show how institutions are necessary for AI safety, building on Hammond et al.'s statement that group-level failures can arise even when individual agents appear aligned~\citep{hammond2025multiagentrisksadvancedai}.
-\textbf{Second}, we distinguish seven institutional functions needed for cooperative agent societies (e.g., norms, monitoring, reputation, sanctions, constraints, adjudication, and repair) and organize the underlying mechanisms into six families according to how they shape behavior (e.g., beliefs, relationships, information, payoffs, constraints, and repair).
-\textbf{Third}, we map each function to concrete LLM-agent design choices and propose evaluation criteria for testing whether these institutions sustain cooperation across models and repeated interactions.
+\textbf{Our contributions.} This position paper makes three contributions.
+\voice{\textbf{First}, building on Hammond et al.'s observation that group-level failures can arise even when individual agents appear aligned~\mbox{\citep{hammond2025multiagentrisksadvancedai}}, we argue that the \emph{model-in-institution}, not the individual model, should be the unit of design and evaluation, and that humans should choose the values an institution enforces (Section~\mbox{\ref{sec:institutional-design}}).}
+\voice{\textbf{Second}, we distinguish seven institutional functions (norms, monitoring, reputation, sanctions, constraints, adjudication, and repair) from six mechanism families that describe how behavior is shaped (normative, social, epistemic, incentive, constraint, and restorative), ground them in a cross-disciplinary taxonomy of 73 mechanisms, and analyze how these mechanisms can fail (Sections~\mbox{\ref{sec:functions}} and~\mbox{\ref{sec:failures}}).}
+\voice{\textbf{Third}, we propose a two-way evaluation design that varies both the agents and the institution and scores cooperation together with its costs, including enforcement burden, false punishment, and resistance to human oversight (Section~\mbox{\ref{sec:design_dim}}).}
 
 The remainder of this paper proceeds as follows. Section~\ref{sec:institutional-design} motivates institutional design as a complement to model-level alignment. We then introduce a taxonomy of institutional functions and cooperation-shaping mechanism families for multi-agent AI systems.
 Next, we examine how institutional mechanisms can fail, including incentive distortions, reputation gaming, and authority capture.
@@ -322,7 +323,7 @@ The report alluded to MAS institutional response in disparate sections, but did 
 
 % \VAN{June 30 - 4pm cleaned up to this point and will take a dinner break}
 % ==============================================
-\section{Institutional Functions for Cooperative Agent Societies}
+\section{Institutional Functions for Cooperative Agent Societies}\label{sec:functions}
 % ==============================================
 
 % \subsection{Sanctions are consequential responses, not governance itself}
