@@ -72,8 +72,7 @@ def build():
                '.rootsub{font-size:11px;font-style:italic;fill:#5F5E5A;text-anchor:middle}'
                '</style>')
     # title
-    out.append(f'<text class="root" x="{W/2:.1f}" y="30">Cooperation-shaping mechanisms</text>')
-    out.append(f'<text class="rootsub" x="{W/2:.1f}" y="48">73 mechanisms · six families · ten disciplines</text>')
+    out.append(f'<text class="root" x="{W/2:.1f}" y="34">Cooperation-shaping mechanisms for agent groups</text>')
 
     for ci, col in enumerate(COLUMNS):
         ox = LEFT_PAD + ci*(PANEL_W+PANEL_GAP)
