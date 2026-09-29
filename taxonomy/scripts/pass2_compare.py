@@ -40,6 +40,9 @@ def main():
     p2 = {p['instance_id']: p for p in P2}
     book = {r['mechanism_id']: r for r in csv.DictReader(open(os.path.join(TAX, 'codebook.csv')))}
     inst = {r['instance_id']: r for r in csv.DictReader(open(os.path.join(TAX, 'instances.csv')))}
+    vpath = os.path.join(TAX, 'coding', 'disagreements.csv')
+    VERIFIER = {v['instance_id']: v for v in csv.DictReader(open(vpath))} if os.path.exists(vpath) else {}
+    VERIFIER = {k: v for k, v in VERIFIER.items() if v.get('decision', '').strip()}
     missing = sorted(set(inst) - set(p2))
     if missing: print(f'WARNING: {len(missing)} instances lack pass-2 codes')
 
@@ -57,6 +60,15 @@ def main():
         r['mechanism'] = m2 if m2 in book else (m1 if q.get('kind') in ('mechanism', 'configuration') else '')
         if iid in OVERRIDES:
             r['kind'], r['mechanism'], _ = OVERRIDES[iid]
+        v = VERIFIER.get(iid)
+        if v:  # verifier decisions win over both passes
+            d = v['decision'].strip()
+            if d == 'p1': r['mechanism'] = m1
+            elif d == 'p2': r['mechanism'] = m2
+            elif d in ('phenomenon', 'out_of_scope'): r['kind'], r['mechanism'] = d, ''
+            elif d in book: r['mechanism'] = d
+            else: raise SystemExit(f'{iid}: bad verifier decision {d!r}')
+            r['verified'] = v.get('verifier', 'VQT')
         single1 = m1 in book
         single2 = q.get('kind') == 'mechanism' and m2 in book
         if single1 and single2:
@@ -94,7 +106,9 @@ def main():
         b.update(n_instances=len(rs), n_secondary=len(sec), n_llm=sum(r['agent_type'] == 'llm' for r in rs),
                  n_marl=sum(r['agent_type'] == 'marl' for r in rs), n_seed=len(rs) - len(nonseed),
                  llm_tested_studies=art('llm', 'tested'), llm_proposed_studies=art('llm', 'proposed'), marl_tested_studies=art('marl', 'tested'),
-                 n_disciplines=len(disc), disciplines=';'.join(f'{d}:{n}' for d, n in disc.most_common()))
+                 n_disciplines=len(disc), disciplines=';'.join(f'{d}:{n}' for d, n in disc.most_common()),
+                 disciplines_all=';'.join(f'{d}:{n}' for d, n in collections.Counter(
+                     d for r in rs for d in r['discipline'].split(';') if d).most_common()))
     bcols = list(rows[0].keys())
     with open(os.path.join(TAX, 'codebook.csv'), 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=bcols); w.writeheader(); w.writerows(rows)
