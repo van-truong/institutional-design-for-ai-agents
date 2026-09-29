@@ -4,7 +4,7 @@ BUILD_DIR := .build
 
 .PHONY: pdf figures clean
 
-pdf: figures
+pdf:
 	mkdir -p $(BUILD_DIR)
 	latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=$(BUILD_DIR) $(SOURCE)
 	cp $(BUILD_DIR)/manuscript.pdf $(PDF)

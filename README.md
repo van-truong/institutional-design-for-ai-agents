@@ -14,7 +14,7 @@ Build the paper with:
 make pdf
 ```
 
-The build regenerates vector figures from the editable HTML files in `manuscript/figs/` and writes `springer-lncs-proceedings.pdf`. Inkscape is not required.
+The build uses the submission-ready vector PDFs in `manuscript/figures/` and writes `springer-lncs-proceedings.pdf`. Run `make figures` only when intentionally regenerating those PDFs from the editable HTML files in `manuscript/figs/`. Inkscape is not required.
 
 The review PDF shows flagged claims in red. The switches near the top of `manuscript.tex` can hide those flags for the final PDF or show named `\VAN{}`, `\ANG{}`, `\ERI{}`/`\ERIVAN{}`, and other inline author comments during editing.
 
