@@ -172,6 +172,8 @@ agent societies), whether or not they test a mechanism. These papers may have em
 `emergent_culture`, `emergent_norms`, `emergent_communication`, `emergent_structure`,
 `collective_dynamics`, `emergent_collusion`, `agent_societies`, `emergent_institutions`.
 
+**Earlier searches.** The authors ran manual and AI-assisted literature searches in April, May, and June 2026. These produced the original working spreadsheet, which became the Phase 1 seed.
+
 **Run.** Six slices (G1–G6) covering the 17 primitives, plus G7, each run by an LLM search agent
 on 2026-09-29. The merge de-duplicates papers by arXiv ID, then DOI, then normalized
 title. It added one mechanism the seed lacked (P04-06, peer reward / gifting) and
