@@ -156,6 +156,25 @@ on 2026-09-29. The merge de-duplicates papers by arXiv ID, then DOI, then normal
 title. It added one mechanism the seed lacked (P04-06, peer reward / gifting) and
 reconciled citation keys that differed between slices (`KEY_ALIASES` in the script).
 
+**Instance slices (2b).** I_A covers social and life sciences, I_B technical and
+sociotechnical systems, and I_C AI-agent governance gaps. `scripts/build_instances.py`
+combines them with the search papers and the seed's human examples into `instances.csv`.
+
+### Search status: resume when the web-search budget resets
+
+The session's web-search budget (200 queries) ran out during G7, so the three instance
+slices ran with reduced coverage. They are **not complete** and should be re-run or
+extended with web search:
+
+| Slice | What happened | Resume with |
+|---|---|---|
+| G7 (emergent behavior) | Finished on arXiv API searches after the budget ran out | Post-2018 MARL emergent communication; Y Social / S3 social-network simulators; leader emergence among LLM agents |
+| I_A (social sciences) | No web search. Sources were recalled, and every DOI was checked on Crossref (28 recalled DOIs corrected). 88 of 105 instances are `located_via=search`: the paper exists, but the description was coded from recall, not the source | Open each source and check `description`/`evidence`; sociology is thin (1 instance); add Greif 1993, Mauss, Braithwaite (books), IAEA safeguards, escrow |
+| I_B (technical systems) | No web search. Recalled, checked on Crossref and by fetching docs and RFCs; 28 of 95 are `search`; some numbers are marked "(from memory)" | Piatek 2007 and Kalodner 2018 (USENIX pages blocked); a Kleros primary source; multi-robot systems |
+| I_C (AI-agent gaps) | arXiv API only; coded from abstracts | METR and Cooperative AI Foundation reports; the A2A / AP2 / MCP permission specs; 2025 AI Agent Index (arXiv 2602.17753); venue labels filled in from memory |
+
+A resumed slice writes to the same file name; re-running `build_instances.py` picks it up.
+
 ## 6. Verification
 
 Every record is checked by the verifier against its cited source before it is marked
