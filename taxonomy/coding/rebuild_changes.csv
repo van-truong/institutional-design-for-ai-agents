@@ -1,0 +1,246 @@
+instance_id,field,old,new
+I0002,description,"Rotating savings and credit associations: members contribute each meeting and one receives the pot in rotation, with social sanctions for default.",Rotating savings and credit associations in a Nairobi slum: members contribute at each meeting and the pot rotates; participation is a wife's strategy to protect savings from her husband's claims for immediate consumption.
+I0002,evidence,"ROSCA participation mostly by married women with independent income, used to protect savings from husbands' claims.","Survey data from Kenyan roscas: mostly women, especially those in couples with independent income; household-conflict model tested with the data."
+I0002,located_via,search,opened page
+I0003,evidence,Punishment alone and reward alone each modestly raise offers; combination most effective; rewards and punishment are complements.,"Substantial demand for both rewards and punishments. Rewards alone have little influence on cooperation, punishments alone have some; combined, the effect is dramatic, suggesting rewards and punishments are complements. Demand for rewards depends on whether punishment is available."
+I0003,located_via,search,opened page
+I0004,located_via,search,opened page
+I0005,located_via,search,opened page
+I0006,evidence,Theory: undominated equilibria implement efficient provision.,Theory: the voluntary-contribution game with a provision point and refunds fully implements the core in undominated perfect equilibria.
+I0006,located_via,search,opened page
+I0007,evidence,Large positive effect of communication on cooperation; face-to-face much stronger than written; larger groups weaken effect.,45 effect sizes: large positive effect of communication on cooperation (d=1.01); face-to-face (d=1.21) stronger than written messages (d=0.46); the effect is stronger in larger than in smaller groups; communication before versus during iterated dilemmas made no significant difference.
+I0007,located_via,search,opened page
+I0008,evidence,Both rewards and punishments have moderate positive effects on cooperation; effects stronger when incentives are costly to administer and in iterated dilemmas.,187 effect sizes: rewards (d=0.51) and punishments (d=0.70) have statistically equivalent positive effects on cooperation; incentives are more effective when costly to administer than when free; centralization of incentives did not moderate effects; punishments were more effective in iterated dilemmas with a fixed group than with re-matching or one-shot play.
+I0008,located_via,search,opened page
+I0010,description,Self-enforcing treaties where signatories adjust abatement in response to membership; later work adds trade restrictions (Montreal Protocol).,"Self-enforcing international environmental agreements modeled two ways: signatories, terms, and nonsignatory actions determined jointly (membership as commitment), and an infinitely repeated renegotiation-proof game."
+I0010,evidence,Theoretical: self-enforcing agreements achieve much only when gains from cooperation are small.,Theoretical: both models indicate IEAs can do little to improve on the noncooperative outcome when many countries share the resource; self-enforcing IEAs achieve much only when the gains from cooperation are small.
+I0010,located_via,search,opened page
+I0011,evidence,Theory: voluntary coverage below eradication level.,Game theory: voluntary vaccination cannot eradicate disease because self-interest outweighs slight vaccine risk once coverage is high; perceived-risk increases cut uptake more for highly transmissible pathogens; coverage is hard to restore after a scare.
+I0011,located_via,search,opened page
+I0012,located_via,search,opened page
+I0013,description,Rotational lottery of fishing spots: sites allocated annually by lot and fishers rotate daily through them.,"Alanya (Turkey) fishing cooperative: fishing spots listed and spaced before the season, fishers draw lots for initial spots, then rotate daily through sites (east Sept-Jan, west after)."
+I0014,description,"Private arbitration with reputational sanctions: bourse members settle disputes internally and unpaid judgments are posted, leading to expulsion and industry-wide boycott.","Bourse private arbitration: judgments are kept secret if promptly paid; unpaid judgments lead to the member's picture being posted in the club, notice to all bourses in the World Federation (which enforce each other's judgments), and suspension or expulsion."
+I0014,evidence,Descriptive: extralegal system handles nearly all disputes more cheaply than courts.,"Descriptive: about 150 disputes a year enter the DDC system, an estimated 85% settled in mandatory pre-arbitration conciliation; the system rests on reputation bonds, and the article compares its costs with legally enforceable contracts."
+I0014,located_via,search,opened page
+I0015,description,Random and bidding ROSCAs allocate the pot; social sanctions deter default by early recipients.,Random and bidding ROSCAs allocate the pot among members saving for an indivisible good.
+I0015,evidence,Theoretical welfare comparison with credit markets.,"Theory: neither ROSCA type is efficient; individuals are better off with a credit market than a bidding ROSCA, but a random ROSCA may give higher ex ante expected utility than a credit market."
+I0015,located_via,search,opened page
+I0016,description,Joint liability with social collateral: group members impose social penalties on defaulting members.,Joint liability group lending: successful members may repay for members whose projects fail; social collateral (social penalties) can be harnessed to deter default.
+I0016,evidence,Theory: social sanctions improve repayment.,Repayment-game theory: positive effect (members repay for others) and negative effect (whole-group default when some would have repaid individually); social collateral mitigates the negative effect.
+I0016,located_via,search,opened page
+I0018,evidence,Chat-room and face-to-face communication raise contributions about as much as punishment; adding punishment to communication adds little.,"Communication increases contributions more than punishment, and once punishment costs are counted only communication significantly raises earnings and efficiency. Chat-room communication works nearly as well as face-to-face; adding punishment to verbal communication changes little; numerical-only messages do not significantly raise contributions or efficiency."
+I0018,located_via,search,opened page
+I0019,description,"Reverse dominance hierarchy: the group collectively uses ridicule, criticism, ostracism, and execution to curb would-be dominants.","Reverse dominance hierarchy: followers collectively control would-be dominant leaders through public opinion, criticism and ridicule, disobedience, desertion, deposition, ostracism, and assassination/execution."
+I0019,evidence,Cross-cultural survey (descriptive).,"Cross-cultural survey of 48 societies with usable data (from ~316 surveyed): behaviors terminating relations with or removing an overassertive individual reported in 38 of 48, assassination in 11 of 48."
+I0019,located_via,search,opened page
+I0020,evidence,Both punishment and partner switching reduce subsequent cheating.,Lab experiment: plates mimicking client chasing (punishment) or fleeing (partner switching) when cleaners ate preferred prawn shifted cleaners toward flake feeding after six learning trials.
+I0020,located_via,search,opened page
+I0021,evidence,Cleaners behave more cooperatively when observed by bystanders.,Field/lab experiments: eavesdropping clients spent more time next to 'cooperative' cleaners (image scoring); trained cleaners fed more cooperatively in an image-scoring than a non-image-scoring situation.
+I0021,located_via,search,opened page
+I0022,description,A modest cash payment (SEK 200) for getting vaccinated.,"A modest cash payment (SEK 200, about US$24) for getting a COVID-19 vaccine, compared with behavioral nudges, in a preregistered RCT in Sweden."
+I0022,evidence,Payment increased vaccination rate by ~4 percentage points.,Payment increased vaccination by about 4 percentage points; nudges had small positive effects.
+I0022,located_via,search,opened page
+I0024,located_via,search,opened page
+I0025,description,"Managerial model: compliance achieved through transparency, reporting, capacity-building, and dispute resolution rather than coercive sanctions.","Compliance framed as management rather than enforcement: deviations from treaty obligations often stem not from deliberate calculation but from ambiguity of treaty language, limited state capacity, and time lags, and regimes should aim at an 'acceptable' overall level of compliance rather than strict compliance."
+I0025,evidence,Descriptive: most states comply most of the time; noncompliance mainly from ambiguity and capacity.,Argument: the level of compliance with international agreements is inherently unverifiable; a propensity to comply is a plausible background assumption; many departures are properly accepted as justified.
+I0025,located_via,search,opened page
+I0026,evidence,Expulsion threat raises contributions to near-full levels; few expulsions occur.,"With the option to vote to expel, contributions rose to nearly 100% of endowments with significantly higher efficiency than the no-expulsion baseline; expulsions were strictly of the lowest contributors; contributions fell off sharply in the last period, when the expulsion threat was unavailable."
+I0026,located_via,search,opened page
+I0027,evidence,Review and models.,"Review: retaliatory aggression is common; used to establish dominance, discourage parasites and cheats, discipline offspring or sexual partners, and maintain cooperative behavior."
+I0027,located_via,search,opened page
+I0029,evidence,Empirical: closure associated with lower dropout rates.,Theory plus analysis of high-school dropouts: closure supports obligations/expectations and effective norms; lower dropout with more family social capital and in Catholic schools (intergenerational closure).
+I0029,located_via,search,opened page
+I0030,description,"Environmental assurance bond: firms post a bond equal to worst-case damages, refunded as they demonstrate lower damage.","Flexible environmental assurance bond: in addition to charges for known damages, firms post a bond equal to the current best estimate of the largest potential future environmental damages, held in an interest-bearing escrow and returned (with part of the interest) only if the firm proves the damages did not or will not occur; otherwise used for repair and compensation. Shifts the burden of proof to the resource user."
+I0030,located_via,search,opened page
+I0034,evidence,Review.,"Review: local institutions sustain resources but fail under rapid change; recommends analytic deliberation (dialogue), complex redundant layered institutions, a mix of institutional types, and designs for experimentation and change."
+I0034,located_via,search,opened page
+I0035,evidence,Argument: selection effects make compliance rates uninformative about enforcement need.,"Argument: high compliance is often because treaties require little beyond what states would do anyway (endogeneity/selection); where noncompliance occurs and selection is attenuated, both self-interest and enforcement play significant roles."
+I0035,located_via,search,opened page
+I0037,evidence,"Employees, media, and regulators detect much fraud; in healthcare, where qui tam rewards exist, employees blow the whistle far more often.","Fraud detection relies on non-traditional actors (employees, media, industry regulators) more than investors, SEC, and auditors; monetary incentives explain employee whistleblowing: employees detect 46.7% of frauds in healthcare, where qui tam suits are available, versus 16.3% elsewhere."
+I0037,located_via,search,opened page
+I0038,description,Budget-balanced mechanism that taxes below-average contributions and subsidizes above-average ones.,Budget-balanced Falkinger (1996) mechanism: deviations from the mean contribution are taxed (below mean) or subsidized (above mean); can implement efficient contributions as a Nash equilibrium with little information.
+I0038,evidence,Mechanism moves contributions close to the efficient Nash prediction.,"Introducing the mechanism generates immediate and large efficiency gains, robust across many experimental settings."
+I0038,located_via,search,opened page
+I0039,evidence,Theoretical.,Game model: in equilibrium leaders never bluff with either signal type; tying hands does better on average but creates greater ex ante risk of war than sinking costs.
+I0039,located_via,search,opened page
+I0040,evidence,Contributions rise and are sustained near high levels with punishment versus decay to near zero without it.,Cooperators widely punish free riders even when punishment is costly and brings no material benefit; free riders are punished more the more they deviate from cooperators' contribution levels; with punishment opportunities there is less free riding.
+I0040,located_via,search,opened page
+I0041,located_via,search,opened page
+I0042,evidence,Using the sanction threat reduced back-transfers; forgoing an available sanction elicited most altruistic cooperation.,"Sanctions that reveal selfish or greedy intentions destroy altruistic cooperation almost completely, whereas sanctions perceived as fair leave altruism intact."
+I0042,located_via,search,opened page
+I0043,evidence,"Many third parties punish violations of distribution and cooperation norms, though less than second parties.","Almost two-thirds of third parties punish violations of the distribution norm, more heavily the larger the violation; up to about 60% punish violations of the cooperation norm. Second parties punish violations much more strongly than third parties."
+I0043,located_via,search,opened page
+I0044,evidence,"Frustration at observed unfairness motivates gossip, which reduces frustration; threat of gossip increases generosity.","Observers of an antisocial act feel negative affect and are compelled to warn a potentially vulnerable person; sharing the information reduces that affect; more prosocial individuals are most motivated to gossip, even at personal cost. Study 4 shows prosocial gossip deters selfishness and promotes cooperation."
+I0044,located_via,search,opened page
+I0045,description,Players can gossip about past partners to future partners and groups can exclude members before each round.,"Players can send gossip notes about past partners to their future group members; in the gossip-with-ostracism game, members can then anonymously vote before each round to exclude one participant (excluded with two or more votes)."
+I0045,evidence,Gossip plus ostracism produces the highest cooperation; gossiped-about players reform.,"The gossip-with-ostracism game produced the highest contributions and earnings; recipients used gossip to ostracize selfish players, and ostracized individuals subsequently cooperated at levels comparable to those who were not ostracized."
+I0045,located_via,search,opened page
+I0046,located_via,search,opened page
+I0047,evidence,Rule enforcement strongly associated with better forest conditions.,"Test with IFRI data from 178 forest user groups: regular monitoring and sanctioning (rule enforcement) is argued and tested as a necessary condition for good forest conditions, compared against social capital, formal organization and forest dependence."
+I0047,located_via,search,opened page
+I0048,evidence,Increased likelihood of passing tests at 6 and 12 months.,"11% take-up; those offered CARES were 3 pp more likely to pass the 6-month urine test, and effects persisted in surprise tests at 12 months."
+I0048,located_via,search,opened page
+I0049,located_via,search,opened page
+I0050,evidence,Theoretical: equilibria are efficient; later experiments show convergence issues.,"Theoretical: under the proposed allocation-taxation scheme the behavioral equilibria are Pareto optimal, so consumers find it in their self-interest to reveal their true preferences for public goods."
+I0050,located_via,search,opened page
+I0051,located_via,search,opened page
+I0052,evidence,Review: reciprocity and kinship both predict sharing patterns.,"Review of cross-cultural evidence: kin selection, reciprocal altruism, tolerated scrounging and costly signaling each explain some variance in sharing; resource ecology and coordination in acquisition shape sharing."
+I0052,located_via,search,opened page
+I0054,description,Individual or group rewards vs. deposit contracts ($150 own money refundable plus bonus on abstinence).,RCT among CVS Caremark employees and relatives/friends: individual or group (six-person) rewards (~$800) vs deposit programs ($150 refundable deposit plus $650 rewards) for smoking cessation.
+I0054,evidence,Reward programs more accepted; deposit programs more effective among acceptors.,"Acceptance 90.0% reward vs 13.7% deposit; ITT 6-month abstinence higher with rewards (15.7% vs 10.2%); among those who would accept either, deposits gave 13.2 pp higher abstinence (IV)."
+I0054,located_via,search,opened page
+I0055,description,"Swift, certain, modest sanctions (brief jail) for each probation violation.","HOPE: swift, certain sanctions (short jail stays) preceded by a clear warning for each probation violation; treatment mandated only for those who keep testing positive."
+I0055,evidence,"RCT: fewer positive drug tests, missed appointments, and revocations.","RCT vs probation-as-usual: large reductions in positive drug tests and missed appointments; significantly fewer arrests at 3, 6 and 12 months; more but shorter jail terms; about one-third the prison days on revocations or new convictions."
+I0055,located_via,search,opened page
+I0056,evidence,All populations punish; magnitude varies and covaries with altruism across societies.,Experiments in 15 diverse populations: all show some costly punishment as unequal offers increase; magnitude varies substantially; punishment positively covaries with altruistic behavior across populations.
+I0056,located_via,search,opened page
+I0057,evidence,Punishment's cooperation benefit varies by society; antisocial punishment is prevalent where norms of civic cooperation and rule of law are weak.,"Huge cross-societal variation: some pools punished high contributors as much as low contributors, and in some pools antisocial punishment removed the cooperation-enhancing effect of punishment; weak norms of civic cooperation and weak rule of law predict antisocial punishment. Punishment is beneficial only if complemented by strong cooperation norms."
+I0057,located_via,search,opened page
+I0060,description,Chimpanzees can collapse a table to remove food from a conspecific who stole it (retaliation).,"Chimpanzees could pull a rope to collapse a table, removing food from a conspecific; tested when food was stolen vs merely unequally obtained."
+I0060,evidence,Chimpanzees retaliate against theft but not against mere inequity.,"Chimpanzees retaliated against conspecifics who stole their food but did not knock food away when the outcome alone was disadvantageous (vengeful, not spiteful)."
+I0060,located_via,search,opened page
+I0061,located_via,search,opened page
+I0062,located_via,search,opened page
+I0063,evidence,Mandate announcements associated with sharp increases in first-dose uptake.,"Difference-in-differences across Canadian provinces: mandate announcement associated with >60% rise in weekly first doses; time series for France, Italy and Germany corroborate; simulated gains up to 5 pp (Canada) to 12 pp (Italy)."
+I0063,located_via,search,opened page
+I0064,description,Host sanctions: plants reduce oxygen supply to nodules whose rhizobia fail to fix nitrogen.,Host sanctions: soybeans penalize rhizobia that fail to fix N2 inside their nodules; decreased O2 supply to the nodule implicated as a possible mechanism.
+I0064,evidence,Non-fixing rhizobia reproductive success reduced ~50%.,"Experiments at three scales (whole plants, half root systems, single nodules): forced non-fixation reduced rhizobial reproductive success by about 50%."
+I0064,located_via,search,opened page
+I0065,located_via,search,opened page
+I0067,located_via,search,opened page
+I0068,evidence,"Organizations frequently form, mostly grand coalitions, raising cooperation substantially.","Institutions are formed and raise cooperation and group welfare, but success is not guaranteed: players are unwilling to implement equilibrium institutions (covering only a subset of players) in which some players can free ride, so fairness shapes which organizations form."
+I0068,located_via,search,opened page
+I0069,evidence,Simulation: temple-level coordination yields near-optimal harvests.,Ecological modeling: water temple networks reshape the adaptive landscape; presented as a complex adaptive system evolved to manage the agroecosystem.
+I0069,located_via,search,opened page
+I0070,evidence,Theoretical.,Theory: with risk-neutral workers rank-order pay achieves the same efficient allocation as piece rates; risk-averse workers may prefer it; heterogeneous ability causes adverse selection unless handicapping.
+I0070,located_via,search,opened page
+I0071,located_via,search,opened page
+I0072,evidence,"A more productive coworker raises others' effort, only when that coworker can observe them.","High-frequency supermarket data: introducing a highly productive worker raises coworkers' productivity; effort responds to productivity of workers who can see them, not those who cannot, and more to frequent interaction partners."
+I0072,located_via,search,opened page
+I0073,evidence,"Nonmonetary disapproval initially raises contributions nearly as much as monetary punishment, but monetary is more durable.","Monetary punishment sharply raises average contributions (replicating Fehr & Gächter). Nonmonetary disapproval points alone also raise average contributions and earnings, though by less than monetary punishment, showing that expressed disapproval (peer pressure) contributes to the effect."
+I0073,located_via,search,opened page
+I0074,description,"Community sanctions (verbal, and corporal punishment or fines by age-mates) against warriors who desert or show cowardice in raids.","Community-imposed sanctions, including collective corporal punishment and fines, against Turkana warriors who show cowardice or desert raids."
+I0074,evidence,Sanctions support cooperation among large groups of unrelated men.,Representative sample of 88 recent raids; parties of several hundred unrelated warriors; free-riders punished; authors interpret as third-party sanctions sustaining large-scale cooperation.
+I0074,located_via,search,opened page
+I0075,evidence,Model shows the institution sustains honest trade at low information cost.,"Model: the private judge system restores reputation-based enforcement with little information, inducing merchants to behave honestly, sanction violators, become informed, provide evidence, and pay judgments even though each is personally costly."
+I0075,located_via,search,opened page
+I0076,evidence,Contributions to the public good sustained at high levels when reputation carries over to indirect-reciprocity rounds.,"When reputation matters for later indirect-reciprocity rounds, public-good contributions stay unexpectedly high; if indirect-reciprocity rounds are not expected, contributions drop quickly to zero."
+I0076,located_via,search,opened page
+I0077,located_via,search,opened page
+I0078,evidence,Theoretical: leniency can be optimal with limited enforcement budgets.,"Theoretical: leniency makes enforcement more effective but can induce collusion by lowering its expected cost; in the optimal policy the first effect dominates when the authority has limited resources, and leniency should extend to firms that reveal information after an investigation starts."
+I0078,located_via,search,opened page
+I0079,evidence,Fear of retaliation reduces punishment and cooperation falls relative to punishment-only treatments.,"With counter-punishment available, cooperators are less willing to punish free riders; cooperation breaks down and groups earn less than in a treatment without punishment. About one quarter of punishments are retaliated; counter-punishment is partly strategic and partly reciprocal."
+I0079,located_via,search,opened page
+I0080,evidence,Theory and examples.,"Formal model plus examples of mating, cooperative and mutualistic markets: when one class outnumbers the other and sampling costs are low, choosiness selects for high-value commodities."
+I0080,located_via,search,opened page
+I0081,evidence,Modeling: modest tariffs can induce stable large coalitions with high abatement.,Theory plus empirical modeling: without sanctions on non-participants no stable coalitions except minimal-abatement ones; small trade penalties on non-participants (a Climate Club) induce a large stable coalition with high abatement.
+I0081,located_via,search,opened page
+I0082,evidence,Simulations: cooperation can evolve via indirect reciprocity.,Simulations and analytic models: indirect reciprocity is evolutionarily stable if the probability of knowing the recipient's image exceeds the cost-to-benefit ratio of helping.
+I0082,located_via,search,opened page
+I0084,located_via,search,opened page
+I0085,evidence,Communication alone substantially improves yields; communication plus self-chosen sanctioning yields near-optimal outcomes; imposed sanctioning alone overused.,"Communication alone raises yields (repeated communication more than one-shot). Sanctioning alone (imposed exogenously, no communication): net yield rose from -38% to 36%, but after sanctioning costs payoffs improved only 11%; far more sanctioning than subgame perfection predicts, some of it error or 'blind' revenge. Communication plus a self-chosen sanctioning mechanism gave efficiency significantly above imposed sanctioning, with near-optimal yields in some groups, but success varied across the six experiments."
+I0085,located_via,search,opened page
+I0087,evidence,Simulation: deposit-refund achieves waste reduction at roughly half the cost of advance disposal fees or recycling subsidies alone.,"Simulation (1990 data, five materials): a $45/ton deposit/refund reduces modeled wastes by 10%, versus an $85/ton advance disposal fee or a $98/ton recycling subsidy for a comparable reduction; deposit/refund is the least costly policy, and about a 7.5% reduction might have been optimal in 1990."
+I0087,located_via,search,opened page
+I0088,evidence,Review: punishment mostly in asymmetric relationships; less common than partner choice.,"Review: punishment most probable when players differ in strength or strategic options; aggression yielding immediate benefits may often suffice to deter cheats, explaining the relative scarcity of punishment in nature."
+I0088,located_via,search,opened page
+I0089,evidence,Reward is as effective as punishment at sustaining contributions and yields higher payoffs because it is not destructive.,"Reward is as effective as punishment for maintaining contributions and yields higher total earnings; when both are available, reward increases contributions and payoff while punishment has no effect on contributions and lowers payoff."
+I0089,located_via,search,opened page
+I0090,description,"Worker policing: workers selectively eat eggs laid by other workers, leaving queen-laid eggs.","Worker policing: honeybee workers discriminate against and destroy worker-laid male eggs, leaving queen-laid eggs."
+I0090,evidence,Worker-laid eggs removed rapidly; worker reproduction effectively suppressed.,"Experiments show strong discrimination by workers against worker-laid male eggs, supporting the worker-policing hypothesis (queens mate with 10-20 males; ~1 in 1000 males worker-derived)."
+I0090,located_via,search,opened page
+I0091,evidence,Review.,"Review of five areas of reproductive conflict (sex allocation, queen rearing, male rearing, caste fate, breeding conflicts); kinship, coercion and constraint typically combine to limit conflict and often resolve it completely."
+I0091,located_via,search,opened page
+I0092,evidence,Established high-reputation seller identity earned ~8.1% higher prices than new identities for identical goods.,Established high-reputation identity earned 8.1% higher willingness-to-pay than new identities for matched lots; one or two negative feedbacks on new sellers did not affect willingness-to-pay.
+I0092,located_via,search,opened page
+I0093,located_via,search,opened page
+I0095,located_via,search,opened page
+I0097,located_via,search,opened page
+I0098,evidence,Theoretical: peer monitoring transfers risk and improves welfare.,"Theory: peer monitoring (cosigner pays a penalty if the borrower goes bankrupt) transfers risk from bank to cosigner, yet in a competitive credit market improves borrowers' welfare; credited with Grameen Bank's performance."
+I0098,located_via,search,opened page
+I0099,located_via,search,opened page
+I0101,description,Comparative test: policing effectiveness versus proportion of workers that reproduce.,Comparative test in nine Vespidae wasps and the honeybee: whether workers forgo reproduction voluntarily or because nestmates police (kill) worker-laid eggs.
+I0101,evidence,More effective policing associated with fewer reproductive workers; altruism is enforced more than voluntary.,Social coercion is the key: workers forgo reproduction in response to the threat that their eggs will be policed; altruism is enforced.
+I0101,located_via,search,opened page
+I0102,description,"Analysis of recorded conversations: criticism, mockery, and complaints (mostly verbal sanctions) directed at norm violators such as big shots and stingy people.","Analysis of 308 recorded Ju/'hoansi conversations (1974, 1996-97): norm enforcement mostly by verbal criticism (put-downs, mild and harsh complaints) by individuals or coalitions, aimed chiefly at big-shot behavior, neglect of kinship obligations, and troublemaking."
+I0102,evidence,"Punishment is mostly low-cost verbal, often collective; physical punishment rare.",56% of conversations contained criticism vs 7% praise; costs to punishers relatively low; 170 of 192 threats to community stability were punished by coalitions; lazy or stingy people were rarely criticized and instead lost social regard and exchange partners.
+I0102,located_via,search,opened page
+I0103,description,"Blood-meal regurgitation to roost-mates, preferentially to kin and to those who previously donated.","Blood-meal regurgitation among roost-mates in wild vampire bats, depending on relatedness and on opportunity for reciprocation."
+I0103,evidence,"Sharing depends on relatedness and association, consistent with reciprocal altruism.",Sharing depends equally and independently on relatedness and an index of opportunity for reciprocation; captive experiments show unrelated bats reciprocally exchange blood.
+I0103,located_via,search,opened page
+I0104,evidence,Review: ostracism threatens fundamental needs; targets often comply or become more cooperative.,"Review: ostracism causes pain, sadness and anger and threatens fundamental needs; targets fortifying relational needs become more prosocial, those fortifying control/recognition needs become more antisocial; chronic ostracism leads to depression and helplessness."
+I0104,located_via,search,opened page
+I0105,evidence,"Cooperation higher when a sanctioning system exists, and people contribute to it even when distrustful.","In 48 four-person groups, members who realized the undesirable consequences of free riding and that voluntary cooperation was impossible cooperated to establish a sanctioning system that assures others' cooperation, rather than trying to induce cooperation directly; low-trust participants cooperated more when a sanctioning system was present."
+I0105,located_via,search,opened page
+I0106,evidence,Measurement: ~70% of users share no files; top 1% provide ~50% of responses (from memory of abstract; not re-checked),Measurement (24-h sample of Gnutella messages): almost 70% of users share no files; nearly 50% of all responses are returned by the top 1% of sharing hosts
+I0106,located_via,search,opened page
+I0107,authors,Ashton Anderson et al.,"Ashton Anderson, Daniel Huttenlocher, Jon Kleinberg, Jure Leskovec"
+I0107,evidence,Users increase targeted activity as they approach badge thresholds (from memory),"Formal model + Stack Overflow data: badges steer behaviour consistent with model predictions, e.g., users increase targeted activity as they approach a badge boundary; different badges produce different amounts of steering"
+I0107,located_via,search,opened page
+I0110,venue,SSRN (Ohio State J. Dispute Resolution),Ohio State Journal on Dispute Resolution 37:55-98 (2022); SSRN preprint
+I0110,description,"Kleros is a blockchain arbitration system relying on smart contracts and crowdsourced jurors who stake tokens; jurors voting with the majority are rewarded and incoherent jurors lose stake, with appeals to larger juries.","Socio-legal case study of Kleros, blockchain arbitration relying on smart contracts and crowdsourced, economically incentivized jurors; introduces the 'decentralized sheriff' (Kleros's crowd-based token-certification compliance mechanism) and analyzes obstacles to adoption."
+I0110,evidence,"Socio-legal case study (details of juror incentives from general knowledge, not re-checked here)",Case study plus exploratory observational user survey and interface trials
+I0110,pathology,Risks for due process noted in prior studies,"Prior studies warn of risks to procedural safeguards from anonymous, economically incentivized jurors; adoption obstacles"
+I0110,located_via,search,opened page
+I0112,evidence,descriptive,descriptive (special-issue introduction defining normative MAS)
+I0112,located_via,search,opened page
+I0117,evidence,Theoretical optimality under assumptions,Theoretical: under the 'standard model' the mechanism yields first-best public goods provision; variations limit cost and help protect against collusion
+I0117,located_via,search,opened page
+I0118,evidence,Implementation (BFS) shows low overhead relative to unreplicated service,Implementation: BFT library and Byzantine-fault-tolerant NFS (BFS) performs 2% faster to 24% slower than unreplicated production NFS; tolerates any number of faults over the lifetime if fewer than 1/3 of replicas fail within a window of vulnerability
+I0118,located_via,search,opened page
+I0120,evidence,Identified norms shared across nearly all communities vs community-specific ones (not re-checked),"2.8M comments removed by moderators of 100 top subreddits over 10 months; computational + qualitative analysis identified macro, meso, and micro norms"
+I0120,located_via,search,opened page
+I0125,evidence,Simulation: protects well-behaved flows from ill-behaved ones,"Analysis and simulation: fair allocation of bandwidth, lower delay for sources using less than their share, and protection from ill-behaved sources vs FCFS"
+I0125,located_via,search,opened page
+I0132,description,"Shows the block-reward mechanism is not incentive-compatible: colluding 'selfish miners' withholding blocks earn more than their fair share, and proposes a protocol modification raising the threshold.","Shows Bitcoin's block-reward mechanism is not incentive-compatible: colluding 'selfish miners' that withhold blocks earn more than their fair share, rational miners join them, and the group grows toward a majority; proposes a protocol modification."
+I0132,evidence,Selfish mining profitable for pools above ~1/4-1/3 of hash power (from memory),"Analysis: unless assumptions on network propagation are made, selfish mining may be feasible for any coalition size; the proposed fix prohibits selfish mining by coalitions below 1/4 of resources (not the assumed 1/2)"
+I0132,located_via,search,opened page
+I0134,evidence,Simulation (not re-checked),"Analysis/position paper arguing router mechanisms are needed; discusses identifying flows as unresponsive, not TCP-friendly, or using disproportionate bandwidth (abstract checked)"
+I0134,located_via,search,opened page
+I0135,description,"Interview study showing Wikipedia governance decentralising: rule-making and enforcement increasingly occur in local WikiProjects, echoing Ostrom's design principles for self-governing institutions.","Interview study of English Wikipedia showing governance becoming increasingly decentralized as the community grows, for both content decisions and social structures regulating behaviour, as predicted by commons-governance theory (Ostrom)."
+I0135,evidence,Qualitative (not re-checked),Qualitative: in-depth interviews with 11 Wikipedians holding a variety of roles
+I0135,located_via,search,opened page
+I0147,evidence,Simulation: agents using FIRE select better partners than benchmarks (not re-checked),Empirical evaluation (simulation): FIRE helps agents gain better utility by selecting appropriate partners than benchmarks under various conditions
+I0151,located_via,search,opened page
+I0152,description,Measures spam arriving at a university and how mail servers query DNS blacklists (shared lists of spam-sending IPs) to refuse mail from listed hosts.,Measures SMTP traffic to MIT CSAIL (2000 and 2004 traces) and how local mail hosts query DNS blacklists (shared lists of spam-sending or open-relay IPs) to refuse mail from listed hosts.
+I0152,evidence,Most spam sources were listed in at least one DNSBL (magnitude from memory; not re-checked),Measurement: email volume rose 866% from 2000 to 2004; DNSBL lookups were 14% of all DNS lookups at the border in 2004 (0.4% in 2000); 80% of identified spam sources were listed in some of seven popular DNSBLs
+I0152,located_via,search,opened page
+I0154,authors,Harry Kalodner et al.,"Harry Kalodner, Steven Goldfeder, Xiaoqi Chen, S. Matthew Weinberg, Edward W. Felten"
+I0154,venue,USENIX Security 2018,27th USENIX Security Symposium (USENIX Security 2018)
+I0154,url,https://www.usenix.org/conference/usenixsecurity18/presentation/kalodner,https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf
+I0154,description,"Managers assert VM state changes backed by deposits; any honest party can challenge, triggering an interactive bisection protocol resolved on-chain, and the loser forfeits its deposit.","VM managers agree off-chain (unanimous assertions); a single manager may post a disputable assertion with a currency deposit, and any other manager can challenge within a timeout by posting a deposit, triggering an on-chain bisection protocol down to one instruction. The winner recovers its deposit plus half the loser's; the other half goes to the Verifier."
+I0154,evidence,Prototype evaluation (not re-checked),"Prototype: VM advanced at ~970,000 hashes/s vs ~1,600/s total for Ethereum; verifier handled over 5,000 disputable assertions per second"
+I0154,located_via,search,opened page
+I0165,description,"Multimethod study of how Debian members developed a shared basis of governance, including an elected project leader with bounded authority and a constitution.",Multimethod study of one open-source community (Debian) finding that members developed a shared basis of formal authority but limited it with democratic mechanisms that allowed experimentation with shifting conceptions of authority; the settled conception was more expansive than the original design.
+I0165,evidence,Qualitative/quantitative (not re-checked),Multimethod: qualitative study plus statistical test of predictors of leadership
+I0165,located_via,search,opened page
+I0167,description,"REP token holders report event outcomes; reports agreeing with consensus are rewarded and dissenting reporters lose reputation, turning truthful reporting into a Schelling point.","REP token holders stake tokens on observed outcomes and earn settlement fees; token holders can post progressively larger REP bonds to dispute outcomes, and past a threshold REP forks into outcome-specific versions, so only the version matching reality keeps value."
+I0167,lever,payoffs;information,payoffs;post_deviation
+I0167,evidence,descriptive (design),descriptive (design whitepaper; abstract of current arXiv version checked)
+I0167,located_via,search,opened page
+I0168,authors,Michael Piatek et al.,"Michael Piatek, Tomas Isdal, Thomas Anderson, Arvind Krishnamurthy, Arun Venkataramani"
+I0168,venue,USENIX NSDI 2007,USENIX NSDI 2007 (4th USENIX Symposium on Networked Systems Design & Implementation)
+I0168,url,https://www.usenix.org/conference/nsdi-07/do-incentives-build-robustness-bittorrent,https://homes.cs.washington.edu/~piatek/papers/BitTyrant.pdf
+I0168,description,Measurement and strategic-client study of BitTorrent's tit-for-tat choking; the BitTyrant client strategically allocates upload to peers with the best reciprocation-per-byte.,Measurement and modeling of real BitTorrent swarms show that tit-for-tat choking leaves significant altruism (all peers regularly contribute upload that does not improve their own performance); the strategic BitTyrant client exploits this by allocating upload to peers with the best reciprocation per byte.
+I0168,evidence,"Strategic client obtains substantially faster downloads, showing reciprocation is exploitable by altruism-harvesting (figures not re-checked)","Measurement + trace-parameterized model + live deployment: BitTyrant gives a median 70% performance gain for a 1 Mbit client on live Internet swarms; if applied universally, strategic clients can hurt average per-swarm performance"
+I0168,located_via,search,opened page
+I0171,located_via,search,opened page
+I0172,located_via,search,opened page
+I0173,evidence,Feedback overwhelmingly positive; reputation affects buyer willingness to trade but modest price effects (from memory),Empirical (1999 eBay data): feedback provided more than half the time despite free-riding incentives; almost always positive; reputation profiles predictive of future performance though eBay's net score is far from the best predictor; high buyer-seller feedback correlation suggests reciprocation and retaliation
+I0173,located_via,search,opened page
+I0181,evidence,descriptive/simulation,descriptive model with initial experiments on the benefit of a social view of reputation (checked in the workshop version 'REGRET: A reputation model for gregarious societies')
+I0181,located_via,search,opened page
+I0182,description,"Argues PoS consensus is sustainable because stakeholders with larger stakes bear more of the cost of forks, so the value of their coins gives incentive to reach consensus (skin in the game).","First formal economic model of proof-of-stake: because PoS validators must also be stakeholders, forking harms the value of their own coins, so a sufficiently modest reward schedule yields an equilibrium with immediate consensus and precludes persistent forking."
+I0182,evidence,Theoretical model,Theoretical model (equilibrium analysis)
+I0182,located_via,search,opened page
+I0184,description,"Leveled commitment contracts let agents unilaterally decommit by paying a pre-specified decommitment penalty, enabling flexibility under uncertainty while pricing breach.",Leveled commitment contracts set the level of commitment by breach penalties: an agent can be freed from the contract by paying a pre-specified decommitment penalty to the other party.
+I0184,evidence,Game-theoretic analysis: agents decommit strategically (less often than truthfully); still can increase expected payoff,"Game-theoretic analysis: agents breach strategically (reluctant because the other party might breach first), yet leveled commitment increases both parties' expected payoff and enables deals impossible under full commitment"
+I0184,located_via,search,opened page
+I0191,evidence,Descriptive empirical study (not re-checked),Mixed quantitative/qualitative study with practitioner interviews: top codes of conduct are adopted by hundreds to thousands of projects and share 5 common dimensions
+I0191,located_via,search,opened page
+I0193,evidence,Low runtime overhead in benchmarks (not re-checked),Benchmarks: faster cross-domain communication than hardware isolation at the cost of slightly increased execution time for distrusted modules
+I0193,located_via,search,opened page
+I0199,evidence,Airbnb ratings are highly concentrated at the top of the scale (from title/memory),"Nearly 95% of Airbnb properties average 4.5 or 5 stars and virtually none below 3.5; TripAdvisor hotels and B&Bs average 3.8 and 4.1 stars; ~85% of TripAdvisor vacation rentals at 4.5+; among cross-listed properties 14% more are rated 4.5+ on Airbnb, with weak cross-platform correlation"
+I0199,located_via,search,opened page
+I0200,evidence,Game-theoretic proof of cheat-proofness; simulation (not re-checked),Formal model with proofs of cheat-proofness; prototype shows small overhead; simulations show nodes cooperate and forward unless resources are extremely low
+I0200,located_via,search,opened page
