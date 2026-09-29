@@ -23,21 +23,21 @@ Not Just Model-Level Alignment}
 \titlerunning{Institutional Design for Multi-Agent AI Systems}
 
 \author{Van QT Truong\inst{1,2}\orcidID{0000-0002-5485-1818}\thanks{These authors contributed equally.}\thanks{Corresponding author.} \and
-Xuanqiang Angelo Huang\inst{2,3,4,5}\textsuperscript{*} \and
+Xuanqiang Angelo Huang\inst{2,3,4,5}\orcidID{0009-0004-1421-6854}\textsuperscript{*} \and
 Erivan Inan\inst{2,3}\orcidID{0009-0002-8711-0634} \and
 Ryan Faulkner\inst{2,3}\orcidID{0009-0009-8949-0387} \and
 Joel Naoki Christoph\inst{6}\orcidID{0000-0003-2704-3222} \and
-Terry Jingchen Zhang\inst{2,3} \and
-David Guzman Piedrahita\inst{2,3,4} \and
-Zhijing Jin\inst{2,3,7}}
+Terry Jingchen Zhang\inst{2,3}\orcidID{0009-0009-1271-4696} \and
+David Guzman Piedrahita\inst{2,3,4}\orcidID{0009-0007-2694-1123} \and
+Zhijing Jin\inst{2,3,7}\orcidID{0000-0003-0238-9024}}
 \authorrunning{V. Q. Truong, X. A. Huang et al.}
 
-\institute{University of Pennsylvania, Philadelphia, PA, USA \and
+\institute{University of Pennsylvania, Philadelphia, USA \and
 Jinesis Lab, University of Toronto and Vector Institute, Toronto, Canada \and
-EuroSafeAI \and
+EuroSafeAI, Z\"urich, Switzerland \and
 ETH Z\"urich, Z\"urich, Switzerland \and
 Institute for Decentralized AI, Oxford, UK \and
-Harvard Kennedy School, Cambridge, MA, USA \and
+Harvard Kennedy School, Cambridge, USA \and
 Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 \email{scientistvan@gmail.com}}
 
@@ -83,6 +83,9 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 % Light-blue highlight marks newly added / relocated prose in this revision.
 \definecolor{chgblue}{RGB}{176,216,247}
 \newcommand{\chg}[1]{\ifshowreviewflags{\begingroup\sethlcolor{chgblue}\hl{#1}\endgroup}\else#1\fi}
+% Pink highlight flags figures/captions whose visuals must be redesigned before press.
+\definecolor{reworkpink}{RGB}{255,188,205}
+\newcommand{\rework}[1]{\ifshowreviewflags{\begingroup\sethlcolor{reworkpink}\hl{#1}\endgroup}\else#1\fi}
 
 % Color list: https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
     
@@ -129,8 +132,8 @@ We make three contributions.
 % JULY 2 TODO = \VAN{. TODO still need to doublecheck text examples and manuscript body one final pass. Also make fig examples match the list on Latex line 330 for Tragedy of the Commons and institutional responses}
 \begin{figure*}[!t]
     \centering
-    \includegraphics[width=0.92\linewidth]{figures/figure1_position-summary.pdf}
-    \caption{From individual alignment to institutional design. Familiar human commons exhibit recurring cooperation dilemmas; analogous dynamics arise when LLM agents share computational resources; and the institutional design space includes seven institutional functions and six mechanism families.}
+    \includegraphics[width=\linewidth]{figures/figure1_position-summary.pdf}
+    \caption{\rework{[Figure to be redesigned before press.] The paper's position in one view. \textbf{Left:} an individually aligned agent avoids harm on its own. \textbf{Center:} the same agents sharing a finite commons can still fail collectively---through resource depletion, reputation gaming, and cascading errors. \textbf{Right:} institutional mechanisms (norms, monitoring, sanctions, repair) wrapped around the agents sustain cooperation. We argue that multi-agent AI safety should evaluate the \emph{model-in-institution}, not the model alone.}}
     \label{fig:summary}
 \end{figure*}
 
@@ -153,7 +156,7 @@ Agentic AI is currently a sphere of consequential activity largely without them.
 % \ANG{Wondering if it makes sense if we have somewhere in the introduction (maybe here) a clear paragraph describing what it is.}
 
 \paragraph{Lessons and limits of human cooperation.}
-We adopt the analogy to human cooperation in functional terms, without assuming that LLM agents possess human motivations, identities, moral emotions, or social attachments~\citep{anthis2025llmsocialsimulationspromising, wangmdreplacehumans2025}\footnote{Recent work by Anthropic~\citep{sofroniew2026emotionconceptsfunctionlarge} shows some evidence of emotion latent directions within the models. However, this phenomenon is not fully understood. For the purpose of this paper, we assume machines in general don't have consciousness or emotions typically directed to mammals.}. Human governance systems are the best-documented solutions we have to a recurring design problem: regulating repeated interaction under resource constraints, partial observability, asymmetric power, and costly enforcement. They are also a source of cautionary lessons, because cooperation is not wholly benign. The same mechanisms that sustain it have historically produced surveillance, coercion
+We adopt the analogy to human cooperation in functional terms, without assuming that LLM agents possess human motivations, identities, moral emotions, or social attachments~\citep{anthis2025llmsocialsimulationspromising, wangmdreplacehumans2025}\footnote{Recent work by Anthropic~\citep{sofroniew2026emotionconceptsfunctionlarge} shows some evidence of emotion latent directions within the models. However, this phenomenon is not fully understood. \vqt{For the purposes of this paper, we assume that current AI systems do not possess consciousness or affective experience in the sense attributed to humans and other sentient animals.}}. Human governance systems are the best-documented solutions we have to a recurring design problem: regulating repeated interaction under resource constraints, partial observability, asymmetric power, and costly enforcement. They are also a source of cautionary lessons, because cooperation is not wholly benign. The same mechanisms that sustain it have historically produced surveillance, coercion
 ~\citep{gross2025hidden} and exclusion of out-groups~\citep{tomuschatLegacyNuremberg2006}. Patterns taken from the human world may therefore transfer to multi-agent AI systems only partially, and sometimes with their pathologies intact \citep{wangmdreplacehumans2025}.
 
 The institutional question is also no longer confined to software. Autonomous systems increasingly act in shared physical space, from robotaxis to warehouse and delivery automation
@@ -240,7 +243,7 @@ This becomes especially salient in settings where multi-agent systems are embedd
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=0.95\textwidth]{figures/figure4_multi-layer-institutions.pdf}
+  \includegraphics[width=\linewidth]{figures/figure4_multi-layer-institutions.pdf}
   \caption{Agent-in-context and the design space of agent institutions. Individual models are nested within agent--group interactions and governing institutions; institutional mechanisms shape behavior through information, consequence, and influence channels.}
   \label{fig:model-in-institution}
 \end{figure*}
@@ -578,6 +581,15 @@ We propose that cooperative AI evaluations vary by at least four factors. \ANG{i
     \item \textbf{Enforcement architecture:} Who observes, adjudicates, and enforces? Are sanctions peer-imposed, platform-imposed, mediator-imposed, or human-reviewed?
     \item \textbf{Repair pathway:} Can agents correct harm, restore shared resources, appeal sanctions, or re-enter after exclusion?
 \end{enumerate}
+
+\chg{Concretely, this defines a two-way evaluation design. Holding the institution fixed and varying the model tests whether a mechanism transfers across model families; holding the model fixed and varying the institution tests which institutions sustain cooperation. Figure~\mbox{\ref{fig:eval}} illustrates this \emph{model-in-institution} design, where each cell aggregates repeated multi-agent runs scored on the metrics of Table~\mbox{\ref{tab:metrics}}.}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/figure6_model-in-institution-eval.pdf}
+  \caption{\rework{[Figure to be redesigned before press.] The model-in-institution evaluation design. Each cell aggregates repeated multi-agent runs of one model under one institution, scored on the metrics of Table~\mbox{\ref{tab:metrics}} (colour indicates whether cooperation is sustained). Reading across a row holds the institution fixed and varies the model (does the mechanism transfer?); reading down a column holds the model fixed and varies the institution (which institution sustains cooperation?). Cell scores are illustrative.}}
+  \label{fig:eval}
+\end{figure}
 
 % Repeated public-goods games, shared-memory tasks, collaborative coding environments, multi-agent retrieval workflows, and tool-budget allocation tasks could all serve as testbeds. \VAN{1st sentence sounds AI bc long list w/o concrete details.} The key is to vary institutional structure, not only model family. For example, one could compare no-enforcement baselines, warning systems, escalating fines, ostracism, reputation-based routing, mediator agents, repair obligations, and appeal mechanisms. Benchmarks should also vary group composition: homogeneous versus heterogeneous model groups, symmetric versus asymmetric tool access, stable versus rotating partners, and mixed-status roles such as generator, verifier, monitor, mediator, and enforcer.
 
