@@ -6,6 +6,7 @@ ARCHIVAL_HANDOFF.md
 .build/
 *.aux
 *.bbl
+!manuscript/manuscript.bbl
 *.blg
 *.fdb_latexmk
 *.fls
