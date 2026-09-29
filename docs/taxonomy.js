@@ -3,7 +3,11 @@
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 const R = { hub: 52, fam: 135, theme: 215, leaf: 290 };
-const LIST = { colW: 440, colGap: 40, famRow: 38, themeRow: 27, leafRow: 23, themeGap: 8, famGap: 22 };
+const LIST = { colW: 470, colGap: 44, famRow: 42, themeRow: 31, leafRow: 26, themeGap: 9, famGap: 24 };
+// Text grows as the circle unravels, so the list reads at a comfortable size.
+const FONT = { leaf: [12.5, 15], theme: [13, 15.5], fam: [15, 17.5] };
+// Hand-placed nudges for family labels in the circle, to keep them off the branches.
+const FAM_NUDGE = { normative: [-20, -12], incentive: [18, 12] };
 const EVIDENCE_LABEL = { tested: "Tested with LLM agents", proposed: "Proposed for LLM agents only", none: "No LLM-agent study yet" };
 const GROUPS = [["llm", "LLM-agent studies"], ["marl", "Multi-agent reinforcement learning"], ["other", "Other fields and systems"]];
 const SHOW_FIRST = 8;
@@ -131,7 +135,7 @@ function build() {
         text.textContent = m.short;
         const squares = el("g", { class: "tx-squares" }, g);
         for (let i = 0; i < 6; i += 1) {
-          el("rect", { x: LIST.colW - 96 + i * 9, y: -3.5, width: 7, height: 7, rx: 1.2,
+          el("rect", { x: LIST.colW - 86 + i * 10, y: -4, width: 8, height: 8, rx: 1.3,
             fill: i < m.breadth ? f.mid : "#fff", stroke: f.mid, "stroke-width": 0.9 }, squares);
         }
         const leafNode = { kind: "leaf", g, dot, label: text, squares, r: polar(ma, R.leaf), l: L.list.get(m.id), a: ma, flip, f, th, m };
@@ -175,11 +179,16 @@ function render(k) {
       n.label.setAttribute("y", 4);
       n.label.setAttribute("text-anchor", inRadial && n.flip ? "end" : "start");
       n.label.style.opacity = labelFade;
+      n.label.style.fontSize = `${lerp(FONT.leaf[0], FONT.leaf[1], e).toFixed(2)}px`;
       n.squares.style.opacity = Math.max(0, 2 * k - 1);
     } else if (n.kind === "theme") {
       n.label.style.opacity = Math.max(0, 2 * k - 1);
+      n.label.style.fontSize = `${lerp(FONT.theme[0], FONT.theme[1], e).toFixed(2)}px`;
     } else if (n.kind === "fam") {
       const p = polar(n.a, 22);
+      const [nx, ny] = FAM_NUDGE[n.f.id] || [0, 0];
+      p.x += nx; p.y += ny;
+      n.label.style.fontSize = `${lerp(FONT.fam[0], FONT.fam[1], e).toFixed(2)}px`;
       const inRadial = k < 0.5;
       n.label.setAttribute("x", inRadial ? p.x : 0);
       n.label.setAttribute("y", inRadial ? p.y + 4 : 4);

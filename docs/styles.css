@@ -76,7 +76,7 @@ figcaption { padding: .5rem .4rem 0; color: var(--muted); font-size: .78rem; tex
 .taxonomy-copy { display: grid; grid-template-columns: 1fr 230px; gap: 3rem; align-items: start; }
 .taxonomy-copy p { max-width: 760px; font-size: 1.04rem; }
 .sticky-note { transform: rotate(1.5deg); padding: 1.2rem; background: #fff0b9; box-shadow: 3px 4px 10px rgba(0,0,0,.16); font-family: Georgia, serif; font-size: 1rem; font-style: italic; }
-.taxonomy-interactive { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 1.5rem; align-items: start; margin-top: 1.5rem; }
+.taxonomy-interactive { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 1.5rem; align-items: start; margin-top: 1.5rem; }
 .taxonomy-figure object { display: block; width: 100%; aspect-ratio: 860 / 835; }
 .leaf-card { position: sticky; top: 4.2rem; min-height: 265px; padding: 1.25rem; border: 2px solid #111; border-top: 10px solid var(--burgundy); background: #fff; box-shadow: 5px 5px 0 #111; }
 .leaf-card-label { margin: 0 0 1.5rem; color: var(--burgundy); font-size: .7rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
@@ -136,23 +136,23 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding-block
 .tx-dot { stroke-width: 1.5; }
 .tx-leaf.is-dim { opacity: .18; }
 .tx-panel { border-top-color: var(--fam, var(--burgundy)); max-height: calc(100vh - 5.5rem); overflow-y: auto; }
-.tx-panel h3 { font-size: 1.25rem; }
-.tx-def { font-size: .9rem; }
-.tx-status { display: flex; gap: .45rem; align-items: center; margin: .8rem 0 .4rem; font-size: .8rem; font-weight: 800; }
+.tx-panel h3 { font-size: 1.45rem; }
+.tx-def { font-size: 1rem; }
+.tx-status { display: flex; gap: .45rem; align-items: center; margin: .8rem 0 .4rem; font-size: .9rem; font-weight: 800; }
 .tx-status-dot { flex: 0 0 auto; width: .7rem; height: .7rem; border: 2px solid var(--fam); border-radius: 50%; }
 .tx-status-tested .tx-status-dot { background: var(--fam); }
 .tx-status-proposed .tx-status-dot { background: radial-gradient(circle, var(--fam) 0 28%, #fff 32%); }
-.tx-disc { color: var(--muted); font-size: .78rem; }
+.tx-disc { color: var(--muted); font-size: .88rem; }
 .tx-group { margin-top: 1rem; padding-top: .7rem; border-top: 1px solid var(--line); }
-.tx-group h4 { margin: 0 0 .5rem; font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.tx-group h4 { margin: 0 0 .55rem; font-size: .8rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
 .tx-sources { margin: 0; padding: 0; list-style: none; }
-.tx-sources li { margin-bottom: .6rem; font-size: .82rem; line-height: 1.3; }
+.tx-sources li { margin-bottom: .7rem; font-size: .95rem; line-height: 1.32; }
 .tx-sources a { color: var(--burgundy); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 2px; }
-.tx-meta { display: block; color: var(--muted); font-size: .74rem; }
-.tx-tag { display: inline-block; margin-top: .2rem; padding: 0 .4rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .68rem; }
-.tx-more, .tx-text-btn { padding: 0; border: 0; background: none; color: var(--blue); font: inherit; font-size: .8rem; font-weight: 800; text-decoration: underline; cursor: pointer; }
+.tx-meta { display: block; color: var(--muted); font-size: .84rem; }
+.tx-tag { display: inline-block; margin-top: .2rem; padding: 0 .4rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .76rem; }
+.tx-more, .tx-text-btn { padding: 0; border: 0; background: none; color: var(--blue); font: inherit; font-size: .9rem; font-weight: 800; text-decoration: underline; cursor: pointer; }
 .tx-text-btn { font-weight: 400; text-align: left; }
-.tx-permalink { display: inline-block; margin-top: 1rem; color: var(--muted); font-size: .72rem; }
+.tx-permalink { display: inline-block; margin-top: 1rem; color: var(--muted); font-size: .82rem; }
 .tx-text { margin-top: 1.4rem; font-size: .88rem; }
 .tx-text summary { font-weight: 800; cursor: pointer; }
 .tx-text ul { margin: .3rem 0; }
