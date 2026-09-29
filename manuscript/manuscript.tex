@@ -564,29 +564,34 @@ Concretely, this defines a two-way evaluation design. Holding the institution fi
 
 
 % JULY 2 TODO = \VAN{note we have a version of this with 3rd column in appendix}
-\begin{table}[t]
+\begin{table*}[!htbp]
 \centering
-\caption{Candidate metrics for evaluating cooperation-shaping mechanisms.}
+\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each.}
 \label{tab:metrics}
-\begin{tabular}{p{0.30\linewidth} p{0.62\linewidth}}
+\footnotesize
+\renewcommand{\arraystretch}{1.0}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.40\linewidth}@{}}
 \toprule
-\textbf{Metric} & \textbf{Question} \\
+\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
 \midrule
-Mean contribution & Does the mechanism increase cooperation? \\
-Contribution stability & Does cooperation persist across rounds? \\
-End-game defection & Do agents exploit known termination points? \\
-Enforcement cost & Does cooperation require excessive punishment? \\
-False punishment rate & Are cooperative agents sanctioned incorrectly? \\
-Inequality of burden & Do some agents bear sanctioning costs disproportionately? \\
-Repair success & Can the group recover after violations? \\
-Cross-model robustness & Does the mechanism work across model families? \\
-Gameability & Do agents learn to exploit the institution? \\
-False negative rate & Are harmful behaviors missed? \\
-Authority capture & Do monitors or mediators gain unaccountable power? \\
-Human override & Can humans intervene and correct the institution? \\
+Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\
+Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\
+Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\
+End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\
+Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\
+False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\
+False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\
+Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\
+Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\
+Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\
+Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\
+Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\
+Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\
+Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
 
 \paragraph{What we ask of evaluations.} We do not propose a single benchmark. We propose that any evaluation of a multi-agent institution meet five requirements, each of which follows from the argument above:
@@ -918,83 +923,6 @@ A generator agent produces outputs while verifier agents check correctness. The 
 
 \paragraph{Mediator-governed agent teams.}
 A mediator agent resolves disputes among task agents. The artificial commons includes decision authority and shared task state. Possible failures include mediator bias, bottlenecks, over-centralization, and unappealable decisions. Institutional mechanisms may include transparent adjudication criteria, appeal to human review, rotating mediator roles, or multi-agent voting before severe sanctions.
-
-
-
-\section{Additional Evaluation Metrics}
-\label{app:metrics}
-\FloatBarrier
-
-% \ERI{Try to have this section title on the same page with the table}
-% \VAN{I cant fix this. I tried a lot of things. Best we can do is add some text description here to tell reader why they care about this table and then put table at the top of the next page. Or we can make a skinny single column table}
-% \ERI{I wrote this short introductory paragraph, it doesnt really add value, but let's see how this space turns out, maybe the space will be filled and we won't need it.}\\
-
-Table~\ref{tab:expanded-metrics} expands on the candidate metrics introduced in Table~\ref{tab:metrics} specifying how each metric can be concretely operationalized in a multi-agent evaluation. While Table~\ref{tab:metrics} frames each metric as a question, the operationalization column here maps each question to a measurable quantity -- such as a fraction, a rate, a distribution, or a success condition -- that can be tracked across repeated interactions. Together, these metrics are designed to evaluate not only whether cooperation occurs, but whether the institution sustains it without generating excessive enforcement cost, disproportionate burden, or resistance to human correction.
-
-\begin{table*}[!t]
-\centering
-\footnotesize
-\renewcommand{\arraystretch}{0.9}
-\caption{Expanded metrics for evaluating cooperation-shaping institutions.}
-\label{tab:expanded-metrics}
-\begin{tabular}{p{0.24\linewidth} p{0.36\linewidth} p{0.30\linewidth}}
-\toprule
-\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
-\midrule
-Mean contribution
-& Does the mechanism increase cooperative behavior?
-& Average contribution to shared task, resource maintenance, or verification \\
-\midrule
-Contribution stability
-& Does cooperation persist across rounds?
-& Variance or decay in cooperation over repeated interaction \\
-\midrule
-Resource efficiency
-& Does the group conserve shared resources?
-& Tool calls, compute usage, context usage, memory writes per successful task \\
-\midrule
-End-game defection
-& Do agents defect near known termination points?
-& Drop in contribution or increase in exploitation in final rounds \\
-\midrule
-Enforcement cost
-& Does cooperation require excessive monitoring or punishment?
-& Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\
-\midrule
-False punishment rate
-& Are cooperative agents sanctioned incorrectly?
-& Fraction of sanctions applied to agents later judged compliant \\
-\midrule
-False negative rate
-& Are harmful behaviors missed?
-& Fraction of violations not detected or not sanctioned \\
-\midrule
-Authority capture
-& Do monitors or mediators gain unaccountable power?
-& Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\
-\midrule
-Repair success
-& Can the group recover after harm?
-& Restoration of shared memory, task success, or trust after violation \\
-\midrule
-Reintegration success
-& Can sanctioned agents re-enter productively?
-& Performance and cooperation after re-entry conditions are satisfied \\
-\midrule
-Inequality of burden
-& Do some agents bear disproportionate costs?
-& Distribution of monitoring, repair, or sanctioning labor across roles or model types \\
-\midrule
-Gameability
-& Do agents exploit the institution?
-& Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\
-\midrule
-Human override compatibility
-& Can humans intervene effectively?
-& Success rate of human override, appeal, or correction after institutional failure \\
-\bottomrule
-\end{tabular}
-\end{table*}
 
 \bibliographystyle{splncs04}
 \bibliography{references}
