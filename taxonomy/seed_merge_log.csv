@@ -1,0 +1,76 @@
+overview_mechanism,merged_into,match
+Gossip & shaming,Gossip & reputation spreading,fuzzy
+Ostracism & exile,"Ostracism, exile & social shunning",fuzzy
+Praise & status elevation,"Praise, status elevation & prestige",fuzzy
+Voluntary public commitment,NEW under primitive 6,assigned
+Resource taboo (sacred days/zones),Resource taboo / sacred no-take zone,fuzzy
+Metanorm (punish non-punishers),Metanorm: punish non-punishers,fuzzy
+Ridicule & social awkwardness,"Ridicule, shaming & social disapproval",fuzzy
+Universalization prompting,Universalization prompting ('what if everyone did this?'),exact
+Warning (1st violation),Ostrom graduated sanctions (warning → fine → suspension),fuzzy
+Escalating fine,Ostrom graduated sanctions (warning → fine → suspension),fuzzy
+Suspension of access,Suspension of access / licence revocation,exact
+Rehabilitation & re-entry,Rehabilitation programme (structured re-entry),fuzzy
+Elected monitor (legitimate authority),Elected monitor / legitimate authority,fuzzy
+Collective punishment,Collective punishment (all penalised for one defection),exact
+Institutional self-selection,Institutional self-selection (choose your regime),exact
+Cheap talk (non-binding),Cheap talk / public pledge (non-binding),fuzzy
+Binding commitment device,Binding commitment device (costly to reverse),exact
+Liquidated damages,"Pre-agreed contractual penalty (liquidated damages, penalty clause)",exact
+Sentencing guidelines,Sentencing guidelines (standardised formula),exact
+Traffic fine (auto/fixed),Fixed fine / traffic fine / auto-penalty,fuzzy
+Civil law penalty clause,"Pre-agreed contractual penalty (liquidated damages, penalty clause)",fuzzy
+"LD enforceable, penalty void","Pre-agreed contractual penalty (liquidated damages, penalty clause)",fuzzy
+Cross-default (collective liability),Cross-default / solidarity lending,fuzzy
+Whistleblower leniency,Whistleblower leniency / cartel immunity,exact
+Anti-social punishment filter,Anti-social punishment filter,exact
+Consitutional vs. operational rules,Constitutional vs. operational rules (nested tiers),fuzzy
+Formal appeals & contestability,Formal appeals & contestability,exact
+Mediation & arbitration,Mediation & arbitration,exact
+False-positive correction,False-positive correction,exact
+Pigouvian tax (externality),Pigouvian tax (externality pricing),fuzzy
+Pigouvian subsidy (reward),Pigouvian subsidy / grant for public good,fuzzy
+Altruistic punishment (Fehr-Gächter),Altruistic punishment (Fehr-Gächter),exact
+Carrot/stick choice (Andreoni),NEW under primitive 4,assigned
+Moral hazard premium,NEW under primitive 16,assigned
+Reputation bond (deposit),Deposit / reputation bond,fuzzy
+Fermi imitation (strategy copying),Fermi imitation (copy successful neighbours),fuzzy
+Algorithm generation (Willis-style),Algorithm generation (Willis-style tournaments),fuzzy
+TFT / WSLS (conditional),Tit-for-Tat / Win-Stay Lose-Shift,fuzzy
+Threshold-based reward/punish switch,Threshold-based reward/punish switch,exact
+Nudge & default-setting,Nudge & default-setting,exact
+Cryptographic audit log,Cryptographic audit log / immutable transparency,exact
+Reputation score / credit system,Reputation score / credit system,exact
+Immutable audit & transparency,Cryptographic audit log / immutable transparency,fuzzy
+Hard rate limit (API/bandwidth),NEW under primitive 6,assigned
+Graduated throttling (QoS),Graduated throttling / QoS degradation,fuzzy
+Exponential back-off,Exponential back-off,exact
+Allowlist & denylist,Allowlist / denylist,fuzzy
+Governance graph (institutional AI),Governance graph (state machine: Warning→Suspended→Fined→Active),fuzzy
+VCG mechanism (dominant strategy),VCG mechanism (truthful dominant strategy),fuzzy
+Proof-of-stake slashing,Proof-of-stake slashing,exact
+Restaking & correlated slash,NEW under primitive 3,assigned
+Staking reward (validator incentive),Staking reward / validator yield,fuzzy
+Token toxicity (network security),Token toxicity (self-defeating attack cost),fuzzy
+Smart contract auto-execution,Smart contract auto-execution,exact
+DAO token voting & veto,DAO token voting & veto,exact
+Token-curated registry (TCR),Token-curated registry (stake to challenge entries),fuzzy
+Code-is-law vs. hard fork,Code-is-law vs. hard fork (social override),exact
+Timebanking (service credits),Timebanking & community currency,fuzzy
+Barter & community currency,Timebanking & community currency,fuzzy
+Generalised reciprocity (gift economy),Generalised reciprocity / gift economy,fuzzy
+Network embeddedness (Putnam social capital),Network embeddedness / social capital (Putnam),fuzzy
+Solidarity & mutual accountability,NEW under primitive 17,assigned
+Reputational indirect reciprocity,NEW under primitive 8,assigned
+"Worker cooperative (one worker, one vote)",Worker cooperative (ownership as incentive alignment),fuzzy
+Participatory budgeting,Participatory budgeting,exact
+Decentralized bail fund / insurance,Mutual aid pooling / decentralized bail fund,fuzzy
+Blockchain-based mutual aid DAO,NEW under primitive 17,assigned
+Mesh network & offline resilience,Mesh network / offline resilience,fuzzy
+Repair,Material repair & restitution (restore actual harm),exact
+Restitution,Material repair & restitution (restore actual harm),exact
+Reintegration,Rehabilitation programme (structured re-entry),fuzzy
+Reconciliation,Community reconciliation,exact
+Apology & confession,Apology & confession as norm repair,exact
+Truth-telling,Truth & reconciliation (amnesty for disclosure),fuzzy
+Rehabilitation after breach,Rehabilitation programme (structured re-entry),fuzzy
