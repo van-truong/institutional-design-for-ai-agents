@@ -112,11 +112,6 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,subsidy for cooperative action,1,M22,Payment for cooperation,merge
 1,status award at activity threshold,1,M23,Status & prestige,merge
 1,status reward for contribution,1,M23,Status & prestige,merge
-1,peer reward and penalty options,3,M24,Combined carrot & stick,merge
-1,peer reward or punishment option,1,M24,Combined carrot & stick,merge
-1,reward and penalty by conduct,1,M24,Combined carrot & stick,merge
-1,"reward compliance, penalize deviation",1,M24,Combined carrot & stick,merge
-1,state-contingent reward or punishment,1,M24,Combined carrot & stick,merge
 1,contribution-proportional reward,1,M25,Outcome sharing & aligned stakes,merge
 1,reward based on group outcome,1,M25,Outcome sharing & aligned stakes,merge
 1,reward by marginal contribution,1,M25,Outcome sharing & aligned stakes,merge
@@ -297,4 +292,9 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,auction allocation of resources,2,M65,Market & matching allocation,merge
 1,central allocation mechanism,1,M65,Market & matching allocation,merge
 1,market allocation of tasks,1,M65,Market & matching allocation,merge
-1,bundle of commons design principles,2,BUNDLE,not a single lever,bundle
+1,bundle of commons design principles,2,BUNDLE,"not a single lever, see configurations.csv",to_configuration
+1,peer reward and penalty options,3,CONFIG,"combination of levers, see configurations.csv (was M24)",to_configuration
+1,peer reward or punishment option,1,CONFIG,"combination of levers, see configurations.csv (was M24)",to_configuration
+1,reward and penalty by conduct,1,CONFIG,"combination of levers, see configurations.csv (was M24)",to_configuration
+1,"reward compliance, penalize deviation",1,CONFIG,"combination of levers, see configurations.csv (was M24)",to_configuration
+1,state-contingent reward or punishment,1,CONFIG,"combination of levers, see configurations.csv (was M24)",to_configuration

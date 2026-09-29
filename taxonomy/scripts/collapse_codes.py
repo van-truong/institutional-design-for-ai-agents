@@ -47,7 +47,6 @@ MECH = {
  'M21': ('T05', 'Peer reward & gifting', 'Agents transfer part of their own payoff to peers, typically cooperators.'),
  'M22': ('T05', 'Payment for cooperation', 'A central party pays for a cooperative act, verified behavior, contribution, or outcome.'),
  'M23': ('T05', 'Status & prestige', 'Contributors receive visible status markers or prestige.'),
- 'M24': ('T05', 'Combined carrot & stick', 'Both reward and punishment instruments are available, possibly switched by context.'),
  'M25': ('T05', 'Outcome sharing & aligned stakes', 'Agents share in joint output or hold stakes in the system or in others\' payoffs, so their payoff rises with collective success.'),
  'M26': ('T05', 'Relative-performance incentives', 'Rewards depend on an agent\'s rank relative to others.'),
  'M27': ('T06', 'Graduated & proportional sanctions', 'Responses escalate with repetition or duration, or scale with the severity of the deviation.'),
@@ -138,7 +137,7 @@ m('M21', 'peer reward transfer', 'voluntary transfer of reward to peers', 'volun
 m('M22', 'payment for cooperative act', 'subsidy for cooperative action', 'reward per accepted contribution',
   'payment conditional on verified behavior', 'payment conditional on outcome', 'matching subsidy for contributions')
 m('M23', 'status award at activity threshold', 'status reward for contribution')
-m('M24', 'peer reward and penalty options', 'peer reward or punishment option', 'reward and penalty by conduct',
+m('CONFIG', 'peer reward and penalty options', 'peer reward or punishment option', 'reward and penalty by conduct',
   'reward compliance, penalize deviation', 'state-contingent reward or punishment')
 m('M25', 'contribution-proportional reward', 'reward by marginal contribution', 'reward based on group outcome',
   'stake in others\' payoffs', 'shared ownership of joint output', 'transfer payoffs to align incentives', 'stake aligned with system value')
@@ -209,6 +208,11 @@ m('M64', 'incentive-compatible allocation auction', 'incentive-compatible alloca
   'reward rule making contribution dominant')
 m('M65', 'auction allocation of resources', 'market allocation of tasks', 'central allocation mechanism')
 BUNDLES = {'bundle of commons design principles'}  # not a single lever: kept as instances, excluded from mechanisms
+# Codes naming a combination of levers are recorded in configurations.csv (build_configurations.py), not as
+# mechanisms. M24 'Combined carrot & stick' was retired in pass 1 and became configuration C03.
+CONFIG_CODES = {c for c, v in C.items() if v == 'CONFIG'}
+for c in CONFIG_CODES: del C[c]
+BUNDLES |= CONFIG_CODES
 
 def main():
     P = []
@@ -223,7 +227,7 @@ def main():
     for iid, r in inst.items():
         c = code_of.get(iid, '')
         r['code'] = c or ('(phenomenon)' if iid in {p['instance_id'] for p in P} else '')
-        r['mechanism'] = C.get(c, 'BUNDLE' if c in BUNDLES else '')
+        r['mechanism'] = C.get(c, ('CONFIG' if c in CONFIG_CODES else 'BUNDLE') if c in BUNDLES else '')
     cols = list(next(iter(inst.values())).keys())
     with open(os.path.join(TAX, 'instances.csv'), 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols); w.writeheader(); w.writerows(inst.values())
@@ -238,9 +242,10 @@ def main():
         for c in sorted(per_code, key=lambda c: (C.get(c, 'Z'), c)):
             mid = C.get(c)
             siblings = sum(1 for x in C if C[x] == mid and x in per_code) if mid else 0
-            w.writerow({'pass': 1, 'open_code': c, 'n_instances': per_code[c], 'mechanism_id': mid or 'BUNDLE',
-                        'mechanism': MECH[mid][1] if mid else 'not a single lever',
-                        'action': 'bundle' if not mid else ('merge' if siblings > 1 else 'keep')})
+            cfg = c in CONFIG_CODES
+            w.writerow({'pass': 1, 'open_code': c, 'n_instances': per_code[c], 'mechanism_id': mid or ('CONFIG' if cfg else 'BUNDLE'),
+                        'mechanism': MECH[mid][1] if mid else ('combination of levers, see configurations.csv (was M24)' if cfg else 'not a single lever, see configurations.csv'),
+                        'action': ('to_configuration' if not mid else ('merge' if siblings > 1 else 'keep'))})
 
     rows = []
     for mid, (tid, name, defn) in MECH.items():
