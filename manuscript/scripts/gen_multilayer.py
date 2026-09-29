@@ -99,7 +99,7 @@ def build():
     out.append(f'<defs><marker id="triA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 z" fill="{AM_M}"/></marker>'
                f'<marker id="triV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 z" fill="{VI_M}"/></marker></defs>')
     # divider + labels
-    out.append(f'<line x1="258" y1="18" x2="258" y2="{H-14:.0f}" stroke="#EEF2F6" stroke-width="1.4"/>')
+    out.append(f'<line x1="248" y1="18" x2="248" y2="{H-14:.0f}" stroke="#EEF2F6" stroke-width="1.4"/>')
     out.append(f'<text x="12" y="28" font-size="17" font-weight="700" fill="{BLK}">A</text>')
     out.append(f'<text x="28" y="28" font-size="17" font-weight="700" fill="{BLK}">Agent-in-context</text>')
     out.append(f'<text x="272" y="28" font-size="17" font-weight="700" fill="{BLK}">B</text>')
