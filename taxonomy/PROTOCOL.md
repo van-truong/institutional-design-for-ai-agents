@@ -50,6 +50,7 @@ institutional rule).
 | `llm_status` | `tested`, `partial`, `discussed`, `untested` — with LLM agents |
 | `llm_evidence` | Which LLM studies test it, and how |
 | `marl_status` | `tested`, `partial`, `untested` — with non-LLM multi-agent RL (Phase 2) |
+| `marl_evidence` | Which MARL studies test it, and how (Phase 2) |
 | `ai_analogue` | What the mechanism looks like in an LLM agent system |
 | `sources` | Where the record came from: `overview`, `first_principles`, `search` |
 | `match` | How a seed record was merged: `exact`, `fuzzy`, `assigned` (assigned = the primitive was chosen by judgment; verify first) |
@@ -69,10 +70,10 @@ Pathologies (`pathologies.csv`) are linked at the **primitive** level via
 | Phase | Output | Status |
 |---|---|---|
 | 0. Protocol | this file | draft |
-| 1. Seed | `primitives.csv`, `mechanisms.csv`, `pathologies.csv` from the original spreadsheet (de-duplicated union of the Overview and First-Principles sheets) | in progress |
-| 2. LLM + MARL search | `papers.csv`; updates `llm_status`, `llm_evidence`, `marl_status` | not started |
+| 1. Seed | `primitives.csv`, `mechanisms.csv`, `pathologies.csv` from the original spreadsheet (de-duplicated union of the Overview and First-Principles sheets) | done |
+| 2. LLM + MARL search | `papers.csv`, `search_log.csv`, `search_raw/`; updates `llm_status`, `llm_evidence`, `marl_status`, `marl_evidence` (`scripts/merge_search.py`) | run 2026-09-29; in verification |
 | 3. Human-literature verification | verified `key_references` per mechanism | not started |
-| 4. News incidents (separate track) | `incidents.csv`: verified reports of AI agents acting outside authorization, gaining unauthorized access, or leaking data | not started |
+| 4. News incidents (separate track) | `incidents.csv`: verified reports of AI agents acting outside authorization, gaining unauthorized access, or leaking data | collected 2026-09-29; in verification |
 | 5. Outputs | regenerated Fig. 4; website tabs, mind map, gap map; method paragraph + screening counts in the paper | not started |
 
 ## 5. Search protocol (Phase 2)
@@ -110,10 +111,18 @@ that name a mechanism without testing it (recorded as `discussed`, not `tested`)
 title/abstract, included, and exclusion reasons — reported as a PRISMA-style flow in
 the paper.
 
+**Run.** Six slices (G1–G6) covering the 17 primitives, each run by an LLM search agent
+on 2026-09-29. The merge de-duplicates papers by arXiv ID, then DOI, then normalized
+title. It added one mechanism the seed lacked (P04-06, peer reward / gifting) and
+reconciled citation keys that differed between slices (`KEY_ALIASES` in the script).
+
 ## 6. Verification
 
 Every record is checked by the verifier against its cited source before it is marked
-`verified`. A citation that cannot be located is removed rather than repaired from
+`verified`. `scripts/build_verify_queue.py` writes `verify_queue.csv`, which orders the
+checks. It lists records placed by judgment and additions from the search first, then
+seed claims the search could not confirm, papers not confirmed from an opened page, and
+incidents. A citation that cannot be located is removed rather than repaired from
 memory. LLM-extracted fields carry their source URL until verified.
 
 ## 7. Known limitations
