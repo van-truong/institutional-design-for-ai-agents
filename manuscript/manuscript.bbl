@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
@@ -242,6 +242,11 @@ Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
   Societies}}. Science  \textbf{319}(5868),  1362--1367 (Mar 2008).
   \doi{10.1126/science.1153808}
 
+\bibitem{hota2025nomiclaw}
+Hota, A., Jokinen, J.P.P.: {NomicLaw}: Emergent trust and strategic
+  argumentation in {LLMs} during collaborative law-making (2025),
+  \url{https://arxiv.org/abs/2508.05344}
+
 \bibitem{huDissociativeIdentityLanguage2026}
 Hu, B.A., Rong, H., Kleek, M.V.: Dissociative {{Identity}}: {{Language Model
   Agents Lack Grounding}} for {{Reputation Mechanisms}}. In: Proceedings of the
@@ -379,6 +384,11 @@ Nickerson, R.C., Varshney, U., Muntermann, J.: A method for taxonomy
   Information Systems  \textbf{22}(3),  336--359 (2013).
   \doi{10.1057/ejis.2012.26}
 
+\bibitem{niranjani2026constitutional}
+Niranjani, H., Kumar, U., Tan, P.X.: Internal vs. external: Comparing
+  deliberation and evolution for multi-agent constitutional design (2026),
+  \url{https://arxiv.org/abs/2605.09128}
+
 \bibitem{northInstitutionsInstitutionalChange1990}
 North, D.C.: Institutions, {{Institutional Change}} and {{Economic
   Performance}}. Political {{Economy}} of {{Institutions}} and {{Decisions}},
@@ -417,6 +427,10 @@ Piatti, G., Jin, Z., Kleiman-Weiner, M., Sch\"{o}lkopf, B., Sachan, M.,
 Premack, D., Woodruff, G.: Does the chimpanzee have a theory of mind?
   Behavioral and Brain Sciences  \textbf{1}(4),  515--526 (Dec 1978).
   \doi{10.1017/S0140525X00076512}
+
+\bibitem{rehm2026selfgovernance}
+Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
+  {LLM} agent societies (2026), \url{https://arxiv.org/abs/2609.22600}
 
 \bibitem{resnickReputationSystems2000}
 Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
@@ -467,6 +481,12 @@ Sorensen, T., Moore, J., Fisher, J., Gordon, M.L., Mireshghallah, N., Rytting,
 \bibitem{steinberger2026openclaw}
 Steinberger, P.: {OpenClaw}: Your own personal {AI} assistant.
   \url{https://github.com/openclaw/openclaw} (2026), accessed: 2026-06-24
+
+\bibitem{bracalesyrnikov2026institutionalai}
+Syrnikov, M.B., Pierucci, F., Galisai, M., Prandi, M., Bisconti, P., Giarrusso,
+  F., Sorokoletova, O., Suriani, V., Nardi, D.: Institutional {AI}: Governing
+  {LLM} collusion in multi-agent {Cournot} markets via public governance graphs
+  (2026), \url{https://arxiv.org/abs/2601.11369}
 
 \bibitem{tangCodeAgentAutonomousCommunicative2024}
 Tang, X., Kim, K., Song, Y., Lothritz, C., Li, B., Ezzini, S., Tian, H., Klein,
@@ -531,6 +551,11 @@ Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
   \doi{10.1038/S42256-025-00986-Z},
   \url{https://doi.org/10.1038/s42256-025-00986-z}
 
+\bibitem{wang2025lawinsilico}
+Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
+  Simulating legal society with {LLM}-based agents (2025),
+  \url{https://arxiv.org/abs/2510.24442}
+
 \bibitem{willis2026evaluatingcollectivebehaviourhundreds}
 Willis, R., Zhao, J., Du, Y., Leibo, J.Z.: Evaluating collective behaviour of
   hundreds of llm agents (2026), \url{https://arxiv.org/abs/2602.16662}
@@ -552,6 +577,11 @@ Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
   Computing}} 2020: {{Catch}} the {{Wave}}. pp. 538--542. {{PEARC}} '20,
   Association for Computing Machinery, New York, NY, USA (Jul 2020).
   \doi{10.1145/3311790.3399628}
+
+\bibitem{yang2026payinghonesty}
+Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
+  Paying for honesty without knowing the truth: Reputation-penalty design for
+  {LLM} marketplace agents (2026), \url{https://arxiv.org/abs/2607.28330}
 
 \bibitem{zhou2023ifeval}
 Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
