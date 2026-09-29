@@ -70,5 +70,5 @@ Keep revisions light, source-backed, and in the paper's human voice.
 - [x] ~~Make Figure 5 interactive by hover, click, touch, and keyboard; rotate and highlight the selected branch.~~
 - [x] ~~Expose uncurated leaves and evidence gaps instead of implying complete coverage.~~
 - [ ] Add a small, verified set of evidence records with exact links, supported claims, source locations, and limitations.
-- [ ] Add evidence-status filters, search, stable leaf links, and an accessible list view.
+- [x] ~~Add evidence-status filters, search, stable leaf links, and an accessible list view.~~ (interactive taxonomy: circle that unravels into the Fig. 4 list; every mechanism links to its coded sources)
 - [ ] Add reviewed issue/PR contribution templates, attribution, change history, and dated snapshots.
