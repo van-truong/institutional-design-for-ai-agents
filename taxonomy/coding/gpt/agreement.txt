@@ -1,0 +1,30 @@
+Cross-model coding agreement: gpt-6-luna, gpt-5.6-terra
+Instances: 561
+
+gpt-6-luna vs final, mechanism: n=273, agreement=85.0%, Cohen's kappa=0.847
+gpt-6-luna vs final, theme: n=273, agreement=87.2%, Cohen's kappa=0.861
+gpt-6-luna vs Claude pass 2, mechanism: n=273, agreement=85.7%, Cohen's kappa=0.854
+gpt-6-luna vs Claude pass 2, theme: n=273, agreement=87.9%, Cohen's kappa=0.869
+gpt-6-luna vs final, kind: n=561, agreement=71.5%, Cohen's kappa=0.483
+gpt-6-luna vs final, evidence_type: n=561, agreement=88.8%, Cohen's kappa=0.803
+gpt-6-luna fit: good=440, partial=71, misfit=50
+gpt-6-luna NEW open-code levers: 0
+gpt-6-luna unused mechanisms: none
+
+gpt-5.6-terra vs final, mechanism: n=339, agreement=92.9%, Cohen's kappa=0.928
+gpt-5.6-terra vs final, theme: n=339, agreement=94.7%, Cohen's kappa=0.943
+gpt-5.6-terra vs Claude pass 2, mechanism: n=339, agreement=93.5%, Cohen's kappa=0.934
+gpt-5.6-terra vs Claude pass 2, theme: n=339, agreement=95.3%, Cohen's kappa=0.949
+gpt-5.6-terra vs final, kind: n=561, agreement=85.0%, Cohen's kappa=0.698
+gpt-5.6-terra vs final, evidence_type: n=561, agreement=90.6%, Cohen's kappa=0.829
+gpt-5.6-terra fit: good=503, partial=30, misfit=28
+gpt-5.6-terra NEW open-code levers: 3
+  adjust agent memory depth (n=1): No final-codebook mechanism covers this distinct lever as named: adjust agent memory depth. It is retained as NEW for the author's ending-condition review.
+  adjust decision randomness (n=1): No final-codebook mechanism covers this distinct lever as named: adjust decision randomness. It is retained as NEW for the author's ending-condition review.
+  induce confirmation bias (n=1): No final-codebook mechanism covers this distinct lever as named: induce confirmation bias. It is retained as NEW for the author's ending-condition review.
+gpt-5.6-terra unused mechanisms: none
+
+gpt-6-luna vs gpt-5.6-terra, mechanism: n=260, agreement=86.2%, Cohen's kappa=0.858
+gpt-6-luna vs gpt-5.6-terra, theme: n=260, agreement=87.7%, Cohen's kappa=0.866
+Final + gpt-6-luna + gpt-5.6-terra, Fleiss' kappa: n=257, kappa=0.881
+Disagreement review rows: 11

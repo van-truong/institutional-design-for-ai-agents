@@ -1,0 +1,52 @@
+[
+  {
+    "code": "public record of conduct",
+    "definition": "Monitoring or auditing creates evidence about conduct so compliance can be assessed.",
+    "n_instances": 33
+  },
+  {
+    "code": "impose cost after deviation",
+    "definition": "A detected deviation triggers a material or social cost for the actor.",
+    "n_instances": 29
+  },
+  {
+    "code": "bind conduct through prior commitment",
+    "definition": "An advance pledge or contract makes deviation costly or constrains later choices.",
+    "n_instances": 7
+  },
+  {
+    "code": "public record of past conduct",
+    "definition": "Past behavior is aggregated or shared to shape future treatment and incentives.",
+    "n_instances": 12
+  },
+  {
+    "code": "establish shared rules and authority",
+    "definition": "Collectively recognized norms or governance rules coordinate or constrain conduct.",
+    "n_instances": 4
+  },
+  {
+    "code": "condition benefits on conduct",
+    "definition": "Rewards or transfers depend on contributions, compliance, or others conduct.",
+    "n_instances": 9
+  },
+  {
+    "code": "remove or avoid uncooperative partners",
+    "definition": "Agents deny access or change partners in response to conduct.",
+    "n_instances": 3
+  },
+  {
+    "code": "restrict permitted actions ex ante",
+    "definition": "A system limits available actions or access to protect shared interests.",
+    "n_instances": 5
+  },
+  {
+    "code": "third party resolves disputes",
+    "definition": "An independent adjudicator decides contested conduct, appeals, or remedies.",
+    "n_instances": 4
+  },
+  {
+    "code": "condition cooperation on others conduct",
+    "definition": "An agent cooperates, reciprocates, or withholds cooperation based on others behavior.",
+    "n_instances": 1
+  }
+]

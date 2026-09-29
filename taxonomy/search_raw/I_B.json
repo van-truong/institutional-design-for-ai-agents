@@ -25,6 +25,102 @@
    "query": "official docs, RFCs, whitepapers: ethereum.org, Optimism, Compound, Chainlink, Lightning, BitTorrent, YouTube, Meta, Wikipedia, Stack Overflow, GitHub, Kubernetes, Google SRE, Gmail, Project Zero, CERT, Contributor Covenant, Apache, DCO, Linux kernel, RFC 2914/5280/5681/6585/6962/7208/7489/9116",
    "results_screened": 45,
    "included": 39
+  },
+  {
+   "source": "web",
+   "query": "USENIX NSDI 2007 page and author PDF: Piatek 'Do incentives build robustness in BitTorrent?'",
+   "results_screened": 4,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "USENIX Security 2018 page and sec18-kalodner.pdf: Arbitrum",
+   "results_screened": 3,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Semantic Scholar batch + OpenAlex abstracts for 27 located_via=search DOIs/arXiv IDs",
+   "results_screened": 27,
+   "included": 26
+  },
+  {
+   "source": "web",
+   "query": "Anderson Huttenlocher Kleinberg Leskovec 'Steering user behavior with badges' Stack Overflow abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Sandholm Lesser 'Leveled commitment contracts and strategic breach' abstract decommitment penalty",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Zervas Proserpio Byers 'every stay is above average' Airbnb ratings 4.5 stars TripAdvisor",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Huynh Jennings Shadbolt FIRE 'integrated trust and reputation model' pdf",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "'An integrated trust and reputation model for open multi-agent systems' Huynh 2006 abstract certified reputation performance",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Kleros whitepaper Lesaege Ast George pdf short paper",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Jung Sit 'An empirical study of spam traffic and the use of DNS black lists' DNSBL pdf",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Josang Ismail Boyd 'A survey of trust and reputation systems for online service provision' abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Sabater Sierra 'REGRET: reputation in gregarious societies' 2001",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Bergolla Seif Eken Kleros socio-legal case study Ohio State Journal on Dispute Resolution",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Piatek Isdal Anderson Krishnamurthy Venkataramani NSDI 2007",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Crossref bibliographic search: market-based multirobot coordination survey; Sold! auction multirobot; Strobel blockchain robot swarms Byzantine; token economy Science Robotics; adaptive inter-robot trust; resilient flocking; consensus-based decentralized auctions",
+   "results_screened": 16,
+   "included": 7
+  },
+  {
+   "source": "web",
+   "query": "Pierson Schwager 'Adaptive inter-robot trust for robust multi-robot sensor coverage' abstract",
+   "results_screened": 9,
+   "included": 1
   }
  ],
  "instances": [
@@ -53,24 +149,24 @@
   {
    "source_key": "piatek2007incentives",
    "title": "Do Incentives Build Robustness in BitTorrent?",
-   "authors": "Michael Piatek et al.",
+   "authors": "Michael Piatek, Tomas Isdal, Thomas Anderson, Arvind Krishnamurthy, Arun Venkataramani",
    "year": 2007,
-   "venue": "USENIX NSDI 2007",
-   "url": "https://www.usenix.org/conference/nsdi-07/do-incentives-build-robustness-bittorrent",
+   "venue": "USENIX NSDI 2007 (4th USENIX Symposium on Networked Systems Design & Implementation)",
+   "url": "https://homes.cs.washington.edu/~piatek/papers/BitTyrant.pdf",
    "doi": null,
    "arxiv_id": null,
    "discipline": "distributed_systems",
    "field_of_use": "BitTorrent file sharing",
    "agent_type": "software",
-   "description": "Measurement and strategic-client study of BitTorrent's tit-for-tat choking; the BitTyrant client strategically allocates upload to peers with the best reciprocation-per-byte.",
+   "description": "Measurement and modeling of real BitTorrent swarms show that tit-for-tat choking leaves significant altruism (all peers regularly contribute upload that does not improve their own performance); the strategic BitTyrant client exploits this by allocating upload to peers with the best reciprocation per byte.",
    "lever": "payoffs;relationships",
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "hybrid",
-   "evidence": "Strategic client obtains substantially faster downloads, showing reciprocation is exploitable by altruism-harvesting (figures not re-checked)",
+   "evidence": "Measurement + trace-parameterized model + live deployment: BitTyrant gives a median 70% performance gain for a 1 Mbit client on live Internet swarms; if applied universally, strategic clients can hurt average per-swarm performance",
    "pathology": "Unconditional altruism of high-capacity peers subsidises strategic peers; incentive not robust to strategic manipulation",
    "seed_match": "P08-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "kamvar2003eigentrust",
@@ -133,10 +229,10 @@
    "who_acts": "self",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Measurement: ~70% of users share no files; top 1% provide ~50% of responses (from memory of abstract; not re-checked)",
+   "evidence": "Measurement (24-h sample of Gnutella messages): almost 70% of users share no files; nearly 50% of all responses are returned by the top 1% of sharing hosts",
    "pathology": "Free riding / tragedy of the digital commons in absence of mechanism",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "marti2000watchdog",
@@ -199,10 +295,10 @@
    "who_acts": "central",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Game-theoretic proof of cheat-proofness; simulation (not re-checked)",
+   "evidence": "Formal model with proofs of cheat-proofness; prototype shows small overhead; simulations show nodes cooperate and forward unless resources are extremely low",
    "pathology": null,
    "seed_match": "P17-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "douceur2002sybil",
@@ -287,10 +383,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Implementation (BFS) shows low overhead relative to unreplicated service",
+   "evidence": "Implementation: BFT library and Byzantine-fault-tolerant NFS (BFS) performs 2% faster to 24% slower than unreplicated production NFS; tolerates any number of faults over the lifetime if fewer than 1/3 of replicas fail within a window of vulnerability",
    "pathology": "Safety breaks if more than f faulty; no attribution of blame",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "sheng2021forensics",
@@ -507,10 +603,10 @@
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Simulation (not re-checked)",
+   "evidence": "Analysis/position paper arguing router mechanisms are needed; discusses identifying flows as unresponsive, not TCP-friendly, or using disproportionate bandwidth (abstract checked)",
    "pathology": "False identification of flows",
    "seed_match": "P05-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "demers1989fairqueueing",
@@ -529,10 +625,10 @@
    "who_acts": "central",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Simulation: protects well-behaved flows from ill-behaved ones",
+   "evidence": "Analysis and simulation: fair allocation of bandwidth, lower delay for sources using less than their share, and protection from ill-behaved sources vs FCFS",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "savage1999misbehaving",
@@ -612,15 +708,15 @@
    "discipline": "security",
    "field_of_use": "Email spam / DNS blocklists",
    "agent_type": "organization",
-   "description": "Measures spam arriving at a university and how mail servers query DNS blacklists (shared lists of spam-sending IPs) to refuse mail from listed hosts.",
+   "description": "Measures SMTP traffic to MIT CSAIL (2000 and 2004 traces) and how local mail hosts query DNS blacklists (shared lists of spam-sending or open-relay IPs) to refuse mail from listed hosts.",
    "lever": "information;relationships",
    "who_acts": "third_party",
    "timing": "continuous",
    "valence": "punishment",
-   "evidence": "Most spam sources were listed in at least one DNSBL (magnitude from memory; not re-checked)",
+   "evidence": "Measurement: email volume rose 866% from 2000 to 2004; DNSBL lookups were 14% of all DNS lookups at the border in 2004 (0.4% in 2000); 80% of identified spam sources were listed in some of seven popular DNSBLs",
    "pathology": "Lists incomplete; false listings; spammers rotate IPs",
    "seed_match": "P02-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "rfc7489",
@@ -749,10 +845,10 @@
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Low runtime overhead in benchmarks (not re-checked)",
+   "evidence": "Benchmarks: faster cross-domain communication than hardware isolation at the cost of slightly increased execution time for distrusted modules",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "rfc6962",
@@ -1030,20 +1126,20 @@
    "discipline": "economics",
    "field_of_use": "Proof-of-stake blockchains",
    "agent_type": "human",
-   "description": "Argues PoS consensus is sustainable because stakeholders with larger stakes bear more of the cost of forks, so the value of their coins gives incentive to reach consensus (skin in the game).",
+   "description": "First formal economic model of proof-of-stake: because PoS validators must also be stakeholders, forking harms the value of their own coins, so a sufficiently modest reward schedule yields an equilibrium with immediate consensus and precludes persistent forking.",
    "lever": "payoffs",
    "who_acts": "self",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Theoretical model",
+   "evidence": "Theoretical model (equilibrium analysis)",
    "pathology": null,
    "seed_match": "P04-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "eyal2018selfish",
    "title": "Majority is not enough: Bitcoin mining is vulnerable",
-   "authors": "Ittay Eyal, Emin Gün Sirer",
+   "authors": "Ittay Eyal, Emin G\u00fcn Sirer",
    "year": 2018,
    "venue": "Communications of the ACM",
    "url": "https://doi.org/10.1145/3212998",
@@ -1052,37 +1148,37 @@
    "discipline": "blockchain",
    "field_of_use": "Bitcoin proof-of-work mining",
    "agent_type": "software",
-   "description": "Shows the block-reward mechanism is not incentive-compatible: colluding 'selfish miners' withholding blocks earn more than their fair share, and proposes a protocol modification raising the threshold.",
+   "description": "Shows Bitcoin's block-reward mechanism is not incentive-compatible: colluding 'selfish miners' that withhold blocks earn more than their fair share, rational miners join them, and the group grows toward a majority; proposes a protocol modification.",
    "lever": "payoffs",
    "who_acts": "central",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Selfish mining profitable for pools above ~1/4-1/3 of hash power (from memory)",
+   "evidence": "Analysis: unless assumptions on network propagation are made, selfish mining may be feasible for any coalition size; the proposed fix prohibits selfish mining by coalitions below 1/4 of resources (not the assumed 1/2)",
    "pathology": "Reward mechanism rewards deviation; incentive to form pools",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "kalodner2018arbitrum",
    "title": "Arbitrum: Scalable, private smart contracts",
-   "authors": "Harry Kalodner et al.",
+   "authors": "Harry Kalodner, Steven Goldfeder, Xiaoqi Chen, S. Matthew Weinberg, Edward W. Felten",
    "year": 2018,
-   "venue": "USENIX Security 2018",
-   "url": "https://www.usenix.org/conference/usenixsecurity18/presentation/kalodner",
+   "venue": "27th USENIX Security Symposium (USENIX Security 2018)",
+   "url": "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf",
    "doi": null,
    "arxiv_id": null,
    "discipline": "blockchain",
    "field_of_use": "Arbitrum optimistic rollup / off-chain VMs",
    "agent_type": "software",
-   "description": "Managers assert VM state changes backed by deposits; any honest party can challenge, triggering an interactive bisection protocol resolved on-chain, and the loser forfeits its deposit.",
+   "description": "VM managers agree off-chain (unanimous assertions); a single manager may post a disputable assertion with a currency deposit, and any other manager can challenge within a timeout by posting a deposit, triggering an on-chain bisection protocol down to one instruction. The winner recovers its deposit plus half the loser's; the other half goes to the Verifier.",
    "lever": "payoffs;post_deviation",
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Prototype evaluation (not re-checked)",
+   "evidence": "Prototype: VM advanced at ~970,000 hashes/s vs ~1,600/s total for Ethereum; verifier handled over 5,000 disputable assertions per second",
    "pathology": null,
    "seed_match": "P06-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "optimism2025faultproofs",
@@ -1140,15 +1236,15 @@
    "discipline": "blockchain",
    "field_of_use": "Augur prediction markets",
    "agent_type": "software",
-   "description": "REP token holders report event outcomes; reports agreeing with consensus are rewarded and dissenting reporters lose reputation, turning truthful reporting into a Schelling point.",
-   "lever": "payoffs;information",
+   "description": "REP token holders stake tokens on observed outcomes and earn settlement fees; token holders can post progressively larger REP bonds to dispute outcomes, and past a threshold REP forks into outcome-specific versions, so only the version matching reality keeps value.",
+   "lever": "payoffs;post_deviation",
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "hybrid",
-   "evidence": "descriptive (design)",
+   "evidence": "descriptive (design whitepaper; abstract of current arXiv version checked)",
    "pathology": null,
    "seed_match": "P16-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "poon2016lightning",
@@ -1199,27 +1295,27 @@
    "title": "Kleros: A Socio-Legal Case Study of Decentralized Justice & Blockchain Arbitration",
    "authors": "Luis Bergolla, Karen Seif, Can Eken",
    "year": 2022,
-   "venue": "SSRN (Ohio State J. Dispute Resolution)",
+   "venue": "Ohio State Journal on Dispute Resolution 37:55-98 (2022); SSRN preprint",
    "url": "https://doi.org/10.2139/ssrn.3918485",
    "doi": "10.2139/ssrn.3918485",
    "arxiv_id": null,
    "discipline": "law",
    "field_of_use": "Kleros decentralized arbitration",
    "agent_type": "human",
-   "description": "Kleros is a blockchain arbitration system relying on smart contracts and crowdsourced jurors who stake tokens; jurors voting with the majority are rewarded and incoherent jurors lose stake, with appeals to larger juries.",
+   "description": "Socio-legal case study of Kleros, blockchain arbitration relying on smart contracts and crowdsourced, economically incentivized jurors; introduces the 'decentralized sheriff' (Kleros's crowd-based token-certification compliance mechanism) and analyzes obstacles to adoption.",
    "lever": "payoffs;post_deviation",
    "who_acts": "third_party",
    "timing": "ex_post",
    "valence": "hybrid",
-   "evidence": "Socio-legal case study (details of juror incentives from general knowledge, not re-checked here)",
-   "pathology": "Risks for due process noted in prior studies",
+   "evidence": "Case study plus exploratory observational user survey and interface trials",
+   "pathology": "Prior studies warn of risks to procedural safeguards from anonymous, economically incentivized jurors; adoption obstacles",
    "seed_match": "P13-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "buterin2019qf",
    "title": "A Flexible Design for Funding Public Goods",
-   "authors": "Vitalik Buterin, Zoë Hitzig, E. Glen Weyl",
+   "authors": "Vitalik Buterin, Zo\u00eb Hitzig, E. Glen Weyl",
    "year": 2019,
    "venue": "Management Science",
    "url": "https://doi.org/10.1287/mnsc.2019.3337",
@@ -1233,10 +1329,10 @@
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "reward",
-   "evidence": "Theoretical optimality under assumptions",
+   "evidence": "Theoretical: under the 'standard model' the mechanism yields first-best public goods provision; variations limit cost and help protect against collusion",
    "pathology": "Vulnerable to collusion and Sybil contributions",
    "seed_match": "P16-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "youtube2025strikes",
@@ -1387,10 +1483,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "hybrid",
-   "evidence": "Feedback overwhelmingly positive; reputation affects buyer willingness to trade but modest price effects (from memory)",
+   "evidence": "Empirical (1999 eBay data): feedback provided more than half the time despite free-riding incentives; almost always positive; reputation profiles predictive of future performance though eBay's net score is far from the best predictor; high buyer-seller feedback correlation suggests reciprocation and retaliation",
    "pathology": "Reciprocal/retaliatory feedback skews ratings positive",
    "seed_match": "P01-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "resnick2000reputation",
@@ -1412,7 +1508,7 @@
    "evidence": "descriptive",
    "pathology": "Under-provision of feedback, positive bias, cheap pseudonyms",
    "seed_match": "P01-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bolton2013engineering",
@@ -1475,10 +1571,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "structural",
-   "evidence": "Airbnb ratings are highly concentrated at the top of the scale (from title/memory)",
+   "evidence": "Nearly 95% of Airbnb properties average 4.5 or 5 stars and virtually none below 3.5; TripAdvisor hotels and B&Bs average 3.8 and 4.1 stars; ~85% of TripAdvisor vacation rentals at 4.5+; among cross-listed properties 14% more are rated 4.5+ on Airbnb, with weak cross-platform correlation",
    "pathology": "Rating inflation reduces informativeness",
    "seed_match": "P01-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "chandrasekharan2017ban",
@@ -1563,10 +1659,10 @@
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "structural",
-   "evidence": "Identified norms shared across nearly all communities vs community-specific ones (not re-checked)",
+   "evidence": "2.8M comments removed by moderators of 100 top subreddits over 10 months; computational + qualitative analysis identified macro, meso, and micro norms",
    "pathology": null,
    "seed_match": "P12-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "seering2017twitch",
@@ -1712,15 +1808,15 @@
    "discipline": "platform_governance",
    "field_of_use": "Wikipedia governance",
    "agent_type": "human",
-   "description": "Interview study showing Wikipedia governance decentralising: rule-making and enforcement increasingly occur in local WikiProjects, echoing Ostrom's design principles for self-governing institutions.",
+   "description": "Interview study of English Wikipedia showing governance becoming increasingly decentralized as the community grows, for both content decisions and social structures regulating behaviour, as predicted by commons-governance theory (Ostrom).",
    "lever": "norms;relationships",
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Qualitative (not re-checked)",
+   "evidence": "Qualitative: in-depth interviews with 11 Wikipedians holding a variety of roles",
    "pathology": null,
    "seed_match": "P12-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "halfaker2013rise",
@@ -1769,7 +1865,7 @@
   {
    "source_key": "anderson2013badges",
    "title": "Steering user behavior with badges",
-   "authors": "Ashton Anderson et al.",
+   "authors": "Ashton Anderson, Daniel Huttenlocher, Jon Kleinberg, Jure Leskovec",
    "year": 2013,
    "venue": "WWW 2013",
    "url": "https://doi.org/10.1145/2488388.2488398",
@@ -1783,10 +1879,10 @@
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "reward",
-   "evidence": "Users increase targeted activity as they approach badge thresholds (from memory)",
-   "pathology": "",
+   "evidence": "Formal model + Stack Overflow data: badges steer behaviour consistent with model predictions, e.g., users increase targeted activity as they approach a badge boundary; different badges produce different amounts of steering",
+   "pathology": null,
    "seed_match": "P04-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "tourani2017coc",
@@ -1805,10 +1901,10 @@
    "who_acts": "collective",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Descriptive empirical study (not re-checked)",
+   "evidence": "Mixed quantitative/qualitative study with practitioner interviews: top codes of conduct are adopted by hundreds to thousands of projects and share 5 common dimensions",
    "pathology": null,
    "seed_match": "P06-06",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "contributorcovenant2021",
@@ -1901,7 +1997,7 @@
   {
    "source_key": "omahony2007governance",
    "title": "The Emergence of Governance in an Open Source Community",
-   "authors": "Siobhán O'Mahony, Fabrizio Ferraro",
+   "authors": "Siobh\u00e1n O'Mahony, Fabrizio Ferraro",
    "year": 2007,
    "venue": "Academy of Management Journal",
    "url": "https://doi.org/10.5465/amj.2007.27169153",
@@ -1910,15 +2006,15 @@
    "discipline": "organizational_management",
    "field_of_use": "Debian project governance",
    "agent_type": "human",
-   "description": "Multimethod study of how Debian members developed a shared basis of governance, including an elected project leader with bounded authority and a constitution.",
+   "description": "Multimethod study of one open-source community (Debian) finding that members developed a shared basis of formal authority but limited it with democratic mechanisms that allowed experimentation with shifting conceptions of authority; the settled conception was more expansive than the original design.",
    "lever": "relationships;norms",
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Qualitative/quantitative (not re-checked)",
+   "evidence": "Multimethod: qualitative study plus statistical test of predictors of leadership",
    "pathology": null,
    "seed_match": "P09-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "github2025interactionlimits",
@@ -2003,10 +2099,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "descriptive",
+   "evidence": "descriptive (special-issue introduction defining normative MAS)",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "huynh2006fire",
@@ -2025,7 +2121,7 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Simulation: agents using FIRE select better partners than benchmarks (not re-checked)",
+   "evidence": "Empirical evaluation (simulation): FIRE helps agents gain better utility by selecting appropriate partners than benchmarks under various conditions",
    "pathology": null,
    "seed_match": "P08-04",
    "located_via": "search"
@@ -2047,10 +2143,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "descriptive/simulation",
+   "evidence": "descriptive model with initial experiments on the benefit of a social view of reputation (checked in the workshop version 'REGRET: A reputation model for gregarious societies')",
    "pathology": null,
    "seed_match": "P01-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "ramchurn2004trust",
@@ -2072,12 +2168,12 @@
    "evidence": "Survey",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "josang2007survey",
    "title": "A survey of trust and reputation systems for online service provision",
-   "authors": "Audun Jøsang, Roslan Ismail, Colin Boyd",
+   "authors": "Audun J\u00f8sang, Roslan Ismail, Colin Boyd",
    "year": 2007,
    "venue": "Decision Support Systems",
    "url": "https://doi.org/10.1016/j.dss.2005.05.019",
@@ -2094,7 +2190,7 @@
    "evidence": "Survey",
    "pathology": "Unfair ratings, change of identities, discrimination",
    "seed_match": "P01-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "sandholm2001leveled",
@@ -2108,16 +2204,192 @@
    "discipline": "ai_ml",
    "field_of_use": "Automated contracting among self-interested agents",
    "agent_type": "software",
-   "description": "Leveled commitment contracts let agents unilaterally decommit by paying a pre-specified decommitment penalty, enabling flexibility under uncertainty while pricing breach.",
+   "description": "Leveled commitment contracts set the level of commitment by breach penalties: an agent can be freed from the contract by paying a pre-specified decommitment penalty to the other party.",
    "lever": "payoffs;post_deviation",
    "who_acts": "self",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Game-theoretic analysis: agents decommit strategically (less often than truthfully); still can increase expected payoff",
+   "evidence": "Game-theoretic analysis: agents breach strategically (reluctant because the other party might breach first), yet leveled commitment increases both parties' expected payoff and enables deals impossible under full commitment",
    "pathology": "Strategic under-breaching",
    "seed_match": "P03-04",
-   "located_via": "search"
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "lesaege2019kleros",
+   "title": "Kleros Short Paper v1.0.7",
+   "authors": "Cl\u00e9ment Lesaege, Federico Ast, William George",
+   "year": 2019,
+   "venue": "Kleros whitepaper",
+   "url": "https://kleros.io/assets/whitepaper.pdf",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "blockchain",
+   "field_of_use": "Kleros decentralized arbitration",
+   "agent_type": "human",
+   "description": "Jurors self-select into subcourts by staking PNK tokens and are drawn with probability proportional to stake (anti-Sybil); they commit-then-reveal votes, jurors coherent with the final ruling earn arbitration fees and take part of the stake of incoherent jurors (a SchellingCoin-style focal point on honesty), and appeals require fees plus an extra stake compensating the winner of frivolous appeals.",
+   "lever": "payoffs;post_deviation",
+   "who_acts": "third_party",
+   "timing": "ex_post",
+   "valence": "hybrid",
+   "evidence": "descriptive (design whitepaper with worked examples)",
+   "pathology": "Coherence-based rewards reward agreement with the majority rather than correctness per se",
+   "seed_match": "P13-02",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "dias2006marketrobot",
+   "title": "Market-Based Multirobot Coordination: A Survey and Analysis",
+   "authors": "M. Bernardine Dias, Robert Zlot, Nidhi Kalra, Anthony Stentz",
+   "year": 2006,
+   "venue": "Proceedings of the IEEE 94(7):1257-1270",
+   "url": "https://doi.org/10.1109/JPROC.2006.876939",
+   "doi": "10.1109/JPROC.2006.876939",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Multi-robot task allocation",
+   "agent_type": "software",
+   "description": "Survey of market-based multirobot coordination, in which robots bid for tasks in auctions using cost/revenue estimates so that allocation emerges from local, price-mediated negotiation; applied from mapping and exploration to robot soccer.",
+   "lever": "payoffs;options",
+   "who_acts": "collective",
+   "timing": "ex_ante",
+   "valence": "structural",
+   "evidence": "Survey",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "gerkey2002sold",
+   "title": "Sold!: Auction methods for multirobot coordination",
+   "authors": "Brian P. Gerkey, Maja J. Matari\u0107",
+   "year": 2002,
+   "venue": "IEEE Transactions on Robotics and Automation 18(5):758-768",
+   "url": "https://doi.org/10.1109/TRA.2002.803462",
+   "doi": "10.1109/TRA.2002.803462",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Multi-robot task allocation",
+   "agent_type": "software",
+   "description": "MURDOCH, an auction-based dynamic task allocation system (a Contract Net Protocol variant on a resource-centric publish/subscribe model), allocates tasks among failure-prone robots to approximate a global optimum of resource usage.",
+   "lever": "options;payoffs",
+   "who_acts": "collective",
+   "timing": "ex_ante",
+   "valence": "structural",
+   "evidence": "Physical-robot validation in a tightly coupled manipulation task and a loosely coupled long-term autonomy experiment",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "choi2009cbba",
+   "title": "Consensus-Based Decentralized Auctions for Robust Task Allocation",
+   "authors": "Han-Lim Choi, Luc Brunet, Jonathan P. How",
+   "year": 2009,
+   "venue": "IEEE Transactions on Robotics 25(4):912-926",
+   "url": "https://doi.org/10.1109/TRO.2009.2022423",
+   "doi": "10.1109/TRO.2009.2022423",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Autonomous vehicle fleet task allocation",
+   "agent_type": "software",
+   "description": "CBAA and CBBA combine market-based task selection (agents bid on tasks) with a local-communication consensus routine on winning bids to resolve conflicts without a central auctioneer.",
+   "lever": "options;information",
+   "who_acts": "collective",
+   "timing": "ex_ante",
+   "valence": "structural",
+   "evidence": "Proofs of convergence to conflict-free assignment with worst-case performance guarantees; numerical experiments show better convergence and performance than existing auction algorithms",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "strobel2020blockchainswarm",
+   "title": "Blockchain Technology Secures Robot Swarms: A Comparison of Consensus Protocols and Their Resilience to Byzantine Robots",
+   "authors": "Volker Strobel, Eduardo Castell\u00f3 Ferrer, Marco Dorigo",
+   "year": 2020,
+   "venue": "Frontiers in Robotics and AI 7:54",
+   "url": "https://doi.org/10.3389/frobt.2020.00054",
+   "doi": "10.3389/frobt.2020.00054",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Swarm robotics collective sensing",
+   "agent_type": "software",
+   "description": "Robots in a swarm are controlled via blockchain smart contracts acting as 'meta-controllers', so collective decisions reach consensus despite malfunctioning or malicious (Byzantine) robots and resist Sybil identity forging.",
+   "lever": "options;information",
+   "who_acts": "collective",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Simulation (robot swarm simulator) comparing against classical consensus protocols in a collective-sensing task",
+   "pathology": null,
+   "seed_match": "P01-03",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "strobel2023tokeneconomy",
+   "title": "Robot swarms neutralize harmful Byzantine robots using a blockchain-based token economy",
+   "authors": "Volker Strobel, Alexandre Pacheco, Marco Dorigo",
+   "year": 2023,
+   "venue": "Science Robotics 8(79):eabm4636",
+   "url": "https://doi.org/10.1126/scirobotics.abm4636",
+   "doi": "10.1126/scirobotics.abm4636",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Swarm robotics collective sensing",
+   "agent_type": "software",
+   "description": "Robots hold crypto tokens required to take part in security-critical swarm activities; a smart contract redistributes tokens according to contributions so Byzantine robots soon run out of tokens and can no longer influence the swarm.",
+   "lever": "payoffs;post_deviation",
+   "who_acts": "central",
+   "timing": "continuous",
+   "valence": "hybrid",
+   "evidence": "Experiments with up to 24 physical robots and more than 100 simulated robots: the token economy neutralized Byzantine robots in collective sensing",
+   "pathology": null,
+   "seed_match": "P06-03",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "pierson2016robottrust",
+   "title": "Adaptive Inter-Robot Trust for Robust Multi-Robot Sensor Coverage",
+   "authors": "Alyssa Pierson, Mac Schwager",
+   "year": 2016,
+   "venue": "Robotics Research (ISRR 2013), Springer Tracts in Advanced Robotics, pp. 167-183",
+   "url": "https://sites.bu.edu/msl/files/2013/12/PiersonISRR13AdaptiveTrust.pdf",
+   "doi": "10.1007/978-3-319-28872-7_10",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Multi-robot sensor coverage",
+   "agent_type": "software",
+   "description": "Robots adapt inter-robot trust weightings online from relative sensing performance: robots with better sensors take charge of larger regions and poorly performing robots have their regions reduced.",
+   "lever": "information;options",
+   "who_acts": "peer",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Lyapunov-type proof that robots converge to locally optimal positions as good as if sensor qualities were known beforehand",
+   "pathology": null,
+   "seed_match": "P01-02",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "saulnier2017resilientflocking",
+   "title": "Resilient Flocking for Mobile Robot Teams",
+   "authors": "Kelsey Saulnier, David Salda\u00f1a, Amanda Prorok, George J. Pappas, Vijay Kumar",
+   "year": 2017,
+   "venue": "IEEE Robotics and Automation Letters 2(2):1039-1046",
+   "url": "https://doi.org/10.1109/LRA.2017.2655142",
+   "doi": "10.1109/LRA.2017.2655142",
+   "arxiv_id": null,
+   "discipline": "computer_science",
+   "field_of_use": "Mobile robot team formation control",
+   "agent_type": "software",
+   "description": "Resilient consensus on direction of motion despite noncooperative (defective or malicious) robots: dynamic connectivity management keeps the communication network above a critical robustness threshold so consensus stays within the cooperative robots' initial values.",
+   "lever": "relationships;options",
+   "who_acts": "collective",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Theoretical guarantee plus simulations with holonomic mobile robots",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
   }
  ],
- "notes": "Verification: DOIs confirmed via Crossref metadata (title/venue/year/first author); RFC DOIs follow the standard 10.17487/RFCnnnn pattern and RFC pages were opened. located_via='search' marks entries where the source's existence was confirmed but the specific claim/evidence was partly from abstract-only or memory, not the full text: Piatek 2007 and Kalodner 2018 (USENIX pages blocked by Cloudflare; metadata unverified beyond URL), Adar 2000 and Jung 2004 and Eyal 2018 and Resnick 2002 and Zervas 2021 and Anderson 2013 (quantitative figures from memory, flagged in evidence), Kleros (SSRN case study; juror-incentive details from general knowledge), Castro 2002, Saleh 2021, Buterin 2019, Floyd 1999, Demers 1989, Wahbe 1993, Zhong 2003, MAS papers (FIRE, ReGreT, Ramchurn, Josang, Boella, Sandholm), Forte 2008, O'Mahony 2007, Tourani 2017, Chandrasekharan 2018. Web search budget was exhausted before this run, so discovery relied on recall + Crossref/doc verification; no Kleros whitepaper PDF was reachable (kleros.io paths 404). Multiple entries share a single URL (ethereum.org slashing vs inactivity leak) intentionally as separate mechanisms. Candidate mechanisms missing from sensitizing list: challenge period / fraud-proof with bonded challengers (optimistic rollups, Lightning breach remedy, Arbitrum); accountable safety / forensic attribution (Casper, BFT forensics, PeerReview); quorum/supermajority thresholds (BFT); leases / time-bounded grants; capability-based access & least privilege; sandboxing/fault isolation; circuit breaker / self-throttling (adaptive throttling, TCP back-off as voluntary restraint); fair queueing / per-flow isolation; resource quotas; privilege ladders earned by reputation (Stack Overflow); blind/simultaneous-reveal feedback (Airbnb, eBay redesign); bridging-based crowd annotation (Community Notes); meta-moderation (Slashdot); disclosure deadlines as threat (Project Zero 90+30); bug bounties; sender authentication/policy publishing (DMARC); proof-of-work/pricing via processing; identity cost / anti-Sybil newcomer dues; removal explanations (norm education); proactive content restrictions (Twitch chat modes); interaction cool-down limits (GitHub); timelocks on governance execution; decommitment penalties (leveled commitment); root-program distrust of CAs (expulsion of intermediaries); social laws (ex ante action restriction)."
+ "notes": "Verification: DOIs confirmed via Crossref metadata (title/venue/year/first author); RFC DOIs follow the standard 10.17487/RFCnnnn pattern and RFC pages were opened. located_via='search' marks entries where the source's existence was confirmed but the specific claim/evidence was partly from abstract-only or memory, not the full text: Piatek 2007 and Kalodner 2018 (USENIX pages blocked by Cloudflare; metadata unverified beyond URL), Adar 2000 and Jung 2004 and Eyal 2018 and Resnick 2002 and Zervas 2021 and Anderson 2013 (quantitative figures from memory, flagged in evidence), Kleros (SSRN case study; juror-incentive details from general knowledge), Castro 2002, Saleh 2021, Buterin 2019, Floyd 1999, Demers 1989, Wahbe 1993, Zhong 2003, MAS papers (FIRE, ReGreT, Ramchurn, Josang, Boella, Sandholm), Forte 2008, O'Mahony 2007, Tourani 2017, Chandrasekharan 2018. Web search budget was exhausted before this run, so discovery relied on recall + Crossref/doc verification; no Kleros whitepaper PDF was reachable (kleros.io paths 404). Multiple entries share a single URL (ethereum.org slashing vs inactivity leak) intentionally as separate mechanisms. Candidate mechanisms missing from sensitizing list: challenge period / fraud-proof with bonded challengers (optimistic rollups, Lightning breach remedy, Arbitrum); accountable safety / forensic attribution (Casper, BFT forensics, PeerReview); quorum/supermajority thresholds (BFT); leases / time-bounded grants; capability-based access & least privilege; sandboxing/fault isolation; circuit breaker / self-throttling (adaptive throttling, TCP back-off as voluntary restraint); fair queueing / per-flow isolation; resource quotas; privilege ladders earned by reputation (Stack Overflow); blind/simultaneous-reveal feedback (Airbnb, eBay redesign); bridging-based crowd annotation (Community Notes); meta-moderation (Slashdot); disclosure deadlines as threat (Project Zero 90+30); bug bounties; sender authentication/policy publishing (DMARC); proof-of-work/pricing via processing; identity cost / anti-Sybil newcomer dues; removal explanations (norm education); proactive content restrictions (Twitch chat modes); interaction cool-down limits (GitHub); timelocks on governance execution; decommitment penalties (leveled commitment); root-program distrust of CAs (expulsion of intermediaries); social laws (ex ante action restriction). 2026-09-29 resume (web search): opened sources for 27 of the 28 located_via='search' instances (full text or publisher/API abstract) and set them to 'opened page'; huynh2006fire stays 'search' (confirmed only via search-result abstract snippets, Springer page redirected to login). Piatek 2007 and Kalodner 2018 verified from the author/USENIX PDFs (full author lists, venues, BitTyrant median 70% gain, Arbitrum deposit/bisection and split of the loser's deposit). All '(from memory)' numbers were checked: Adar ~70%/top 1%~50% confirmed; Jung & Sit corrected (866% email growth, DNSBL lookups 14% of DNS lookups, 80% of spam sources listed); Eyal & Sirer corrected (fix threshold 1/4; any coalition size absent assumptions); Resnick & Zeckhauser 2002, Zervas 2021 (95% at 4.5+ stars), Anderson 2013 replaced with source figures. Descriptions revised for Saleh 2021, Augur (dispute bonds and forking), Forte 2008, O'Mahony 2007, Sandholm 2001, Bergolla 2022 (venue OSJDR 37:55-98). Added the Kleros Short Paper v1.0.7 (lesaege2019kleros) as primary source and seven multi-robot/swarm instances (Dias 2006, Gerkey & Mataric 2002, Choi 2009 CBBA, Strobel 2020, Strobel 2023, Pierson & Schwager 2016, Saulnier 2017); DOIs checked on Crossref/OpenAlex."
 }

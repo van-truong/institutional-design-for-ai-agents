@@ -7,8 +7,10 @@ Inputs (in taxonomy/):
   search_raw/I_*.json   cross-disciplinary instance slices (copied here from the search dir)
   papers.csv            artificial-agent studies; one instance per (paper, mapped mechanism)
   mechanisms.csv        seed human examples, kept as origin=seed (sensitizing only)
-Instances get stable ids (I0001, ...) ordered by origin, then source key.
-Coding columns (code, mechanism, coder_notes) are left blank for the coding pass.
+Instances get stable ids (I0001, ...) ordered by origin, then source key. On a rebuild, an instance already in
+instances.csv (same origin, source key and seed match) keeps its id and coding columns; only its source fields
+are refreshed. New instances get the next free ids and blank coding columns, for the next coding pass.
+Source-field changes to coded instances are listed in coding/rebuild_changes.csv so their codes can be reviewed.
 """
 import csv, glob, json, os, re
 
@@ -60,9 +62,31 @@ def main():
 
     order = {'seed': 9}
     rows.sort(key=lambda r: (order.get(r['origin'], 0), r['origin'], r['source_key'], r['seed_match']))
-    for n, r in enumerate(rows, 1): r['instance_id'] = f'I{n:04d}'
-    with open(os.path.join(TAX, 'instances.csv'), 'w', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=COLS); w.writeheader(); w.writerows(rows)
+    path = os.path.join(TAX, 'instances.csv')
+    old = list(csv.DictReader(open(path))) if os.path.exists(path) else []
+    cols = list(old[0].keys()) if old else COLS
+    key = lambda r: (r['origin'], r['source_key'], r['seed_match'])
+    prior = {key(r): r for r in old}
+    source_fields = [c for c in COLS if c not in ('instance_id', 'code', 'mechanism', 'coder_notes', 'verified')]
+    changes, next_id = [], max([int(r['instance_id'][1:]) for r in old] or [0]) + 1
+    added = []
+    for r in rows:
+        was = prior.pop(key(r), None)
+        if was is None:
+            r['instance_id'] = f'I{next_id:04d}'; next_id += 1; added.append(r['instance_id'])
+            continue
+        for c in source_fields:
+            if was.get(c, '') != r[c]:
+                changes.append(dict(instance_id=was['instance_id'], field=c, old=was.get(c, ''), new=r[c]))
+        r.update({c: was[c] for c in cols if c not in source_fields})
+    if prior: print('dropped (no longer in the sources):', sorted(r['instance_id'] for r in prior.values()))
+    rows.sort(key=lambda r: r['instance_id'])
+    with open(path, 'w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=cols, extrasaction='ignore', restval=''); w.writeheader(); w.writerows(rows)
+    with open(os.path.join(TAX, 'coding', 'rebuild_changes.csv'), 'w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=['instance_id', 'field', 'old', 'new']); w.writeheader(); w.writerows(changes)
+    print(len(changes), 'source-field changes to existing instances;', len(added), 'new instances',
+          f'({added[0]}-{added[-1]})' if added else '')
     by = {}
     for r in rows: by[r['origin']] = by.get(r['origin'], 0) + 1
     print(len(rows), 'instances:', by)

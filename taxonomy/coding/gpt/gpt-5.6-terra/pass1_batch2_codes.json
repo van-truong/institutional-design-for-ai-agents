@@ -1,0 +1,82 @@
+[
+  {
+    "code": "choose cooperative interaction partners",
+    "definition": "A cooperation-shaping mechanism that uses choose cooperative interaction partners.",
+    "n_instances": 1
+  },
+  {
+    "code": "collective rulemaking",
+    "definition": "A cooperation-shaping mechanism that uses collective rulemaking.",
+    "n_instances": 5
+  },
+  {
+    "code": "cost imposed for deviation",
+    "definition": "A cooperation-shaping mechanism that uses cost imposed for deviation.",
+    "n_instances": 28
+  },
+  {
+    "code": "forfeit escrow on breach",
+    "definition": "A cooperation-shaping mechanism that uses forfeit escrow on breach.",
+    "n_instances": 7
+  },
+  {
+    "code": "imitate successful strategy",
+    "definition": "A cooperation-shaping mechanism that uses imitate successful strategy.",
+    "n_instances": 3
+  },
+  {
+    "code": "incentive-compatible allocation rule",
+    "definition": "A cooperation-shaping mechanism that uses incentive-compatible allocation rule.",
+    "n_instances": 3
+  },
+  {
+    "code": "internalized norm for cooperation",
+    "definition": "A cooperation-shaping mechanism that uses internalized norm for cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "monitor conduct for deviation",
+    "definition": "A cooperation-shaping mechanism that uses monitor conduct for deviation.",
+    "n_instances": 9
+  },
+  {
+    "code": "public record of past conduct",
+    "definition": "A cooperation-shaping mechanism that uses public record of past conduct.",
+    "n_instances": 8
+  },
+  {
+    "code": "quorum agreement rule",
+    "definition": "A cooperation-shaping mechanism that uses quorum agreement rule.",
+    "n_instances": 2
+  },
+  {
+    "code": "remove deviator from group",
+    "definition": "A cooperation-shaping mechanism that uses remove deviator from group.",
+    "n_instances": 9
+  },
+  {
+    "code": "restrict permitted actions ex ante",
+    "definition": "A cooperation-shaping mechanism that uses restrict permitted actions ex ante.",
+    "n_instances": 10
+  },
+  {
+    "code": "reward conditional on conduct",
+    "definition": "A cooperation-shaping mechanism that uses reward conditional on conduct.",
+    "n_instances": 13
+  },
+  {
+    "code": "shared communication",
+    "definition": "A cooperation-shaping mechanism that uses shared communication.",
+    "n_instances": 4
+  },
+  {
+    "code": "structured participation rule",
+    "definition": "A cooperation-shaping mechanism that uses structured participation rule.",
+    "n_instances": 13
+  },
+  {
+    "code": "third-party dispute resolution",
+    "definition": "A cooperation-shaping mechanism that uses third-party dispute resolution.",
+    "n_instances": 5
+  }
+]

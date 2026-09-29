@@ -25,6 +25,306 @@
    "query": "Karaivanov et al. 2022 abstract",
    "results_screened": 1,
    "included": 0
+  },
+  {
+   "source": "api",
+   "query": "OpenAlex/Semantic Scholar/Crossref/Europe PMC DOI lookups for abstracts of 44 in-scope instances",
+   "results_screened": 44,
+   "included": 28
+  },
+  {
+   "source": "web",
+   "query": "Nikiforakis Punishment and counter-punishment in public good games abstract",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Bochet Page Putterman Communication and punishment in voluntary contribution experiments abstract",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Yamagishi 1986 provision of a sanctioning system as a public good abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Fehr Fischbacher 2004 Third-party punishment and social norms abstract",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Andreoni Harbaugh Vesterlund 2003 Carrot or the Stick results",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Masclet Noussair Tucker Villeval 2003 monetary nonmonetary punishment findings",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Cinyabuguma Page Putterman threat of expulsion abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Masclet nonmonetary punishment disapproval results",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Groves Ledyard 1977 Optimal Allocation of Public Goods abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Tabarrok 1998 dominant assurance contracts abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Bernstein 1992 Opting out of the Legal System abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Motta Polo 2003 Leniency programs and cartel prosecution abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Costanza Perrings 1990 flexible assurance bonding system abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Palmer Sigman Walls 1997 Cost of Reducing Municipal Solid Waste abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Falkinger et al 2000 simple mechanism efficient provision public goods abstract",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Becker 1968 Crime and Punishment economic approach",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Barrett 1994 Self-Enforcing International Environmental Agreements abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Barrett 1994 paradox of cooperation signatories Montreal Protocol",
+   "results_screened": 19,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Ostrom Walker Gardner 1992 covenants sword net yield results",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Feinberg Willer Schultz 2014 gossip ostracism conditions pdf",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Miller 2009 Strategic Leniency discoveries after 1993 pdf",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Dyck Morse Zingales Who Blows the Whistle qui tam healthcare pdf",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Ostrom covenants sword percent yields sanctioning alone",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Yamagishi 1986 sanctioning system low trusters",
+   "results_screened": 27,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Shavell 1980 Strict Liability versus Negligence activity level abstract",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Kosfeld Okada Riedl 2009 institution formation results",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "OpenAlex API",
+   "query": "DOI lookup for abstracts of 44 located_via=search instances (indices 53-104)",
+   "results_screened": 44,
+   "included": 44
+  },
+  {
+   "source": "Semantic Scholar API",
+   "query": "DOI lookup for 15 instances with no OpenAlex abstract",
+   "results_screened": 15,
+   "included": 2
+  },
+  {
+   "source": "PubMed E-utilities",
+   "query": "DOI search + efetch abstracts for 9 biology/public-health instances",
+   "results_screened": 9,
+   "included": 7
+  },
+  {
+   "source": "web",
+   "query": "Noe Hammerstein 1994 Biological markets abstract",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Acheson 1975 lobster fiefs abstract",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "Berkes 1986 Alanya rotation lottery",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "Boehm 1993 reverse dominance hierarchy",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Hawken Kleiman 2009 HOPE NCJ 229023",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Wiessner 2005 Ju/'hoansi norm enforcement",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Acheson 1975 perimeter-defended larger lobsters",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "Coleman 1988 social capital closure dropout",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "Crossref API",
+   "query": "DOI checks and bibliographic search for 22 candidate additions",
+   "results_screened": 30,
+   "included": 17
+  },
+  {
+   "source": "web",
+   "query": "Janssen 2010 ecological dynamics CPR experiments (led to Janssen 2013 information paper)",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "regulatory compliance assistance small businesses evaluation",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "Greif 1993 Maghribi traders coalition",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Mauss The Gift Routledge Classics",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Ayres Braithwaite 1992 Responsive Regulation",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "IAEA INFCIRC/153 comprehensive safeguards",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "INFCIRC/153 paragraph 28 / paragraph 19 text",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Chayes 1995 New Sovereignty managerial model",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Montreal Protocol non-compliance indicative list of measures",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "Chayes 1993 On Compliance ambiguity capacity temporal",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "New Sovereignty table of contents capacity building",
+   "results_screened": 9,
+   "included": 0
   }
  ],
  "instances": [
@@ -45,10 +345,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Contributions rise and are sustained near high levels with punishment versus decay to near zero without it.",
+   "evidence": "Cooperators widely punish free riders even when punishment is costly and brings no material benefit; free riders are punished more the more they deviate from cooperators' contribution levels; with punishment opportunities there is less free riding.",
    "pathology": "Some punishment of high contributors; efficiency losses from punishment costs in early periods.",
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "fehr2002altruistic",
@@ -70,7 +370,7 @@
    "evidence": "Cooperation flourishes with punishment and breaks down without it, even with perfect stranger matching.",
    "pathology": null,
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "herrmann2008antisocial",
@@ -89,10 +389,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Punishment's cooperation benefit varies by society; antisocial punishment is prevalent where norms of civic cooperation and rule of law are weak.",
+   "evidence": "Huge cross-societal variation: some pools punished high contributors as much as low contributors, and in some pools antisocial punishment removed the cooperation-enhancing effect of punishment; weak norms of civic cooperation and weak rule of law predict antisocial punishment. Punishment is beneficial only if complemented by strong cooperation norms.",
    "pathology": "Antisocial punishment of high contributors undermines the mechanism in some societies.",
    "seed_match": "P12-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "nikiforakis2008punishment",
@@ -111,10 +411,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Fear of retaliation reduces punishment and cooperation falls relative to punishment-only treatments.",
+   "evidence": "With counter-punishment available, cooperators are less willing to punish free riders; cooperation breaks down and groups earn less than in a treatment without punishment. About one quarter of punishments are retaliated; counter-punishment is partly strategic and partly reciprocal.",
    "pathology": "Counter-punishment/feuds erode peer sanctioning; a key failure mode of decentralized enforcement.",
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "ostrom1992covenants",
@@ -133,10 +433,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "hybrid",
-   "evidence": "Communication alone substantially improves yields; communication plus self-chosen sanctioning yields near-optimal outcomes; imposed sanctioning alone overused.",
+   "evidence": "Communication alone raises yields (repeated communication more than one-shot). Sanctioning alone (imposed exogenously, no communication): net yield rose from -38% to 36%, but after sanctioning costs payoffs improved only 11%; far more sanctioning than subgame perfection predicts, some of it error or 'blind' revenge. Communication plus a self-chosen sanctioning mechanism gave efficiency significantly above imposed sanctioning, with near-optimal yields in some groups, but success varied across the six experiments.",
    "pathology": "Sanctioning without communication is overused and reduces net efficiency.",
    "seed_match": "P06-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "sefton2007effect",
@@ -177,10 +477,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "reward",
-   "evidence": "Reward is as effective as punishment at sustaining contributions and yields higher payoffs because it is not destructive.",
+   "evidence": "Reward is as effective as punishment for maintaining contributions and yields higher total earnings; when both are available, reward increases contributions and payoff while punishment has no effect on contributions and lowers payoff.",
    "pathology": null,
    "seed_match": "P04-06",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "tyran2006achieving",
@@ -221,10 +521,10 @@
    "who_acts": "collective",
    "timing": "ex_ante",
    "valence": "punishment",
-   "evidence": "Organizations frequently form, mostly grand coalitions, raising cooperation substantially.",
+   "evidence": "Institutions are formed and raise cooperation and group welfare, but success is not guaranteed: players are unwilling to implement equilibrium institutions (covering only a subset of players) in which some players can free ride, so fairness shapes which organizations form.",
    "pathology": "Small organizations that exclude free riders are unstable/rejected (fairness concerns).",
    "seed_match": "P09-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "gurerk2006competitive",
@@ -246,7 +546,7 @@
    "evidence": "Initially most avoid sanctions, but the sanctioning institution eventually attracts nearly everyone and sustains full cooperation.",
    "pathology": null,
    "seed_match": "P09-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "dalbo2010institutions",
@@ -287,10 +587,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "hybrid",
-   "evidence": "Both rewards and punishments have moderate positive effects on cooperation; effects stronger when incentives are costly to administer and in iterated dilemmas.",
+   "evidence": "187 effect sizes: rewards (d=0.51) and punishments (d=0.70) have statistically equivalent positive effects on cooperation; incentives are more effective when costly to administer than when free; centralization of incentives did not moderate effects; punishments were more effective in iterated dilemmas with a fixed group than with re-matching or one-shot play.",
    "pathology": null,
    "seed_match": "P04-05",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "balliet2009communication",
@@ -309,10 +609,10 @@
    "who_acts": "peer",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Large positive effect of communication on cooperation; face-to-face much stronger than written; larger groups weaken effect.",
+   "evidence": "45 effect sizes: large positive effect of communication on cooperation (d=1.01); face-to-face (d=1.21) stronger than written messages (d=0.46); the effect is stronger in larger than in smaller groups; communication before versus during iterated dilemmas made no significant difference.",
    "pathology": null,
    "seed_match": "P06-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bochet2006communication",
@@ -331,10 +631,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "hybrid",
-   "evidence": "Chat-room and face-to-face communication raise contributions about as much as punishment; adding punishment to communication adds little.",
+   "evidence": "Communication increases contributions more than punishment, and once punishment costs are counted only communication significantly raises earnings and efficiency. Chat-room communication works nearly as well as face-to-face; adding punishment to verbal communication changes little; numerical-only messages do not significantly raise contributions or efficiency.",
    "pathology": null,
    "seed_match": "P06-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "yamagishi1986provision",
@@ -353,10 +653,10 @@
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Cooperation higher when a sanctioning system exists, and people contribute to it even when distrustful.",
+   "evidence": "In 48 four-person groups, members who realized the undesirable consequences of free riding and that voluntary cooperation was impossible cooperated to establish a sanctioning system that assures others' cooperation, rather than trying to induce cooperation directly; low-trust participants cooperated more when a sanctioning system was present.",
    "pathology": "Second-order free-riding problem on funding the sanction system.",
    "seed_match": "P12-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "milinski2002reputation",
@@ -375,10 +675,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Contributions to the public good sustained at high levels when reputation carries over to indirect-reciprocity rounds.",
+   "evidence": "When reputation matters for later indirect-reciprocity rounds, public-good contributions stay unexpectedly high; if indirect-reciprocity rounds are not expected, contributions drop quickly to zero.",
    "pathology": null,
    "seed_match": "P08-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "fehr2004third",
@@ -397,10 +697,10 @@
    "who_acts": "third_party",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Many third parties punish violations of distribution and cooperation norms, though less than second parties.",
+   "evidence": "Almost two-thirds of third parties punish violations of the distribution norm, more heavily the larger the violation; up to about 60% punish violations of the cooperation norm. Second parties punish violations much more strongly than third parties.",
    "pathology": null,
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "gneezy2000fine",
@@ -422,7 +722,7 @@
    "evidence": "Late arrivals increased after the fine and did not return to baseline when it was removed.",
    "pathology": "Motivational crowding out: fine reframed as a price for lateness.",
    "seed_match": "P03-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "fehr2003detrimental",
@@ -441,10 +741,10 @@
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "punishment",
-   "evidence": "Using the sanction threat reduced back-transfers; forgoing an available sanction elicited most altruistic cooperation.",
+   "evidence": "Sanctions that reveal selfish or greedy intentions destroy altruistic cooperation almost completely, whereas sanctions perceived as fair leave altruism intact.",
    "pathology": "Sanction threat perceived as hostile, crowding out reciprocity.",
    "seed_match": "P03-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "charness2006promises",
@@ -466,7 +766,7 @@
    "evidence": "Promises increase trust and trustworthiness.",
    "pathology": null,
    "seed_match": "P06-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "andreoni2003carrot",
@@ -485,10 +785,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "hybrid",
-   "evidence": "Punishment alone and reward alone each modestly raise offers; combination most effective; rewards and punishment are complements.",
+   "evidence": "Substantial demand for both rewards and punishments. Rewards alone have little influence on cooperation, punishments alone have some; combined, the effect is dramatic, suggesting rewards and punishments are complements. Demand for rewards depends on whether punishment is available.",
    "pathology": null,
    "seed_match": "P04-05",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "masclet2003monetary",
@@ -507,10 +807,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Nonmonetary disapproval initially raises contributions nearly as much as monetary punishment, but monetary is more durable.",
+   "evidence": "Monetary punishment sharply raises average contributions (replicating Fehr & Gächter). Nonmonetary disapproval points alone also raise average contributions and earnings, though by less than monetary punishment, showing that expressed disapproval (peer pressure) contributes to the effect.",
    "pathology": null,
    "seed_match": "P03-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "cinyabuguma2005cooperation",
@@ -529,10 +829,10 @@
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Expulsion threat raises contributions to near-full levels; few expulsions occur.",
+   "evidence": "With the option to vote to expel, contributions rose to nearly 100% of endowments with significantly higher efficiency than the no-expulsion baseline; expulsions were strictly of the lowest contributors; contributions fell off sharply in the last period, when the expulsion threat was unavailable.",
    "pathology": null,
    "seed_match": "P02-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "feinberg2014gossip",
@@ -546,15 +846,15 @@
    "discipline": "psychology",
    "field_of_use": "lab public-goods game with group reassignment",
    "agent_type": "human",
-   "description": "Players can gossip about past partners to future partners and groups can exclude members before each round.",
+   "description": "Players can send gossip notes about past partners to their future group members; in the gossip-with-ostracism game, members can then anonymously vote before each round to exclude one participant (excluded with two or more votes).",
    "lever": "information;relationships;options",
    "who_acts": "peer",
    "timing": "ex_ante",
    "valence": "punishment",
-   "evidence": "Gossip plus ostracism produces the highest cooperation; gossiped-about players reform.",
+   "evidence": "The gossip-with-ostracism game produced the highest contributions and earnings; recipients used gossip to ostracize selfish players, and ostracized individuals subsequently cooperated at levels comparable to those who were not ostracized.",
    "pathology": null,
    "seed_match": "P01-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "feinberg2012virtues",
@@ -573,10 +873,10 @@
    "who_acts": "third_party",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Frustration at observed unfairness motivates gossip, which reduces frustration; threat of gossip increases generosity.",
+   "evidence": "Observers of an antisocial act feel negative affect and are compelled to warn a potentially vulnerable person; sharing the information reduces that affect; more prosocial individuals are most motivated to gossip, even at personal cost. Study 4 shows prosocial gossip deters selfishness and promotes cooperation.",
    "pathology": null,
    "seed_match": "P01-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "roth2002economist",
@@ -598,7 +898,7 @@
    "evidence": "Stable clearinghouses persist while unstable ones unravel; redesigned NRMP implemented.",
    "pathology": "Unraveling (early exploding offers) where mechanisms are unstable.",
    "seed_match": "P16-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "groves1977optimal",
@@ -617,10 +917,10 @@
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Theoretical: equilibria are efficient; later experiments show convergence issues.",
+   "evidence": "Theoretical: under the proposed allocation-taxation scheme the behavioral equilibria are Pareto optimal, so consumers find it in their self-interest to reveal their true preferences for public goods.",
    "pathology": null,
    "seed_match": "P16-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "falkinger2000simple",
@@ -634,15 +934,15 @@
    "discipline": "economics",
    "field_of_use": "lab VCM with Falkinger tax-subsidy",
    "agent_type": "human",
-   "description": "Budget-balanced mechanism that taxes below-average contributions and subsidizes above-average ones.",
+   "description": "Budget-balanced Falkinger (1996) mechanism: deviations from the mean contribution are taxed (below mean) or subsidized (above mean); can implement efficient contributions as a Nash equilibrium with little information.",
    "lever": "payoffs",
    "who_acts": "central",
    "timing": "continuous",
    "valence": "hybrid",
-   "evidence": "Mechanism moves contributions close to the efficient Nash prediction.",
+   "evidence": "Introducing the mechanism generates immediate and large efficiency gains, robust across many experimental settings.",
    "pathology": null,
    "seed_match": "P08-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bagnoli1989provision",
@@ -661,10 +961,10 @@
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Theory: undominated equilibria implement efficient provision.",
+   "evidence": "Theory: the voluntary-contribution game with a provision point and refunds fully implements the core in undominated perfect equilibria.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "tabarrok1998private",
@@ -686,7 +986,7 @@
    "evidence": "Theoretical: contributing becomes a dominant strategy.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "klein1981role",
@@ -708,7 +1008,7 @@
    "evidence": "Theoretical: quality assured when quasi-rents exceed short-run cheating gains.",
    "pathology": null,
    "seed_match": "P06-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "resnick2006value",
@@ -727,10 +1027,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Established high-reputation seller identity earned ~8.1% higher prices than new identities for identical goods.",
+   "evidence": "Established high-reputation identity earned 8.1% higher willingness-to-pay than new identities for matched lots; one or two negative feedbacks on new sellers did not affect willingness-to-pay.",
    "pathology": null,
    "seed_match": "P01-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "milgrom1990role",
@@ -749,10 +1049,10 @@
    "who_acts": "third_party",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Model shows the institution sustains honest trade at low information cost.",
+   "evidence": "Model: the private judge system restores reputation-based enforcement with little information, inducing merchants to behave honestly, sanction violators, become informed, provide evidence, and pay judgments even though each is personally costly.",
    "pathology": null,
    "seed_match": "P13-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "kandori1992social",
@@ -774,7 +1074,7 @@
    "evidence": "Theoretical folk theorem for random matching with contagious punishment or local information.",
    "pathology": null,
    "seed_match": "P08-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bernstein1992opting",
@@ -788,15 +1088,15 @@
    "discipline": "law",
    "field_of_use": "New York Diamond Dealers Club",
    "agent_type": "human",
-   "description": "Private arbitration with reputational sanctions: bourse members settle disputes internally and unpaid judgments are posted, leading to expulsion and industry-wide boycott.",
+   "description": "Bourse private arbitration: judgments are kept secret if promptly paid; unpaid judgments lead to the member's picture being posted in the club, notice to all bourses in the World Federation (which enforce each other's judgments), and suspension or expulsion.",
    "lever": "information;relationships;post_deviation",
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Descriptive: extralegal system handles nearly all disputes more cheaply than courts.",
+   "evidence": "Descriptive: about 150 disputes a year enter the DDC system, an estimated 85% settled in mandatory pre-arbitration conciliation; the system rests on reputation bonds, and the article compares its costs with legally enforceable contracts.",
    "pathology": null,
    "seed_match": "P13-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "miller2009strategic",
@@ -818,7 +1118,7 @@
    "evidence": "Cartel discoveries spike immediately after the 1993 revision and then fall below pre-program levels, consistent with deterrence.",
    "pathology": null,
    "seed_match": "P10-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "motta2003leniency",
@@ -837,10 +1137,10 @@
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "hybrid",
-   "evidence": "Theoretical: leniency can be optimal with limited enforcement budgets.",
+   "evidence": "Theoretical: leniency makes enforcement more effective but can induce collusion by lowering its expected cost; in the optimal policy the first effect dominates when the authority has limited resources, and leniency should extend to firms that reveal information after an investigation starts.",
    "pathology": "Reduced fines may lower ex-ante deterrence if too generous.",
    "seed_match": "P10-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bigoni2012fines",
@@ -884,7 +1184,7 @@
    "evidence": "Theoretical: both induce efficient care; only strict liability induces efficient activity levels (unilateral accidents).",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "becker1968crime",
@@ -906,7 +1206,7 @@
    "evidence": "Theoretical: high fines with low detection probability can be efficient.",
    "pathology": null,
    "seed_match": "P03-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "costanza1990flexible",
@@ -920,7 +1220,7 @@
    "discipline": "ecology_resource_management",
    "field_of_use": "environmental regulation under uncertainty",
    "agent_type": "organization",
-   "description": "Environmental assurance bond: firms post a bond equal to worst-case damages, refunded as they demonstrate lower damage.",
+   "description": "Flexible environmental assurance bond: in addition to charges for known damages, firms post a bond equal to the current best estimate of the largest potential future environmental damages, held in an interest-bearing escrow and returned (with part of the interest) only if the firm proves the damages did not or will not occur; otherwise used for repair and compensation. Shifts the burden of proof to the resource user.",
    "lever": "payoffs;information",
    "who_acts": "central",
    "timing": "ex_ante",
@@ -928,7 +1228,7 @@
    "evidence": "Proposal; descriptive/theoretical.",
    "pathology": "Capital cost may exclude smaller firms.",
    "seed_match": "P06-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "palmer1997cost",
@@ -947,10 +1247,10 @@
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "hybrid",
-   "evidence": "Simulation: deposit-refund achieves waste reduction at roughly half the cost of advance disposal fees or recycling subsidies alone.",
+   "evidence": "Simulation (1990 data, five materials): a $45/ton deposit/refund reduces modeled wastes by 10%, versus an $85/ton advance disposal fee or a $98/ton recycling subsidy for a comparable reduction; deposit/refund is the least costly policy, and about a 7.5% reduction might have been optimal in 1990.",
    "pathology": null,
    "seed_match": "P06-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "dyck2010blows",
@@ -969,10 +1269,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "reward",
-   "evidence": "Employees, media, and regulators detect much fraud; in healthcare, where qui tam rewards exist, employees blow the whistle far more often.",
+   "evidence": "Fraud detection relies on non-traditional actors (employees, media, industry regulators) more than investors, SEC, and auditors; monetary incentives explain employee whistleblowing: employees detect 46.7% of frauds in healthcare, where qui tam suits are available, versus 16.3% elsewhere.",
    "pathology": "Whistleblowers suffer significant career costs.",
    "seed_match": "P10-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "chayes1993compliance",
@@ -986,15 +1286,15 @@
    "discipline": "international_relations",
    "field_of_use": "international treaty regimes",
    "agent_type": "state",
-   "description": "Managerial model: compliance achieved through transparency, reporting, capacity-building, and dispute resolution rather than coercive sanctions.",
+   "description": "Compliance framed as management rather than enforcement: deviations from treaty obligations often stem not from deliberate calculation but from ambiguity of treaty language, limited state capacity, and time lags, and regimes should aim at an 'acceptable' overall level of compliance rather than strict compliance.",
    "lever": "information;norms",
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Descriptive: most states comply most of the time; noncompliance mainly from ambiguity and capacity.",
+   "evidence": "Argument: the level of compliance with international agreements is inherently unverifiable; a propensity to comply is a plausible background assumption; many departures are properly accepted as justified.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "downs1996good",
@@ -1013,10 +1313,10 @@
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Argument: selection effects make compliance rates uninformative about enforcement need.",
+   "evidence": "Argument: high compliance is often because treaties require little beyond what states would do anyway (endogeneity/selection); where noncompliance occurs and selection is attenuated, both self-interest and enforcement play significant roles.",
    "pathology": "Shallow treaties: compliance without real cooperation.",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "axelrod1985achieving",
@@ -1038,7 +1338,7 @@
    "evidence": "Descriptive/comparative case analysis.",
    "pathology": null,
    "seed_match": "P08-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "koremenos2001rational",
@@ -1060,7 +1360,7 @@
    "evidence": "Conjectures, tested in special issue.",
    "pathology": null,
    "seed_match": "P12-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "coe2019arms",
@@ -1184,15 +1484,15 @@
    "discipline": "international_relations",
    "field_of_use": "international environmental agreements",
    "agent_type": "state",
-   "description": "Self-enforcing treaties where signatories adjust abatement in response to membership; later work adds trade restrictions (Montreal Protocol).",
+   "description": "Self-enforcing international environmental agreements modeled two ways: signatories, terms, and nonsignatory actions determined jointly (membership as commitment), and an infinitely repeated renegotiation-proof game.",
    "lever": "payoffs;post_deviation",
    "who_acts": "collective",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Theoretical: self-enforcing agreements achieve much only when gains from cooperation are small.",
+   "evidence": "Theoretical: both models indicate IEAs can do little to improve on the noncooperative outcome when many countries share the resource; self-enforcing IEAs achieve much only when the gains from cooperation are small.",
    "pathology": "Large-gain agreements are not self-enforcing (narrow membership).",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "nordhaus2015climate",
@@ -1211,10 +1511,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "punishment",
-   "evidence": "Modeling: modest tariffs can induce stable large coalitions with high abatement.",
+   "evidence": "Theory plus empirical modeling: without sanctions on non-participants no stable coalitions except minimal-abatement ones; small trade penalties on non-participants (a Climate Club) induce a large stable coalition with high abatement.",
    "pathology": null,
    "seed_match": "P02-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "fearon1997signaling",
@@ -1233,10 +1533,10 @@
    "who_acts": "self",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Theoretical.",
+   "evidence": "Game model: in equilibrium leaders never bluff with either signal type; tying hands does better on average but creates greater ex ante risk of war than sinking costs.",
    "pathology": null,
    "seed_match": "P06-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "wiessner2005norm",
@@ -1250,15 +1550,15 @@
    "discipline": "anthropology",
    "field_of_use": "Ju/'hoansi (!Kung) hunter-gatherers, Kalahari",
    "agent_type": "human",
-   "description": "Analysis of recorded conversations: criticism, mockery, and complaints (mostly verbal sanctions) directed at norm violators such as big shots and stingy people.",
+   "description": "Analysis of 308 recorded Ju/'hoansi conversations (1974, 1996-97): norm enforcement mostly by verbal criticism (put-downs, mild and harsh complaints) by individuals or coalitions, aimed chiefly at big-shot behavior, neglect of kinship obligations, and troublemaking.",
    "lever": "norms;information",
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Punishment is mostly low-cost verbal, often collective; physical punishment rare.",
+   "evidence": "56% of conversations contained criticism vs 7% praise; costs to punishers relatively low; 170 of 192 threats to community stability were punished by coalitions; lazy or stingy people were rarely criticized and instead lost social regard and exchange partners.",
    "pathology": null,
    "seed_match": "P03-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "mathew2011punishment",
@@ -1272,15 +1572,15 @@
    "discipline": "anthropology",
    "field_of_use": "Turkana pastoralist raiding parties, Kenya",
    "agent_type": "human",
-   "description": "Community sanctions (verbal, and corporal punishment or fines by age-mates) against warriors who desert or show cowardice in raids.",
+   "description": "Community-imposed sanctions, including collective corporal punishment and fines, against Turkana warriors who show cowardice or desert raids.",
    "lever": "payoffs;post_deviation;norms",
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Sanctions support cooperation among large groups of unrelated men.",
+   "evidence": "Representative sample of 88 recent raids; parties of several hundred unrelated warriors; free-riders punished; authors interpret as third-party sanctions sustaining large-scale cooperation.",
    "pathology": null,
    "seed_match": "P07-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "henrich2006costly",
@@ -1299,10 +1599,10 @@
    "who_acts": "third_party",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "All populations punish; magnitude varies and covaries with altruism across societies.",
+   "evidence": "Experiments in 15 diverse populations: all show some costly punishment as unequal offers increase; magnitude varies substantially; punishment positively covaries with altruistic behavior across populations.",
    "pathology": null,
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "gurven2004give",
@@ -1321,10 +1621,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Review: reciprocity and kinship both predict sharing patterns.",
+   "evidence": "Review of cross-cultural evidence: kin selection, reciprocal altruism, tolerated scrounging and costly signaling each explain some variance in sharing; resource ecology and coordination in acquisition shape sharing.",
    "pathology": null,
    "seed_match": "P17-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "boehm1993egalitarian",
@@ -1338,15 +1638,15 @@
    "discipline": "anthropology",
    "field_of_use": "egalitarian foraging and tribal societies",
    "agent_type": "human",
-   "description": "Reverse dominance hierarchy: the group collectively uses ridicule, criticism, ostracism, and execution to curb would-be dominants.",
+   "description": "Reverse dominance hierarchy: followers collectively control would-be dominant leaders through public opinion, criticism and ridicule, disobedience, desertion, deposition, ostracism, and assassination/execution.",
    "lever": "norms;post_deviation;relationships",
    "who_acts": "collective",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Cross-cultural survey (descriptive).",
+   "evidence": "Cross-cultural survey of 48 societies with usable data (from ~316 surveyed): behaviors terminating relations with or removing an overassertive individual reported in 38 of 48, assassination in 11 of 48.",
    "pathology": null,
    "seed_match": "P02-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "anderson2002economics",
@@ -1360,15 +1660,15 @@
    "discipline": "economics",
    "field_of_use": "ROSCAs in Kibera slum, Nairobi",
    "agent_type": "human",
-   "description": "Rotating savings and credit associations: members contribute each meeting and one receives the pot in rotation, with social sanctions for default.",
+   "description": "Rotating savings and credit associations in a Nairobi slum: members contribute at each meeting and the pot rotates; participation is a wife's strategy to protect savings from her husband's claims for immediate consumption.",
    "lever": "options;relationships;payoffs",
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "ROSCA participation mostly by married women with independent income, used to protect savings from husbands' claims.",
+   "evidence": "Survey data from Kenyan roscas: mostly women, especially those in couples with independent income; household-conflict model tested with the data.",
    "pathology": null,
    "seed_match": "P07-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "besley1994rotating",
@@ -1382,15 +1682,15 @@
    "discipline": "economics",
    "field_of_use": "ROSCAs (theory)",
    "agent_type": "human",
-   "description": "Random and bidding ROSCAs allocate the pot; social sanctions deter default by early recipients.",
+   "description": "Random and bidding ROSCAs allocate the pot among members saving for an indivisible good.",
    "lever": "options;payoffs",
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Theoretical welfare comparison with credit markets.",
+   "evidence": "Theory: neither ROSCA type is efficient; individuals are better off with a credit market than a bidding ROSCA, but a random ROSCA may give higher ex ante expected utility than a credit market.",
    "pathology": "Default incentive after receiving the pot.",
    "seed_match": "P07-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "stiglitz1990peer",
@@ -1409,10 +1709,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Theoretical: peer monitoring transfers risk and improves welfare.",
+   "evidence": "Theory: peer monitoring (cosigner pays a penalty if the borrower goes bankrupt) transfers risk from bank to cosigner, yet in a competitive credit market improves borrowers' welfare; credited with Grameen Bank's performance.",
    "pathology": "Borrowers bear more risk.",
    "seed_match": "P07-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "besley1995group",
@@ -1426,15 +1726,15 @@
    "discipline": "economics",
    "field_of_use": "group lending programs",
    "agent_type": "human",
-   "description": "Joint liability with social collateral: group members impose social penalties on defaulting members.",
+   "description": "Joint liability group lending: successful members may repay for members whose projects fail; social collateral (social penalties) can be harnessed to deter default.",
    "lever": "payoffs;relationships",
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Theory: social sanctions improve repayment.",
+   "evidence": "Repayment-game theory: positive effect (members repay for others) and negative effect (whole-group default when some would have repaid individually); social collateral mitigates the negative effect.",
    "pathology": "Joint liability can cause whole-group default.",
    "seed_match": "P07-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "coleman1988social",
@@ -1453,10 +1753,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Empirical: closure associated with lower dropout rates.",
+   "evidence": "Theory plus analysis of high-school dropouts: closure supports obligations/expectations and effective norms; lower dropout with more family social capital and in Catholic schools (intergenerational closure).",
    "pathology": null,
    "seed_match": "P17-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "williams2007ostracism",
@@ -1475,10 +1775,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Review: ostracism threatens fundamental needs; targets often comply or become more cooperative.",
+   "evidence": "Review: ostracism causes pain, sadness and anger and threatens fundamental needs; targets fortifying relational needs become more prosocial, those fortifying control/recognition needs become more antisocial; chronic ostracism leads to depression and helplessness.",
    "pathology": "Can provoke aggression and withdrawal.",
    "seed_match": "P02-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "ratnieks1989worker",
@@ -1492,15 +1792,15 @@
    "discipline": "evolutionary_biology",
    "field_of_use": "honeybee colonies (Apis mellifera)",
    "agent_type": "animal",
-   "description": "Worker policing: workers selectively eat eggs laid by other workers, leaving queen-laid eggs.",
+   "description": "Worker policing: honeybee workers discriminate against and destroy worker-laid male eggs, leaving queen-laid eggs.",
    "lever": "post_deviation;payoffs",
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Worker-laid eggs removed rapidly; worker reproduction effectively suppressed.",
+   "evidence": "Experiments show strong discrimination by workers against worker-laid male eggs, supporting the worker-policing hypothesis (queens mate with 10-20 males; ~1 in 1000 males worker-derived).",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "wenseleers2006enforced",
@@ -1514,15 +1814,15 @@
    "discipline": "evolutionary_biology",
    "field_of_use": "10 species of social wasps and honeybee",
    "agent_type": "animal",
-   "description": "Comparative test: policing effectiveness versus proportion of workers that reproduce.",
+   "description": "Comparative test in nine Vespidae wasps and the honeybee: whether workers forgo reproduction voluntarily or because nestmates police (kill) worker-laid eggs.",
    "lever": "post_deviation",
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "More effective policing associated with fewer reproductive workers; altruism is enforced more than voluntary.",
+   "evidence": "Social coercion is the key: workers forgo reproduction in response to the threat that their eggs will be policed; altruism is enforced.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "ratnieks2006conflict",
@@ -1541,10 +1841,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Review.",
+   "evidence": "Review of five areas of reproductive conflict (sex allocation, queen rearing, male rearing, caste fate, breeding conflicts); kinship, coercion and constraint typically combine to limit conflict and often resolve it completely.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bshary2006image",
@@ -1563,10 +1863,10 @@
    "who_acts": "peer",
    "timing": "ex_ante",
    "valence": "reward",
-   "evidence": "Cleaners behave more cooperatively when observed by bystanders.",
+   "evidence": "Field/lab experiments: eavesdropping clients spent more time next to 'cooperative' cleaners (image scoring); trained cleaners fed more cooperatively in an image-scoring than a non-image-scoring situation.",
    "pathology": null,
    "seed_match": "P08-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "bshary2005punishment",
@@ -1585,10 +1885,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Both punishment and partner switching reduce subsequent cheating.",
+   "evidence": "Lab experiment: plates mimicking client chasing (punishment) or fleeing (partner switching) when cleaners ate preferred prawn shifted cleaners toward flake feeding after six learning trials.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "cluttonbrock1995punishment",
@@ -1607,10 +1907,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Review and models.",
+   "evidence": "Review: retaliatory aggression is common; used to establish dominance, discourage parasites and cheats, discipline offspring or sexual partners, and maintain cooperative behavior.",
    "pathology": null,
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "kiers2003host",
@@ -1624,15 +1924,15 @@
    "discipline": "evolutionary_biology",
    "field_of_use": "soybean root nodules with rhizobia",
    "agent_type": "animal",
-   "description": "Host sanctions: plants reduce oxygen supply to nodules whose rhizobia fail to fix nitrogen.",
+   "description": "Host sanctions: soybeans penalize rhizobia that fail to fix N2 inside their nodules; decreased O2 supply to the nodule implicated as a possible mechanism.",
    "lever": "payoffs;post_deviation",
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Non-fixing rhizobia reproductive success reduced ~50%.",
+   "evidence": "Experiments at three scales (whole plants, half root systems, single nodules): forced non-fixation reduced rhizobial reproductive success by about 50%.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "nowak1998evolution",
@@ -1651,10 +1951,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Simulations: cooperation can evolve via indirect reciprocity.",
+   "evidence": "Simulations and analytic models: indirect reciprocity is evolutionarily stable if the probability of knowing the recipient's image exceeds the cost-to-benefit ratio of helping.",
    "pathology": null,
    "seed_match": "P08-04",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "noe1994biological",
@@ -1673,10 +1973,10 @@
    "who_acts": "peer",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Theory and examples.",
+   "evidence": "Formal model plus examples of mating, cooperative and mutualistic markets: when one class outnumbers the other and sampling costs are low, choosiness selects for high-value commodities.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "jensen2007chimpanzees",
@@ -1690,15 +1990,15 @@
    "discipline": "evolutionary_biology",
    "field_of_use": "captive chimpanzees",
    "agent_type": "animal",
-   "description": "Chimpanzees can collapse a table to remove food from a conspecific who stole it (retaliation).",
+   "description": "Chimpanzees could pull a rope to collapse a table, removing food from a conspecific; tested when food was stolen vs merely unequally obtained.",
    "lever": "post_deviation",
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Chimpanzees retaliate against theft but not against mere inequity.",
+   "evidence": "Chimpanzees retaliated against conspecifics who stole their food but did not knock food away when the outcome alone was disadvantageous (vengeful, not spiteful).",
    "pathology": null,
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "wilkinson1984reciprocal",
@@ -1712,15 +2012,15 @@
    "discipline": "evolutionary_biology",
    "field_of_use": "vampire bats (Desmodus rotundus)",
    "agent_type": "animal",
-   "description": "Blood-meal regurgitation to roost-mates, preferentially to kin and to those who previously donated.",
+   "description": "Blood-meal regurgitation among roost-mates in wild vampire bats, depending on relatedness and on opportunity for reciprocation.",
    "lever": "relationships;payoffs",
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "reward",
-   "evidence": "Sharing depends on relatedness and association, consistent with reciprocal altruism.",
+   "evidence": "Sharing depends equally and independently on relatedness and an index of opportunity for reciprocation; captive experiments show unrelated bats reciprocally exchange blood.",
    "pathology": null,
    "seed_match": "P08-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "sachs2004evolution",
@@ -1742,7 +2042,7 @@
    "evidence": "Review.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "raihani2012punishment",
@@ -1761,10 +2061,10 @@
    "who_acts": "peer",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "Review: punishment mostly in asymmetric relationships; less common than partner choice.",
+   "evidence": "Review: punishment most probable when players differ in strength or strategic options; aggression yielding immediate benefits may often suffice to deter cheats, explaining the relative scarcity of punishment in nature.",
    "pathology": null,
    "seed_match": "P03-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "ostrom1990governing",
@@ -1786,7 +2086,7 @@
    "evidence": "Comparative case analysis: long-enduring systems share these principles.",
    "pathology": null,
    "seed_match": "P05-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "cox2010review",
@@ -1866,7 +2166,7 @@
    "discipline": "ecology_resource_management",
    "field_of_use": "Alanya (Turkey) coastal fishery",
    "agent_type": "human",
-   "description": "Rotational lottery of fishing spots: sites allocated annually by lot and fishers rotate daily through them.",
+   "description": "Alanya (Turkey) fishing cooperative: fishing spots listed and spaced before the season, fishers draw lots for initial spots, then rotate daily through sites (east Sept-Jan, west after).",
    "lever": "options",
    "who_acts": "collective",
    "timing": "ex_ante",
@@ -1893,10 +2193,10 @@
    "who_acts": "collective",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Simulation: temple-level coordination yields near-optimal harvests.",
+   "evidence": "Ecological modeling: water temple networks reshape the adaptive landscape; presented as a complex adaptive system evolved to manage the agroecosystem.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "gibson2005local",
@@ -1915,10 +2215,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "punishment",
-   "evidence": "Rule enforcement strongly associated with better forest conditions.",
+   "evidence": "Test with IFRI data from 178 forest user groups: regular monitoring and sanctioning (rule enforcement) is argued and tested as a necessary condition for good forest conditions, compared against social capital, formal organization and forest dependence.",
    "pathology": null,
    "seed_match": "P09-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "rustagi2010conditional",
@@ -1959,10 +2259,10 @@
    "who_acts": "collective",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "Review.",
+   "evidence": "Review: local institutions sustain resources but fail under rapid change; recommends analytic deliberation (dialogue), complex redundant layered institutions, a mix of institutional types, and designs for experimentation and change.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "jayachandran2017cash",
@@ -2028,7 +2328,7 @@
    "evidence": "Productivity up ~44% (half incentive, half sorting).",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "kandel1992peer",
@@ -2050,7 +2350,7 @@
    "evidence": "Theoretical.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "mas2009peers",
@@ -2069,10 +2369,10 @@
    "who_acts": "peer",
    "timing": "continuous",
    "valence": "structural",
-   "evidence": "A more productive coworker raises others' effort, only when that coworker can observe them.",
+   "evidence": "High-frequency supermarket data: introducing a highly productive worker raises coworkers' productivity; effort responds to productivity of workers who can see them, not those who cannot, and more to frequent interaction partners.",
    "pathology": null,
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "knez2001firm",
@@ -2135,10 +2435,10 @@
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "reward",
-   "evidence": "Theoretical.",
+   "evidence": "Theory: with risk-neutral workers rank-order pay achieves the same efficient allocation as piece rates; risk-averse workers may prefer it; heterogeneous ability causes adverse selection unless handicapping.",
    "pathology": "Sabotage and reduced cooperation among competitors.",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "hawken2009managing",
@@ -2152,15 +2452,15 @@
    "discipline": "law",
    "field_of_use": "Hawaii HOPE probation",
    "agent_type": "human",
-   "description": "Swift, certain, modest sanctions (brief jail) for each probation violation.",
+   "description": "HOPE: swift, certain sanctions (short jail stays) preceded by a clear warning for each probation violation; treatment mandated only for those who keep testing positive.",
    "lever": "post_deviation;payoffs",
    "who_acts": "central",
    "timing": "ex_post",
    "valence": "punishment",
-   "evidence": "RCT: fewer positive drug tests, missed appointments, and revocations.",
+   "evidence": "RCT vs probation-as-usual: large reductions in positive drug tests and missed appointments; significantly fewer arrests at 3, 6 and 12 months; more but shorter jail terms; about one-third the prison days on revocations or new convictions.",
    "pathology": "Multi-site replication found weaker effects.",
    "seed_match": "P05-01",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "ferretti2020quantifying",
@@ -2182,7 +2482,7 @@
    "evidence": "Modeling: sufficiently fast digital tracing could control the epidemic.",
    "pathology": "Privacy concerns; uptake thresholds.",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "karaivanov2022covid",
@@ -2201,10 +2501,10 @@
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "punishment",
-   "evidence": "Mandate announcements associated with sharp increases in first-dose uptake.",
+   "evidence": "Difference-in-differences across Canadian provinces: mandate announcement associated with >60% rise in weekly first doses; time series for France, Italy and Germany corroborate; simulated gains up to 5 pp (Canada) to 12 pp (Italy).",
    "pathology": "Equity concerns and potential backlash.",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "camposmercade2021monetary",
@@ -2218,15 +2518,15 @@
    "discipline": "public_health",
    "field_of_use": "Sweden COVID-19 vaccination RCT",
    "agent_type": "human",
-   "description": "A modest cash payment (SEK 200) for getting vaccinated.",
+   "description": "A modest cash payment (SEK 200, about US$24) for getting a COVID-19 vaccine, compared with behavioral nudges, in a preregistered RCT in Sweden.",
    "lever": "payoffs",
    "who_acts": "central",
    "timing": "ex_ante",
    "valence": "reward",
-   "evidence": "Payment increased vaccination rate by ~4 percentage points.",
+   "evidence": "Payment increased vaccination by about 4 percentage points; nudges had small positive effects.",
    "pathology": null,
    "seed_match": "P04-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "omer2006nonmedical",
@@ -2267,10 +2567,10 @@
    "who_acts": "self",
    "timing": "ex_ante",
    "valence": "structural",
-   "evidence": "Theory: voluntary coverage below eradication level.",
+   "evidence": "Game theory: voluntary vaccination cannot eradicate disease because self-interest outweighs slight vaccine risk once coverage is high; perceived-risk increases cut uptake more for highly transmissible pathogens; coverage is hard to restore after a scare.",
    "pathology": "Free riding on herd immunity.",
    "seed_match": null,
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "halpern2015randomized",
@@ -2284,15 +2584,15 @@
    "discipline": "public_health",
    "field_of_use": "CVS Caremark employees",
    "agent_type": "human",
-   "description": "Individual or group rewards vs. deposit contracts ($150 own money refundable plus bonus on abstinence).",
+   "description": "RCT among CVS Caremark employees and relatives/friends: individual or group (six-person) rewards (~$800) vs deposit programs ($150 refundable deposit plus $650 rewards) for smoking cessation.",
    "lever": "payoffs",
    "who_acts": "self",
    "timing": "ex_ante",
    "valence": "hybrid",
-   "evidence": "Reward programs more accepted; deposit programs more effective among acceptors.",
+   "evidence": "Acceptance 90.0% reward vs 13.7% deposit; ITT 6-month abstinence higher with rewards (15.7% vs 10.2%); among those who would accept either, deposits gave 13.2 pp higher abstinence (IV).",
    "pathology": "Low take-up of deposit contracts.",
    "seed_match": "P06-03",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "gine2010put",
@@ -2311,10 +2611,10 @@
    "who_acts": "self",
    "timing": "ex_ante",
    "valence": "punishment",
-   "evidence": "Increased likelihood of passing tests at 6 and 12 months.",
+   "evidence": "11% take-up; those offered CARES were 3 pp more likely to pass the 6-month urine test, and effects persisted in surprise tests at 12 months.",
    "pathology": null,
    "seed_match": "P06-02",
-   "located_via": "search"
+   "located_via": "opened page"
   },
   {
    "source_key": "axelrod1986evolutionary",
@@ -2336,8 +2636,470 @@
    "evidence": "Simulations: norms collapse without metanorms, established with them.",
    "pathology": null,
    "seed_match": "P12-01",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "granovetter1985economic",
+   "title": "Economic Action and Social Structure: The Problem of Embeddedness",
+   "authors": "Granovetter, M.",
+   "year": 1985,
+   "venue": "American Journal of Sociology",
+   "url": "https://doi.org/10.1086/228311",
+   "doi": "10.1086/228311",
+   "arxiv_id": null,
+   "discipline": "sociology",
+   "field_of_use": "economic action in modern industrial society (critique of markets-and-hierarchies)",
+   "agent_type": "human",
+   "description": "Embeddedness: economic action, including trust and malfeasance, is shaped by ongoing structures of concrete personal relations rather than by atomized actors or generalized morality alone.",
+   "lever": "relationships;information",
+   "who_acts": "peer",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Theoretical argument illustrated by a critique of Williamson's markets and hierarchies program.",
+   "pathology": null,
+   "seed_match": "P17-03",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "heckathorn1990collective",
+   "title": "Collective Sanctions and Compliance Norms: A Formal Theory of Group-Mediated Social Control",
+   "authors": "Heckathorn, D.D.",
+   "year": 1990,
+   "venue": "American Sociological Review",
+   "url": "https://doi.org/10.2307/2095762",
+   "doi": "10.2307/2095762",
+   "arxiv_id": null,
+   "discipline": "sociology",
+   "field_of_use": "groups subject to external collective sanctions (formal theory)",
+   "agent_type": "human",
+   "description": "Group-mediated social control: an external agent sanctions the whole group, which can induce intragroup control of members (compliance norms) or intragroup resistance to the sanctions (opposition norms).",
+   "lever": "payoffs;norms",
+   "who_acts": "central",
+   "timing": "ex_post",
+   "valence": "punishment",
+   "evidence": "Dynamic rational-choice model: group response depends on sanction strength, monitoring capacity, and the efficacy and cost of intragroup control.",
+   "pathology": "Opposition norms: the group may act against the external sanctioner.",
+   "seed_match": "P07-01",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "willer2009groups",
+   "title": "Groups Reward Individual Sacrifice: The Status Solution to the Collective Action Problem",
+   "authors": "Willer, R.",
+   "year": 2009,
+   "venue": "American Sociological Review",
+   "url": "https://doi.org/10.1177/000312240907400102",
+   "doi": "10.1177/000312240907400102",
+   "arxiv_id": null,
+   "discipline": "sociology",
+   "field_of_use": "lab collective-action (public-goods) groups",
+   "agent_type": "human",
+   "description": "Status as a selective incentive: group members give high contributors higher status, influence, cooperation and gifts, because contributing signals motivation to help the group.",
+   "lever": "payoffs;relationships",
+   "who_acts": "peer",
+   "timing": "ex_post",
+   "valence": "reward",
+   "evidence": "Four studies: high contributors earned status, influence, cooperation and more valuable gifts (Studies 1-3); those who received status later contributed more and viewed the group more positively (Study 4).",
+   "pathology": null,
+   "seed_match": "P04-01",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "kollock1994emergence",
+   "title": "The Emergence of Exchange Structures: An Experimental Study of Uncertainty, Commitment, and Trust",
+   "authors": "Kollock, P.",
+   "year": 1994,
+   "venue": "American Journal of Sociology",
+   "url": "https://doi.org/10.1086/230539",
+   "doi": "10.1086/230539",
+   "arxiv_id": null,
+   "discipline": "sociology",
+   "field_of_use": "lab exchange market with varied information asymmetry",
+   "agent_type": "human",
+   "description": "Under uncertainty (information asymmetry about goods), traders form committed exchange relations and attend to their own and others' reputations.",
+   "lever": "relationships;information",
+   "who_acts": "peer",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Experiment: varying information asymmetry produced significant differences in commitment, concern for own and others' reputation, and trust among trading partners.",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "horne2002sanctioning",
+   "title": "Sanctioning Costs and Norm Enforcement",
+   "authors": "Horne, C. & Cutlip, A.",
+   "year": 2002,
+   "venue": "Rationality and Society",
+   "url": "https://doi.org/10.1177/1043463102014003002",
+   "doi": "10.1177/1043463102014003002",
+   "arxiv_id": null,
+   "discipline": "sociology",
+   "field_of_use": "lab experiment on peer sanctioning of deviance",
+   "agent_type": "human",
+   "description": "Peer sanctioning of deviant behavior, with metanorms that encourage (reward) people who sanction.",
+   "lever": "norms;post_deviation",
+   "who_acts": "peer",
+   "timing": "ex_post",
+   "valence": "punishment",
+   "evidence": "Experiments mostly support the hypotheses: higher sanctioning costs reduce sanctioning directly but strengthen metanorms that encourage sanctioning, which in turn increase enforcement.",
+   "pathology": null,
+   "seed_match": "P12-01",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "greif1993contract",
+   "title": "Contract Enforceability and Economic Institutions in Early Trade: The Maghribi Traders' Coalition",
+   "authors": "Greif, A.",
+   "year": 1993,
+   "venue": "American Economic Review",
+   "url": "https://econpapers.repec.org/RePEc:aea:aecrev:v:83:y:1993:i:3:p:525-48",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "economics",
+   "field_of_use": "11th-century Mediterranean long-distance trade (Cairo geniza)",
+   "agent_type": "human",
+   "description": "Merchants' coalition: members share information on agents' conduct by letter and follow a multilateral punishment strategy, never hiring an agent who cheated any member, until he compensates the injured merchant.",
+   "lever": "relationships;information;post_deviation",
+   "who_acts": "collective",
+   "timing": "ex_post",
+   "valence": "punishment",
+   "evidence": "Geniza documents show community ostracism of cheating agents (e.g., an agent ostracized as far as Sicily until he compensated); game model shows multilateral punishment is self-enforcing with a wage premium.",
+   "pathology": null,
+   "seed_match": "P02-01",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "mauss1925gift",
+   "title": "The Gift: The Form and Reason for Exchange in Archaic Societies (Essai sur le don)",
+   "authors": "Mauss, M.",
+   "year": 1925,
+   "venue": "L'Annee sociologique; English trans. W.D. Halls, Routledge 1990 / Routledge Classics 2002 (book)",
+   "url": "https://books.google.com/books/about/The_Gift.html?id=zxsiBQAAQBAJ",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "anthropology",
+   "field_of_use": "gift exchange in Polynesia, Melanesia and Pacific Northwest societies",
+   "agent_type": "human",
+   "description": "Gift exchange governed by the obligations to give, to receive, and to reciprocate, which bind groups into relationships of exchange and obligation.",
+   "lever": "norms;relationships",
+   "who_acts": "peer",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Comparative ethnographic and historical-legal analysis (descriptive).",
+   "pathology": null,
+   "seed_match": "P17-02",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "braithwaite1989crime",
+   "title": "Crime, Shame and Reintegration",
+   "authors": "Braithwaite, J.",
+   "year": 1989,
+   "venue": "Cambridge University Press (book)",
+   "url": "https://doi.org/10.1017/CBO9780511804618",
+   "doi": "10.1017/CBO9780511804618",
+   "arxiv_id": null,
+   "discipline": "sociology",
+   "field_of_use": "criminology: crime and social control across societies",
+   "agent_type": "human",
+   "description": "Reintegrative shaming: disapproval of the wrongful act within a context of respect for the offender, followed by reintegration, as moralizing social control.",
+   "lever": "norms;post_deviation",
+   "who_acts": "collective",
+   "timing": "ex_post",
+   "valence": "hybrid",
+   "evidence": "Theory: societies differ in crime rates because of how they shame; shaming within respect is powerful and efficient social control.",
+   "pathology": "Stigmatizing shaming can be counterproductive and make crime worse.",
+   "seed_match": "P11-02",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "ayres1992responsive",
+   "title": "Responsive Regulation: Transcending the Deregulation Debate",
+   "authors": "Ayres, I. & Braithwaite, J.",
+   "year": 1992,
+   "venue": "Oxford University Press (book)",
+   "url": "https://books.google.com/books/about/Responsive_Regulation.html?id=pip68bvLGKYC",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "law",
+   "field_of_use": "business regulation",
+   "agent_type": "organization",
+   "description": "Responsive regulation: regulators combine persuasion and sanctions, starting with cooperative persuasion and escalating up an enforcement pyramid toward more punitive sanctions when firms keep offending.",
+   "lever": "post_deviation;payoffs",
+   "who_acts": "central",
+   "timing": "ex_post",
+   "valence": "hybrid",
+   "evidence": "Draws on empirical regulatory studies worldwide and game theory (tit-for-tat logic); also proposes empowering public-interest groups and enforced self-regulation.",
+   "pathology": null,
+   "seed_match": "P05-01",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "iaea1972infcirc153",
+   "title": "The Structure and Content of Agreements between the Agency and States Required in Connection with the Treaty on the Non-Proliferation of Nuclear Weapons (INFCIRC/153 (Corrected))",
+   "authors": "International Atomic Energy Agency",
+   "year": 1972,
+   "venue": "IAEA Information Circular INFCIRC/153 (Corrected)",
+   "url": "https://www.iaea.org/sites/default/files/publications/documents/infcircs/1972/infcirc153.pdf",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "international_relations",
+   "field_of_use": "nuclear non-proliferation (NPT comprehensive safeguards)",
+   "agent_type": "state",
+   "description": "Comprehensive safeguards: states declare nuclear material and keep national accounting systems; the IAEA verifies via material accountancy, containment and surveillance, and routine and special inspections; if the Board finds the Agency cannot verify non-diversion it may report under Article XII.C of the Statute (to the UN Security Council and General Assembly).",
+   "lever": "information;post_deviation",
+   "who_acts": "third_party",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Primary legal text; stated objective is timely detection of diversion of significant quantities and deterrence by the risk of early detection. (Text read at the FAS mirror https://nuke.fas.org/control/npt/text/inf153.html; iaea.org returned HTTP 402.)",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "hu2004hope",
+   "title": "Hope or Hype: On the Viability of Escrow Services as Trusted Third Parties in Online Auction Environments",
+   "authors": "Hu, X., Lin, Z., Whinston, A.B. & Zhang, H.",
+   "year": 2004,
+   "venue": "Information Systems Research",
+   "url": "https://doi.org/10.1287/isre.1040.0027",
+   "doi": "10.1287/isre.1040.0027",
+   "arxiv_id": null,
+   "discipline": "platform_governance",
+   "field_of_use": "online C2C auction markets",
+   "agent_type": "human",
+   "description": "Online escrow: a trusted third party holds the buyer's payment and releases it to the seller only after delivery, protecting transactions from fraud.",
+   "lever": "options;payoffs",
+   "who_acts": "third_party",
+   "timing": "ex_ante",
+   "valence": "structural",
+   "evidence": "Dynamic game model of traders plus profit-maximization model of the escrow provider; derives escrow demand, optimal fee pricing, and adoption; numerical study of viability.",
+   "pathology": "Viability depends on fee rates and adoption; traders may forgo escrow.",
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "schultz2007constructive",
+   "title": "The Constructive, Destructive, and Reconstructive Power of Social Norms",
+   "authors": "Schultz, P.W., Nolan, J.M., Cialdini, R.B., Goldstein, N.J. & Griskevicius, V.",
+   "year": 2007,
+   "venue": "Psychological Science",
+   "url": "https://doi.org/10.1111/j.1467-9280.2007.01917.x",
+   "doi": "10.1111/j.1467-9280.2007.01917.x",
+   "arxiv_id": null,
+   "discipline": "psychology",
+   "field_of_use": "household energy conservation field experiment (California)",
+   "agent_type": "human",
+   "description": "Social-comparison feedback: households told their energy use relative to the neighborhood average (descriptive norm), with or without an injunctive approval/disapproval cue.",
+   "lever": "information;norms",
+   "who_acts": "central",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Descriptive feedback cut use among high consumers but raised it among low consumers (boomerang); adding an injunctive message eliminated the boomerang.",
+   "pathology": "Boomerang effect among below-average users.",
+   "seed_match": "P04-04",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "allcott2011social",
+   "title": "Social Norms and Energy Conservation",
+   "authors": "Allcott, H.",
+   "year": 2011,
+   "venue": "Journal of Public Economics",
+   "url": "https://doi.org/10.1016/j.jpubeco.2011.03.003",
+   "doi": "10.1016/j.jpubeco.2011.03.003",
+   "arxiv_id": null,
+   "discipline": "economics",
+   "field_of_use": "OPOWER Home Energy Reports to US utility customers",
+   "agent_type": "human",
+   "description": "Home Energy Report letters compare each household's electricity use with its neighbors'.",
+   "lever": "information;norms",
+   "who_acts": "central",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Randomized natural field experiments with ~600,000 households: average 2.0% reduction, equivalent to an 11-20% short-run price increase; highest pre-treatment decile cut 6.3%, lowest 0.3%; injunctive-norm categories insignificant for low users.",
+   "pathology": "Effects concentrated among heavy users.",
+   "seed_match": "P04-04",
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "janssen2013role",
+   "title": "The Role of Information in Governing the Commons: Experimental Results",
+   "authors": "Janssen, M.A.",
+   "year": 2013,
+   "venue": "Ecology and Society",
+   "url": "https://doi.org/10.5751/ES-05664-180404",
+   "doi": "10.5751/ES-05664-180404",
+   "arxiv_id": null,
+   "discipline": "ecology_resource_management",
+   "field_of_use": "spatial real-time renewable-resource lab experiment",
+   "agent_type": "human",
+   "description": "Manipulates how much of the shared resource state and other players' harvesting participants can see (full vs limited vision), with and without communication.",
+   "lever": "information",
+   "who_acts": "central",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Availability of information about others' actions affected cooperation; communication was more than twice as effective with full information; limited-vision groups without communication saw sharp earnings declines.",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "milinski2006stabilizing",
+   "title": "Stabilizing the Earth's Climate Is Not a Losing Game: Supporting Evidence from Public Goods Experiments",
+   "authors": "Milinski, M., Semmann, D., Krambeck, H.-J. & Marotzke, J.",
+   "year": 2006,
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.0504902103",
+   "doi": "10.1073/pnas.0504902103",
+   "arxiv_id": null,
+   "discipline": "psychology",
+   "field_of_use": "lab climate public-goods game (pool invested in climate protection)",
+   "agent_type": "human",
+   "description": "Players receive expert information on the state of climate research before contributing to a climate pool; separate treatment makes contributions public (reputation).",
+   "lever": "information",
+   "who_acts": "central",
+   "timing": "ex_ante",
+   "valence": "structural",
+   "evidence": "Nonzero baseline altruism, enhanced by expert climate information; public investment raised contributions further because others rewarded contributors.",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "barrett2012climate",
+   "title": "Climate Negotiations under Scientific Uncertainty",
+   "authors": "Barrett, S. & Dannenberg, A.",
+   "year": 2012,
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.1208417109",
+   "doi": "10.1073/pnas.1208417109",
+   "arxiv_id": null,
+   "discipline": "economics",
+   "field_of_use": "lab threshold public-goods game modeling climate negotiations",
+   "agent_type": "human",
+   "description": "Players are told the location (certain or uncertain) and impact of a dangerous catastrophe threshold before choosing contributions.",
+   "lever": "information",
+   "who_acts": "central",
+   "timing": "ex_ante",
+   "valence": "structural",
+   "evidence": "A known threshold turns the dilemma into a coordination game and collective action is nearly assured; uncertainty about impact does not hurt, but uncertainty about threshold location makes cooperation collapse.",
+   "pathology": "Uncertainty about threshold location undermines cooperation.",
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "chayes1995new",
+   "title": "The New Sovereignty: Compliance with International Regulatory Agreements",
+   "authors": "Chayes, A. & Chayes, A.H.",
+   "year": 1995,
+   "venue": "Harvard University Press (book)",
+   "url": "https://books.google.com/books/about/The_New_Sovereignty.html?id=v2rcabdXIvQC",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "international_relations",
+   "field_of_use": "international treaty regimes (arms control, human rights, labor, environment, monetary, trade)",
+   "agent_type": "state",
+   "description": "Managerial model of compliance: instead of coercive sanctions, regimes manage compliance through norms, transparency, reporting, verification, dispute settlement, capacity building, and policy review in a continuing dialogue.",
+   "lever": "information;norms;options",
+   "who_acts": "collective",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Comparative treaty analysis; argues treaty and membership sanctions are rarely used or effective.",
+   "pathology": null,
+   "seed_match": null,
    "located_via": "search"
+  },
+  {
+   "source_key": "tallberg2002paths",
+   "title": "Paths to Compliance: Enforcement, Management, and the European Union",
+   "authors": "Tallberg, J.",
+   "year": 2002,
+   "venue": "International Organization",
+   "url": "https://doi.org/10.1162/002081802760199908",
+   "doi": "10.1162/002081802760199908",
+   "arxiv_id": null,
+   "discipline": "international_relations",
+   "field_of_use": "EU compliance system, compared with trade, environment and human-rights regimes",
+   "agent_type": "state",
+   "description": "Management-enforcement ladder: capacity building, rule interpretation and transparency combined with monitoring and sanctions.",
+   "lever": "options;post_deviation",
+   "who_acts": "central",
+   "timing": "ex_post",
+   "valence": "hybrid",
+   "evidence": "Case study of the EU plus regime comparison: compliance systems combining both mechanism types are particularly effective; those relying on one strategy suffer in identifiable ways.",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "montreal1990article10",
+   "title": "Montreal Protocol on Substances that Deplete the Ozone Layer, Article 10: Financial Mechanism (Multilateral Fund)",
+   "authors": "Parties to the Montreal Protocol (UNEP Ozone Secretariat)",
+   "year": 1990,
+   "venue": "Treaty text (London Amendment, 1990)",
+   "url": "https://ozone.unep.org/treaties/montreal-protocol/articles/article-10-financial-mechanism",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "international_relations",
+   "field_of_use": "ozone-depleting substance phase-out in developing (Article 5) countries",
+   "agent_type": "state",
+   "description": "Financial mechanism (Multilateral Fund) providing financial and technical co-operation, including technology transfer, to Article 5 Parties, meeting agreed incremental costs of compliance on a grant or concessional basis, plus clearing-house technical assistance, information and training.",
+   "lever": "options;payoffs",
+   "who_acts": "collective",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "Primary treaty text; Fund website reports grants of about US$4.3bn across 144 developing countries.",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "montreal1992noncompliance",
+   "title": "Annex V: Indicative list of measures that might be taken by a Meeting of the Parties in respect of non-compliance with the Protocol",
+   "authors": "Fourth Meeting of the Parties to the Montreal Protocol",
+   "year": 1992,
+   "venue": "Report of the Fourth Meeting of the Parties (UNEP Ozone Secretariat)",
+   "url": "https://ozone.unep.org/treaties/montreal-protocol/meetings/fourth-meeting-parties/decisions/annex-v-indicative-list-measures-might-be-taken-meeting-parties-respect-non-compliance-protocol",
+   "doi": null,
+   "arxiv_id": null,
+   "discipline": "international_relations",
+   "field_of_use": "Montreal Protocol non-compliance procedure",
+   "agent_type": "state",
+   "description": "Non-compliance response list whose first measure is appropriate assistance (data collection and reporting, technical assistance, technology transfer, financial assistance, information and training), then cautions, then suspension of rights and privileges.",
+   "lever": "options;post_deviation",
+   "who_acts": "collective",
+   "timing": "ex_post",
+   "valence": "hybrid",
+   "evidence": "Primary decision text (descriptive).",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
+  },
+  {
+   "source_key": "stafford2012carrots",
+   "title": "Do Carrots Work? Examining the Effectiveness of EPA's Compliance Assistance Program",
+   "authors": "Stafford, S.L.",
+   "year": 2012,
+   "venue": "Journal of Policy Analysis and Management",
+   "url": "https://doi.org/10.1002/pam.21633",
+   "doi": "10.1002/pam.21633",
+   "arxiv_id": null,
+   "discipline": "law",
+   "field_of_use": "US hazardous waste regulation (RCRA generators)",
+   "agent_type": "organization",
+   "description": "Federal and state compliance assistance to regulated facilities as part of EPA's enforcement strategy.",
+   "lever": "options;information",
+   "who_acts": "central",
+   "timing": "continuous",
+   "valence": "structural",
+   "evidence": "National data on hazardous waste generators: federal compliance assistance increases compliance; no consistent relationship with traditional enforcement; state assistance lowers inspection likelihood for the smallest generators.",
+   "pathology": null,
+   "seed_match": null,
+   "located_via": "opened page"
   }
  ],
- "notes": "VERIFICATION: every DOI was resolved against Crossref metadata (title, first author, venue, year match); none invented. located_via='opened page' = abstract read via Crossref/OpenAlex record; 'search' = existence confirmed via DOI metadata only, with description/evidence coded from domain knowledge of these canonical papers (verifier should spot-check evidence fields for these). WebSearch budget was exhausted early in this session, so no publisher HTML pages were opened; Crossref/OpenAlex APIs used instead. SEED DOI ERRORS in mechanisms.csv: Masclet et al. 2003 seed DOI 10.1257/000282803321455395 resolves to Dupor 'Jealousy and Equilibrium Overconsumption' (correct: 10.1257/000282803321455359); Andreoni et al. 2003 seed DOI 10.1257/000282803321455278 resolves to Walsh 'Speed Limit Policies' (correct: 10.1257/000282803322157142); Cinyabuguma et al. 2005 seed DOI 10.1016/j.jebo.2005.02.010 returns 404 and the venue is wrong (correct: Journal of Public Economics, 10.1016/j.jpubeco.2004.05.011). UNCERTAIN: Hawken & Kleiman 2009 is an NIJ report; DOI is a PsycEXTRA dataset record. Greif 1993 (Maghribi coalition, AER) not included - no DOI found in Crossref. Ferretti 2020 and Bauch 2004 are models, not field evidence. Several entries are theory (Groves-Ledyard, Kandori, Bagnoli-Lipman, Tabarrok, Shavell, Becker, Kandel-Lazear, Lazear-Rosen). GAPS: no escrow instance; no IAEA safeguards primary source (Coe & Vaynman covers inspections); graduated escalation in IR only via Axelrod & Keohane; no gift-exchange (Mauss) or Braithwaite reintegrative shaming (books, no DOI). Exceeds 50-70 target (105) - can be trimmed. CANDIDATE MECHANISMS MISSING FROM SENSITIZING LIST: counter-punishment/retaliation stage (failure mode); endogenous vs exogenous institution ('democracy premium' - distinct from self-selection); provision point with money-back guarantee / dominant assurance contract; rights-based catch shares (ITQ); territorial use rights / perimeter defense; rotational allocation / lottery turn-taking (Alanya, subak); payments for ecosystem services (conditional cash); worker policing / host sanctions (biological enforcement); partner switching / partner choice (biological markets); strict vs negligence liability; deposit-refund (distinct from reputation bond); assurance/performance bonds for environmental damage; whistleblower bounty (qui tam) distinct from leniency; state peer review (OECD/UPR); naming and shaming (international); sanction threats vs imposition; climate club tariffs; audience costs/hand-tying; managerial compliance (capacity-building + transparency); verification/inspection with transparency-security trade-off; law merchant/private judges information registry; joint liability; ROSCA; team/firm-wide bonus with mutual monitoring; tournaments; piece rates; swift-certain-modest sanctions (HOPE); access mandates/vaccine passports; exemption policy stringency; conditional cash incentives for health behavior; digital contact tracing."
+ "notes": "VERIFICATION: every DOI was resolved against Crossref metadata (title, first author, venue, year match); none invented. located_via='opened page' = abstract read via Crossref/OpenAlex record; 'search' = existence confirmed via DOI metadata only, with description/evidence coded from domain knowledge of these canonical papers (verifier should spot-check evidence fields for these). WebSearch budget was exhausted early in this session, so no publisher HTML pages were opened; Crossref/OpenAlex APIs used instead. SEED DOI ERRORS in mechanisms.csv: Masclet et al. 2003 seed DOI 10.1257/000282803321455395 resolves to Dupor 'Jealousy and Equilibrium Overconsumption' (correct: 10.1257/000282803321455359); Andreoni et al. 2003 seed DOI 10.1257/000282803321455278 resolves to Walsh 'Speed Limit Policies' (correct: 10.1257/000282803322157142); Cinyabuguma et al. 2005 seed DOI 10.1016/j.jebo.2005.02.010 returns 404 and the venue is wrong (correct: Journal of Public Economics, 10.1016/j.jpubeco.2004.05.011). UNCERTAIN: Hawken & Kleiman 2009 is an NIJ report; DOI is a PsycEXTRA dataset record. Greif 1993 (Maghribi coalition, AER) not included - no DOI found in Crossref. Ferretti 2020 and Bauch 2004 are models, not field evidence. Several entries are theory (Groves-Ledyard, Kandori, Bagnoli-Lipman, Tabarrok, Shavell, Becker, Kandel-Lazear, Lazear-Rosen). GAPS: no escrow instance; no IAEA safeguards primary source (Coe & Vaynman covers inspections); graduated escalation in IR only via Axelrod & Keohane; no gift-exchange (Mauss) or Braithwaite reintegrative shaming (books, no DOI). Exceeds 50-70 target (105) - can be trimmed. CANDIDATE MECHANISMS MISSING FROM SENSITIZING LIST: counter-punishment/retaliation stage (failure mode); endogenous vs exogenous institution ('democracy premium' - distinct from self-selection); provision point with money-back guarantee / dominant assurance contract; rights-based catch shares (ITQ); territorial use rights / perimeter defense; rotational allocation / lottery turn-taking (Alanya, subak); payments for ecosystem services (conditional cash); worker policing / host sanctions (biological enforcement); partner switching / partner choice (biological markets); strict vs negligence liability; deposit-refund (distinct from reputation bond); assurance/performance bonds for environmental damage; whistleblower bounty (qui tam) distinct from leniency; state peer review (OECD/UPR); naming and shaming (international); sanction threats vs imposition; climate club tariffs; audience costs/hand-tying; managerial compliance (capacity-building + transparency); verification/inspection with transparency-security trade-off; law merchant/private judges information registry; joint liability; ROSCA; team/firm-wide bonus with mutual monitoring; tournaments; piece rates; swift-certain-modest sanctions (HOPE); access mandates/vaccine passports; exemption policy stringency; conditional cash incentives for health behavior; digital contact tracing. RESUME 2026-09-29 (web search): 88 instances checked against their sources and corrected where the source differed; 21 instances added (sociology, Greif, Mauss, Braithwaite, Ayres & Braithwaite, IAEA INFCIRC/153, escrow, M66 feedback, M67 compliance assistance). Flags for the verifier: part2: wiessner2005norm: Original description named 'stingy people' as targets of verbal sanctions; source says lazy/stingy people were rarely criticized and were instead penalized by low social regard. Corrected in update. | part2: mathew2011punishment: 'By age-mates' not in abstract; full text not opened. | part2: anderson2002economics: Original description's 'social sanctions for default' not supported by the abstract; the paper's mechanism is intrahousehold savings protection, so fit to a cooperation mechanism (seed P07-03) is weak. | part2: besley1994rotating: Original description ('social sanctions deter default by early recipients') not supported by abstract, which is about allocative efficiency of random vs bidding ROSCAs. Pathology 'default incentive after receiving the pot' also not in abstract. | part2: williams2007ostracism: Framing as 'social control mechanism' and 'targets often comply' is not how the review frames it; responses split prosocial vs antisocial. OpenAlex lists 2006 (online); volume 58 is 2007. | part2: wenseleers2006enforced: Specific correlation (policing effectiveness vs proportion of reproductive workers) not visible in the page text read; only the summary. | part2: kiers2003host: agent_type 'animal' for soybean plants and rhizobia (plants/bacteria); no suitable enum value exists. | part2: raihani2012punishment: Original evidence 'less common than partner choice' not supported by the abstract. | part2: acheson1975lobster: Could not open source (Springer bot check). Evidence 'larger lobsters, higher catch and incomes' unverified; a secondary search snippet reports stock densities 22-50% higher in defended areas. | part2: berkes1986local: Could not open source; rotation details confirmed only from secondary sources. Original 'sites allocated annually by lot' is imprecise (lots set the initial site, then daily rotation). | part2: lazear2000performance: 'Half incentive, half sorting' not in abstract; full text not opened. | part2: hawken2009managing: Pathology cites a multi-site replication (a later study), not this source. DOI is a PsycEXTRA record of an NIJ report."
 }

@@ -1,0 +1,572 @@
+[
+  {
+    "code": "VCG incentive mechanism",
+    "definition": "This lever shapes cooperative interaction through VCG incentive mechanism.",
+    "n_instances": 1
+  },
+  {
+    "code": "accessible independent arbitration",
+    "definition": "This lever shapes cooperative interaction through accessible independent arbitration.",
+    "n_instances": 1
+  },
+  {
+    "code": "adaptive commons governance",
+    "definition": "This lever shapes cooperative interaction through adaptive commons governance.",
+    "n_instances": 1
+  },
+  {
+    "code": "adaptive punishment intensity",
+    "definition": "This lever shapes cooperative interaction through adaptive punishment intensity.",
+    "n_instances": 1
+  },
+  {
+    "code": "agent governance framework",
+    "definition": "This lever shapes cooperative interaction through agent governance framework.",
+    "n_instances": 2
+  },
+  {
+    "code": "assurance bond",
+    "definition": "This lever shapes cooperative interaction through assurance bond.",
+    "n_instances": 1
+  },
+  {
+    "code": "attribution and rollback infrastructure",
+    "definition": "This lever shapes cooperative interaction through attribution and rollback infrastructure.",
+    "n_instances": 1
+  },
+  {
+    "code": "automatic fixed fine",
+    "definition": "This lever shapes cooperative interaction through automatic fixed fine.",
+    "n_instances": 1
+  },
+  {
+    "code": "bandwidth restriction",
+    "definition": "This lever shapes cooperative interaction through bandwidth restriction.",
+    "n_instances": 1
+  },
+  {
+    "code": "bonded challenge and adjudication",
+    "definition": "This lever shapes cooperative interaction through bonded challenge and adjudication.",
+    "n_instances": 2
+  },
+  {
+    "code": "capability-based access restriction",
+    "definition": "This lever shapes cooperative interaction through capability-based access restriction.",
+    "n_instances": 1
+  },
+  {
+    "code": "cash reward for participation",
+    "definition": "This lever shapes cooperative interaction through cash reward for participation.",
+    "n_instances": 1
+  },
+  {
+    "code": "communication for coordination",
+    "definition": "This lever shapes cooperative interaction through communication for coordination.",
+    "n_instances": 1
+  },
+  {
+    "code": "communication plus peer sanctions",
+    "definition": "This lever shapes cooperative interaction through communication plus peer sanctions.",
+    "n_instances": 1
+  },
+  {
+    "code": "communication topology restriction",
+    "definition": "This lever shapes cooperative interaction through communication topology restriction.",
+    "n_instances": 1
+  },
+  {
+    "code": "conditional cooperation on observed conduct",
+    "definition": "This lever shapes cooperative interaction through conditional cooperation on observed conduct.",
+    "n_instances": 1
+  },
+  {
+    "code": "conditional fine threat",
+    "definition": "This lever shapes cooperative interaction through conditional fine threat.",
+    "n_instances": 1
+  },
+  {
+    "code": "conduct-based risk premium",
+    "definition": "This lever shapes cooperative interaction through conduct-based risk premium.",
+    "n_instances": 1
+  },
+  {
+    "code": "contact notification and quarantine",
+    "definition": "This lever shapes cooperative interaction through contact notification and quarantine.",
+    "n_instances": 1
+  },
+  {
+    "code": "contagious future-partner punishment",
+    "definition": "This lever shapes cooperative interaction through contagious future-partner punishment.",
+    "n_instances": 1
+  },
+  {
+    "code": "contractual conditional transfer",
+    "definition": "This lever shapes cooperative interaction through contractual conditional transfer.",
+    "n_instances": 1
+  },
+  {
+    "code": "contribution-based tax and subsidy",
+    "definition": "This lever shapes cooperative interaction through contribution-based tax and subsidy.",
+    "n_instances": 1
+  },
+  {
+    "code": "costly peer monitoring",
+    "definition": "This lever shapes cooperative interaction through costly peer monitoring.",
+    "n_instances": 1
+  },
+  {
+    "code": "cultural no-take norm",
+    "definition": "This lever shapes cooperative interaction through cultural no-take norm.",
+    "n_instances": 1
+  },
+  {
+    "code": "deadline-triggered disclosure",
+    "definition": "This lever shapes cooperative interaction through deadline-triggered disclosure.",
+    "n_instances": 1
+  },
+  {
+    "code": "direct punishment",
+    "definition": "This lever shapes cooperative interaction through direct punishment.",
+    "n_instances": 2
+  },
+  {
+    "code": "disagreement escalation",
+    "definition": "This lever shapes cooperative interaction through disagreement escalation.",
+    "n_instances": 1
+  },
+  {
+    "code": "disclosure-conditioned amnesty",
+    "definition": "This lever shapes cooperative interaction through disclosure-conditioned amnesty.",
+    "n_instances": 1
+  },
+  {
+    "code": "disclosure-for-leniency",
+    "definition": "This lever shapes cooperative interaction through disclosure-for-leniency.",
+    "n_instances": 1
+  },
+  {
+    "code": "evolved cooperative motivation",
+    "definition": "This lever shapes cooperative interaction through evolved cooperative motivation.",
+    "n_instances": 1
+  },
+  {
+    "code": "externality pricing",
+    "definition": "This lever shapes cooperative interaction through externality pricing.",
+    "n_instances": 1
+  },
+  {
+    "code": "gifting transfer",
+    "definition": "This lever shapes cooperative interaction through gifting transfer.",
+    "n_instances": 1
+  },
+  {
+    "code": "gossip-based reputation",
+    "definition": "This lever shapes cooperative interaction through gossip-based reputation.",
+    "n_instances": 1
+  },
+  {
+    "code": "governance graph sanctions",
+    "definition": "This lever shapes cooperative interaction through governance graph sanctions.",
+    "n_instances": 1
+  },
+  {
+    "code": "graduated access restrictions",
+    "definition": "This lever shapes cooperative interaction through graduated access restrictions.",
+    "n_instances": 1
+  },
+  {
+    "code": "graph anomaly intervention",
+    "definition": "This lever shapes cooperative interaction through graph anomaly intervention.",
+    "n_instances": 1
+  },
+  {
+    "code": "group expulsion",
+    "definition": "This lever shapes cooperative interaction through group expulsion.",
+    "n_instances": 1
+  },
+  {
+    "code": "group performance bonus",
+    "definition": "This lever shapes cooperative interaction through group performance bonus.",
+    "n_instances": 1
+  },
+  {
+    "code": "honest quorum consensus",
+    "definition": "This lever shapes cooperative interaction through honest quorum consensus.",
+    "n_instances": 1
+  },
+  {
+    "code": "immediate misreport penalty",
+    "definition": "This lever shapes cooperative interaction through immediate misreport penalty.",
+    "n_instances": 1
+  },
+  {
+    "code": "inactivity stake drain",
+    "definition": "This lever shapes cooperative interaction through inactivity stake drain.",
+    "n_instances": 1
+  },
+  {
+    "code": "interaction monitoring",
+    "definition": "This lever shapes cooperative interaction through interaction monitoring.",
+    "n_instances": 2
+  },
+  {
+    "code": "intrinsic cooperative reward",
+    "definition": "This lever shapes cooperative interaction through intrinsic cooperative reward.",
+    "n_instances": 1
+  },
+  {
+    "code": "joint liability",
+    "definition": "This lever shapes cooperative interaction through joint liability.",
+    "n_instances": 2
+  },
+  {
+    "code": "learned reward and punishment",
+    "definition": "This lever shapes cooperative interaction through learned reward and punishment.",
+    "n_instances": 1
+  },
+  {
+    "code": "learned tax and allowance",
+    "definition": "This lever shapes cooperative interaction through learned tax and allowance.",
+    "n_instances": 1
+  },
+  {
+    "code": "limited third-party observation",
+    "definition": "This lever shapes cooperative interaction through limited third-party observation.",
+    "n_instances": 1
+  },
+  {
+    "code": "majority-contingent juror stake",
+    "definition": "This lever shapes cooperative interaction through majority-contingent juror stake.",
+    "n_instances": 1
+  },
+  {
+    "code": "managerial punishment authority",
+    "definition": "This lever shapes cooperative interaction through managerial punishment authority.",
+    "n_instances": 1
+  },
+  {
+    "code": "mandatory tool authorization",
+    "definition": "This lever shapes cooperative interaction through mandatory tool authorization.",
+    "n_instances": 2
+  },
+  {
+    "code": "marginal-contribution reward sharing",
+    "definition": "This lever shapes cooperative interaction through marginal-contribution reward sharing.",
+    "n_instances": 1
+  },
+  {
+    "code": "market search and matching",
+    "definition": "This lever shapes cooperative interaction through market search and matching.",
+    "n_instances": 1
+  },
+  {
+    "code": "mediated disclosure timetable",
+    "definition": "This lever shapes cooperative interaction through mediated disclosure timetable.",
+    "n_instances": 1
+  },
+  {
+    "code": "membership-contingent cooperation",
+    "definition": "This lever shapes cooperative interaction through membership-contingent cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "milestone-based coordination protocol",
+    "definition": "This lever shapes cooperative interaction through milestone-based coordination protocol.",
+    "n_instances": 1
+  },
+  {
+    "code": "monitor and route around",
+    "definition": "This lever shapes cooperative interaction through monitor and route around.",
+    "n_instances": 1
+  },
+  {
+    "code": "multi-run collusion audit",
+    "definition": "This lever shapes cooperative interaction through multi-run collusion audit.",
+    "n_instances": 1
+  },
+  {
+    "code": "network rewiring",
+    "definition": "This lever shapes cooperative interaction through network rewiring.",
+    "n_instances": 1
+  },
+  {
+    "code": "network topology design",
+    "definition": "This lever shapes cooperative interaction through network topology design.",
+    "n_instances": 1
+  },
+  {
+    "code": "newcomer identity dues",
+    "definition": "This lever shapes cooperative interaction through newcomer identity dues.",
+    "n_instances": 1
+  },
+  {
+    "code": "norm-setting message board",
+    "definition": "This lever shapes cooperative interaction through norm-setting message board.",
+    "n_instances": 1
+  },
+  {
+    "code": "ostracism of defectors",
+    "definition": "This lever shapes cooperative interaction through ostracism of defectors.",
+    "n_instances": 1
+  },
+  {
+    "code": "partner choice and severance",
+    "definition": "This lever shapes cooperative interaction through partner choice and severance.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer norm sanctions",
+    "definition": "This lever shapes cooperative interaction through peer norm sanctions.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer review and public scrutiny",
+    "definition": "This lever shapes cooperative interaction through peer review and public scrutiny.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer-information exposure",
+    "definition": "This lever shapes cooperative interaction through peer-information exposure.",
+    "n_instances": 1
+  },
+  {
+    "code": "penalty for noncompliant traffic",
+    "definition": "This lever shapes cooperative interaction through penalty for noncompliant traffic.",
+    "n_instances": 1
+  },
+  {
+    "code": "permanent access ban",
+    "definition": "This lever shapes cooperative interaction through permanent access ban.",
+    "n_instances": 1
+  },
+  {
+    "code": "proactive content restriction",
+    "definition": "This lever shapes cooperative interaction through proactive content restriction.",
+    "n_instances": 1
+  },
+  {
+    "code": "prune compromised communication edges",
+    "definition": "This lever shapes cooperative interaction through prune compromised communication edges.",
+    "n_instances": 1
+  },
+  {
+    "code": "public append-only record",
+    "definition": "This lever shapes cooperative interaction through public append-only record.",
+    "n_instances": 1
+  },
+  {
+    "code": "public judgment record",
+    "definition": "This lever shapes cooperative interaction through public judgment record.",
+    "n_instances": 1
+  },
+  {
+    "code": "public nonbinding pledge",
+    "definition": "This lever shapes cooperative interaction through public nonbinding pledge.",
+    "n_instances": 1
+  },
+  {
+    "code": "public reputation conditioning",
+    "definition": "This lever shapes cooperative interaction through public reputation conditioning.",
+    "n_instances": 1
+  },
+  {
+    "code": "punish failure to enforce",
+    "definition": "This lever shapes cooperative interaction through punish failure to enforce.",
+    "n_instances": 1
+  },
+  {
+    "code": "quorum-based replication",
+    "definition": "This lever shapes cooperative interaction through quorum-based replication.",
+    "n_instances": 1
+  },
+  {
+    "code": "quota and adaptive throttling",
+    "definition": "This lever shapes cooperative interaction through quota and adaptive throttling.",
+    "n_instances": 1
+  },
+  {
+    "code": "rank-contingent prize",
+    "definition": "This lever shapes cooperative interaction through rank-contingent prize.",
+    "n_instances": 1
+  },
+  {
+    "code": "recommendation-based exposure nudge",
+    "definition": "This lever shapes cooperative interaction through recommendation-based exposure nudge.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation penalty on sales",
+    "definition": "This lever shapes cooperative interaction through reputation penalty on sales.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-based partner selection",
+    "definition": "This lever shapes cooperative interaction through reputation-based partner selection.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-conditioned aid",
+    "definition": "This lever shapes cooperative interaction through reputation-conditioned aid.",
+    "n_instances": 2
+  },
+  {
+    "code": "reputation-earned permissions",
+    "definition": "This lever shapes cooperative interaction through reputation-earned permissions.",
+    "n_instances": 1
+  },
+  {
+    "code": "resource-use cap",
+    "definition": "This lever shapes cooperative interaction through resource-use cap.",
+    "n_instances": 2
+  },
+  {
+    "code": "rotating reciprocal contributions",
+    "definition": "This lever shapes cooperative interaction through rotating reciprocal contributions.",
+    "n_instances": 1
+  },
+  {
+    "code": "sanctioning institution",
+    "definition": "This lever shapes cooperative interaction through sanctioning institution.",
+    "n_instances": 1
+  },
+  {
+    "code": "score-based strategy reproduction",
+    "definition": "This lever shapes cooperative interaction through score-based strategy reproduction.",
+    "n_instances": 1
+  },
+  {
+    "code": "self-defeating attack cost",
+    "definition": "This lever shapes cooperative interaction through self-defeating attack cost.",
+    "n_instances": 1
+  },
+  {
+    "code": "self-funded abstinence deposit",
+    "definition": "This lever shapes cooperative interaction through self-funded abstinence deposit.",
+    "n_instances": 1
+  },
+  {
+    "code": "shared ownership and profit sharing",
+    "definition": "This lever shapes cooperative interaction through shared ownership and profit sharing.",
+    "n_instances": 1
+  },
+  {
+    "code": "stake forfeiture on misconduct",
+    "definition": "This lever shapes cooperative interaction through stake forfeiture on misconduct.",
+    "n_instances": 1
+  },
+  {
+    "code": "stake-based alignment",
+    "definition": "This lever shapes cooperative interaction through stake-based alignment.",
+    "n_instances": 1
+  },
+  {
+    "code": "stake-weighted voting",
+    "definition": "This lever shapes cooperative interaction through stake-weighted voting.",
+    "n_instances": 1
+  },
+  {
+    "code": "state rollback",
+    "definition": "This lever shapes cooperative interaction through state rollback.",
+    "n_instances": 1
+  },
+  {
+    "code": "success-biased imitation",
+    "definition": "This lever shapes cooperative interaction through success-biased imitation.",
+    "n_instances": 2
+  },
+  {
+    "code": "tag-out exclusion",
+    "definition": "This lever shapes cooperative interaction through tag-out exclusion.",
+    "n_instances": 1
+  },
+  {
+    "code": "tax and redistribution",
+    "definition": "This lever shapes cooperative interaction through tax and redistribution.",
+    "n_instances": 1
+  },
+  {
+    "code": "tax-message allocation rule",
+    "definition": "This lever shapes cooperative interaction through tax-message allocation rule.",
+    "n_instances": 1
+  },
+  {
+    "code": "temporary exclusion",
+    "definition": "This lever shapes cooperative interaction through temporary exclusion.",
+    "n_instances": 1
+  },
+  {
+    "code": "third-party dispute ruling",
+    "definition": "This lever shapes cooperative interaction through third-party dispute ruling.",
+    "n_instances": 1
+  },
+  {
+    "code": "third-party mediation",
+    "definition": "This lever shapes cooperative interaction through third-party mediation.",
+    "n_instances": 3
+  },
+  {
+    "code": "third-party punishment",
+    "definition": "This lever shapes cooperative interaction through third-party punishment.",
+    "n_instances": 1
+  },
+  {
+    "code": "threshold-contingent refund",
+    "definition": "This lever shapes cooperative interaction through threshold-contingent refund.",
+    "n_instances": 1
+  },
+  {
+    "code": "thresholded agent termination",
+    "definition": "This lever shapes cooperative interaction through thresholded agent termination.",
+    "n_instances": 1
+  },
+  {
+    "code": "token-holder rulemaking",
+    "definition": "This lever shapes cooperative interaction through token-holder rulemaking.",
+    "n_instances": 1
+  },
+  {
+    "code": "trajectory risk escrow",
+    "definition": "This lever shapes cooperative interaction through trajectory risk escrow.",
+    "n_instances": 1
+  },
+  {
+    "code": "transparent harvest reporting",
+    "definition": "This lever shapes cooperative interaction through transparent harvest reporting.",
+    "n_instances": 2
+  },
+  {
+    "code": "validator participation reward",
+    "definition": "This lever shapes cooperative interaction through validator participation reward.",
+    "n_instances": 1
+  },
+  {
+    "code": "validator reward and penalty",
+    "definition": "This lever shapes cooperative interaction through validator reward and penalty.",
+    "n_instances": 1
+  },
+  {
+    "code": "verbal peer criticism",
+    "definition": "This lever shapes cooperative interaction through verbal peer criticism.",
+    "n_instances": 1
+  },
+  {
+    "code": "verified-work contingent payment",
+    "definition": "This lever shapes cooperative interaction through verified-work contingent payment.",
+    "n_instances": 1
+  },
+  {
+    "code": "voted governance constitution",
+    "definition": "This lever shapes cooperative interaction through voted governance constitution.",
+    "n_instances": 1
+  },
+  {
+    "code": "warning before escalation",
+    "definition": "This lever shapes cooperative interaction through warning before escalation.",
+    "n_instances": 1
+  },
+  {
+    "code": "worker policing",
+    "definition": "This lever shapes cooperative interaction through worker policing.",
+    "n_instances": 1
+  }
+]

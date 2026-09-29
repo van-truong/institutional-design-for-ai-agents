@@ -82,7 +82,7 @@ def build():
     # first lay out Panel B to know total height
     body=[]
     y=Y0; groups=[]; seclabels=[]
-    for sname,scol,grp in [("INSTITUTIONAL MECHANISMS",AM_M,MECH),("INFLUENCE CHANNELS",VI_M,CHAN)]:
+    for sname,scol,grp in [("INSTITUTIONAL FUNCTIONS",AM_M,MECH),("MECHANISM FAMILIES",VI_M,CHAN)]:
         first_ly=y; last_ly=y
         for (gname,dcol,bg,mcol,leaves) in grp:
             lys=[y+i*PITCH for i in range(len(leaves))]
@@ -118,9 +118,11 @@ def build():
     out.append(diamond(cxA,cys[2],w,h,th,VI_TOP,VI_SIDE,["Individual model","(even if aligned)"],VI_D,nodes_one))
     ytop=cys[0]-10; ybot=cys[2]+h+th+8; ymid=(ytop+ybot)/2
     out.append(varrow(34,ytop,ybot,AM_M))   # top-down: tail at top, head at bottom
-    out.append(f'<text x="18" y="{ymid:.0f}" text-anchor="middle" font-size="16" font-weight="700" fill="{AM_M}" transform="rotate(-90 18 {ymid:.0f})">Top-down</text>')
+    LABEL_SHIFT=70  # Top-down label sits above the midpoint, Bottom-up below it
+    ytd=ymid-LABEL_SHIFT; ybu=ymid+LABEL_SHIFT
+    out.append(f'<text x="18" y="{ytd:.0f}" text-anchor="middle" font-size="16" font-weight="700" fill="{AM_M}" transform="rotate(-90 18 {ytd:.0f})">Top-down</text>')
     out.append(varrow(198,ybot,ytop,VI_M))  # bottom-up: tail at bottom, head at top
-    out.append(f'<text x="214" y="{ymid:.0f}" text-anchor="middle" font-size="16" font-weight="700" fill="{VI_M}" transform="rotate(-90 214 {ymid:.0f})">Bottom-up</text>')
+    out.append(f'<text x="214" y="{ybu:.0f}" text-anchor="middle" font-size="16" font-weight="700" fill="{VI_M}" transform="rotate(-90 214 {ybu:.0f})">Bottom-up</text>')
 
     # ---- Panel B ----
     all_gy=[sum(g[5])/len(g[5]) for g in groups]
