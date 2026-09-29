@@ -82,7 +82,7 @@ def build():
     # first lay out Panel B to know total height
     body=[]
     y=Y0; groups=[]; seclabels=[]
-    for sname,scol,grp in [("INSTITUTIONAL MECHANISMS",AM_M,MECH),("INFLUENCE CHANNELS",VI_M,CHAN)]:
+    for sname,scol,grp in [("INSTITUTIONAL FUNCTIONS",AM_M,MECH),("MECHANISM FAMILIES",VI_M,CHAN)]:
         first_ly=y; last_ly=y
         for (gname,dcol,bg,mcol,leaves) in grp:
             lys=[y+i*PITCH for i in range(len(leaves))]

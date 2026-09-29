@@ -86,7 +86,9 @@ Chan, A., Ezell, C., Kaufmann, M., et~al.: Visibility into {AI} agents. In:
   Transparency. pp. 958--973 (2024). \doi{10.1145/3630106.3658948}
 
 \bibitem{chan2025infrastructure}
-Chan, A., et~al.: Infrastructure for {AI} agents (2025)
+Chan, A., Wei, K., Huang, S., Rajkumar, N., Perrier, E., Lazar, S., Hadfield,
+  G.K., Anderljung, M.: Infrastructure for {AI} agents (2025),
+  \url{https://arxiv.org/abs/2501.10114}
 
 \bibitem{cox2010designprinciples}
 Cox, M., Arnold, G., Villamayor~Tom{\'a}s, S.: A review of design principles
