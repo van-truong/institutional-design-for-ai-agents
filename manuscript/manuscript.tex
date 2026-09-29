@@ -191,6 +191,13 @@ The design challenge for cooperative AI is therefore to determine which institut
 In this section, we discuss ideas from economics and political philosophy treating the formation of human institutions, which can contribute to understanding the LLM counterpart that is being formed.
 The literature on its formation splits along two broad traditions, tracing back to the Scottish Enlightenment and Hayek's account of spontaneous order \citep{hayek1978law}. Institutions can emerge bottom-up through repeated interaction, or they can be built through deliberate design. \chg{Figure~\mbox{\ref{fig:model-in-institution}}A shows both directions.} 
 
+\begin{figure*}[!tp]
+  \centering
+  \includegraphics[width=\linewidth]{figures/figure4_multi-layer-institutions.pdf}
+  \caption{Agent-in-context and the design space of agent institutions. Individual models are nested within agent--group interactions and governing institutions; \del{institutional mechanisms shape behavior through information, consequence, and influence channels.} \chg{the seven institutional functions, grouped into an information layer and a consequence layer, act on agents through six mechanism families, split into soft and hard channels.}}
+  \label{fig:model-in-institution}
+\end{figure*}
+
 \textbf{Top-down tradition.} On the one hand, in the top-down direction, institutions are rules, mechanisms, and governance arrangements intentionally designed to align incentives, resolve conflicts, and protect collective outcomes \citep{buchananCalculusConsentLogical1965, elsterUlyssesSirensTheory1977, maskinMechanismDesignHow2008, myersonOptimalAuctionDesign1981}.
 \vqt{The 1929 market crash illustrates a narrower point: institutional arrangements around credit, leverage, and crisis response can shape both financial fragility and the consequences of individually rational trading~\citep{kindlebergerManiasPanicsCrashes2005}.}
 % JULY 2 TODO = \VAN{June 30 4pm - TODO anyone can add some more here if you have any suggestions otherwise I will revisit later}
@@ -203,7 +210,7 @@ The bottom-up account presupposes cognitive and social infrastructure that moder
 \vqt{\textbf{Stable bottom-up institutions in AI societies cannot yet be assumed.}
 Current LLM agents, including autonomous assistants~\citep{steinberger2026openclaw}, often lack conditions that support durable bottom-up institutions. Across deployments, they may have no persistent identity, reliable shared memory to which reputation can attach, or Folk-Theorem-style stakes in future interaction~\citep{huDissociativeIdentityLanguage2026}. Existing file-based memory approaches only partially address these limitations~\citep{wuHumanMemoryAI2025}. More capable models may coordinate better, but capability alone does not supply persistent identity, repeated-game incentives, or collectively legitimate rules~\citep{trivedi2026solipsistic}.} \chg{The Hugging Face incident shows that agents can nonetheless improvise institutions of their own, but nothing makes such institutions stable, or aligned with the purposes of the humans they affect.}
 
-\del{In principle, the highest intelligence would be self-sufficient for its own goals, decoupled from the ones of a hypothetical principal. Even if the above problems are solved, in the next section we argue how the bottom-up direction could impose non-negligible risks to human society, meaning that among the two, a more defensible path to safe cooperative AI is therefore leaning toward top-down design, where humans specify the rules and structures within which agents operate.} \chg{Even if these gaps close, bottom-up governance would carry risks for human society (Section~\mbox{\ref{sec:human-designed}}), so the more defensible path to safe cooperative AI is \emph{top-down} design, in which humans specify the rules and structures within which agents operate.}
+\chg{Even if these gaps close, bottom-up governance would carry risks for human society (Section~\mbox{\ref{sec:human-designed}}), so the more defensible path to safe cooperative AI is \emph{top-down} design, in which humans specify the rules and structures within which agents operate.}
 
 
 % \VAN{Thinking about adding in a couple brief sentences about tribes and feudal village societies which may be governed without as much formal government, giving patterns for smaller groups of MAS. High school clique group sizes are interesting too but not for our paper lol}
@@ -224,7 +231,7 @@ One might object that a sufficiently capable agent community could itself design
 \textbf{Institutions encode values that ought to be pro-humanity.} First, institutional design is fundamentally a question of values. Institutions are not, in themselves, neutral coordination infrastructure; they encode commitments about what agents \emph{ought} and ought \emph{not} do, whose interests count, and how trade-offs are resolved~\citep{knight1992institutions, northInstitutionsInstitutionalChange1990}. Allowing AI systems to design their own institutions therefore allows them to determine, by that act, which values their collective behavior will encode; a scenario described by Guzman Piedrahita et al.~\citep{guzmanpiedrahita2026aiposes} in their AI governance agenda that we ought to prevent. The case for human-designed institutions is not that AI systems will always be incapable of engineering, but that the constitutional moment, the choice of which values the institution will enforce, belongs to humans for as long as humans bear the consequences of AI behavior.
 
 % \ANG{a curiosity: are there dilemmas higher than the second in terms of order?}
-\begin{figure*}[t]
+\begin{figure*}[!tp]
   \centering
   \makebox[\linewidth][c]{\includegraphics[width=1.12\linewidth]{figures/figure2_four-cooperation-dilemmas.pdf}}
   \caption{Four cooperation dilemmas that recur in shared-resource settings, each shown with its core tension and parallel examples in human and LLM-agent systems.}
@@ -242,12 +249,7 @@ formalizes \citep{anshelevichPriceStabilityNetwork2008,papadimitriouAlgorithmsGa
 
 \del{This becomes especially salient in settings where multi-agent systems are embedded in human environments~\mbox{\citep{dafoe2021cooperative}}. In such hybrid systems, purely AI-generated institutions risk becoming self-consistent, but misaligned with human purposes~\mbox{\citep{shenAIOrganizationsAre2026,sorensen2024roadmap}}. An analogy of this paradox is when text is syntactically correct, but semantically irrelevant~\mbox{\citep{norvigColorlessGreenIdeas2012}}. For this reason, we assert that institutional design should not be left as an afterthought, or even delegated to AI agents to sort out among themselves.}
 
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=\linewidth]{figures/figure4_multi-layer-institutions.pdf}
-  \caption{Agent-in-context and the design space of agent institutions. Individual models are nested within agent--group interactions and governing institutions; \del{institutional mechanisms shape behavior through information, consequence, and influence channels.} \chg{the seven institutional functions, grouped into an information layer and a consequence layer, act on agents through six mechanism families, split into soft and hard channels.}}
-  \label{fig:model-in-institution}
-\end{figure*}
+
 % Human-designed institutions may be imperfect when applied to AI systems, but centuries of process and practice offer a tractable place to start.
 % \VAN{I tried rewriting from my viewpoint that meaning for systems and societies can only be ascribed via FUBU (for us, by us), but not yet sure how much I like it. Going to another section and will revisit but lmk what u think} \ANG{Yeah, I think roughly what we want to say is that if we let them alone they just go doing their own thing, which could be bad since atm nothing binds them to still follow human values }
 
