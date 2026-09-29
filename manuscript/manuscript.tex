@@ -412,25 +412,14 @@ Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unif
 
 
 
-\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which. The institution itself must be evaluated, which is the subject of Section~\mbox{\ref{sec:evaluation}}. Table~\mbox{\ref{tab:family-dilemma-guide}} condenses these lessons into a short guide: for each failure mode, the families most exposed to it, the safeguards that address it, and what to measure.
+\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which. The institution itself must be evaluated, which is the subject of Section~\mbox{\ref{sec:evaluation}}. Figure~\mbox{\ref{fig:failure-guide}} condenses these lessons into a short guide: for each failure mode, the families most exposed to it, what to measure, and the safeguards that address it.
 
-\begin{table*}[t]
-\centering
-\caption{A practical guide linking the mechanism families to the failure modes of Section~\mbox{\ref{sec:failures}}: the families most exposed to each failure, safeguards drawn from the taxonomy (Fig.~\ref{fig:cooperation_taxonomy_tree}), and metrics from Table~\ref{tab:metrics} that can detect it.}
-\label{tab:family-dilemma-guide}
-\footnotesize
-\renewcommand{\arraystretch}{1.12}
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.23\linewidth} >{\raggedright\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.22\linewidth}@{}}
-\toprule
-\textbf{Failure mode} & \textbf{Families exposed} & \textbf{Safeguards from the taxonomy} & \textbf{What to measure} \\
-\midrule
-The mechanism reframes the interaction (a fine is read as a price) & Incentive & Keep explicit norms and codes of conduct alongside any price; graduated and proportional sanctions rather than a flat fee & Contribution stability, including after the mechanism is removed \\ \rowline
-The mechanism becomes an optimization target (reputation farming, visible but shallow cooperation) & Social, epistemic & Tamper-evident records; peer evaluation and review; oversight of communication and internal state, not only of scores & Gameability; false negative rate \\ \rowline
-The mechanism creates an authority position (a monitor that over-detects, a captured mediator) & Epistemic, constraint & Checks on sanctioners; appeals and error correction; legitimate or elected authority; rotation of roles; runtime interruption by humans & Authority capture; false punishment rate; human override \\
-\bottomrule
-\end{tabular}
-\end{table*}
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/figure7_failure-modes-flow.pdf}
+  \caption{A practical guide linking the mechanism families to the failure modes of Section~\mbox{\ref{sec:failures}}. Each row follows one failure: a mechanism (amber) fails in a characteristic way (terracotta); an evaluation measures the failure and checks whether cooperation holds (blue, metrics from Table~\mbox{\ref{tab:metrics}}); if it does not, safeguards drawn from the taxonomy (green; Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) revise the institution, which is then tested again. Tags name the mechanism families most exposed to each failure (violet).}
+  \label{fig:failure-guide}
+\end{figure}
 
 
 
@@ -813,7 +802,7 @@ The authors have no competing interests to declare.
 
 % Figure 5's 73 mechanisms represent real scholarly effort, but I finished reading it without a clear sense of which mechanisms to prioritize, which are likely to conflict with each other, or which are most relevant for which failure modes. For someone actually trying to design one of these institutional systems, the taxonomy as presented is a starting point rather than a guide, and I think it could be made much more useful with relatively small additions.}
 
-\del{Table~\mbox{\ref{tab:family-dilemma-guide}} turns the taxonomy into a short practical guide, mapping the six families to the four cooperation dilemmas and the main risk each family introduces.}
+\del{Figure~\mbox{\ref{fig:failure-guide}} turns the taxonomy into a short practical guide, mapping the six families to the four cooperation dilemmas and the main risk each family introduces.}
 
 
 
