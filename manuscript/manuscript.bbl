@@ -101,6 +101,11 @@ Dafoe, A., Bachrach, Y., Hadfield, G., Horvitz, E., Larson, K., Graepel, T.:
   \textbf{593}(7857),  33--36 (2021). \doi{10.1038/d41586-021-01170-0},
   \url{https://www.nature.com/articles/d41586-021-01170-0}
 
+\bibitem{das2026activations}
+Das, A., Ponde, J., More, M., Gupta, D.: You can't escape your own activations:
+  Evaluation awareness and multi-agent monitoring (2026),
+  \url{https://arxiv.org/abs/2609.03035}
+
 \bibitem{delimitrouQuasarResourceefficientQoSaware2014}
 Delimitrou, C., Kozyrakis, C.: Quasar: Resource-efficient and {{QoS-aware}}
   cluster management. In: Proceedings of the 19th International Conference on
@@ -163,6 +168,13 @@ Goodhart, C.A.E.: Problems of {{Monetary Management}}: {{The UK Experience}}.
   In: Goodhart, C.A.E. (ed.) Monetary {{Theory}} and {{Practice}}: {{The UK
   Experience}}, pp. 91--121. Macmillan Education UK, London (1984).
   \doi{10.1007/978-1-349-17295-5_4}
+
+\bibitem{greenblatt2024alignmentfaking}
+Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S.,
+  Treutlein, J., Belonax, T., Chen, J., Duvenaud, D., Khan, A., Michael, J.,
+  Mindermann, S., Perez, E., Petrini, L., Uesato, J., Kaplan, J., Shlegeris,
+  B., Bowman, S.R., Hubinger, E.: Alignment faking in large language models
+  (2024), \url{https://arxiv.org/abs/2412.14093}
 
 \bibitem{gross2025hidden}
 Gross, J., Graf, C., Rossetti, C.S.L.: The hidden costs of human cooperation.
@@ -389,6 +401,11 @@ Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:
 Myerson, R.B.: Optimal {{Auction Design}}. Mathematics of Operations Research
   \textbf{6}(1),  58--73 (1981)
 
+\bibitem{needham2025evalaware}
+Needham, J., Edkins, G., Pimpale, G., Bartsch, H., Hobbhahn, M.: Large language
+  models often know when they are being evaluated (2025),
+  \url{https://arxiv.org/abs/2505.23836}
+
 \bibitem{nickerson2013taxonomy}
 Nickerson, R.C., Varshney, U., Muntermann, J.: A method for taxonomy
   development and its application in information systems. European Journal of
@@ -404,11 +421,6 @@ Niranjani, H., Kumar, U., Tan, P.X.: Internal vs. external: Comparing
 North, D.C.: Institutions, {{Institutional Change}} and {{Economic
   Performance}}. Political {{Economy}} of {{Institutions}} and {{Decisions}},
   Cambridge University Press, Cambridge (1990). \doi{10.1017/CBO9780511808678}
-
-\bibitem{norvigColorlessGreenIdeas2012}
-Norvig, P.: Colorless green ideas learn furiously: {{Chomsky}} and the two
-  cultures of statistical learning. Significance  \textbf{9}(4),  30--33
-  (2012). \doi{10.1111/j.1740-9713.2012.00590.x}
 
 \bibitem{nowak2006five}
 Nowak, M.A.: Five rules for the evolution of cooperation. Science
@@ -457,12 +469,6 @@ Shapira, N., Levy, M., Alavi, S.H., Zhou, X., Choi, Y., Goldberg, Y., Sap, M.,
   Testing Social Reasoning}} in {{Large Language Models}} (May 2023).
   \doi{10.48550/arXiv.2305.14763}
 
-\bibitem{shenAIOrganizationsAre2026}
-Shen, J.H., Zhu, D., Srinivasan, S., Sleight, H., Wagner, L.T., Matthews, M.J.,
-  Jones, E., {Sohl-Dickstein}, J.: {{AI Organizations}} are {{More Effective}}
-  but {{Less Aligned}} than {{Individual Agents}} (Apr 2026).
-  \doi{10.48550/arXiv.2604.10290}
-
 \bibitem{shoham1995sociallaws}
 Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
   Off-line design. Artificial Intelligence  \textbf{73}(1--2),  231--252 (1995)
@@ -478,16 +484,6 @@ Sofroniew, N., Kauvar, I., Saunders, W., Chen, R., Henighan, T., Hydrie, S.,
   Rivoire, K., Fish, K., Olah, C., Lindsey, J.: Emotion concepts and their
   function in a large language model (2026),
   \url{https://arxiv.org/abs/2604.07729}
-
-\bibitem{sorensen2024roadmap}
-Sorensen, T., Moore, J., Fisher, J., Gordon, M.L., Mireshghallah, N., Rytting,
-  C.M., Ye, A., Jiang, L., Lu, X., Dziri, N., Althoff, T., Choi, Y.: Position:
-  {A} roadmap to pluralistic alignment. In: Salakhutdinov, R., Kolter, Z.,
-  Heller, K.A., Weller, A., Oliver, N., Scarlett, J., Berkenkamp, F. (eds.)
-  Forty-first International Conference on Machine Learning, {ICML} 2024,
-  Vienna, Austria, July 21-27, 2024. pp. 46280--46302. Proceedings of Machine
-  Learning Research, {PMLR} / OpenReview.net (2024),
-  \url{https://proceedings.mlr.press/v235/sorensen24a.html}
 
 \bibitem{steinberger2026openclaw}
 Steinberger, P.: {OpenClaw}: Your own personal {AI} assistant.
@@ -566,6 +562,11 @@ Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
 Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
   Simulating legal society with {LLM}-based agents (2025),
   \url{https://arxiv.org/abs/2510.24442}
+
+\bibitem{vanderweij2024sandbagging}
+van~der Weij, T., Hofst{\"a}tter, F., Jaffe, O., Brown, S.F., Ward, F.R.: {AI}
+  sandbagging: Language models can strategically underperform on evaluations
+  (2024), \url{https://arxiv.org/abs/2406.07358}
 
 \bibitem{willis2026evaluatingcollectivebehaviourhundreds}
 Willis, R., Zhao, J., Du, Y., Leibo, J.Z.: Evaluating collective behaviour of
