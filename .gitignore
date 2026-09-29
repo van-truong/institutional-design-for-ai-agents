@@ -23,3 +23,9 @@ manuscript/figures/*.svg
 # Local poster design sources (reference only)
 archive/icml2026/ICML_Vangelo_24inx36in_Institution_Design_Poster.pptx
 archive/icml2026/ICML_Vangelo_24inx36in_Institution_Design_Poster.svg
+
+# Private working documents (not for the public paper repo)
+2026-04-07_Sanctioning_taxonomy.xlsx
+
+# Session notebooks live in the separate Projects/lab-notebook repo
+lab-notebook/
