@@ -1,0 +1,8 @@
+Pass 3 (targeted), 2026-09-29: screen of all 561 instances for the two mechanisms added in pass 2
+(M66 Outcome & resource-state feedback; M67 Capacity building & assistance).
+Method: keyword screen of description + evidence (feedback, threshold, sustainab*, informed about,
+resource state/stock, comparison, assistance, capacity, help comply, consequence), then reading each hit.
+Hits: 36. New assignments: none beyond I0381 (M66) and I0025 (M67), set in pass 2.
+No further new mechanism, merge, or split was proposed.
+Ending conditions (Nickerson et al. 2013): met for this corpus. Every mechanism has at least one instance;
+M66 and M67 have one each and are targets for the resumed searches.

@@ -1,0 +1,676 @@
+{
+ "group": "G2",
+ "primitives": [
+  3,
+  4,
+  7
+ ],
+ "date_run": "2026-09-29",
+ "queries": [
+  {
+   "source": "web (arXiv/COLM)",
+   "query": "SanctSim LLM agents sanctioning institutions public goods game punishment reward",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents public goods game costly punishment cooperation",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web (AAMAS/arXiv/journals)",
+   "query": "multi-agent reinforcement learning sanctioning peer punishment social dilemma learned",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "opened page (arXiv)",
+   "query": "GovSim 2404.16698 abstract + full text check for fines/deductions",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents stake slashing deposit penalty multi-agent cooperation commitment",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents contract enforcement penalty clause negotiation multi-agent social dilemma",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents subsidy tax planner incentive design cooperation multi-agent simulation",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (AAMAS/arXiv)",
+   "query": "Get It in Writing: Formal Contracts Mitigate Social Dilemmas in Multi-Agent RL",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (NeurIPS)",
+   "query": "Learning to Incentivize Other Learning Agents reward giving MARL",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (AAAI/AAMAS)",
+   "query": "Gifting in multi-agent reinforcement learning Lupu Precup",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web (Collective Intelligence/arXiv)",
+   "query": "A learning agent that acquires social norms from public sanctions",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (PNAS)",
+   "query": "Spurious normativity enhances learning of compliance and enforcement behavior",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "MARL collective punishment group sanction shared penalty team cooperation social dilemma",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents collective punishment OR joint liability OR group liability multi-agent cooperation",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv/IJCNN)",
+   "query": "Adaptive mechanism design learning to promote cooperation planner rewards punishments Baumann",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/ICML)",
+   "query": "LLM agents reward peers praise reputation incentive public goods game rewarding vs punishing",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/NeurIPS)",
+   "query": "LLM agents Pigouvian tax externality tax planner common-pool resource",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (Science Advances)",
+   "query": "The AI Economist tax policies two-level deep RL",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/IEEE)",
+   "query": "multi-agent reinforcement learning proof-of-stake slashing validators",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "MARL group punishment OR collective sanction OR shared liability agents police each other",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents social disapproval shaming non-monetary sanction cooperation social dilemma",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (NeurIPS)",
+   "query": "Learning to Share in Multi-Agent Reinforcement Learning reward sharing",
+   "results_screened": 9,
+   "included": 0
+  }
+ ],
+ "papers": [
+  {
+   "key": "guzman2025reasoning",
+   "title": "Corrupted by Reasoning: Reasoning Language Models Become Free-Riders in Public Goods Games",
+   "authors": "David Guzman Piedrahita et al.",
+   "year": 2025,
+   "venue": "COLM 2025",
+   "url": "https://arxiv.org/abs/2506.23276",
+   "arxiv_id": "2506.23276",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-02",
+    "P04-05"
+   ],
+   "how_tested": "7 LLM agents play a 15-round public goods game with per-round choice between a sanctioning institution (members may pay 1 token to reward a peer +1 or punish a peer -3) and a sanction-free institution; enforcement choices and punish/reward ratios are measured against human data.",
+   "finding": "Traditional LLMs mostly join the sanctioning institution and sustain high contributions but enforce almost entirely through rewards (punish/reward ratio 0.00-0.50 vs 1.66 for humans); reasoning models (o1/o3) tend to opt out and free-ride.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vallinder2024cultural",
+   "title": "Cultural Evolution of Cooperation among LLM Agents",
+   "authors": "Aron Vallinder et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2412.10270",
+   "arxiv_id": "2412.10270",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "Generations of LLM agents play an iterated Donor Game with cultural transmission of strategies; one condition adds a costly punishment option.",
+   "finding": "Claude 3.5 Sonnet uses costly punishment to reach higher scores, whereas Gemini 1.5 Flash and GPT-4o fail to benefit from it.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "gupta2025social",
+   "title": "The Role of Social Learning and Collective Norm Formation in Fostering Cooperation in LLM Multi-Agent Systems",
+   "authors": "Prateek Gupta et al.",
+   "year": 2025,
+   "venue": "AAMAS 2026",
+   "url": "https://arxiv.org/abs/2510.14401",
+   "arxiv_id": "2510.14401",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "LLM agents harvest a common-pool resource; agents monitor random peers and may punish norm violators at cost gamma to impose penalty beta; punishment is switched off mid-run and its strength varied.",
+   "finding": "Punishment sustains cooperation; when it is removed at timestep 15 cooperation collapses and the resource depletes faster; stronger punishment generally improves survival at moderate growth rates.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "warnakulasuriya2025punishment",
+   "title": "Evolution of Cooperation in LLM-Agent Societies: A Preliminary Study Using Different Punishment Strategies",
+   "authors": "Kavindu Warnakulasuriya et al.",
+   "year": 2025,
+   "venue": "COINE 2025 workshop (AAMAS 2025); Springer LNCS chapter",
+   "url": "https://arxiv.org/abs/2504.19487",
+   "arxiv_id": "2504.19487",
+   "doi": "10.1007/978-3-032-17542-7_7",
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "LLM agents assigned Boyd-Richerson strategy types (e.g., Cooperator-Punishers, Moralists, Reluctant Cooperators) play a Diner's Dilemma with explicit punishment and pairwise-imitation strategy adoption.",
+   "finding": "Explicit punishment drives norm emergence; Reluctant Cooperators defect initially but switch to cooperation after being punished.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "zhou2025prosocial",
+   "title": "Investigating Prosocial Behavior Theory in LLM Agents under Policy-Induced Inequities",
+   "authors": "Yujia Zhou et al.",
+   "year": 2025,
+   "venue": "AAAI 2026",
+   "url": "https://arxiv.org/abs/2505.15857",
+   "arxiv_id": "2505.15857",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "Multiple LLM agents in a simulated social network face policy-induced inequities; third-party punishment is measured while inequity magnitude and enforcement cost are varied.",
+   "finding": "Agents' third-party punishment responds to inequity magnitude and enforcement cost, and structural inequities suppress prosocial behavior and spread norm erosion.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ng2026market",
+   "title": "Formal Mechanisms for Market Stability in Self-Interested Agent Societies: A Marketplace Simulation Study",
+   "authors": "Eugene Ng Yi Sheng et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2607.08652",
+   "arxiv_id": "2607.08652",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-02",
+    "P03-03",
+    "P03-04"
+   ],
+   "how_tested": "18 DeepSeek-V3 agents trade over 200 rounds under eight conditions, including bilateral contracts with a 6-utility breach penalty, an oracle issuing escalating fines (-2/-4/-6) then suspension, peer costly sanctions (1 utility to inflict 3), and a judicial complaint system with 5-utility penalties.",
+   "finding": "Penalty-based mechanisms underperform: costly sanctions rank last because agents free-ride on others' punishment, contracting has a 21.3% breach rate and cuts trade volume to a third, oracle fines give the lowest inequality but 17% less welfare than mediation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "syrnikov2026institutional",
+   "title": "Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs",
+   "authors": "Syrnikov et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2601.11369",
+   "arxiv_id": "2601.11369",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-03",
+    "P03-06"
+   ],
+   "how_tested": "LLM firms in a repeated Cournot market under three regimes (ungoverned, prompt-only prohibition, governance graph enforced by an oracle/controller with warnings, tiered fines of 35/75/100% of round profit, and suspension); collusion severity measured over 90 runs per condition.",
+   "finding": "Enforced fines/suspension cut mean collusion tier from 3.1 to 1.8 (d=1.28) and severe collusion from 50% to 5.6%; the prompt-only rule has negligible effect.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wyse2026contracts",
+   "title": "Commitment To Cooperation With Self-Negotiated Contracts",
+   "authors": "Tim Wyse et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2607.22750",
+   "arxiv_id": "2607.22750",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-04"
+   ],
+   "how_tested": "LLM agents negotiate contracts (programmatic or natural-language, judge-enforced) in a spatial-temporal bargaining game; contracts specify automatically executed conditional transfers, and an agent unable to honor a transfer gets a score of 0.",
+   "finding": "Self-negotiated contracts improve cooperation beyond ordinary trading; defection rates vary widely (0.04-0.94) by model and contract type. No explicit penalty clauses, so this is partial evidence for P03-04.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tewolde2026coopeval",
+   "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+   "authors": "Emanuel Tewolde et al.",
+   "year": 2026,
+   "venue": "ICML 2026",
+   "url": "https://arxiv.org/abs/2604.15267",
+   "arxiv_id": "2604.15267",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-04"
+   ],
+   "how_tested": "Benchmarks LLM agent pairs in social dilemmas under repetition, reputation, third-party mediation, and contract agreements (outcome-conditional payments between players).",
+   "finding": "Contracting and mediation are the most effective mechanisms for cooperation among capable LLMs; contracts are outcome-conditional payments rather than breach penalties, so this is partial evidence for P03-04.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "piatti2024govsim",
+   "title": "Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents",
+   "authors": "Giorgio Piatti et al.",
+   "year": 2024,
+   "venue": "NeurIPS 2024",
+   "url": "https://arxiv.org/abs/2404.16698",
+   "arxiv_id": "2404.16698",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-01"
+   ],
+   "how_tested": "LLM agents share a regenerating common-pool resource (GovSim) and communicate; utterances are coded with a dialogue taxonomy that includes a 'Punishment' category. No mechanical fines or sanctions exist.",
+   "finding": "Sanctioning shows up only as conversational pressure (relational utterances are about 1%); universalization reasoning and communication drive sustainability. Counts as measured, not manipulated, verbal disapproval.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "liang2025everyone",
+   "title": "Everyone Contributes! Incentivizing Strategic Cooperation in Multi-LLM Systems via Sequential Public Goods Games",
+   "authors": "Yunhao Liang et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2508.02076",
+   "arxiv_id": "2508.02076",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P04-02"
+   ],
+   "how_tested": "Multi-LLM ensembles are trained with RL in a sequential public goods game whose public-goods reward is redesigned so that effortful contribution is the unique subgame-perfect equilibrium.",
+   "finding": "The redesigned reward removes free-riding and the trained ensembles beat single-agent and CoT baselines on reasoning, math, and code tasks. This is a training-reward redesign on a collaborative task, not a subsidy between agents, so partial.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "dasgupta2023direct",
+   "title": "Investigating the Impact of Direct Punishment on the Emergence of Cooperation in Multi-Agent Reinforcement Learning Systems",
+   "authors": "Nayana Dasgupta et al.",
+   "year": 2023,
+   "venue": "Autonomous Agents and Multi-Agent Systems 39, article 19 (2025)",
+   "url": "https://arxiv.org/abs/2301.08278",
+   "arxiv_id": "2301.08278",
+   "doi": "10.1007/s10458-025-09698-5",
+   "track": "marl",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "MARL populations in social dilemmas with direct punishment, third-party punishment, partner selection and reputation, alone and combined.",
+   "finding": "Direct punishment supports cooperation, and its effect depends on how it combines with third-party punishment, partner selection and reputation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vinitsky2023sanctions",
+   "title": "A learning agent that acquires social norms from public sanctions in decentralized multi-agent settings",
+   "authors": "Eugene Vinitsky et al.",
+   "year": 2023,
+   "venue": "Collective Intelligence 2(2)",
+   "url": "https://arxiv.org/abs/2106.09012",
+   "arxiv_id": "2106.09012",
+   "doi": "10.1177/26339137231162025",
+   "track": "marl",
+   "mechanism_ids": [
+    "P03-02",
+    "P03-01"
+   ],
+   "how_tested": "Decentralized RL agents see all public sanctioning events; the architecture includes a classifier of approved/disapproved behavior and a motivation to punish in step with the group.",
+   "finding": "Agents acquire beneficial sanctioning norms that reduce free-riding and raise per-agent returns.",
+   "located_via": "search"
+  },
+  {
+   "key": "koster2022spurious",
+   "title": "Spurious normativity enhances learning of compliance and enforcement behavior in artificial agents",
+   "authors": "Raphael Köster et al.",
+   "year": 2022,
+   "venue": "PNAS 119(3)",
+   "url": "https://www.pnas.org/doi/10.1073/pnas.2106028118",
+   "arxiv_id": null,
+   "doi": "10.1073/pnas.2106028118",
+   "track": "marl",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "MARL agents in a foraging environment learn to punish peers who eat taboo berries; an extra 'silly rule' taboo on a harmless berry is added as a manipulation.",
+   "finding": "Peer punishment helps agents avoid poisonous berries, and the silly rule further improves returns by giving agents more practice at enforcement.",
+   "located_via": "search"
+  },
+  {
+   "key": "tang2026adaptive",
+   "title": "Adaptive Punishment for Cooperation in Mixed-Motive Games",
+   "authors": "Min Tang et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2605.24516",
+   "arxiv_id": "2605.24516",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P03-02"
+   ],
+   "how_tested": "MARL agents in sequential social dilemmas and iterated public goods games use a learned punishment policy (APC) that sets punishment probability and severity based on estimated defection severity.",
+   "finding": "APC cuts costly, ineffective punishment and raises cooperation above baseline punishment schemes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "hua2023lopt",
+   "title": "LOPT: Learning Optimal Pigovian Tax in Sequential Social Dilemmas",
+   "authors": "Yun Hua et al.",
+   "year": 2023,
+   "venue": "arXiv (a NeurIPS 2025 proceedings version appears in search results)",
+   "url": "https://arxiv.org/abs/2305.06227",
+   "arxiv_id": "2305.06227",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P04-02",
+    "P03-03"
+   ],
+   "how_tested": "A central tax-planner agent learns Pigovian tax and allowance (subsidy) rates that reshape the rewards of self-interested MARL agents in Escape Room and Cleanup.",
+   "finding": "Learned tax/subsidy reward shaping gives higher social welfare than existing methods in both environments.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "baumann2018adaptive",
+   "title": "Adaptive Mechanism Design: Learning to Promote Cooperation",
+   "authors": "Tobias Baumann et al.",
+   "year": 2018,
+   "venue": "arXiv; IJCNN 2020",
+   "url": "https://arxiv.org/abs/1806.04067",
+   "arxiv_id": "1806.04067",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P04-05",
+    "P04-02",
+    "P03-03"
+   ],
+   "how_tested": "An external planning agent learns to hand out extra rewards and punishments to independent learners in matrix social dilemmas, anticipating their parameter updates.",
+   "finding": "Learners reach high-welfare cooperation; the planner learns that punishing defection is cheaper than rewarding cooperation, and the incentives it has to pay fall toward zero over time.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "zheng2022aieconomist",
+   "title": "The AI Economist: Taxation policy design via two-level deep multiagent reinforcement learning",
+   "authors": "Stephan Zheng et al.",
+   "year": 2022,
+   "venue": "Science Advances 8(18)",
+   "url": "https://www.science.org/doi/10.1126/sciadv.abk2607",
+   "arxiv_id": "2108.02755",
+   "doi": "10.1126/sciadv.abk2607",
+   "track": "marl",
+   "mechanism_ids": [
+    "P04-02"
+   ],
+   "how_tested": "A planner learns tax schedules with redistribution while a population of RL economic agents co-adapts (two-level deep RL).",
+   "finding": "Learned tax policies improve the equality-productivity trade-off over baselines despite tax-gaming. The setting is an economy rather than a social dilemma, so partial for P04-02.",
+   "located_via": "search"
+  },
+  {
+   "key": "yang2020lio",
+   "title": "Learning to Incentivize Other Learning Agents",
+   "authors": "Jiachen Yang et al.",
+   "year": 2020,
+   "venue": "NeurIPS 2020",
+   "url": "https://arxiv.org/abs/2006.06051",
+   "arxiv_id": "2006.06051",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P04-02"
+   ],
+   "how_tested": "Each RL agent learns an incentive function to give rewards directly to other agents, accounting for its effect on their learning, in social dilemmas (e.g., Escape Room, Cleanup).",
+   "finding": "Learned peer incentives beat standard RL and often reach a near-optimal division of labor. This is peer-to-peer reward, not a central subsidy.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lupu2020gifting",
+   "title": "Gifting in Multi-Agent Reinforcement Learning (Student Abstract)",
+   "authors": "Andrei Lupu et al.",
+   "year": 2020,
+   "venue": "AAAI 2020 (Student Abstract)",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/7208",
+   "arxiv_id": null,
+   "doi": "10.1609/aaai.v34i10.7208",
+   "track": "marl",
+   "mechanism_ids": [
+    "P04-02"
+   ],
+   "how_tested": "RL agents in a Harvest common-pool resource environment get a gifting action that transfers reward to other agents.",
+   "finding": "Gifting can greatly improve learning progress in the resource-appropriation setting (preliminary student abstract).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "haupt2022contracts",
+   "title": "Formal Contracts Mitigate Social Dilemmas in Multi-Agent RL",
+   "authors": "Andreas A. Haupt et al.",
+   "year": 2022,
+   "venue": "arXiv; AAMAS 2023 as 'Get It in Writing: Formal Contracts Mitigate Social Dilemmas in Multi-Agent RL'",
+   "url": "https://arxiv.org/abs/2208.10469",
+   "arxiv_id": "2208.10469",
+   "doi": "10.5555/3545946.3598670",
+   "track": "marl",
+   "mechanism_ids": [
+    "P03-04"
+   ],
+   "how_tested": "Markov games are augmented so agents can voluntarily agree to binding, pre-specified conditional reward transfers (MOCA training), tested on static games, traffic, pollution and common-pool resource domains.",
+   "finding": "With a rich enough contract space all subgame-perfect equilibria are socially optimal, and contracting raises welfare empirically. Transfers can act as pre-agreed penalties but are not framed as breach penalties, so partial.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "willis2023transfer",
+   "title": "Resolving social dilemmas with minimal reward transfer",
+   "authors": "Richard Willis et al.",
+   "year": 2023,
+   "venue": "arXiv (submitted to JAAMAS special issue)",
+   "url": "https://arxiv.org/abs/2310.12928",
+   "arxiv_id": "2310.12928",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P04-02"
+   ],
+   "how_tested": "Defines a 'general self-interest level' and computes minimal reward-transfer structures that make the social optimum dominant in multi-player social dilemmas.",
+   "finding": "Minimal reward redistribution can align individual and group incentives; the work is mostly analytical, so partial.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "islam2023mrlpos",
+   "title": "MRL-PoS: A Multi-agent Reinforcement Learning based Proof of Stake Consensus Algorithm for Blockchain",
+   "authors": "Tariqul Islam et al.",
+   "year": 2023,
+   "venue": "arXiv; IEEE conference",
+   "url": "https://arxiv.org/abs/2312.09123",
+   "arxiv_id": "2312.09123",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P03-05",
+    "P04-03"
+   ],
+   "how_tested": "A PoS consensus design in which MARL agents (nodes) receive rewards and penalties to push out malicious validators and reward honest ones.",
+   "finding": "The abstract reports that the reward/penalty system removes malicious nodes. It is a blockchain security design, not a cooperation study, and does not report stake-slashing manipulation in detail, so partial.",
+   "located_via": "opened page"
+  }
+ ],
+ "mechanism_updates": [
+  {
+   "id": "P03-01",
+   "llm_status": "partial",
+   "llm_evidence": "piatti2024govsim codes conversational 'punishment' utterances (measured, not manipulated; about 1% of utterances). No LLM study manipulates non-monetary disapproval.",
+   "marl_status": "partial",
+   "marl_evidence": "vinitsky2023sanctions: sanctioning is framed as approval/disapproval but carried out as material zapping.",
+   "seed_claims_checked": "Seed says untested; GovSim adds measured verbal sanctioning -> partial."
+  },
+  {
+   "id": "P03-02",
+   "llm_status": "tested",
+   "llm_evidence": "guzman2025reasoning (pay 1 to impose -3; LLMs rarely punish); vallinder2024cultural (only Claude 3.5 Sonnet benefits from costly punishment); gupta2025social (removing punishment collapses CPR cooperation); warnakulasuriya2025punishment; zhou2025prosocial (third-party punishment vs enforcement cost); ng2026market (1:3 sanctions, free-riding on enforcement).",
+   "marl_status": "tested",
+   "marl_evidence": "dasgupta2023direct; vinitsky2023sanctions; koster2022spurious; tang2026adaptive.",
+   "seed_claims_checked": "SanctSim: confirmed (1 token for -3 punishment; LLMs strongly prefer reward over punishment vs humans)."
+  },
+  {
+   "id": "P03-03",
+   "llm_status": "tested",
+   "llm_evidence": "syrnikov2026institutional (oracle-enforced tiered fines + suspension cut Cournot collusion; prompt-only rule does not); ng2026market (oracle escalating fines -2/-4/-6). Both are escalating rather than flat fines.",
+   "marl_status": "partial",
+   "marl_evidence": "hua2023lopt (learned Pigovian tax on externalities); baumann2018adaptive (planner-issued punishments). Neither is a fixed fine schedule.",
+   "seed_claims_checked": "GovSim auto-deduction: mischaracterized. GovSim has no fines or automatic deductions; resource collapse is the only automatic consequence."
+  },
+  {
+   "id": "P03-04",
+   "llm_status": "tested",
+   "llm_evidence": "ng2026market (bilateral contracts with a 6-utility breach penalty; 21.3% breach, trade volume falls). Partial: wyse2026contracts and tewolde2026coopeval (outcome-conditional transfers, no explicit penalty clause).",
+   "marl_status": "partial",
+   "marl_evidence": "haupt2022contracts (binding conditional reward transfers that can encode penalties).",
+   "seed_claims_checked": "Seed says untested; moved to tested."
+  },
+  {
+   "id": "P03-05",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM multi-agent study found. Stake/slashing appears only in protocol or position papers (e.g., arXiv 2511.03434, 2609.05529, not screened in full).",
+   "marl_status": "partial",
+   "marl_evidence": "islam2023mrlpos (reward/penalty PoS design with MARL nodes; not a cooperation experiment).",
+   "seed_claims_checked": "Seed 'untested' for LLM: confirmed."
+  },
+  {
+   "id": "P03-06",
+   "llm_status": "partial",
+   "llm_evidence": "syrnikov2026institutional applies a published, manifest-defined fine schedule (tiers of 35/75/100% of profit), which works like a standardized sentencing formula but is not tested against discretionary sanctioning.",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "Seed 'untested': now partial."
+  },
+  {
+   "id": "P03-07",
+   "llm_status": "untested",
+   "llm_evidence": "",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "Seed 'untested': confirmed (none found)."
+  },
+  {
+   "id": "P03-08",
+   "llm_status": "untested",
+   "llm_evidence": "Restaking security for verifiable inference (arXiv 2608.09055) is a game-theory analysis, not agents interacting; not screened in full.",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "Seed 'untested': confirmed."
+  },
+  {
+   "id": "P04-01",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM study manipulates praise or status. SanctSim rewards are monetary token transfers (+1 per token), not praise.",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "SanctSim as praise/status evidence: mischaracterized. Its reward is a monetary peer transfer and fits better under a peer-reward mechanism or P04-05."
+  },
+  {
+   "id": "P04-02",
+   "llm_status": "partial",
+   "llm_evidence": "liang2025everyone (redesigned public-goods reward used to train multi-LLM ensembles). No LLM study has a central subsidy/grant for contributors.",
+   "marl_status": "tested",
+   "marl_evidence": "hua2023lopt (learned tax + allowance/subsidy planner); baumann2018adaptive (planner rewards); zheng2022aieconomist (partial, tax-redistribution economy). Peer rewards: yang2020lio, lupu2020gifting, willis2023transfer.",
+   "seed_claims_checked": "SanctSim 'subsidies as primary enforcement tool': mischaracterized. SanctSim's rewards are peer-to-peer (cost 1, +1 to the target), not Pigouvian subsidies from a planner. The underlying finding (LLMs enforce mainly through rewards) holds."
+  },
+  {
+   "id": "P04-03",
+   "llm_status": "untested",
+   "llm_evidence": "",
+   "marl_status": "partial",
+   "marl_evidence": "islam2023mrlpos (honest-node rewards in a MARL PoS design; not a cooperation experiment).",
+   "seed_claims_checked": "Seed 'untested' for LLM: confirmed."
+  },
+  {
+   "id": "P04-04",
+   "llm_status": "discussed",
+   "llm_evidence": "Seed cites Kolt 2024 as discussion; this slice did not re-verify it. No LLM multi-agent test of defaults or nudges found.",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "Kolt 2024: not checked in this slice (no search run); 'not tested' is consistent with what was found."
+  },
+  {
+   "id": "P04-05",
+   "llm_status": "tested",
+   "llm_evidence": "guzman2025reasoning (both reward and punishment available; LLMs prefer rewards, humans prefer punishment at a 1.66 ratio).",
+   "marl_status": "partial",
+   "marl_evidence": "baumann2018adaptive (planner can reward or punish; learns that punishing defection is cheaper). Not a choice made by the peer agents themselves.",
+   "seed_claims_checked": "SanctSim: confirmed. Human ratio 1.66 confirmed. LLM 0.00-0.50 confirmed for traditional LLMs; the seed's 0.88 upper bound (presumably reasoning models) was not seen on the page. The seed's 'o1 free-ride' claim fits the reported opt-out of the sanctioning institution."
+  },
+  {
+   "id": "P07-01",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM study where one member's defection penalizes the whole group. SanctSim sanction costs are borne individually.",
+   "marl_status": "untested",
+   "marl_evidence": "No MARL study found. arXiv 2109.05634 'Evolution of cooperation with joint liability' is evolutionary game theory, not learning agents; excluded.",
+   "seed_claims_checked": "SanctSim 'shared-cost enforcement among members': mischaracterized. The paper states each sanctioner pays from a personal 20-token endowment with no cost-sharing and no group penalty."
+  },
+  {
+   "id": "P07-02",
+   "llm_status": "untested",
+   "llm_evidence": "",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "Seed 'untested': confirmed."
+  },
+  {
+   "id": "P07-03",
+   "llm_status": "untested",
+   "llm_evidence": "",
+   "marl_status": "untested",
+   "marl_evidence": "",
+   "seed_claims_checked": "Seed 'untested': confirmed."
+  }
+ ],
+ "notes": "1) Codebook gap: peer-to-peer monetary reward (SanctSim rewards, LIO, gifting) has no clean home in P04. P04-01 is praise/status and P04-02 is a central Pigouvian subsidy. Consider adding a 'peer reward / gifting' mechanism under primitive 4; for now peer-reward MARL papers are mapped to P04-02 as partial. 2) Three seed claims are mischaracterized: GovSim has no auto-deduction (P03-03); SanctSim rewards are not subsidies (P04-02) or praise (P04-01); SanctSim has no shared/collective cost (P07-01). 3) Collective liability (P07-01..03) is untested in both tracks. The only joint-liability hit (arXiv 2109.05634) is evolutionary game theory and was excluded. 4) Titles and venues to verify: zhou2025prosocial (arXiv v1 was titled 'Simulating Prosocial Behavior and Social Contagion in LLM Agents under Institutional Interventions'; the current abs page gives the title used here and AAAI 2026); hua2023lopt venue (a NeurIPS 2025 PDF appears in search, the arXiv page does not say); haupt2022contracts (the AAMAS 2023 version has a different title and possibly a different author order); islam2023mrlpos (the IEEE venue was not confirmed on the page). 5) Author strings: vinitsky2023sanctions, koster2022spurious and zheng2022aieconomist were taken from search snippets (publisher pages blocked or not opened); the arXiv or DOI pages should be checked. Syrnikov first name was not shown. 6) Excluded: Lee et al. 2025 arXiv 2507.04543 (evolutionary spatial PGG, not learning agents); Horibe et al. 2026 arXiv 2608.04507 (reward/punishment emerge as donation discrimination, which is reputation, primitive 5); Kumar et al. 2026 arXiv 2605.26448 (no sanction mechanism); Borah 2026 arXiv 2605.29062 (power asymmetry, no sanctions in the abstract); LToS NeurIPS 2022 (fully cooperative, not a dilemma). 7) Not chased for lack of budget: ALIGN gossip paper (ICML 2026, possibly reputation-based punishment); 'The Politician, the Liar, and the Obedient Worker' arXiv 2608.09574; IQ-Flow arXiv 2302.14604 and meta-gradient incentive design arXiv 2112.10859 (likely more MARL P04-02 evidence). 8) Screening counts are approximate: the number of results each web search returned, not a full database hit count."
+}

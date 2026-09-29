@@ -1,0 +1,422 @@
+{
+ "group": "G3",
+ "primitives": [
+  5,
+  12,
+  13
+ ],
+ "date_run": "2026-09-29",
+ "queries": [
+  {
+   "source": "web search",
+   "query": "Pierucci 2026 governance graph LLM agents institutional AI arXiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web search",
+   "query": "SanctSim LLM agents sanctioning institutions public goods arXiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents second-order punishment metanorms public goods game",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web search",
+   "query": "multi-agent reinforcement learning metanorms punishing non-punishers emergence sanctions",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "multi-agent reinforcement learning antisocial punishment public goods learning agents",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web search",
+   "query": "graduated sanctions multi-agent reinforcement learning common-pool resource Ostrom",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents escalating sanctions warning suspension multi-agent commons simulation",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "LLM multi-agent mediator agent conflict resolution negotiation dispute evaluation arXiv",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents appeal contest sanction judge multi-agent society simulation governance",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web search",
+   "query": "large language model agents antisocial punishment punish cooperators public goods game",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents wrongful sanction false positive monitor correction multi-agent cooperation reputation error",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents rate limiting throttling shared resource multi-agent cooperation congestion",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "multi-agent deep reinforcement learning random access learned backoff contention window collision fairness",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web search",
+   "query": "LLM agent runtime governance framework escalation human review appeal evaluation multi-agent policy enforcement",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "arbitrator LLM agent resolves disputes between agents multi-agent negotiation cooperation benchmark",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "mediated multi-agent reinforcement learning mediator social dilemma",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "evolution of second-order punishment reinforcement learning agents costly punishment non-punishers Q-learning",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents smart contract enforcement override \"code is law\" multi-agent cooperation experiment",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web search",
+   "query": "\"governance graph\" OR \"Institutional AI\" LLM agents sanctions escalation follow-up experiment 2026 collusion restorative",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "LLM agents Axelrod norms game metanorms boldness vengefulness replication",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web search",
+   "query": "\"antisocial punishment\" deep reinforcement learning agents emergence",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "arXiv abs/html pages opened (citation check)",
+   "query": "2601.11369, 2506.23276 (full PDF grep), 2409.00993, 2504.19487, 2605.24516, 2301.08278, 2606.05867, 2609.15293, 2510.24442, 2604.09823, 2603.18894, 2606.00007, 2608.28182, 2609.32616, 2606.27845, 2509.23154, 2603.16586, 2509.06586, 2607.22750, 2509.09215, 2602.18696",
+   "results_screened": 21,
+   "included": 11
+  }
+ ],
+ "papers": [
+  {
+   "key": "bracalesyrnikov2026institutional",
+   "title": "Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs",
+   "authors": "Marcantonio Bracale Syrnikov, Federico Pierucci, et al.",
+   "year": 2026,
+   "venue": "arXiv (cs.GT)",
+   "url": "https://arxiv.org/abs/2601.11369",
+   "arxiv_id": "2601.11369",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P05-04",
+    "P05-01"
+   ],
+   "how_tested": "LLM duopolies (GPT-5 Mini, Grok-4 Fast, Gemini 2.5 Flash, plus cross-provider pairs; N=90 runs) play a repeated Cournot game under three regimes: ungoverned, prompt-only anti-collusion 'Constitutional' prompt, and an 'Institutional' runtime governance graph with an escalation ladder Active->Warning->Fined (35/75/100% of profit)->Suspended plus time-expiry and credit-based restorative paths back to Active.",
+   "finding": "The governance-graph regime cut mean collusion tier from 3.1 to 1.8 (Cohen's d=1.28) and severe collusion from 50% to 5.6% of runs, while the prompt-only regime gave no reliable improvement; the graduated ladder is bundled with detection/enforcement and not isolated against a flat sanction.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "warnakulasuriya2025evolution",
+   "title": "Evolution of Cooperation in LLM-Agent Societies: A Preliminary Study Using Different Punishment Strategies",
+   "authors": "Kavindu Warnakulasuriya et al.",
+   "year": 2025,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2504.19487",
+   "arxiv_id": "2504.19487",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P12-01"
+   ],
+   "how_tested": "LLM agents in a Diner's Dilemma adopt Boyd-Richerson strategies (Cooperator-Punisher, Reluctant Cooperator, Easy-Going Cooperator, and a Moralist that also punishes non-punishers and those who fail to punish non-punishers) and spread strategies by imitation; punishment cost ratios are varied.",
+   "finding": "Explicit punishment drove norm emergence; at high punishment-to-cost ratios the Moralist (second-order punisher) population took over quickly, consistent with Boyd and Richerson's model. Strategies are assigned via prompts, not discovered by the agents.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "horiguchi2024evolution",
+   "title": "Evolution of Social Norms in LLM Agents using Natural Language",
+   "authors": "Ilya Horiguchi, Takahide Yoshida, Takashi Ikegami",
+   "year": 2024,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2409.00993",
+   "arxiv_id": "2409.00993",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P12-01"
+   ],
+   "how_tested": "Seven GPT-4 agents with prompted vengefulness/boldness traits play a modified Axelrod norms game (test/cheat/punish actions plus a natural-language discussion phase) and are observed for norm and metanorm emergence.",
+   "finding": "Agents spontaneously produced metanorm-like enforcement through dialogue (the abstract reports norms enforcing punishment of those who do not punish cheating; the body also describes agents punishing punishers deemed disruptive), and groups with moderate vengefulness and boldness were most stable. Evidence is qualitative/emergent, not a manipulated metanorm condition.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "chen2025simulating",
+   "title": "Simulating Dispute Mediation with LLM-Based Agents for Legal Research",
+   "authors": "Junjie Chen et al.",
+   "year": 2025,
+   "venue": "arXiv; listed as AAAI 2026 on the arXiv page",
+   "url": "https://arxiv.org/abs/2509.06586",
+   "arxiv_id": "2509.06586",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P13-02"
+   ],
+   "how_tested": "AgentMediation: LLM disputant agents and an LLM mediator agent simulate mediation of real-world-grounded disputes, with disputant strategies, dispute causes and mediator expertise varied experimentally.",
+   "finding": "The simulation reproduces patterns consistent with sociological theory (group polarization, surface-level consensus). It varies mediator quality but does not compare mediation with no mediation, and it is set in legal disputes, not a cooperation dilemma.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "poudel2026agentic",
+   "title": "Agentic Workflows for Resolving Conflict Over Shared Resources: A Power Grid Application",
+   "authors": "Shiva Poudel et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2604.09823",
+   "arxiv_id": "2604.09823",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P13-02"
+   ],
+   "how_tested": "Two LLM agents (Claude 4.5 Sonnet) representing conflicting grid applications (cost optimization vs resilience) share diesel generators and batteries on an IEEE 123-bus system; bilateral negotiation, structured mediation and procedural deconfliction are compared.",
+   "finding": "Negotiation converged fastest (5 rounds) and mediation took 9, while the procedural mode did not converge within 10 rounds. Mediation traded some Pareto efficiency (cost 0.51 vs 0.67) for more consistency and compromise (resilience 0.63 vs 0.60).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wang2025law",
+   "title": "Law in Silico: Simulating Legal Society with LLM-Based Agents",
+   "authors": "Yiding Wang et al.",
+   "year": 2025,
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2510.24442",
+   "arxiv_id": "2510.24442",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P13-02"
+   ],
+   "how_tested": "LLM agents (e.g., laborers and companies) live in a simulated society with legislative, judicial and enforcement modules; judicial corruption (probability 0.7 of reversing pro-laborer rulings) and litigation costs are manipulated.",
+   "finding": "Judicial corruption and filing costs reduced laborer litigation (about 7 to 3.7 cases) and rights protection, and the authors conclude that transparent, adaptive legal systems protect vulnerable agents better. There is no appeals or error-correction mechanism, so this counts only as partial evidence for third-party adjudication.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wyse2026commitment",
+   "title": "Commitment To Cooperation With Self-Negotiated Contracts",
+   "authors": "Tim Wyse et al.",
+   "year": 2026,
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2607.22750",
+   "arxiv_id": "2607.22750",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P13-04"
+   ],
+   "how_tested": "In CT-Bench (a two-player Colored-Trails-style game), LLM agents negotiate either programmatic contracts that compile to code and are enforced automatically, or natural-language contracts enforced at execution time by an LLM judge (Qwen-3-235B).",
+   "finding": "Code-enforced contracts beat judge-interpreted ones (79% vs 46% joint success on mutually dependent boards), and the judge made few errors (3 of 1,155 moves). The study contrasts code-as-law with interpretive enforcement but tests no social override of an exploited contract.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vedanta2026corrupt",
+   "title": "I Can't Believe It's Corrupt: Evaluating Corruption in Multi-Agent Governance Systems",
+   "authors": "Vedanta S P, Ponnurangam Kumaraguru",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2603.18894",
+   "arxiv_id": "2603.18894",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P12-03"
+   ],
+   "how_tested": "LLM agents fill official roles in three stylized governance templates (federal with GAO audit and Supreme Court, communist, socialist with a Constitutional Court) and are tested with charter constraints, communication controls and logging as safeguards; corruption outcomes are coded from 28,112 transcript segments.",
+   "finding": "Governance structure drove corruption outcomes more than model identity, and lightweight safeguards did not reliably prevent severe failures. The paper compares institutional architectures with oversight bodies but does not manipulate constitutional-level versus operational rule-making, so the evidence is partial.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "guzmanpiedrahita2025corrupted",
+   "title": "Corrupted by Reasoning: Reasoning Language Models Become Free-Riders in Public Goods Games",
+   "authors": "David Guzman Piedrahita et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2506.23276",
+   "arxiv_id": "2506.23276",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "how_tested": "SanctSim: LLM agents choose between a sanctioning institution (flat-rate reward +1 / punishment -3 per token, each costing 1 token) and a sanction-free institution in a repeated public goods game. Included only to check the seed's claims; it does not test any G3 mechanism.",
+   "finding": "LLMs strongly preferred rewards to punishment (punish/reward ratio 0.00-0.88 vs 1.66 for humans). Sanctions are not graduated, second-order punishment is absent, and the paper reports no punishment of high contributors.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tang2026adaptive",
+   "title": "Adaptive Punishment for Cooperation in Mixed-Motive Games",
+   "authors": "Min Tang, Fanqi Kong, Linyuan Lu, Xue Feng",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2605.24516",
+   "arxiv_id": "2605.24516",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P05-01"
+   ],
+   "how_tested": "MARL agents learn a punishment policy (APC) whose intensity depends on a dynamic punishment probability and a learned defection-severity estimate; evaluated in the iterated public goods game and sequential social dilemmas.",
+   "finding": "Severity-scaled punishment beat fixed-punishment baselines at sustaining cooperation while wasting less on punishment costs. It is proportional to severity, not an Ostrom warning->fine->suspension ladder keyed to repetition, so the evidence is partial.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "pan2025aienhanced",
+   "title": "AI-Enhanced Distributed Channel Access for Collision Avoidance in Future Wi-Fi 8",
+   "authors": "Jinzhe Pan et al.",
+   "year": 2025,
+   "venue": "arXiv; GLOBECOM 2025 per arXiv comments",
+   "url": "https://arxiv.org/abs/2509.23154",
+   "arxiv_id": "2509.23154",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P05-03"
+   ],
+   "how_tested": "Wi-Fi stations are trained with constrained MAPPO (centralized training, decentralized execution) to choose channel-access and backoff behavior, compared against standard binary exponential backoff (BEB) in dense deployments.",
+   "finding": "The learned access policy cut collision probability relative to BEB and removed starvation under a fairness metric. This benchmarks MARL against exponential back-off on a shared channel; it is not framed as a social dilemma.",
+   "located_via": "opened page"
+  }
+ ],
+ "mechanism_updates": [
+  {
+   "id": "P05-01",
+   "llm_status": "partial",
+   "llm_evidence": "bracalesyrnikov2026institutional implements an Active->Warning->Fined->Suspended ladder with restorative credits and cuts LLM collusion, but the graduated structure is bundled with enforcement and not isolated against flat sanctions. Deliberative Curation (arXiv 2606.00007) proposes graduated sanctions but states they were not exercised in simulation, so it counts only as discussed.",
+   "marl_status": "partial",
+   "marl_evidence": "tang2026adaptive: learned severity-scaled punishment in IPGG/SSDs outperforms fixed punishment (proportional to severity, not a repetition ladder).",
+   "seed_claims_checked": "SanctSim (guzmanpiedrahita2025corrupted), claimed to use 'escalating institutional pressure': mischaracterized. Its sanctions are flat per-token (+1/-3) and nothing escalates. The partial status stands, now on the basis of bracalesyrnikov2026institutional."
+  },
+  {
+   "id": "P05-02",
+   "llm_status": "untested",
+   "llm_evidence": "No multi-LLM study found that manipulates graduated throttling or QoS degradation as a sanction. Infrastructure schedulers for concurrent LLM agents (e.g., HiveMind, arXiv 2604.17111; not opened) handle rate limits but do not frame throttling as a sanction.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "'GovSim's extraction ceiling is binary': not checked (GovSim was outside this slice's searches)."
+  },
+  {
+   "id": "P05-03",
+   "llm_status": "untested",
+   "llm_evidence": "None found.",
+   "marl_status": "partial",
+   "marl_evidence": "pan2025aienhanced: MAPPO channel-access agents outperform binary exponential backoff on collisions and fairness (shared-channel contention, not framed as a sanction or social dilemma). Similar MARL contention-window papers exist (e.g., arXiv 2105.04077; not opened).",
+   "seed_claims_checked": "Seed says 'Not yet tested' for LLMs: confirmed, nothing found."
+  },
+  {
+   "id": "P05-04",
+   "llm_status": "tested",
+   "llm_evidence": "bracalesyrnikov2026institutional: a runtime governance graph (manifest states, transitions, sanctions, restorative paths; Oracle/Controller) beats both ungoverned and prompt-only regimes on collusion.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "'Pierucci et al. (2026): runtime governance graph outperforms prompt-only sanctioning': confirmed in substance, but the attribution is wrong. The empirical paper's first author is Marcantonio Bracale Syrnikov (Pierucci is second author, arXiv 2601.11369). Pierucci is first author of the companion conceptual paper 'Institutional AI: A Governance Framework for Distributional AGI Safety' (arXiv 2601.10599). The 'prompt-only' baseline is a static anti-collusion prompt, not 'prompt-only sanctioning'."
+  },
+  {
+   "id": "P12-01",
+   "llm_status": "tested",
+   "llm_evidence": "warnakulasuriya2025evolution: prompted Moralist (punish non-punishers) strategy among LLM agents dominates at high punishment ratios. horiguchi2024evolution: partial, with metanorm-like second-order enforcement emerging in GPT-4 agents playing Axelrod's norms game.",
+   "marl_status": "untested",
+   "marl_evidence": "No MARL study found that isolates punishing non-punishers. Dasgupta & Musolesi (arXiv 2301.08278, AAMAS journal 2025) test third-party punishment, which is first-order and not a metanorm, so it was excluded.",
+   "seed_claims_checked": "'Second-order enforcement not isolated in GovSim or SanctSim': confirmed for SanctSim (no second-order punishment); GovSim not checked. 'Not yet tested' is superseded by the two LLM papers above."
+  },
+  {
+   "id": "P12-02",
+   "llm_status": "untested",
+   "llm_evidence": "No filter on antisocial punishment found in any multi-LLM study. SanctSim shows LLMs punish rarely and prefer rewards, which is context rather than a test.",
+   "marl_status": "untested",
+   "marl_evidence": "None found. Han et al. (AAAI 2016) on commitments restraining antisocial punishment is evolutionary game theory, not learning agents, so it was excluded.",
+   "seed_claims_checked": "The seed's llm_status 'tested' contradicts its own evidence text ('Not yet directly tested'); corrected to untested. 'SanctSim records LLMs rarely punish': confirmed (punish/reward ratio 0.00-0.88 vs 1.66 for humans)."
+  },
+  {
+   "id": "P12-03",
+   "llm_status": "partial",
+   "llm_evidence": "vedanta2026corrupt compares LLM-staffed governance architectures with constitutional/judicial oversight bodies (governance structure beats model identity in predicting corruption), but no study manipulates constitutional versus operational rule-making tiers. bracalesyrnikov2026institutional's 'Constitutional' regime is a prompt baseline, not a rule tier.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "'Pierucci et al. (2026) governance graphs address rule hierarchies': mischaracterized. The Cournot paper uses an ABDICO rule grammar with no constitutional/operational distinction, and its 'Constitutional' condition is a static prompt."
+  },
+  {
+   "id": "P13-01",
+   "llm_status": "untested",
+   "llm_evidence": "No multi-LLM study found with a formal appeals or contestation process. The LLM-agent governance frameworks found (e.g., Runtime Governance for AI Agents: Policies on Paths, arXiv 2603.16586) are conceptual or single-agent and do not evaluate appeals.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "'Kolt 2024 notes GDPR-style contestability as a design challenge': not checked (a discussion paper, outside the search scope)."
+  },
+  {
+   "id": "P13-02",
+   "llm_status": "tested",
+   "llm_evidence": "poudel2026agentic compares LLM-agent mediation with negotiation and procedural deconfliction over shared resources. chen2025simulating (AgentMediation) varies LLM mediator expertise with LLM disputants. wang2025law is partial: it manipulates judicial corruption and litigation cost in LLM-agent adjudication.",
+   "marl_status": "untested",
+   "marl_evidence": "None found. Mediated MARL (Ivanov et al., arXiv 2306.08419) uses a 'mediator' that acts on agents' behalf as a commitment device, not dispute resolution, so it was excluded here.",
+   "seed_claims_checked": "'Not yet tested': superseded."
+  },
+  {
+   "id": "P13-03",
+   "llm_status": "untested",
+   "llm_evidence": "No multi-LLM study tests a mechanism for correcting wrongful sanctions. bracalesyrnikov2026institutional tunes its detector for a low false-positive rate and has restorative expiry/credit paths, but sets up no error-correction or reclassification process. 'You're Right, Let Me Fix It' (arXiv 2609.32616) studies false accusations of single agents, so it was excluded.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "'LLMs sometimes punish high contributors in SanctSim': not found. A full-text search of SanctSim (arXiv 2506.23276v2) shows no report of punishing high contributors; example transcripts show agents punishing free riders and rewarding high contributors."
+  },
+  {
+   "id": "P13-04",
+   "llm_status": "partial",
+   "llm_evidence": "wyse2026commitment: code-compiled contracts vs contracts interpreted by an LLM judge in LLM bargaining (code-enforced contracts gave better joint outcomes). This contrasts code-as-law with interpretive enforcement but does not test a community override after an exploit.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "'Not yet tested': now partial."
+  }
+ ],
+ "notes": "Verify first: (1) Attribution of the governance-graph result. The seed and manuscript say 'Pierucci et al. (2026)', but the empirical Cournot paper is Bracale Syrnikov, Pierucci, et al. (arXiv 2601.11369). Pierucci et al. 2026 is the conceptual companion (arXiv 2601.10599). (2) The P12-02 seed status was 'tested' while its evidence text said 'not yet directly tested'; corrected to untested. (3) The SanctSim seed claims are overstated. There are no escalating sanctions (P05-01) and no reported punishment of high contributors (P13-03). (4) Borderline inclusions marked partial: horiguchi2024 (emergent, qualitative metanorms), wang2025law (adjudication without appeals), vedanta2026corrupt (governance architectures, not rule tiers), wyse2026commitment (code vs interpretive enforcement, no override), pan2025aienhanced (MARL vs exponential back-off in Wi-Fi, a technical rather than social-dilemma framing), tang2026adaptive (severity-scaled rather than repetition-graduated punishment). (5) P13-02 is marked tested on the strength of poudel2026 (explicit mode comparison) and chen2025; neither is a canonical social dilemma, so the verifier may downgrade it to partial. (6) Many arXiv IDs are 2026 preprints (26xx.xxxxx) located via search and abstract pages on 2026-09-29. Per-paper findings come from abstract/HTML pages summarized by a fetch tool; the SanctSim claims were checked against the full PDF text. Gaps: no LLM or MARL study found for graduated throttling, exponential back-off with LLMs, antisocial-punishment filters, formal appeals, or false-positive correction; MARL evidence for meta-enforcement and dispute resolution is absent. Excluded examples: Dasgupta & Musolesi 2025 (third-party punishment only), LMFPPO-UBP arXiv 2602.18696 (density-proportional punishment, not graduated), Deliberative Curation arXiv 2606.00007 (graduated sanctions not exercised), Enforcement Gap arXiv 2609.15293 (single-agent), Regulatory Multi-Agent Collaboration arXiv 2509.09215 (architecture only, arbitration not evaluated), Mediated MARL arXiv 2306.08419 (mediator as commitment device)."
+}

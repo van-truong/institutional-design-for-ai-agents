@@ -1,0 +1,13 @@
+pass-2 coded: 561 of 561
+kind: {'mechanism': 398, 'configuration': 110, 'phenomenon': 41, 'out_of_scope': 12}
+fit: {'good': 525, 'partial': 36}
+evidence_type: {'tested': 347, 'descriptive': 111, 'theory': 44, 'proposed': 23, 'review': 36}
+effect: {'supports_cooperation': 225, 'mixed': 65, '-': 260, 'harms_cooperation': 6, 'no_effect': 5}
+mechanism agreement (n=392): 94.4%, kappa 0.94
+theme agreement (n=392): 95.4%, kappa 0.95
+instances with a proposed new/merged/split mechanism: 22
+flagged for review: 152 (coding/pass2_review.csv)
+overrides applied: 8
+note: both passes were LLM coders; pass-2 coders saw codebook examples drawn from pass-1 native terms,
+so agreement is an upper bound on independent agreement, not human inter-rater reliability.
+mechanisms never used in pass 2: ['M66', 'M67']
