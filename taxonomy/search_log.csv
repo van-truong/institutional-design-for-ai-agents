@@ -1,0 +1,142 @@
+group,date_run,source,query,results_screened,included
+G1,2026-09-29,web (arXiv/OpenReview),LLM agents reputation gossip indirect reciprocity cooperation arXiv,10,4
+G1,2026-09-29,web,SanctSim LLM agents sanctioning institution public goods Guzman Jin,10,1
+G1,2026-09-29,web (Nature/arXiv),"Akata ""Playing repeated games with large language models"" Nature Human Behaviour",10,1
+G1,2026-09-29,web (arXiv),"GovSim ""Cooperate or Collapse"" harvest report discussion phase",9,1
+G1,2026-09-29,web,LLM agents public goods game exclusion vote ostracism expel free-riders,9,1
+G1,2026-09-29,web (arXiv/AAMAS/AAAI),multi-agent reinforcement learning partner selection reputation cooperation social dilemma,9,4
+G1,2026-09-29,web,LLM agents common pool resource Pigouvian tax externality pricing simulation,9,1
+G1,2026-09-29,web (arXiv/NeurIPS),"""Learning Optimal Pigovian Tax in Sequential Social Dilemmas"" arXiv",9,1
+G1,2026-09-29,web (arXiv),FAIRGAME framework LLM agents game theory strategies arXiv 2025,9,1
+G1,2026-09-29,web (arXiv/OpenReview),"""Maintaining cooperation in complex social dilemmas using deep reinforcement learning"" tit-for-tat",9,1
+G1,2026-09-29,web (arXiv),"""Learning Reciprocity in Complex Sequential Social Dilemmas"" Eccles",9,1
+G1,2026-09-29,web (arXiv/ICWSM),"""Nicer Than Humans"" large language models iterated prisoner's dilemma strategies Fontana",10,1
+G1,2026-09-29,web (arXiv),LLM multi-agent simulation blacklist banning agents reputation trust network marketplace cooperation 2025,9,2
+G1,2026-09-29,web (arXiv),multi-agent reinforcement learning ostracism exclusion free-riders public goods emergent cooperation,10,1
+G1,2026-09-29,web (arXiv),multi-agent reinforcement learning gossip reputation indirect reciprocity sequential social dilemma,9,1
+G1,2026-09-29,web (arXiv),multi-agent reinforcement learning adaptive reward punishment switching cooperation level threshold,9,1
+G1,2026-09-29,web (arXiv),LLM agents commons governance transparency monitoring audit of harvests multi-agent,8,1
+G1,2026-09-29,web (arXiv),Melting Pot reputation partner choice substrate Coins Territory reciprocity,10,1
+G1,2026-09-29,web (arXiv/AAMAS),"Vallinder Hughes ""Cultural Evolution of Cooperation among LLM Agents"" donor game",9,1
+G1,2026-09-29,web (arXiv/AAMAS),LLM agents iterated prisoner's dilemma against each other tit-for-tat win-stay lose-shift strategy analysis,9,2
+G1,2026-09-29,web (arXiv),multi-agent reinforcement learning observability of others' actions transparency monitoring cooperation,9,1
+G1,2026-09-29,web (AAAI),"""Observer Model"" reinforcement learning third-party observations sustain cooperation",9,1
+G2,2026-09-29,web (arXiv/COLM),SanctSim LLM agents sanctioning institutions public goods game punishment reward,9,2
+G2,2026-09-29,web (arXiv),LLM agents public goods game costly punishment cooperation,10,2
+G2,2026-09-29,web (AAMAS/arXiv/journals),multi-agent reinforcement learning sanctioning peer punishment social dilemma learned,9,3
+G2,2026-09-29,opened page (arXiv),GovSim 2404.16698 abstract + full text check for fines/deductions,1,1
+G2,2026-09-29,web (arXiv),LLM agents stake slashing deposit penalty multi-agent cooperation commitment,9,1
+G2,2026-09-29,web (arXiv),LLM agents contract enforcement penalty clause negotiation multi-agent social dilemma,9,3
+G2,2026-09-29,web (arXiv),LLM agents subsidy tax planner incentive design cooperation multi-agent simulation,9,1
+G2,2026-09-29,web (AAMAS/arXiv),Get It in Writing: Formal Contracts Mitigate Social Dilemmas in Multi-Agent RL,9,1
+G2,2026-09-29,web (NeurIPS),Learning to Incentivize Other Learning Agents reward giving MARL,10,1
+G2,2026-09-29,web (AAAI/AAMAS),Gifting in multi-agent reinforcement learning Lupu Precup,10,2
+G2,2026-09-29,web (Collective Intelligence/arXiv),A learning agent that acquires social norms from public sanctions,9,1
+G2,2026-09-29,web (PNAS),Spurious normativity enhances learning of compliance and enforcement behavior,9,1
+G2,2026-09-29,web,MARL collective punishment group sanction shared penalty team cooperation social dilemma,9,0
+G2,2026-09-29,web (arXiv),LLM agents collective punishment OR joint liability OR group liability multi-agent cooperation,9,2
+G2,2026-09-29,web (arXiv/IJCNN),Adaptive mechanism design learning to promote cooperation planner rewards punishments Baumann,9,1
+G2,2026-09-29,web (arXiv/ICML),LLM agents reward peers praise reputation incentive public goods game rewarding vs punishing,9,1
+G2,2026-09-29,web (arXiv/NeurIPS),LLM agents Pigouvian tax externality tax planner common-pool resource,9,1
+G2,2026-09-29,web (Science Advances),The AI Economist tax policies two-level deep RL,9,1
+G2,2026-09-29,web (arXiv/IEEE),multi-agent reinforcement learning proof-of-stake slashing validators,9,1
+G2,2026-09-29,web,MARL group punishment OR collective sanction OR shared liability agents police each other,10,0
+G2,2026-09-29,web (arXiv),LLM agents social disapproval shaming non-monetary sanction cooperation social dilemma,9,2
+G2,2026-09-29,web (NeurIPS),Learning to Share in Multi-Agent Reinforcement Learning reward sharing,9,0
+G3,2026-09-29,web search,Pierucci 2026 governance graph LLM agents institutional AI arXiv,9,1
+G3,2026-09-29,web search,SanctSim LLM agents sanctioning institutions public goods arXiv,9,1
+G3,2026-09-29,web search,LLM agents second-order punishment metanorms public goods game,9,2
+G3,2026-09-29,web search,multi-agent reinforcement learning metanorms punishing non-punishers emergence sanctions,9,0
+G3,2026-09-29,web search,multi-agent reinforcement learning antisocial punishment public goods learning agents,9,1
+G3,2026-09-29,web search,graduated sanctions multi-agent reinforcement learning common-pool resource Ostrom,10,0
+G3,2026-09-29,web search,LLM agents escalating sanctions warning suspension multi-agent commons simulation,10,0
+G3,2026-09-29,web search,LLM multi-agent mediator agent conflict resolution negotiation dispute evaluation arXiv,10,2
+G3,2026-09-29,web search,LLM agents appeal contest sanction judge multi-agent society simulation governance,10,2
+G3,2026-09-29,web search,large language model agents antisocial punishment punish cooperators public goods game,9,0
+G3,2026-09-29,web search,LLM agents wrongful sanction false positive monitor correction multi-agent cooperation reputation error,9,0
+G3,2026-09-29,web search,LLM agents rate limiting throttling shared resource multi-agent cooperation congestion,9,0
+G3,2026-09-29,web search,multi-agent deep reinforcement learning random access learned backoff contention window collision fairness,9,1
+G3,2026-09-29,web search,LLM agent runtime governance framework escalation human review appeal evaluation multi-agent policy enforcement,10,0
+G3,2026-09-29,web search,arbitrator LLM agent resolves disputes between agents multi-agent negotiation cooperation benchmark,9,0
+G3,2026-09-29,web search,mediated multi-agent reinforcement learning mediator social dilemma,9,0
+G3,2026-09-29,web search,evolution of second-order punishment reinforcement learning agents costly punishment non-punishers Q-learning,9,0
+G3,2026-09-29,web search,"LLM agents smart contract enforcement override ""code is law"" multi-agent cooperation experiment",10,1
+G3,2026-09-29,web search,"""governance graph"" OR ""Institutional AI"" LLM agents sanctions escalation follow-up experiment 2026 collusion restorative",9,0
+G3,2026-09-29,web search,LLM agents Axelrod norms game metanorms boldness vengefulness replication,9,0
+G3,2026-09-29,web search,"""antisocial punishment"" deep reinforcement learning agents emergence",9,0
+G3,2026-09-29,arXiv abs/html pages opened (citation check),"2601.11369, 2506.23276 (full PDF grep), 2409.00993, 2504.19487, 2605.24516, 2301.08278, 2606.05867, 2609.15293, 2510.24442, 2604.09823, 2603.18894, 2606.00007, 2608.28182, 2609.32616, 2606.27845, 2509.23154, 2603.16586, 2509.06586, 2607.22750, 2509.09215, 2602.18696",21,11
+G4,2026-09-29,web (arXiv),"GovSim ""Cooperate or Collapse"" LLM agents sustainable cooperation communication 2404.16698",9,1
+G4,2026-09-29,web (arXiv),formal contracts multi-agent reinforcement learning social dilemmas,9,2
+G4,2026-09-29,web (arXiv),LLM agents commitment device binding contracts social dilemma cooperation 2025,10,2
+G4,2026-09-29,web (arXiv),"""Learning to Negotiate via Voluntary Commitment"" 2503.03866",10,1
+G4,2026-09-29,web (arXiv),Pierucci 2026 multi-agent LLM institutions smart contracts cooperation,10,1
+G4,2026-09-29,web (arXiv),LLM agents auction bidding strategic behavior multiple LLM bidders second-price auction,9,0
+G4,2026-09-29,web (arXiv),LLM agents quadratic funding OR quadratic voting simulation multi-agent,10,0
+G4,2026-09-29,web (OpenReview/arXiv),"""Auction Arena"" LLM agents strategic planning execution auction",10,0
+G4,2026-09-29,web (arXiv),LLM agents collusion auctions multi-agent bidding communication,9,0
+G4,2026-09-29,web (arXiv),multi-agent reinforcement learning commitment device cooperation social dilemma,9,0
+G4,2026-09-29,web (ML Anthology/OpenReview),"""Enhancing generative agent cooperation with commitment devices""",10,1
+G4,2026-09-29,web (arXiv),LLM agents VCG mechanism truthful reporting incentive compatible multi-agent experiment,10,2
+G4,2026-09-29,web (arXiv),LLM agents smart contract escrow agent-to-agent commerce blockchain experiment cooperation,9,0
+G4,2026-09-29,web (arXiv),"LLM agents ""security deposit"" OR stake OR collateral OR bond cooperation social dilemma",9,0
+G4,2026-09-29,web (Science Advances/arXiv),"""AI Economist"" reinforcement learning tax policy two-level mechanism design",9,0
+G4,2026-09-29,web (arXiv/ICLR),multi-agent reinforcement learning cheap talk communication sequential social dilemma emergent communication,9,1
+G4,2026-09-29,web (arXiv),multi-agent reinforcement learning agents learn to bid VCG OR truthful auction mechanism,9,1
+G4,2026-09-29,web (arXiv),LLM agents commons resource quota extraction limit OR hard cap enforced sustainability simulation,9,0
+G4,2026-09-29,web (arXiv),LLM agents pre-play communication cheap talk promises prisoner's dilemma public goods,9,4
+G4,2026-09-29,web (arXiv),"""token-curated registry"" OR ""quadratic funding"" agents simulation reinforcement learning OR LLM",8,1
+G4,2026-09-29,web (arXiv),LLM agents OR MARL insurance premium moral hazard risk-based pricing,9,0
+G4,2026-09-29,web (arXiv/ACM EC),"""Understanding Iterative Combinatorial Auction Designs via Multi-Agent Reinforcement Learning""",9,0
+G4,2026-09-29,web (arXiv/AAMAS),MARL escrow OR deposit OR reward transfer commitment cooperation Markov game contract learning,9,1
+G4,2026-09-29,web (arXiv),LLM agents staking slashing collateral trust multi-agent experiment,9,0
+G4,2026-09-29,web (arXiv),MARL common pool resource harvest quota OR harvesting limit OR no-take constraint sequential social dilemma,9,0
+G4,2026-09-29,web (arXiv),"""voluntary commitment"" OR ""public commitment"" LLM agents repeated game commons pledge",10,1
+G5,2026-09-29,web (arXiv),Evaluating Cooperation in LLM Social Groups through Elected Leadership,9,1
+G5,2026-09-29,web (arXiv),SanctSim LLM agents sanctioning institution choice 2025,9,1
+G5,2026-09-29,web (arXiv),Willis collective behaviour hundreds of LLM agents,9,3
+G5,2026-09-29,web (arXiv),GovSim Cooperate or Collapse universalization LLM agents,9,2
+G5,2026-09-29,web (arXiv),LLM agents vote on rules public goods game democratic institution choice multi-agent,10,2
+G5,2026-09-29,web (arXiv),LLM agents participatory budgeting voting simulation,9,0
+G5,2026-09-29,web (arXiv),LLM agents DAO governance voting simulation,9,1
+G5,2026-09-29,web (arXiv/IJCAI),emergence of social norms in generative agent societies LLM,9,2
+G5,2026-09-29,web (arXiv/journals),multi-agent reinforcement learning agents vote sanctioning institution social dilemma,10,3
+G5,2026-09-29,web (arXiv),LLM agents choose institution or vote on governance regime common-pool resource simulation,9,0
+G5,2026-09-29,web (arXiv/AAMAS),MARL emergence of social norms learned normative sanctioning Melting Pot,10,2
+G5,2026-09-29,web (arXiv/ICML),social learning imitation MARL cooperation emergent cultural transmission,9,1
+G5,2026-09-29,web (arXiv/TMLR),universalization reasoning prompt LLM agents commons moral reasoning intervention,10,2
+G5,2026-09-29,web (arXiv/Springer),Warnakulasuriya 2024 evolutionary algorithm cooperation sanctioning strategies,9,1
+G5,2026-09-29,web (ScienceDirect/arXiv),reinforcement learning agents Fermi imitation rule public goods game Q-learning,9,0
+G5,2026-09-29,web (arXiv/ICLR),LLM agents moral prompting deontological utilitarian public goods game multi-agent,9,1
+G5,2026-09-29,web (arXiv),LLM generate strategies code Axelrod tournament iterated prisoner's dilemma evolutionary,9,1
+G5,2026-09-29,web (arXiv),reinforcement learning agents endogenous institution choice sanctioning voting legitimacy election,9,1
+G5,2026-09-29,web (arXiv/AAMAS),Evolving intrinsic motivations for altruistic behavior MARL,10,1
+G5,2026-09-29,web (arXiv),LLM agents weighted voting veto power collective decision cooperation,9,0
+G5,2026-09-29,web (arXiv),deep RL agents imitate neighbors payoff Fermi evolutionary public goods cooperation,9,2
+G5,2026-09-29,citation chase (opened pages),Vallinder & Hughes cultural evolution; Gupta et al. social learning; Tennant et al. moral MARL; Normative Modules; Ashery conventions,6,5
+G6,2026-09-29,web/arXiv,MoralSim Backmann LLM agents moral behavior prisoner's dilemma arXiv,9,0
+G6,2026-09-29,web/arXiv,LLM agents apology forgiveness repeated social dilemma multi-agent arXiv,9,0
+G6,2026-09-29,web/arXiv,LLM agents whistleblowing collusion multi-agent disclosure leniency arXiv,9,1
+G6,2026-09-29,arXiv (opened),arXiv 2601.11369 / 2605.27593 / 2601.00360 abstract + full text checks for leniency/restorative paths,3,1
+G6,2026-09-29,web/arXiv,LLM agents apologize after defection trust repair multi-agent game experiment,9,1
+G6,2026-09-29,web/arXiv,multi-agent reinforcement learning forgiveness reciprocity social dilemma learning agents forgive,9,0
+G6,2026-09-29,web/arXiv/IJCAI,"multi-agent reinforcement learning gifting mechanism social dilemma ""gifting""",9,1
+G6,2026-09-29,arXiv (opened),"full-text grep of 2512.07462, 2604.00487, 2605.23949, 2606.14923 for apology/forgiveness",4,1
+G6,2026-09-29,web/arXiv,"""restorative justice"" LLM agents multi-agent cooperation simulation sanction reintegration",9,0
+G6,2026-09-29,web/arXiv/ACL,"LLM agents forgiveness repeated prisoner's dilemma noise ""forgiveness"" language model agents 2024 2025",9,0
+G6,2026-09-29,web/arXiv,LLM agents gift giving generalized reciprocity indirect reciprocity society simulation arXiv,9,0
+G6,2026-09-29,web/arXiv,"""generalized reciprocity"" OR ""pay it forward"" OR ""upstream reciprocity"" LLM agents experiment",9,1
+G6,2026-09-29,web/arXiv,LLM agents mutual aid solidarity multi-agent simulation cooperation network structure social ties,9,0
+G6,2026-09-29,web/AAAI,"Lupu Precup ""Gifting in multi-agent reinforcement learning"" AAMAS 2020",10,1
+G6,2026-09-29,web/arXiv,multi-agent reinforcement learning network topology structure cooperation emergence social network embeddedness agents,9,1
+G6,2026-09-29,web/arXiv/PLOS,LLM agents networked prisoner's dilemma network structure clustering cooperation spatial graph language model agents,9,2
+G6,2026-09-29,web/arXiv,LLM agents DAO governance quadratic funding simulation multi-agent,9,0
+G6,2026-09-29,web,LLM agents cooperative firm shared ownership profit sharing equity stake multi-agent cooperation experiment,9,0
+G6,2026-09-29,web/arXiv,LLM agents ostracism exclusion readmission reintegration public goods game sanction reform,9,0
+G6,2026-09-29,web/arXiv,"multi-agent reinforcement learning restitution compensation after defection ""forgiveness"" learned strategy sequential social dilemma",9,0
+G6,2026-09-29,web/arXiv,"LLM agents timebank OR ""community currency"" OR ""mutual aid"" multi-agent simulation cooperation experiment arXiv",9,0
+G6,2026-09-29,web/arXiv,"LLM agents confess OR ""self-report"" violation amnesty reduced penalty multi-agent social dilemma governance experiment (plus 2 auto follow-ups)",27,0
+G6,2026-09-29,arXiv (opened),Learning to Participate through Trading of Reward Shares (from citation chase in prior results),1,1
+G6,2026-09-29,web/arXiv,SanctSim LLM agents sanctions simulation arXiv,9,0
+G6,2026-09-29,web/arXiv,"reinforcement learning agents apology signal after defection learned cooperation repair ""apology"" multi-agent",10,0
+G6,2026-09-29,web/arXiv,LLM agents compensation restitution victim harm repair multi-agent negotiation experiment (plus 2 auto follow-ups),28,0
+G6,2026-09-29,web/arXiv,Q-learning pricing algorithms collusion leniency program simulation reinforcement learning agents,10,0

@@ -1,0 +1,668 @@
+{
+ "group": "G5",
+ "primitives": [
+  9,
+  14,
+  15
+ ],
+ "date_run": "2026-09-29",
+ "queries": [
+  {
+   "source": "web (arXiv)",
+   "query": "Evaluating Cooperation in LLM Social Groups through Elected Leadership",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "SanctSim LLM agents sanctioning institution choice 2025",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "Willis collective behaviour hundreds of LLM agents",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "GovSim Cooperate or Collapse universalization LLM agents",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents vote on rules public goods game democratic institution choice multi-agent",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents participatory budgeting voting simulation",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents DAO governance voting simulation",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/IJCAI)",
+   "query": "emergence of social norms in generative agent societies LLM",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv/journals)",
+   "query": "multi-agent reinforcement learning agents vote sanctioning institution social dilemma",
+   "results_screened": 10,
+   "included": 3
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents choose institution or vote on governance regime common-pool resource simulation",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web (arXiv/AAMAS)",
+   "query": "MARL emergence of social norms learned normative sanctioning Melting Pot",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv/ICML)",
+   "query": "social learning imitation MARL cooperation emergent cultural transmission",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/TMLR)",
+   "query": "universalization reasoning prompt LLM agents commons moral reasoning intervention",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv/Springer)",
+   "query": "Warnakulasuriya 2024 evolutionary algorithm cooperation sanctioning strategies",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (ScienceDirect/arXiv)",
+   "query": "reinforcement learning agents Fermi imitation rule public goods game Q-learning",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web (arXiv/ICLR)",
+   "query": "LLM agents moral prompting deontological utilitarian public goods game multi-agent",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM generate strategies code Axelrod tournament iterated prisoner's dilemma evolutionary",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "reinforcement learning agents endogenous institution choice sanctioning voting legitimacy election",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/AAMAS)",
+   "query": "Evolving intrinsic motivations for altruistic behavior MARL",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents weighted voting veto power collective decision cooperation",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "deep RL agents imitate neighbors payoff Fermi evolutionary public goods cooperation",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "citation chase (opened pages)",
+   "query": "Vallinder & Hughes cultural evolution; Gupta et al. social learning; Tennant et al. moral MARL; Normative Modules; Ashery conventions",
+   "results_screened": 6,
+   "included": 5
+  }
+ ],
+ "papers": [
+  {
+   "key": "faulkner2026elected",
+   "title": "Evaluating Cooperation in LLM Social Groups through Elected Leadership",
+   "authors": "Ryan Faulkner et al.",
+   "year": 2026,
+   "venue": "arXiv (cs.CL)",
+   "url": "https://arxiv.org/abs/2604.11721",
+   "arxiv_id": "2604.11721",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P09-01"
+   ],
+   "how_tested": "GovSim-based common-pool resource game with 8 (and 20) LLM agents comparing no-leader, fixed-leader (assigned SVO persona) and elected-leader (plurality vote each cycle) conditions.",
+   "finding": "Elected leadership raised social welfare by 55.4% and survival time by 128.6% vs leaderless groups and beat fixed leaders by 16.7% on welfare; prosocial/altruistic candidates won elections.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "seyedin2026politician",
+   "title": "The Politician, the Liar, and the Obedient Worker: Emerging Behavior of LLM Agents in Hierarchical Games",
+   "authors": "Fatemeh Seyedin et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2608.09574",
+   "arxiv_id": "2608.09574",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P09-01"
+   ],
+   "how_tested": "5-agent public goods 'Hierarchical Game' with managerial punishment authority; crosses fixed, elected and rotating managers with six frontier model families.",
+   "finding": "Elections did not improve outcomes: extreme incumbency bias (first elected manager kept power 100% of the time in same-family groups, 8.3% turnover in mixed groups); model ordering identical across governance types.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "sarkar2024normative",
+   "title": "Normative Modules: A Generative Agent Architecture for Learning Norms that Supports Multi-Agent Cooperation",
+   "authors": "Atrisha Sarkar et al.",
+   "year": 2024,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2405.19328",
+   "arxiv_id": "2405.19328",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P09-01",
+    "P14-01"
+   ],
+   "how_tested": "LLM generative agents with a normative module must identify which of several institutions the group treats as authoritative (and ignore non-authoritative ones) and coordinate sanctioning accordingly.",
+   "finding": "Agents with the normative module achieve more stable cooperative outcomes than baseline generative agents without it.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "rehm2026selfgovern",
+   "title": "From Certain Doom to Survival: Agent-Driven Self-Governance in LLM Agent Societies",
+   "authors": "Gregory B. Rehm",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.22600",
+   "arxiv_id": "2609.22600",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P09-01",
+    "P09-03"
+   ],
+   "how_tested": "GovSim extension (GovSim-SelfGovern) where 5 LLM agents author executable Python laws, vote on them, and live under enacted rules across scarcity scenarios; democratic veto on enforcement is varied.",
+   "finding": "Survival depends on agents discovering the right institutions in time; fiscal capacity enables redistribution, and removing democratic veto makes exile (enforcement) more feasible.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "niranjani2026deliberation",
+   "title": "Internal vs. External: Comparing Deliberation and Evolution for Multi-Agent Constitutional Design",
+   "authors": "Hershraj Niranjani et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2605.09128",
+   "arxiv_id": "2605.09128",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P09-01",
+    "P15-02"
+   ],
+   "how_tested": "6 GPT-OSS-120B agents in a public goods game (and two other scenarios) either self-govern by proposing and majority-voting amendments every 10 turns or play under a constitution found offline by LLM-guided evolutionary search.",
+   "finding": "Evolved (imposed) constitutions outperformed deliberated ones in the public goods game (stability 0.472 vs 0.376, p<0.01); deliberating agents never proposed punishment in 30 runs.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "guzmanpiedrahita2025corrupted",
+   "title": "Corrupted by Reasoning: Reasoning Language Models Become Free-Riders in Public Goods Games",
+   "authors": "David Guzman Piedrahita et al.",
+   "year": 2025,
+   "venue": "COLM 2025",
+   "url": "https://arxiv.org/abs/2506.23276",
+   "arxiv_id": "2506.23276",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P09-04"
+   ],
+   "how_tested": "SanctSim: 7 LLM agents play 15 rounds of a public goods game, choosing each round between a sanctioning institution (peer reward/punishment) and a sanction-free institution (Gurerk et al. 2006 design).",
+   "finding": "Traditional LLMs mostly migrated to the sanctioning institution (Llama-3.3-70B 99.6%, DeepSeek-V3 98.5%, GPT-4o 97.5%, but GPT-4o-mini 58.9%); reasoning models chose it less often (o1-mini 28.0%, o1-preview 47.6%) and free-rode more.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "piatti2024govsim",
+   "title": "Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents",
+   "authors": "Giorgio Piatti et al.",
+   "year": 2024,
+   "venue": "NeurIPS 2024",
+   "url": "https://arxiv.org/abs/2404.16698",
+   "arxiv_id": "2404.16698",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "GovSim common-pool resource simulation with LLM agent societies; universalization prompting ('what if everybody does that?') is added as an intervention and communication is ablated.",
+   "finding": "Most LLMs collapse the resource (best survival rate <54%); universalization prompting significantly improves survival time (about 4 months).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "curvo2025reproducibility",
+   "title": "Reproducibility Study of \"Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents\"",
+   "authors": "Pedro M. P. Curvo et al.",
+   "year": 2025,
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2505.09289",
+   "arxiv_id": "2505.09289",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "Replicates and extends GovSim with and without the universalization prompt across model sizes.",
+   "finding": "Large models sustain cooperation with or without universalization; smaller models fail without it.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "silverio2026reproducibility",
+   "title": "Reproducibility Study: Understanding Multi-Agent LLM Cooperation in the GovSim Framework",
+   "authors": "Alessio Silverio et al.",
+   "year": 2026,
+   "venue": "TMLR",
+   "url": "https://openreview.net/forum?id=ON8EMrNwww",
+   "arxiv_id": null,
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "Independent GovSim reproduction that ablates the content of the universalization prompt.",
+   "finding": "Universalization improves performance, but the gain stems primarily from the numerical instructions in the prompt rather than the universalization principle itself.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tennant2025moral",
+   "title": "Moral Alignment for LLM Agents",
+   "authors": "Elizaveta Tennant et al.",
+   "year": 2025,
+   "venue": "ICLR 2025",
+   "url": "https://arxiv.org/abs/2410.01639",
+   "arxiv_id": "2410.01639",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "LLM agents fine-tuned with RL using intrinsic deontological or utilitarian rewards in the Iterated Prisoner's Dilemma, including LLM-vs-LLM co-training.",
+   "finding": "Moral fine-tuning lets agents unlearn selfish strategies; deontological agents almost never defect against cooperators, with slightly more defection in LLM-vs-LLM than vs TFT.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ren2024crsec",
+   "title": "Emergence of Social Norms in Generative Agent Societies: Principles and Architecture",
+   "authors": "Siyue Ren et al.",
+   "year": 2024,
+   "venue": "IJCAI 2024",
+   "url": "https://www.ijcai.org/proceedings/2024/0874.pdf",
+   "arxiv_id": "2403.08251",
+   "doi": "10.24963/ijcai.2024/874",
+   "track": "llm",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "CRSEC architecture (norm creation, spreading, evaluation, compliance) for LLM generative agents in the Smallville sandbox.",
+   "finding": "Social norms emerge and social conflicts fall relative to agents without the architecture, supported by a 30-person human evaluation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ashery2025conventions",
+   "title": "Emergent social conventions and collective bias in LLM populations",
+   "authors": "Ariel Flint Ashery et al.",
+   "year": 2025,
+   "venue": "Science Advances 11, eadu9368",
+   "url": "https://arxiv.org/abs/2410.08948",
+   "arxiv_id": "2410.08948",
+   "doi": "10.1126/sciadv.adu9368",
+   "track": "llm",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "Populations of LLM agents repeatedly play a naming/coordination game with no central authority; committed adversarial minorities are introduced.",
+   "finding": "Population-wide conventions emerge spontaneously, collective biases arise without individual bias, and small committed minorities can tip conventions.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "gupta2026sociallearning",
+   "title": "The Role of Social Learning and Collective Norm Formation in Fostering Cooperation in LLM Multi-Agent Systems",
+   "authors": "Prateek Gupta et al.",
+   "year": 2026,
+   "venue": "AAMAS 2026",
+   "url": "https://arxiv.org/abs/2510.14401",
+   "arxiv_id": "2510.14401",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P15-01",
+    "P14-01"
+   ],
+   "how_tested": "Common-pool resource simulation without explicit reward signals where LLM agents adopt strategies and beliefs from successful peers and can apply norm-based punishment.",
+   "finding": "Norms emerge endogenously through social learning, with systematic differences across LLMs in sustaining cooperation and norm formation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "willis2026hundreds",
+   "title": "Evaluating Collective Behaviour of Hundreds of LLM Agents",
+   "authors": "Richard Willis et al.",
+   "year": 2026,
+   "venue": "SE@AAMAS 2026 workshop (arXiv)",
+   "url": "https://arxiv.org/abs/2602.16662",
+   "arxiv_id": "2602.16662",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P15-01",
+    "P15-02"
+   ],
+   "how_tested": "LLMs generate Collective or Selfish strategies as natural language then Python code for public goods, collective risk and common-pool games; populations of 512 evolve by Fermi pairwise-comparison imitation (beta=1) with group sizes 4-256.",
+   "finding": "Cultural evolution converges to low-welfare, Selfish-dominant equilibria in large groups (n=64), while small groups (n=4) partly preserve cooperation; newer models often produce worse societal outcomes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "willis2025systems",
+   "title": "Will Systems of LLM Agents Cooperate: An Investigation into a Social Dilemma",
+   "authors": "Richard Willis et al.",
+   "year": 2025,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2501.16173",
+   "arxiv_id": "2501.16173",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P15-02"
+   ],
+   "how_tested": "LLMs generate complete strategies for the iterated Prisoner's Dilemma under aggressive/cooperative/neutral dispositions; evolutionary game-theoretic simulation of populations of these strategies.",
+   "finding": "Different LLMs show distinct biases that shift the relative evolutionary success of aggressive vs cooperative strategies.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vallinder2024cultural",
+   "title": "Cultural Evolution of Cooperation among LLM Agents",
+   "authors": "Aron Vallinder and Edward Hughes",
+   "year": 2024,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2412.10270",
+   "arxiv_id": "2412.10270",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P15-01"
+   ],
+   "how_tested": "Iterated Donor Game across 10 generations: top 50% of LLM agents by resources survive and new agents' strategies are conditioned on survivors' strategies; optional costly punishment.",
+   "finding": "Claude 3.5 Sonnet populations evolve increasing cooperation (helped by punishment); Gemini 1.5 Flash stagnates and GPT-4o populations become more defection-oriented.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "warnakulasuriya2025evolution",
+   "title": "Evolution of Cooperation in LLM-Agent Societies: A Preliminary Study Using Different Punishment Strategies",
+   "authors": "Kavindu Warnakulasuriya et al.",
+   "year": 2025,
+   "venue": "COINE workshop at AAMAS 2025 (arXiv)",
+   "url": "https://arxiv.org/abs/2504.19487",
+   "arxiv_id": "2504.19487",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P15-01"
+   ],
+   "how_tested": "LLM agents in a Diner's Dilemma replicate Boyd and Richerson's punishment model, adopting strategies through a pairwise imitation method.",
+   "finding": "Agents follow the Boyd-Richerson strategies and explicit punishment drives norm emergence and cooperation across strategy configurations.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "payne2025strategic",
+   "title": "Strategic Intelligence in Large Language Models: Evidence from evolutionary Game Theory",
+   "authors": "Kenneth Payne and Baptiste Alloui-Cros",
+   "year": 2025,
+   "venue": "arXiv (cs.AI)",
+   "url": "https://arxiv.org/abs/2507.02618",
+   "arxiv_id": "2507.02618",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P15-02"
+   ],
+   "how_tested": "Evolutionary IPD tournaments in which OpenAI, Google and Anthropic LLM agents compete with canonical strategies and reproduce in proportion to score.",
+   "finding": "Model families show distinct strategic fingerprints (Gemini exploitative, OpenAI highly cooperative, Claude most forgiving) that shape evolutionary success.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "majumdar2023consensus",
+   "title": "Consensus-based Participatory Budgeting for Legitimacy: Decision Support via Multi-agent Reinforcement Learning",
+   "authors": "Srijoni Majumdar and Evangelos Pournaras",
+   "year": 2023,
+   "venue": "LOD 2023 (Machine Learning, Optimization, and Data Science)",
+   "url": "https://arxiv.org/abs/2307.12915",
+   "arxiv_id": "2307.12915",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P09-02"
+   ],
+   "how_tested": "MARL voter agents interact to reach compromises in participatory budgeting using real PB data from Poland, compared against standard voting aggregation rules.",
+   "finding": "Agents reach consensus efficiently and robustly, framed as increasing legitimacy of PB outcomes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "adams2025fair",
+   "title": "Fair Compromises in Participatory Budgeting: a Multi-Agent Deep Reinforcement Learning Approach",
+   "authors": "Hugh Adams et al.",
+   "year": 2025,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2507.17433",
+   "arxiv_id": "2507.17433",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P09-02"
+   ],
+   "how_tested": "Multi-agent deep RL voters (branching network architecture) learn voting strategies in participatory budgeting.",
+   "finding": "Fair compromises emerge, especially when projects have smaller costs.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tennant2023moral",
+   "title": "Modeling Moral Choices in Social Dilemmas with Multi-Agent Reinforcement Learning",
+   "authors": "Elizaveta Tennant et al.",
+   "year": 2023,
+   "venue": "IJCAI 2023",
+   "url": "https://arxiv.org/abs/2301.08491",
+   "arxiv_id": "2301.08491",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "RL agents with intrinsic rewards encoding different moral frameworks (consequentialist vs norm-based) interact in Prisoner's Dilemma, Volunteer's Dilemma and Stag Hunt.",
+   "finding": "Different internalised moral reward types produce different patterns of cooperation, defection and exploitation among agents.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vinitsky2023cnm",
+   "title": "A learning agent that acquires social norms from public sanctions in decentralized multi-agent settings",
+   "authors": "Eugene Vinitsky et al.",
+   "year": 2023,
+   "venue": "Collective Intelligence",
+   "url": "https://doi.org/10.1177/26339137231162025",
+   "arxiv_id": "2106.09012",
+   "doi": "10.1177/26339137231162025",
+   "track": "marl",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "Classifier Norm Model agents learn which behaviours the group sanctions from public sanction events and are motivated to sanction in line with the group, in two collective action problems.",
+   "finding": "Groups of CNM agents acquire beneficial norms that reduce free-riding and raise per-agent returns.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "oldenburg2024bayesian",
+   "title": "Learning and Sustaining Shared Normative Systems via Bayesian Rule Induction in Markov Games",
+   "authors": "Ninell Oldenburg and Tan Zhi-Xuan",
+   "year": 2024,
+   "venue": "AAMAS 2024",
+   "url": "https://arxiv.org/abs/2402.13399",
+   "arxiv_id": "2402.13399",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P14-01"
+   ],
+   "how_tested": "Agents assume a shared normative system and infer norms by Bayesian rule induction from others' compliance and sanctions in Markov games (resource management, labour compensation).",
+   "finding": "Newcomers rapidly adopt established norms and groups converge on shared norms that sustain cooperative institutions, with far less experience than model-free norm learning.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ndousse2021social",
+   "title": "Emergent Social Learning via Multi-agent Reinforcement Learning",
+   "authors": "Kamal Ndousse et al.",
+   "year": 2021,
+   "venue": "ICML 2021",
+   "url": "https://arxiv.org/abs/2010.00581",
+   "arxiv_id": "2010.00581",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P15-01"
+   ],
+   "how_tested": "Independent RL agents in a shared environment with experts; tests whether agents learn to imitate/learn from others, with a model-based auxiliary loss.",
+   "finding": "Vanilla model-free agents do not use social learning, but with environment constraints and auxiliary loss they learn from experts and outperform solo-trained agents.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "zheng2024qlearning",
+   "title": "Evolution of cooperation in the public goods game with Q-learning",
+   "authors": "Guozhong Zheng et al.",
+   "year": 2024,
+   "venue": "Chaos, Solitons & Fractals 188, 115568",
+   "url": "https://arxiv.org/abs/2407.19851",
+   "arxiv_id": "2407.19851",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P15-01"
+   ],
+   "how_tested": "Spatial public goods game on a lattice with Q-learning agents, compared against the Fermi imitation-rule baseline, with and without voluntary participation.",
+   "finding": "Cooperation emerges more readily under Q-learning than under Fermi imitation; voluntary participation produces a non-monotonic dependence of cooperation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "pi2024memory",
+   "title": "A memory-based spatial evolutionary game with the dynamic interaction between learners and profiteers",
+   "authors": "Bin Pi et al.",
+   "year": 2024,
+   "venue": "Chaos 34, 063120",
+   "url": "https://arxiv.org/abs/2406.00662",
+   "arxiv_id": "2406.00662",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P15-01"
+   ],
+   "how_tested": "Spatial evolutionary game where 'profiteers' imitate highest-payoff neighbours via the Fermi rule and 'learners' use Q-learning, with Markov role switching and payoff memory.",
+   "finding": "Interaction between Fermi imitators and Q-learners fosters cooperation; memory helps profiteers cooperate and higher learning rates increase cooperators.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wang2019evolving",
+   "title": "Evolving intrinsic motivations for altruistic behavior",
+   "authors": "Jane X. Wang et al.",
+   "year": 2019,
+   "venue": "AAMAS 2019",
+   "url": "https://arxiv.org/abs/1811.05931",
+   "arxiv_id": "1811.05931",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P15-02"
+   ],
+   "how_tested": "Deep RL agents in intertemporal social dilemmas with a modular architecture whose intrinsic-reward module evolves under multi-level (group) selection.",
+   "finding": "Evolved intrinsic motivations produce cooperative inductive biases, learned model-free.",
+   "located_via": "opened page"
+  }
+ ],
+ "mechanism_updates": [
+  {
+   "id": "P09-01",
+   "llm_status": "tested",
+   "llm_evidence": "faulkner2026elected: elected vs fixed vs no leader in GovSim, elections raise welfare/survival. seyedin2026politician: elected vs fixed vs rotating managers, no gain, strong incumbency bias. Partial: sarkar2024normative (recognising authoritative institutions), rehm2026selfgovern and niranjani2026deliberation (voted rules).",
+   "marl_status": "untested",
+   "marl_evidence": "No MARL study found manipulating elected vs appointed enforcers.",
+   "seed_claims_checked": "SanctSim: confirmed that all SI members can sanction and no elected vs random monitor condition exists; status raised from partial to tested because of faulkner2026elected and seyedin2026politician."
+  },
+  {
+   "id": "P09-02",
+   "llm_status": "untested",
+   "llm_evidence": "No study found where interacting LLM agents vote on budget allocation in a cooperation setting. LLM Voting (arXiv 2402.01766) and LLMs-for-PB (2508.06060) excluded: independent LLM voters or single LLM planner, no agent interaction.",
+   "marl_status": "partial",
+   "marl_evidence": "majumdar2023consensus, adams2025fair: MARL voters in participatory budgeting reach consensus or fair compromises. Partial because there is no social dilemma and no contribution-for-influence link.",
+   "seed_claims_checked": "Seed says 'not yet tested': confirmed for LLM track."
+  },
+  {
+   "id": "P09-03",
+   "llm_status": "partial",
+   "llm_evidence": "rehm2026selfgovern: LLM agents vote on executable laws, and a democratic veto on enforcement is varied (removing it makes exile feasible). Not token-weighted voting.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed says untested: now partial (veto only; no stake-weighted voting found)."
+  },
+  {
+   "id": "P09-04",
+   "llm_status": "tested",
+   "llm_evidence": "guzmanpiedrahita2025corrupted (SanctSim): LLM agents choose sanctioning vs sanction-free institution each round.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "SanctSim: confirmed but the numbers are slightly mischaracterised. 92.9% is the human benchmark from Gurerk et al.; 3 of 4 traditional LLMs exceed it (97.5-99.6%), but GPT-4o-mini is at 58.9%. o1-mini 28% is correct (o1-preview 47.6%, o3-mini-medium 100%). Venue: COLM 2025."
+  },
+  {
+   "id": "P14-01",
+   "llm_status": "tested",
+   "llm_evidence": "piatti2024govsim: universalization prompt raises survival. Caveats: curvo2025reproducibility (large models don't need it) and silverio2026reproducibility (gain comes mainly from numeric instructions in the prompt). Broader norm internalisation, partial: tennant2025moral, ren2024crsec, sarkar2024normative, gupta2026sociallearning, ashery2025conventions.",
+   "marl_status": "partial",
+   "marl_evidence": "Norm internalisation tested in MARL (tennant2023moral: moral intrinsic rewards; vinitsky2023cnm; oldenburg2024bayesian). Universalization reasoning specifically not tested in MARL.",
+   "seed_claims_checked": "GovSim: confirmed that universalization is tested and helps. The claim 'single most effective cooperation-promoting intervention found' is overstated: it is essentially the only prompt intervention GovSim tests (communication is an ablation), and two reproducibility studies qualify the effect."
+  },
+  {
+   "id": "P15-01",
+   "llm_status": "tested",
+   "llm_evidence": "willis2026hundreds: Fermi pairwise-comparison imitation among 512 LLM-strategy agents. warnakulasuriya2025evolution: pairwise imitation. vallinder2024cultural: survival of successful agents plus strategy transmission. gupta2026sociallearning: copying successful peers.",
+   "marl_status": "partial",
+   "marl_evidence": "pi2024memory (Fermi imitators plus Q-learners), zheng2024qlearning (Q-learning vs Fermi baseline): tabular RL in the spatial-EGT tradition. ndousse2021social: imitation of experts, not a dilemma.",
+   "seed_claims_checked": "Seed says 'not yet tested in Jin lab': outdated, since there are several LLM studies."
+  },
+  {
+   "id": "P15-02",
+   "llm_status": "tested",
+   "llm_evidence": "willis2025systems, willis2026hundreds: LLM-written strategy code evolved in populations. Partial: payne2025strategic (evolutionary IPD tournaments with LLM players), niranjani2026deliberation (LLM-guided evolutionary search over constitutions).",
+   "marl_status": "partial",
+   "marl_evidence": "wang2019evolving: evolutionary selection over agents' intrinsic-reward modules in MARL social dilemmas. Not a strategy-algorithm tournament.",
+   "seed_claims_checked": "Seed says untested: outdated. key_references 'Warnakulasuriya et al. (2024)' is arXiv 2504.19487 (2025, COINE@AAMAS 2025) and is pairwise imitation (fits P15-01 better). 'Willis & Mourant' not located; the located Willis papers are Willis, Du, Leibo, Luck (2025) and Willis, Zhao, Du, Leibo (2026)."
+  }
+ ],
+ "notes": "Gaps: no LLM or MARL study of token-weighted DAO voting; no MARL study of elected vs appointed enforcers or of institutional self-selection; universalization never tested in MARL. Verify: (1) seyedin2026politician and rehm2026selfgovern are recent (Aug/Sep 2026) single-version preprints. (2) payne2025strategic: unclear whether LLMs play each other or only canonical strategies within the evolutionary population, so marked partial. (3) Silverio TMLR 2026 URL is OpenReview; no arXiv ID recorded. (4) Excluded as low-confidence: Zuniga Bolivar 2026 (arXiv 2605.29874), an extension of Willis 2025 whose evolutionary mechanism is unclear from the abstract; De Marzo et al. 2026 (2609.09150), copying among AI agents in the wild with no dilemma manipulation (possible P15-01 partial); Chaos Solitons Fractals Q-learning+Fermi paper (S0960077924009299), page returned 403. Excluded: LLM Voting 2402.01766 and GEDI 2410.15168 (voting as aggregation, not a cooperation mechanism); DAO blockchain survey 2605.08922 (no agent-interaction detail). Mechanisms that moved status: P09-01 partial->tested, P09-03 untested->partial, P15-01 untested->tested, P15-02 untested->tested; MARL status newly coded for all."
+}

@@ -1,0 +1,443 @@
+{
+ "group": "G6",
+ "primitives": [
+  10,
+  11,
+  17
+ ],
+ "date_run": "2026-09-29",
+ "queries": [
+  {
+   "source": "web/arXiv",
+   "query": "MoralSim Backmann LLM agents moral behavior prisoner's dilemma arXiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents apology forgiveness repeated social dilemma multi-agent arXiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents whistleblowing collusion multi-agent disclosure leniency arXiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "arXiv (opened)",
+   "query": "arXiv 2601.11369 / 2605.27593 / 2601.00360 abstract + full text checks for leniency/restorative paths",
+   "results_screened": 3,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents apologize after defection trust repair multi-agent game experiment",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv",
+   "query": "multi-agent reinforcement learning forgiveness reciprocity social dilemma learning agents forgive",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv/IJCAI",
+   "query": "multi-agent reinforcement learning gifting mechanism social dilemma \"gifting\"",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "arXiv (opened)",
+   "query": "full-text grep of 2512.07462, 2604.00487, 2605.23949, 2606.14923 for apology/forgiveness",
+   "results_screened": 4,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv",
+   "query": "\"restorative justice\" LLM agents multi-agent cooperation simulation sanction reintegration",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv/ACL",
+   "query": "LLM agents forgiveness repeated prisoner's dilemma noise \"forgiveness\" language model agents 2024 2025",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents gift giving generalized reciprocity indirect reciprocity society simulation arXiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "\"generalized reciprocity\" OR \"pay it forward\" OR \"upstream reciprocity\" LLM agents experiment",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents mutual aid solidarity multi-agent simulation cooperation network structure social ties",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/AAAI",
+   "query": "Lupu Precup \"Gifting in multi-agent reinforcement learning\" AAMAS 2020",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv",
+   "query": "multi-agent reinforcement learning network topology structure cooperation emergence social network embeddedness agents",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv/PLOS",
+   "query": "LLM agents networked prisoner's dilemma network structure clustering cooperation spatial graph language model agents",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents DAO governance quadratic funding simulation multi-agent",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "LLM agents cooperative firm shared ownership profit sharing equity stake multi-agent cooperation experiment",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents ostracism exclusion readmission reintegration public goods game sanction reform",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "multi-agent reinforcement learning restitution compensation after defection \"forgiveness\" learned strategy sequential social dilemma",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents timebank OR \"community currency\" OR \"mutual aid\" multi-agent simulation cooperation experiment arXiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents confess OR \"self-report\" violation amnesty reduced penalty multi-agent social dilemma governance experiment (plus 2 auto follow-ups)",
+   "results_screened": 27,
+   "included": 0
+  },
+  {
+   "source": "arXiv (opened)",
+   "query": "Learning to Participate through Trading of Reward Shares (from citation chase in prior results)",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "web/arXiv",
+   "query": "SanctSim LLM agents sanctions simulation arXiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "reinforcement learning agents apology signal after defection learned cooperation repair \"apology\" multi-agent",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "LLM agents compensation restitution victim harm repair multi-agent negotiation experiment (plus 2 auto follow-ups)",
+   "results_screened": 28,
+   "included": 0
+  },
+  {
+   "source": "web/arXiv",
+   "query": "Q-learning pricing algorithms collusion leniency program simulation reinforcement learning agents",
+   "results_screened": 10,
+   "included": 0
+  }
+ ],
+ "papers": [
+  {
+   "key": "bracalesyrnikov2026institutional",
+   "title": "Institutional AI: Governing LLM Collusion in Multi-Agent Cournot Markets via Public Governance Graphs",
+   "authors": "Marcantonio Bracale Syrnikov et al.",
+   "year": 2026,
+   "venue": "arXiv (cs.GT)",
+   "url": "https://arxiv.org/abs/2601.11369",
+   "arxiv_id": "2601.11369",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P11-03"
+   ],
+   "how_tested": "LLM agents in repeated Cournot markets under ungoverned, prompt-constitution, and governance-graph regimes; the governance graph includes warning/fine/suspension states with time-expiry edges and a compliance-credit path back to Active (restorative re-entry), bundled into the Institutional regime rather than ablated.",
+   "finding": "The Institutional regime cut severe collusion from 50% to 5.6% across six model configurations (N=90), but the restorative path's separate contribution is not isolated.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "yao2026competition",
+   "title": "Competition and Cooperation of LLM Agents in Games",
+   "authors": "Jiayi Yao et al.",
+   "year": 2026,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2604.00487",
+   "arxiv_id": "2604.00487",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P10-02"
+   ],
+   "how_tested": "LLM agents play network resource-allocation and Cournot games; in one controlled perturbation the environment injects an opponent defection and then an opponent quantity reduction (labelled an 'apology'), and the LLM agent's fitted trust/inequity-aversion parameters are tracked.",
+   "finding": "The LLM agent retaliated tit-for-tat after the injected betrayal and returned to cooperation after the injected concession, i.e. it 'forgave'; this is a single illustrative trajectory with a scripted, behavioural (not verbal) apology.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vallinder2024cultural",
+   "title": "Cultural Evolution of Cooperation among LLM Agents",
+   "authors": "Aron Vallinder et al.",
+   "year": 2024,
+   "venue": "arXiv (cs.MA)",
+   "url": "https://arxiv.org/abs/2412.10270",
+   "arxiv_id": "2412.10270",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P17-02"
+   ],
+   "how_tested": "Generations of LLM agents play an iterated donation game (give to a recipient who cannot directly repay), conditioning on recipients' behavioural traces; cooperation norms evolve culturally across base models.",
+   "finding": "Evolution of cooperation differed sharply across base models, with Claude 3.5 Sonnet societies reaching higher scores than Gemini 1.5 Flash and GPT-4o; the mechanism is downstream indirect reciprocity (reputation), not upstream/generalised reciprocity, so it is only partial evidence for a gift economy.",
+   "located_via": "search"
+  },
+  {
+   "key": "han2025static",
+   "title": "Static network structure cannot stabilize cooperation among large language model agents",
+   "authors": "Jin Han et al.",
+   "year": 2025,
+   "venue": "PLOS ONE",
+   "url": "https://doi.org/10.1371/journal.pone.0320094",
+   "arxiv_id": "2411.10294",
+   "doi": "10.1371/journal.pone.0320094",
+   "track": "llm",
+   "mechanism_ids": [
+    "P17-03"
+   ],
+   "how_tested": "LLM agents (GPT-3.5, GPT-4, Claude, Mixtral) play repeated Prisoner's Dilemma in well-mixed populations vs fixed ring networks, varying degree k and benefit-to-cost ratio, benchmarked against human network experiments.",
+   "finding": "Unlike humans, LLMs cooperated more in well-mixed populations and did not adjust to fixed network ties, so stable embedding did not stabilize cooperation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "qiu2025networkgames",
+   "title": "NetworkGames: Simulating Cooperation in Network Games with Personality-driven LLM Agents",
+   "authors": "Xuan Qiu",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2511.21783",
+   "arxiv_id": "2511.21783",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P17-03"
+   ],
+   "how_tested": "MBTI-persona LLM agents play the iterated Prisoner's Dilemma on small-world and scale-free networks of different sizes and across several LLMs, varying where personality types sit in the network.",
+   "finding": "Network connectivity and the placement of personalities jointly determined cooperation: small-world networks inhibited it and prosocial agents at scale-free hubs raised it. This is partial evidence, since it covers network topology rather than social capital or trust.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lupu2020gifting",
+   "title": "Gifting in Multi-Agent Reinforcement Learning (Student Abstract)",
+   "authors": "Andrei Lupu et al.",
+   "year": 2020,
+   "venue": "AAAI 2020 (Student Abstract), vol. 34(10)",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/7208",
+   "arxiv_id": null,
+   "doi": "10.1609/aaai.v34i10.7208",
+   "track": "marl",
+   "mechanism_ids": [
+    "P17-02"
+   ],
+   "how_tested": "Independent RL agents in a resource-appropriation (commons) setting are given an extra action to deliberately pass reward to other agents.",
+   "finding": "Reward gifting greatly improved learning progression in the resource appropriation setting; preliminary analysis of its effect on learning dynamics.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wang2021emergent",
+   "title": "Emergent Prosociality in Multi-Agent Games Through Gifting",
+   "authors": "Woodrow Z. Wang et al.",
+   "year": 2021,
+   "venue": "IJCAI 2021",
+   "url": "https://www.ijcai.org/proceedings/2021/61",
+   "arxiv_id": "2105.06593",
+   "doi": "10.24963/ijcai.2021/61",
+   "track": "marl",
+   "mechanism_ids": [
+    "P17-02"
+   ],
+   "how_tested": "Self-interested learning agents in multi-equilibrium (high-risk coordination) games may transfer part of their reward to peers; analysed with dynamical-systems theory and simulations.",
+   "finding": "Gifting enlarged the basins of attraction of prosocial equilibria and substantially improved convergence to them without external reward shaping.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "son2026network",
+   "title": "The Role of Network Topology and Opponent Information in Shaping Cooperation in Multi-Agent Reinforcement Learning Systems",
+   "authors": "Seongho Son et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2608.28977",
+   "arxiv_id": "2608.28977",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P17-03"
+   ],
+   "how_tested": "Deep RL agents placed as nodes of graphs play iterated Prisoner's Dilemma with neighbours; network topology and the opponent information available (action history, identity) are manipulated.",
+   "finding": "Neighbours per node and average path length were the main drivers of emergent cooperation; opponent identity information reduced cooperative strategy adoption.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "kolle2023reward",
+   "title": "Learning to Participate through Trading of Reward Shares",
+   "authors": "Michael Kölle et al.",
+   "year": 2023,
+   "venue": "ICAART 2023 (arXiv)",
+   "url": "https://arxiv.org/abs/2301.07416",
+   "arxiv_id": "2301.07416",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P17-04"
+   ],
+   "how_tested": "Independently trained RL agents in general-sum Markov games / social dilemmas can buy equity-like shares in other agents' rewards (stock-market-inspired mechanism).",
+   "finding": "Holding shares in others' returns led agents to cooperate and, in extended domains, to specialize and divide subtasks. This is partial evidence: tradable reward shares are only an analogue of worker-cooperative ownership.",
+   "located_via": "opened page"
+  }
+ ],
+ "mechanism_updates": [
+  {
+   "id": "P10-01",
+   "llm_status": "discussed",
+   "llm_evidence": "No multi-agent LLM experiment with a leniency / first-to-confess immunity rule found. idowu2026mapping (arXiv 2601.00360) maps leniency to AI conceptually (not tested). Single-agent whistleblowing (arXiv 2511.17085) and self-incrimination training (arXiv 2602.22303) are excluded as single-agent.",
+   "marl_status": "untested",
+   "marl_evidence": "No MARL leniency programme found; algorithmic-collusion RL literature studies collusion and countermeasures but not leniency.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed (upgraded to discussed)."
+  },
+  {
+   "id": "P10-02",
+   "llm_status": "partial",
+   "llm_evidence": "yao2026competition: scripted behavioural 'apology' (opponent concession) after injected betrayal restores LLM cooperation; single illustrative run, not a verbal apology, not manipulated systematically.",
+   "marl_status": "untested",
+   "marl_evidence": "No MARL apology signal study found.",
+   "seed_claims_checked": "MoralSim (Backmann et al. 2025, arXiv 2505.19212): confirmed to exist (authors include Zhijing Jin); confirmed it tests moral framing in PD/PGG and does NOT test apology, so the seed note is accurate."
+  },
+  {
+   "id": "P10-03",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM study of amnesty-for-disclosure / truth-telling processes found.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed."
+  },
+  {
+   "id": "P11-01",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM study where offenders restore harm to victims found (negotiation/harm searches returned nothing relevant). Credit-based rehabilitation in bracalesyrnikov2026institutional is penalty reduction, not restitution to victims.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed."
+  },
+  {
+   "id": "P11-02",
+   "llm_status": "untested",
+   "llm_evidence": "None found.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed."
+  },
+  {
+   "id": "P11-03",
+   "llm_status": "partial",
+   "llm_evidence": "bracalesyrnikov2026institutional: governance graph with time-expiry and compliance-credit restorative paths back to Active, bundled into the tested regime (not ablated).",
+   "marl_status": "untested",
+   "marl_evidence": "None found; ueshima2023 (arXiv 2310.04623) studies learned ostracism via link severing but does not examine reintegration.",
+   "seed_claims_checked": "Seed 'Not yet tested; open direction for SanctSim follow-up': SanctSim could not be located by web search; the restorative-path finding in bracalesyrnikov2026institutional means 'untested' should become 'partial'."
+  },
+  {
+   "id": "P11-04",
+   "llm_status": "untested",
+   "llm_evidence": "None found.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed."
+  },
+  {
+   "id": "P17-01",
+   "llm_status": "untested",
+   "llm_evidence": "No timebank / community-currency study with LLM agents found.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed."
+  },
+  {
+   "id": "P17-02",
+   "llm_status": "partial",
+   "llm_evidence": "vallinder2024cultural: LLM donation game (unilateral giving), but it relies on downstream indirect reciprocity/reputation rather than generalised reciprocity.",
+   "marl_status": "partial",
+   "marl_evidence": "lupu2020gifting; wang2021emergent: reward-gifting actions among RL agents improve cooperation. Gifting is closer to peer reward transfer than to a gift economy.",
+   "seed_claims_checked": "Seed 'Not yet tested': partially contradicted (adjacent evidence exists)."
+  },
+  {
+   "id": "P17-03",
+   "llm_status": "tested",
+   "llm_evidence": "han2025static: fixed networks vs well-mixed populations manipulated; LLMs did not cooperate more when embedded. qiu2025networkgames: topology plus personality placement shapes LLM cooperation (partial).",
+   "marl_status": "partial",
+   "marl_evidence": "son2026network: network topology (degree, path length) drives emergent cooperation in deep-RL IPD. Topology is a proxy for embeddedness/social capital.",
+   "seed_claims_checked": "Seed 'Not yet tested': contradicted, because han2025static directly manipulates network embedding with LLM agents."
+  },
+  {
+   "id": "P17-04",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM study of shared ownership / one-member-one-vote cooperatives found.",
+   "marl_status": "partial",
+   "marl_evidence": "kolle2023reward: tradable reward shares (equity in others' returns) induce cooperation among RL agents, an ownership-as-incentive-alignment analogue.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed for LLM."
+  },
+  {
+   "id": "P17-05",
+   "llm_status": "untested",
+   "llm_evidence": "None found (not searched in depth; networked MARL communication work is about coordination topology, not offline resilience).",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'Not yet tested': confirmed."
+  },
+  {
+   "id": "P17-06",
+   "llm_status": "untested",
+   "llm_evidence": "None found isolating horizontal mutual accountability without formal sanctions.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed claim (not isolated in LLM research): confirmed within this search."
+  },
+  {
+   "id": "P17-07",
+   "llm_status": "untested",
+   "llm_evidence": "No LLM-agent quadratic-funding or mutual-aid DAO experiment found (DAO-Agent arXiv 2512.20973 is an infrastructure framework, not a cooperation test).",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed claim (quadratic funding not implemented): confirmed within this search."
+  }
+ ],
+ "notes": "(1) Primitives 10, 11 and 17 are mostly true gaps: only P17-03 (network embeddedness) has direct LLM tests (han2025static). Everything else is partial or untested. (2) Partial calls to check: yao2026competition's 'apology' is a scripted opponent concession in one illustrative trajectory. The restorative path in bracalesyrnikov2026institutional is bundled with sanctions, so there is no causal isolation. vallinder2024cultural is indirect reciprocity (arguably belongs to the reputation primitive). The MARL gifting papers may belong more naturally to a peer-reward/incentive primitive. (3) Excluded but adjacent: 'Why Do Language Model Agents Whistleblow?' (arXiv 2511.17085; single agent, to external parties); 'Training Agents to Self-Report Misbehavior' (arXiv 2602.22303; single agent, self-incrimination); 'Mapping Human Anti-collusion Mechanisms to Multi-agent AI Systems' (arXiv 2601.00360; conceptual only, counts as discussed for P10-01); Leng & Yuan 'Do LLM Agents Exhibit Social Behavior?' (arXiv 2312.15198; upstream/downstream reciprocity, but one LLM against simulated partners); 'The challenge of hidden gifts in MARL' (arXiv 2505.20579; unobserved beneficial acts, a credit-assignment framing, possible weak P17-02 MARL evidence); Ueshima et al. 2023 ostracism MARL (arXiv 2310.04623; exclusion without reintegration, fits a separate exclusion primitive); 'From Certain Doom to Survival' (arXiv 2609.22600; LLM-authored governance with redistribution and exile, abstract only, not checked for restorative content). (4) SanctSim, named in the seed notes, could not be found by web search; the verifier should confirm its identity. (5) Some papers are 2026 preprints (2601.11369, 2604.00487, 2608.28977); titles and years are from their arXiv abs pages."
+}
