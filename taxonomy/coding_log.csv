@@ -1,0 +1,300 @@
+pass,open_code,n_instances,mechanism_id,mechanism,action
+1,budget-constrained audit scheduling,1,M01,Conduct monitoring & transparency,merge
+1,central monitoring of conduct,1,M01,Conduct monitoring & transparency,merge
+1,inspection to verify compliance,1,M01,Conduct monitoring & transparency,merge
+1,local monitoring and sanctioning,1,M01,Conduct monitoring & transparency,merge
+1,make deviation detectable,1,M01,Conduct monitoring & transparency,merge
+1,monitoring of conduct,3,M01,Conduct monitoring & transparency,merge
+1,monitoring of interactions,1,M01,Conduct monitoring & transparency,merge
+1,observation of others' interactions,1,M01,Conduct monitoring & transparency,merge
+1,observe others' past interactions,1,M01,Conduct monitoring & transparency,merge
+1,public disclosure of actions,1,M01,Conduct monitoring & transparency,merge
+1,public disclosure of individual actions,1,M01,Conduct monitoring & transparency,merge
+1,third-party observation of conduct,1,M01,Conduct monitoring & transparency,merge
+1,third-party observation of interactions,1,M01,Conduct monitoring & transparency,merge
+1,trace and notify exposed contacts,1,M01,Conduct monitoring & transparency,merge
+1,visibility of individual conduct to peers,2,M01,Conduct monitoring & transparency,merge
+1,internal-state monitoring for collusion,1,M02,Communication & internal-state oversight,merge
+1,limit covert communication channels,1,M02,Communication & internal-state oversight,merge
+1,monitoring of inter-agent communication,2,M02,Communication & internal-state oversight,merge
+1,monitoring of internal states,1,M02,Communication & internal-state oversight,merge
+1,audit of tamper-evident logs,1,M03,Tamper-evident records,merge
+1,public verifiable log of actions,1,M03,Tamper-evident records,merge
+1,tamper-evident record of actions,2,M03,Tamper-evident records,merge
+1,announced response to failed authentication,1,M04,Identity & attribution,merge
+1,attributable identity for agents,1,M04,Identity & attribution,merge
+1,attribute actions to identified agents,2,M04,Identity & attribution,merge
+1,entry cost for new identities,1,M04,Identity & attribution,merge
+1,label source of messages,1,M04,Identity & attribution,merge
+1,make actors identifiable,2,M04,Identity & attribution,merge
+1,signed attestation of compliance,1,M04,Identity & attribution,merge
+1,verifiable identity credential,3,M04,Identity & attribution,merge
+1,aggregate witness reputation information,1,M05,Reputation records & scores,merge
+1,aggregated reputation score,2,M05,Reputation records & scores,merge
+1,blind simultaneous rating reveal,2,M05,Reputation records & scores,merge
+1,certified performance credentials,1,M05,Reputation records & scores,merge
+1,learned reputation assignment norm,2,M05,Reputation records & scores,merge
+1,peer-assigned reputation scores,2,M05,Reputation records & scores,merge
+1,public record of past conduct,9,M05,Reputation records & scores,merge
+1,crowd annotation of misleading content,2,M06,Peer evaluation & review,merge
+1,distributed peer rating of content,1,M06,Peer evaluation & review,merge
+1,peer review with public pressure,1,M06,Peer evaluation & review,merge
+1,public peer evaluation of conduct,1,M06,Peer evaluation & review,merge
+1,gossip about others' conduct,2,M07,Gossip,merge
+1,peer gossip about others' conduct,1,M07,Gossip,merge
+1,peer-shared reputation information,1,M07,Gossip,merge
+1,sharing reputational information,2,M07,Gossip,merge
+1,reduce number of resource users,1,M08,Expulsion,merge
+1,remove deviator from group,10,M08,Expulsion,merge
+1,cut off after failure threshold,1,M09,Temporary suspension,merge
+1,temporary exclusion by peer,1,M09,Temporary suspension,merge
+1,temporary exclusion from resource,2,M09,Temporary suspension,merge
+1,temporary restriction of participation,1,M09,Temporary suspension,merge
+1,choose interaction partners,1,M10,Partner choice & tie severing,merge
+1,partner choice among competitors,1,M10,Partner choice & tie severing,merge
+1,partner choice by observed conduct,3,M10,Partner choice & tie severing,merge
+1,partner selection by reputation,1,M10,Partner choice & tie severing,merge
+1,reputation-based partner selection,3,M10,Partner choice & tie severing,merge
+1,sever ties with deviating partner,2,M10,Partner choice & tie severing,merge
+1,sever ties with deviator,3,M10,Partner choice & tie severing,merge
+1,public revocation of credentials,1,M11,Shared blocklists & revocation,merge
+1,shared blocklist of deviators,1,M11,Shared blocklists & revocation,merge
+1,shared blocklist of flagged agents,1,M11,Shared blocklists & revocation,merge
+1,access conditional on compliance proof,2,M12,Access & terms conditioned on record,merge
+1,access gated by reputation,3,M12,Access & terms conditioned on record,merge
+1,cost scaled to past conduct,1,M12,Access & terms conditioned on record,merge
+1,degrade access below reputation threshold,1,M12,Access & terms conditioned on record,merge
+1,permissions gated on reputation,1,M12,Access & terms conditioned on record,merge
+1,reduced access based on reputation,1,M12,Access & terms conditioned on record,merge
+1,cost imposed on non-participants,1,M13,Membership boundaries,merge
+1,exclude outsiders from resource,1,M13,Membership boundaries,merge
+1,costly peer penalty on deviator,6,M14,Peer punishment,merge
+1,costly peer punishment,6,M14,Peer punishment,merge
+1,costly peer punishment of deviators,2,M14,Peer punishment,merge
+1,peer sanction of deviator,6,M14,Peer punishment,merge
+1,third party punishes violators,1,M15,Third-party punishment,merge
+1,third-party sanction of deviator,1,M15,Third-party punishment,merge
+1,codified rules with central enforcement,1,M16,Centralized (pool) sanctioning & fines,merge
+1,collectively funded central sanction,1,M16,Centralized (pool) sanctioning & fines,merge
+1,credible threat of punishment,1,M16,Centralized (pool) sanctioning & fines,merge
+1,explicit rules with central enforcement,2,M16,Centralized (pool) sanctioning & fines,merge
+1,fine calibrated to detection probability,1,M16,Centralized (pool) sanctioning & fines,merge
+1,fixed cost on detected deviation,4,M16,Centralized (pool) sanctioning & fines,merge
+1,restrict resources of detected deviator,1,M16,Centralized (pool) sanctioning & fines,merge
+1,standardized sanction schedule,1,M16,Centralized (pool) sanctioning & fines,merge
+1,swift certain modest sanction,1,M16,Centralized (pool) sanctioning & fines,merge
+1,threat of cost imposition,1,M16,Centralized (pool) sanctioning & fines,merge
+1,adaptive central incentive payments,1,M17,Externality pricing & central incentive adjustment,merge
+1,central agent shapes others' rewards,3,M17,Externality pricing & central incentive adjustment,merge
+1,central learned reward reshaping,2,M17,Externality pricing & central incentive adjustment,merge
+1,charge for imposed externality,2,M17,Externality pricing & central incentive adjustment,merge
+1,charge per unit of harm,1,M17,Externality pricing & central incentive adjustment,merge
+1,per-use cost on actions,1,M17,Externality pricing & central incentive adjustment,merge
+1,transfer based on deviation from average,1,M17,Externality pricing & central incentive adjustment,merge
+1,informal peer social pressure,1,M18,Shaming & social disapproval,merge
+1,non-payoff disapproval signal,1,M18,Shaming & social disapproval,merge
+1,public disclosure on missed deadline,1,M18,Shaming & social disapproval,merge
+1,public exposure of violations,2,M18,Shaming & social disapproval,merge
+1,social disapproval of deviator,1,M18,Shaming & social disapproval,merge
+1,enforceable quality guarantee,1,M19,Liability for harm,merge
+1,liability for caused harm,2,M19,Liability for harm,merge
+1,collective penalty for member deviation,1,M20,Collective liability,merge
+1,group liable for member default,1,M20,Collective liability,merge
+1,joint liability for group members,2,M20,Collective liability,merge
+1,peer reward transfer,4,M21,Peer reward & gifting,merge
+1,voluntary transfer of reward to peers,1,M21,Peer reward & gifting,merge
+1,voluntary transfer to others,1,M21,Peer reward & gifting,merge
+1,matching subsidy for contributions,2,M22,Payment for cooperation,merge
+1,payment conditional on outcome,2,M22,Payment for cooperation,merge
+1,payment conditional on verified behavior,1,M22,Payment for cooperation,merge
+1,payment for cooperative act,2,M22,Payment for cooperation,merge
+1,reward per accepted contribution,1,M22,Payment for cooperation,merge
+1,subsidy for cooperative action,1,M22,Payment for cooperation,merge
+1,status award at activity threshold,1,M23,Status & prestige,merge
+1,status reward for contribution,1,M23,Status & prestige,merge
+1,peer reward and penalty options,3,M24,Combined carrot & stick,merge
+1,peer reward or punishment option,1,M24,Combined carrot & stick,merge
+1,reward and penalty by conduct,1,M24,Combined carrot & stick,merge
+1,"reward compliance, penalize deviation",1,M24,Combined carrot & stick,merge
+1,state-contingent reward or punishment,1,M24,Combined carrot & stick,merge
+1,contribution-proportional reward,1,M25,Outcome sharing & aligned stakes,merge
+1,reward based on group outcome,1,M25,Outcome sharing & aligned stakes,merge
+1,reward by marginal contribution,1,M25,Outcome sharing & aligned stakes,merge
+1,shared ownership of joint output,1,M25,Outcome sharing & aligned stakes,merge
+1,stake aligned with system value,2,M25,Outcome sharing & aligned stakes,merge
+1,stake in others' payoffs,1,M25,Outcome sharing & aligned stakes,merge
+1,transfer payoffs to align incentives,1,M25,Outcome sharing & aligned stakes,merge
+1,reward by relative performance rank,1,M26,Relative-performance incentives,merge
+1,reward by relative rank,1,M26,Relative-performance incentives,merge
+1,escalating response to repeat deviation,12,M27,Graduated & proportional sanctions,merge
+1,graduated throttling above usage cap,1,M27,Graduated & proportional sanctions,merge
+1,penalty growing with deviation duration,1,M27,Graduated & proportional sanctions,merge
+1,penalty scaled to deviation severity,1,M27,Graduated & proportional sanctions,merge
+1,punishment scaled to detected deviation,1,M27,Graduated & proportional sanctions,merge
+1,sanction scaled to detected deviation,1,M27,Graduated & proportional sanctions,merge
+1,deposit forfeited on breach,12,M28,"Deposits, bonds & stakes",merge
+1,deposit refunded on compliance,1,M28,"Deposits, bonds & stakes",merge
+1,third party bonds agent for premium,1,M28,"Deposits, bonds & stakes",merge
+1,binding conditional transfer contract,1,M29,Binding contracts,merge
+1,binding contingent transfer contract,4,M29,Binding contracts,merge
+1,binding contract between agents,4,M29,Binding contracts,merge
+1,binding contract with automatic execution,1,M29,Binding contracts,merge
+1,pre-agreed penalty for breach,1,M29,Binding contracts,merge
+1,pre-agreed penalty for exit,1,M29,Binding contracts,merge
+1,self-executing contract rules,1,M29,Binding contracts,merge
+1,binding commitment to future action,2,M30,Self-commitment devices,merge
+1,binding self-commitment device,1,M30,Self-commitment devices,merge
+1,costly signal of commitment,1,M30,Self-commitment devices,merge
+1,voluntary binding commitment,1,M30,Self-commitment devices,merge
+1,authorized payment settlement protocol,1,M31,Escrow & verify-then-pay,merge
+1,escrow held until delivery,1,M31,Escrow & verify-then-pay,merge
+1,payment escrowed until verified,1,M31,Escrow & verify-then-pay,merge
+1,payment released only on verified delivery,1,M31,Escrow & verify-then-pay,merge
+1,third party verifies obligation met,1,M31,Escrow & verify-then-pay,merge
+1,refund if threshold unmet,1,M32,Assurance contracts,merge
+1,refund plus bonus if threshold unmet,1,M32,Assurance contracts,merge
+1,non-binding communication before play,4,M33,Pre-play communication & pledges,merge
+1,non-binding pre-play promise,2,M33,Pre-play communication & pledges,merge
+1,non-binding public pledge,2,M33,Pre-play communication & pledges,merge
+1,open communication among agents,1,M33,Pre-play communication & pledges,merge
+1,pre-play communication among agents,3,M33,Pre-play communication & pledges,merge
+1,pre-play communication channel,2,M33,Pre-play communication & pledges,merge
+1,public statement of intended action,2,M33,Pre-play communication & pledges,merge
+1,authenticated identity and scoped permissions,4,M34,Ex ante action restriction & scoped permissions,merge
+1,central access-control policy,1,M34,Ex ante action restriction & scoped permissions,merge
+1,central specification of roles and scope,1,M34,Ex ante action restriction & scoped permissions,merge
+1,contained environment for agent interaction,1,M34,Ex ante action restriction & scoped permissions,merge
+1,gate admission to shared state,1,M34,Ex ante action restriction & scoped permissions,merge
+1,mandatory checklist before action,1,M34,Ex ante action restriction & scoped permissions,merge
+1,restrict permitted actions ex ante,10,M34,Ex ante action restriction & scoped permissions,merge
+1,restrict use in zones or seasons,1,M34,Ex ante action restriction & scoped permissions,merge
+1,signed verifiable authorization,1,M34,Ex ante action restriction & scoped permissions,merge
+1,time-limited rights expiring unless renewed,1,M34,Ex ante action restriction & scoped permissions,merge
+1,block violating actions at runtime,1,M35,Runtime interception & interruption,merge
+1,external interruption of agent,2,M35,Runtime interception & interruption,merge
+1,trusted monitor blocks suspicious actions,1,M35,Runtime interception & interruption,merge
+1,cap on per-agent action rate,3,M36,Usage caps & quotas,merge
+1,cap on per-agent resource use,3,M36,Usage caps & quotas,merge
+1,escrowed budget for irreversible actions,1,M36,Usage caps & quotas,merge
+1,isolate agents' resource shares,1,M36,Usage caps & quotas,merge
+1,tradeable individual resource quota,1,M36,Usage caps & quotas,merge
+1,learned shared-channel access rule,1,M37,Rotation & turn-taking,merge
+1,rotate access to shared resource,2,M37,Rotation & turn-taking,merge
+1,dense closed network ties,2,M38,Interaction structure,merge
+1,design of communication topology,3,M38,Interaction structure,merge
+1,diversify agent types,1,M38,Interaction structure,merge
+1,fixed local interaction structure,2,M38,Interaction structure,merge
+1,interaction network structure,1,M38,Interaction structure,merge
+1,repeated interaction with same partners,1,M38,Interaction structure,merge
+1,role differentiation via personas,1,M38,Interaction structure,merge
+1,reciprocate partner's past cooperation,2,M39,Direct reciprocity,merge
+1,reciprocate partner's prior action,7,M39,Direct reciprocity,merge
+1,reciprocate toward past cooperators,4,M39,Direct reciprocity,merge
+1,withhold resources from non-contributor,1,M39,Direct reciprocity,merge
+1,community punishment of deviator,1,M40,Indirect reciprocity,merge
+1,help conditional on partner's reputation,4,M40,Indirect reciprocity,merge
+1,help conditional on recipient reputation,7,M40,Indirect reciprocity,merge
+1,help conditional on reputation,3,M40,Indirect reciprocity,merge
+1,cooperation conditional on others' cooperation,1,M41,Group-conditional cooperation,merge
+1,self-imposed back-off on congestion,2,M41,Group-conditional cooperation,merge
+1,collective rule-making by participants,2,M42,Collective choice of rules,merge
+1,collective vote on allocation,1,M42,Collective choice of rules,merge
+1,collective vote on rules,7,M42,Collective choice of rules,merge
+1,collective voting on allocation,2,M42,Collective choice of rules,merge
+1,consensus with binding veto,1,M42,Collective choice of rules,merge
+1,group-voted adoption of rules,2,M42,Collective choice of rules,merge
+1,aggregate independent judgments,1,M43,Robust aggregation & quorum,merge
+1,discount unreliable peer inputs,2,M43,Robust aggregation & quorum,merge
+1,quorum of matching reports required,2,M43,Robust aggregation & quorum,merge
+1,robust aggregation of peer evaluations,1,M43,Robust aggregation & quorum,merge
+1,choose who holds sanction authority,1,M44,Legitimate & elected authority,merge
+1,elected bounded authority,1,M44,Legitimate & elected authority,merge
+1,elected leader coordinates group,1,M44,Legitimate & elected authority,merge
+1,learn which institution is authoritative,1,M44,Legitimate & elected authority,merge
+1,monitor chosen by group vote,1,M44,Legitimate & elected authority,merge
+1,recognize legitimate rule source,1,M44,Legitimate & elected authority,merge
+1,agents choose institution to join,1,M45,Institutional choice & exit,merge
+1,choice among institutional regimes,3,M45,Institutional choice & exit,merge
+1,opt into sanctioning institution,2,M45,Institutional choice & exit,merge
+1,option to opt out of game,1,M45,Institutional choice & exit,merge
+1,voluntary choice of institution,1,M45,Institutional choice & exit,merge
+1,adaptive revision of rules,1,M46,Nested & adaptive rule-making,merge
+1,delegate rule-making to local groups,1,M46,Nested & adaptive rule-making,merge
+1,externally optimized rule set,1,M46,Nested & adaptive rule-making,merge
+1,nested rule-making tiers,1,M46,Nested & adaptive rule-making,merge
+1,tailor institutional design features,1,M46,Nested & adaptive rule-making,merge
+1,reduced penalty for self-report,1,M47,Leniency for self-reporting,merge
+1,reduced penalty for self-reporting,2,M47,Leniency for self-reporting,merge
+1,reward for reporting collusion,2,M47,Leniency for self-reporting,merge
+1,bounty for reported flaws,1,M48,Rewards for reporting others,merge
+1,low-cost channel for disclosure,1,M48,Rewards for reporting others,merge
+1,reward for reporting violations,2,M48,Rewards for reporting others,merge
+1,penalize failure to punish,1,M49,Meta-norms,merge
+1,sanction non-punishers,1,M49,Meta-norms,merge
+1,sanction those who fail to sanction,1,M49,Meta-norms,merge
+1,block punishment of cooperators,1,M50,Checks on sanctioners,merge
+1,collective sanction of dominance attempts,1,M50,Checks on sanctioners,merge
+1,institutional checks and audit,1,M50,Checks on sanctioners,merge
+1,retaliation against punishers permitted,1,M50,Checks on sanctioners,merge
+1,adjudicated adversarial debate,1,M51,Third-party adjudication,merge
+1,escalate uncertain decisions upward,1,M51,Third-party adjudication,merge
+1,peer jury rules on reports,1,M51,Third-party adjudication,merge
+1,third party rules on dispute,6,M51,Third-party adjudication,merge
+1,tiered audit escalating to panel,1,M51,Third-party adjudication,merge
+1,mediator facilitates agreement,2,M52,Mediation,merge
+1,third party mediates between parties,1,M52,Mediation,merge
+1,third party mediates negotiation,1,M52,Mediation,merge
+1,bonded challenge of claimed outcome,3,M53,Bonded challenge,keep
+1,appeal of sanction decisions,2,M54,Appeals & error correction,merge
+1,collective override of protocol outcome,1,M54,Appeals & error correction,merge
+1,independent review of appeals,1,M54,Appeals & error correction,merge
+1,reverse wrongful sanctions,1,M54,Appeals & error correction,merge
+1,apology to repair breach,1,M55,Restitution & reintegration,merge
+1,conditional path to reinstatement,1,M55,Restitution & reintegration,merge
+1,offender repairs harm caused,1,M55,Restitution & reintegration,merge
+1,restorative reintegration of offender,1,M55,Restitution & reintegration,merge
+1,compensating rollback on failure,1,M56,Undoing deviation's effects,merge
+1,nullify gains from deviation,1,M56,Undoing deviation's effects,merge
+1,peer policing of deviation,1,M56,Undoing deviation's effects,merge
+1,peer suppression of selfish acts,1,M56,Undoing deviation's effects,merge
+1,remove violating content,1,M56,Undoing deviation's effects,merge
+1,revert deviant contribution,1,M56,Undoing deviation's effects,merge
+1,roll back to prior state,1,M56,Undoing deviation's effects,merge
+1,identify culpable agents ex post,2,M57,Failure attribution & incident analysis,merge
+1,structured incident reporting,1,M57,Failure attribution & incident analysis,merge
+1,explain norm when sanctioning,1,M58,Explicit norms & codes of conduct,merge
+1,non-coercive compliance management,1,M58,Explicit norms & codes of conduct,merge
+1,public norm-setting messages,1,M58,Explicit norms & codes of conduct,merge
+1,published standard of conduct,1,M58,Explicit norms & codes of conduct,merge
+1,written code of conduct,2,M58,Explicit norms & codes of conduct,merge
+1,instill prosocial preferences via training,2,M59,Instilled prosocial dispositions,merge
+1,internalized moral preference,1,M59,Instilled prosocial dispositions,merge
+1,prompt instilling prosocial reasoning,1,M59,Instilled prosocial dispositions,merge
+1,prompt to universalize conduct,3,M59,Instilled prosocial dispositions,merge
+1,default set to desired action,1,M60,Defaults & choice architecture,keep
+1,agent-level norm formation module,1,M61,Norm learning,merge
+1,learn norms from observed sanctions,4,M61,Norm learning,merge
+1,imitate higher-payoff strategies,1,M62,Imitation & strategy selection,merge
+1,imitate successful strategies,3,M62,Imitation & strategy selection,merge
+1,selection of successful strategies,1,M62,Imitation & strategy selection,merge
+1,selection of surviving strategies,1,M62,Imitation & strategy selection,merge
+1,spread of higher-payoff strategies,3,M62,Imitation & strategy selection,merge
+1,credit earned by serving others,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,horizontal mutual accountability,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,open peer relay infrastructure,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,pay forward to any member,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,pooled mutual aid fund,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,rotating allocation of pooled funds,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,rotating pooled payout,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,time-based mutual credit,1,M63,"Mutual aid, pooling & mutual credit",merge
+1,incentive-compatible allocation auction,2,M64,Incentive-compatible mechanisms,merge
+1,incentive-compatible allocation rule,1,M64,Incentive-compatible mechanisms,merge
+1,incentive-compatible protocol design,1,M64,Incentive-compatible mechanisms,merge
+1,mechanism implementing efficient equilibrium,1,M64,Incentive-compatible mechanisms,merge
+1,payments inducing truthful reports,1,M64,Incentive-compatible mechanisms,merge
+1,reward agreement with consensus report,1,M64,Incentive-compatible mechanisms,merge
+1,reward rule making contribution dominant,1,M64,Incentive-compatible mechanisms,merge
+1,auction allocation of resources,2,M65,Market & matching allocation,merge
+1,central allocation mechanism,1,M65,Market & matching allocation,merge
+1,market allocation of tasks,1,M65,Market & matching allocation,merge
+1,bundle of commons design principles,2,BUNDLE,not a single lever,bundle

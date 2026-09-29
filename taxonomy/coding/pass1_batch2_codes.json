@@ -1,0 +1,372 @@
+[
+ {
+  "code": "peer sanction of deviator",
+  "definition": "Fellow group members impose costs on those who deviate.",
+  "n_instances": 6
+ },
+ {
+  "code": "third party rules on dispute",
+  "definition": "An external or designated adjudicator issues a binding resolution of a conflict.",
+  "n_instances": 4
+ },
+ {
+  "code": "help conditional on partner's reputation",
+  "definition": "Agents help others according to the recipient's reputation from past behaviour.",
+  "n_instances": 4
+ },
+ {
+  "code": "collective vote on rules",
+  "definition": "Members vote to adopt or change the rules they live under.",
+  "n_instances": 4
+ },
+ {
+  "code": "restrict permitted actions ex ante",
+  "definition": "Agents can only perform actions explicitly authorized beforehand.",
+  "n_instances": 4
+ },
+ {
+  "code": "pre-play communication among agents",
+  "definition": "Agents may exchange messages before or between decisions.",
+  "n_instances": 3
+ },
+ {
+  "code": "remove deviator from group",
+  "definition": "A deviating member is permanently or indefinitely expelled from the group or its benefits.",
+  "n_instances": 3
+ },
+ {
+  "code": "deposit forfeited on breach",
+  "definition": "An agent posts value up front that is lost if it deviates.",
+  "n_instances": 3
+ },
+ {
+  "code": "monitoring of conduct",
+  "definition": "Actions of agents are observed or audited to detect deviation.",
+  "n_instances": 3
+ },
+ {
+  "code": "sever ties with deviator",
+  "definition": "Links or interactions with agents identified as deviant are cut.",
+  "n_instances": 3
+ },
+ {
+  "code": "public record of past conduct",
+  "definition": "Agents' past actions are recorded and made visible to others.",
+  "n_instances": 3
+ },
+ {
+  "code": "escalating response to repeat deviation",
+  "definition": "Responses to deviation become more severe with each repeat offence.",
+  "n_instances": 3
+ },
+ {
+  "code": "design of communication topology",
+  "definition": "The structure of who can communicate with whom is set to shape outcomes.",
+  "n_instances": 3
+ },
+ {
+  "code": "spread of higher-payoff strategies",
+  "definition": "Strategies that earn more are copied or replicated in the population.",
+  "n_instances": 3
+ },
+ {
+  "code": "central agent shapes others' rewards",
+  "definition": "A planner agent adjusts other agents' rewards (taxes, subsidies, penalties) to align incentives.",
+  "n_instances": 3
+ },
+ {
+  "code": "payment for cooperative act",
+  "definition": "A fixed reward is paid for performing the desired cooperative action.",
+  "n_instances": 2
+ },
+ {
+  "code": "reduced penalty for self-reporting",
+  "definition": "Agents that disclose their own or joint wrongdoing receive reduced punishment.",
+  "n_instances": 2
+ },
+ {
+  "code": "joint liability for group members",
+  "definition": "Group members are held liable for each other's obligations.",
+  "n_instances": 2
+ },
+ {
+  "code": "quorum of matching reports required",
+  "definition": "An action is taken only when a supermajority of independent parties agree.",
+  "n_instances": 2
+ },
+ {
+  "code": "bonded challenge of claimed outcome",
+  "definition": "Claims can be challenged by posting a bond, with the loser forfeiting its bond.",
+  "n_instances": 2
+ },
+ {
+  "code": "stake aligned with system value",
+  "definition": "Agents hold assets whose value falls if the system is harmed, so deviation hurts the deviator.",
+  "n_instances": 2
+ },
+ {
+  "code": "attribute actions to identified agents",
+  "definition": "Actions are linked to persistent, verifiable agent identities.",
+  "n_instances": 2
+ },
+ {
+  "code": "gossip about others' conduct",
+  "definition": "Agents share information about third parties' behaviour.",
+  "n_instances": 2
+ },
+ {
+  "code": "non-binding public pledge",
+  "definition": "Agents publicly announce intended behaviour without enforcement.",
+  "n_instances": 2
+ },
+ {
+  "code": "instill prosocial preferences via training",
+  "definition": "Agents' objectives are shaped to intrinsically value cooperative or moral outcomes.",
+  "n_instances": 2
+ },
+ {
+  "code": "temporary exclusion from resource",
+  "definition": "An agent is temporarily denied access to a shared resource.",
+  "n_instances": 2
+ },
+ {
+  "code": "fixed cost on detected deviation",
+  "definition": "A predetermined penalty is applied automatically when deviation is detected.",
+  "n_instances": 2
+ },
+ {
+  "code": "rotating pooled payout",
+  "definition": "Members contribute regularly and each receives the pooled sum in turn.",
+  "n_instances": 1
+ },
+ {
+  "code": "refund if threshold unmet",
+  "definition": "Contributions are returned if the collective target is not reached.",
+  "n_instances": 1
+ },
+ {
+  "code": "cooperation conditional on others' cooperation",
+  "definition": "Each party's cooperative action is adjusted in response to how many others cooperate.",
+  "n_instances": 1
+ },
+ {
+  "code": "adaptive revision of rules",
+  "definition": "Rules and supporting functions are revised over time in response to experience.",
+  "n_instances": 1
+ },
+ {
+  "code": "transfer based on deviation from average",
+  "definition": "Agents are taxed or subsidized according to how their contribution differs from the group average.",
+  "n_instances": 1
+ },
+ {
+  "code": "trace and notify exposed contacts",
+  "definition": "Interactions are recorded so affected parties can be notified and act.",
+  "n_instances": 1
+ },
+ {
+  "code": "mechanism implementing efficient equilibrium",
+  "definition": "Transfer rules designed so that equilibrium play yields the efficient collective outcome.",
+  "n_instances": 1
+ },
+ {
+  "code": "community punishment of deviator",
+  "definition": "Future partners across the community punish an identified deviator, spreading enforcement.",
+  "n_instances": 1
+ },
+ {
+  "code": "reward based on group outcome",
+  "definition": "All members receive a reward that depends on the group's joint performance.",
+  "n_instances": 1
+ },
+ {
+  "code": "reward by relative rank",
+  "definition": "Rewards depend on an agent's performance rank relative to others.",
+  "n_instances": 1
+ },
+ {
+  "code": "public peer evaluation of conduct",
+  "definition": "Peers systematically assess a member's performance and publicize the results.",
+  "n_instances": 1
+ },
+ {
+  "code": "nullify gains from deviation",
+  "definition": "The output or benefit obtained by deviating is destroyed so deviation yields nothing.",
+  "n_instances": 1
+ },
+ {
+  "code": "penalty growing with deviation duration",
+  "definition": "The penalty grows continuously the longer non-participation persists.",
+  "n_instances": 1
+ },
+ {
+  "code": "restrict resources of detected deviator",
+  "definition": "Resources available to an agent detected as non-compliant are curtailed.",
+  "n_instances": 1
+ },
+ {
+  "code": "entry cost for new identities",
+  "definition": "Newcomers pay a cost or face distrust so deviators cannot cheaply re-enter under new identities.",
+  "n_instances": 1
+ },
+ {
+  "code": "cap on per-agent resource use",
+  "definition": "Each agent's use of a shared resource is capped.",
+  "n_instances": 1
+ },
+ {
+  "code": "third party mediates between parties",
+  "definition": "A neutral party facilitates coordination or agreement between parties without imposing a ruling.",
+  "n_instances": 1
+ },
+ {
+  "code": "public disclosure on missed deadline",
+  "definition": "Information is published if a party fails to act by a pre-announced deadline.",
+  "n_instances": 1
+ },
+ {
+  "code": "published standard of conduct",
+  "definition": "A publicly documented standard specifies expected behaviour.",
+  "n_instances": 1
+ },
+ {
+  "code": "permissions gated on reputation",
+  "definition": "Additional capabilities are granted as agents accumulate reputation.",
+  "n_instances": 1
+ },
+ {
+  "code": "monitoring of internal states",
+  "definition": "Agents' internal computations are inspected to detect deviation.",
+  "n_instances": 1
+ },
+ {
+  "code": "payment escrowed until verified",
+  "definition": "Payment is held and released only on verified completion.",
+  "n_instances": 1
+ },
+ {
+  "code": "reward by marginal contribution",
+  "definition": "Rewards are redistributed according to each agent's marginal contribution to joint output.",
+  "n_instances": 1
+ },
+ {
+  "code": "aggregate independent judgments",
+  "definition": "Independent assessments are combined to reach a collective decision.",
+  "n_instances": 1
+ },
+ {
+  "code": "roll back to prior state",
+  "definition": "Shared state can be reverted to an earlier checkpoint after harmful actions.",
+  "n_instances": 1
+ },
+ {
+  "code": "limit covert communication channels",
+  "definition": "Messages are transformed or constrained to remove hidden signalling capacity.",
+  "n_instances": 1
+ },
+ {
+  "code": "codified rules with central enforcement",
+  "definition": "Explicit rules are encoded and enforced by a central controller.",
+  "n_instances": 1
+ },
+ {
+  "code": "escrowed budget for irreversible actions",
+  "definition": "A bounded risk budget is held in escrow and debited as irreversible actions are taken.",
+  "n_instances": 1
+ },
+ {
+  "code": "payments inducing truthful reports",
+  "definition": "Payments are structured so that truthful reporting of private information is optimal.",
+  "n_instances": 1
+ },
+ {
+  "code": "agents choose institution to join",
+  "definition": "Agents select which institutional regime (e.g., with or without sanctions) governs them.",
+  "n_instances": 1
+ },
+ {
+  "code": "public norm-setting messages",
+  "definition": "Shared messages publicly state expected behaviour.",
+  "n_instances": 1
+ },
+ {
+  "code": "reduce number of resource users",
+  "definition": "The number of members with access to a shared resource is reduced.",
+  "n_instances": 1
+ },
+ {
+  "code": "choose who holds sanction authority",
+  "definition": "Rules determine which agent holds the power to sanction (fixed, elected, rotating).",
+  "n_instances": 1
+ },
+ {
+  "code": "repeated interaction with same partners",
+  "definition": "Agents interact repeatedly so future consequences discipline current behaviour.",
+  "n_instances": 1
+ },
+ {
+  "code": "binding conditional transfer contract",
+  "definition": "Agents agree to contracts whose conditional transfers are executed automatically.",
+  "n_instances": 1
+ },
+ {
+  "code": "reduced access based on reputation",
+  "definition": "Agents with low reputation get reduced access to trade or opportunities.",
+  "n_instances": 1
+ },
+ {
+  "code": "third-party sanction of deviator",
+  "definition": "An unaffected observer imposes costs on a deviator.",
+  "n_instances": 1
+ },
+ {
+  "code": "choose interaction partners",
+  "definition": "Agents select whom they interact with.",
+  "n_instances": 1
+ },
+ {
+  "code": "reward and penalty by conduct",
+  "definition": "Agents receive rewards for compliant and penalties for malicious conduct.",
+  "n_instances": 1
+ },
+ {
+  "code": "observe others' past interactions",
+  "definition": "Agents can observe interactions between others to inform their choices.",
+  "n_instances": 1
+ },
+ {
+  "code": "voluntary transfer to others",
+  "definition": "Agents may voluntarily transfer payoff to others.",
+  "n_instances": 1
+ },
+ {
+  "code": "sanction scaled to detected deviation",
+  "definition": "Punishment probability or severity is adjusted to the degree of detected deviation.",
+  "n_instances": 1
+ },
+ {
+  "code": "restrict use in zones or seasons",
+  "definition": "Use of a resource is prohibited in designated places or times.",
+  "n_instances": 1
+ },
+ {
+  "code": "charge per unit of harm",
+  "definition": "Agents pay a price proportional to the harm their activity imposes on others.",
+  "n_instances": 1
+ },
+ {
+  "code": "sanction those who fail to sanction",
+  "definition": "Agents who fail to punish deviators are themselves punished.",
+  "n_instances": 1
+ },
+ {
+  "code": "cost scaled to past conduct",
+  "definition": "An agent's ongoing costs are set according to its record of past risky behaviour.",
+  "n_instances": 1
+ },
+ {
+  "code": "shared ownership of joint output",
+  "definition": "Members jointly own the enterprise and share its profits.",
+  "n_instances": 1
+ }
+]
