@@ -120,7 +120,7 @@ def main(src):
         m['marl_evidence'] = u.get('marl_evidence', '')
         chk = u.get('seed_claims_checked', '')
         extra = '; '.join(x for x in [f'seed evidence: {seed_ev}' if seed_ev else '', f'seed claims checked: {chk}' if chk else ''] if x)
-        if extra: m['notes'] = (m['notes'] + ' | ' if m['notes'] else '') + extra
+        if extra and 'seed evidence:' not in m['notes'] and 'seed claims checked:' not in m['notes']: m['notes'] = (m['notes'] + ' | ' if m['notes'] else '') + extra
     with open(mpath, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols); w.writeheader(); w.writerows(mech)
 

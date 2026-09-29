@@ -20,8 +20,11 @@ FLAG_WORDS = re.compile(r'mischaracteri|not supported|could not|cannot support|d
 def read(name): return list(csv.DictReader(open(os.path.join(TAX, name))))
 
 def seed_status():
+    # Compare against the Phase 1 seed commit, not HEAD (HEAD already holds merged search results).
     try:
-        txt = subprocess.run(['git', 'show', 'HEAD:taxonomy/mechanisms.csv'], cwd=TAX, capture_output=True, text=True, check=True).stdout
+        git = lambda *a: subprocess.run(['git', *a], cwd=TAX, capture_output=True, text=True, check=True).stdout
+        rev = git('log', '--format=%H', '--grep=seed', '--', 'mechanisms.csv').split()[-1]
+        txt = subprocess.run(['git', 'show', f'{rev}:taxonomy/mechanisms.csv'], cwd=TAX, capture_output=True, text=True, check=True).stdout
         return {r['id']: r['llm_status'] for r in csv.DictReader(io.StringIO(txt))}
     except Exception:
         return {}
