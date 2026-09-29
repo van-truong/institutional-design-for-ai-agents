@@ -60,6 +60,11 @@ Berman, G.E.: Market participants and the may 6 flash crash (Oct 2010),
   \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech by the
   U.S. Securities and Exchange Commission
 
+\bibitem{boella2006normative}
+Boella, G., van~der Torre, L., Verhagen, H.: Introduction to normative
+  multiagent systems. Computational and Mathematical Organization Theory
+  \textbf{12}(2--3),  71--80 (2006)
+
 \bibitem{bowlesPoliciesDesignedSelfInterested2008}
 Bowles, S.: Policies {{Designed}} for {{Self-Interested Citizens May
   Undermine}} "{{The Moral Sentiments}}": {{Evidence}} from {{Economic
@@ -74,6 +79,19 @@ Buchanan, J.M., Tullock, G.: The {{Calculus}} of {{Consent}}: {{Logical
 \bibitem{calvertRationalActorsEquilibrium1995}
 Calvert, R.: Rational {{Actors}}, {{Equilibrium}} and {{Social Institutions}}.
   Explaining social institutions  (Jan 1995)
+
+\bibitem{chan2024visibility}
+Chan, A., Ezell, C., Kaufmann, M., et~al.: Visibility into {AI} agents. In:
+  Proceedings of the 2024 ACM Conference on Fairness, Accountability, and
+  Transparency. pp. 958--973 (2024). \doi{10.1145/3630106.3658948}
+
+\bibitem{chan2025infrastructure}
+Chan, A., et~al.: Infrastructure for {AI} agents (2025)
+
+\bibitem{cox2010designprinciples}
+Cox, M., Arnold, G., Villamayor~Tom{\'a}s, S.: A review of design principles
+  for community-based natural resource management. Ecology and Society
+  \textbf{15}(4), ~38 (2010). \doi{10.5751/ES-03704-150438}
 
 \bibitem{dafoe2021cooperative}
 Dafoe, A., Bachrach, Y., Hadfield, G., Horvitz, E., Larson, K., Graepel, T.:
@@ -103,6 +121,13 @@ Eisen, M.: Amazon's \$23,698,655.93 book about flies.
 Elster, J.: Ulysses and the sirens: {{A}} theory of imperfect rationality.
   Social Science Information/sur les sciences sociales  \textbf{16}(5),
   469--526 (1977). \doi{10.1177/053901847701600501}
+
+\bibitem{esteva2001electronic}
+Esteva, M., Rodr{\'\i}guez-Aguilar, J.A., Sierra, C., Garcia, P., Arcos, J.L.:
+  On the formal specification of electronic institutions. In: Dignum, F.,
+  Sierra, C. (eds.) Agent Mediated Electronic Commerce: The European AgentLink
+  Perspective, Lecture Notes in Artificial Intelligence, vol.~1991, pp.
+  126--147. Springer (2001). \doi{10.1007/3-540-44682-6_8}
 
 \bibitem{fanAITraderBenchmarkingAutonomous2025}
 Fan, T., Yang, Y., Jiang, Y., Zhang, Y., Chen, Y., Huang, C.: {{AI-Trader}}:
@@ -164,6 +189,11 @@ Guzman~Piedrahita, D., Banerjee, D., Blin, K., Cobben, P., Corsi, G., Huang,
 Guzman~Piedrahita, D., Yang, Y., Sachan, M., Ramponi, G., Sch{\"o}lkopf, B.,
   Jin, Z.: Corrupted by reasoning: Reasoning language models become free-riders
   in public goods games (2025), \url{https://arxiv.org/abs/2506.23276}
+
+\bibitem{hadfieldmenell2019incomplete}
+Hadfield-Menell, D., Hadfield, G.K.: Incomplete contracting and {AI} alignment.
+  In: Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society.
+  pp. 417--422 (2019). \doi{10.1145/3306618.3314250}
 
 \bibitem{hamilton1964genetical}
 Hamilton, W.D.: The genetical evolution of social behaviour. ii. Journal of
@@ -232,6 +262,13 @@ Huang, X.A., Tharas, C., Marro, S., Truong, V.Q., Schölkopf, B., Malfa, E.L.,
   Jin, Z.: Mechanism design is not enough: Prosocial agents for cooperative ai
   (2026), \url{https://arxiv.org/abs/2605.08426}
 
+\bibitem{hubner2002moise}
+H{\"u}bner, J.F., Sichman, J.S., Boissier, O.: A model for the structural,
+  functional, and deontic specification of organizations in multiagent systems.
+  In: Advances in Artificial Intelligence (SBIA 2002). Lecture Notes in
+  Computer Science, vol.~2507, pp. 118--128. Springer (2002).
+  \doi{10.1007/3-540-36127-8_12}
+
 \bibitem{jaques2019social}
 Jaques, N., Lazaridou, A., Hughes, E., Gulcehre, C., Ortega, P., Strouse, D.,
   Leibo, J.Z., De~Freitas, N.: Social influence as intrinsic motivation for
@@ -253,6 +290,9 @@ Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
 Knight, J.: Institutions and Social Conflict. Political Economy of Institutions
   and Decisions, Cambridge University Press (1992),
   \url{https://books.google.com/books?id=VeoKtu_22q0C}
+
+\bibitem{kolt2025governingaiagents}
+Kolt, N.: Governing ai agents (2025), \url{https://arxiv.org/abs/2501.07913}
 
 \bibitem{korosec2025waymo}
 Korosec, K.: Waymo's robotaxi expansion accelerates with 3 new cities.
@@ -289,6 +329,12 @@ Li, G., Hammoud, H.A.A.K., Itani, H., Khizbullin, D., Ghanem, B.: Camel:
   Communicative agents for "mind" exploration of large language model society
   (2023), \url{https://arxiv.org/abs/2303.17760}
 
+\bibitem{lin2022truthfulqa}
+Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
+  falsehoods. In: Proceedings of the 60th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers). pp. 3214--3252.
+  Association for Computational Linguistics (2022)
+
 \bibitem{liu2025agentbenchevaluatingllmsagents}
 Liu, X., Yu, H., Zhang, H., Xu, Y., Lei, X., Lai, H., Gu, Y., Ding, H., Men,
   K., Yang, K., Zhang, S., Deng, X., Zeng, A., Du, Z., Zhang, C., Shen, S.,
@@ -304,6 +350,13 @@ Liu, X., Yu, H., Zhang, H., Xu, Y., Lei, X., Lai, H., Gu, Y., Ding, H., Men,
 \bibitem{maskinMechanismDesignHow2008}
 Maskin, E.S.: Mechanism {{Design}}: {{How}} to {{Implement Social Goals}}. The
   American Economic Review  \textbf{98}(3),  567--576 (2008)
+
+\bibitem{mazeika2024harmbench}
+Mazeika, M., Phan, L., Yin, X., Zou, A., Wang, Z., Mu, N., Sakhaee, E., Li, N.,
+  Basart, S., Li, B., Forsyth, D., Hendrycks, D.: {HarmBench}: A standardized
+  evaluation framework for automated red teaming and robust refusal. In:
+  Proceedings of the 41st International Conference on Machine Learning.
+  Proceedings of Machine Learning Research, vol.~235 (2024)
 
 \bibitem{mccoyEmbersAutoregressionShow2024}
 McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
@@ -378,6 +431,10 @@ Shen, J.H., Zhu, D., Srinivasan, S., Sleight, H., Wagner, L.T., Matthews, M.J.,
   Jones, E., {Sohl-Dickstein}, J.: {{AI Organizations}} are {{More Effective}}
   but {{Less Aligned}} than {{Individual Agents}} (Apr 2026).
   \doi{10.48550/arXiv.2604.10290}
+
+\bibitem{shoham1995sociallaws}
+Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
+  Off-line design. Artificial Intelligence  \textbf{73}(1--2),  231--252 (1995)
 
 \bibitem{skalseDefiningCharacterizingReward2022}
 Skalse, J., Howe, N.H.R., Krasheninnikov, D., Krueger, D.: Defining and
@@ -489,5 +546,9 @@ Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
   Computing}} 2020: {{Catch}} the {{Wave}}. pp. 538--542. {{PEARC}} '20,
   Association for Computing Machinery, New York, NY, USA (Jul 2020).
   \doi{10.1145/3311790.3399628}
+
+\bibitem{zhou2023ifeval}
+Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
+  L.: Instruction-following evaluation for large language models (2023)
 
 \end{thebibliography}
