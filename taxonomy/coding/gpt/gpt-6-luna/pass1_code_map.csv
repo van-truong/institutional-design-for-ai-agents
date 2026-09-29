@@ -1,0 +1,256 @@
+open_code,n_instances,mechanism_id_or_NEW,rationale
+VCG incentive mechanism,1,M64,VCG payments make truthful bidding dominant.
+accessible independent arbitration,1,M51,Independent arbitrator issues binding ruling.
+adaptive commons governance,1,M46,Adaptive governance revises rules over time; close to C15.
+adaptive punishment intensity,1,M27,Punishment severity scales with detected defection.
+agent activity logging,1,M03,Lever is an attributable activity log (hint M04 overridden).
+agent governance framework,2,C29,Names a multi-lever agent governance framework (ETHOS=C29; other instance Institutional AI=C30).
+aggregate reputation information,1,M05,Aggregated reputation scores kept and shared.
+apology for norm repair,1,M55,Offender apologizes to repair relationship.
+appeal sanction decision,1,M54,Sanctioned party contests decision.
+assurance bond,1,M28,Bond posted and refunded on demonstrated compliance.
+attribution and rollback infrastructure,1,C28,"Combines attribution, rollback, incident analysis: agent visibility/infrastructure configuration."
+authorized agent interruption,1,M35,Authority halts agent action.
+automatic conditional execution,1,M31,Payment auto-released only when completion verified.
+automatic fixed fine,1,M16,Central automatic fine under explicit rule.
+bandwidth restriction,1,M36,Hard limit on flow resource use.
+bind conduct through prior commitment,7,M30,Definition: advance pledge/contract constrains later choices; self-commitment.
+binding conditional transfers,2,M29,Enforceable conditional transfers.
+blind reciprocal feedback,1,M05,Redesign of reputation feedback records.
+bond forfeited on breach,2,M28,Collateral forfeited on breach.
+bonded challenge and adjudication,2,M53,Staked challenge of claimed outcome.
+bonded challenge of claimed outcome,1,M53,Staked challenge of claimed outcome.
+bounded elected authority,1,M44,Elected leader with bounded authority.
+cap extraction and membership,1,C39,Combines catch caps with exile/membership rules (GovSim-SelfGovern).
+cap individual resource extraction,1,M36,Individual quotas on extraction.
+cap individual resource use,1,M36,Per-flow cap on shared resource use.
+cap shared resource use,1,M36,Quota caps aggregate consumption.
+capability-based access restriction,1,M34,Access only via held capability; ex ante permission.
+cash reward for participation,1,M22,Central payment for cooperative act.
+centralized auction allocation,1,M65,Central auction allocates tasks.
+choose among governance regimes,2,M45,Agents choose which institution to join.
+choose interaction partners,1,M10,Partner choice.
+collective liability for deviation,1,M20,Group shares penalty for member deviation.
+collectively amend governance rules,1,M42,Members propose and vote on rules.
+collectively set resource and membership rules,1,M42,Members author and vote on rules (hint M61 overridden).
+communicate or commit publicly,8,M33,Non-binding communication or public pledges.
+communication for coordination,1,M33,Pre-play communication.
+communication plus peer sanctions,1,C04,Names communication combined with peer punishment.
+communication topology restriction,1,M38,Designs who communicates with whom.
+compliance transparency and support,1,C12,Managerial model: transparency plus compliance support (also M67).
+condition benefits on conduct,9,M22,Umbrella: rewards/transfers conditioned on contribution or compliance.
+condition cooperation on others conduct,1,M39,Conditional cooperation on partner's behavior (amTFT).
+condition transfers on performance,3,M29,Umbrella: enforceable performance-conditioned transfers.
+conditional cooperation on observed conduct,1,M40,Donor conditions on recipient's conduct toward others.
+conditional fine threat,1,M14,Harmed party threatens cost on deviator.
+conditional public good subsidy,1,M17,Pigouvian subsidy is an M17 example; M22 also plausible.
+conditional reciprocal cooperation,1,M39,Reciprocative decision function.
+conduct-based risk premium,1,M12,Risk-rated premium conditioned on record (hint M17 overridden).
+configure market allocation rules,1,M65,Configurable market allocation rules.
+constrain permitted actions ex ante,5,M34,Definition names ex ante action constraints; hint votes scattered.
+contact notification and quarantine,1,M09,Quarantine of exposed parties for bounded period.
+contagious future-partner punishment,1,M40,Community enforcement/contagious punishment example.
+contractual conditional transfer,1,M29,Binding contract transfers.
+contribute to enforcement fund,1,M16,Member-funded central sanctioning pool.
+contribution-based tax and subsidy,1,M17,Falkinger tax-subsidy example.
+coordinate peer sanctions,1,M61,Normative module: infer authoritative institution from sanctions.
+coordinate through shared procedure,12,M58,Vague umbrella; closest is shared written rules/procedures.
+coordinated turn taking,1,M37,Irrigation turn-taking schedule.
+costly peer monitoring,1,M01,Patrols monitor conduct.
+credential and performance reputation,1,M05,Signed performance records as reputation.
+cross perspective fact checking,1,M06,Birdwatch bridging peer evaluation.
+crowdsourced fact checking,1,M06,Community Notes peer evaluation.
+cryptographic access control,1,M34,Access-control policies and tokens.
+cultural no-take norm,1,M34,No-take zones/days restrict actions ex ante.
+deadline-triggered disclosure,1,M18,90+30 disclosure policy example.
+democratic payoff rule adoption,1,M42,Vote on adopting payoff rule.
+dense network norm enforcement,2,M38,Network closure/embeddedness as interaction structure.
+detect and isolate collusive agents,1,M01,Monitoring with honeypot inducement; isolation secondary.
+detect group collusion,1,M02,Activation probes detect collusion.
+direct punishment,2,M14,Peer punishment.
+disagreement escalation,1,M51,Disagreement escalated to higher adjudicator (hint M43 overridden).
+disclosure-conditioned amnesty,1,M47,Amnesty for self-disclosure.
+disclosure-for-leniency,1,M47,Fine reduction for self-reporting.
+distributed peer moderation,1,M06,Distributed moderation example.
+escalate sanctions for repeated violations,1,M27,Enforcement ladder escalates (hint M58 overridden).
+escalate uncertain decisions,1,M43,Conformal social choice aggregation example.
+establish shared rules and authority,4,M58,Umbrella: collectively recognized explicit rules constrain conduct.
+evolved cooperative motivation,1,M59,Evolved intrinsic motivation.
+exchange equal time credits,1,M63,Timebank mutual credit.
+exclude deviator from group,1,M08,Ostracism/exile.
+explain applicable norm,1,M58,Norms explained when sanctions applied; M67 plausible.
+external stop authority,1,M35,Kill switch halts agent.
+externality pricing,1,M17,Carbon tax prices harm.
+fair shared access scheduling,1,M37,Channel access turn allocation.
+filter extreme contributions,1,M43,Discard outlying inputs.
+filter harmful sanctions,1,M50,Antisocial punishment filter example (hint M54 overridden).
+first reporter leniency,1,M47,Leniency for first self-reporter.
+fixed cost on detected deviation,2,M16,Fixed fine for detected deviation.
+forfeit collateral on breach,1,M28,Breach remedy transaction example (hint M29 overridden).
+formalize conditional cooperation,1,M29,Contracts formalize conditional cooperation.
+formalize reciprocal obligations,2,M29,Formal contracts; instances CoopEval (C41).
+gifting transfer,1,M21,Gifting action.
+gossip based partner exclusion,1,C05,Names gossip combined with exclusion.
+gossip-based reputation,1,M07,Gossip.
+govern shared memory updates,1,M42,Selection regime for shared rules/state chosen collectively.
+governance graph sanctions,1,M16,Governance graph example.
+graduated access restrictions,1,M27,Escalating restrictions on repeat violations.
+graduated penalty for deviation,2,M27,Tiered fines escalate (hint M16 overridden).
+graduated response to deviation,1,M27,Governance graph state machine example.
+graph anomaly intervention,1,M01,Oversight monitors interaction graph; intervention secondary.
+group expulsion,1,M08,Vote to expel.
+group performance bonus,1,M25,Firm-wide bonus shares collective outcome.
+honest quorum consensus,1,M43,Byzantine agreement/majority vote.
+immediate misreport penalty,1,M64,Penalty within incentive-compatible auction.
+impose cost after deviation,29,M14,Umbrella sanction code; peer punishment plurality.
+impose cost for norm violation,4,M14,Costly punishment of violators.
+impose escalating cost for breach,11,M27,Escalating/graduated sanction.
+impose pre-agreed cost for breach,1,M29,Liquidated damages example (hint M28 overridden).
+impose social cost for default,1,M18,Social sanctions on defaulters (hint M65 overridden).
+inactivity stake drain,1,M27,Progressive stake drain escalates with duration.
+institutional oversight and audit,1,M50,Audit office/courts check authority.
+interaction monitoring,2,M02,Communication monitoring.
+intrinsic cooperative reward,1,M59,Intrinsic moral rewards.
+intrinsic norm based incentives,1,M59,Intrinsic moral rewards.
+joint liability,2,M20,Joint liability.
+learn norms from public sanctions,1,M61,Norm learning from public sanctions.
+learned reward and punishment,1,M17,Adaptive mechanism design planner.
+learned tax and allowance,1,M17,Learned Pigovian tax.
+liability for imposed harm,1,M19,Strict liability/negligence.
+limit permitted actions by default,1,M34,Least privilege.
+limited third-party observation,1,M01,Conduct observed by third parties.
+majority-contingent juror stake,1,M51,Kleros decentralized arbitration.
+make cheating detectable,1,M01,Nonces make misbehavior detectable.
+make reversal costly after commitment,1,M30,Commitment device (hint M33 overridden).
+managerial punishment authority,1,M44,Fixed/elected/rotating manager.
+mandatory tool authorization,2,M34,Mandatory access control.
+marginal-contribution reward sharing,1,M25,Shapley reward distribution example (hint M64 overridden).
+market resource allocation rules,1,M65,Auction resource allocation.
+market search and matching,1,M65,Offer discovery and matching rules.
+match contributions nonlinearly,1,M64,Quadratic funding.
+mediated disclosure timetable,1,M52,CVD coordinator mediates.
+membership-contingent cooperation,1,M41,Self-enforcing IEA example.
+milestone-based coordination protocol,1,M38,Coordination protocol topology.
+monitor and isolate misbehavior,1,C33,"Sentinel agents: monitoring, audit records, isolation."
+monitor and route around,1,M01,Watchdog monitoring; route-around (M10) secondary.
+multi-run collusion audit,1,M01,Collusion audit pipeline example; M02/C34 plausible.
+network rewiring,1,M38,"Opinion-driven topology rewiring, not conduct-based."
+network topology design,1,M38,Network topology.
+newcomer identity dues,1,M04,Costly new identities.
+nonmember market penalty,1,M13,Climate club tariffs.
+norm-setting message board,1,M58,Board publishes norms.
+observe and record conduct,9,M01,Monitoring/audit of conduct.
+ostracism of defectors,1,M10,Disconnect via network rewiring policy.
+participatory resource allocation,1,M42,Participatory budgeting vote.
+partner choice and severance,1,M10,Partner choice.
+pay for verified discoveries,1,M48,Bug bounty.
+peer agreed sanctions,1,C02,"Covenants with a sword: communication, agreed sanctions."
+peer conditional reward,5,M21,Peer reward.
+peer cost imposition,7,M14,Peer punishment.
+peer norm pressure,1,M18,Peer pressure.
+peer norm sanctions,1,M14,Peer sanctions by age-mates.
+peer review and public scrutiny,1,M06,Peer review of states.
+peer territorial exclusion,1,M13,Harbor gangs territoriality.
+peer-information exposure,1,M66,Feedback on peers' confidence/behavior.
+penalty for noncompliant traffic,1,M16,Routers detect and penalize noncompliant flows (hint M58 overridden).
+permanent access ban,1,M08,Deplatforming.
+pool resources for mutual support,2,M63,Pooling / bail fund.
+preplay communication,2,M33,Cheap talk.
+proactive content restriction,1,M34,Proactive ex ante content restriction (hint M62 overridden).
+prune compromised communication edges,1,M10,G-Safeguard edge pruning example; M09 plausible.
+public announcement commitment,1,M33,Public intent announcement.
+public append-only record,1,M03,Certificate Transparency.
+public conduct disclosure,2,M01,Moderator discloses each agent's actions; M66 plausible.
+public conduct reputation,3,M05,Public reputation of conduct.
+public disapproval signal,1,M18,Disapproval points.
+public judgment record,1,M05,Posting judgments as reputation record; C11 context.
+public nonbinding pledge,1,M33,Public pledge.
+public record of conduct,33,M01,Definition: monitoring/auditing creates evidence of conduct.
+public record of past conduct,28,M05,Persistent reputation record.
+public reputation conditioning,1,M40,Condition cooperation on reputation.
+publicize violation,1,M18,Naming and shaming.
+publicize vulnerability information,1,M18,Vulnerability disclosure.
+punish failed enforcement,1,M49,Metanorms.
+punish failure to enforce,1,M49,Metanorms.
+quorum-based replication,1,M43,PBFT quorum.
+quota and adaptive throttling,1,M36,Quotas/adaptive throttling example.
+rank based team rewards,1,M26,Team tournaments.
+rank-contingent prize,1,M26,Rank-order tournament.
+rate limit access,1,M36,429 rate limit.
+reciprocal contribution access,1,M39,Tit-for-tat choking reciprocates uploads; M10 plausible.
+recommendation-based exposure nudge,1,M38,Recommender shapes who interacts.
+reconciliation after harm,1,M55,Gacaca reconciliation.
+redesign reward to favor contribution,1,M64,Redesigned public-goods reward example (hint M33 overridden).
+refund deposit upon compliant return,1,M28,Deposit-refund example; C10 also plausible.
+remove agents temporarily after attack,1,M09,Tag-out beam temporary removal (hint M01 overridden).
+remove or avoid uncooperative partners,3,M10,Definition: deny access or change partners by conduct.
+reporting linked incentives,1,C09,"Fines, leniency and whistleblower rewards package."
+reputation based exclusion,2,M10,Partners excluded based on reputation.
+reputation based partner selection,1,M10,Partner selection by reputation (hint M07 overridden).
+reputation conditioned cooperation,1,M40,Cooperation conditioned on reputation; M05 plausible.
+reputation conditioned rewards,1,M12,Terms conditioned on reputation; M05 plausible.
+reputation penalty on sales,1,M12,CARP reputation penalty.
+reputation threshold for access,1,M12,Spam-rate threshold example (hint M04 overridden).
+reputation-based partner selection,1,M10,Partner selection by reputation (hint M07 overridden).
+reputation-conditioned aid,2,M40,Image scoring.
+reputation-earned permissions,1,M12,Privileges by reputation.
+resource-use cap,2,M36,Catch caps (hint M42 overridden).
+restrict access after conduct,3,M09,Access cut off after conduct; M08 plausible.
+restrict permitted actions ex ante,8,M34,Ex ante action restriction.
+restrictive quality control,1,M56,Reverts/rejection tools.
+review and reverse erroneous decisions,1,M54,False-positive correction (hint M62 overridden).
+reward contribution or performance,9,M22,Umbrella: payment for contribution/performance.
+reward truthful conduct and penalize falsehood,2,M64,Augur REP reporting example.
+rewarded violation reporting,1,M48,Qui tam.
+role specification and verification,1,M58,Written role specs; M34 plausible.
+rotating access allocation,1,M37,Rotational lottery.
+rotating reciprocal contributions,1,M63,ROSCA.
+runtime rule enforcement,1,M35,Governance-as-a-Service.
+sanctioning institution,1,M45,Choice of sanctioning institution.
+score-based strategy reproduction,1,M62,Evolutionary tournament.
+select or rewire partners,1,M10,Partner selection (hint M42 overridden).
+self-defeating attack cost,1,M25,Stake aligns attacker payoff with system.
+self-funded abstinence deposit,1,M28,Deposit contract (hint M22 overridden).
+set receiver action for failed authentication,1,M04,DMARC policy example.
+shared ownership and profit sharing,1,M25,Ownership and profit shares.
+signed transaction commitment,1,M29,Signed mandates bind transaction; M34/M03 plausible.
+simultaneous review reveal,1,M05,Feedback redesign example.
+specify delegation boundaries,1,M34,Delegation specification bounds subagent task.
+stable centralized matching,1,M65,Deferred acceptance matching.
+stake forfeiture on misconduct,1,M28,Slashed deposits.
+stake-based alignment,1,M25,Skin in the game (PoS).
+stake-weighted voting,1,M42,Token-holder voting on rules.
+standardize sanction decisions,1,M16,Standardized sanction schedules (hint M27 overridden).
+state rollback,1,M56,Commit/revert rollback.
+success-biased imitation,2,M62,Fermi imitation.
+tag-out exclusion,1,M09,Tag-out beam.
+tax and redistribution,1,M17,AI Economist tax planner.
+tax-message allocation rule,1,M64,Groves-Ledyard style mechanism.
+temporary exclusion,1,M09,Licence suspension.
+third party dispute adjudication,1,M51,Debate judged by adjudicator.
+third party dispute mediation,2,M52,Mediator agent.
+third party observation,1,M01,Third-party observation of conduct.
+third party resolves disputes,8,M51,Third-party dispute resolution umbrella.
+third-party dispute ruling,1,M51,Arbitration Committee.
+third-party mediation,3,M52,Mediation.
+third-party punishment,1,M15,Third-party punishment.
+threshold switched reward and penalty,1,M17,Central incentive adjusts subsidy/fine to state; C10 plausible.
+threshold-contingent refund,1,M32,Provision point money-back.
+thresholded agent termination,1,M08,Nonconforming agents terminated (hint M04 overridden).
+token-holder rulemaking,1,M42,Token-holder proposals and votes.
+trajectory risk escrow,1,M36,Risk budget debited acts as cap (hint M28 overridden).
+transparent harvest reporting,2,M66,Agents told others' harvests and resource state.
+universalization prompt,3,M59,Universalization prompting.
+validator participation reward,1,M22,Staking reward.
+validator reward and penalty,1,C22,Validator rewards and penalties: proof-of-stake validation.
+validator rewards and penalties,1,C22,Validator rewards and penalties: proof-of-stake validation.
+verbal peer criticism,1,M18,Verbal disapproval.
+verified-work contingent payment,1,M31,Verify-then-Pay.
+verify identity or conduct,2,M04,Verifiable agent identity registry.
+voluntary future commitment,1,M30,Markov Commitment Games.
+voted governance constitution,1,M42,Majority vote on constitution.
+warning before escalation,1,M27,Warning as first ladder step.
+warrant backed performance,1,M19,Warrant enforcement example (hint M12 overridden).
+weight many small contributions,1,M64,Quadratic funding.
+weight messages by confidence,1,M43,CP-WBFT.
+worker policing,1,M56,Worker policing example.

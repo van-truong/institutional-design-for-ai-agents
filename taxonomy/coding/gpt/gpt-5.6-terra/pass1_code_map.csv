@@ -1,0 +1,335 @@
+open_code,n_instances,mechanism_id_or_NEW,rationale
+Byzantine-robust answer aggregation,1,M43,Robust aggregation & quorum lever; matches pass-2 coding.
+access conditional on compliance,1,M12,Access & terms conditioned on record lever; matches pass-2 coding.
+adaptive backoff after congestion,1,M41,Group-conditional cooperation lever; matches pass-2 coding.
+adaptive external incentives,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+adaptive punishment for defection,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+adaptive tax on harmful action,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+adjust agent memory depth,1,PHENOMENON,"Varying memory depth is an experimental parameter, not a cooperation lever."
+adjust decision randomness,1,PHENOMENON,"Sampling temperature is an experimental parameter affecting convention formation, not a lever."
+allocate budget by participation,1,M42,Collective choice of rules lever; matches pass-2 coding.
+allocate equal service shares,1,M36,Usage caps & quotas lever; matches pass-2 coding.
+allocate through central auction,1,M65,Market & matching allocation lever; matches pass-2 coding.
+appeal and error correction,1,M54,Appeals & error correction lever; matches pass-2 coding.
+appeal of automated decision,1,M54,Appeals & error correction lever; matches pass-2 coding.
+appeal sanction decisions,1,M54,Appeals & error correction lever; matches pass-2 coding.
+assign accident liability,1,M19,Liability for harm lever; matches pass-2 coding.
+assign decentralized reputations,1,M05,Reputation records & scores lever; matches pass-2 coding.
+attach public fact checks,1,M06,Peer evaluation & review lever; matches pass-2 coding.
+attributable contribution attestation,1,M04,Identity & attribution lever; matches pass-2 coding.
+authenticated access control with audit,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+authenticated delegated access,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+authorize system interruption,1,M35,Runtime interception & interruption lever; matches pass-2 coding.
+automated failure attribution,1,M57,Failure attribution & incident analysis lever; matches pass-2 coding.
+automatically enforced conditional transfer,1,M29,Binding contracts lever; matches pass-2 coding.
+automatically execute conditions,1,M31,Escrow & verify-then-pay lever; matches pass-2 coding.
+bid-based task allocation,1,M64,Incentive-compatible mechanisms lever; matches pass-2 coding.
+binary exclusion list,1,M11,Shared blocklists & revocation lever; matches pass-2 coding.
+bind conditional transfers,2,M29,Binding contracts lever; matches pass-2 coding.
+bind negotiated agreements,1,M29,Binding contracts lever; matches pass-2 coding.
+bind signed transaction mandates,1,M29,Binding contracts lever; matches pass-2 coding.
+binding conditional transfer contract,2,M29,Binding contracts lever; matches pass-2 coding.
+bonded challenge of claims,1,M53,Bonded challenge lever; matches pass-2 coding.
+budgeted runtime audit scheduling,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+build dense civic networks,1,M38,Interaction structure lever; matches pass-2 coding.
+calibrate collective decisions,1,M43,Robust aggregation & quorum lever; matches pass-2 coding.
+cap on per-agent resource use,2,M36,Usage caps & quotas lever; matches pass-2 coding.
+cap per-group resource use,1,M36,Usage caps & quotas lever; matches pass-2 coding.
+central identity certification,1,M04,Identity & attribution lever; matches pass-2 coding.
+centralized matching rule,1,M65,Market & matching allocation lever; matches pass-2 coding.
+certified agent directory,1,M04,Identity & attribution lever; matches pass-2 coding.
+choose among cooperative partners,1,M10,Partner choice & tie severing lever; matches pass-2 coding.
+choose cooperative interaction partners,1,M10,Partner choice & tie severing lever; matches pass-2 coding.
+choose interaction partners,1,M10,Partner choice & tie severing lever; matches pass-2 coding.
+choose partners by reputation,1,M10,Partner choice & tie severing lever; matches pass-2 coding.
+choose sanctioning institution,1,M45,Institutional choice & exit lever; matches pass-2 coding.
+codified conduct standards,1,M58,Explicit norms & codes of conduct lever; matches pass-2 coding.
+collective enforcement against dominance,1,M50,Reverse dominance hierarchy: collective check on would-be dominants (codebook M50 example).
+collective liability for default,1,M20,Collective liability lever; matches pass-2 coding.
+collective monitoring and sanctions,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+collective override of protocol outcome,1,M56,Undoing deviation's effects lever; matches pass-2 coding.
+collective rule-making and vote,1,M42,Collective choice of rules lever; matches pass-2 coding.
+collective rulemaking,5,M42,Members make the rules collectively.
+collectively adopt governance rules,1,M42,Collective choice of rules lever; matches pass-2 coding.
+collectively adopt rules,1,M42,Collective choice of rules lever; matches pass-2 coding.
+collectively approve sanctions,1,M42,Collective choice of rules lever; matches pass-2 coding.
+collectively authored governance rules,1,M42,Collective choice of rules lever; matches pass-2 coding.
+collectively chosen legal sanction,1,M42,Collective choice of rules lever; matches pass-2 coding.
+collectively chosen peer sanctions,1,C02,Covenants with a sword: communication plus agreed peer sanctions.
+combine reputation evidence,1,M05,Reputation records & scores lever; matches pass-2 coding.
+compensating transaction rollback,1,M56,Undoing deviation's effects lever; matches pass-2 coding.
+competence-based task outsourcing,1,M65,Market & matching allocation lever; matches pass-2 coding.
+compliance support and review,1,M67,Managerial model: help to comply via capacity-building rather than sanctions.
+computed reputation score,1,M05,Reputation records & scores lever; matches pass-2 coding.
+condition help on generosity,1,M39,Direct reciprocity lever; matches pass-2 coding.
+condition help on observed conduct,1,M40,Indirect reciprocity lever; matches pass-2 coding.
+conditional material incentives,3,C03,Rewards and punishments together conditional on conduct: carrot and stick.
+conditional reciprocal response,5,M39,Direct reciprocity lever; matches pass-2 coding.
+conditional reintegration after exclusion,1,M55,Restitution & reintegration lever; matches pass-2 coding.
+conditionally reward validators,1,M22,Validators paid for honest verified behavior; staking reward.
+configure market institutions,1,M65,Market & matching allocation lever; matches pass-2 coding.
+consensus veto on changes,1,M42,Collective choice of rules lever; matches pass-2 coding.
+cooperation-favoring reward redesign,1,M64,Incentive-compatible mechanisms lever; matches pass-2 coding.
+cooperative default option,1,M60,Defaults & choice architecture lever; matches pass-2 coding.
+coordinate channel access,1,M37,Rotation & turn-taking lever; matches pass-2 coding.
+coordinate resource schedules,1,M37,Rotation & turn-taking lever; matches pass-2 coding.
+correlated stake forfeiture,1,M28,"Deposits, bonds & stakes lever; matches pass-2 coding."
+cost imposed for deviation,28,M14,Generic cost-for-deviation umbrella; plurality peer punishment.
+costly peer penalties,7,M14,Peer punishment lever; matches pass-2 coding.
+costly public commitment,1,M30,Self-commitment devices lever; matches pass-2 coding.
+costly punishment of defection,1,M14,"Definition: peers pay a cost to punish defection; peer punishment, not reciprocity."
+costly punishment of unfairness,1,M15,Third-party punishment lever; matches pass-2 coding.
+costly self-binding commitment,1,M30,Self-commitment devices lever; matches pass-2 coding.
+credible punishment for breach,1,M16,Centralized (pool) sanctioning & fines lever; matches pass-2 coding.
+credit payment for network forwarding,1,M63,"Mutual aid, pooling & mutual credit lever; matches pass-2 coding."
+cross-group validate fact checks,1,M06,Peer evaluation & review lever; matches pass-2 coding.
+crowdsourced violation adjudication,1,M51,Third-party adjudication lever; matches pass-2 coding.
+cryptographic fault attribution,1,M57,Failure attribution & incident analysis lever; matches pass-2 coding.
+decentralized community governance,1,M46,Nested & adaptive rule-making lever; matches pass-2 coding.
+decentralized ethical consensus,1,M42,Collective choice of rules lever; matches pass-2 coding.
+defection-contingent punishment,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+delegate peer moderation,1,M06,Peer evaluation & review lever; matches pass-2 coding.
+dense reciprocal network,1,M38,Interaction structure lever; matches pass-2 coding.
+deposit forfeited on breach,2,M30,Self-commitment devices lever; matches pass-2 coding.
+deposit refunded on return,1,C10,Deposit-refund explicitly described as tax on disposal plus subsidy for return.
+detect group collusion,1,M02,Communication & internal-state oversight lever; matches pass-2 coding.
+discard extreme inputs,1,M43,Robust aggregation & quorum lever; matches pass-2 coding.
+elect bounded leadership,1,M44,Legitimate & elected authority lever; matches pass-2 coding.
+elect democratic compliance monitor,1,M44,Legitimate & elected authority lever; matches pass-2 coding.
+elected group leadership,1,M44,Legitimate & elected authority lever; matches pass-2 coding.
+enable pre-play communication,2,M33,Pre-play communication & pledges lever; matches pass-2 coding.
+enforce access-control policies,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+enforce compliance state transitions,1,M27,Compliance state machine escalating warning to suspension (governance graph state machine example).
+enforce content quality rules,1,M56,Undoing deviation's effects lever; matches pass-2 coding.
+enforce permitted control flows,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+enforce sender reputation threshold,1,M12,Access & terms conditioned on record lever; matches pass-2 coding.
+enforce transaction warranties,1,M19,Warrant enforcement makes seller bear cost of false claims (M19 example).
+enforceable bilateral contract,1,M29,Binding contracts lever; matches pass-2 coding.
+escalate sanctions by violation,2,M27,Tiered fines escalating with violations: graduated sanctions.
+escalating account blocking,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+escalating account restrictions,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+escalating audit and arbitration,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+escalating delay after failure,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+escalating fine and suspension,2,M27,Increasingly severe fines then suspension: graduated sanctions (central fines implied).
+escalating fines and suspension,1,M27,Increasingly severe fines then suspension: graduated sanctions (central fines implied).
+escalating sanctions for violations,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+escrowed service settlement,1,M31,Escrow & verify-then-pay lever; matches pass-2 coding.
+evolutionary selection of strategies,1,M62,Social learning & strategy selection lever; matches pass-2 coding.
+exclude based on gossip,1,C05,Gossip about partners plus group exclusion: gossip and ostracism.
+expiring access right,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+explain rule enforcement,1,M58,Explicit norms & codes of conduct lever; matches pass-2 coding.
+explicit behavioral rules,1,M58,Explicit norms & codes of conduct lever; matches pass-2 coding.
+express peer disapproval,1,M18,Shaming & social disapproval lever; matches pass-2 coding.
+externality tax and allowance,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+externally halt agent actions,1,M35,External kill switch halting agent actions (M35 example).
+filter antisocial punishment,1,M50,Checks on sanctioners lever; matches pass-2 coding.
+fine for detected violation,1,M16,Centralized (pool) sanctioning & fines lever; matches pass-2 coding.
+fixed cost on violation,1,M16,Centralized (pool) sanctioning & fines lever; matches pass-2 coding.
+fixed interaction network,2,M38,Interaction structure lever; matches pass-2 coding.
+forfeit escrow on breach,7,M28,"Deposits, bonds & stakes lever; matches pass-2 coding."
+forfeit funds on breach,1,M28,Breach remedy transaction: channel funds forfeited on breach (M28 example).
+forfeit relationship-specific rents,1,M28,"Deposits, bonds & stakes lever; matches pass-2 coding."
+fund centralized sanctions,1,M16,Centralized (pool) sanctioning & fines lever; matches pass-2 coding.
+generalized reciprocal contribution,1,M63,"Mutual aid, pooling & mutual credit lever; matches pass-2 coding."
+global reputation score,1,M05,Code names a computed global reputation score (EigenTrust); record/score lever.
+gossip-based reputation and exclusion,2,M07,Gossip lever; matches pass-2 coding.
+govern shared memory selection,1,M46,Nested & adaptive rule-making lever; matches pass-2 coding.
+graduated service degradation,1,M27,Graduated & proportional sanctions lever; matches pass-2 coding.
+hard action constraint filtering,1,M35,Runtime interception & interruption lever; matches pass-2 coding.
+hide reciprocal feedback,1,M05,Reputation records & scores lever; matches pass-2 coding.
+identifiable participant conduct,1,M04,Identity & attribution lever; matches pass-2 coding.
+imitate successful strategies,1,M62,Social learning & strategy selection lever; matches pass-2 coding.
+imitate successful strategy,3,M62,Social learning & strategy selection lever; matches pass-2 coding.
+immunity for first disclosure,1,M47,Leniency for self-reporting lever; matches pass-2 coding.
+impose expected damages,1,M19,Liability for harm lever; matches pass-2 coding.
+incentive-compatible allocation rule,3,M64,Allocation rules making cooperation or truth-telling optimal; instances mixed.
+independent appeal adjudication,1,M54,Appeals & error correction lever; matches pass-2 coding.
+individual resource quota,1,M36,Usage caps & quotas lever; matches pass-2 coding.
+induce confirmation bias,1,PHENOMENON,"Induced cognitive bias studied for opinion dynamics, not a cooperation lever."
+infer shared norms from enforcement,1,M61,Norm learning lever; matches pass-2 coding.
+inspection for compliance transparency,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+institutional design principles,2,C01,Ostrom design principles bundle.
+institutional self-selection,3,M45,Institutional choice & exit lever; matches pass-2 coding.
+insured stake for agent conduct,1,M28,"Deposits, bonds & stakes lever; matches pass-2 coding."
+intercept prohibited actions,1,M35,Runtime interception & interruption lever; matches pass-2 coding.
+internalize moral rewards,1,M59,Instilled prosocial dispositions & reasoning lever; matches pass-2 coding.
+internalized norm for cooperation,1,M58,Explicit norms & codes of conduct lever; matches pass-2 coding.
+intrinsic reward for reputation use,1,M40,Indirect reciprocity lever; matches pass-2 coding.
+label message source,1,M04,Identity & attribution lever; matches pass-2 coding.
+learn authoritative norms,1,M61,Norm learning lever; matches pass-2 coding.
+learn from public sanctions,1,M61,Norm learning lever; matches pass-2 coding.
+learn local reputation assignments,1,M05,Reputation records & scores lever; matches pass-2 coding.
+learn norms from public sanctions,1,M61,Norm learning lever; matches pass-2 coding.
+learn reputation-based interaction,1,M05,Reputation records & scores lever; matches pass-2 coding.
+learn reputation-based policy,1,M05,Reputation records & scores lever; matches pass-2 coding.
+learn shared institutional norms,1,M61,Norm learning lever; matches pass-2 coding.
+learning incentive for imitation,1,M62,Social learning & strategy selection lever; matches pass-2 coding.
+least-privilege access control,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+limit repeated reversal actions,1,M36,Three-revert rule caps rate of an action per period.
+limited third-party observability,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+log agent activity,1,M04,Identity & attribution lever; matches pass-2 coding.
+make actors identifiable,1,M04,Identity & attribution lever; matches pass-2 coding.
+make protocol cheating detectable,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+mandatory entry requirement,1,M12,Access & terms conditioned on record lever; matches pass-2 coding.
+mandatory operational checklist,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+match dispersed contributions,2,M64,Incentive-compatible mechanisms lever; matches pass-2 coding.
+mediate disputes,1,M52,Mediation lever; matches pass-2 coding.
+mediate marketplace disputes,1,M52,Mediation lever; matches pass-2 coding.
+milestone-based recognition reward,1,M23,Status & prestige lever; matches pass-2 coding.
+minimal reward redistribution,1,M25,Outcome sharing & aligned stakes lever; matches pass-2 coding.
+monitor and isolate colluders,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+monitor and isolate misbehavior,1,C33,"Sentinel agents monitor, keep audit records and isolate misbehaving agents."
+monitor conduct for deviation,9,M01,Monitoring conduct to detect deviation.
+monitor latent coordination signals,1,M02,Communication & internal-state oversight lever; matches pass-2 coding.
+multi-source partner reputation,1,M05,Reputation records & scores lever; matches pass-2 coding.
+mutual aid risk pool,1,M63,"Mutual aid, pooling & mutual credit lever; matches pass-2 coding."
+mutual peer accountability,1,M18,Peers gently call each other to account: informal social pressure.
+nested rulemaking authority,1,M46,Nested & adaptive rule-making lever; matches pass-2 coding.
+norm creation and diffusion,1,M61,Norm learning lever; matches pass-2 coding.
+observe third-party interactions,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+outcome-contingent payment contract,1,M22,Payment for cooperation lever; matches pass-2 coding.
+output-contingent pay,1,M22,Payment for cooperation lever; matches pass-2 coding.
+partner choice and reciprocity,1,M39,Direct reciprocity lever; matches pass-2 coding.
+payment conditional on conservation,1,M22,Payment for cooperation lever; matches pass-2 coding.
+payment conditional on delivery,1,M31,Escrow & verify-then-pay lever; matches pass-2 coding.
+peer compliance review,1,M06,Peer evaluation & review lever; matches pass-2 coding.
+peer fine for defection,1,M14,Peer punishment lever; matches pass-2 coding.
+peer fine for low contribution,1,M14,Peer punishment lever; matches pass-2 coding.
+peer fine for norm violation,1,M14,Peer punishment lever; matches pass-2 coding.
+peer normative pressure,1,M18,Shaming & social disapproval lever; matches pass-2 coding.
+peer policing of reproduction,1,M56,Worker policing removes worker-laid eggs so deviation yields nothing (M56 example).
+peer punishment of defection,1,M14,Peer punishment lever; matches pass-2 coding.
+peer punishment of norm violation,1,M14,Peer punishment lever; matches pass-2 coding.
+peer rewards after cooperation,3,M21,Peer reward & gifting lever; matches pass-2 coding.
+peer rewards and sanctions,1,C03,Responder may reward or punish: carrot and stick.
+peer sanction for default,1,M14,Social sanctions by ROSCA members against defaulters; peer punishment.
+persistent agent identity credential,1,M04,Identity & attribution lever; matches pass-2 coding.
+persistent private agent memory,1,PHENOMENON,"Memory architecture is an agent design parameter studied for emergence, not a lever."
+planner-assigned rewards and penalties,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+platform reputation ratings,1,M05,Reputation records & scores lever; matches pass-2 coding.
+police reproductive deviation,1,M56,Worker policing removes worker-laid eggs so deviation yields nothing (M56 example).
+pre-agreed breach penalty,1,M29,Binding contracts lever; matches pass-2 coding.
+pre-play communication,2,M33,Pre-play communication & pledges lever; matches pass-2 coding.
+priced unilateral contract exit,1,M29,Binding contracts lever; matches pass-2 coding.
+processing cost per request,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+prompt universalized reasoning,1,M59,Instilled prosocial dispositions & reasoning lever; matches pass-2 coding.
+prompted social deliberation,1,M59,Instilled prosocial dispositions & reasoning lever; matches pass-2 coding.
+protocol incentive adjustment,1,M64,Protocol changed so honest mining is incentive compatible.
+protocol-based trust constraints,1,M64,System-level protocols designed to make lying irrational.
+public commitment announcement,2,M33,Pre-play communication & pledges lever; matches pass-2 coding.
+public disclosure of resource use,2,M01,"Moderator discloses each agent's harvest; conduct transparency, not pledges."
+public promise before action,2,M33,Pre-play communication & pledges lever; matches pass-2 coding.
+public record of past conduct,12,M05,Public persistent record of past conduct.
+public sanction norm learning,1,M61,Norm learning lever; matches pass-2 coding.
+public verifiable issuance log,1,M03,Tamper-evident records lever; matches pass-2 coding.
+publicize resource use,2,M01,"Moderator discloses each agent's harvest; conduct transparency, not pledges."
+publicize security vulnerabilities,1,M18,Shaming & social disapproval lever; matches pass-2 coding.
+publicize violations,1,M18,Shaming & social disapproval lever; matches pass-2 coding.
+publish certified performance records,1,M05,Reputation records & scores lever; matches pass-2 coding.
+publish revoked credential list,1,M11,Shared blocklists & revocation lever; matches pass-2 coding.
+publish vulnerability reporting channel,1,M48,Rewards for reporting others lever; matches pass-2 coding.
+punish enforcement failures,1,M49,Meta-norms lever; matches pass-2 coding.
+punish to induce cooperation,1,M14,Peer punishment lever; matches pass-2 coding.
+quorum agreement rule,2,M43,Robust aggregation & quorum lever; matches pass-2 coding.
+rank-based team rewards,1,M26,Relative-performance incentives lever; matches pass-2 coding.
+receiver-attested action receipt,1,M03,Tamper-evident records lever; matches pass-2 coding.
+reciprocal community currency,1,M63,"Mutual aid, pooling & mutual credit lever; matches pass-2 coding."
+reciprocal response strategy,1,M39,Direct reciprocity lever; matches pass-2 coding.
+reciprocate service provision,1,M39,Direct reciprocity lever; matches pass-2 coding.
+reciprocate upload with service,1,M39,Direct reciprocity lever; matches pass-2 coding.
+refund bonus on failed threshold,1,M32,Assurance contracts lever; matches pass-2 coding.
+refuse service to listed source,1,M11,Shared blocklists & revocation lever; matches pass-2 coding.
+relationship severance for defection,1,M10,Network rewiring: severing links to defectors.
+remove deviator from group,11,M08,Removing deviator from group.
+remove intruder access,1,M13,Membership boundaries lever; matches pass-2 coding.
+remove violating community,1,M08,Expulsion lever; matches pass-2 coding.
+repair norms through apology,1,M55,Restitution & reintegration lever; matches pass-2 coding.
+reputation-based cooperation learning,1,M40,Indirect reciprocity lever; matches pass-2 coding.
+reputation-based exclusion,1,M12,"CONFIDANT: routing access conditioned on reputation, isolating misbehavers (M12 example)."
+reputation-based indirect reciprocity,1,M40,Indirect reciprocity lever; matches pass-2 coding.
+reputation-based partner exclusion,1,M40,Indirect reciprocity lever; matches pass-2 coding.
+reputation-based partner selection,1,M10,Definition: form or sever links based on reputation; partner choice.
+reputation-based task allocation,1,M12,Task allocation (access) conditioned on reputation.
+reputation-conditioned future benefit,1,M40,Later donations depend on reputation from contributions to others: indirect reciprocity.
+reputation-linked access control,1,M12,Access & terms conditioned on record lever; matches pass-2 coding.
+reputation-linked sales restriction,1,M12,Access & terms conditioned on record lever; matches pass-2 coding.
+required congestion backoff,1,M41,Group-conditional cooperation lever; matches pass-2 coding.
+resample suspicious actions,1,M35,Runtime interception & interruption lever; matches pass-2 coding.
+resilient peer communication network,1,M63,"Mutual aid, pooling & mutual credit lever; matches pass-2 coding."
+restoration of inflicted harm,1,M55,Restitution & reintegration lever; matches pass-2 coding.
+restore relationships after harm,1,M55,Restitution & reintegration lever; matches pass-2 coding.
+restrict permitted actions ex ante,11,M34,Ex ante restriction of permitted actions.
+restrict permitted interactions,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+retaliate against theft,1,M14,Peer punishment lever; matches pass-2 coding.
+retaliation against punishers,1,M50,Counter-punishment against punishers (M50 example).
+revoke trusted credential issuer,1,M08,Expulsion lever; matches pass-2 coding.
+reward conditional on conduct,13,M22,Generic reward umbrella; plurality payment for cooperation.
+reward consensus reporting,1,M64,Incentive-compatible mechanisms lever; matches pass-2 coding.
+reward first self-report,1,M47,Leniency for self-reporting lever; matches pass-2 coding.
+reward self-reporting,1,M47,Reduced penalties or rewards for self-reporting cartel members: leniency.
+reward violation reporting,1,M48,Rewards for reporting others lever; matches pass-2 coding.
+reward vulnerability reporting,1,M48,Rewards for reporting others lever; matches pass-2 coding.
+role-differentiating prompts,1,M59,Instilled prosocial dispositions & reasoning lever; matches pass-2 coding.
+rotate resource access,1,M37,Rotation & turn-taking lever; matches pass-2 coding.
+sandbox untrusted code,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+sandboxed agent economy,1,C35,Sandboxed agent economy configuration.
+scoped delegated credentials,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+select collective constitution,1,M46,Nested & adaptive rule-making lever; matches pass-2 coding.
+sender authentication policy,1,M04,Identity & attribution lever; matches pass-2 coding.
+separate oversight authority,1,M50,Checks on sanctioners lever; matches pass-2 coding.
+sever ties by reputation,1,M10,Severing ties based on reputation; partner choice.
+share penalty across group,1,M20,Collective liability lever; matches pass-2 coding.
+share reputational gossip,1,M07,Agents share gossip about third parties.
+share reputational warnings,1,M07,Gossip lever; matches pass-2 coding.
+shared communication,4,M33,Mostly non-binding pre-play messages; instances heterogeneous.
+shared ownership of returns,1,M25,Outcome sharing & aligned stakes lever; matches pass-2 coding.
+shared strategy prompt optimization,1,PHENOMENON,"Meta-optimized shared prompts produce collusion; studied phenomenon, not a governance lever."
+signal and enforce rate limit,1,M36,Usage caps & quotas lever; matches pass-2 coding.
+signed agent capability registry,1,M04,Identity & attribution lever; matches pass-2 coding.
+simultaneously reveal feedback,1,M05,Reputation records & scores lever; matches pass-2 coding.
+smart-contract task coordination,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+social disapproval for noncontribution,1,M18,Shaming & social disapproval lever; matches pass-2 coding.
+stable centralized matching,1,M65,Market & matching allocation lever; matches pass-2 coding.
+stake forfeited for equivocation,2,M28,"Deposits, bonds & stakes lever; matches pass-2 coding."
+stake forfeiture for violation,1,M28,"Deposits, bonds & stakes lever; matches pass-2 coding."
+standardize sanction decisions,1,M16,Centralized (pool) sanctioning & fines lever; matches pass-2 coding.
+standardized agent authorization claims,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+standardized incident reporting,1,M57,Failure attribution & incident analysis lever; matches pass-2 coding.
+status reward for contribution,1,M23,Status & prestige lever; matches pass-2 coding.
+structure interaction network,1,M38,Interaction structure lever; matches pass-2 coding.
+structured participation rule,13,PHENOMENON,Vacuous catch-all over heterogeneous instances; no single lever identifiable.
+structured task delegation,1,M34,Ex ante action restriction & scoped permissions lever; matches pass-2 coding.
+subsidize public contributions,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+swift certain breach sanction,1,M16,Centralized (pool) sanctioning & fines lever; matches pass-2 coding.
+switch away from deviator,1,M10,Partner switching after cheating; tie severing rather than punishment.
+switch incentives by threshold,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+tailored institutional rules,1,M46,Nested & adaptive rule-making lever; matches pass-2 coding.
+tamper-evident audit trail,2,M03,Tamper-evident records lever; matches pass-2 coding.
+tariff nonparticipants,1,M13,Membership boundaries lever; matches pass-2 coding.
+tax on harmful externality,1,M17,Externality pricing & central incentive adjustment lever; matches pass-2 coding.
+temporary activity restriction,1,M09,Temporary suspension & quarantine lever; matches pass-2 coding.
+temporary service cutoff after failures,1,M09,Temporary suspension & quarantine lever; matches pass-2 coding.
+third party adjudication,1,M51,Third-party adjudication lever; matches pass-2 coding.
+third party behavioral observation,1,M01,Conduct monitoring & transparency lever; matches pass-2 coding.
+third party mediation,3,M52,Mediation lever; matches pass-2 coding.
+third party punishment,1,M15,Third-party punishment lever; matches pass-2 coding.
+third-party debate adjudication,1,M51,Third-party adjudication lever; matches pass-2 coding.
+third-party dispute mediation,3,M52,Mediation lever; matches pass-2 coding.
+third-party dispute resolution,5,M51,Third party resolves disputes by ruling.
+third-party handling of violations,1,M58,Explicit norms & codes of conduct lever; matches pass-2 coding.
+third-party obligation clearing,1,M31,RAILS clearing: verify obligation met before settlement (M31 example).
+threaten economic penalty,1,M14,Harmed party credibly threatens economic cost; no central authority.
+transfer rewards to peers,1,M21,Peer reward & gifting lever; matches pass-2 coding.
+truthful reporting payment rule,1,M64,Incentive-compatible mechanisms lever; matches pass-2 coding.
+universalization prompt,2,M59,Instilled prosocial dispositions & reasoning lever; matches pass-2 coding.
+verified agent identity,1,M04,Identity & attribution lever; matches pass-2 coding.
+verified contribution-based rewards,1,M25,Outcome sharing & aligned stakes lever; matches pass-2 coding.
+visible peer performance,1,M18,Shaming & social disapproval lever; matches pass-2 coding.
+voluntarily commit to plans,1,M30,Self-commitment devices lever; matches pass-2 coding.
+voluntary centralized sanctioning group,1,M45,Institutional choice & exit lever; matches pass-2 coding.
+voluntary commitment device,1,M30,Self-commitment devices lever; matches pass-2 coding.
+voluntary future-plan commitment,1,M30,Self-commitment devices lever; matches pass-2 coding.
+voluntary peer reward transfer,1,M21,Peer reward & gifting lever; matches pass-2 coding.
+voluntary sanctioning institution,1,M45,Institutional choice & exit lever; matches pass-2 coding.
+weight messages by confidence,1,M43,Robust aggregation & quorum lever; matches pass-2 coding.
+withhold benefit from noncontributor,1,M39,Direct reciprocity lever; matches pass-2 coding.

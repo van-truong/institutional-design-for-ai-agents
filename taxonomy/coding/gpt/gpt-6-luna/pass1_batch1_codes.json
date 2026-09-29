@@ -1,0 +1,507 @@
+[
+  {
+    "code": "agent activity logging",
+    "definition": "Uses agent activity logging as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "aggregate reputation information",
+    "definition": "Uses aggregate reputation information as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "apology for norm repair",
+    "definition": "Uses apology for norm repair as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "appeal sanction decision",
+    "definition": "Uses appeal sanction decision as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "authorized agent interruption",
+    "definition": "Uses authorized agent interruption as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "automatic conditional execution",
+    "definition": "Uses automatic conditional execution as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "binding conditional transfers",
+    "definition": "Uses binding conditional transfers as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "blind reciprocal feedback",
+    "definition": "Uses blind reciprocal feedback as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "bond forfeited on breach",
+    "definition": "Uses bond forfeited on breach as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "bonded challenge of claimed outcome",
+    "definition": "Uses bonded challenge of claimed outcome as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "bounded elected authority",
+    "definition": "Uses bounded elected authority as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "cap extraction and membership",
+    "definition": "Uses cap extraction and membership as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "cap individual resource use",
+    "definition": "Uses cap individual resource use as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "cap shared resource use",
+    "definition": "Uses cap shared resource use as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "centralized auction allocation",
+    "definition": "Uses centralized auction allocation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "choose interaction partners",
+    "definition": "Uses choose interaction partners as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "collective liability for deviation",
+    "definition": "Uses collective liability for deviation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "collectively amend governance rules",
+    "definition": "Uses collectively amend governance rules as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "compliance transparency and support",
+    "definition": "Uses compliance transparency and support as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "conditional public good subsidy",
+    "definition": "Uses conditional public good subsidy as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "conditional reciprocal cooperation",
+    "definition": "Uses conditional reciprocal cooperation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "configure market allocation rules",
+    "definition": "Uses configure market allocation rules as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "contribute to enforcement fund",
+    "definition": "Uses contribute to enforcement fund as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "coordinate peer sanctions",
+    "definition": "Uses coordinate peer sanctions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "coordinated turn taking",
+    "definition": "Uses coordinated turn taking as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "credential and performance reputation",
+    "definition": "Uses credential and performance reputation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "cross perspective fact checking",
+    "definition": "Uses cross perspective fact checking as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "crowdsourced fact checking",
+    "definition": "Uses crowdsourced fact checking as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "cryptographic access control",
+    "definition": "Uses cryptographic access control as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "democratic payoff rule adoption",
+    "definition": "Uses democratic payoff rule adoption as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "dense network norm enforcement",
+    "definition": "Uses dense network norm enforcement as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "detect group collusion",
+    "definition": "Uses detect group collusion as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "distributed peer moderation",
+    "definition": "Uses distributed peer moderation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalate uncertain decisions",
+    "definition": "Uses escalate uncertain decisions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "exclude deviator from group",
+    "definition": "Uses exclude deviator from group as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "explain applicable norm",
+    "definition": "Uses explain applicable norm as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "external stop authority",
+    "definition": "Uses external stop authority as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "fair shared access scheduling",
+    "definition": "Uses fair shared access scheduling as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "filter extreme contributions",
+    "definition": "Uses filter extreme contributions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "first reporter leniency",
+    "definition": "Uses first reporter leniency as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "fixed cost on detected deviation",
+    "definition": "Uses fixed cost on detected deviation as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "forfeit collateral on breach",
+    "definition": "Uses forfeit collateral on breach as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "formalize conditional cooperation",
+    "definition": "Uses formalize conditional cooperation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "gossip based partner exclusion",
+    "definition": "Uses gossip based partner exclusion as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "govern shared memory updates",
+    "definition": "Uses govern shared memory updates as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "graduated penalty for deviation",
+    "definition": "Uses graduated penalty for deviation as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "graduated response to deviation",
+    "definition": "Uses graduated response to deviation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "institutional oversight and audit",
+    "definition": "Uses institutional oversight and audit as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "intrinsic norm based incentives",
+    "definition": "Uses intrinsic norm based incentives as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "learn norms from public sanctions",
+    "definition": "Uses learn norms from public sanctions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "liability for imposed harm",
+    "definition": "Uses liability for imposed harm as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "make cheating detectable",
+    "definition": "Uses make cheating detectable as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "market resource allocation rules",
+    "definition": "Uses market resource allocation rules as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "match contributions nonlinearly",
+    "definition": "Uses match contributions nonlinearly as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "nonmember market penalty",
+    "definition": "Uses nonmember market penalty as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "participatory resource allocation",
+    "definition": "Uses participatory resource allocation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "pay for verified discoveries",
+    "definition": "Uses pay for verified discoveries as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer agreed sanctions",
+    "definition": "Uses peer agreed sanctions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer conditional reward",
+    "definition": "Uses peer conditional reward as a field-neutral lever to shape cooperation.",
+    "n_instances": 5
+  },
+  {
+    "code": "peer cost imposition",
+    "definition": "Uses peer cost imposition as a field-neutral lever to shape cooperation.",
+    "n_instances": 7
+  },
+  {
+    "code": "peer norm pressure",
+    "definition": "Uses peer norm pressure as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer territorial exclusion",
+    "definition": "Uses peer territorial exclusion as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "preplay communication",
+    "definition": "Uses preplay communication as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "public announcement commitment",
+    "definition": "Uses public announcement commitment as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "public conduct disclosure",
+    "definition": "Uses public conduct disclosure as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "public conduct reputation",
+    "definition": "Uses public conduct reputation as a field-neutral lever to shape cooperation.",
+    "n_instances": 3
+  },
+  {
+    "code": "public disapproval signal",
+    "definition": "Uses public disapproval signal as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "public record of past conduct",
+    "definition": "Uses public record of past conduct as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "publicize violation",
+    "definition": "Uses publicize violation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "publicize vulnerability information",
+    "definition": "Uses publicize vulnerability information as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "punish failed enforcement",
+    "definition": "Uses punish failed enforcement as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "rank based team rewards",
+    "definition": "Uses rank based team rewards as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "rate limit access",
+    "definition": "Uses rate limit access as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reciprocal contribution access",
+    "definition": "Uses reciprocal contribution access as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reconciliation after harm",
+    "definition": "Uses reconciliation after harm as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reporting linked incentives",
+    "definition": "Uses reporting linked incentives as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation based exclusion",
+    "definition": "Uses reputation based exclusion as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "reputation based partner selection",
+    "definition": "Uses reputation based partner selection as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation conditioned cooperation",
+    "definition": "Uses reputation conditioned cooperation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation conditioned rewards",
+    "definition": "Uses reputation conditioned rewards as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation threshold for access",
+    "definition": "Uses reputation threshold for access as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "restrict permitted actions ex ante",
+    "definition": "Uses restrict permitted actions ex ante as a field-neutral lever to shape cooperation.",
+    "n_instances": 3
+  },
+  {
+    "code": "restrictive quality control",
+    "definition": "Uses restrictive quality control as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "rewarded violation reporting",
+    "definition": "Uses rewarded violation reporting as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "role specification and verification",
+    "definition": "Uses role specification and verification as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "rotating access allocation",
+    "definition": "Uses rotating access allocation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "runtime rule enforcement",
+    "definition": "Uses runtime rule enforcement as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "signed transaction commitment",
+    "definition": "Uses signed transaction commitment as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "simultaneous review reveal",
+    "definition": "Uses simultaneous review reveal as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "stable centralized matching",
+    "definition": "Uses stable centralized matching as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "standardize sanction decisions",
+    "definition": "Uses standardize sanction decisions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "third party dispute adjudication",
+    "definition": "Uses third party dispute adjudication as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "third party dispute mediation",
+    "definition": "Uses third party dispute mediation as a field-neutral lever to shape cooperation.",
+    "n_instances": 2
+  },
+  {
+    "code": "third party observation",
+    "definition": "Uses third party observation as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "threshold switched reward and penalty",
+    "definition": "Uses threshold switched reward and penalty as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "universalization prompt",
+    "definition": "Uses universalization prompt as a field-neutral lever to shape cooperation.",
+    "n_instances": 3
+  },
+  {
+    "code": "validator rewards and penalties",
+    "definition": "Uses validator rewards and penalties as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "voluntary future commitment",
+    "definition": "Uses voluntary future commitment as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "warrant backed performance",
+    "definition": "Uses warrant backed performance as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "weight many small contributions",
+    "definition": "Uses weight many small contributions as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  },
+  {
+    "code": "weight messages by confidence",
+    "definition": "Uses weight messages by confidence as a field-neutral lever to shape cooperation.",
+    "n_instances": 1
+  }
+]
