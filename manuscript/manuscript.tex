@@ -5,6 +5,9 @@
 \usepackage{placeins}
 \usepackage{xcolor}
 \usepackage{booktabs}
+\usepackage{colortbl}
+% Light rule between table rows, for readability.
+\newcommand{\rowline}{\arrayrulecolor{black!22}\specialrule{0.4pt}{2pt}{2pt}\arrayrulecolor{black}}
 \usepackage{array}
 \usepackage{multirow}
 \usepackage[inline]{enumitem}
@@ -292,12 +295,12 @@ An institution must perform seven functions (Table~\mbox{\ref{tab:functions}}): 
 \toprule
 \textbf{Function} & \textbf{Question it answers} & \textbf{Human analogue} & \textbf{LLM-agent analogue} \\
 \midrule
-Norms and protocols & What behavior is expected? & Social norms, professional rules, community guidelines & System prompts, constitutions, shared task protocols \\
-Monitoring & What behavior is observable? & Audits, inspections, peer review & Logs, provenance traces, tool-use records, monitor agents \\
-Reputation & How does past behavior affect future trust? & Gossip, prestige, trust networks & Trust scores, agent reliability histories, routing preferences \\
-Sanctions & What consequences follow behavior? & Warnings, fines, rewards, exclusion, restitution & Budget changes, tool restrictions, repair tasks, temporary removal \\
-Constraints & What actions are possible? & Quotas, access control, licensing & Rate limits, permissions, sandboxing, context limits \\
-Adjudication & Who decides what happened? & Courts, arbitration, mediation, appeals & Mediator agents, voting protocols, rule-based checkers, human review \\
+Norms and protocols & What behavior is expected? & Social norms, professional rules, community guidelines & System prompts, constitutions, shared task protocols \\ \rowline
+Monitoring & What behavior is observable? & Audits, inspections, peer review & Logs, provenance traces, tool-use records, monitor agents \\ \rowline
+Reputation & How does past behavior affect future trust? & Gossip, prestige, trust networks & Trust scores, agent reliability histories, routing preferences \\ \rowline
+Sanctions & What consequences follow behavior? & Warnings, fines, rewards, exclusion, restitution & Budget changes, tool restrictions, repair tasks, temporary removal \\ \rowline
+Constraints & What actions are possible? & Quotas, access control, licensing & Rate limits, permissions, sandboxing, context limits \\ \rowline
+Adjudication & Who decides what happened? & Courts, arbitration, mediation, appeals & Mediator agents, voting protocols, rule-based checkers, human review \\ \rowline
 Repair and reintegration & How is harm corrected? & Restorative justice, apology, restitution, re-entry & Memory cleanup, output correction, re-verification, restored privileges \\
 \bottomrule
 \end{tabular}
@@ -422,8 +425,8 @@ Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unif
 \toprule
 \textbf{Failure mode} & \textbf{Families exposed} & \textbf{Safeguards from the taxonomy} & \textbf{What to measure} \\
 \midrule
-The mechanism reframes the interaction (a fine is read as a price) & Incentive & Keep explicit norms and codes of conduct alongside any price; graduated and proportional sanctions rather than a flat fee & Contribution stability, including after the mechanism is removed \\
-The mechanism becomes an optimization target (reputation farming, visible but shallow cooperation) & Social, epistemic & Tamper-evident records; peer evaluation and review; oversight of communication and internal state, not only of scores & Gameability; false negative rate \\
+The mechanism reframes the interaction (a fine is read as a price) & Incentive & Keep explicit norms and codes of conduct alongside any price; graduated and proportional sanctions rather than a flat fee & Contribution stability, including after the mechanism is removed \\ \rowline
+The mechanism becomes an optimization target (reputation farming, visible but shallow cooperation) & Social, epistemic & Tamper-evident records; peer evaluation and review; oversight of communication and internal state, not only of scores & Gameability; false negative rate \\ \rowline
 The mechanism creates an authority position (a monitor that over-detects, a captured mediator) & Epistemic, constraint & Checks on sanctioners; appeals and error correction; legitimate or elected authority; rotation of roles; runtime interruption by humans & Authority capture; false punishment rate; human override \\
 \bottomrule
 \end{tabular}
@@ -517,21 +520,21 @@ Table~\mbox{\ref{tab:existing-evals}} summarizes what existing work varies. Most
 \toprule
 \textbf{Work} & \textbf{Agents varied} & \textbf{Institution varied} & \textbf{Factors} & \textbf{Gap for this agenda} \\
 \midrule
-GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\
-GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\
-Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\
-Multi\-Agent\-Bench~\citep{zhu2025multiagentbench} & LLM models & Coordination topology (star, chain, tree, graph) & G & Task collaboration rather than social dilemmas \\
-Magentic Marketplace~\citep{bansal2025magentic} & LLM models & Search mechanisms in a two-sided market & G & Market design; no sanctions or repair \\
-CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\
-SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\
-Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\
-Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\
-Social learning and norms~\citep{gupta2025social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\
-ALIGN~\citep{zhu2026talkjudgecooperategossipdriven} & Reasoning and chat LLMs & Open-ended gossip for indirect reciprocity & G, E & One mechanism; no repair \\
-Elected leadership~\citep{faulkner2026evaluatingcooperationllmsocial} & LLM groups of 8 and 20 & No leader, fixed leader, or elected leader in GovSim & R, G, E & Leadership only; no sanctions or repair \\
-Governance templates~\citep{vedanta2026corrupt} & Several LLMs in official roles & Three governance structures with audit and court bodies; lightweight safeguards & G, E & Corruption only; no repair \\
-Marketplace mechanisms~\citep{ngyisheng2026formal} & 18 agents of one model & Eight mechanisms, including reputation, rewiring, sanctions, contracts, mediation, and a judiciary & E & One model; mechanisms tested one at a time \\
-Hierarchical game~\citep{seyedin2026politician} & Six model families, same- or mixed-family groups & Speech, elections, managerial authority, wages, and punishment, added in stages & G, E & Features added cumulatively, not crossed; no repair \\
+GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\ \rowline
+GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\ \rowline
+Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\ \rowline
+Multi\-Agent\-Bench~\citep{zhu2025multiagentbench} & LLM models & Coordination topology (star, chain, tree, graph) & G & Task collaboration rather than social dilemmas \\ \rowline
+Magentic Marketplace~\citep{bansal2025magentic} & LLM models & Search mechanisms in a two-sided market & G & Market design; no sanctions or repair \\ \rowline
+CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\ \rowline
+SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\ \rowline
+Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\ \rowline
+Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\ \rowline
+Social learning and norms~\citep{gupta2025social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\ \rowline
+ALIGN~\citep{zhu2026talkjudgecooperategossipdriven} & Reasoning and chat LLMs & Open-ended gossip for indirect reciprocity & G, E & One mechanism; no repair \\ \rowline
+Elected leadership~\citep{faulkner2026evaluatingcooperationllmsocial} & LLM groups of 8 and 20 & No leader, fixed leader, or elected leader in GovSim & R, G, E & Leadership only; no sanctions or repair \\ \rowline
+Governance templates~\citep{vedanta2026corrupt} & Several LLMs in official roles & Three governance structures with audit and court bodies; lightweight safeguards & G, E & Corruption only; no repair \\ \rowline
+Marketplace mechanisms~\citep{ngyisheng2026formal} & 18 agents of one model & Eight mechanisms, including reputation, rewiring, sanctions, contracts, mediation, and a judiciary & E & One model; mechanisms tested one at a time \\ \rowline
+Hierarchical game~\citep{seyedin2026politician} & Six model families, same- or mixed-family groups & Speech, elections, managerial authority, wages, and punishment, added in stages & G, E & Features added cumulatively, not crossed; no repair \\ \rowline
 Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human groups, held fixed & Punishment; communication; both combined & E & Human participants \\
 \bottomrule
 \end{tabular}
@@ -582,19 +585,19 @@ Concretely, this defines a two-way evaluation design. Holding the institution fi
 \toprule
 \textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
 \midrule
-Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\
-Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\
-Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\
-End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\
-Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\
-False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\
-False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\
-Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\
-Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\
-Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\
-Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\
-Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\
-Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\
+Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\ \rowline
+Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\ \rowline
+Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\ \rowline
+End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\ \rowline
+Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\ \rowline
+False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\ \rowline
+False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\ \rowline
+Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\ \rowline
+Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\ \rowline
+Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\ \rowline
+Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\ \rowline
+Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\ \rowline
+Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\ \rowline
 Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
 \bottomrule
 \end{tabular}
@@ -782,16 +785,16 @@ The authors have no competing interests to declare.
 \toprule
 \textbf{Design principle} & \textbf{Mechanism (code)} & \textbf{Known elsewhere as} & \textbf{LLM-agent evidence} \\
 \midrule
-1A.~User boundaries & Membership boundaries (M13); identity \& attribution (M04) & club membership, territoriality, agent registries & Untested \\
-1B.~Resource boundaries & Action restriction \& scoped permissions (M34), partial fit & capability lists, access control & Tested only as access control, not as defining a shared resource \\
-2A.~Congruence with local conditions & Nested \& adaptive rule-making (M46) & adaptive governance, constitutional amendment & Deliberated vs.\ evolved constitutions~\citep{niranjani2026constitutional} \\
-2B.~Appropriation--provision congruence & Usage caps \& quotas (M36); outcome sharing (M25) & catch shares, quotas, profit sharing & Agent-authored catch caps and redistribution~\citep{rehm2026selfgovernance} \\
-3.~Collective-choice arrangements & Collective choice of rules (M42) & participatory budgeting, DAO voting, lazy consensus & Agents propose and vote on rules~\citep{rehm2026selfgovernance,hota2025nomiclaw,niranjani2026constitutional} \\
-4A.~Monitoring of users & Conduct monitoring (M01); legitimate \& elected authority (M44) & patrols, inspections, audits, elected monitors & Public harvest reports, held fixed~\citep{piatti2024govsim}; monitored enforcement~\citep{bracalesyrnikov2026institutionalai} \\
-4B.~Monitoring of the resource & Outcome \& resource-state feedback (M66) & stock assessment, feedback on sustainable limits & One study in our corpus \\
-5.~Graduated sanctions & Graduated \& proportional sanctions (M27) & strike systems, enforcement ladders, escalating fines & Warnings, tiered fines, suspension~\citep{bracalesyrnikov2026institutionalai}; state-dependent penalties~\citep{yang2026payinghonesty} \\
-6.~Conflict-resolution mechanisms & Third-party adjudication (M51); mediation (M52) & arbitration, courts, ombuds, oversight boards & Simulated courts~\citep{wang2025lawinsilico}; mediation~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} \\
-7.~Minimal recognition of rights to organize & Legitimate \& elected authority (M44) & recognized self-governance, charters & Untested \\
+1A.~User boundaries & Membership boundaries (M13); identity \& attribution (M04) & club membership, territoriality, agent registries & Untested \\ \rowline
+1B.~Resource boundaries & Action restriction \& scoped permissions (M34), partial fit & capability lists, access control & Tested only as access control, not as defining a shared resource \\ \rowline
+2A.~Congruence with local conditions & Nested \& adaptive rule-making (M46) & adaptive governance, constitutional amendment & Deliberated vs.\ evolved constitutions~\citep{niranjani2026constitutional} \\ \rowline
+2B.~Appropriation--provision congruence & Usage caps \& quotas (M36); outcome sharing (M25) & catch shares, quotas, profit sharing & Agent-authored catch caps and redistribution~\citep{rehm2026selfgovernance} \\ \rowline
+3.~Collective-choice arrangements & Collective choice of rules (M42) & participatory budgeting, DAO voting, lazy consensus & Agents propose and vote on rules~\citep{rehm2026selfgovernance,hota2025nomiclaw,niranjani2026constitutional} \\ \rowline
+4A.~Monitoring of users & Conduct monitoring (M01); legitimate \& elected authority (M44) & patrols, inspections, audits, elected monitors & Public harvest reports, held fixed~\citep{piatti2024govsim}; monitored enforcement~\citep{bracalesyrnikov2026institutionalai} \\ \rowline
+4B.~Monitoring of the resource & Outcome \& resource-state feedback (M66) & stock assessment, feedback on sustainable limits & One study in our corpus \\ \rowline
+5.~Graduated sanctions & Graduated \& proportional sanctions (M27) & strike systems, enforcement ladders, escalating fines & Warnings, tiered fines, suspension~\citep{bracalesyrnikov2026institutionalai}; state-dependent penalties~\citep{yang2026payinghonesty} \\ \rowline
+6.~Conflict-resolution mechanisms & Third-party adjudication (M51); mediation (M52) & arbitration, courts, ombuds, oversight boards & Simulated courts~\citep{wang2025lawinsilico}; mediation~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} \\ \rowline
+7.~Minimal recognition of rights to organize & Legitimate \& elected authority (M44) & recognized self-governance, charters & Untested \\ \rowline
 8.~Nested enterprises & Nested \& adaptive rule-making (M46) & federalism, polycentric governance, delegated rule-making & Untested \\
 \bottomrule
 \end{tabular}
