@@ -65,6 +65,18 @@ evidence supports it.
 
 The single verifier reviews every code and merge; the coding log is the audit trail.
 
+### Coding status (2026-09-29)
+
+| Pass | What | Result |
+|---|---|---|
+| 1 | Open coding of 561 instances (4 LLM coders, batches mixed across disciplines) | 299 open codes → 65 mechanisms, 18 themes (`scripts/collapse_codes.py`); M24 moved to configuration C03 |
+| 2 | Independent deductive recoding against the codebook (4 fresh LLM coders, pass-1 codes hidden) | 0 misfits, 36 partial fits, 22 proposals. Mechanism agreement with pass 1: 94.4%, κ = 0.94 (n = 392 single-lever instances). Decisions: 6 code remaps, 8 instance overrides, wider definitions for M01, M09, M14, M16, M17, M28, M34, M35, M59, M62 and M65, and 2 new mechanisms (M66, M67) (`scripts/pass2_compare.py`) |
+| 3 | Targeted screen of all instances for M66/M67 | No further new mechanism, merge, or split: ending conditions met for this corpus (`coding/pass3_screen.txt`) |
+
+Both passes were LLM coders. Pass-2 coders saw codebook examples drawn from pass-1 terms, so the agreement is
+an upper bound on independent agreement, not human inter-rater reliability. `coding/pass2_review.csv` lists
+every disagreement and proposal for the verifier.
+
 ## 3. Unit of record
 
 One row of `mechanisms.csv` is one **mechanism**: an intervention that changes
@@ -182,7 +194,12 @@ extended with web search:
 | I_B (technical systems) | No web search. Recalled, checked on Crossref and by fetching docs and RFCs; 28 of 95 are `search`; some numbers are marked "(from memory)" | Piatek 2007 and Kalodner 2018 (USENIX pages blocked); a Kleros primary source; multi-robot systems |
 | I_C (AI-agent gaps) | arXiv API only; coded from abstracts | METR and Cooperative AI Foundation reports; the A2A / AP2 / MCP permission specs; 2025 AI Agent Index (arXiv 2602.17753); venue labels filled in from memory |
 
-A resumed slice writes to the same file name; re-running `build_instances.py` picks it up.
+Also target the two thin mechanisms added in coding: **M66 outcome & resource-state feedback** (resource-stock
+feedback in CPR experiments, social-comparison feedback such as home energy reports) and **M67 capacity building &
+assistance** (compliance assistance in international regimes and regulation). Each currently has one instance.
+
+A resumed slice writes to the same file name; re-running `build_instances.py` picks it up. Then re-run
+`collapse_codes.py`, `build_configurations.py`, and `pass2_compare.py`, coding the new instances first.
 
 ## 6. Verification
 

@@ -46,10 +46,10 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,sharing reputational information,2,M07,Gossip,merge
 1,reduce number of resource users,1,M08,Expulsion,merge
 1,remove deviator from group,10,M08,Expulsion,merge
-1,cut off after failure threshold,1,M09,Temporary suspension,merge
-1,temporary exclusion by peer,1,M09,Temporary suspension,merge
-1,temporary exclusion from resource,2,M09,Temporary suspension,merge
-1,temporary restriction of participation,1,M09,Temporary suspension,merge
+1,cut off after failure threshold,1,M09,Temporary suspension & quarantine,merge
+1,temporary exclusion by peer,1,M09,Temporary suspension & quarantine,merge
+1,temporary exclusion from resource,2,M09,Temporary suspension & quarantine,merge
+1,temporary restriction of participation,1,M09,Temporary suspension & quarantine,merge
 1,choose interaction partners,1,M10,Partner choice & tie severing,merge
 1,partner choice among competitors,1,M10,Partner choice & tie severing,merge
 1,partner choice by observed conduct,3,M10,Partner choice & tie severing,merge
@@ -90,6 +90,7 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,charge for imposed externality,2,M17,Externality pricing & central incentive adjustment,merge
 1,charge per unit of harm,1,M17,Externality pricing & central incentive adjustment,merge
 1,per-use cost on actions,1,M17,Externality pricing & central incentive adjustment,merge
+2,subsidy for cooperative action,1,M17,Externality pricing & central incentive adjustment,remap
 1,transfer based on deviation from average,1,M17,Externality pricing & central incentive adjustment,merge
 1,informal peer social pressure,1,M18,Shaming & social disapproval,merge
 1,non-payoff disapproval signal,1,M18,Shaming & social disapproval,merge
@@ -104,12 +105,10 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,peer reward transfer,4,M21,Peer reward & gifting,merge
 1,voluntary transfer of reward to peers,1,M21,Peer reward & gifting,merge
 1,voluntary transfer to others,1,M21,Peer reward & gifting,merge
-1,matching subsidy for contributions,2,M22,Payment for cooperation,merge
 1,payment conditional on outcome,2,M22,Payment for cooperation,merge
 1,payment conditional on verified behavior,1,M22,Payment for cooperation,merge
 1,payment for cooperative act,2,M22,Payment for cooperation,merge
 1,reward per accepted contribution,1,M22,Payment for cooperation,merge
-1,subsidy for cooperative action,1,M22,Payment for cooperation,merge
 1,status award at activity threshold,1,M23,Status & prestige,merge
 1,status reward for contribution,1,M23,Status & prestige,merge
 1,contribution-proportional reward,1,M25,Outcome sharing & aligned stakes,merge
@@ -200,14 +199,13 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,group-voted adoption of rules,2,M42,Collective choice of rules,merge
 1,aggregate independent judgments,1,M43,Robust aggregation & quorum,merge
 1,discount unreliable peer inputs,2,M43,Robust aggregation & quorum,merge
+2,escalate uncertain decisions upward,1,M43,Robust aggregation & quorum,remap
 1,quorum of matching reports required,2,M43,Robust aggregation & quorum,merge
 1,robust aggregation of peer evaluations,1,M43,Robust aggregation & quorum,merge
 1,choose who holds sanction authority,1,M44,Legitimate & elected authority,merge
 1,elected bounded authority,1,M44,Legitimate & elected authority,merge
 1,elected leader coordinates group,1,M44,Legitimate & elected authority,merge
-1,learn which institution is authoritative,1,M44,Legitimate & elected authority,merge
 1,monitor chosen by group vote,1,M44,Legitimate & elected authority,merge
-1,recognize legitimate rule source,1,M44,Legitimate & elected authority,merge
 1,agents choose institution to join,1,M45,Institutional choice & exit,merge
 1,choice among institutional regimes,3,M45,Institutional choice & exit,merge
 1,opt into sanctioning institution,2,M45,Institutional choice & exit,merge
@@ -232,7 +230,6 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,institutional checks and audit,1,M50,Checks on sanctioners,merge
 1,retaliation against punishers permitted,1,M50,Checks on sanctioners,merge
 1,adjudicated adversarial debate,1,M51,Third-party adjudication,merge
-1,escalate uncertain decisions upward,1,M51,Third-party adjudication,merge
 1,peer jury rules on reports,1,M51,Third-party adjudication,merge
 1,third party rules on dispute,6,M51,Third-party adjudication,merge
 1,tiered audit escalating to panel,1,M51,Third-party adjudication,merge
@@ -241,13 +238,13 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,third party mediates negotiation,1,M52,Mediation,merge
 1,bonded challenge of claimed outcome,3,M53,Bonded challenge,keep
 1,appeal of sanction decisions,2,M54,Appeals & error correction,merge
-1,collective override of protocol outcome,1,M54,Appeals & error correction,merge
 1,independent review of appeals,1,M54,Appeals & error correction,merge
 1,reverse wrongful sanctions,1,M54,Appeals & error correction,merge
 1,apology to repair breach,1,M55,Restitution & reintegration,merge
 1,conditional path to reinstatement,1,M55,Restitution & reintegration,merge
 1,offender repairs harm caused,1,M55,Restitution & reintegration,merge
 1,restorative reintegration of offender,1,M55,Restitution & reintegration,merge
+2,collective override of protocol outcome,1,M56,Undoing deviation's effects,remap
 1,compensating rollback on failure,1,M56,Undoing deviation's effects,merge
 1,nullify gains from deviation,1,M56,Undoing deviation's effects,merge
 1,peer policing of deviation,1,M56,Undoing deviation's effects,merge
@@ -262,18 +259,20 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,public norm-setting messages,1,M58,Explicit norms & codes of conduct,merge
 1,published standard of conduct,1,M58,Explicit norms & codes of conduct,merge
 1,written code of conduct,2,M58,Explicit norms & codes of conduct,merge
-1,instill prosocial preferences via training,2,M59,Instilled prosocial dispositions,merge
-1,internalized moral preference,1,M59,Instilled prosocial dispositions,merge
-1,prompt instilling prosocial reasoning,1,M59,Instilled prosocial dispositions,merge
-1,prompt to universalize conduct,3,M59,Instilled prosocial dispositions,merge
+1,instill prosocial preferences via training,2,M59,Instilled prosocial dispositions & reasoning,merge
+1,internalized moral preference,1,M59,Instilled prosocial dispositions & reasoning,merge
+1,prompt instilling prosocial reasoning,1,M59,Instilled prosocial dispositions & reasoning,merge
+1,prompt to universalize conduct,3,M59,Instilled prosocial dispositions & reasoning,merge
 1,default set to desired action,1,M60,Defaults & choice architecture,keep
 1,agent-level norm formation module,1,M61,Norm learning,merge
 1,learn norms from observed sanctions,4,M61,Norm learning,merge
-1,imitate higher-payoff strategies,1,M62,Imitation & strategy selection,merge
-1,imitate successful strategies,3,M62,Imitation & strategy selection,merge
-1,selection of successful strategies,1,M62,Imitation & strategy selection,merge
-1,selection of surviving strategies,1,M62,Imitation & strategy selection,merge
-1,spread of higher-payoff strategies,3,M62,Imitation & strategy selection,merge
+2,learn which institution is authoritative,1,M61,Norm learning,remap
+2,recognize legitimate rule source,1,M61,Norm learning,remap
+1,imitate higher-payoff strategies,1,M62,Social learning & strategy selection,merge
+1,imitate successful strategies,3,M62,Social learning & strategy selection,merge
+1,selection of successful strategies,1,M62,Social learning & strategy selection,merge
+1,selection of surviving strategies,1,M62,Social learning & strategy selection,merge
+1,spread of higher-payoff strategies,3,M62,Social learning & strategy selection,merge
 1,credit earned by serving others,1,M63,"Mutual aid, pooling & mutual credit",merge
 1,horizontal mutual accountability,1,M63,"Mutual aid, pooling & mutual credit",merge
 1,open peer relay infrastructure,1,M63,"Mutual aid, pooling & mutual credit",merge
@@ -285,6 +284,7 @@ pass,open_code,n_instances,mechanism_id,mechanism,action
 1,incentive-compatible allocation auction,2,M64,Incentive-compatible mechanisms,merge
 1,incentive-compatible allocation rule,1,M64,Incentive-compatible mechanisms,merge
 1,incentive-compatible protocol design,1,M64,Incentive-compatible mechanisms,merge
+2,matching subsidy for contributions,2,M64,Incentive-compatible mechanisms,remap
 1,mechanism implementing efficient equilibrium,1,M64,Incentive-compatible mechanisms,merge
 1,payments inducing truthful reports,1,M64,Incentive-compatible mechanisms,merge
 1,reward agreement with consensus report,1,M64,Incentive-compatible mechanisms,merge

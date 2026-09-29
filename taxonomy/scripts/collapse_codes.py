@@ -14,17 +14,17 @@ import collections, csv, glob, json, os
 HERE = os.path.dirname(os.path.abspath(__file__)); TAX = os.path.dirname(HERE)
 
 THEMES = {
-    'T01': 'Visibility & attribution', 'T02': 'Reputation', 'T03': 'Exclusion & conditional access',
+    'T01': 'Visibility, information & attribution', 'T02': 'Reputation', 'T03': 'Exclusion & conditional access',
     'T04': 'Cost imposition', 'T05': 'Rewards & payoff alignment', 'T06': 'Calibrated response',
     'T07': 'Commitment & contracting', 'T08': 'Structural constraints', 'T09': 'Conditional strategies',
     'T10': 'Collective choice & legitimacy', 'T11': 'Disclosure incentives', 'T12': 'Checks on enforcement',
-    'T13': 'Dispute resolution', 'T14': 'Repair & restoration', 'T15': 'Norm formation & internalization',
+    'T13': 'Dispute resolution', 'T14': 'Repair & restoration', 'T15': 'Norms & compliance support',
     'T16': 'Social learning', 'T17': 'Mutual aid', 'T18': 'Mechanism design & allocation',
 }
 
 # id: (theme, name, definition)
 MECH = {
- 'M01': ('T01', 'Conduct monitoring & transparency', 'Agents\' actions are observed, inspected, audited, or disclosed so deviations can be detected.'),
+ 'M01': ('T01', 'Conduct monitoring & transparency', 'Agents\' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected.'),
  'M02': ('T01', 'Communication & internal-state oversight', 'A monitor inspects or constrains the messages or internal states agents exchange, to detect or prevent covert coordination.'),
  'M03': ('T01', 'Tamper-evident records', 'Actions are recorded in an attributable log that cannot be altered undetectably and can be audited.'),
  'M04': ('T01', 'Identity & attribution', 'Agents carry persistent, verifiable identities (and costly new ones) so actions and consequences attach to a responsible party.'),
@@ -32,15 +32,15 @@ MECH = {
  'M06': ('T02', 'Peer evaluation & review', 'Peers assess an agent\'s conduct or output and publish or aggregate the assessment.'),
  'M07': ('T02', 'Gossip', 'Agents pass information about third parties\' conduct to others who may interact with them.'),
  'M08': ('T03', 'Expulsion', 'A deviator is removed from the group, resource, or platform.'),
- 'M09': ('T03', 'Temporary suspension', 'A deviator is excluded or cut off for a bounded period or until a condition is met.'),
+ 'M09': ('T03', 'Temporary suspension & quarantine', 'A deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met.'),
  'M10': ('T03', 'Partner choice & tie severing', 'Agents choose, keep, or drop interaction partners based on their observed or reported conduct.'),
  'M11': ('T03', 'Shared blocklists & revocation', 'A shared list of flagged agents or revoked credentials lets many parties refuse the same deviators.'),
  'M12': ('T03', 'Access & terms conditioned on record', 'Access, privileges, or prices depend on an agent\'s reputation or proof of compliance.'),
  'M13': ('T03', 'Membership boundaries', 'Insiders defend a resource against outsiders or impose costs on non-members to induce joining.'),
- 'M14': ('T04', 'Peer punishment', 'A peer pays a cost to reduce a deviator\'s payoff.'),
+ 'M14': ('T04', 'Peer punishment', 'A peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself.'),
  'M15': ('T04', 'Third-party punishment', 'An unaffected observer sanctions a deviator.'),
- 'M16': ('T04', 'Centralized (pool) sanctioning & fines', 'A central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules.'),
- 'M17': ('T04', 'Externality pricing & central incentive adjustment', 'A charge proportional to imposed harm, or taxes and subsidies set (often learned) by a planner, realign individual payoffs.'),
+ 'M16': ('T04', 'Centralized (pool) sanctioning & fines', 'A central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats.'),
+ 'M17': ('T04', 'Externality pricing & central incentive adjustment', 'A charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs.'),
  'M18': ('T04', 'Shaming & social disapproval', 'Deviations are met with non-material costs: disapproval, public exposure, or reputational pressure.'),
  'M19': ('T04', 'Liability for harm', 'The deviator bears the damages its action causes, or a guarantee is enforced when a claim proves false.'),
  'M20': ('T04', 'Collective liability', 'Group members share liability for any member\'s deviation, giving them reason to monitor one another.'),
@@ -50,14 +50,14 @@ MECH = {
  'M25': ('T05', 'Outcome sharing & aligned stakes', 'Agents share in joint output or hold stakes in the system or in others\' payoffs, so their payoff rises with collective success.'),
  'M26': ('T05', 'Relative-performance incentives', 'Rewards depend on an agent\'s rank relative to others.'),
  'M27': ('T06', 'Graduated & proportional sanctions', 'Responses escalate with repetition or duration, or scale with the severity of the deviation.'),
- 'M28': ('T07', 'Deposits, bonds & stakes', 'An agent (or a third party on its behalf) posts collateral that is forfeited on breach or refunded on compliance.'),
+ 'M28': ('T07', 'Deposits, bonds & stakes', 'An agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance.'),
  'M29': ('T07', 'Binding contracts', 'Agents agree to enforceable conditional transfers or penalties, often executed automatically.'),
  'M30': ('T07', 'Self-commitment devices', 'An agent binds its own future action or makes backing out costly.'),
  'M31': ('T07', 'Escrow & verify-then-pay', 'Payment is held by a neutral mechanism and released only when performance is verified.'),
  'M32': ('T07', 'Assurance contracts', 'Contributions are refunded (possibly with a bonus) if a collective threshold is not reached.'),
  'M33': ('T07', 'Pre-play communication & pledges', 'Agents exchange non-binding messages or public pledges before acting.'),
- 'M34': ('T08', 'Ex ante action restriction & scoped permissions', 'Only pre-specified actions, scopes, zones, or time-bounded rights are permitted.'),
- 'M35': ('T08', 'Runtime interception & interruption', 'An enforcement layer or overseer blocks, resamples, or halts an agent\'s actions as they happen.'),
+ 'M34': ('T08', 'Ex ante action restriction & scoped permissions', 'Only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent\'s task.'),
+ 'M35': ('T08', 'Runtime interception & interruption', 'An enforcement layer or overseer verifies, blocks, resamples, or halts an agent\'s actions or outputs before they take effect.'),
  'M36': ('T08', 'Usage caps & quotas', 'Hard limits bound each agent\'s use of a shared resource or its rate of action.'),
  'M37': ('T08', 'Rotation & turn-taking', 'Access to shares of a resource is assigned in turns or by lot.'),
  'M38': ('T08', 'Interaction structure', 'Who interacts with whom, how often, and in what roles is designed: network topology, repetition, population composition.'),
@@ -81,13 +81,15 @@ MECH = {
  'M56': ('T14', 'Undoing deviation\'s effects', 'The output of a deviation is reverted, removed, or rolled back so deviation yields nothing.'),
  'M57': ('T14', 'Failure attribution & incident analysis', 'After a failure, evidence is used to identify responsible agents and causes.'),
  'M58': ('T15', 'Explicit norms & codes of conduct', 'Expected behavior is written down, published, and explained, including when sanctions are applied.'),
- 'M59': ('T15', 'Instilled prosocial dispositions', 'Agents\' preferences or reasoning are shaped (by training or prompting) to value cooperative outcomes.'),
+ 'M59': ('T15', 'Instilled prosocial dispositions & reasoning', 'Agents\' preferences or reasoning are shaped by training or prompting to value cooperative outcomes or to reason about others (e.g., universalization, perspective-taking).'),
  'M60': ('T15', 'Defaults & choice architecture', 'The cooperative option is made the default.'),
  'M61': ('T15', 'Norm learning', 'Agents infer norms, or which institution is authoritative, from observed sanctions and behavior.'),
- 'M62': ('T16', 'Imitation & strategy selection', 'Higher-payoff strategies spread through copying or selection.'),
+ 'M62': ('T16', 'Social learning & strategy selection', 'Behavior spreads by copying higher-payoff or expert others, or by selection among strategies.'),
  'M63': ('T17', 'Mutual aid, pooling & mutual credit', 'Members pool resources, give without direct exchange, or trade services in mutual credit.'),
  'M64': ('T18', 'Incentive-compatible mechanisms', 'Allocation and payment rules make truthful reporting or cooperation each agent\'s best strategy.'),
- 'M65': ('T18', 'Market & matching allocation', 'Tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation.'),
+ 'M66': ('T01', 'Outcome & resource-state feedback', 'Agents are told the consequences of their choices, the state of a shared resource or sustainable thresholds, or how their behavior compares with others\'.'),
+ 'M67': ('T15', 'Capacity building & assistance', 'Agents that fail to comply are helped to comply (resources, technical assistance, clarified obligations) rather than sanctioned.'),
+ 'M65': ('T18', 'Market & matching allocation', 'Tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation, including rules for how agents discover and compare offers.'),
 }
 
 C = {}  # open code -> mechanism
@@ -207,6 +209,11 @@ m('M64', 'incentive-compatible allocation auction', 'incentive-compatible alloca
   'mechanism implementing efficient equilibrium', 'payments inducing truthful reports', 'reward agreement with consensus report',
   'reward rule making contribution dominant')
 m('M65', 'auction allocation of resources', 'market allocation of tasks', 'central allocation mechanism')
+# Pass-2 decisions: pass-1 codes whose mechanism changed after independent recoding (logged as pass 2).
+PASS2_REMAP = {'recognize legitimate rule source': 'M61', 'learn which institution is authoritative': 'M61',
+               'escalate uncertain decisions upward': 'M43', 'matching subsidy for contributions': 'M64',
+               'subsidy for cooperative action': 'M17', 'collective override of protocol outcome': 'M56'}
+C.update(PASS2_REMAP)
 BUNDLES = {'bundle of commons design principles'}  # not a single lever: kept as instances, excluded from mechanisms
 # Codes naming a combination of levers are recorded in configurations.csv (build_configurations.py), not as
 # mechanisms. M24 'Combined carrot & stick' was retired in pass 1 and became configuration C03.
@@ -228,7 +235,10 @@ def main():
         c = code_of.get(iid, '')
         r['code'] = c or ('(phenomenon)' if iid in {p['instance_id'] for p in P} else '')
         r['mechanism'] = C.get(c, ('CONFIG' if c in CONFIG_CODES else 'BUNDLE') if c in BUNDLES else '')
+        r['mechanism_p1'] = r['mechanism']
     cols = list(next(iter(inst.values())).keys())
+    if 'mechanism_p1' in cols: cols.remove('mechanism_p1')
+    cols.insert(cols.index('mechanism'), 'mechanism_p1')
     with open(os.path.join(TAX, 'instances.csv'), 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols); w.writeheader(); w.writerows(inst.values())
 
@@ -243,9 +253,9 @@ def main():
             mid = C.get(c)
             siblings = sum(1 for x in C if C[x] == mid and x in per_code) if mid else 0
             cfg = c in CONFIG_CODES
-            w.writerow({'pass': 1, 'open_code': c, 'n_instances': per_code[c], 'mechanism_id': mid or ('CONFIG' if cfg else 'BUNDLE'),
+            w.writerow({'pass': 2 if c in PASS2_REMAP else 1, 'open_code': c, 'n_instances': per_code[c], 'mechanism_id': mid or ('CONFIG' if cfg else 'BUNDLE'),
                         'mechanism': MECH[mid][1] if mid else ('combination of levers, see configurations.csv (was M24)' if cfg else 'not a single lever, see configurations.csv'),
-                        'action': ('to_configuration' if not mid else ('merge' if siblings > 1 else 'keep'))})
+                        'action': ('to_configuration' if not mid else ('remap' if c in PASS2_REMAP else ('merge' if siblings > 1 else 'keep')))})
 
     rows = []
     for mid, (tid, name, defn) in MECH.items():
