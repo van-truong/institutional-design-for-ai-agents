@@ -6,7 +6,7 @@
   <meta name="description" content="A position paper and evolving evidence map for institutional design in multi-agent AI systems.">
   <title>Institutional Design for AI Agents</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <script src="taxonomy.js" defer></script>
 </head>
 <body>
   <header class="poster-header" id="top">
@@ -128,24 +128,38 @@
       <div class="taxonomy-copy">
         <div>
           <h2>We mapped what’s in the literature to a unified taxonomy.</h2>
-          <p>Across legal and justice settings, economics, computing, anthropology, and community practice, we found recurring ways to shape cooperation. We brought examples of sanctioning, policy, social norms, mechanism design, and interaction protocols into one work-in-progress visual.</p>
+          <p>We coded <span data-tx-count="instances">506</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies, into <span data-tx-count="mechanisms">66</span> mechanisms and <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper. Choose any mechanism to see its definition and the sources behind it.</p>
         </div>
-        <aside class="sticky-note">Our plan is to make every leaf clickable—and to keep the missing evidence visible.</aside>
+        <aside class="sticky-note">Open circles mark mechanisms that no LLM-agent study has tested yet. We keep the gaps visible.</aside>
+      </div>
+      <div class="tx-toolbar" role="toolbar" aria-label="Taxonomy view controls">
+        <button id="tx-toggle" class="tx-btn tx-btn-primary" type="button" aria-pressed="false">Unravel into a list</button>
+        <label class="tx-search-label"><span class="visually-hidden">Search mechanisms and sources</span>
+          <input id="tx-search" class="tx-search" type="search" placeholder="Search mechanisms or papers">
+        </label>
+        <div class="tx-filters" role="group" aria-label="Filter by LLM-agent evidence">
+          <button class="tx-btn" type="button" data-tx-filter="all" aria-pressed="true">All</button>
+          <button class="tx-btn" type="button" data-tx-filter="tested" aria-pressed="false"><span class="tx-key tx-key-tested"></span>Tested</button>
+          <button class="tx-btn" type="button" data-tx-filter="proposed" aria-pressed="false"><span class="tx-key tx-key-proposed"></span>Proposed only</button>
+          <button class="tx-btn" type="button" data-tx-filter="none" aria-pressed="false"><span class="tx-key tx-key-none"></span>No LLM study</button>
+        </div>
+        <p id="tx-count" class="tx-count" aria-live="polite"></p>
       </div>
       <div class="taxonomy-interactive">
-        <figure class="taxonomy-figure">
-          <object id="taxonomy-map" data="assets/cooperation-taxonomy.svg" type="image/svg+xml" aria-label="Interactive radial taxonomy grouping cooperation-shaping mechanisms into six families.">
-            <img src="assets/cooperation-taxonomy.svg" alt="A radial taxonomy grouping cooperation-shaping mechanisms into six families.">
-          </object>
+        <figure class="tx-figure">
+          <div id="tx-stage" class="tx-stage"><p class="tx-loading">Loading the taxonomy…</p></div>
+          <figcaption>Circles show LLM-agent evidence (filled: tested in at least one study; dotted: proposed only; open: none). In the list view, squares count the fields outside AI where a mechanism appears (up to six).</figcaption>
         </figure>
-        <aside class="leaf-card" id="leaf-card" aria-live="polite">
+        <aside class="leaf-card tx-panel" id="tx-panel" aria-live="polite">
           <p class="leaf-card-label">Interactive taxonomy</p>
-          <h3 id="leaf-name">Choose a leaf</h3>
-          <p class="leaf-family" id="leaf-family">Hover, tap, or use the Tab key to explore.</p>
-          <p id="leaf-description">Each leaf will eventually connect to exact studies, examples, limitations, and open questions.</p>
-          <p class="evidence-status" id="leaf-status"><span></span> Evidence record not yet selected</p>
+          <h3>Choose a mechanism</h3>
+          <p>Hover, tap, or use the Tab key to explore.</p>
         </aside>
       </div>
+      <details class="tx-text">
+        <summary>Text list of all mechanisms</summary>
+        <div id="tx-text-list"></div>
+      </details>
     </section>
 
     <section class="research-agenda rule-top">
