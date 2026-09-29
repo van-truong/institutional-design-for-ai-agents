@@ -332,7 +332,7 @@ These three levers operate within a fixed game\fixed{, but the game alone} does 
 
 % Previous version (seed taxonomy, replaced by the coded taxonomy 2026-09-29):
 % \chg{Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} surveys how cooperation has been governed across human disciplines---sociology, anthropology, law, governance, economics, behavioral science, computer science, cryptography, solidarity economics, and restorative justice---cataloging dozens of concrete mechanisms. These disciplinary traditions cut across the six analytical families above rather than mapping onto them one-to-one: each family is realized through several traditions, and each tradition contributes mechanisms to more than one family. Extended definitions and examples for each function and family appear in Appendix~\mbox{\ref{app:institutional-functions}} and~\mbox{\ref{app:six-mechanisms}}, and Table~\mbox{\ref{tab:family-dilemma-guide}} links the families to the four cooperation dilemmas as a practical guide.}
-\chg{Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in a taxonomy built by thematic coding of the literature (Appendix~\mbox{\ref{app:unified-taxonom}}). We coded 561 documented uses of cooperation-shaping mechanisms, drawn from multi-agent LLM and reinforcement-learning studies and from economics, law, political science, evolutionary biology, platform governance, security, distributed systems, and blockchain design, among others. Codes that act through the same lever were collapsed into 66 mechanisms in 18 themes. Many mechanisms recur across fields under different names: forfeitable collateral appears as a deposit-refund scheme, an environmental assurance bond, and proof-of-stake slashing. Familiar frameworks can be read in the same terms; Table~\mbox{\ref{tab:ostrom-map}} maps Ostrom's design principles onto the mechanisms. The figure also shows where evidence with LLM agents is missing. Eighteen of the 66 mechanisms have not been tested with LLM agents in our corpus, among them collective liability, escrow, bonds, and appeals. Of the 17 combinations of mechanisms we found in work on artificial agents, only one compares the combination with its parts, although human evidence shows that levers can complement or undermine one another (e.g., communication makes sanctions effective, and a fine can displace a social norm).} \del{Extended definitions and examples for each function and family appear in Appendix~\mbox{\ref{app:institutional-functions}} and~\mbox{\ref{app:six-mechanisms}}, and Table~\mbox{\ref{tab:family-dilemma-guide}} links the families to the four cooperation dilemmas as a practical guide.}
+\chg{Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in a taxonomy built by thematic coding of the literature (Appendix~\mbox{\ref{app:unified-taxonom}}). We coded 561 documented uses of cooperation-shaping mechanisms, drawn from multi-agent LLM and reinforcement-learning studies and from economics, law, political science, evolutionary biology, platform governance, security, distributed systems, and blockchain design, among others. Codes that act through the same lever were collapsed into 66 mechanisms in 18 themes. Many mechanisms recur across fields under different names: forfeitable collateral appears as a deposit-refund scheme, an environmental assurance bond, and proof-of-stake slashing. Familiar frameworks can be read in the same terms; Table~\mbox{\ref{tab:ostrom-map}} maps Ostrom's design principles onto the mechanisms. The figure also shows where evidence with LLM agents is missing. Eighteen of the 66 mechanisms have not been tested with LLM agents in our corpus, among them collective liability, escrow, bonds, and appeals. Of the 17 combinations of mechanisms we found in work on artificial agents, only one compares the combination with its parts, although human evidence shows that levers can complement or undermine one another (e.g., communication makes sanctions effective, and a fine can displace a social norm).}
 
 \begin{figure*}[tp]
   \centering
@@ -792,7 +792,7 @@ The authors have no competing interests to declare.
 
 
 
-\section{Expanded Definitions}
+\section{Terminology}
 \label{app:definitions}
 
 % \ANG{
@@ -804,70 +804,67 @@ The authors have no competing interests to declare.
 
 % \ERI{\textbf{Below, I'm suggesting another framing for this math part, feel free to keep (it should replace the whole section B. Expanded Definitions up to B.1 Terminology) or to remove it :) Also, if you choose to keep it, the references for the citations in this part are in the \texttt{erivan\_math\_app.bib} file. You can copy and paste them in \texttt{references.bib} in that case.}}
 % \ERI{
-\ifshowreviewflags
-\delbanner{start of Appendix B equations and ``why helpful agents fail'' text (repeats Section~2 and Objection~1; adds notation without results)}
-{\color{red!70!black}
-\paragraph{Why helpful agents can still fail together.}
-An individual agent may be helpful and honest in isolation but still contribute to poor group outcomes. In shared environments, agents may overuse tools, free-ride on others' verification labor, pollute shared memory, strategically defect near the end of a task, or punish other agents unfairly.
+% ===== COMMENTED OUT 2026-09-29: former Appendix B ``Why helpful agents can still fail together'',
+% artificial-commons equations, and sanctions formalism. Kept for possible reuse (e.g., a website example). =====
+% \paragraph{Why helpful agents can still fail together.}
+% An individual agent may be helpful and honest in isolation but still contribute to poor group outcomes. In shared environments, agents may overuse tools, free-ride on others' verification labor, pollute shared memory, strategically defect near the end of a task, or punish other agents unfairly.
+%
+% Consider $n$ agents indexed by $i \in \{1, \dots, n\}$, each choosing an action $a_i \in A_i$, producing a joint action profile $a = (a_1, \dots, a_n)$ and an individual utility $u_i(a)$. The system designer cares about social welfare $W(a)$, defined as the 
+% aggregate utility net of collective costs:
+%
+% \begin{equation}
+% \label{eq:welfare}
+% W(a) = \sum_{i=1}^n u_i(a) - C(a),
+% \end{equation}
+%
+% where $C(a)$ captures collective costs such as resource depletion, corrupted shared memory, excessive monitoring, or repair burden.
+%
+% A joint action $a^*$ is a Nash equilibrium if no agent can improve its utility by unilaterally deviating, yet $a^*$ may be socially suboptimal: writing $a^{opt} = \arg\max_{a} W(a)$ for the social optimum, it is generally the case that $W(a^{opt}) > W(a^*)$. This is the Price of Anarchy / Price of Stability gap discussed in Section~\ref{sec:institutional-design}.
+% % CUT (redundant): removed the restatement of the PoA/PoS lesson and its citations, already given in Section~\ref{sec:institutional-design}; replaced with a back-reference.
+%
+% The failure is not necessarily that any agent is malicious or misaligned, but rather that the interaction structure rewards locally rational behavior that degrades collective welfare. A model trained to complete its assigned task may consume excessive shared resources; a verifier agent may avoid costly verification when another agent can do it; a planner agent may delegate repair labor to lower-status worker agents; or a monitoring agent may over-apply sanctions because punishment is easier to measure than trust.
+%
+% \paragraph{Artificial commons.} The following is an illustrative instantiation of the general framework above, not a formal result; it is meant to fix intuitions about how institutional mechanisms can be represented, not to derive novel bounds.
+%
+% Let $R$ denote a shared resource, such as a tool-call budget, context window, or memory store. Each agent chooses a level of resource use $x_i \geq 0$. The total resource use is:
+%
+% \begin{equation}
+% X = \sum_{i=1}^{n} x_i.
+% \end{equation}
+%
+% Suppose the shared resource degrades when total use exceeds capacity $K$:
+%
+% \begin{equation}
+% D(X) = \max(0, X-K).
+% \end{equation}
+%
+% An agent gains individual benefit $b_i(x_i)$ from using the resource, while the group bears degradation cost $D(X)$. Writing $p_i(\mathbf{x})$ for any individually assigned penalty or cost (instantiating the sanction $s_i$ introduced below), individual utility takes the form $u_i(\mathbf{x}) = b_i(x_i) - p_i(\mathbf{x})$, and the general social
+% welfare of Eq.~(\ref{eq:welfare}) specializes to
+%
+% \begin{equation}
+% W(\mathbf{x}) = \sum_{i=1}^{n} b_i(x_i) - \lambda D(X) - M(\mathbf{x}) - R(\mathbf{x}),
+% \end{equation}
+%
+% where $C(\mathbf{x}) = \lambda D(X) + M(\mathbf{x}) + R(\mathbf{x})$ collects resource degradation, monitoring cost $M(\mathbf{x})$, and repair cost $R(\mathbf{x})$ -- note that individually assigned penalties $p_i(\mathbf{x})$ are transfers within the system rather than net welfare losses, and so do not appear in $C(\mathbf{x})$.
+%
+% Without institutions, each agent may choose $x_i$ based on private benefit while externalizing degradation costs onto the group. Institutional mechanisms such as quotas, monitoring, sanctions, and repair obligations modify the action space or payoff structure so that individual incentives better track collective consequences.
+%
+% \paragraph{Sanctions.} A sanction $s_i(a)$ modifies an agent's institution-adjusted utility $u_i^I(a)$, defined as the agent's baseline utility shifted by the sanction applied to its behavior:
+%
+% \begin{equation}
+% u_i^I(a) = u_i(a) + s_i(a),
+% \end{equation}
+%
+% where $I$ denotes the institutional environment, and $p_i(\mathbf{x})$ above is the special case of $s_i$ restricted to penalty-type sanctions in the resource-use setting; punitive, rewarding, and restorative sanctions correspond to different signs and structures of $s_i$.
+%
+% The institutional design problem is not simply to choose sanctions that maximize average cooperation, but to choose an institutional environment that improves social welfare while limiting enforcement cost, false punishment, surveillance burden, inequality of burden, and irreversibility -- the multi-objective tradeoff formalized in the mechanism-design literature \citep{maskinMechanismDesignHow2008,myersonOptimalAuctionDesign1981} and, for network and congestion settings specifically, in the Price-of-Stability analyses of Anshelevich et al.~\citep{anshelevichPriceStabilityNetwork2008}. We propose in Section~\ref{sec:design_dim} an empirical evaluation agenda for measuring these quantities (enforcement cost, false punishment rate, inequality of burden) across institutional designs.
+% ===== END COMMENTED OUT =====
 
-Consider $n$ agents indexed by $i \in \{1, \dots, n\}$, each choosing an action $a_i \in A_i$, producing a joint action profile $a = (a_1, \dots, a_n)$ and an individual utility $u_i(a)$. The system designer cares about social welfare $W(a)$, defined as the 
-aggregate utility net of collective costs:
-
-\begin{equation}
-\label{eq:welfare}
-W(a) = \sum_{i=1}^n u_i(a) - C(a),
-\end{equation}
-
-where $C(a)$ captures collective costs such as resource depletion, corrupted shared memory, excessive monitoring, or repair burden.
-
-A joint action $a^*$ is a Nash equilibrium if no agent can improve its utility by unilaterally deviating, yet $a^*$ may be socially suboptimal: writing $a^{opt} = \arg\max_{a} W(a)$ for the social optimum, it is generally the case that $W(a^{opt}) > W(a^*)$. This is the Price of Anarchy / Price of Stability gap discussed in Section~\ref{sec:institutional-design}.
-% CUT (redundant): removed the restatement of the PoA/PoS lesson and its citations, already given in Section~\ref{sec:institutional-design}; replaced with a back-reference.
-
-The failure is not necessarily that any agent is malicious or misaligned, but rather that the interaction structure rewards locally rational behavior that degrades collective welfare. A model trained to complete its assigned task may consume excessive shared resources; a verifier agent may avoid costly verification when another agent can do it; a planner agent may delegate repair labor to lower-status worker agents; or a monitoring agent may over-apply sanctions because punishment is easier to measure than trust.
-
-\paragraph{Artificial commons.} The following is an illustrative instantiation of the general framework above, not a formal result; it is meant to fix intuitions about how institutional mechanisms can be represented, not to derive novel bounds.
-
-Let $R$ denote a shared resource, such as a tool-call budget, context window, or memory store. Each agent chooses a level of resource use $x_i \geq 0$. The total resource use is:
-
-\begin{equation}
-X = \sum_{i=1}^{n} x_i.
-\end{equation}
-
-Suppose the shared resource degrades when total use exceeds capacity $K$:
-
-\begin{equation}
-D(X) = \max(0, X-K).
-\end{equation}
-
-An agent gains individual benefit $b_i(x_i)$ from using the resource, while the group bears degradation cost $D(X)$. Writing $p_i(\mathbf{x})$ for any individually assigned penalty or cost (instantiating the sanction $s_i$ introduced below), individual utility takes the form $u_i(\mathbf{x}) = b_i(x_i) - p_i(\mathbf{x})$, and the general social
-welfare of Eq.~(\ref{eq:welfare}) specializes to
-
-\begin{equation}
-W(\mathbf{x}) = \sum_{i=1}^{n} b_i(x_i) - \lambda D(X) - M(\mathbf{x}) - R(\mathbf{x}),
-\end{equation}
-
-where $C(\mathbf{x}) = \lambda D(X) + M(\mathbf{x}) + R(\mathbf{x})$ collects resource degradation, monitoring cost $M(\mathbf{x})$, and repair cost $R(\mathbf{x})$ -- note that individually assigned penalties $p_i(\mathbf{x})$ are transfers within the system rather than net welfare losses, and so do not appear in $C(\mathbf{x})$.
-
-Without institutions, each agent may choose $x_i$ based on private benefit while externalizing degradation costs onto the group. Institutional mechanisms such as quotas, monitoring, sanctions, and repair obligations modify the action space or payoff structure so that individual incentives better track collective consequences.
-
-\paragraph{Sanctions.} A sanction $s_i(a)$ modifies an agent's institution-adjusted utility $u_i^I(a)$, defined as the agent's baseline utility shifted by the sanction applied to its behavior:
-
-\begin{equation}
-u_i^I(a) = u_i(a) + s_i(a),
-\end{equation}
-
-where $I$ denotes the institutional environment, and $p_i(\mathbf{x})$ above is the special case of $s_i$ restricted to penalty-type sanctions in the resource-use setting; punitive, rewarding, and restorative sanctions correspond to different signs and structures of $s_i$.
-
-The institutional design problem is not simply to choose sanctions that maximize average cooperation, but to choose an institutional environment that improves social welfare while limiting enforcement cost, false punishment, surveillance burden, inequality of burden, and irreversibility -- the multi-objective tradeoff formalized in the mechanism-design literature \citep{maskinMechanismDesignHow2008,myersonOptimalAuctionDesign1981} and, for network and congestion settings specifically, in the Price-of-Stability analyses of Anshelevich et al.~\citep{anshelevichPriceStabilityNetwork2008}. We propose in Section~\ref{sec:design_dim} an empirical evaluation agenda for measuring these quantities (enforcement cost, false punishment rate, inequality of burden) across institutional designs.
-}
-\delbanner{end}
-\fi
 % }
 
 
 
 
-\subsection{Terminology.}
 \label{app:terminology}
 
 \paragraph{Agent society.}
@@ -889,103 +886,10 @@ An \emph{interaction failure} is a harmful system-level outcome that emerges fro
 The \emph{model-in-institution} is the unit of evaluation consisting of a model embedded in a specific institutional setting. This includes the agent's role, resource access, monitoring exposure, enforcement environment, reputation history, and repair options. Evaluating the model-in-institution asks not only what a model does in isolation, but how it behaves under particular rules, constraints, and social structures.
 
 
-\ifshowreviewflags
-\delbanner{Appendix B.2 stub; Table~\ref{tab:functions} now introduces the functions in Section~\ref{sec:functions}}
-{\color{red!70!black}
-\subsection{Seven institutional functions.}
-\label{app:institutional-functions}
 
-
-
-The seven institutional functions above describe what a cooperative agent society must accomplish.
-}
-\fi
 % CUT (redundant): removed the re-enumeration of the six families and the "analytically distinct but co-occur" claim, both already stated in Section~\ref{sec:institutional-design}.
 
-\ifshowreviewflags
-\delbanner{Appendix B.3 stub (the families are defined in Section~\ref{sec:functions})}
-{\color{red!70!black}
-\subsection{Six mechanisms of cooperation}
-\label{app:six-mechanisms}
-A complementary question is how those functions are implemented: through the six mechanism families defined in Section~\ref{sec:institutional-design}, summarized with human and LLM-agent examples in Table~\ref{tab:expanded-taxonomy}.
-}
-\fi
 
-% ===== CUT for redundancy: the six \paragraph definitions below duplicate the six-family
-% definitions in Section~\ref{sec:institutional-design}. Kept via \iffalse for review;
-% Table~\ref{tab:expanded-taxonomy} retains the same content in compact form. Delete the
-% \iffalse...\fi block to make the cut permanent. =====
-\iffalse
-\paragraph{Normative mechanisms: belief-based influence.}
-\dup{Normative mechanisms shape behavior through shared expectations about what is appropriate, legitimate, or required.} Rather than relying primarily on explicit enforcement, they reduce ambiguity by specifying what counts as cooperative or defective behavior. In human systems, examples include cultural norms governing resource use, authorship conventions in academia, and implicit rules in open-source communities. In LLM-agent systems, analogous mechanisms include system-level instructions, constitutions, shared task protocols, citation norms, and rules for when agents should verify, defer, summarize, or repair.
-
-\paragraph{Social mechanisms: relational influence.}
-\dup{Social mechanisms shape behavior through relationships, trust, reciprocity, reputation, and partner selection.} In human groups, cooperation is often sustained through repeated interaction and social memory: actors who defect may face reputational damage, reduced trust, or exclusion from future interactions, while reliable actors gain preferential access to opportunities. In LLM-agent systems, analogous mechanisms include trust-based routing, reputation scores, partner selection policies, model-specific reliability histories, and selective delegation to agents with demonstrated competence.
-
-\paragraph{Epistemic mechanisms: information-based influence.}
-\dup{Epistemic mechanisms shape cooperation by making behavior observable, auditable, and verifiable.} In human systems, audits, peer review, transparency reports, and compliance monitoring make it possible to detect violations and assign responsibility. In LLM-agent systems, epistemic mechanisms include tool logs, citation requirements, provenance tracking, uncertainty reporting, cross-agent validation, retrieval-grounded verification, and external checks on generated claims. These mechanisms are especially important because many agent failures involve hallucination, unverifiable claims, or corrupted shared memory.
-
-\paragraph{Incentive mechanisms: payoff-based influence.}
-\dup{Incentive mechanisms alter the costs and benefits of behavior.} These include rewards, penalties, subsidies, fines, deposits, and bonding mechanisms. In human institutions, incentives can encourage contribution to public goods or discourage overuse of shared resources. In LLM-agent systems, incentives may be implemented through reward shaping, budget allocation, priority access, tool-call costs, compute quotas, or penalties for inefficient or incorrect behavior. However, \dup{incentive mechanisms also risk crowding out cooperation when agents learn to treat violations as priced options rather than norm breaches.}
-
-\paragraph{Constraint mechanisms: access-based influence.}
-\dup{Constraint mechanisms limit the range, frequency, or intensity of possible actions, often before harm occurs.} Examples include quotas, rate limits, throttling, access controls, and permission boundaries. In human and technical systems, constraints are widely used to prevent over-extraction of shared resources. In LLM-agent systems, they are especially relevant for governing tool calls, context-window usage, code execution, memory writes, retrieval access, and high-impact actions. Constraints differ from sanctions because they often operate ex ante, before a violation occurs.
-
-\paragraph{Restorative mechanisms: repair-based influence.}
-\dup{Restorative mechanisms aim to repair harm and reintegrate actors rather than simply punish them.} These include restitution, repair labor, apology, correction, and re-entry processes. In human systems, restorative approaches can preserve group cohesion while addressing violations. In LLM-agent systems, restorative mechanisms may assign agents corrective tasks such as cleaning corrupted memory, revising hallucinated outputs, re-running verification, documenting errors, compensating for wasted resources, or satisfying re-entry conditions after temporary exclusion.
-\fi
-% ===== END CUT (six-mechanism prose) =====
-
-
-\ifshowreviewflags
-\begin{table*}[!t]
-\centering
-\caption{\REVIEWFLAG{[DELETE THIS TABLE: covered by Figure~\ref{fig:cooperation_taxonomy_tree} and Section~\ref{sec:functions}.]} Expanded taxonomy of cooperation-shaping mechanisms across human and LLM-agent systems.}
-\label{tab:expanded-taxonomy}
-\begin{tabular}{p{0.16\linewidth} p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
-\toprule
-\textbf{Mechanism family} & \textbf{Channel of influence} & \textbf{Human examples} & \textbf{LLM-agent analogues} \\
-\midrule
-Normative
-& Beliefs about appropriate behavior
-& Social norms; authorship conventions; professional codes; community guidelines
-& System prompts; constitutions; shared task protocols; citation norms; verification rules \\
-\midrule
-Social
-& Relationships, trust, reciprocity, partner selection
-& Reputation; gossip; repeated interaction; partner choice; exclusion
-& Trust-based routing; reliability histories; selective delegation; model reputation; partner memory \\
-\midrule
-Epistemic
-& Observability, verification, information quality
-& Audits; peer review; transparency reports; compliance monitoring
-& Tool logs; provenance tracking; citation checks; cross-agent verification; retrieval-grounded audits \\
-\midrule
-Incentive
-& Costs, rewards, and payoffs
-& Fines; bonuses; subsidies; deposits; bonding
-& Tool-call costs; compute budgets; reward shaping; priority access; penalties for failed verification \\
-\midrule
-Constraint
-& Limits on possible action
-& Quotas; access control; rate limits; licenses; permissions
-& API quotas; memory-write permissions; context limits; sandboxing; throttling; tool access restrictions \\
-\midrule
-Restorative
-& Repair, restitution, reintegration
-& Apology; restitution; restorative justice; re-entry processes
-& Memory cleanup; output correction; re-verification; repair tasks; re-entry after temporary exclusion \\
-\bottomrule
-\end{tabular}
-\end{table*}
-\fi
-
-% ===== CUT for redundancy: closing paragraph repeated the "not mutually exclusive" point and
-% the reputation-system co-occurrence example already given in Section~\ref{sec:institutional-design}. =====
-\iffalse
-These categories are not mutually exclusive. A single institutional design may combine several mechanism families. For example, \dup{a reputation-based routing system depends on epistemic mechanisms to observe behavior, social mechanisms to encode trust, incentive mechanisms if reputation affects future access, and restorative mechanisms if agents can recover from low reputation through repair.}
-\fi
-% ===== END CUT =====
 
 \section{Example Institutional Designs for LLM-Agent Systems}
 \label{app:example-institutions}
