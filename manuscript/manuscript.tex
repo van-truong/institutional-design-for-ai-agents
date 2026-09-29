@@ -409,20 +409,22 @@ Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unif
 
 
 
-\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which. The institution itself must be evaluated, which is the subject of Section~\mbox{\ref{sec:evaluation}}. Table~\mbox{\ref{tab:family-dilemma-guide}} condenses these lessons into a short guide: for each dilemma, the families that help and the failure to watch for.
+\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which. The institution itself must be evaluated, which is the subject of Section~\mbox{\ref{sec:evaluation}}. Table~\mbox{\ref{tab:family-dilemma-guide}} condenses these lessons into a short guide: for each failure mode, the families most exposed to it, the safeguards that address it, and what to measure.
 
 \begin{table*}[t]
 \centering
-\caption{Which mechanism families address each cooperation dilemma, and what to watch for. Drawn from Section~\mbox{\ref{sec:institutional-design}} and the failure modes in Section~\mbox{\ref{sec:failures}}.}
+\caption{A practical guide linking the mechanism families to the failure modes of Section~\mbox{\ref{sec:failures}}: the families most exposed to each failure, safeguards drawn from the taxonomy (Fig.~\ref{fig:cooperation_taxonomy_tree}), and metrics from Table~\ref{tab:metrics} that can detect it.}
 \label{tab:family-dilemma-guide}
-\begin{tabular}{p{0.20\linewidth} p{0.40\linewidth} p{0.32\linewidth}}
+\footnotesize
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.23\linewidth} >{\raggedright\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.22\linewidth}@{}}
 \toprule
-\textbf{Dilemma (Fig.~\ref{fig:dilemmas-response})} & \textbf{Families that help} & \textbf{What to watch for} \\
+\textbf{Failure mode} & \textbf{Families exposed} & \textbf{Safeguards from the taxonomy} & \textbf{What to measure} \\
 \midrule
-Extractive (overuse depletes a shared resource) & Constraint (quotas, rate limits); incentive (tool-call costs) & Priced violations replace the norm; agents treat penalties as a line item \\
-Contributive (beneficiaries skip upkeep) & Normative (contribution norms); social (reputation, partner choice); incentive (rewards) & Visible acts crowd out invisible upkeep; reputation gaming \\
-Second-order (monitoring and punishment are themselves costly) & Epistemic (monitoring, audit); social (metanorms) & Authority capture; punishment cascades; monitoring turning into surveillance \\
-Repair (who fixes the harm) & Restorative (repair labor, reintegration); epistemic (provenance to locate harm) & Apology without restoration; repair burden falling on the same agents \\
+The mechanism reframes the interaction (a fine is read as a price) & Incentive & Keep explicit norms and codes of conduct alongside any price; graduated and proportional sanctions rather than a flat fee & Contribution stability, including after the mechanism is removed \\
+The mechanism becomes an optimization target (reputation farming, visible but shallow cooperation) & Social, epistemic & Tamper-evident records; peer evaluation and review; oversight of communication and internal state, not only of scores & Gameability; false negative rate \\
+The mechanism creates an authority position (a monitor that over-detects, a captured mediator) & Epistemic, constraint & Checks on sanctioners; appeals and error correction; legitimate or elected authority; rotation of roles; runtime interruption by humans & Authority capture; false punishment rate; human override \\
 \bottomrule
 \end{tabular}
 \end{table*}
