@@ -80,6 +80,9 @@ Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
 % Yellow highlight marks passages that duplicate content elsewhere (redundancy audit).
 \sethlcolor{yellow}
 \newcommand{\dup}[1]{\ifshowreviewflags\hl{#1}\else#1\fi}
+% Light-blue highlight marks newly added / relocated prose in this revision.
+\definecolor{chgblue}{RGB}{176,216,247}
+\newcommand{\chg}[1]{\ifshowreviewflags{\begingroup\sethlcolor{chgblue}\hl{#1}\endgroup}\else#1\fi}
 
 % Color list: https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
     
@@ -328,6 +331,15 @@ We organize cooperation-shaping mechanisms into six families, see figure~\ref{fi
 
 These three levers operate within a fixed game. Yet does not specify how agents interact within the game $\mathcal{G}$. Institutional mechanism introduce three additional families to address dimensions that the formalism treats as exogenous or omits entirely but are common in human institutions. \emph{Normative} mechanisms impose a deontic layer that prescribes which actions in $A_i$ are \emph{permissible} independently of which are feasible or profitable. \emph{Social} mechanisms shape the interaction structure: who is in $N$, who interacts with whom, and whether agents can select or exclude partners \citep{nowak2006five}. \emph{Restorative} mechanisms shape what happens after deviation: whether and how agents re-enter cooperative arrangements, make restitution, or receive corrective feedback \citep{ostromGoverningCommonsEvolution1990}. Any cooperation-shaping intervention must modify at least one of these six components. For example, \dup{a reputation system depends on epistemic mechanisms to observe behavior, social mechanisms to translate history into trust, and incentive or constraint mechanisms if reputation affects future access}.
 
+\chg{Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} surveys how cooperation has been governed across human disciplines---sociology, anthropology, law, governance, economics, behavioural science, computer science, cryptography, solidarity economics, and restorative justice---cataloguing dozens of concrete mechanisms. These disciplinary traditions cut across the six analytical families above rather than mapping onto them one-to-one: each family is realized through several traditions, and each tradition contributes mechanisms to more than one family. Extended definitions and examples for each function and family appear in Appendix~\mbox{\ref{app:institutional-functions}} and~\mbox{\ref{app:six-mechanisms}}, and Table~\mbox{\ref{tab:family-dilemma-guide}} links the families to the four cooperation dilemmas as a practical guide.}
+
+\begin{figure*}[tp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/figure5_cooperation-taxonomy.pdf}
+  \caption{A unified taxonomy of cooperation-shaping mechanisms for artificial agent societies, drawing on sociology, anthropology, law, governance, economics, behavioural science, computer science, cryptography, solidarity economics, and restorative justice. Six families organise 73 mechanisms.}
+  \label{fig:cooperation_taxonomy_tree}
+\end{figure*}
+
 % \ANG{The following is the old version.}
 % We organize cooperation-shaping mechanisms into six broad mechanism families based on the channel through which they influence behavior: normative mechanisms shape beliefs and expectations; social mechanisms shape relationships, trust, and partner choice; epistemic mechanisms shape observability and verification; incentive mechanisms shape costs and benefits; constraint mechanisms shape access and feasible action; and restorative mechanisms shape repair, correction, and re-entry. \VAN{we need to have a semi-"methods" section to describe exactly how we arrived at this framing or set of opinions} These families are analytically distinct but often co-occur in real systems \ANG{[CITE], where does this taxonomy come from, are we inventing it or was from hammond, who says they co-occur, is it paper evidence based or first-principles based reasoning here. Ok I think the example fixes my comment lol} \VAN{We basically "invented" it but that's a strong word. We observed common patterns or first principles in all these diff areas of human history/practice and distilled them into this new org chart to help people think about gaps and opportunities for mech design/institutional design that parallels human precedent}. 
 
@@ -435,6 +447,7 @@ This framing avoids treating all failures as equally severe. It also foregrounds
 % \end{table*}
 
 
+\FloatBarrier
 \section{When Cooperation Mechanisms Fail}
 
 
@@ -457,8 +470,13 @@ mediators can be captured by the parties they adjudicate, sanctioners can be gam
 % \ANG{I think needs some real example to make this stronger.}
 % }
 
-% JULY 2 TODO = \ANG{this paragraph is floating free.} \VAN{I moved this here for now. Will need to rework it}
+% CUT: this "floating free" paragraph (flagged by ANG/VAN) re-introduced the taxonomy figure,
+% which now lives in Section~\ref{sec:institutional-design} with its own bridging paragraph.
+% Kept via \iffalse for review; delete to make permanent.
+\iffalse
 Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unified taxonomy for artificial agent societies. The taxonomy draws on economics, sociology, anthropology, law, and computer science to organize diverse governance patterns into a shared design space. Rather than treating sanctions, incentives, norms, audits, access limits, and repair pathways as interchangeable interventions, the figure clarifies how different mechanisms contribute to institutional governance. The extended definitions and examples for each function and mechanism family are provided in Appendix~\ref{app:institutional-functions} and ~\ref{app:six-mechanisms}. Table~\ref{tab:family-dilemma-guide} links the six families to the four cooperation dilemmas as a practical guide.
+\fi
+% ===== END CUT (floating taxonomy paragraph) =====
 
 \textbf{From pathologies to evaluation.} Whether sanctions stabilize 
 % \ANG{list argument as the above}
@@ -663,7 +681,7 @@ This paper has argued that multi-agent AI safety requires evaluating the \emph{m
 
 Sanctions are central to this agenda because they are where institutional rules acquire consequences. \ANG{Have we ever defined how does it have \textit{consequences?} have we defined the why it has to be embeeded later?} \VAN{we don't, but we could easily define anything semantic in appendix like a dictionary key and refer like that to keep brevity. I think this is just a paraphrase of a some definitions that poli sci ppl probably know by heart but CS/AI ppl don't} \ANG{1 July, I think if that is central we should define or describe it somewhere in the middle. we use the same term in the abstract afaik}
 Yet sanctions and internal model guardrails, alone, are not enough. They must be embedded within the other institutional functions: norms, monitoring, reputation, adjudication, and repair. Poorly designed sanctions can crowd out cooperation, encourage malicious compliance, amplify surveillance, produce punishment cascades, entrench authority asymmetries, or enable collusion against human oversight. Human cooperation research makes the broader lesson clear: the mechanisms that sustain cooperation can also create hidden costs.
-The safety problem is therefore not only how to make agents cooperate. It is how to prevent cooperation mechanisms from becoming coercive, exclusionary, polarizing, or brittle. Future AI safety research should evaluate not only whether individual agents behave well, but whether the institutions governing agent societies can prevent interaction failures without creating new systemic risks.
+The safety problem is therefore not only how to make agents cooperate. It is how to prevent cooperation mechanisms from becoming coercive, exclusionary, polarizing, or brittle. Future AI safety research should evaluate not only whether individual agents behave well, but whether the institutions governing agent societies can prevent interaction failures without creating new systemic risks. \chg{We see no direct ethical risk in the analysis itself, but note that any institutional design we advocate must preserve human oversight and the capacity for intervention.}
 
 \vqt{We do not yet have all the answers for this research agenda. We offer this framework as something researchers can test, question, and improve as multi-agent systems become more capable and consequential. So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions---even if capable AI systems can eventually design and run those institutions themselves.}
 
@@ -678,9 +696,15 @@ The safety problem is therefore not only how to make agents cooperate. It is how
 % ===================================
 % Impact Statement
 % % ===================================
-% \VAN{Todo I need to add in an impact statement to match the other ICML papers}
+% CUT: Impact Statement removed. It is an ICML main-track convention, not a Springer LNCS
+% requirement, and it duplicated the Conclusion. Its one distinctive sentence (no direct
+% ethical risk / preserve human oversight) was merged into the Conclusion above. Kept via
+% \iffalse for review; delete the block to make the cut permanent.
+\iffalse
 \section{Impact Statement}
 This position paper argues that the safety of multi-agent AI systems should be evaluated at the level of institutions, not only individual models, with the aim of preventing interaction failures. In shared digital, economic, and physical environments, these failures could arise as unsustainable resource exhaustion, collusion, punishment cascades, and irreparable harm to deployed systems. We argue that while cooperation is broadly desirable, it is not an unqualified good, and there exists a need for a more organized evaluation agenda---one that accounts for agent-group interactions in non-static test settings. We further argue that the choice of values that an institution enforces should remain with humans for as long as humans bear the consequences of agent behavior. We see no direct ethical risk in the analysis itself, but note that any institutional design we advocate must preserve human oversight and the capacity for intervention. \vqt{We offer this framework as a research agenda to be tested, refined, and revised by the cooperative-AI community.}
+\fi
+% ===== END CUT (Impact Statement) =====
 
 \section{Author Contributions}\label{sec:contributions}
 V.Q.T. and D.G.P. led the initial conceptualization. V.Q.T. and X.A.H. together further evolved and developed the research framework, including incorporating feedback from D.G.P., E.I., R.F., J.N.C., T.J.Z., and Z.J. All manuscript writing was led by V.Q.T. and X.A.H. and every author, E.I., R.F., J.N.C., D.G.P., T.J.Z., and Z.J., contributed to writing, reviewing, and/or editing both original and final drafts. V.Q.T., X.A.H., and E.I. created visualizations. T.J.Z., D.G.P., and Z.J. led funding acquisition. V.Q.T. and X.A.H. led project management. Z.J., D.G.P., and T.J.Z. contributed supervision.
@@ -729,13 +753,8 @@ Figure~\ref{fig:cooperation_taxonomy_tree} presents a unified taxonomy of cooper
 % \VAN{I cannot for the life of me get this figure onto the 1st pg under the A. Unified Taxonomy of Cooperation-Shaping Mechanisms heading. Also I agree with the reviewer. I think the best thing is to have an expanded table with add in citations for every MAS example we've found that's been studied so that readers see a clear scaffold of gaps and opportunities for them to add their work onto. And we also create some kind of "practical guide" as they suggested}
 
 
-% \VAN{TODO need to enlarge font in Inkscape} \ANG{Beautifuuuuuuuul} 
-\begin{figure*}[!t]
-  \centering
-  \includegraphics[width=\textwidth]{figures/figure5_cooperation-taxonomy-circle.pdf}
-  \caption{A unified taxonomy of cooperation-shaping mechanisms for artificial agent societies, drawing on sociology, anthropology, law, governance, economics, behavioural science, computer science, cryptography, solidarity economics, and restorative justice. Six families (coloured wedges) organise 73 mechanisms across 25 sub-clades (hollow hubs).}
-  \label{fig:cooperation_taxonomy_tree}
-\end{figure*}
+% Figure 5 (taxonomy) relocated to Section~\ref{sec:institutional-design}; see the figure and
+% bridging paragraph there.
 
 
 % \ANG{
