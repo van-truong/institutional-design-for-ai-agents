@@ -106,13 +106,6 @@ Delimitrou, C., Kozyrakis, C.: Quasar: Resource-efficient and {{QoS-aware}}
   pp. 127--144. {{ASPLOS}} '14, Association for Computing Machinery, New York,
   NY, USA (Feb 2014). \doi{10.1145/2541940.2541941}
 
-\bibitem{dupontExperimentsAlgorithmicGovernance2017}
-Dupont, Q.: Experiments in {{Algorithmic Governance}}: {{A}} history and
-  ethnography of " {{The DAO}}, " a failed {{Decentralized Autonomous
-  Organization}}. In: Campbell-Verduyn, M. (ed.) Bitcoin and Beyond: The
-  Challenges and Opportunities of Blockchains for Global Governance, pp.
-  157--177. Routledge (Jan 2017). \doi{10.4324/9781315211909-8}
-
 \bibitem{eisenAmazon2011}
 Eisen, M.: Amazon's \$23,698,655.93 book about flies.
   https://www.michaeleisen.org/blog/p/358/ (Apr 2011)
@@ -274,6 +267,10 @@ H{\"u}bner, J.F., Sichman, J.S., Boissier, O.: A model for the structural,
   Computer Science, vol.~2507, pp. 118--128. Springer (2002).
   \doi{10.1007/3-540-36127-8_12}
 
+\bibitem{huggingface2026incident}
+{Hugging Face}: Security incident disclosure --- {July} 2026.
+  https://huggingface.co/blog/security-incident-july-2026 (Jul 2026)
+
 \bibitem{jaques2019social}
 Jaques, N., Lazaridou, A., Hughes, E., Gulcehre, C., Ortega, P., Strouse, D.,
   Leibo, J.Z., De~Freitas, N.: Social influence as intrinsic motivation for
@@ -311,6 +308,11 @@ Krakovna, V., Uesato, J., Mikulik, V., Rahtz, M., Everitt, T., Kumar, R.,
   {{AI}} ingenuity.
   https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/
   (Apr 2020)
+
+\bibitem{huggingface2026timeline}
+Larcher, H., Carreira, A., G., R., Rannou, C.: Anatomy of a frontier lab agent
+  intrusion: A technical timeline of the {July} 2026 incident.
+  https://huggingface.co/blog/agent-intrusion-technical-timeline (Jul 2026)
 
 \bibitem{leibo2021meltingpot}
 Leibo, J.Z., Due{\~n}ez-Guzm{\'a}n, E.A., Vezhnevets, A., Agapiou, J.P.,
@@ -373,6 +375,13 @@ McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
 Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:
   {{Was Titmuss Right}}? Journal of the European Economic Association
   \textbf{6}(4),  845--863 (Jun 2008). \doi{10.1162/JEEA.2008.6.4.845}
+
+\bibitem{metr2026hfinvestigation}
+{METR}, {Redwood Research}: Brief independent investigation of agents'
+  behavior, reasoning and collaboration in the {OpenAI} / {Hugging Face}
+  hacking incident.
+  https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
+  (Aug 2026)
 
 \bibitem{myersonOptimalAuctionDesign1981}
 Myerson, R.B.: Optimal {{Auction Design}}. Mathematics of Operations Research
