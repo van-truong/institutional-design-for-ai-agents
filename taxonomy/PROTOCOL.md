@@ -23,6 +23,39 @@ tested-versus-untested gap map, and the website's deep-dive tabs and mind map.
 | Literature scope | **LLM multi-agent work, 2023–present**, plus **MARL precursors** (non-LLM multi-agent RL), flagged separately. |
 | Data home | Public, in this repository. Only published or preprinted work is cited. The original working spreadsheet stays private and gitignored. |
 
+## 2a. Coding method (v0.2, 2026-09-29)
+
+The published taxonomy is built by **thematic coding of extracted instances**, not by
+confirming the seed. The original spreadsheet and the Phase 1 seed are a **sensitizing
+list**: they suggest codes and search terms, but no seed entry survives unless the coded
+evidence supports it.
+
+1. **Meta-characteristic.** The lever through which an intervention changes agents'
+   options, information, payoffs, relationships, norms, or what happens after a deviation,
+   in order to sustain cooperation among agents.
+2. **Instances (`instances.csv`).** One row is one documented use of a mechanism in one
+   source: an empirical study, a deployed system, or a legal or institutional rule. It
+   records the source, the **discipline** and **field of use**, the agent type (human,
+   LLM, MARL, software, organization), and a short description in the source's own terms.
+   Instances come from the search papers (Phase 2), the cross-disciplinary search (2b), and
+   the seed's human examples (tagged `origin=seed`).
+3. **Open coding.** Each instance gets a descriptive code for its lever, plus structural
+   attributes: who acts (central, peer, third party, self), timing (ex ante, ex post),
+   valence, and the target of the change.
+4. **Collapse.** Codes that use the same lever are merged into one **mechanism**, even when
+   disciplines name them differently. For example, a Pigouvian tax, a regulatory fine, and
+   a slashing penalty are all a fixed cost on a deviation. The disciplines and fields where
+   a mechanism appears become its **facet**, and the published row lists all of them.
+   Every merge and split is logged in `coding_log.csv`.
+5. **Group.** Mechanisms are grouped into higher-level themes (the primitives). The 17 seed
+   primitives are the starting frame, and they are revised when the coded mechanisms do not
+   fit them.
+6. **Ending conditions** (Nickerson, Varshney & Muntermann, 2013). Iteration stops when
+   the last pass over new instances produces no new mechanism and no merge or split, and
+   every mechanism has at least one instance.
+
+The single verifier reviews every code and merge; the coding log is the audit trail.
+
 ## 3. Unit of record
 
 One row of `mechanisms.csv` is one **mechanism**: an intervention that changes
@@ -111,7 +144,14 @@ that name a mechanism without testing it (recorded as `discussed`, not `tested`)
 title/abstract, included, and exclusion reasons — reported as a PRISMA-style flow in
 the paper.
 
-**Run.** Six slices (G1–G6) covering the 17 primitives, each run by an LLM search agent
+**Theme slice (G7).** A seventh slice collects papers that report emergent group-level
+behavior among artificial agents (conventions, culture, collective dynamics, collusion,
+agent societies), whether or not they test a mechanism. These papers may have empty
+`mechanism_ids`. Every paper carries zero or more `themes` tags from a fixed vocabulary:
+`emergent_culture`, `emergent_norms`, `emergent_communication`, `emergent_structure`,
+`collective_dynamics`, `emergent_collusion`, `agent_societies`, `emergent_institutions`.
+
+**Run.** Six slices (G1–G6) covering the 17 primitives, plus G7, each run by an LLM search agent
 on 2026-09-29. The merge de-duplicates papers by arXiv ID, then DOI, then normalized
 title. It added one mechanism the seed lacked (P04-06, peer reward / gifting) and
 reconciled citation keys that differed between slices (`KEY_ALIASES` in the script).
