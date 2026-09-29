@@ -35,21 +35,17 @@ The switches near the top of `manuscript.tex` control whether review colors appe
 ## Co-author review
 
 - [x] ~~Add ORCIDs, the co-first-author and corresponding-author markers, and the corresponding email to the manuscript.~~
-- [ ] **Author metadata:** each co-author confirms order, co-first authorship, affiliations, emails, ORCIDs, and disclosures.
-- [ ] **Final title:** choose the current title or a modest archival update:
-  - `Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment` (current)
-  - `Institutional Design for Cooperative Multi-Agent AI Systems`
-  - `Beyond Model-Level Alignment: Institutional Design for Multi-Agent AI`
-  - `Designing Institutions for Safe Cooperation Among AI Agents`
+- [x] ~~**Author metadata:** each co-author confirms order, co-first authorship, affiliations, emails, ORCIDs, and disclosures.~~
+- [x] ~~**Final title:** keep `Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment`.~~
 - [x] ~~**Claim audit:** resolve the opening anecdotes, Flash Crash chronology, and flagged daycare/AWS/Amazon/1929/Ostrom/deployment claims with exact sources or narrower wording.~~
 - [x] ~~Verify every cited reference (no fabricated sources); update preprints to their published versions.~~
 - [x] ~~Rebuild the taxonomy from a documented search and thematic coding (Appendix A), with a cross-model coding check.~~
 - [x] ~~Add the conceptual bridge and repair incompatible author-bearing citations.~~
 - [x] ~~Refine the editable HTML figures and poster-derived website artwork.~~
 - [x] ~~Approve blue, green, and yellow additions.~~
-- [ ] **Final content/figure pass:** redesign Figs 1 and 6 (pink "Draft figure" captions), verify the taxonomy figure counts and captions, and inspect every figure at LNCS print size.
+- [ ] **Final content/figure pass:** redesign Figs 1 and 7 (pink "Draft figure" captions), verify the taxonomy figure counts and captions, and inspect every figure at LNCS print size.
 - [ ] **Remaining strikeouts:** review the red `\del{}` text (Sections 3, 6, Discussion, Appendices A and B).
-- [ ] **Table 2:** replace with an untested-mechanisms table or delete.
+- [x] ~~**Table 2:** replaced with a failure-mode flow figure (Fig. 6); merged the two metrics tables; expanded the evaluations table into an inventory.~~
 - [ ] **Alternative Views + Discussion:** decide whether to merge them into one section.
 - [ ] **Taxonomy:** code the 84 new instances (I0562–I0645) and re-run the downstream scripts; the verifier reviews `coding/gpt/cross_model_disagreements.csv` and the I_A source flags, then clears the red "verification in progress" flag.
 - [x] ~~Clear bibliography and reference warnings.~~
@@ -60,7 +56,7 @@ Keep revisions light, source-backed, and in the paper's human voice.
 ## LNCS final submission (Van will submit after co-authors verify their info)
 
 - [x] ~~Convert the paper to the official Springer LNCS template.~~
-- [ ] Finalize title/authors/affiliations and complete the [metadata sheet](https://docs.google.com/spreadsheets/d/1Y90xfC0UPxPT60WwL3coFsegIEaLlC78iyCaVnYzb9I/edit?usp=sharing): OpenReview `308`, one corresponding author, all emails and ORCIDs.
+- [x] ~~Finalize title/authors/affiliations and complete the [metadata sheet](https://docs.google.com/spreadsheets/d/1Y90xfC0UPxPT60WwL3coFsegIEaLlC78iyCaVnYzb9I/edit?usp=sharing): OpenReview `308`, one corresponding author, all emails and ORCIDs.~~
 - [x] ~~Add Disclosure of Interests.~~
 - [ ] Confirm permissions and supplementary material; complete the [Springer LTP](https://docs.google.com/document/d/1JD0O4ZdV08ZwD7Os7CmzxDF3gm_FQFae/edit?usp=sharing).
 - [ ] Package the matching PDF and clean source as `OpenReview_308_Truong.zip`, then upload it to the [submission folder](https://drive.google.com/drive/folders/1Pt1cvqcWZGlNgVKuyEwlLPJ_Hm3sA_oI?usp=sharing).
