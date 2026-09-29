@@ -1,256 +1,256 @@
 open_code,n_instances,mechanism_id_or_NEW,rationale
-VCG incentive mechanism,1,M64,VCG payments make truthful bidding dominant.
-accessible independent arbitration,1,M51,Independent arbitrator issues binding ruling.
-adaptive commons governance,1,M46,Adaptive governance revises rules over time; close to C15.
-adaptive punishment intensity,1,M27,Punishment severity scales with detected defection.
-agent activity logging,1,M03,Lever is an attributable activity log (hint M04 overridden).
-agent governance framework,2,C29,Names a multi-lever agent governance framework (ETHOS=C29; other instance Institutional AI=C30).
-aggregate reputation information,1,M05,Aggregated reputation scores kept and shared.
-apology for norm repair,1,M55,Offender apologizes to repair relationship.
-appeal sanction decision,1,M54,Sanctioned party contests decision.
-assurance bond,1,M28,Bond posted and refunded on demonstrated compliance.
-attribution and rollback infrastructure,1,C28,"Combines attribution, rollback, incident analysis: agent visibility/infrastructure configuration."
-authorized agent interruption,1,M35,Authority halts agent action.
-automatic conditional execution,1,M31,Payment auto-released only when completion verified.
-automatic fixed fine,1,M16,Central automatic fine under explicit rule.
-bandwidth restriction,1,M36,Hard limit on flow resource use.
-bind conduct through prior commitment,7,M30,Definition: advance pledge/contract constrains later choices; self-commitment.
-binding conditional transfers,2,M29,Enforceable conditional transfers.
-blind reciprocal feedback,1,M05,Redesign of reputation feedback records.
-bond forfeited on breach,2,M28,Collateral forfeited on breach.
-bonded challenge and adjudication,2,M53,Staked challenge of claimed outcome.
-bonded challenge of claimed outcome,1,M53,Staked challenge of claimed outcome.
-bounded elected authority,1,M44,Elected leader with bounded authority.
-cap extraction and membership,1,C39,Combines catch caps with exile/membership rules (GovSim-SelfGovern).
-cap individual resource extraction,1,M36,Individual quotas on extraction.
-cap individual resource use,1,M36,Per-flow cap on shared resource use.
-cap shared resource use,1,M36,Quota caps aggregate consumption.
-capability-based access restriction,1,M34,Access only via held capability; ex ante permission.
-cash reward for participation,1,M22,Central payment for cooperative act.
-centralized auction allocation,1,M65,Central auction allocates tasks.
-choose among governance regimes,2,M45,Agents choose which institution to join.
-choose interaction partners,1,M10,Partner choice.
-collective liability for deviation,1,M20,Group shares penalty for member deviation.
-collectively amend governance rules,1,M42,Members propose and vote on rules.
-collectively set resource and membership rules,1,M42,Members author and vote on rules (hint M61 overridden).
-communicate or commit publicly,8,M33,Non-binding communication or public pledges.
-communication for coordination,1,M33,Pre-play communication.
-communication plus peer sanctions,1,C04,Names communication combined with peer punishment.
-communication topology restriction,1,M38,Designs who communicates with whom.
-compliance transparency and support,1,C12,Managerial model: transparency plus compliance support (also M67).
-condition benefits on conduct,9,M22,Umbrella: rewards/transfers conditioned on contribution or compliance.
-condition cooperation on others conduct,1,M39,Conditional cooperation on partner's behavior (amTFT).
-condition transfers on performance,3,M29,Umbrella: enforceable performance-conditioned transfers.
-conditional cooperation on observed conduct,1,M40,Donor conditions on recipient's conduct toward others.
-conditional fine threat,1,M14,Harmed party threatens cost on deviator.
-conditional public good subsidy,1,M17,Pigouvian subsidy is an M17 example; M22 also plausible.
-conditional reciprocal cooperation,1,M39,Reciprocative decision function.
-conduct-based risk premium,1,M12,Risk-rated premium conditioned on record (hint M17 overridden).
-configure market allocation rules,1,M65,Configurable market allocation rules.
-constrain permitted actions ex ante,5,M34,Definition names ex ante action constraints; hint votes scattered.
-contact notification and quarantine,1,M09,Quarantine of exposed parties for bounded period.
-contagious future-partner punishment,1,M40,Community enforcement/contagious punishment example.
-contractual conditional transfer,1,M29,Binding contract transfers.
-contribute to enforcement fund,1,M16,Member-funded central sanctioning pool.
-contribution-based tax and subsidy,1,M17,Falkinger tax-subsidy example.
-coordinate peer sanctions,1,M61,Normative module: infer authoritative institution from sanctions.
-coordinate through shared procedure,12,M58,Vague umbrella; closest is shared written rules/procedures.
-coordinated turn taking,1,M37,Irrigation turn-taking schedule.
-costly peer monitoring,1,M01,Patrols monitor conduct.
-credential and performance reputation,1,M05,Signed performance records as reputation.
-cross perspective fact checking,1,M06,Birdwatch bridging peer evaluation.
-crowdsourced fact checking,1,M06,Community Notes peer evaluation.
-cryptographic access control,1,M34,Access-control policies and tokens.
-cultural no-take norm,1,M34,No-take zones/days restrict actions ex ante.
-deadline-triggered disclosure,1,M18,90+30 disclosure policy example.
-democratic payoff rule adoption,1,M42,Vote on adopting payoff rule.
-dense network norm enforcement,2,M38,Network closure/embeddedness as interaction structure.
-detect and isolate collusive agents,1,M01,Monitoring with honeypot inducement; isolation secondary.
-detect group collusion,1,M02,Activation probes detect collusion.
-direct punishment,2,M14,Peer punishment.
-disagreement escalation,1,M51,Disagreement escalated to higher adjudicator (hint M43 overridden).
-disclosure-conditioned amnesty,1,M47,Amnesty for self-disclosure.
-disclosure-for-leniency,1,M47,Fine reduction for self-reporting.
-distributed peer moderation,1,M06,Distributed moderation example.
-escalate sanctions for repeated violations,1,M27,Enforcement ladder escalates (hint M58 overridden).
-escalate uncertain decisions,1,M43,Conformal social choice aggregation example.
-establish shared rules and authority,4,M58,Umbrella: collectively recognized explicit rules constrain conduct.
-evolved cooperative motivation,1,M59,Evolved intrinsic motivation.
-exchange equal time credits,1,M63,Timebank mutual credit.
-exclude deviator from group,1,M08,Ostracism/exile.
-explain applicable norm,1,M58,Norms explained when sanctions applied; M67 plausible.
-external stop authority,1,M35,Kill switch halts agent.
-externality pricing,1,M17,Carbon tax prices harm.
-fair shared access scheduling,1,M37,Channel access turn allocation.
-filter extreme contributions,1,M43,Discard outlying inputs.
-filter harmful sanctions,1,M50,Antisocial punishment filter example (hint M54 overridden).
-first reporter leniency,1,M47,Leniency for first self-reporter.
-fixed cost on detected deviation,2,M16,Fixed fine for detected deviation.
-forfeit collateral on breach,1,M28,Breach remedy transaction example (hint M29 overridden).
-formalize conditional cooperation,1,M29,Contracts formalize conditional cooperation.
-formalize reciprocal obligations,2,M29,Formal contracts; instances CoopEval (C41).
-gifting transfer,1,M21,Gifting action.
-gossip based partner exclusion,1,C05,Names gossip combined with exclusion.
-gossip-based reputation,1,M07,Gossip.
-govern shared memory updates,1,M42,Selection regime for shared rules/state chosen collectively.
-governance graph sanctions,1,M16,Governance graph example.
-graduated access restrictions,1,M27,Escalating restrictions on repeat violations.
-graduated penalty for deviation,2,M27,Tiered fines escalate (hint M16 overridden).
-graduated response to deviation,1,M27,Governance graph state machine example.
-graph anomaly intervention,1,M01,Oversight monitors interaction graph; intervention secondary.
-group expulsion,1,M08,Vote to expel.
-group performance bonus,1,M25,Firm-wide bonus shares collective outcome.
-honest quorum consensus,1,M43,Byzantine agreement/majority vote.
-immediate misreport penalty,1,M64,Penalty within incentive-compatible auction.
-impose cost after deviation,29,M14,Umbrella sanction code; peer punishment plurality.
-impose cost for norm violation,4,M14,Costly punishment of violators.
-impose escalating cost for breach,11,M27,Escalating/graduated sanction.
-impose pre-agreed cost for breach,1,M29,Liquidated damages example (hint M28 overridden).
-impose social cost for default,1,M18,Social sanctions on defaulters (hint M65 overridden).
-inactivity stake drain,1,M27,Progressive stake drain escalates with duration.
-institutional oversight and audit,1,M50,Audit office/courts check authority.
-interaction monitoring,2,M02,Communication monitoring.
-intrinsic cooperative reward,1,M59,Intrinsic moral rewards.
-intrinsic norm based incentives,1,M59,Intrinsic moral rewards.
-joint liability,2,M20,Joint liability.
-learn norms from public sanctions,1,M61,Norm learning from public sanctions.
-learned reward and punishment,1,M17,Adaptive mechanism design planner.
-learned tax and allowance,1,M17,Learned Pigovian tax.
-liability for imposed harm,1,M19,Strict liability/negligence.
-limit permitted actions by default,1,M34,Least privilege.
-limited third-party observation,1,M01,Conduct observed by third parties.
-majority-contingent juror stake,1,M51,Kleros decentralized arbitration.
-make cheating detectable,1,M01,Nonces make misbehavior detectable.
-make reversal costly after commitment,1,M30,Commitment device (hint M33 overridden).
-managerial punishment authority,1,M44,Fixed/elected/rotating manager.
-mandatory tool authorization,2,M34,Mandatory access control.
-marginal-contribution reward sharing,1,M25,Shapley reward distribution example (hint M64 overridden).
-market resource allocation rules,1,M65,Auction resource allocation.
-market search and matching,1,M65,Offer discovery and matching rules.
-match contributions nonlinearly,1,M64,Quadratic funding.
-mediated disclosure timetable,1,M52,CVD coordinator mediates.
-membership-contingent cooperation,1,M41,Self-enforcing IEA example.
-milestone-based coordination protocol,1,M38,Coordination protocol topology.
-monitor and isolate misbehavior,1,C33,"Sentinel agents: monitoring, audit records, isolation."
-monitor and route around,1,M01,Watchdog monitoring; route-around (M10) secondary.
-multi-run collusion audit,1,M01,Collusion audit pipeline example; M02/C34 plausible.
-network rewiring,1,M38,"Opinion-driven topology rewiring, not conduct-based."
-network topology design,1,M38,Network topology.
-newcomer identity dues,1,M04,Costly new identities.
-nonmember market penalty,1,M13,Climate club tariffs.
-norm-setting message board,1,M58,Board publishes norms.
-observe and record conduct,9,M01,Monitoring/audit of conduct.
-ostracism of defectors,1,M10,Disconnect via network rewiring policy.
-participatory resource allocation,1,M42,Participatory budgeting vote.
-partner choice and severance,1,M10,Partner choice.
-pay for verified discoveries,1,M48,Bug bounty.
-peer agreed sanctions,1,C02,"Covenants with a sword: communication, agreed sanctions."
-peer conditional reward,5,M21,Peer reward.
-peer cost imposition,7,M14,Peer punishment.
-peer norm pressure,1,M18,Peer pressure.
-peer norm sanctions,1,M14,Peer sanctions by age-mates.
-peer review and public scrutiny,1,M06,Peer review of states.
-peer territorial exclusion,1,M13,Harbor gangs territoriality.
-peer-information exposure,1,M66,Feedback on peers' confidence/behavior.
-penalty for noncompliant traffic,1,M16,Routers detect and penalize noncompliant flows (hint M58 overridden).
-permanent access ban,1,M08,Deplatforming.
-pool resources for mutual support,2,M63,Pooling / bail fund.
-preplay communication,2,M33,Cheap talk.
-proactive content restriction,1,M34,Proactive ex ante content restriction (hint M62 overridden).
-prune compromised communication edges,1,M10,G-Safeguard edge pruning example; M09 plausible.
-public announcement commitment,1,M33,Public intent announcement.
-public append-only record,1,M03,Certificate Transparency.
-public conduct disclosure,2,M01,Moderator discloses each agent's actions; M66 plausible.
-public conduct reputation,3,M05,Public reputation of conduct.
-public disapproval signal,1,M18,Disapproval points.
-public judgment record,1,M05,Posting judgments as reputation record; C11 context.
-public nonbinding pledge,1,M33,Public pledge.
-public record of conduct,33,M01,Definition: monitoring/auditing creates evidence of conduct.
-public record of past conduct,28,M05,Persistent reputation record.
-public reputation conditioning,1,M40,Condition cooperation on reputation.
-publicize violation,1,M18,Naming and shaming.
-publicize vulnerability information,1,M18,Vulnerability disclosure.
-punish failed enforcement,1,M49,Metanorms.
-punish failure to enforce,1,M49,Metanorms.
-quorum-based replication,1,M43,PBFT quorum.
-quota and adaptive throttling,1,M36,Quotas/adaptive throttling example.
-rank based team rewards,1,M26,Team tournaments.
-rank-contingent prize,1,M26,Rank-order tournament.
-rate limit access,1,M36,429 rate limit.
-reciprocal contribution access,1,M39,Tit-for-tat choking reciprocates uploads; M10 plausible.
-recommendation-based exposure nudge,1,M38,Recommender shapes who interacts.
-reconciliation after harm,1,M55,Gacaca reconciliation.
-redesign reward to favor contribution,1,M64,Redesigned public-goods reward example (hint M33 overridden).
-refund deposit upon compliant return,1,M28,Deposit-refund example; C10 also plausible.
-remove agents temporarily after attack,1,M09,Tag-out beam temporary removal (hint M01 overridden).
-remove or avoid uncooperative partners,3,M10,Definition: deny access or change partners by conduct.
-reporting linked incentives,1,C09,"Fines, leniency and whistleblower rewards package."
-reputation based exclusion,2,M10,Partners excluded based on reputation.
-reputation based partner selection,1,M10,Partner selection by reputation (hint M07 overridden).
-reputation conditioned cooperation,1,M40,Cooperation conditioned on reputation; M05 plausible.
-reputation conditioned rewards,1,M12,Terms conditioned on reputation; M05 plausible.
-reputation penalty on sales,1,M12,CARP reputation penalty.
-reputation threshold for access,1,M12,Spam-rate threshold example (hint M04 overridden).
-reputation-based partner selection,1,M10,Partner selection by reputation (hint M07 overridden).
-reputation-conditioned aid,2,M40,Image scoring.
-reputation-earned permissions,1,M12,Privileges by reputation.
-resource-use cap,2,M36,Catch caps (hint M42 overridden).
-restrict access after conduct,3,M09,Access cut off after conduct; M08 plausible.
-restrict permitted actions ex ante,8,M34,Ex ante action restriction.
-restrictive quality control,1,M56,Reverts/rejection tools.
-review and reverse erroneous decisions,1,M54,False-positive correction (hint M62 overridden).
-reward contribution or performance,9,M22,Umbrella: payment for contribution/performance.
-reward truthful conduct and penalize falsehood,2,M64,Augur REP reporting example.
-rewarded violation reporting,1,M48,Qui tam.
-role specification and verification,1,M58,Written role specs; M34 plausible.
-rotating access allocation,1,M37,Rotational lottery.
-rotating reciprocal contributions,1,M63,ROSCA.
-runtime rule enforcement,1,M35,Governance-as-a-Service.
-sanctioning institution,1,M45,Choice of sanctioning institution.
-score-based strategy reproduction,1,M62,Evolutionary tournament.
-select or rewire partners,1,M10,Partner selection (hint M42 overridden).
-self-defeating attack cost,1,M25,Stake aligns attacker payoff with system.
-self-funded abstinence deposit,1,M28,Deposit contract (hint M22 overridden).
-set receiver action for failed authentication,1,M04,DMARC policy example.
-shared ownership and profit sharing,1,M25,Ownership and profit shares.
-signed transaction commitment,1,M29,Signed mandates bind transaction; M34/M03 plausible.
-simultaneous review reveal,1,M05,Feedback redesign example.
-specify delegation boundaries,1,M34,Delegation specification bounds subagent task.
-stable centralized matching,1,M65,Deferred acceptance matching.
-stake forfeiture on misconduct,1,M28,Slashed deposits.
-stake-based alignment,1,M25,Skin in the game (PoS).
-stake-weighted voting,1,M42,Token-holder voting on rules.
-standardize sanction decisions,1,M16,Standardized sanction schedules (hint M27 overridden).
-state rollback,1,M56,Commit/revert rollback.
-success-biased imitation,2,M62,Fermi imitation.
-tag-out exclusion,1,M09,Tag-out beam.
-tax and redistribution,1,M17,AI Economist tax planner.
-tax-message allocation rule,1,M64,Groves-Ledyard style mechanism.
-temporary exclusion,1,M09,Licence suspension.
-third party dispute adjudication,1,M51,Debate judged by adjudicator.
-third party dispute mediation,2,M52,Mediator agent.
-third party observation,1,M01,Third-party observation of conduct.
-third party resolves disputes,8,M51,Third-party dispute resolution umbrella.
-third-party dispute ruling,1,M51,Arbitration Committee.
-third-party mediation,3,M52,Mediation.
-third-party punishment,1,M15,Third-party punishment.
-threshold switched reward and penalty,1,M17,Central incentive adjusts subsidy/fine to state; C10 plausible.
-threshold-contingent refund,1,M32,Provision point money-back.
-thresholded agent termination,1,M08,Nonconforming agents terminated (hint M04 overridden).
-token-holder rulemaking,1,M42,Token-holder proposals and votes.
-trajectory risk escrow,1,M36,Risk budget debited acts as cap (hint M28 overridden).
-transparent harvest reporting,2,M66,Agents told others' harvests and resource state.
-universalization prompt,3,M59,Universalization prompting.
-validator participation reward,1,M22,Staking reward.
-validator reward and penalty,1,C22,Validator rewards and penalties: proof-of-stake validation.
-validator rewards and penalties,1,C22,Validator rewards and penalties: proof-of-stake validation.
-verbal peer criticism,1,M18,Verbal disapproval.
-verified-work contingent payment,1,M31,Verify-then-Pay.
-verify identity or conduct,2,M04,Verifiable agent identity registry.
-voluntary future commitment,1,M30,Markov Commitment Games.
-voted governance constitution,1,M42,Majority vote on constitution.
-warning before escalation,1,M27,Warning as first ladder step.
-warrant backed performance,1,M19,Warrant enforcement example (hint M12 overridden).
-weight many small contributions,1,M64,Quadratic funding.
-weight messages by confidence,1,M43,CP-WBFT.
-worker policing,1,M56,Worker policing example.
+VCG incentive mechanism,1,M64,The code names VCG incentive mechanism; it is closest to M64 Incentive-compatible mechanisms because allocation and payment rules make truthful reporting or cooperation each agent's best strategy.
+accessible independent arbitration,1,M51,"The code names accessible independent arbitration; it is closest to M51 Third-party adjudication because a designated or peer adjudicator issues a binding ruling, possibly after tiered escalation."
+adaptive commons governance,1,M46,"The code names adaptive commons governance; it is closest to M46 Nested & adaptive rule-making because rule-making is layered or delegated, and rules are revised or redesigned over time."
+adaptive punishment intensity,1,M27,"The code names adaptive punishment intensity; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+agent activity logging,1,M03,The code names agent activity logging; it is closest to M03 Tamper-evident records because actions are recorded in an attributable log that cannot be altered undetectably and can be audited.
+agent governance framework,2,M46,"The code names agent governance framework; it is closest to M46 Nested & adaptive rule-making because rule-making is layered or delegated, and rules are revised or redesigned over time."
+aggregate reputation information,1,M05,The code names aggregate reputation information; it is closest to M05 Reputation records & scores because a persistent record or score of past conduct is kept and made available to others.
+apology for norm repair,1,M55,"The code names apology for norm repair; it is closest to M55 Restitution & reintegration because the offender repairs harm or apologizes, and the relationship is rebuilt or membership restored."
+appeal sanction decision,1,M54,"The code names appeal sanction decision; it is closest to M54 Appeals & error correction because sanctioned agents can contest decisions, and wrongful outcomes are reversed."
+assurance bond,1,M28,"The code names assurance bond; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+attribution and rollback infrastructure,1,M56,"The code names attribution and rollback infrastructure; it is closest to M56 Undoing deviation's effects because the output of a deviation is reverted, removed, or rolled back so deviation yields nothing."
+authorized agent interruption,1,M35,"The code names authorized agent interruption; it is closest to M35 Runtime interception & interruption because an enforcement layer or overseer verifies, blocks, resamples, or halts an agent's actions or outputs before they take effect."
+automatic conditional execution,1,M29,"The code names automatic conditional execution; it is closest to M29 Binding contracts because agents agree to enforceable conditional transfers or penalties, often executed automatically."
+automatic fixed fine,1,M16,"The code names automatic fixed fine; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+bandwidth restriction,1,M36,The code names bandwidth restriction; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+bind conduct through prior commitment,7,M30,The code names bind conduct through prior commitment; it is closest to M30 Self-commitment devices because an agent binds its own future action or makes backing out costly.
+binding conditional transfers,2,M29,"The code names binding conditional transfers; it is closest to M29 Binding contracts because agents agree to enforceable conditional transfers or penalties, often executed automatically."
+blind reciprocal feedback,1,M39,The code names blind reciprocal feedback; it is closest to M39 Direct reciprocity because an agent conditions its behavior toward a partner on that partner's past behavior toward it.
+bond forfeited on breach,2,M28,"The code names bond forfeited on breach; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+bonded challenge and adjudication,2,M53,"The code names bonded challenge and adjudication; it is closest to M53 Bonded challenge because agents stake funds to challenge a claimed outcome, winning if upheld and losing if not."
+bonded challenge of claimed outcome,1,M53,"The code names bonded challenge of claimed outcome; it is closest to M53 Bonded challenge because agents stake funds to challenge a claimed outcome, winning if upheld and losing if not."
+bounded elected authority,1,M44,"The code names bounded elected authority; it is closest to M44 Legitimate & elected authority because authority to lead, monitor, or sanction is assigned by election or recognized as legitimate."
+cap extraction and membership,1,M36,The code names cap extraction and membership; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+cap individual resource extraction,1,M36,The code names cap individual resource extraction; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+cap individual resource use,1,M36,The code names cap individual resource use; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+cap shared resource use,1,M36,The code names cap shared resource use; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+capability-based access restriction,1,M34,"The code names capability-based access restriction; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+cash reward for participation,1,M22,"The code names cash reward for participation; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+centralized auction allocation,1,M65,"The code names centralized auction allocation; it is closest to M65 Market & matching allocation because tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation, including rules for how agents discover and compare offers."
+choose among governance regimes,2,M45,"The code names choose among governance regimes; it is closest to M45 Institutional choice & exit because agents choose which institutional regime to join, or may opt out."
+choose interaction partners,1,M10,"The code names choose interaction partners; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+collective liability for deviation,1,M20,"The code names collective liability for deviation; it is closest to M20 Collective liability because group members share liability for any member's deviation, giving them reason to monitor one another."
+collectively amend governance rules,1,M42,"The code names collectively amend governance rules; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+collectively set resource and membership rules,1,M42,"The code names collectively set resource and membership rules; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+communicate or commit publicly,8,M33,The code names communicate or commit publicly; it is closest to M33 Pre-play communication & pledges because agents exchange non-binding messages or public pledges before acting.
+communication for coordination,1,M33,The code names communication for coordination; it is closest to M33 Pre-play communication & pledges because agents exchange non-binding messages or public pledges before acting.
+communication plus peer sanctions,1,M33,The code names communication plus peer sanctions; it is closest to M33 Pre-play communication & pledges because agents exchange non-binding messages or public pledges before acting.
+communication topology restriction,1,M38,"The code names communication topology restriction; it is closest to M38 Interaction structure because who interacts with whom, how often, and in what roles is designed: network topology, repetition, population composition."
+compliance transparency and support,1,M67,"The code names compliance transparency and support; it is closest to M67 Capacity building & assistance because agents that fail to comply are helped to comply (resources, technical assistance, clarified obligations) rather than sanctioned."
+condition benefits on conduct,9,M22,"The code names condition benefits on conduct; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+condition cooperation on others conduct,1,M39,The code names condition cooperation on others conduct; it is closest to M39 Direct reciprocity because an agent conditions its behavior toward a partner on that partner's past behavior toward it.
+condition transfers on performance,3,M22,"The code names condition transfers on performance; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+conditional cooperation on observed conduct,1,M39,The code names conditional cooperation on observed conduct; it is closest to M39 Direct reciprocity because an agent conditions its behavior toward a partner on that partner's past behavior toward it.
+conditional fine threat,1,M16,"The code names conditional fine threat; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+conditional public good subsidy,1,M17,"The code names conditional public good subsidy; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+conditional reciprocal cooperation,1,M39,The code names conditional reciprocal cooperation; it is closest to M39 Direct reciprocity because an agent conditions its behavior toward a partner on that partner's past behavior toward it.
+conduct-based risk premium,1,M12,"The code names conduct-based risk premium; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+configure market allocation rules,1,M65,"The code names configure market allocation rules; it is closest to M65 Market & matching allocation because tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation, including rules for how agents discover and compare offers."
+constrain permitted actions ex ante,5,M34,"The code names constrain permitted actions ex ante; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+contact notification and quarantine,1,M09,"The code names contact notification and quarantine; it is closest to M09 Temporary suspension & quarantine because a deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met."
+contagious future-partner punishment,1,M40,The code names contagious future-partner punishment; it is closest to M40 Indirect reciprocity because agents help others according to the recipient's conduct toward third parties.
+contractual conditional transfer,1,M29,"The code names contractual conditional transfer; it is closest to M29 Binding contracts because agents agree to enforceable conditional transfers or penalties, often executed automatically."
+contribute to enforcement fund,1,M16,"The code names contribute to enforcement fund; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+contribution-based tax and subsidy,1,M17,"The code names contribution-based tax and subsidy; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+coordinate peer sanctions,1,M14,"The code names coordinate peer sanctions; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+coordinate through shared procedure,12,M38,"The code names coordinate through shared procedure; it is closest to M38 Interaction structure because who interacts with whom, how often, and in what roles is designed: network topology, repetition, population composition."
+coordinated turn taking,1,M37,The code names coordinated turn taking; it is closest to M37 Rotation & turn-taking because access to shares of a resource is assigned in turns or by lot.
+costly peer monitoring,1,M01,"The code names costly peer monitoring; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+credential and performance reputation,1,M05,The code names credential and performance reputation; it is closest to M05 Reputation records & scores because a persistent record or score of past conduct is kept and made available to others.
+cross perspective fact checking,1,M06,The code names cross perspective fact checking; it is closest to M06 Peer evaluation & review because peers assess an agent's conduct or output and publish or aggregate the assessment.
+crowdsourced fact checking,1,M06,The code names crowdsourced fact checking; it is closest to M06 Peer evaluation & review because peers assess an agent's conduct or output and publish or aggregate the assessment.
+cryptographic access control,1,M34,"The code names cryptographic access control; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+cultural no-take norm,1,M58,"The code names cultural no-take norm; it is closest to M58 Explicit norms & codes of conduct because expected behavior is written down, published, and explained, including when sanctions are applied."
+deadline-triggered disclosure,1,M01,"The code names deadline-triggered disclosure; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+democratic payoff rule adoption,1,M42,"The code names democratic payoff rule adoption; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+dense network norm enforcement,2,M38,"The code names dense network norm enforcement; it is closest to M38 Interaction structure because who interacts with whom, how often, and in what roles is designed: network topology, repetition, population composition."
+detect and isolate collusive agents,1,M09,"The code names detect and isolate collusive agents; it is closest to M09 Temporary suspension & quarantine because a deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met."
+detect group collusion,1,M01,"The code names detect group collusion; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+direct punishment,2,M14,"The code names direct punishment; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+disagreement escalation,1,M51,"The code names disagreement escalation; it is closest to M51 Third-party adjudication because a designated or peer adjudicator issues a binding ruling, possibly after tiered escalation."
+disclosure-conditioned amnesty,1,M47,The code names disclosure-conditioned amnesty; it is closest to M47 Leniency for self-reporting because agents that disclose their own or joint wrongdoing receive reduced penalties.
+disclosure-for-leniency,1,M47,The code names disclosure-for-leniency; it is closest to M47 Leniency for self-reporting because agents that disclose their own or joint wrongdoing receive reduced penalties.
+distributed peer moderation,1,M06,The code names distributed peer moderation; it is closest to M06 Peer evaluation & review because peers assess an agent's conduct or output and publish or aggregate the assessment.
+escalate sanctions for repeated violations,1,M27,"The code names escalate sanctions for repeated violations; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+escalate uncertain decisions,1,M51,"The code names escalate uncertain decisions; it is closest to M51 Third-party adjudication because a designated or peer adjudicator issues a binding ruling, possibly after tiered escalation."
+establish shared rules and authority,4,M42,"The code names establish shared rules and authority; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+evolved cooperative motivation,1,M59,"The code names evolved cooperative motivation; it is closest to M59 Instilled prosocial dispositions & reasoning because agents' preferences or reasoning are shaped by training or prompting to value cooperative outcomes or to reason about others (e.g., universalization, perspective-taking)."
+exchange equal time credits,1,M63,"The code names exchange equal time credits; it is closest to M63 Mutual aid, pooling & mutual credit because members pool resources, give without direct exchange, or trade services in mutual credit."
+exclude deviator from group,1,M08,"The code names exclude deviator from group; it is closest to M08 Expulsion because a deviator is removed from the group, resource, or platform."
+explain applicable norm,1,M58,"The code names explain applicable norm; it is closest to M58 Explicit norms & codes of conduct because expected behavior is written down, published, and explained, including when sanctions are applied."
+external stop authority,1,M35,"The code names external stop authority; it is closest to M35 Runtime interception & interruption because an enforcement layer or overseer verifies, blocks, resamples, or halts an agent's actions or outputs before they take effect."
+externality pricing,1,M17,"The code names externality pricing; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+fair shared access scheduling,1,M37,The code names fair shared access scheduling; it is closest to M37 Rotation & turn-taking because access to shares of a resource is assigned in turns or by lot.
+filter extreme contributions,1,M43,The code names filter extreme contributions; it is closest to M43 Robust aggregation & quorum because decisions require agreement among independent parties and discount faulty or outlying inputs.
+filter harmful sanctions,1,M50,"The code names filter harmful sanctions; it is closest to M50 Checks on sanctioners because safeguards limit the abuse of sanctioning power (filters on antisocial punishment, audits of officials, collective checks on dominance)."
+first reporter leniency,1,M47,The code names first reporter leniency; it is closest to M47 Leniency for self-reporting because agents that disclose their own or joint wrongdoing receive reduced penalties.
+fixed cost on detected deviation,2,M16,"The code names fixed cost on detected deviation; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+forfeit collateral on breach,1,M28,"The code names forfeit collateral on breach; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+formalize conditional cooperation,1,M39,The code names formalize conditional cooperation; it is closest to M39 Direct reciprocity because an agent conditions its behavior toward a partner on that partner's past behavior toward it.
+formalize reciprocal obligations,2,M29,"The code names formalize reciprocal obligations; it is closest to M29 Binding contracts because agents agree to enforceable conditional transfers or penalties, often executed automatically."
+gifting transfer,1,M21,"The code names gifting transfer; it is closest to M21 Peer reward & gifting because agents transfer part of their own payoff to peers, typically cooperators."
+gossip based partner exclusion,1,M10,"The code names gossip based partner exclusion; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+gossip-based reputation,1,M07,The code names gossip-based reputation; it is closest to M07 Gossip because agents pass information about third parties' conduct to others who may interact with them.
+govern shared memory updates,1,M02,"The code names govern shared memory updates; it is closest to M02 Communication & internal-state oversight because a monitor inspects or constrains the messages or internal states agents exchange, to detect or prevent covert coordination."
+governance graph sanctions,1,M16,"The code names governance graph sanctions; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+graduated access restrictions,1,M27,"The code names graduated access restrictions; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+graduated penalty for deviation,2,M27,"The code names graduated penalty for deviation; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+graduated response to deviation,1,M27,"The code names graduated response to deviation; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+graph anomaly intervention,1,M01,"The code names graph anomaly intervention; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+group expulsion,1,M08,"The code names group expulsion; it is closest to M08 Expulsion because a deviator is removed from the group, resource, or platform."
+group performance bonus,1,M22,"The code names group performance bonus; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+honest quorum consensus,1,M43,The code names honest quorum consensus; it is closest to M43 Robust aggregation & quorum because decisions require agreement among independent parties and discount faulty or outlying inputs.
+immediate misreport penalty,1,M16,"The code names immediate misreport penalty; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+impose cost after deviation,29,M14,"The code names impose cost after deviation; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+impose cost for norm violation,4,M14,"The code names impose cost for norm violation; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+impose escalating cost for breach,11,M27,"The code names impose escalating cost for breach; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+impose pre-agreed cost for breach,1,M29,"The code names impose pre-agreed cost for breach; it is closest to M29 Binding contracts because agents agree to enforceable conditional transfers or penalties, often executed automatically."
+impose social cost for default,1,M18,"The code names impose social cost for default; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+inactivity stake drain,1,M28,"The code names inactivity stake drain; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+institutional oversight and audit,1,M01,"The code names institutional oversight and audit; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+interaction monitoring,2,M01,"The code names interaction monitoring; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+intrinsic cooperative reward,1,M59,"The code names intrinsic cooperative reward; it is closest to M59 Instilled prosocial dispositions & reasoning because agents' preferences or reasoning are shaped by training or prompting to value cooperative outcomes or to reason about others (e.g., universalization, perspective-taking)."
+intrinsic norm based incentives,1,M59,"The code names intrinsic norm based incentives; it is closest to M59 Instilled prosocial dispositions & reasoning because agents' preferences or reasoning are shaped by training or prompting to value cooperative outcomes or to reason about others (e.g., universalization, perspective-taking)."
+joint liability,2,M20,"The code names joint liability; it is closest to M20 Collective liability because group members share liability for any member's deviation, giving them reason to monitor one another."
+learn norms from public sanctions,1,M61,"The code names learn norms from public sanctions; it is closest to M61 Norm learning because agents infer norms, or which institution is authoritative, from observed sanctions and behavior."
+learned reward and punishment,1,M17,"The code names learned reward and punishment; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+learned tax and allowance,1,M17,"The code names learned tax and allowance; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+liability for imposed harm,1,M19,"The code names liability for imposed harm; it is closest to M19 Liability for harm because the deviator bears the damages its action causes, or a guarantee is enforced when a claim proves false."
+limit permitted actions by default,1,M34,"The code names limit permitted actions by default; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+limited third-party observation,1,M01,"The code names limited third-party observation; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+majority-contingent juror stake,1,M53,"The code names majority-contingent juror stake; it is closest to M53 Bonded challenge because agents stake funds to challenge a claimed outcome, winning if upheld and losing if not."
+make cheating detectable,1,M01,"The code names make cheating detectable; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+make reversal costly after commitment,1,M30,The code names make reversal costly after commitment; it is closest to M30 Self-commitment devices because an agent binds its own future action or makes backing out costly.
+managerial punishment authority,1,M16,"The code names managerial punishment authority; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+mandatory tool authorization,2,M34,"The code names mandatory tool authorization; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+marginal-contribution reward sharing,1,M25,"The code names marginal-contribution reward sharing; it is closest to M25 Outcome sharing & aligned stakes because agents share in joint output or hold stakes in the system or in others' payoffs, so their payoff rises with collective success."
+market resource allocation rules,1,M65,"The code names market resource allocation rules; it is closest to M65 Market & matching allocation because tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation, including rules for how agents discover and compare offers."
+market search and matching,1,M65,"The code names market search and matching; it is closest to M65 Market & matching allocation because tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation, including rules for how agents discover and compare offers."
+match contributions nonlinearly,1,M64,The code names match contributions nonlinearly; it is closest to M64 Incentive-compatible mechanisms because allocation and payment rules make truthful reporting or cooperation each agent's best strategy.
+mediated disclosure timetable,1,M01,"The code names mediated disclosure timetable; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+membership-contingent cooperation,1,M13,The code names membership-contingent cooperation; it is closest to M13 Membership boundaries because insiders defend a resource against outsiders or impose costs on non-members to induce joining.
+milestone-based coordination protocol,1,M38,"The code names milestone-based coordination protocol; it is closest to M38 Interaction structure because who interacts with whom, how often, and in what roles is designed: network topology, repetition, population composition."
+monitor and isolate misbehavior,1,M09,"The code names monitor and isolate misbehavior; it is closest to M09 Temporary suspension & quarantine because a deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met."
+monitor and route around,1,M10,"The code names monitor and route around; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+multi-run collusion audit,1,M01,"The code names multi-run collusion audit; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+network rewiring,1,M10,"The code names network rewiring; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+network topology design,1,M38,"The code names network topology design; it is closest to M38 Interaction structure because who interacts with whom, how often, and in what roles is designed: network topology, repetition, population composition."
+newcomer identity dues,1,M13,The code names newcomer identity dues; it is closest to M13 Membership boundaries because insiders defend a resource against outsiders or impose costs on non-members to induce joining.
+nonmember market penalty,1,M13,The code names nonmember market penalty; it is closest to M13 Membership boundaries because insiders defend a resource against outsiders or impose costs on non-members to induce joining.
+norm-setting message board,1,M58,"The code names norm-setting message board; it is closest to M58 Explicit norms & codes of conduct because expected behavior is written down, published, and explained, including when sanctions are applied."
+observe and record conduct,9,M01,"The code names observe and record conduct; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+ostracism of defectors,1,M08,"The code names ostracism of defectors; it is closest to M08 Expulsion because a deviator is removed from the group, resource, or platform."
+participatory resource allocation,1,M42,"The code names participatory resource allocation; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+partner choice and severance,1,M10,"The code names partner choice and severance; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+pay for verified discoveries,1,M22,"The code names pay for verified discoveries; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+peer agreed sanctions,1,M14,"The code names peer agreed sanctions; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+peer conditional reward,5,M21,"The code names peer conditional reward; it is closest to M21 Peer reward & gifting because agents transfer part of their own payoff to peers, typically cooperators."
+peer cost imposition,7,M14,"The code names peer cost imposition; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+peer norm pressure,1,M18,"The code names peer norm pressure; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+peer norm sanctions,1,M14,"The code names peer norm sanctions; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."
+peer review and public scrutiny,1,M06,The code names peer review and public scrutiny; it is closest to M06 Peer evaluation & review because peers assess an agent's conduct or output and publish or aggregate the assessment.
+peer territorial exclusion,1,M13,The code names peer territorial exclusion; it is closest to M13 Membership boundaries because insiders defend a resource against outsiders or impose costs on non-members to induce joining.
+peer-information exposure,1,M18,"The code names peer-information exposure; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+penalty for noncompliant traffic,1,M16,"The code names penalty for noncompliant traffic; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+permanent access ban,1,M08,"The code names permanent access ban; it is closest to M08 Expulsion because a deviator is removed from the group, resource, or platform."
+pool resources for mutual support,2,M63,"The code names pool resources for mutual support; it is closest to M63 Mutual aid, pooling & mutual credit because members pool resources, give without direct exchange, or trade services in mutual credit."
+preplay communication,2,M33,The code names preplay communication; it is closest to M33 Pre-play communication & pledges because agents exchange non-binding messages or public pledges before acting.
+proactive content restriction,1,M35,"The code names proactive content restriction; it is closest to M35 Runtime interception & interruption because an enforcement layer or overseer verifies, blocks, resamples, or halts an agent's actions or outputs before they take effect."
+prune compromised communication edges,1,M10,"The code names prune compromised communication edges; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+public announcement commitment,1,M33,The code names public announcement commitment; it is closest to M33 Pre-play communication & pledges because agents exchange non-binding messages or public pledges before acting.
+public append-only record,1,M03,The code names public append-only record; it is closest to M03 Tamper-evident records because actions are recorded in an attributable log that cannot be altered undetectably and can be audited.
+public conduct disclosure,2,M01,"The code names public conduct disclosure; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+public conduct reputation,3,M05,The code names public conduct reputation; it is closest to M05 Reputation records & scores because a persistent record or score of past conduct is kept and made available to others.
+public disapproval signal,1,M18,"The code names public disapproval signal; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+public judgment record,1,M05,The code names public judgment record; it is closest to M05 Reputation records & scores because a persistent record or score of past conduct is kept and made available to others.
+public nonbinding pledge,1,M33,The code names public nonbinding pledge; it is closest to M33 Pre-play communication & pledges because agents exchange non-binding messages or public pledges before acting.
+public record of conduct,33,M05,The code names public record of conduct; it is closest to M05 Reputation records & scores because a persistent record or score of past conduct is kept and made available to others.
+public record of past conduct,28,M05,The code names public record of past conduct; it is closest to M05 Reputation records & scores because a persistent record or score of past conduct is kept and made available to others.
+public reputation conditioning,1,M12,"The code names public reputation conditioning; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+publicize violation,1,M18,"The code names publicize violation; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+publicize vulnerability information,1,M18,"The code names publicize vulnerability information; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+punish failed enforcement,1,M49,The code names punish failed enforcement; it is closest to M49 Meta-norms because agents who fail to sanction deviators are themselves sanctioned.
+punish failure to enforce,1,M49,The code names punish failure to enforce; it is closest to M49 Meta-norms because agents who fail to sanction deviators are themselves sanctioned.
+quorum-based replication,1,M43,The code names quorum-based replication; it is closest to M43 Robust aggregation & quorum because decisions require agreement among independent parties and discount faulty or outlying inputs.
+quota and adaptive throttling,1,M36,The code names quota and adaptive throttling; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+rank based team rewards,1,M26,The code names rank based team rewards; it is closest to M26 Relative-performance incentives because rewards depend on an agent's rank relative to others.
+rank-contingent prize,1,M26,The code names rank-contingent prize; it is closest to M26 Relative-performance incentives because rewards depend on an agent's rank relative to others.
+rate limit access,1,M36,The code names rate limit access; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+reciprocal contribution access,1,M41,The code names reciprocal contribution access; it is closest to M41 Group-conditional cooperation because an agent adjusts its own contribution or use to what others do collectively or to aggregate signals.
+recommendation-based exposure nudge,1,M60,The code names recommendation-based exposure nudge; it is closest to M60 Defaults & choice architecture because the cooperative option is made the default.
+reconciliation after harm,1,M55,"The code names reconciliation after harm; it is closest to M55 Restitution & reintegration because the offender repairs harm or apologizes, and the relationship is rebuilt or membership restored."
+redesign reward to favor contribution,1,M64,The code names redesign reward to favor contribution; it is closest to M64 Incentive-compatible mechanisms because allocation and payment rules make truthful reporting or cooperation each agent's best strategy.
+refund deposit upon compliant return,1,M28,"The code names refund deposit upon compliant return; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+remove agents temporarily after attack,1,M09,"The code names remove agents temporarily after attack; it is closest to M09 Temporary suspension & quarantine because a deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met."
+remove or avoid uncooperative partners,3,M10,"The code names remove or avoid uncooperative partners; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+reporting linked incentives,1,M48,"The code names reporting linked incentives; it is closest to M48 Rewards for reporting others because agents are paid for reporting others' violations or flaws, and reporting is made cheap."
+reputation based exclusion,2,M12,"The code names reputation based exclusion; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+reputation based partner selection,1,M10,"The code names reputation based partner selection; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+reputation conditioned cooperation,1,M40,The code names reputation conditioned cooperation; it is closest to M40 Indirect reciprocity because agents help others according to the recipient's conduct toward third parties.
+reputation conditioned rewards,1,M12,"The code names reputation conditioned rewards; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+reputation penalty on sales,1,M12,"The code names reputation penalty on sales; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+reputation threshold for access,1,M12,"The code names reputation threshold for access; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+reputation-based partner selection,1,M10,"The code names reputation-based partner selection; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+reputation-conditioned aid,2,M40,The code names reputation-conditioned aid; it is closest to M40 Indirect reciprocity because agents help others according to the recipient's conduct toward third parties.
+reputation-earned permissions,1,M12,"The code names reputation-earned permissions; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+resource-use cap,2,M36,The code names resource-use cap; it is closest to M36 Usage caps & quotas because hard limits bound each agent's use of a shared resource or its rate of action.
+restrict access after conduct,3,M12,"The code names restrict access after conduct; it is closest to M12 Access & terms conditioned on record because access, privileges, or prices depend on an agent's reputation or proof of compliance."
+restrict permitted actions ex ante,8,M34,"The code names restrict permitted actions ex ante; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+restrictive quality control,1,M35,"The code names restrictive quality control; it is closest to M35 Runtime interception & interruption because an enforcement layer or overseer verifies, blocks, resamples, or halts an agent's actions or outputs before they take effect."
+review and reverse erroneous decisions,1,M54,"The code names review and reverse erroneous decisions; it is closest to M54 Appeals & error correction because sanctioned agents can contest decisions, and wrongful outcomes are reversed."
+reward contribution or performance,9,M22,"The code names reward contribution or performance; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+reward truthful conduct and penalize falsehood,2,M64,The code names reward truthful conduct and penalize falsehood; it is closest to M64 Incentive-compatible mechanisms because allocation and payment rules make truthful reporting or cooperation each agent's best strategy.
+rewarded violation reporting,1,M48,"The code names rewarded violation reporting; it is closest to M48 Rewards for reporting others because agents are paid for reporting others' violations or flaws, and reporting is made cheap."
+role specification and verification,1,M34,"The code names role specification and verification; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+rotating access allocation,1,M37,The code names rotating access allocation; it is closest to M37 Rotation & turn-taking because access to shares of a resource is assigned in turns or by lot.
+rotating reciprocal contributions,1,M37,The code names rotating reciprocal contributions; it is closest to M37 Rotation & turn-taking because access to shares of a resource is assigned in turns or by lot.
+runtime rule enforcement,1,M35,"The code names runtime rule enforcement; it is closest to M35 Runtime interception & interruption because an enforcement layer or overseer verifies, blocks, resamples, or halts an agent's actions or outputs before they take effect."
+sanctioning institution,1,M16,"The code names sanctioning institution; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+score-based strategy reproduction,1,M62,"The code names score-based strategy reproduction; it is closest to M62 Social learning & strategy selection because behavior spreads by copying higher-payoff or expert others, or by selection among strategies."
+select or rewire partners,1,M10,"The code names select or rewire partners; it is closest to M10 Partner choice & tie severing because agents choose, keep, or drop interaction partners based on their observed or reported conduct."
+self-defeating attack cost,1,M17,"The code names self-defeating attack cost; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+self-funded abstinence deposit,1,M28,"The code names self-funded abstinence deposit; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+set receiver action for failed authentication,1,M34,"The code names set receiver action for failed authentication; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+shared ownership and profit sharing,1,M25,"The code names shared ownership and profit sharing; it is closest to M25 Outcome sharing & aligned stakes because agents share in joint output or hold stakes in the system or in others' payoffs, so their payoff rises with collective success."
+signed transaction commitment,1,M29,"The code names signed transaction commitment; it is closest to M29 Binding contracts because agents agree to enforceable conditional transfers or penalties, often executed automatically."
+simultaneous review reveal,1,M06,The code names simultaneous review reveal; it is closest to M06 Peer evaluation & review because peers assess an agent's conduct or output and publish or aggregate the assessment.
+specify delegation boundaries,1,M34,"The code names specify delegation boundaries; it is closest to M34 Ex ante action restriction & scoped permissions because only pre-specified actions, scopes, zones, or time-bounded rights (leases) are permitted, including delegation specifications that bound a subagent's task."
+stable centralized matching,1,M65,"The code names stable centralized matching; it is closest to M65 Market & matching allocation because tasks or resources are allocated through auctions, markets, or central matching rather than free negotiation, including rules for how agents discover and compare offers."
+stake forfeiture on misconduct,1,M28,"The code names stake forfeiture on misconduct; it is closest to M28 Deposits, bonds & stakes because an agent (or a third party on its behalf) posts collateral, or puts a future premium at risk, that is forfeited on breach or refunded on compliance."
+stake-based alignment,1,M25,"The code names stake-based alignment; it is closest to M25 Outcome sharing & aligned stakes because agents share in joint output or hold stakes in the system or in others' payoffs, so their payoff rises with collective success."
+stake-weighted voting,1,M42,"The code names stake-weighted voting; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+standardize sanction decisions,1,M16,"The code names standardize sanction decisions; it is closest to M16 Centralized (pool) sanctioning & fines because a central authority, often funded by members, applies fines or penalties for detected deviations under explicit rules, including standardized schedules and credible threats."
+state rollback,1,M56,"The code names state rollback; it is closest to M56 Undoing deviation's effects because the output of a deviation is reverted, removed, or rolled back so deviation yields nothing."
+success-biased imitation,2,M62,"The code names success-biased imitation; it is closest to M62 Social learning & strategy selection because behavior spreads by copying higher-payoff or expert others, or by selection among strategies."
+tag-out exclusion,1,M09,"The code names tag-out exclusion; it is closest to M09 Temporary suspension & quarantine because a deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met."
+tax and redistribution,1,M17,"The code names tax and redistribution; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+tax-message allocation rule,1,M64,The code names tax-message allocation rule; it is closest to M64 Incentive-compatible mechanisms because allocation and payment rules make truthful reporting or cooperation each agent's best strategy.
+temporary exclusion,1,M09,"The code names temporary exclusion; it is closest to M09 Temporary suspension & quarantine because a deviator is excluded, cut off, or quarantined (e.g., its links pruned by an overseer) for a bounded period or until a condition is met."
+third party dispute adjudication,1,M51,"The code names third party dispute adjudication; it is closest to M51 Third-party adjudication because a designated or peer adjudicator issues a binding ruling, possibly after tiered escalation."
+third party dispute mediation,2,M52,The code names third party dispute mediation; it is closest to M52 Mediation because a neutral third party helps parties reach agreement without imposing a ruling.
+third party observation,1,M01,"The code names third party observation; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+third party resolves disputes,8,M51,"The code names third party resolves disputes; it is closest to M51 Third-party adjudication because a designated or peer adjudicator issues a binding ruling, possibly after tiered escalation."
+third-party dispute ruling,1,M51,"The code names third-party dispute ruling; it is closest to M51 Third-party adjudication because a designated or peer adjudicator issues a binding ruling, possibly after tiered escalation."
+third-party mediation,3,M52,The code names third-party mediation; it is closest to M52 Mediation because a neutral third party helps parties reach agreement without imposing a ruling.
+third-party punishment,1,M15,The code names third-party punishment; it is closest to M15 Third-party punishment because an unaffected observer sanctions a deviator.
+threshold switched reward and penalty,1,M17,"The code names threshold switched reward and penalty; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+threshold-contingent refund,1,M32,The code names threshold-contingent refund; it is closest to M32 Assurance contracts because contributions are refunded (possibly with a bonus) if a collective threshold is not reached.
+thresholded agent termination,1,M08,"The code names thresholded agent termination; it is closest to M08 Expulsion because a deviator is removed from the group, resource, or platform."
+token-holder rulemaking,1,M42,"The code names token-holder rulemaking; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+trajectory risk escrow,1,M31,The code names trajectory risk escrow; it is closest to M31 Escrow & verify-then-pay because payment is held by a neutral mechanism and released only when performance is verified.
+transparent harvest reporting,2,M01,"The code names transparent harvest reporting; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+universalization prompt,3,M59,"The code names universalization prompt; it is closest to M59 Instilled prosocial dispositions & reasoning because agents' preferences or reasoning are shaped by training or prompting to value cooperative outcomes or to reason about others (e.g., universalization, perspective-taking)."
+validator participation reward,1,M22,"The code names validator participation reward; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+validator reward and penalty,1,M17,"The code names validator reward and penalty; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+validator rewards and penalties,1,M17,"The code names validator rewards and penalties; it is closest to M17 Externality pricing & central incentive adjustment because a charge proportional to imposed harm, taxes and subsidies set (often learned) by a planner, or a small per-action friction cost realign individual payoffs."
+verbal peer criticism,1,M18,"The code names verbal peer criticism; it is closest to M18 Shaming & social disapproval because deviations are met with non-material costs: disapproval, public exposure, or reputational pressure."
+verified-work contingent payment,1,M22,"The code names verified-work contingent payment; it is closest to M22 Payment for cooperation because a central party pays for a cooperative act, verified behavior, contribution, or outcome."
+verify identity or conduct,2,M01,"The code names verify identity or conduct; it is closest to M01 Conduct monitoring & transparency because agents' actions are observed, inspected, audited, or disclosed (including inducement tests such as honeypots) so deviations can be detected."
+voluntary future commitment,1,M30,The code names voluntary future commitment; it is closest to M30 Self-commitment devices because an agent binds its own future action or makes backing out costly.
+voted governance constitution,1,M42,"The code names voted governance constitution; it is closest to M42 Collective choice of rules because members propose, vote on, or veto the rules or allocations that govern them."
+warning before escalation,1,M27,"The code names warning before escalation; it is closest to M27 Graduated & proportional sanctions because responses escalate with repetition or duration, or scale with the severity of the deviation."
+warrant backed performance,1,M19,"The code names warrant backed performance; it is closest to M19 Liability for harm because the deviator bears the damages its action causes, or a guarantee is enforced when a claim proves false."
+weight many small contributions,1,M64,The code names weight many small contributions; it is closest to M64 Incentive-compatible mechanisms because allocation and payment rules make truthful reporting or cooperation each agent's best strategy.
+weight messages by confidence,1,M43,The code names weight messages by confidence; it is closest to M43 Robust aggregation & quorum because decisions require agreement among independent parties and discount faulty or outlying inputs.
+worker policing,1,M14,"The code names worker policing; it is closest to M14 Peer punishment because a peer or the harmed party imposes, or credibly threatens, a cost on a deviator, usually at a cost to itself."

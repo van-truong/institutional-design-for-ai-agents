@@ -18,7 +18,10 @@ gpt-5.6-terra vs Claude pass 2, theme: n=339, agreement=95.3%, Cohen's kappa=0.9
 gpt-5.6-terra vs final, kind: n=561, agreement=85.0%, Cohen's kappa=0.698
 gpt-5.6-terra vs final, evidence_type: n=561, agreement=90.6%, Cohen's kappa=0.829
 gpt-5.6-terra fit: good=503, partial=30, misfit=28
-gpt-5.6-terra NEW open-code levers: 0
+gpt-5.6-terra NEW open-code levers: 3
+  adjust agent memory depth (n=1): No final-codebook mechanism covers this distinct lever as named: adjust agent memory depth. It is retained as NEW for the author's ending-condition review.
+  adjust decision randomness (n=1): No final-codebook mechanism covers this distinct lever as named: adjust decision randomness. It is retained as NEW for the author's ending-condition review.
+  induce confirmation bias (n=1): No final-codebook mechanism covers this distinct lever as named: induce confirmation bias. It is retained as NEW for the author's ending-condition review.
 gpt-5.6-terra unused mechanisms: none
 
 gpt-6-luna vs gpt-5.6-terra, mechanism: n=260, agreement=86.2%, Cohen's kappa=0.858
