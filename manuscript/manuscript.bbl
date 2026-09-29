@@ -49,6 +49,14 @@ Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
   Theory}}. Princeton University Press (2006). \doi{10.2307/j.ctv346nwb},
   edited by Natalie Gold and Robert Sugden
 
+\bibitem{bansal2025magentic}
+Bansal, G., Hua, W., Huang, Z., Fourney, A., Swearngin, A., Epperson, W.,
+  Payne, T., Hofman, J.M., Lucier, B., Singh, C., Mobius, M., Nambi, A., Yadav,
+  A., Gao, K., Rothschild, D.M., Slivkins, A., Goldstein, D.G., Mozannar, H.,
+  Immorlica, N., Murad, M., Vogel, M., Kambhampati, S., Horvitz, E., Amershi,
+  S.: Magentic marketplace: An open-source environment for studying agentic
+  markets (2025), \url{https://arxiv.org/abs/2510.25779}
+
 \bibitem{baumol1952welfare}
 Baumol, W.J.: Welfare economics and the theory of the state. In: Rowley, C.K.,
   Schneider, F. (eds.) The Encyclopedia of Public Choice, pp. 937--940.
@@ -138,6 +146,10 @@ Fan, T., Yang, Y., Jiang, Y., Zhang, Y., Chen, Y., Huang, C.: {{AI-Trader}}:
 Faulkner, R., Deshpande, A., Piedrahita, D.G., Leibo, J.Z., Jin, Z.: Evaluating
   cooperation in llm social groups through elected leadership (2026),
   \url{https://arxiv.org/abs/2604.11721}
+
+\bibitem{fehr2000cooperation}
+Fehr, E., G{\"a}chter, S.: Cooperation and punishment in public goods
+  experiments. American Economic Review  \textbf{90}(4),  980--994 (2000)
 
 \bibitem{freyDoesPayMotivate1999}
 Frey, B., Goette, L.: Does {{Pay Motivate Volunteers}}? Working Paper~7,
@@ -433,6 +445,11 @@ Ostrom, E.: Governing the {{Commons}}: {{The Evolution}} of {{Institutions}}
   {{Decisions}}, Cambridge University Press, Cambridge (1990).
   \doi{10.1017/CBO9780511807763}
 
+\bibitem{ostrom1992covenants}
+Ostrom, E., Walker, J., Gardner, R.: Covenants with and without a sword:
+  Self-governance is possible. American Political Science Review
+  \textbf{86}(2),  404--417 (1992). \doi{10.2307/1964229}
+
 \bibitem{papadimitriouAlgorithmsGamesInternet2001}
 Papadimitriou, C.: Algorithms, games, and the internet. In: Proceedings of the
   Thirty-Third Annual {{ACM}} Symposium on {{Theory}} of Computing. pp.
@@ -598,5 +615,11 @@ Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
 \bibitem{zhou2023ifeval}
 Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
   L.: Instruction-following evaluation for large language models (2023)
+
+\bibitem{zhu2025multiagentbench}
+Zhu, K., Du, H., Hong, Z., Yang, X., Guo, S., Wang, Z., Wang, Z., Qian, C.,
+  Tang, X., Ji, H., You, J.: {MultiAgentBench}: Evaluating the collaboration
+  and competition of {LLM} agents (2025),
+  \url{https://arxiv.org/abs/2503.01935}
 
 \end{thebibliography}
