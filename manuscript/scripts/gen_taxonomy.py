@@ -128,7 +128,7 @@ def build():
                     ly = y + ROW / 2 - 2
                     o.append(f'<line x1="{x0 + 10:.1f}" y1="{ly:.1f}" x2="{x0 + 18:.1f}" y2="{ly:.1f}" stroke="{mid}" stroke-width="1.1" opacity="0.7"/>')
                     o.append(llm_marker(x0 + 24, ly, r, dark))
-                    o.append(f'<text class="leaf" x="{x0 + 33:.1f}" y="{ly:.1f}" dominant-baseline="central">{esc(SHORT.get(r["mechanism"], r["mechanism"]))}</text>')
+                    o.append(f'<text class="leaf" x="{x0 + 33:.1f}" y="{ly + FS["leaf"] * 0.35:.1f}">{esc(SHORT.get(r["mechanism"], r["mechanism"]))}</text>')
                     o.append(squares(xr, ly, breadth(r), mid))
                     y += ROW
                 o.append(f'<line x1="{x0 + 10:.1f}" y1="{spine_top:.1f}" x2="{x0 + 10:.1f}" y2="{y - ROW / 2 - 2:.1f}" stroke="{mid}" stroke-width="1.6"/>')
