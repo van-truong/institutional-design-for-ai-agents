@@ -43,7 +43,7 @@ The switches near the top of `manuscript.tex` control whether review colors appe
 - [x] ~~Add the conceptual bridge and repair incompatible author-bearing citations.~~
 - [x] ~~Refine the editable HTML figures and poster-derived website artwork.~~
 - [x] ~~Approve blue, green, and yellow additions.~~
-- [ ] **Final content/figure pass:** redesign Figs 1 and 7 (pink "Draft figure" captions), verify the taxonomy figure counts and captions, and inspect every figure at LNCS print size.
+- [ ] **Final content/figure pass:** Figs 1–8 are redesigned and the draft evaluation matrix (old Fig 9) is dropped; still check every figure at LNCS print size (Fig 1 ring text prints at about 4pt).
 - [ ] **Remaining strikeouts:** review the red `\del{}` text (Sections 3, 6, Discussion, Appendices A and B).
 - [x] ~~**Table 2:** replaced with a failure-mode flow figure (Fig. 6); merged the two metrics tables; expanded the evaluations table into an inventory.~~
 - [x] ~~**Alternative Views + Discussion:** merged into one section, "Alternative Views and Open Questions".~~

@@ -11,11 +11,15 @@
   .mechsub{font-size:13.0px;font-style:italic;fill:#6B7787;}
   .chrono{font-size:14.0px;font-weight:800;letter-spacing:.5px;fill:#6B7787;}
   .khead{font-size:14.5px;font-weight:800;fill:#3F4D5A;}
-  .kitem{font-size:14.0px;fill:#3F4D5A;}
-  .note{font-size:14.0px;font-style:italic;fill:#6B7787;}
-  html,body{margin:0;background:#fff;} .fig{width:1080px;margin:0 auto;padding:12px;}
+  .kitem{font-size:18.2px;fill:#3F4D5A;}
+  .note{font-size:18.2px;font-style:italic;fill:#6B7787;}
+  .lhead{font-size:22.1px;font-weight:800;fill:#3F4D5A;}
+  .lname{font-size:21.4px;font-weight:800;}
+  .lex{font-size:18.9px;fill:#3F4D5A;}
+  .bracket{font-size:17.6px;font-style:italic;fill:#6B7787;}
+  html,body{margin:0;background:#fff;} .fig{width:1640px;margin:0 auto;padding:12px;}
 </style></head><body><div class="fig">
-<svg viewBox="0 0 1080 1170" width="1080" height="1170" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1640 1170" width="1640" height="1170" xmlns="http://www.w3.org/2000/svg">
 <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7787"/></marker><marker id="ahm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0F766E"/></marker></defs>
 <circle cx="540" cy="548" r="512" fill="#FBEEDA" stroke="#C79A3A" stroke-width="1.7"/>
 <circle cx="540" cy="548" r="436" fill="#E5F0E1" stroke="#4F9070" stroke-width="1.7"/>
@@ -245,14 +249,52 @@
 <line x1="540" y1="565.15" x2="540" y2="557.9" stroke="#463BA0" stroke-width="2.03"/><circle cx="540" cy="555.725" r="2.9" fill="#6C5CD0"/><rect x="526.95" y="565.15" width="26.099999999999998" height="18.849999999999998" rx="5.075" fill="#fff" stroke="#463BA0" stroke-width="2.175"/><circle cx="534.2" cy="574.575" r="2.61" fill="#463BA0"/><circle cx="545.8" cy="574.575" r="2.61" fill="#463BA0"/><rect x="529.85" y="586.175" width="20.3" height="14.5" rx="3.625" fill="#6C5CD0" stroke="#463BA0" stroke-width="1.885"/>
 <text x="540.0" y="504.0" class="ring" text-anchor="middle" fill="#463BA0">AGENTS</text>
 <path d="M79.3 814.0 A532 532 0 0 0 1000.7 814.0" fill="none" stroke="#6B7787" stroke-width="2.4" marker-end="url(#ah)"/>
-<text x="540.0" y="1106.0" class="chrono" text-anchor="middle">CHRONOSYSTEM: model updates, drift, deprecations, incidents over time</text>
-<text x="890.0" y="40.0" class="khead" text-anchor="start">LLM-agent evidence</text>
-<circle cx="898" cy="59" r="4.3" fill="#3F4D5A" stroke="#3F4D5A" stroke-width="1.4"/>
-<text x="912.0" y="64.0" class="kitem" text-anchor="start">tested</text>
-<circle cx="898" cy="80" r="4.3" fill="#fff" stroke="#3F4D5A" stroke-width="1.4"/>
-<circle cx="898" cy="80" r="1.5" fill="#3F4D5A"/>
-<text x="912.0" y="85.0" class="kitem" text-anchor="start">proposed only</text>
-<circle cx="898" cy="101" r="4.3" fill="#fff" stroke="#3F4D5A" stroke-width="1.4"/>
-<text x="912.0" y="106.0" class="kitem" text-anchor="start">none yet</text>
-<text x="20.0" y="40.0" class="note" text-anchor="start">After Bronfenbrenner (1979)</text>
+<text x="540.0" y="1106.0" class="chrono" text-anchor="middle">CHRONOSYSTEM (TIME)</text>
+<g transform="translate(0 184.0)">
+<text x="1098.0" y="0.0" class="lhead" text-anchor="start">What each ring holds</text>
+<rect x="1148" y="38.1" width="22.1" height="22.1" rx="4" fill="#ECE9FB" stroke="#6C5CD0" stroke-width="1.6"/>
+<text x="1180.1" y="57.2" class="lname" text-anchor="start" fill="#463BA0">Agents</text>
+<text x="1180.1" y="85.2" class="lex" text-anchor="start">the interacting models, each acting</text>
+<text x="1180.1" y="111.2" class="lex" text-anchor="start">for a principal</text>
+<rect x="1148" y="126.7" width="22.1" height="22.1" rx="4" fill="#DCE8F5" stroke="#3A6EA5" stroke-width="1.6"/>
+<text x="1180.1" y="145.8" class="lname" text-anchor="start" fill="#2F3D6B">Microsystem</text>
+<text x="1180.1" y="173.8" class="lex" text-anchor="start">settings each agent acts in directly</text>
+<rect x="1148" y="189.3" width="22.1" height="22.1" rx="4" fill="#E3F1EC" stroke="#0F766E" stroke-width="1.6"/>
+<text x="1180.1" y="208.4" class="lname" text-anchor="start" fill="#04342C">Mesosystem</text>
+<text x="1180.1" y="236.4" class="lex" text-anchor="start">links between those settings</text>
+<rect x="1148" y="251.9" width="22.1" height="22.1" rx="4" fill="#FFFFFF" stroke="#B3BEC9" stroke-width="1.6"/>
+<text x="1180.1" y="271.0" class="lname" text-anchor="start" fill="#3F4D5A">66 mechanisms</text>
+<text x="1180.1" y="299.0" class="lex" text-anchor="start">levers institutions use, in six families;</text>
+<text x="1180.1" y="325.0" class="lex" text-anchor="start">one dot per mechanism</text>
+<circle cx="1186.1" cy="346.5" r="4.3" fill="#3F4D5A" stroke="#3F4D5A" stroke-width="1.4"/>
+<text x="1196.1" y="353.0" class="kitem" text-anchor="start">tested</text>
+<circle cx="1273.5" cy="346.5" r="4.3" fill="#fff" stroke="#3F4D5A" stroke-width="1.4"/>
+<circle cx="1273.5" cy="346.5" r="1.5" fill="#3F4D5A"/>
+<text x="1283.5" y="353.0" class="kitem" text-anchor="start">proposed only</text>
+<circle cx="1426.3" cy="346.5" r="4.3" fill="#fff" stroke="#3F4D5A" stroke-width="1.4"/>
+<text x="1436.3" y="353.0" class="kitem" text-anchor="start">none</text>
+<text x="1180.1" y="379.0" class="kitem" text-anchor="start" fill="#6B7787">LLM-agent evidence</text>
+<rect x="1148" y="396.5" width="22.1" height="22.1" rx="4" fill="#E5F0E1" stroke="#4F9070" stroke-width="1.6"/>
+<text x="1180.1" y="415.6" class="lname" text-anchor="start" fill="#2F6B4A">Exosystem</text>
+<text x="1180.1" y="443.6" class="lex" text-anchor="start">settings the agents are not part of</text>
+<text x="1180.1" y="469.6" class="lex" text-anchor="start">that still shape them</text>
+<rect x="1148" y="485.1" width="22.1" height="22.1" rx="4" fill="#FBEEDA" stroke="#C79A3A" stroke-width="1.6"/>
+<text x="1180.1" y="504.2" class="lname" text-anchor="start" fill="#8A5A0B">Macrosystem</text>
+<text x="1180.1" y="532.2" class="lex" text-anchor="start">law, markets, professional norms,</text>
+<text x="1180.1" y="558.2" class="lex" text-anchor="start">and cultural values</text>
+<path d="M1137 36.1 L1130 36.1 L1130 117.2 L1137 117.2" fill="none" stroke="#B3BEC9" stroke-width="1.8"/>
+<text x="1095.3" y="76.7" class="bracket" text-anchor="middle" transform="rotate(-90 1095.3 76.7)">individual</text>
+<text x="1120.0" y="76.7" class="bracket" text-anchor="middle" transform="rotate(-90 1120.0 76.7)">model</text>
+<path d="M1137 124.7 L1130 124.7 L1130 242.4 L1137 242.4" fill="none" stroke="#B3BEC9" stroke-width="1.8"/>
+<text x="1095.3" y="183.6" class="bracket" text-anchor="middle" transform="rotate(-90 1095.3 183.6)">agent-group</text>
+<text x="1120.0" y="183.6" class="bracket" text-anchor="middle" transform="rotate(-90 1120.0 183.6)">interactions</text>
+<path d="M1137 249.9 L1130 249.9 L1130 564.2 L1137 564.2" fill="none" stroke="#B3BEC9" stroke-width="1.8"/>
+<text x="1120.0" y="407.1" class="bracket" text-anchor="middle" transform="rotate(-90 1120.0 407.1)">governing institutions</text>
+<path d="M1148 598.0 L1170.1 598.0" stroke="#6B7787" stroke-width="2.4" marker-end="url(#ah)"/>
+<text x="1180.1" y="605.8" class="lname" text-anchor="start" fill="#3F4D5A">Chronosystem</text>
+<text x="1180.1" y="633.8" class="lex" text-anchor="start">model updates, drift, deprecations,</text>
+<text x="1180.1" y="659.8" class="lex" text-anchor="start">incidents that change the rules</text>
+<text x="1098.0" y="702.0" class="note" text-anchor="start">After Bronfenbrenner (1979). Brackets show</text>
+<text x="1098.0" y="728.0" class="note" text-anchor="start">the three layers of Fig. 2.</text>
+</g>
 </svg></div></body></html>
