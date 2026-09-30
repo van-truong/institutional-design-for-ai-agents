@@ -74,6 +74,15 @@ def main():
     data = dict(generated=date.today().isoformat(), columns=COLUMNS,
                 counts=dict(mechanisms=len(book), themes=len(themes), instances=len(fin),
                             corpus=sum(1 for r in inst if r.get('kind')),
+                            # how the counts reconcile (coded instances only)
+                            studies=len({r['source_key'] for r in inst if r.get('kind') and r['origin'].startswith('search_')}),
+                            from_studies=sum(1 for r in inst if r.get('kind') and r['origin'].startswith('search_')),
+                            cross=sum(1 for r in inst if r.get('kind') and r['origin'].startswith('I_')),
+                            seed=sum(1 for r in inst if r.get('kind') and r['origin'] == 'seed'),
+                            single=sum(1 for r in inst if r.get('kind') == 'mechanism'),
+                            combo=sum(1 for r in inst if r.get('kind') == 'configuration'),
+                            phenomenon=sum(1 for r in inst if r.get('kind') == 'phenomenon'),
+                            out_of_scope=sum(1 for r in inst if r.get('kind') == 'out_of_scope'),
                             sources=n_src),
                 families=families)
     json.dump(data, open(OUT, 'w'), ensure_ascii=False, separators=(',', ':'))
