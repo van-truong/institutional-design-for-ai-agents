@@ -9,6 +9,8 @@
 % Light rule between table rows, for readability.
 % Institutional-function colors (figs/PALETTE.md): information layer and consequence layer, as in Fig. 2.
 \definecolor{fninfo}{HTML}{5B6B7D}
+\definecolor{keyline}{HTML}{B3BEC9}
+\definecolor{keybg}{HTML}{FBFAF7}
 \definecolor{fncons}{HTML}{9C4A78}
 \newcommand{\fnmark}[1]{\textcolor{#1}{\rule{0.62em}{0.62em}}\nobreak\hspace{0.35em}}
 % Let a tall figure share a page with text instead of taking a float page (Fig. 2).
@@ -196,6 +198,22 @@ The design challenge for cooperative AI is therefore to determine which institut
 % ============================================
 % , , , , - RELATED WORK?? , , , , , 
 % ============================================
+
+% Key-terms inset (a nod to the definitions-first layout of Gao et al.); full definitions in Appendix B.
+\begin{figure}[!t]
+\centering
+\fcolorbox{keyline}{keybg}{\begin{minipage}{0.95\linewidth}\small
+\textbf{Key terms.} Short definitions of how we use each term; Appendix~\mbox{\ref{app:terminology}} gives the full versions.
+\begin{description}[leftmargin=0pt, itemsep=2pt, topsep=4pt, font=\normalfont\bfseries]
+\item[Agent.] An LLM-based system that perceives, decides, and acts with some autonomy on behalf of a principal, in the sense of Wooldridge and Jennings~\mbox{\citep{wooldridge1995intelligent}} and of LLM agent-based simulation~\mbox{\citep{gao2024llmabm}}.
+\item[Agent society.] Many agents that interact repeatedly or consequentially in a shared environment. Like the artificial societies of agent-based modeling~\mbox{\citep{epstein1996growing}}, the term implies no human-like mind.
+\item[Artificial commons.] A shared computational resource, such as compute, memory, or tool access, that one agent's use can degrade for others. It extends Ostrom's common-pool resources~\mbox{\citep{ostromGoverningCommonsEvolution1990}} to agent infrastructure.
+\item[Institution.] The rules, roles, and procedures for enforcement and repair that structure interaction. We follow North's rules of the game~\mbox{\citep{northInstitutionsInstitutionalChange1990}} and Ostrom's rules in use~\mbox{\citep{ostrom2005understanding}}, and include the machinery that applies them.
+\item[Function, family, mechanism.] A function is what an institution must accomplish (seven; Table~\mbox{\ref{tab:functions}}); a family is how it acts on agents (six); a mechanism is one specific lever (66; Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}). Our mechanisms are broader than those of mechanism design~\mbox{\citep{myersonOptimalAuctionDesign1981}}, which our taxonomy treats as one theme among eighteen.
+\item[Model-in-institution.] The unit of evaluation: a model together with its role, the population it interacts with, and the institution it operates under. It narrows sociotechnical evaluation~\mbox{\citep{weidinger2023sociotechnical}} to the institution that governs interactions among agents.
+\end{description}
+\end{minipage}}
+\end{figure}
 
 \section{From Individual Model Alignment to Institutional Design}\label{sec:institutional-design}
 
