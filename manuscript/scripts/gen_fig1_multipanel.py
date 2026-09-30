@@ -20,10 +20,14 @@ SOURCES = {  # panel: (generator, html, crop viewBox or None for the full figure
 
 def extract(path, prefix):
     html = open(path, encoding='utf-8').read()
-    style = re.search(r'<style>(.*?)</style>', html, re.S).group(1)
+    m_style = re.search(r'<style>(.*?)</style>', html, re.S)
+    style = m_style.group(1) if m_style else ''   # some figures style every element inline
     style = re.sub(r'html,body\{[^}]*\}|\.fig\{[^}]*\}', '', style)
     m = re.search(r'<svg\b[^>]*viewBox="([^"]*)"[^>]*>(.*)</svg>', html, re.S)
     vb, body = [float(x) for x in m.group(1).split()], m.group(2)
+    ff = re.search(r'font-family="([^"]*)"', m.group(0)[:m.group(0).index('>') + 1])
+    if ff:  # keep a font set on the source's outer <svg>, which the nested panel would otherwise lose
+        body = f'<g font-family="{ff.group(1)}">{body}</g>'
     # prefix classes, ids, and id references
     style = re.sub(r'\.([A-Za-z][\w-]*)', lambda k: f'.{prefix}-{k.group(1)}', style)
     style = re.sub(r'(^|\})\s*text\s*\{', lambda k: f'{k.group(1)} .{prefix} text{{', style)

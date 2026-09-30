@@ -17,7 +17,7 @@ DATA = os.path.join(HERE, '..', '..', 'docs', 'assets', 'taxonomy.json')
 OUT = os.path.join(HERE, '..', 'figs', 'drafts', 'figure_rings-taxonomy.html')
 
 INK, MUTED, HAIR, PAGE = '#3F4D5A', '#6B7787', '#B3BEC9', '#FBFAF7'
-W, H = 1080, 1110
+W, H = 1080, 1170
 CX, CY = 540, 548
 AGENT = ('#6C5CD0', '#463BA0', '#ECE9FB')
 MICRO = ('#3A6EA5', '#2F3D6B', '#DCE8F5')
@@ -26,16 +26,17 @@ MECH = ('#B3BEC9', '#3F4D5A', '#FFFFFF')
 EXO = ('#4F9070', '#2F6B4A', '#E5F0E1')
 MACRO = ('#C79A3A', '#8A5A0B', '#FBEEDA')
 # (outer radius, colors, label); the agents' circle is the innermost
-R_AGENT, R_MICRO, R_MESO, R_MECH, R_EXO, R_MACRO = 80, 152, 204, 352, 420, 486
+R_AGENT, R_MICRO, R_MESO, R_MECH, R_EXO, R_MACRO = 80, 152, 204, 352, 436, 512
 BANDS = [(R_MACRO, MACRO, 'MACROSYSTEM'), (R_EXO, EXO, 'EXOSYSTEM'), (R_MECH, MECH, None),
          (R_MESO, MESO, 'MESOSYSTEM'), (R_MICRO, MICRO, 'MICROSYSTEM'), (R_AGENT, AGENT, None)]
 # example settings inside each ring: (label, angle in degrees, 0 = right, 90 = down)
 MICRO_ITEMS = [('user', 180), ('tools', 0), ('memory', 128), ('task', 52)]
 MESO_ITEMS = [('handoffs', 206), ('orchestrator', 334), ('shared memory', 90)]
-EXO_ITEMS = [('platform policy', 238), ('API limits', 302), ("other firms' agents", 127), ('monitoring stack', 53), ('compute providers', 90)]
-MACRO_ITEMS = [('law & regulation', 252), ('markets', 288), ('professional norms', 122), ('cultural values', 58)]
+EXO_ITEMS = [('platform policy', 226), ('API limits', 314), ('rival agents', 118), ('monitoring', 62), ('compute', 90)]
+MACRO_ITEMS = [('law & regulation', 238), ('markets', 302), ('professional norms', 118), ('cultural values', 62)]
 R_FAM, R_THEME, R_LEAF, R_ARC = R_MESO + 16, R_MESO + 70, R_MECH - 30, R_MECH - 14
 TOP_GAP = 11                      # empty slots at the top of the mechanism ring, for its label
+SC = float(os.environ.get('RINGS_TEXT_SCALE', '1.0'))   # text scale; the paper's Fig. 1 uses a larger value
 
 def t(x, y, s, cls, anchor='middle', extra=''):
     return f'<text x="{x:.1f}" y="{y:.1f}" class="{cls}" text-anchor="{anchor}"{extra}>{escape(s)}</text>'
@@ -48,12 +49,15 @@ def arc_path(r, a0, a1):
     large = 1 if (a1 - a0) % 360 > 180 else 0
     return f'M{x0:.1f} {y0:.1f} A{r} {r} 0 {large} 1 {x1:.1f} {y1:.1f}'
 
-def pill(a, r, label, col):
+def pill(a, r, label, col, along=False):
+    """A labeled pill; along=True turns it to follow the ring, kept upright."""
     mid, dark, bg = col
     x, y = P(a, r)
-    w = 18 + 7.4 * len(label)
-    return (f'<rect x="{x - w / 2:.1f}" y="{y - 12:.1f}" width="{w:.1f}" height="24" rx="12" fill="#fff" stroke="{mid}" stroke-width="1.3"/>'
-            + t(x, y + 4.8, label, 'pill', extra=f' fill="{dark}"'))
+    rot = (a + 90 if math.sin(math.radians(a)) < 0 else a - 90) if along else 0
+    tf = f' transform="rotate({rot:.1f} {x:.1f} {y:.1f})"' if along else ''
+    w = (18 + 7.4 * len(label)) * SC
+    return (f'<g{tf}><rect x="{x - w / 2:.1f}" y="{y - 12 * SC:.1f}" width="{w:.1f}" height="{24 * SC:.1f}" rx="{12 * SC:.1f}" fill="#fff" stroke="{mid}" stroke-width="1.3"/>'
+            + t(x, y + 4.8 * SC, label, 'pill', extra=f' fill="{dark}"') + '</g>')
 
 def robot(x, y, s, col):
     mid, dark, bg = col
@@ -122,10 +126,10 @@ def build():
     # mesosystem: two-way arrows linking the microsystem settings
     for a0, a1 in ((136, 172), (8, 44), (188, 232), (-52, -8)):
         s.append(f'<path d="{arc_path(R_MICRO + 12, a0, a1)}" fill="none" stroke="{MESO[0]}" stroke-width="2" marker-start="url(#ahm)" marker-end="url(#ahm)"/>')
-    for items, r, col in ((MICRO_ITEMS, (R_AGENT + R_MICRO) / 2, MICRO), (MESO_ITEMS, R_MESO - 22, MESO),
-                          (EXO_ITEMS, (R_MECH + R_EXO) / 2, EXO), (MACRO_ITEMS, (R_EXO + R_MACRO) / 2, MACRO)):
+    for items, r, col, along in ((MICRO_ITEMS, (R_AGENT + R_MICRO) / 2, MICRO, False), (MESO_ITEMS, R_MESO - 22, MESO, False),
+                                 (EXO_ITEMS, (R_MECH + R_EXO) / 2, EXO, True), (MACRO_ITEMS, (R_EXO + R_MACRO) / 2, MACRO, True)):
         for label, a in items:
-            s.append(pill(a, r, label, col))
+            s.append(pill(a, r, label, col, along))
     s += mechanisms(fams)
     # interacting agents at the center
     pos = [(CX - 30, CY - 4), (CX + 30, CY - 4), (CX, CY + 36)]
@@ -157,16 +161,16 @@ def main():
     body = '\n'.join(build())
     css = f'''
   text{{font-family:"Helvetica Neue",Arial,sans-serif;}}
-  .ring{{font-size:15px;font-weight:900;letter-spacing:1.4px;}}
-  .pill{{font-size:13.5px;font-weight:700;}}
+  .ring{{font-size:{15.0*SC:.1f}px;font-weight:900;letter-spacing:1.4px;}}
+  .pill{{font-size:{13.5*SC:.1f}px;font-weight:700;}}
   .lk{{fill:none;stroke-width:1.2;opacity:.65;}}
-  .fam{{font-size:13px;font-weight:900;letter-spacing:.6px;paint-order:stroke;stroke:#fff;stroke-width:4px;}}
-  .mechlabel{{font-size:15px;font-weight:900;letter-spacing:1.4px;fill:{INK};}}
-  .mechsub{{font-size:13px;font-style:italic;fill:{MUTED};}}
-  .chrono{{font-size:14px;font-weight:800;letter-spacing:.5px;fill:{MUTED};}}
-  .khead{{font-size:14.5px;font-weight:800;fill:{INK};}}
-  .kitem{{font-size:14px;fill:{INK};}}
-  .note{{font-size:14px;font-style:italic;fill:{MUTED};}}'''
+  .fam{{font-size:{13.0*SC:.1f}px;font-weight:900;letter-spacing:.6px;paint-order:stroke;stroke:#fff;stroke-width:4px;}}
+  .mechlabel{{font-size:{15.0*SC:.1f}px;font-weight:900;letter-spacing:1.4px;fill:{INK};}}
+  .mechsub{{font-size:{13.0*SC:.1f}px;font-style:italic;fill:{MUTED};}}
+  .chrono{{font-size:{14.0*SC:.1f}px;font-weight:800;letter-spacing:.5px;fill:{MUTED};}}
+  .khead{{font-size:{14.5*SC:.1f}px;font-weight:800;fill:{INK};}}
+  .kitem{{font-size:{14.0*SC:.1f}px;fill:{INK};}}
+  .note{{font-size:{14.0*SC:.1f}px;font-style:italic;fill:{MUTED};}}'''
     marker = lambda k, c: f'<marker id="{k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{c}"/></marker>'
     html = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Draft: nested systems with the taxonomy as a ring</title>
