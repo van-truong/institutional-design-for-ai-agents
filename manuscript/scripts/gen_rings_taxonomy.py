@@ -32,8 +32,8 @@ BANDS = [(R_MACRO, MACRO, 'MACROSYSTEM'), (R_EXO, EXO, 'EXOSYSTEM'), (R_MECH, ME
 # example settings inside each ring: (label, angle in degrees, 0 = right, 90 = down)
 MICRO_ITEMS = [('user', 180), ('tools', 0), ('memory', 128), ('task', 52)]
 MESO_ITEMS = [('handoffs', 206), ('orchestrator', 334), ('shared memory', 90)]
-EXO_ITEMS = [('platform policy', 213), ('API limits', 327), ("other firms' agents", 127), ('monitoring stack', 53), ('compute providers', 90)]
-MACRO_ITEMS = [('law & regulation', 206), ('markets', 334), ('professional norms', 122), ('cultural values', 58)]
+EXO_ITEMS = [('platform policy', 238), ('API limits', 302), ("other firms' agents", 127), ('monitoring stack', 53), ('compute providers', 90)]
+MACRO_ITEMS = [('law & regulation', 252), ('markets', 288), ('professional norms', 122), ('cultural values', 58)]
 R_FAM, R_THEME, R_LEAF, R_ARC = R_MESO + 16, R_MESO + 70, R_MECH - 30, R_MECH - 14
 TOP_GAP = 11                      # empty slots at the top of the mechanism ring, for its label
 
