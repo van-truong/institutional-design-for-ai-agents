@@ -58,6 +58,11 @@ MECH=[("Information layer",AM_D,AM_BG,AM_M,[("Norms & protocols",None),("Monitor
 CHAN=[("Soft channels",VI_D,VI_BG,VI_M,[("Normative","beliefs"),("Social","relationships"),("Epistemic","information")]),
       ("Hard channels",VI_D,VI_BG,VI_M,[("Incentive","payoffs"),("Constraint","access"),("Restorative","repair")])]
 
+# Mechanism-family leaves use the same colors as the families in the taxonomy figure (Fig. 4).
+from gen_taxonomy import FAMILIES as TAX_FAMILIES
+FAMILY_BG={'normative':'#FBEEDA','social':'#FBEDE6','epistemic':'#DCE8F5','incentive':'#E5F0E1','constraint':'#ECE9FB','restorative':'#E3F1EC'}
+FAMILY_LEAF={lab:(dark,FAMILY_BG[k],mid) for k,(lab,dark,mid,_) in TAX_FAMILIES.items()}
+
 # Panel B geometry
 RX=286; GX=428; GW=100; LX=556; LW=112; RIGHTX=696
 LEAF_H=31; PITCH=40; GROUP_GAP=6; SEC_GAP=24; Y0=76
@@ -144,8 +149,9 @@ def build():
             out.append(f'<text x="{gcx:.0f}" y="{gy-4:.0f}" text-anchor="middle" font-size="14" font-weight="700" fill="{dcol}">{esc(gl[0])}</text>')
             out.append(f'<text x="{gcx:.0f}" y="{gy+11:.0f}" text-anchor="middle" font-size="14" font-weight="700" fill="{dcol}">{esc(gl[1])}</text>')
         for (name,sub),ly in zip(leaves,lys):
-            out.append(f'<path d="M {gxr:.0f} {gy:.0f} C {LX-24} {gy:.0f}, {LX-24} {ly:.0f}, {LX:.0f} {ly:.0f}" fill="none" stroke="{mcol}" stroke-width="1" opacity="0.6"/>')
-            leaf_box(out,ly,name,sub,dcol,bg,mcol)
+            ld,lb,lm=FAMILY_LEAF.get(name,(dcol,bg,mcol))
+            out.append(f'<path d="M {gxr:.0f} {gy:.0f} C {LX-24} {gy:.0f}, {LX-24} {ly:.0f}, {LX:.0f} {ly:.0f}" fill="none" stroke="{lm}" stroke-width="1" opacity="0.6"/>')
+            leaf_box(out,ly,name,sub,ld,lb,lm)
     out.append('</svg>')
     return "\n".join(out)
 
