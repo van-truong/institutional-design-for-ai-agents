@@ -48,7 +48,7 @@ def main():
     st, vb, body = extract(os.path.join(DRAFTS, SOURCES['b'][1]), 'b')
     styles.append(st)
     bw = W - 40; bh = bw * vb[3] / vb[2]
-    parts.append(f'<text x="20" y="{y2 - 14:.0f}" class="ptitle">B  Nested systems around interacting agents, with the 66 mechanisms as a ring</text>')
+    parts.append(f'<text x="20" y="{y2 - 14:.0f}" class="ptitle">B  Nested systems around interacting agents (after Bronfenbrenner)</text>')
     parts.append(f'<svg x="20" y="{y2:.0f}" width="{bw:.0f}" height="{bh:.0f}" viewBox="{" ".join(map(str, vb))}" class="b">{body}</svg>')
     H = y2 + bh + 10
     css = '\n'.join(styles) + f'\n  .ptitle{{font-family:"Helvetica Neue",Arial,sans-serif;font-size:20px;font-weight:800;fill:{INK};}}'
