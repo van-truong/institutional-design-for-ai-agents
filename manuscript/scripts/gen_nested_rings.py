@@ -105,7 +105,7 @@ def build():
     for i, (r, (mid, dark, tint), name) in enumerate(BANDS):
         if name:
             rr = (r + radii[i+1]) / 2
-            o.append(t(CX, CY + rr + 5*SC, name, 15*SC, dark, weight='900'))
+            o.append(t(CX, CY + rr + 6*SC, name, 19*SC, dark, weight='900'))
     # ---- Bronfenbrenner hallmarks: two-way influence and mesosystem links (drawn under the pills) ----
     def arcpath(a0, a1, r):
         x0, y0 = P(a0, r); x1, y1 = P(a1, r)
@@ -129,16 +129,13 @@ def build():
         rr = (r_in + r_out) / 2 + 22
         for label, a in items:
             o.append(pill(a, rr, label, col))
-    # note on the two-way arrows (Bronfenbrenner's reciprocity)
-    o.append(t(24, 30, '↔  Influence runs both ways: each layer', 13.5*SC, MUT, anchor='start', italic=True))
-    o.append(t(24, 30 + 19*SC, '     shapes, and is shaped by, the others.', 13.5*SC, MUT, anchor='start', italic=True))
     # ---- cutaway wedge: a translucent window with the zoom scenes ----
     o.append(f'<path d="{wedge_path(WA0, WA1, R_MACRO)}" fill="#ffffff" fill-opacity="0.80" stroke="{INK}" stroke-width="1.6" stroke-dasharray="5 4"/>')
     def uarrow(r0, r1):
         o.append(f'<line x1="{CX}" y1="{CY-r0:.0f}" x2="{CX}" y2="{CY-r1:.0f}" stroke="{MUT}" stroke-width="2.4" marker-end="url(#ar)"/>')
     # scene 1: one model (center)
     o.append(robot(CX, CY - 46, 1.35, MODEL))
-    o.append(t(CX, CY - 12, 'one model', 12*SC, MODEL[1], italic=True))
+    o.append(t(CX, CY + 20, 'one model', 12*SC, MODEL[1], italic=True))
     uarrow(78, 100)
     # scene 2: a group of agents interacting (micro/meso)
     g = [(CX-40, CY-150), (CX+40, CY-150), (CX, CY-198)]
@@ -166,60 +163,51 @@ def build():
     R = R_MACRO + 22
     (x0, y0), (x1, y1) = P(150, R), P(30, R)
     o.append(f'<path d="M{x0:.1f} {y0:.1f} A{R} {R} 0 0 0 {x1:.1f} {y1:.1f}" fill="none" stroke="{MUT}" stroke-width="2.4" marker-end="url(#ar)"/>')
-    o.append(t(CX, CY + R + 26*SC, 'CHRONOSYSTEM (TIME)', 14*SC, MUT, weight='800'))
+    o.append(t(CX, CY + R + 30*SC, 'CHRONOSYSTEM (TIME)', 18*SC, MUT, weight='800'))
     o += legend()
     o.append('</svg>')
     return o
 
 
+# outer -> inner, so Macrosystem sits on top and the legend matches the cutaway wedge order
 LEGEND = [
-    ('Individual model', MODEL, 'the agent at the center'),
-    ('Microsystem', MICRO, 'settings it acts in directly'),
-    ('Mesosystem', MESO, 'links between those settings'),
-    ('Exosystem', EXO, 'settings that shape it from outside'),
     ('Macrosystem', MACRO, 'law, markets, norms, culture'),
+    ('Exosystem', EXO, 'settings that shape it from outside'),
+    ('Mesosystem', MESO, 'links between those settings'),
+    ('Microsystem', MICRO, 'settings it acts in directly'),
+    ('Individual model', MODEL, 'the agent at the center'),
 ]
-GROUPS = [(0, 0, ['individual', 'model']), (1, 2, ['agent-group', 'interactions']), (3, 4, ['governing', 'institutions'])]
+GROUPS = [(0, 1, ['governing', 'institutions']), (2, 3, ['agent-group', 'interactions']), (4, 4, ['individual', 'model'])]
 
 
 def legend():
-    LS = SC * 1.3
+    LS = SC * 1.5
     s = []
-    lx = LEG_X + 58
-    line, sw = 22 * LS, 17 * LS
-    tx = lx + sw + 10
-    y = 90
-    s.append(t(LEG_X + 8, y, 'What each ring holds', 17*LS, INK, anchor='start', weight='800'))
-    y += 30 * LS
+    lx = LEG_X + 70
+    line, sw = 27 * LS, 22 * LS
+    tx = lx + sw + 13
+    rowgap = 30 * LS
+    row_h = 14 * LS + line + rowgap
+    y = CY - len(LEGEND) * row_h / 2 + 30
     tops, bots = [], []
     for name, (mid, dark, tint), desc in LEGEND:
-        y += 12 * LS
-        s.append(f'<rect x="{lx:.1f}" y="{y-sw+3:.1f}" width="{sw:.1f}" height="{sw:.1f}" rx="4" fill="{tint}" stroke="{mid}" stroke-width="1.6"/>')
-        s.append(t(tx, y, name, 16.5*LS, dark, anchor='start', weight='800'))
+        y += 14 * LS
+        s.append(f'<rect x="{lx:.1f}" y="{y-sw+3:.1f}" width="{sw:.1f}" height="{sw:.1f}" rx="5" fill="{tint}" stroke="{mid}" stroke-width="2"/>')
+        s.append(t(tx, y, name, 19*LS, dark, anchor='start', weight='800'))
         tops.append(y - sw + 3)
         y += line
         s.append(t(tx, y + 2, desc, 14.5*LS, INK, anchor='start'))
-        bots.append(y + 8)
-        y += 14 * LS
+        bots.append(y + 10)
+        y += rowgap
     # brackets grouping rings into the three layers of Fig. 2
-    bx = lx - 18
+    bx = lx - 22
     for a, b, label in GROUPS:
         ya, yb = tops[a] - 2, bots[b]
-        s.append(f'<path d="M{bx+7:.1f} {ya:.1f} L{bx:.1f} {ya:.1f} L{bx:.1f} {yb:.1f} L{bx+7:.1f} {yb:.1f}" fill="none" stroke="{HAIR}" stroke-width="1.8"/>')
+        s.append(f'<path d="M{bx+8:.1f} {ya:.1f} L{bx:.1f} {ya:.1f} L{bx:.1f} {yb:.1f} L{bx+8:.1f} {yb:.1f}" fill="none" stroke="{HAIR}" stroke-width="2"/>')
         ym = (ya + yb) / 2
         for k, ln in enumerate(label):
-            x = bx - 10 - (len(label) - 1 - k) * 19 * LS
-            s.append(t(x, ym, ln, 13.5*LS, MUT, italic=True, extra=f' transform="rotate(-90 {x:.1f} {ym:.1f})"'))
-    y += 30 * LS
-    s.append(t(LEG_X + 8, y, 'The wedge is a cutaway: one model', 14*LS, MUT, anchor='start', italic=True))
-    y += 20 * LS
-    s.append(t(LEG_X + 8, y, 'becomes a group, then a society, then', 14*LS, MUT, anchor='start', italic=True))
-    y += 20 * LS
-    s.append(t(LEG_X + 8, y, 'many institutions interacting.', 14*LS, MUT, anchor='start', italic=True))
-    y += 26 * LS
-    s.append(t(LEG_X + 8, y, 'After Bronfenbrenner (1979); brackets', 14*LS, MUT, anchor='start', italic=True))
-    y += 20 * LS
-    s.append(t(LEG_X + 8, y, 'show the three layers of Fig. 2.', 14*LS, MUT, anchor='start', italic=True))
+            x = bx - 12 - (len(label) - 1 - k) * 20 * LS
+            s.append(t(x, ym, ln, 14*LS, MUT, italic=True, extra=f' transform="rotate(-90 {x:.1f} {ym:.1f})"'))
     return s
 
 
