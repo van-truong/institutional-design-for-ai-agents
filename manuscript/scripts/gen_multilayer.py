@@ -53,10 +53,18 @@ def varrow(ax,ytail,yhead,color):
     return f'<polygon points="{p}" fill="{color}" opacity="0.9"/>'
 
 # Panel B tree: (group, dark, bg, mid, [(name, sublabel|None)])
-MECH=[("Information layer",AM_D,AM_BG,AM_M,[("Norms & protocols",None),("Monitoring",None),("Reputation",None)]),
-      ("Consequence layer",AM_D,AM_BG,AM_M,[("Sanctions",None),("Constraints",None),("Adjudication & appeal",None),("Repair & reintegration",None)])]
+# Institutional functions: slate grey for the information layer, plum for the consequence layer (figs/PALETTE.md).
+FI_D="#34465A"; FI_M="#5B6B7D"; FI_BG="#E9EDF2"
+FC_D="#6B2350"; FC_M="#9C4A78"; FC_BG="#F6E7EF"
+MECH=[("Information layer",FI_D,FI_BG,FI_M,[("Norms & protocols",None),("Monitoring",None),("Reputation",None)]),
+      ("Consequence layer",FC_D,FC_BG,FC_M,[("Sanctions",None),("Constraints",None),("Adjudication & appeal",None),("Repair & reintegration",None)])]
 CHAN=[("Soft channels",VI_D,VI_BG,VI_M,[("Normative","beliefs"),("Social","relationships"),("Epistemic","information")]),
       ("Hard channels",VI_D,VI_BG,VI_M,[("Incentive","payoffs"),("Constraint","access"),("Restorative","repair")])]
+
+# Mechanism-family leaves use the same colors as the families in the taxonomy figure (Fig. 4).
+from gen_taxonomy import FAMILIES as TAX_FAMILIES
+FAMILY_BG={'normative':'#FBEEDA','social':'#FBEDE6','epistemic':'#DCE8F5','incentive':'#E5F0E1','constraint':'#ECE9FB','restorative':'#E3F1EC'}
+FAMILY_LEAF={lab:(dark,FAMILY_BG[k],mid) for k,(lab,dark,mid,_) in TAX_FAMILIES.items()}
 
 # Panel B geometry
 RX=286; GX=428; GW=100; LX=556; LW=112; RIGHTX=696
@@ -82,7 +90,7 @@ def build():
     # first lay out Panel B to know total height
     body=[]
     y=Y0; groups=[]; seclabels=[]
-    for sname,scol,grp in [("INSTITUTIONAL FUNCTIONS",AM_M,MECH),("MECHANISM FAMILIES",VI_M,CHAN)]:
+    for sname,scol,grp in [("INSTITUTIONAL FUNCTIONS",FC_M,MECH),("MECHANISM FAMILIES",VI_M,CHAN)]:
         first_ly=y; last_ly=y
         for (gname,dcol,bg,mcol,leaves) in grp:
             lys=[y+i*PITCH for i in range(len(leaves))]
@@ -91,15 +99,15 @@ def build():
             y=lys[-1]+PITCH+GROUP_GAP
         seclabels.append((sname,scol,(first_ly+last_ly)/2))  # vertical center of the block
         y+=SEC_GAP
-    Bbottom=y
-    H=max(Bbottom+18, 300)
+    Bbottom=last_ly+LEAF_H/2          # bottom edge of the last leaf box
+    H=max(Bbottom+14, 300)
 
     out=[f'<svg width="100%" viewBox="0 0 {W} {H:.0f}" role="img" xmlns="http://www.w3.org/2000/svg" font-family="{FONT}">']
     out.append('<title>Agent-in-context and the design space of agent institutions</title>')
     out.append(f'<defs><marker id="triA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 z" fill="{AM_M}"/></marker>'
                f'<marker id="triV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 z" fill="{VI_M}"/></marker></defs>')
     # divider + labels
-    out.append(f'<line x1="258" y1="18" x2="258" y2="{H-14:.0f}" stroke="#EEF2F6" stroke-width="1.4"/>')
+    out.append(f'<line x1="248" y1="18" x2="248" y2="{H-6:.0f}" stroke="#EEF2F6" stroke-width="1.4"/>')
     out.append(f'<text x="12" y="28" font-size="17" font-weight="700" fill="{BLK}">A</text>')
     out.append(f'<text x="28" y="28" font-size="17" font-weight="700" fill="{BLK}">Agent-in-context</text>')
     out.append(f'<text x="272" y="28" font-size="17" font-weight="700" fill="{BLK}">B</text>')
@@ -107,8 +115,9 @@ def build():
 
     # ---- Panel A (spread to span Panel B height) ----
     cxA=116; w=60; h=28; th=10
-    top_pad=64; bot_pad=40
-    span=H-top_pad-bot_pad
+    top_pad=64
+    # size the stack so the bottom layer's arrow ends just above the figure edge
+    span=(H-10-top_pad-(h+th+8))/0.86
     cys=[top_pad+span*f for f in (0.14,0.5,0.86)]
     for (a,b) in [(0,1),(1,2)]:
         out.append(f'<line x1="{cxA-w}" y1="{cys[a]+th:.0f}" x2="{cxA-w}" y2="{cys[b]:.0f}" stroke="{HAIR}" stroke-width="1" stroke-dasharray="2 4" opacity="0.7"/>')
@@ -143,8 +152,9 @@ def build():
             out.append(f'<text x="{gcx:.0f}" y="{gy-4:.0f}" text-anchor="middle" font-size="14" font-weight="700" fill="{dcol}">{esc(gl[0])}</text>')
             out.append(f'<text x="{gcx:.0f}" y="{gy+11:.0f}" text-anchor="middle" font-size="14" font-weight="700" fill="{dcol}">{esc(gl[1])}</text>')
         for (name,sub),ly in zip(leaves,lys):
-            out.append(f'<path d="M {gxr:.0f} {gy:.0f} C {LX-24} {gy:.0f}, {LX-24} {ly:.0f}, {LX:.0f} {ly:.0f}" fill="none" stroke="{mcol}" stroke-width="1" opacity="0.6"/>')
-            leaf_box(out,ly,name,sub,dcol,bg,mcol)
+            ld,lb,lm=FAMILY_LEAF.get(name,(dcol,bg,mcol))
+            out.append(f'<path d="M {gxr:.0f} {gy:.0f} C {LX-24} {gy:.0f}, {LX-24} {ly:.0f}, {LX:.0f} {ly:.0f}" fill="none" stroke="{lm}" stroke-width="1" opacity="0.6"/>')
+            leaf_box(out,ly,name,sub,ld,lb,lm)
     out.append('</svg>')
     return "\n".join(out)
 
