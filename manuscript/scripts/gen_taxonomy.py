@@ -88,7 +88,7 @@ def build():
          f'<desc>{len(rows)} mechanisms in {len(themes)} themes, grouped by six mechanism families, with markers for '
          'LLM-agent evidence and breadth of use across disciplines.</desc>',
          f'<style>.leaf{{font-size:{FS["leaf"]}px;fill:{INK}}}.theme{{font-size:{FS["theme"]}px;font-weight:700}}'
-         f'.fam{{font-size:{FS["fam"]}px;font-weight:700;letter-spacing:0.4px}}'
+         f'.fam{{font-size:{FS["fam"]}px;font-weight:800;letter-spacing:1px}}'
          f'.title{{font-size:{FS["title"]}px;font-weight:700;fill:{INK};text-anchor:middle}}'
          f'.leg{{font-size:{FS["legend"]}px;fill:{MUTED}}}</style>',
          f'<text class="title" x="{W / 2:.1f}" y="30">Cooperation-shaping mechanisms for agent groups</text>']
@@ -120,9 +120,12 @@ def build():
         y = TOP
         for f in col:
             label, dark, mid, tids = FAMILIES[f]
-            o.append(f'<text class="fam" x="{x0:.1f}" y="{y + 9:.1f}" fill="{dark}">{esc(label.upper())}</text>')
-            o.append(f'<line x1="{x0:.1f}" y1="{y + 15:.1f}" x2="{xr:.1f}" y2="{y + 15:.1f}" stroke="{mid}" stroke-width="1.6"/>')
-            fam_node = (x0 + 3, y + 15)
+            # section header: a filled pill in the family color, with the rule running out from it
+            pw = 22 + len(label) * FS['fam'] * 0.72
+            o.append(f'<line x1="{x0:.1f}" y1="{y + 4:.1f}" x2="{xr:.1f}" y2="{y + 4:.1f}" stroke="{mid}" stroke-width="1.8"/>')
+            o.append(f'<rect x="{x0:.1f}" y="{y - 8:.1f}" width="{pw:.1f}" height="24" rx="12" fill="{dark}"/>')
+            o.append(f'<text class="fam" x="{x0 + 11:.1f}" y="{y + 4 + FS["fam"] * 0.35:.1f}" fill="#FFFFFF">{esc(label.upper())}</text>')
+            fam_node = (x0 + 3, y + 16)
             y += FAM_ROW
             for t in tids:
                 tname, mechs = themes[t]
