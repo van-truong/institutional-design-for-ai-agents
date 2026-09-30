@@ -15,7 +15,7 @@ sys.path.insert(0, HERE)
 import gen_multilayer as ml  # noqa: E402
 
 OUT = os.path.join(HERE, '..', 'figs', 'figure_agent-in-context.html')
-W, H = 626, 300
+W, H = 648, 300
 CX, PW, PH, TH = 128, 56, 23, 9
 LAYERS = [  # (y, top fill, side fill, label lines, label color, node glyph, Fig. 1 rings, note)
     (52, ml.AM_TOP, ml.AM_SIDE, ['Governing institutions'], ml.AM_D, ml.nodes_net, ('mech', 'exo', 'macro'),
@@ -56,13 +56,13 @@ def build():
     o.append(f'<text x="234" y="{ymid:.0f}" text-anchor="middle" font-size="15.5" font-weight="700" fill="{ml.VI_M}" transform="rotate(-90 234 {ymid:.0f})">Bottom-up</text>')
     # labels, a note naming the matching rings of Fig. 1, and a ring icon
     for y, top, side, label, col, nodes, rings, note in LAYERS:
-        o.append(ring_icon(266, y + 2, rings))
+        o.append(ring_icon(288, y + 2, rings))
         n = len(label) + 1
         y0 = y + 5 - (n - 1) * 9.5
         for i, line in enumerate(label):
             style = 'font-weight="400" font-style="italic"' if line.startswith('(') else 'font-weight="700"'
-            o.append(f'<text x="302" y="{y0 + i * 19:.0f}" font-size="16.5" {style} fill="{col}">{ml.esc(line)}</text>')
-        o.append(f'<text x="302" y="{y0 + len(label) * 19 + 2:.0f}" font-size="14.5" font-style="italic" fill="{ml.MUT}">{ml.esc(note)}</text>')
+            o.append(f'<text x="324" y="{y0 + i * 19:.0f}" font-size="16.5" {style} fill="{col}">{ml.esc(line)}</text>')
+        o.append(f'<text x="324" y="{y0 + len(label) * 19 + 2:.0f}" font-size="14.5" font-style="italic" fill="{ml.MUT}">{ml.esc(note)}</text>')
     o.append('</svg>')
     return '\n'.join(o)
 
