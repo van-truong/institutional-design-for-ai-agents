@@ -62,6 +62,7 @@ CHAN=[("Soft channels",VI_D,VI_BG,VI_M,[("Normative","beliefs"),("Social","relat
       ("Hard channels",VI_D,VI_BG,VI_M,[("Incentive","payoffs"),("Constraint","access"),("Restorative","repair")])]
 
 # Mechanism-family leaves use the same colors as the families in the taxonomy figure (Fig. 4).
+import os
 from gen_taxonomy import FAMILIES as TAX_FAMILIES
 FAMILY_BG={'normative':'#FBEEDA','social':'#FBEDE6','epistemic':'#DCE8F5','incentive':'#E5F0E1','constraint':'#ECE9FB','restorative':'#E3F1EC'}
 FAMILY_LEAF={lab:(dark,FAMILY_BG[k],mid) for k,(lab,dark,mid,_) in TAX_FAMILIES.items()}
@@ -108,10 +109,13 @@ def build():
                f'<marker id="triV" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 z" fill="{VI_M}"/></marker></defs>')
     # divider + labels
     out.append(f'<line x1="248" y1="18" x2="248" y2="{H-6:.0f}" stroke="#EEF2F6" stroke-width="1.4"/>')
-    out.append(f'<text x="12" y="28" font-size="17" font-weight="700" fill="{BLK}">A</text>')
-    out.append(f'<text x="28" y="28" font-size="17" font-weight="700" fill="{BLK}">Agent-in-context</text>')
-    out.append(f'<text x="272" y="28" font-size="17" font-weight="700" fill="{BLK}">B</text>')
-    out.append(f'<text x="288" y="28" font-size="17" font-weight="700" fill="{BLK}">Design space of agent institutions</text>')
+    # PANEL_LETTERS=0 drops the A/B letters, for the paper's standalone crops (scripts/gen_paper_figs.py)
+    letters = os.environ.get('PANEL_LETTERS', '1') == '1'
+    if letters:
+        out.append(f'<text x="12" y="28" font-size="17" font-weight="700" fill="{BLK}">A</text>')
+        out.append(f'<text x="272" y="28" font-size="17" font-weight="700" fill="{BLK}">B</text>')
+    out.append(f'<text x="{28 if letters else 12}" y="28" font-size="17" font-weight="700" fill="{BLK}">Agent-in-context</text>')
+    out.append(f'<text x="{288 if letters else 272}" y="28" font-size="17" font-weight="700" fill="{BLK}">Design space of agent institutions</text>')
 
     # ---- Panel A (spread to span Panel B height) ----
     cxA=116; w=60; h=28; th=10

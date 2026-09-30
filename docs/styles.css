@@ -127,7 +127,8 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding-block
 .tx-hub-text { font-size: 26px; font-weight: 900; fill: #111; }
 .tx-hub-sub { font-size: 11px; font-weight: 700; letter-spacing: .08em; fill: var(--muted); text-transform: uppercase; }
 .tx-fam-label { font-size: 15px; font-weight: 900; letter-spacing: .04em; paint-order: stroke; stroke: #fff; stroke-width: 4px; }
-.tx-fam-rule { stroke-width: 1.6; }
+.tx-fam-rule { stroke-width: 1.8; }
+.tx-fam-label.on-pill { stroke: none; letter-spacing: .08em; }
 .tx-theme-label { font-size: 13px; font-weight: 800; }
 .tx-leaf { cursor: pointer; outline: none; }
 .tx-leaf-label { font-size: 12.5px; fill: #2c2c2a; transition: fill .12s ease; }
