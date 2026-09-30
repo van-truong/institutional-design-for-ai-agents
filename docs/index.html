@@ -128,7 +128,8 @@
       <div class="taxonomy-copy">
         <div>
           <h2>We mapped what’s in the literature to a unified taxonomy.</h2>
-          <p>We coded <span data-tx-count="instances">506</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies, into <span data-tx-count="mechanisms">66</span> mechanisms and <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper. Choose any mechanism to see its definition and the sources behind it.</p>
+          <p>We coded <span data-tx-count="corpus">561</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies. <span data-tx-count="instances">506</span> of them act through one of <span data-tx-count="mechanisms">66</span> mechanisms in <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper; the rest describe group-level phenomena or fall outside the scope. Choose any mechanism to see its definition and the sources behind it.</p>
+          <p class="tx-counts"><strong>How the counts add up.</strong> <span data-tx-count="from_studies">213</span> instances from <span data-tx-count="studies">142</span> multi-agent studies (one per mechanism a study tests) + <span data-tx-count="cross">280</span> from other fields and systems + <span data-tx-count="seed">68</span> seed examples = <span data-tx-count="corpus">561</span>. Of these, <span data-tx-count="single">397</span> single mechanisms + <span data-tx-count="combo">109</span> named combinations = <span data-tx-count="instances">506</span> appear in the map; the other <span data-tx-count="phenomenon">41</span> describe group-level phenomena and <span data-tx-count="out_of_scope">14</span> fall outside the scope.</p>
         </div>
         <aside class="sticky-note">Open circles mark mechanisms that no LLM-agent study has tested yet. We keep the gaps visible.</aside>
       </div>
@@ -156,6 +157,11 @@
           <p>Hover, tap, or use the Tab key to explore.</p>
         </aside>
       </div>
+      <aside class="tx-note">
+        <h3>How to read this map</h3>
+        <p>These categories come from interpretive, thematic coding. Choosing the lever as the organizing idea, deciding where codes are merged or split, and naming each category all reflect our reading of the sources. Another team, or another lens, such as grouping mechanisms by discipline or by who holds authority, could draw the boundaries differently, and there is no single correct way to do it. We treat the taxonomy as a working map: its categories will be merged, split, renamed, and reinterpreted as sources are added. Counts describe our corpus, not how common or effective a mechanism is in the world.</p>
+        <p>If you would organize a mechanism differently, or know a source we missed, <a href="https://github.com/van-truong/institutional-design-for-ai-agents/issues">open an issue</a>. Different perspectives are welcome.</p>
+      </aside>
       <details class="tx-text">
         <summary>Text list of all mechanisms</summary>
         <div id="tx-text-list"></div>
