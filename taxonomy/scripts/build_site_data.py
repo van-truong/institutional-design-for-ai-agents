@@ -73,6 +73,7 @@ def main():
     n_src = len({(s['title']) for f in families for t in f['themes'] for m in t['mechanisms'] for s in m['sources']})
     data = dict(generated=date.today().isoformat(), columns=COLUMNS,
                 counts=dict(mechanisms=len(book), themes=len(themes), instances=len(fin),
+                            corpus=sum(1 for r in inst if r.get('kind')),
                             sources=n_src),
                 families=families)
     json.dump(data, open(OUT, 'w'), ensure_ascii=False, separators=(',', ':'))
