@@ -7,6 +7,7 @@
   <title>Institutional Design for AI Agents</title>
   <link rel="stylesheet" href="styles.css">
   <script src="taxonomy.js" defer></script>
+  <script src="phenomena.js" defer></script>
 </head>
 <body>
   <header class="poster-header" id="top">
@@ -128,8 +129,8 @@
       <div class="taxonomy-copy">
         <div>
           <h2>We mapped what’s in the literature to a unified taxonomy.</h2>
-          <p>We coded <span data-tx-count="corpus">561</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies. <span data-tx-count="instances">506</span> of them act through one of <span data-tx-count="mechanisms">66</span> mechanisms in <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper; the rest describe group-level phenomena or fall outside the scope. Choose any mechanism to see its definition and the sources behind it.</p>
-          <p class="tx-counts"><strong>How the counts add up.</strong> <span data-tx-count="from_studies">213</span> instances from <span data-tx-count="studies">142</span> multi-agent studies (one per mechanism a study tests) + <span data-tx-count="cross">280</span> from other fields and systems + <span data-tx-count="seed">68</span> seed examples = <span data-tx-count="corpus">561</span>. Of these, <span data-tx-count="single">397</span> single mechanisms + <span data-tx-count="combo">109</span> named combinations = <span data-tx-count="instances">506</span> appear in the map; the other <span data-tx-count="phenomenon">41</span> describe group-level phenomena and <span data-tx-count="out_of_scope">14</span> fall outside the scope.</p>
+          <p>We coded <span data-tx-count="corpus">645</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies. <span data-tx-count="instances">549</span> of them act through one of <span data-tx-count="mechanisms">66</span> mechanisms in <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper; the rest describe group-level phenomena or fall outside the scope. Choose any mechanism to see its definition and the sources behind it.</p>
+          <p class="tx-counts"><strong>How the counts add up.</strong> <span data-tx-count="from_studies">256</span> instances from <span data-tx-count="studies">185</span> multi-agent studies (one per mechanism a study tests) + <span data-tx-count="cross">321</span> from other fields and systems + <span data-tx-count="seed">68</span> seed examples = <span data-tx-count="corpus">645</span>. Of these, <span data-tx-count="single">440</span> single mechanisms + <span data-tx-count="combo">109</span> named combinations = <span data-tx-count="instances">549</span> appear in the map; the other <span data-tx-count="phenomenon">82</span> describe group-level phenomena and <span data-tx-count="out_of_scope">14</span> fall outside the scope.</p>
         </div>
         <aside class="sticky-note">Open circles mark mechanisms that no LLM-agent study has tested yet. We keep the gaps visible.</aside>
       </div>
@@ -166,6 +167,16 @@
         <summary>Text list of all mechanisms</summary>
         <div id="tx-text-list"></div>
       </details>
+    </section>
+
+    <section id="phenomena" class="phenomena-section rule-top">
+      <div class="ph-copy">
+        <h2>Mechanisms are what we design. Phenomena are what emerges.</h2>
+        <p>Alongside the mechanisms above, we coded <span data-ph-count="total">82</span> <strong>group-level phenomena</strong>&mdash;patterns that arise from interaction rather than levers a designer applies. The emphasis has shifted with the technology: multi-agent reinforcement learning mostly documented emergent <em>communication</em>, while LLM-agent studies increasingly report emergent <em>society</em>&mdash;conventions, social structure, culture&mdash;and failure modes. Most are neutral or surprising, but <span data-ph-count="harmful">20</span> are already harmful, almost all in LLM systems and with no institution present.</p>
+      </div>
+      <div class="ph-legend" id="ph-legend"></div>
+      <div class="ph-matrix" id="ph-matrix">Loading…</div>
+      <p class="ph-hint">Click any row to open the papers behind it and, where they exist, the real-world incidents.</p>
     </section>
 
     <section class="research-agenda rule-top">

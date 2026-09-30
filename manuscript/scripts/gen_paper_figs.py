@@ -40,11 +40,11 @@ def write(name, title, src, key, crop=None):
 
 def main():
     run('gen_coleman_boat.py')
-    run('gen_rings_taxonomy.py', {'RINGS_TEXT_SCALE': '1.35'})
+    run('gen_phenomena.py')          # standalone phenomena figure (writes its own PDF)
+    run('gen_nested_rings.py', {'RINGS_TEXT_SCALE': '1.35'})   # Fig. 1: nested rings + cutaway window (writes its own PDF)
     run('gen_multilayer.py', {'PANEL_LETTERS': '0'})
     multi = os.path.join(FIGS, 'figure4_multi-layer-institutions.html')
     _, mvb, _ = extract(multi, 'm')
-    write('figure_nested-rings', 'Nested systems around interacting agents', os.path.join(DRAFTS, 'figure_rings-taxonomy.html'), 'r')
     # Fig. 2 has its own compact generator (half the height of the layer stack in gen_multilayer.py)
     run('gen_agent_in_context.py')
     subprocess.run([sys.executable, os.path.join(HERE, 'extract_svg.py'), os.path.join(FIGS, 'figure_agent-in-context.html'),
@@ -54,7 +54,7 @@ def main():
     write('figure_design-space', 'Design space of agent institutions', multi, 'd', (252, 0, mvb[2] - 252, mvb[3]))
     write('figure_coleman-boat', 'A Coleman boat for agent institutions', os.path.join(DRAFTS, 'figure_coleman-boat.html'), 'c')
     run('gen_multilayer.py')          # restore the combined figure with its A/B letters
-    run('gen_rings_taxonomy.py')      # and the rings draft at its default text size
+    run('gen_rings_taxonomy.py')      # keep the mechanism-circle taxonomy available as a side artifact
 
 if __name__ == '__main__':
     main()
