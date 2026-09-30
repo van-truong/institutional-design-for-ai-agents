@@ -10,23 +10,23 @@ from html import escape
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "figs", "figure7_failure-modes-flow.html")
 
-W, HEAD, RH, GAP = 960, 34, 190, 12
+W, HEAD, RH, GAP = 960, 34, 204, 12
 X = dict(mech=(18, 162), fail=(202, 180), meas=(404, 150), dcx=642, dhw=76, dhh=54, safe=(746, 198))
 
 ROWS = [
-    dict(tag="A", title="A fine becomes a price", family="incentive family",
+    dict(tag="A", title="A fine becomes a price", family="incentive family", breaks="the rule meets behavior",
          mech=("Fine", "a charge for a violation"),
          fail=("Paid, not obeyed", ["agents treat the fine", "as a fee for the act"]),
          meas=["contribution", "stability"],
          q=["Cooperation", "holds without", "the fine?"],
          safe=["state the norm, not", "only the price", "graduated sanctions"], bullets={0, 2}),
-    dict(tag="B", title="A score becomes the target", family="social & epistemic",
+    dict(tag="B", title="A score becomes the target", family="social & epistemic", breaks="behavior becomes a signal",
          mech=("Reputation score", "past conduct sets trust"),
          fail=("Score is gamed", ["reputation farming;", "shallow cooperation"]),
          meas=["gameability;", "false negatives"],
          q=["Score", "matches real", "conduct?"],
          safe=["tamper-evident records", "peer review", "audit messages, not", "only scores"], bullets={0, 1, 2}),
-    dict(tag="C", title="A role becomes an authority", family="epistemic & constraint",
+    dict(tag="C", title="A role becomes an authority", family="epistemic & constraint", breaks="the institution feeds back on itself",
          mech=("Monitor or judge", "a role that can sanction"),
          fail=("Over-detects or", ["is captured", "rewarded for violations"]),
          meas=["false punishment;", "capture; override"],
@@ -46,12 +46,13 @@ def header():
 
 def row(i, r):
     y0 = HEAD + i * (RH + GAP)
-    bt, bh = y0 + 58, 92
+    bt, bh = y0 + 72, 92
     yc = bt + bh / 2
     mx, mw = X["mech"]; fx, fw = X["fail"]; kx, kw = X["meas"]; sx, sw = X["safe"]
     dcx, dhw, dhh = X["dcx"], X["dhw"], X["dhh"]
     s = [f'<rect x="1" y="{y0}" width="{W-2}" height="{RH}" rx="12" class="panel"/>',
-         t(18, y0 + 30, f'{r["tag"]}. {r["title"]}', "ptitle")]
+         t(18, y0 + 30, f'{r["tag"]}. {r["title"]}', "ptitle"),
+         t(18, y0 + 53, 'Breaks where ' + r["breaks"], "breaks")]
     fam_w = 11 + 7.6 * len(r["family"])
     s.append(f'<rect x="{W-18-fam_w:.1f}" y="{y0+12}" width="{fam_w:.1f}" height="26" rx="13" class="famchip"/>')
     s.append(t(W - 18 - fam_w / 2, y0 + 30, r["family"], "famtext"))
@@ -148,6 +149,7 @@ html = f'''<!DOCTYPE html>
   .keeptext{{font-size:14.5px;font-weight:700;fill:var(--green-d);text-anchor:middle;}}
   .item{{font-size:15px;fill:var(--ink);}}
   .elabel{{font-size:15px;font-style:italic;fill:var(--muted);text-anchor:middle;}}
+  .breaks{{font-size:14.5px;font-style:italic;font-weight:700;fill:var(--terra-d);}}
 </style>
 </head>
 <body>
