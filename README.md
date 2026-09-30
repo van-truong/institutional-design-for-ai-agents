@@ -46,7 +46,7 @@ The switches near the top of `manuscript.tex` control whether review colors appe
 - [ ] **Final content/figure pass:** redesign Figs 1 and 7 (pink "Draft figure" captions), verify the taxonomy figure counts and captions, and inspect every figure at LNCS print size.
 - [ ] **Remaining strikeouts:** review the red `\del{}` text (Sections 3, 6, Discussion, Appendices A and B).
 - [x] ~~**Table 2:** replaced with a failure-mode flow figure (Fig. 6); merged the two metrics tables; expanded the evaluations table into an inventory.~~
-- [ ] **Alternative Views + Discussion:** decide whether to merge them into one section.
+- [x] ~~**Alternative Views + Discussion:** merged into one section, "Alternative Views and Open Questions".~~
 - [ ] **Taxonomy:** code the 84 new instances (I0562–I0645) and re-run the downstream scripts; the verifier reviews `coding/gpt/cross_model_disagreements.csv` and the I_A source flags, then clears the red "verification in progress" flag.
 - [x] ~~Clear bibliography and reference warnings.~~
 - [ ] **Clean PDF:** disable review colors (`\showreviewflagsfalse`) and verify that source and PDF match exactly.
