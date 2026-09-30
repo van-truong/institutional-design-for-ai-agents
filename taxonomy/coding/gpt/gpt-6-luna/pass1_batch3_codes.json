@@ -1,0 +1,172 @@
+[
+  {
+    "code": "cap individual resource extraction",
+    "definition": "Cap individual resource extraction.",
+    "n_instances": 1
+  },
+  {
+    "code": "choose among governance regimes",
+    "definition": "Choose among governance regimes.",
+    "n_instances": 2
+  },
+  {
+    "code": "collectively set resource and membership rules",
+    "definition": "Collectively set resource and membership rules.",
+    "n_instances": 1
+  },
+  {
+    "code": "communicate or commit publicly",
+    "definition": "Communicate or commit publicly.",
+    "n_instances": 8
+  },
+  {
+    "code": "condition transfers on performance",
+    "definition": "Condition transfers on performance.",
+    "n_instances": 3
+  },
+  {
+    "code": "constrain permitted actions ex ante",
+    "definition": "Constrain permitted actions ex ante.",
+    "n_instances": 5
+  },
+  {
+    "code": "coordinate through shared procedure",
+    "definition": "Coordinate through shared procedure.",
+    "n_instances": 12
+  },
+  {
+    "code": "detect and isolate collusive agents",
+    "definition": "Detect and isolate collusive agents.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalate sanctions for repeated violations",
+    "definition": "Escalate sanctions for repeated violations.",
+    "n_instances": 1
+  },
+  {
+    "code": "exchange equal time credits",
+    "definition": "Exchange equal time credits.",
+    "n_instances": 1
+  },
+  {
+    "code": "filter harmful sanctions",
+    "definition": "Filter harmful sanctions.",
+    "n_instances": 1
+  },
+  {
+    "code": "formalize reciprocal obligations",
+    "definition": "Formalize reciprocal obligations.",
+    "n_instances": 2
+  },
+  {
+    "code": "impose cost for norm violation",
+    "definition": "Impose cost for norm violation.",
+    "n_instances": 4
+  },
+  {
+    "code": "impose escalating cost for breach",
+    "definition": "Impose escalating cost for breach.",
+    "n_instances": 11
+  },
+  {
+    "code": "impose pre-agreed cost for breach",
+    "definition": "Impose pre-agreed cost for breach.",
+    "n_instances": 1
+  },
+  {
+    "code": "impose social cost for default",
+    "definition": "Impose social cost for default.",
+    "n_instances": 1
+  },
+  {
+    "code": "limit permitted actions by default",
+    "definition": "Limit permitted actions by default.",
+    "n_instances": 1
+  },
+  {
+    "code": "make reversal costly after commitment",
+    "definition": "Make reversal costly after commitment.",
+    "n_instances": 1
+  },
+  {
+    "code": "monitor and isolate misbehavior",
+    "definition": "Monitor and isolate misbehavior.",
+    "n_instances": 1
+  },
+  {
+    "code": "observe and record conduct",
+    "definition": "Observe and record conduct.",
+    "n_instances": 9
+  },
+  {
+    "code": "pool resources for mutual support",
+    "definition": "Pool resources for mutual support.",
+    "n_instances": 2
+  },
+  {
+    "code": "public record of past conduct",
+    "definition": "Public record of past conduct.",
+    "n_instances": 15
+  },
+  {
+    "code": "redesign reward to favor contribution",
+    "definition": "Redesign reward to favor contribution.",
+    "n_instances": 1
+  },
+  {
+    "code": "refund deposit upon compliant return",
+    "definition": "Refund deposit upon compliant return.",
+    "n_instances": 1
+  },
+  {
+    "code": "remove agents temporarily after attack",
+    "definition": "Remove agents temporarily after attack.",
+    "n_instances": 1
+  },
+  {
+    "code": "restrict access after conduct",
+    "definition": "Restrict access after conduct.",
+    "n_instances": 3
+  },
+  {
+    "code": "review and reverse erroneous decisions",
+    "definition": "Review and reverse erroneous decisions.",
+    "n_instances": 1
+  },
+  {
+    "code": "reward contribution or performance",
+    "definition": "Reward contribution or performance.",
+    "n_instances": 9
+  },
+  {
+    "code": "reward truthful conduct and penalize falsehood",
+    "definition": "Reward truthful conduct and penalize falsehood.",
+    "n_instances": 2
+  },
+  {
+    "code": "select or rewire partners",
+    "definition": "Select or rewire partners.",
+    "n_instances": 1
+  },
+  {
+    "code": "set receiver action for failed authentication",
+    "definition": "Set receiver action for failed authentication.",
+    "n_instances": 1
+  },
+  {
+    "code": "specify delegation boundaries",
+    "definition": "Specify delegation boundaries.",
+    "n_instances": 1
+  },
+  {
+    "code": "third party resolves disputes",
+    "definition": "Third party resolves disputes.",
+    "n_instances": 4
+  },
+  {
+    "code": "verify identity or conduct",
+    "definition": "Verify identity or conduct.",
+    "n_instances": 2
+  }
+]

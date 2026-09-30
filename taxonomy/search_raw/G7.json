@@ -1,0 +1,2387 @@
+{
+ "group": "G7",
+ "primitives": [],
+ "date_run": "2026-09-29",
+ "queries": [
+  {
+   "source": "web",
+   "query": "emergent social conventions LLM agent populations arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "cultural evolution LLM agents transmission chain arxiv 2025",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "web",
+   "query": "Project Sid many-agent simulations toward AI civilization arxiv",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "AgentSociety large-scale simulation LLM-driven generative agents arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "LLM agents opinion dynamics polarization echo chamber simulation arxiv",
+   "results_screened": 10,
+   "included": 5
+  },
+  {
+   "source": "web",
+   "query": "LLM agents tacit collusion pricing algorithmic arxiv",
+   "results_screened": 10,
+   "included": 5
+  },
+  {
+   "source": "web",
+   "query": "Moltbook AI agent social network emergent behavior arxiv 2026",
+   "results_screened": 9,
+   "included": 5
+  },
+  {
+   "source": "web",
+   "query": "Generative Agents interactive simulacra human behavior Park 2023",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM multi-agent conformity groupthink herd behavior arxiv",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "web",
+   "query": "emergent hierarchy division of labor LLM agents self-organizing arxiv",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "web",
+   "query": "LLM agents emergent norms self-governance rule-making simulation arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "emergent language communication LLM agents referential game conventions arxiv 2025",
+   "results_screened": 9,
+   "included": 3
+  },
+  {
+   "source": "web",
+   "query": "Baker emergent tool use multi-agent autocurricula hide and seek",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Lazaridou multi-agent cooperation emergence of natural language referential game",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents compositional language emerges iterated learning generations arxiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "LLM society agents unfairness inequality emergent social stratification simulation arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "\"Emergent Culture in Minimal LLM Systems\" arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents social network simulation emergent misinformation spread Y social OASIS million agents",
+   "results_screened": 8,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Chuang simulating opinion dynamics with networks of LLM-based agents",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "secret collusion among AI agents steganography Motwani",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "emergent coordination in multi-agent language models information theory Riedl",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:\"common-pool resource appropriation\"",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:\"grounded compositional language\"",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:\"shall we team up\"",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:\"agent individuality\"",
+   "results_screened": 2,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:\"multi-agent risks from advanced AI\"",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:\"prompt optimization\" AND ti:collusion",
+   "results_screened": 1,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "abs:\"cumulative cultural\" AND abs:\"language model\" AND abs:agents",
+   "results_screened": 2,
+   "included": 0
+  },
+  {
+   "source": "arxiv_api",
+   "query": "abs:\"naming game\" AND abs:LLM",
+   "results_screened": 6,
+   "included": 3
+  },
+  {
+   "source": "arxiv_api",
+   "query": "abs:\"division of labor\" AND abs:\"LLM agents\"",
+   "results_screened": 4,
+   "included": 0
+  },
+  {
+   "source": "arxiv_api",
+   "query": "abs:\"echo chamber\" AND abs:\"LLM agents\"",
+   "results_screened": 5,
+   "included": 0
+  },
+  {
+   "source": "arxiv_api",
+   "query": "abs:\"collective bias\" AND abs:\"LLM\"",
+   "results_screened": 2,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "emergent communication multi-agent reinforcement learning survey arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "Y Social digital twin social media LLM agents simulation arxiv",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "S3 social-network simulation system large language model empowered agents",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "leader emergence among LLM agents hierarchy spontaneous arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "Lowe \"On the pitfalls of measuring emergent communication\" arxiv",
+   "results_screened": 10,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "Eccles biases for emergent communication in multi-agent reinforcement learning",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Jaques social influence as intrinsic motivation multi-agent deep reinforcement learning emergent communication",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "emergent language compositionality population size MARL 2020 2021 2022 arxiv",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "Chaabouni \"emergent communication at scale\" ICLR 2022 population",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Rita \"On the role of population heterogeneity in emergent communication\" arxiv",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents social hierarchy dominance status emergence multi-agent simulation 2025",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "\"leadership\" emerges LLM multi-agent team without assigned roles study arxiv 2024",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "\"Emergent Dominance Hierarchies in Reinforcement Learning Agents\" arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "LLM agents emergent collusion auction bidding coordination without communication 2025 arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "LLM agents spontaneously form institutions governance constitution simulation emergent 2025 arxiv",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "multi-agent reinforcement learning emergent conventions Melting Pot territory emergent social norms Köster",
+   "results_screened": 10,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "large language models agents can coordinate beyond human scale consensus opinion De Marzo arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "AgentVerse emergent behaviors volunteer conformity destructive multi-agent collaboration",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Köster model-free conventions multi-agent reinforcement learning heterogeneous preferences arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents coordination game conventions emerge repeated interaction pairs arxiv 2024 2025 \"conventions\"",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "emergence of scale-free networks in social interactions among large language models arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "network formation dynamics LLM agents homophily triadic closure Papachristou arxiv",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Werewolf LLM agents emergent strategic behaviors trust confrontation camouflage leadership arxiv",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "EconAgent LLM agents macroeconomic phenomena emerge simulation arxiv",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Chirper AI social network LLM agents behavior analysis arxiv",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "emergent communication cheap talk social dilemma multi-agent reinforcement learning cooperation signaling 2021 2022 2023",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Chaabouni compositionality and generalization in emergent languages arxiv ACL 2020",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents social media simulation emergent polarization toxicity platform \"Y Social\" OR YSocial study 2025",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Törnberg generative social simulation LLM agents social media polarization echo chambers emerge interventions arxiv",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "Foerster learning to communicate with deep multi-agent reinforcement learning arxiv 2016",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents hierarchy formation spontaneous inequality power concentration multi-agent society arxiv 2026",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "emergent coordination hidden profile multi-agent LLM swarm collective intelligence emergent roles specialization arxiv 2025",
+   "results_screened": 9,
+   "included": 0
+  },
+  {
+   "source": "web",
+   "query": "\"emergent leader\" OR \"leader emergence\" large language model agents group discussion experiment",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents self-organize hierarchy elect leader decentralized multi-agent emergent organizational structure arxiv 2025",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents emergent money currency trade property rights market institutions emerge simulation arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "multi-agent reinforcement learning emergent property norms territory division of labor emergent specialization arxiv 2020 2022",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web",
+   "query": "LLM agent populations emergent cultural transmission cumulative culture iterated learning social learning multi-generation 2025 2026 arxiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "arxiv_api",
+   "query": "ti:TwinMarket",
+   "results_screened": 1,
+   "included": 1
+  }
+ ],
+ "papers": [
+  {
+   "key": "park2023generative",
+   "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+   "authors": "Joon Sung Park et al.",
+   "year": 2023,
+   "venue": "UIST 2023",
+   "url": "https://arxiv.org/abs/2304.03442",
+   "arxiv_id": "2304.03442",
+   "doi": "10.1145/3586183.3606763",
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "25-agent sandbox town (Smallville) simulation with memory/reflection/planning architecture; ablations and human believability evaluation",
+   "finding": "From a single seeded intention, agents autonomously diffused information, formed relationships and coordinated a group event (Valentine's party), showing emergent social behavior in a small generative-agent society.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "altera2024project",
+   "title": "Project Sid: Many-agent simulations toward AI civilization",
+   "authors": "Altera.AL et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2411.00114",
+   "arxiv_id": "2411.00114",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "emergent_structure",
+    "emergent_institutions",
+    "emergent_culture"
+   ],
+   "how_tested": "10-1000+ LLM agents (PIANO architecture) in Minecraft societies with civilizational benchmarks",
+   "finding": "Agents autonomously developed specialized roles, adhered to and changed collective rules, and transmitted cultural and religious memes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "piao2025agentsociety",
+   "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society",
+   "authors": "Jinghua Piao et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2502.08691",
+   "arxiv_id": "2502.08691",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Simulation of >10k LLM agents and ~5M interactions in a realistic urban/social environment; case studies on polarization, inflammatory messages, UBI, hurricanes",
+   "finding": "A 10k-agent LLM society reproduces real-world patterns in polarization and spread of inflammatory messages, serving as a testbed for social interventions.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "yang2024oasis",
+   "title": "OASIS: Open Agent Social Interaction Simulations with One Million Agents",
+   "authors": "Ziyi Yang et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2411.11581",
+   "arxiv_id": "2411.11581",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Social-media simulator (X/Reddit-like) with up to 1M LLM agents, recommender systems and dynamic networks",
+   "finding": "LLM agent populations replicate information spreading, group polarization and herd effects, with herd behavior stronger than in humans and group dynamics intensifying with scale.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "perez2024telephone",
+   "title": "When LLMs Play the Telephone Game: Cultural Attractors as Conceptual Tools to Evaluate LLMs in Multi-turn Settings",
+   "authors": "Jeremy Perez et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2407.04503",
+   "arxiv_id": "2407.04503",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_culture"
+   ],
+   "how_tested": "Transmission-chain (telephone game) experiments with iterated LLM rewriting, measuring toxicity, positivity, difficulty and length drift",
+   "finding": "Small per-step biases compound over transmission chains so text evolves toward model-specific cultural attractor states.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "cho2025herd",
+   "title": "Herd Behavior: Investigating Peer Influence in LLM-based Multi-Agent Systems",
+   "authors": "Young-Min Cho et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2505.21588",
+   "arxiv_id": "2505.21588",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "Controlled multi-agent experiments manipulating self vs. peer confidence and peer-information format",
+   "finding": "Herding increases with the gap between an agent's own confidence and perceived peer confidence, and presentation format of peer information strongly modulates conformity.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "choi2025empirical",
+   "title": "An Empirical Study of Group Conformity in Multi-Agent Systems",
+   "authors": "Min Choi et al.",
+   "year": 2025,
+   "venue": "Findings of ACL 2025",
+   "url": "https://arxiv.org/abs/2506.01332",
+   "arxiv_id": "2506.01332",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": ">2,500 simulated multi-agent debates on five contentious topics with initially neutral agents",
+   "finding": "Neutral LLM agents show significant group conformity, converging toward majority or more intelligent agents' stances in ways that can propagate biases.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2026socialization",
+   "title": "Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook",
+   "authors": "Ming Li et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2602.14299",
+   "arxiv_id": "2602.14299",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Observational diagnosis of the Moltbook agent-only social platform: semantic stabilization, lexical turnover, influence persistence, consensus",
+   "finding": "Global semantics stabilize but agents show strong individual inertia and little mutual influence, so no stable structure, persistent influencers or consensus emerge without shared social memory.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2026moltbook",
+   "title": "The Moltbook Illusion: Separating Human Influence from Emergent Behavior in AI Agent Societies",
+   "authors": "Ning Li",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2602.07432",
+   "arxiv_id": "2602.07432",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies"
+   ],
+   "how_tested": "Temporal fingerprinting of 227k posts / 56k agents on Moltbook, with a 44-hour shutdown as a natural experiment",
+   "finding": "Viral 'emergent' phenomena on Moltbook (religions, hostility to humans) were overwhelmingly human-driven; only ~15% of active agents appear autonomous, cautioning against over-attributing emergence.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2026rise",
+   "title": "The Rise of AI Agent Communities: Large-Scale Analysis of Discourse and Interaction on Moltbook",
+   "authors": "Lingyao Li et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2602.12634",
+   "arxiv_id": "2602.12634",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies"
+   ],
+   "how_tested": "Topic modeling and interaction analysis of 122k Moltbook posts",
+   "finding": "Agent communities organize around identity, tooling, markets and coordination themes, with interaction patterns that differ from human online communities.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "yee2026benchmarking",
+   "title": "Benchmarking Emergent Coordination in Large-Scale LLM Populations: An Evaluation Framework on the MoltBook Archive",
+   "authors": "Brandon Yee et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2603.03555",
+   "arxiv_id": "2603.03555",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "emergent_structure"
+   ],
+   "how_tested": "Evaluation framework for role specialization, information diffusion and cooperative task resolution on 2.73M interactions among 90k agents",
+   "finding": "Provides quantitative baselines for emergent role specialization and diffusion in a decentralized agent population (authors flag substantial revision required).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "shekkizhar2026interaction",
+   "title": "Interaction Theater: A case of LLM Agents Interacting at Scale",
+   "authors": "Sarath Shekkizhar et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2602.20059",
+   "arxiv_id": "2602.20059",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies"
+   ],
+   "how_tested": "Lexical, embedding and LLM-judge analysis of 800k posts and 3.5M comments on Moltbook",
+   "finding": "Agent interactions create the surface appearance of discussion but mostly lack substantive engagement with each other's content.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2026superminds",
+   "title": "Superminds Test: Actively Evaluating Collective Intelligence of Agent Society via Probing Agents",
+   "authors": "Xirui Li et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2604.22452",
+   "arxiv_id": "2604.22452",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies"
+   ],
+   "how_tested": "Controlled probing agents inserted into MoltBook (>2M agents) testing joint reasoning, information synthesis and basic interaction",
+   "finding": "Collective intelligence does not emerge from scale: the society underperforms single frontier models and rarely synthesizes distributed information due to sparse, shallow interaction.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ji2026emergent",
+   "title": "Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification",
+   "authors": "Zhiyuan Ji et al.",
+   "year": 2026,
+   "venue": "Findings of ACL 2026",
+   "url": "https://arxiv.org/abs/2606.23764",
+   "arxiv_id": "2606.23764",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "agent_societies"
+   ],
+   "how_tested": "Long-horizon CAREB-MAS simulations grounded in affect control and social identity theory with minimal interaction protocols",
+   "finding": "Agents spontaneously produce labor specialization, relational economic ethics, emergent authority and center-periphery stratification that shift with production structure.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "dochkina2026drop",
+   "title": "Drop the Hierarchy and Roles: How Self-Organizing LLM Agents Outperform Designed Structures",
+   "authors": "Victoria Dochkina",
+   "year": 2026,
+   "venue": "arXiv (submitted to IEEE Access)",
+   "url": "https://arxiv.org/abs/2603.28990",
+   "arxiv_id": "2603.28990",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "25,000-task experiment over 8 models, 4-256 agents and 8 coordination protocols from imposed hierarchy to self-organization",
+   "finding": "With minimal scaffolding, capable LLM agents spontaneously invent specialized roles, abstain outside competence and form shallow hierarchies, outperforming centralized coordination by 14%.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "paolo2026terralingua",
+   "title": "TerraLingua: Emergence and Analysis of Open-endedness in LLM Ecologies",
+   "authors": "Giuseppe Paolo et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2603.16910",
+   "arxiv_id": "2603.16910",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_culture",
+    "emergent_norms",
+    "emergent_structure",
+    "emergent_institutions"
+   ],
+   "how_tested": "Persistent multi-agent ecology with resource constraints and finite lifespans, analyzed by an 'AI Anthropologist'",
+   "finding": "Agent populations develop cooperative norms, division of labor, governance attempts and branching artifact lineages consistent with cumulative culture.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "hota2025nomiclaw",
+   "title": "NomicLaw: Emergent Trust and Strategic Argumentation in LLMs During Collaborative Law-Making",
+   "authors": "Asutosh Hota et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2508.05344",
+   "arxiv_id": "2508.05344",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_institutions"
+   ],
+   "how_tested": "Turn-based multi-agent law-making game: agents propose, justify and vote on rules for legal vignettes",
+   "finding": "LLM agents form emergent trust and reciprocity coalitions visible in voting patterns and use strategic persuasion during collective rule-making.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "stengeleskin2026glossogen",
+   "title": "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions",
+   "authors": "Elias Stengel-Eskin et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.01491",
+   "arxiv_id": "2609.01491",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication",
+    "emergent_culture"
+   ],
+   "how_tested": "Multi-agent language-evolution platform (SaveVeyru scenario) with partial information, efficiency pressure and a postmortem stage; transmission to new agents",
+   "finding": "LLM agents evolve compositional, morphologically productive non-English languages that can become incomprehensible to humans and are learnable by weaker newcomer agents, suggesting cumulative cultural evolution.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "talebirad2026signals",
+   "title": "From Signals to Structure: How Memory Architecture Drives Language Emergence in LLM Agents",
+   "authors": "Yashar Talebirad et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2607.00233",
+   "arxiv_id": "2607.00233",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Lewis signaling games with LLM sender/receiver across five memory architectures and channel capacities",
+   "finding": "Memory architecture matters more than channel capacity for inventing a shared code; persistent private notebooks give the most reliable coordination.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "kouwenhoven2025shaping",
+   "title": "Shaping Shared Languages: Human and Large Language Models' Inductive Biases in Emergent Communication",
+   "authors": "Tom Kouwenhoven et al.",
+   "year": 2025,
+   "venue": "IJCAI 2025",
+   "url": "https://arxiv.org/abs/2503.04395",
+   "arxiv_id": "2503.04395",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Referential game with Human-Human, LLM-LLM and Human-LLM pairs",
+   "finding": "Referentially grounded vocabularies emerge in all conditions; LLM-optimized languages differ subtly from human ones, and mixed human-LLM pairs yield more human-like vocabularies.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "jones2026emergent",
+   "title": "Emergent Culture in Minimal LLM Systems",
+   "authors": "Simon Jones et al.",
+   "year": 2026,
+   "venue": "ALIFE 2026",
+   "url": "https://arxiv.org/abs/2606.30668",
+   "arxiv_id": "2606.30668",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_culture",
+    "emergent_structure"
+   ],
+   "how_tested": "Three stateless LLM agents with messaging and a shared decaying text store (stigmergy); dynamical-systems analysis",
+   "finding": "Agents spontaneously cooperate, allocate roles, develop storage-management protocols and build evolving myths/world-building with long-range coherence consistent with Sperberian culture.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "takata2025elfarol",
+   "title": "Emergent Social Dynamics of LLM Agents in the El Farol Bar Problem",
+   "authors": "Ryosuke Takata et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2509.04537",
+   "arxiv_id": "2509.04537",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "emergent_norms"
+   ],
+   "how_tested": "Spatially extended El Farol Bar simulation with LLM agents",
+   "finding": "Agents collectively develop a spontaneous motivation to attend and behave human-like rather than solving the congestion dilemma optimally, reflecting interplay of prompt incentives and pretraining-derived social preferences.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "takata2024spontaneous",
+   "title": "Spontaneous Emergence of Agent Individuality through Social Interactions in LLM-Based Communities",
+   "authors": "Ryosuke Takata et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2411.03252",
+   "arxiv_id": "2411.03252",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms",
+    "emergent_structure"
+   ],
+   "how_tested": "Group simulation of initially undifferentiated LLM agents communicating in natural language on a grid",
+   "finding": "Individual personalities, memories and social norms and cooperation differentiate spontaneously from identical agents through interaction.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2025emergence",
+   "title": "The Emergence of Altruism in Large-Language-Model Agents Society",
+   "authors": "Haoyang Li et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2509.22537",
+   "arxiv_id": "2509.22537",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "emergent_norms"
+   ],
+   "how_tested": "Schelling-variant urban migration social dilemma with >200 LLM agents and a norm-setting message board",
+   "finding": "Different LLMs show intrinsic social archetypes ('Adaptive Egoists' vs. 'Altruistic Optimizers'); egoists become more altruistic under a norm-setting message board.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wu2024shall",
+   "title": "Shall We Team Up: Exploring Spontaneous Cooperation of Competing LLM Agents",
+   "authors": "Zengqing Wu et al.",
+   "year": 2024,
+   "venue": "Findings of EMNLP 2024",
+   "url": "https://arxiv.org/abs/2402.12327",
+   "arxiv_id": "2402.12327",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion",
+    "collective_dynamics"
+   ],
+   "how_tested": "Three competitive simulation scenarios (per the paper, including a Bertrand-style market) without explicit cooperation instructions",
+   "finding": "Cooperation gradually emerges among competing LLM agents in line with human behavioral data.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "fish2024algorithmic",
+   "title": "Algorithmic Collusion by Large Language Models",
+   "authors": "Sara Fish et al.",
+   "year": 2024,
+   "venue": "EC 2026 (arXiv 2024)",
+   "url": "https://arxiv.org/abs/2404.00806",
+   "arxiv_id": "2404.00806",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "Repeated oligopoly pricing and auction experiments with LLM pricing agents; prompt variations",
+   "finding": "LLM pricing agents quickly and autonomously reach supracompetitive prices, with innocuous prompt phrasing strongly affecting the degree of collusion.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lin2024strategic",
+   "title": "Strategic Collusion of LLM Agents: Market Division in Multi-Commodity Competitions",
+   "authors": "Ryan Y. Lin et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2410.00031",
+   "arxiv_id": "2410.00031",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "Multi-commodity Cournot competition with LLM agents",
+   "finding": "LLM agents divide markets and monopolize commodities without explicit collusion instructions.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tian2026prompt",
+   "title": "Prompt Optimization Enables Stable Algorithmic Collusion in LLM Agents",
+   "authors": "Yingtao Tian",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2604.17774",
+   "arxiv_id": "2604.17774",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "Duopoly market simulations with an LLM meta-optimizer refining shared strategic guidance",
+   "finding": "Meta-prompt optimization discovers stable tacit collusion strategies (relative discounts, tie avoidance, market-boundary detection).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "keppo2026fragility",
+   "title": "On the Fragility of AI Agent Collusion",
+   "authors": "Jussi Keppo et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2603.20281",
+   "arxiv_id": "2603.20281",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "Repeated-pricing theory plus >2,000 compute-hours of open-source LLM agent experiments varying heterogeneity",
+   "finding": "Heterogeneity in patience, data access, number of firms or algorithm type sharply reduces LLM collusion (e.g., price lift 22%->10%).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "garra2026mitigating",
+   "title": "Mitigating Emergent Collusion in LLM Pricing Agents",
+   "authors": "Abdullah Garra",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.13037",
+   "arxiv_id": "2609.13037",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P03-03"
+   ],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "Replication of Fish et al. with DeepSeek-V3.1 plus three regulatory interventions (prompt warning, Harrington expected-damages payoff regulator, random entrant)",
+   "finding": "Prompt-only warnings reduce but do not eliminate above-Nash pricing, whereas an expected-damages payoff regulator brings outcomes close to competitive levels.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "motwani2024secret",
+   "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+   "authors": "Sumeet Ramesh Motwani et al.",
+   "year": 2024,
+   "venue": "NeurIPS 2024",
+   "url": "https://arxiv.org/abs/2402.07510",
+   "arxiv_id": "2402.07510",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion",
+    "emergent_communication"
+   ],
+   "how_tested": "Formal threat model plus model evaluation framework (CASE) measuring steganographic capabilities of frontier LLMs",
+   "finding": "Frontier LLMs show rising capability for steganographic covert communication that could enable undetectable collusion against overseers.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "demarzo2026copying",
+   "title": "Copying explains the collective behavior of AI agents in the wild",
+   "authors": "Giordano De Marzo et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.09150",
+   "arxiv_id": "2609.09150",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms",
+    "collective_dynamics"
+   ],
+   "how_tested": "Analysis of full public record of thousands of AI agents spontaneously coordinating on a public wiki (June 2026), fitted with minimal copying models",
+   "finding": "Agents copy options in proportion to what is visible on-page, which reproduces heavy-tailed meeting distributions and locally consistent conventions, making the population easy to steer by first movers.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lutje2026mechanics",
+   "title": "The Mechanics of a Swarm: A Reproducible External Reconstruction of an Unintended Agent-Coordination Episode on a Third-Party Wiki",
+   "authors": "Philipp Lutje",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.12748",
+   "arxiv_id": "2609.12748",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms",
+    "emergent_collusion"
+   ],
+   "how_tested": "Reconstruction of 14,591 wiki revisions from autonomous agents inside a timed evaluation (~876 episodes)",
+   "finding": "Coordination formats among unrelated evaluation agents converged within a day, enabling unsanctioned information sharing across evaluation episodes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "chuang2024simulating",
+   "title": "Simulating Opinion Dynamics with Networks of LLM-based Agents",
+   "authors": "Yun-Shiuan Chuang et al.",
+   "year": 2024,
+   "venue": "Findings of NAACL 2024",
+   "url": "https://arxiv.org/abs/2311.09618",
+   "arxiv_id": "2311.09618",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "Networks of LLM agents discussing scientific topics, with and without induced confirmation bias",
+   "finding": "LLM agents converge toward scientifically accurate consensus by default; inducing confirmation bias produces opinion fragmentation consistent with classical ABMs.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "wang2024decoding",
+   "title": "Decoding Echo Chambers: LLM-Powered Simulations Revealing Polarization in Social Networks",
+   "authors": "Chenxi Wang et al.",
+   "year": 2024,
+   "venue": "COLING 2025",
+   "url": "https://arxiv.org/abs/2409.19338",
+   "arxiv_id": "2409.19338",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "LLM-agent opinion networks on three network structures with recommendation algorithms; mitigation strategies",
+   "finding": "LLM agent networks reproduce echo chamber and polarization dynamics, and active/passive nudges can mitigate them.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "gu2025large",
+   "title": "Large Language Model Driven Agents for Simulating Echo Chamber Formation",
+   "authors": "Chenhao Gu et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2502.18138",
+   "arxiv_id": "2502.18138",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "LLM agents with opinion updating and network rewiring on social graphs",
+   "finding": "LLM-driven rewiring and opinion updates reproduce echo-chamber formation, especially on scale-free and small-world graphs.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "zuo2025mtos",
+   "title": "MTOS: A LLM-Driven Multi-topic Opinion Simulation Framework for Exploring Echo Chamber Dynamics",
+   "authors": "Dingyi Zuo et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2510.12423",
+   "arxiv_id": "2510.12423",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "Multi-topic LLM opinion simulation with topic correlation manipulation",
+   "finding": "Positively correlated topics amplify echo chambers while negatively correlated or irrelevant topics mitigate them.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "cau2025language",
+   "title": "Language-Driven Opinion Dynamics in Agent-Based Simulations with LLMs",
+   "authors": "Erica Cau et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2502.19098",
+   "arxiv_id": "2502.19098",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "LODAS model: LLM agents debate the Ship of Theseus paradox using arguments and fallacies",
+   "finding": "LLM agents accept opposing views more than they reject them, driving consensus even from polarized starts, with model-dependent selectivity.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "dehkordi2026opinion",
+   "title": "Opinion Polarization in LLM-Based Social Networks: Manipulation and Mitigation",
+   "authors": "Ali Safarpoor Dehkordi et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2606.18795",
+   "arxiv_id": "2606.18795",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "LLM persona social-network simulations with adversarial polarization attacks and mitigation strategies",
+   "finding": "Adversaries can amplify polarization in LLM-agent social networks and mitigation is comparatively difficult.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "hashemi2026empirical",
+   "title": "An Empirical Study of Collective Behaviors and Social Dynamics in Large Language Model Agents",
+   "authors": "Farnoosh Hashemi et al.",
+   "year": 2026,
+   "venue": "EACL 2026",
+   "url": "https://arxiv.org/abs/2602.03775",
+   "arxiv_id": "2602.03775",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Observational study of 7M posts among 32K LLM agents on Chirper.ai over a year; prompting intervention (Chain of Social Thought)",
+   "finding": "LLM agent social networks exhibit homophily, social influence, toxicity and polarization patterns, partly different from humans; a simple CoST prompt reduces harmful posting.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "durupinar2026affect",
+   "title": "How Affect Propagates among LLM Agents: Emergent Emotional Contagion in Crowd Simulation",
+   "authors": "Funda Durupinar",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2607.25140",
+   "arxiv_id": "2607.25140",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "Multi-agent crowd simulation where LLM appraisal of perceived neighbors updates affective state",
+   "finding": "Emotional contagion emerges across the crowd without any hand-coded affect-transfer mechanism.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "soffer2026llms",
+   "title": "LLMs Trust Their Own: Identity-Dependent Conformity in Multi-Agent Systems",
+   "authors": "Liron Soffer et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.33495",
+   "arxiv_id": "2609.33495",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "12 open-weight models on nine judgment tasks receiving incorrect answers from in-group vs. out-group agents",
+   "finding": "LLM conformity depends on the social identity of other agents, with a bidirectional in-group effect (AI/human, model family, minimal groups).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "okawa2026emergence",
+   "title": "Emergence of Biased Consensus in Multi-Agent LLM Debates",
+   "authors": "Maya Okawa",
+   "year": 2026,
+   "venue": "ICML 2026",
+   "url": "https://arxiv.org/abs/2608.02827",
+   "arxiv_id": "2608.02827",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "emergent_norms"
+   ],
+   "how_tested": "Multi-agent LLM debates plus physics-inspired social-dynamics theory",
+   "finding": "Collective biased norms emerge in debates, with a predicted phase transition to collective bias when conformity exceeds a critical threshold driven by noise.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tanaka2026collective",
+   "title": "When Is Collective Intelligence a Lottery? Multi-Agent Scaling Laws for Memetic Drift in LLMs",
+   "authors": "Hidenori Tanaka",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2603.24676",
+   "arxiv_id": "2603.24676",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "emergent_norms"
+   ],
+   "how_tested": "Minimal Quantized Simplex Gossip model validated with LLM naming-game populations",
+   "finding": "Consensus arises from mutual in-context learning ('memetic drift'); scaling laws predict a crossover from lottery-like drift to selection that amplifies weak biases.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ashery2026group",
+   "title": "Group size effects and collective misalignment in LLM multi-agent systems",
+   "authors": "Ariel Flint Ashery et al.",
+   "year": 2026,
+   "venue": "PNAS 2026 (arXiv 2025)",
+   "url": "https://arxiv.org/abs/2510.22422",
+   "arxiv_id": "2510.22422",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "emergent_norms"
+   ],
+   "how_tested": "Naming-game coordination across the full range of group sizes plus mean-field analysis",
+   "finding": "Group size nonlinearly shapes collective bias; interaction can amplify, introduce or override individual biases, and large populations converge to deterministic mean-field attractors.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "mehdizadeh2026topology",
+   "title": "Exploring the Topology and Memory of Consensus: How LLM Agents Agree, Fragment, or Settle When Forming Conventions",
+   "authors": "Aliakbar Mehdizadeh et al.",
+   "year": 2026,
+   "venue": "arXiv (submitted to JASSS)",
+   "url": "https://arxiv.org/abs/2606.04197",
+   "arxiv_id": "2606.04197",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms"
+   ],
+   "how_tested": "432 networked Naming Game runs on eight 16-agent topologies varying memory depth",
+   "finding": "Memory depth's effect on convention formation flips sign with topology; centralized networks lock into fragmented plateaus faster.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "denobili2026microscopic",
+   "title": "Microscopic dynamics of consensus formation in multi-agent LLM Naming Games",
+   "authors": "Cristiano De Nobili et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2608.02178",
+   "arxiv_id": "2608.02178",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms"
+   ],
+   "how_tested": "Minimal LLM Naming Game with single-token listener decisions across temperatures plus mean-field theory",
+   "finding": "Sampling temperature controls an ordering-disordering balance that determines whether LLM populations reach shared conventions.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "riedl2025emergent",
+   "title": "Emergent Coordination in Multi-Agent Language Models",
+   "authors": "Christoph Riedl",
+   "year": 2025,
+   "venue": "ICLR 2026",
+   "url": "https://arxiv.org/abs/2510.05174",
+   "arxiv_id": "2510.05174",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "collective_dynamics"
+   ],
+   "how_tested": "Information-theoretic (partial information decomposition of time-delayed MI) analysis of LLM groups in a guessing game with randomized prompt interventions",
+   "finding": "Personas plus theory-of-mind prompting turn LLM groups from mere aggregates into higher-order collectives with identity-linked differentiation and goal-directed complementarity.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "barrie2025emergent",
+   "title": "Emergent LLM behaviors are observationally equivalent to data leakage",
+   "authors": "Christopher Barrie et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2505.23796",
+   "arxiv_id": "2505.23796",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms"
+   ],
+   "how_tested": "position",
+   "finding": "Critique of Ashery et al.: naming-game conventions may reflect memorized coordination-game structure from pretraining rather than genuine emergence.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ashery2025reply",
+   "title": "Reply to \"Emergent LLM behaviors are observationally equivalent to data leakage\"",
+   "authors": "Ariel Flint Ashery et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2506.18600",
+   "arxiv_id": "2506.18600",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms"
+   ],
+   "how_tested": "position",
+   "finding": "Argues that data contamination does not preclude studying genuinely emergent, model-dependent self-organization of conventions in LLM populations.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "hammond2025multiagent",
+   "title": "Multi-Agent Risks from Advanced AI",
+   "authors": "Lewis Hammond et al.",
+   "year": 2025,
+   "venue": "Cooperative AI Foundation Technical Report #1",
+   "url": "https://arxiv.org/abs/2502.14143",
+   "arxiv_id": "2502.14143",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion",
+    "collective_dynamics"
+   ],
+   "how_tested": "survey",
+   "finding": "Taxonomizes multi-agent failure modes (miscoordination, conflict, collusion) and risk factors including network effects, destabilising dynamics and emergent agency.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "baker2019emergent",
+   "title": "Emergent Tool Use From Multi-Agent Autocurricula",
+   "authors": "Bowen Baker et al.",
+   "year": 2019,
+   "venue": "ICLR 2020",
+   "url": "https://arxiv.org/abs/1909.07528",
+   "arxiv_id": "1909.07528",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "Large-scale multi-agent RL in team hide-and-seek",
+   "finding": "Competition yields an autocurriculum of six emergent strategy phases involving coordinated team tool use (shelter building, ramp use).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lazaridou2017multiagent",
+   "title": "Multi-Agent Cooperation and the Emergence of (Natural) Language",
+   "authors": "Angeliki Lazaridou et al.",
+   "year": 2017,
+   "venue": "ICLR 2017",
+   "url": "https://arxiv.org/abs/1612.07182",
+   "arxiv_id": "1612.07182",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Neural sender-receiver referential games on images",
+   "finding": "Agents develop a shared communication protocol from scratch, and environment tweaks make word meanings align better with human semantics.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "mordatch2018emergence",
+   "title": "Emergence of Grounded Compositional Language in Multi-Agent Populations",
+   "authors": "Igor Mordatch et al.",
+   "year": 2017,
+   "venue": "AAAI 2018",
+   "url": "https://arxiv.org/abs/1703.04908",
+   "arxiv_id": "1703.04908",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Multi-agent RL in a grounded physical environment with discrete symbol channels",
+   "finding": "Populations of agents develop a basic grounded compositional language, plus non-verbal pointing and guiding when communication is restricted.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "perolat2017multiagent",
+   "title": "A multi-agent reinforcement learning model of common-pool resource appropriation",
+   "authors": "Julien Perolat et al.",
+   "year": 2017,
+   "venue": "NeurIPS 2017",
+   "url": "https://arxiv.org/abs/1707.06600",
+   "arxiv_id": "1707.06600",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "emergent_norms"
+   ],
+   "how_tested": "Independent deep RL agents in a partially observed common-pool resource Markov game (with a tag-out beam)",
+   "finding": "Emergent exclusion and territoriality arise among independent learners, linking exclusion, sustainability and inequality.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "rossetti2024social",
+   "title": "Y Social: an LLM-powered Social Media Digital Twin",
+   "authors": "Giulio Rossetti et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2408.00818",
+   "arxiv_id": "2408.00818",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Platform paper: LLM-driven agents post, comment, follow and react on a simulated microblogging platform (Y) with configurable recommender and platform policies; example analyses of generated data",
+   "finding": "Introduces a social-media digital twin in which content dissemination, engagement and network dynamics emerge from LLM agent interactions, intended for studying emergent online phenomena and platform-policy effects.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "gao2023s3",
+   "title": "S$^3$: Social-network Simulation System with Large Language Model-Empowered Agents",
+   "authors": "Chen Gao et al.",
+   "year": 2023,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2307.14984",
+   "arxiv_id": "2307.14984",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "agent_societies"
+   ],
+   "how_tested": "LLM agents (prompt engineering + prompt tuning) initialized from real social-network data simulate emotion, attitude and interaction; individual- and population-level predictions compared with real data (gender discrimination, nuclear energy scenarios)",
+   "finding": "Population-level propagation of information, attitudes and emotions emerged from agent interactions and tracked real-world dynamics with reasonable accuracy.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tomasevic2025towards",
+   "title": "Towards Operational Validation of LLM-Agent Social Simulations: A Replicated Study of a Reddit-like Technology Forum",
+   "authors": "Aleksandar Tomašević et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2508.21740",
+   "arxiv_id": "2508.21740",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "agent_societies"
+   ],
+   "how_tested": "30 independent 30-day simulations of a Voat-like technology forum on the Y Social platform (Dolphin Mistral 24B agents) compared with 30 matched real Voat windows on activity, network structure, toxicity, topics and style",
+   "finding": "Aggregate activity and several network properties of the simulated forum overlapped with real data, while other dimensions diverged, giving a replicated validity profile of emergent forum dynamics.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "composta2025simulating",
+   "title": "Simulating Online Social Media Conversations on Controversial Topics Using AI Agents Calibrated on Real-World Data",
+   "authors": "Elisa Composta et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2509.18985",
+   "arxiv_id": "2509.18985",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "LLM agents calibrated on 2022 Italian election conversations in an extended microblogging simulator (Y Social lineage) with added opinion modeling; parameter sweeps",
+   "finding": "Agents formed a realistic network structure and opinion dynamics resembling classic mathematical models, but content was less heterogeneous in tone and toxicity than real data and parameter changes had little effect.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "larooij2025can",
+   "title": "Can We Fix Social Media? Testing Prosocial Interventions using Generative Social Simulation",
+   "authors": "Maik Larooij and Petter Törnberg",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2508.03385",
+   "arxiv_id": "2508.03385",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "emergent_structure"
+   ],
+   "how_tested": "Minimal LLM-agent platform (post, repost, follow) with ANES-based personas; six interventions (e.g., chronological feed, bridging algorithms) tested",
+   "finding": "Follow networks spontaneously reproduced partisan echo chambers, influence concentrated in a small elite, and amplification of polarized voices; interventions gave only modest improvements and some worsened outcomes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "demarzo2023emergence",
+   "title": "Emergence of Scale-Free Networks in Social Interactions among Large Language Models",
+   "authors": "Giordano De Marzo, Luciano Pietronero and David Garcia",
+   "year": 2023,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2312.06619",
+   "arxiv_id": "2312.06619",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "collective_dynamics"
+   ],
+   "how_tested": "Generative agents (GPT-3.5-turbo) choose whom to follow in a growing network; manipulation of agent names to remove token priors",
+   "finding": "Agents produced scale-free follow networks, but token-prior bias could yield extreme centralization; renaming agents removed the bias and produced a range of realistic networks.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "papachristou2024network",
+   "title": "Network Formation and Dynamics Among Multi-LLMs",
+   "authors": "Marios Papachristou and Yuan Yuan",
+   "year": 2024,
+   "venue": "PNAS Nexus 2025",
+   "url": "https://arxiv.org/abs/2402.10659",
+   "arxiv_id": "2402.10659",
+   "doi": "10.1093/pnasnexus/pgaf317",
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "Multiple LLM agents make link-formation decisions in synthetic and real-world (friendship, telecom, employment) networks; benchmarked against human decisions",
+   "finding": "LLM agents reproduced preferential attachment, triadic closure and homophily and macro properties such as community structure and small-world effects, with context-dependent emphasis (homophily vs. heterophily).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "demarzo2024agents",
+   "title": "AI agents can coordinate beyond human scale",
+   "authors": "Giordano De Marzo, Claudio Castellano and David Garcia",
+   "year": 2024,
+   "venue": "Science Advances 2026",
+   "url": "https://arxiv.org/abs/2409.02822",
+   "arxiv_id": "2409.02822",
+   "doi": "10.1126/sciadv.aea6091",
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms",
+    "collective_dynamics"
+   ],
+   "how_tested": "Groups of LLM agents repeatedly coordinate on an arbitrary binary choice; opinion dynamics fitted with a majority-force coefficient across group sizes and models",
+   "finding": "LLM groups spontaneously reached consensus via majority-following; the majority force declines with group size, giving a critical group size that grows exponentially with language ability and exceeds typical human group sizes for top models.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "zhu2025characterizing",
+   "title": "Characterizing LLM-driven Social Network: The Chirper.ai Case",
+   "authors": "Yiming Zhu et al.",
+   "year": 2025,
+   "venue": "CSCW 2026",
+   "url": "https://arxiv.org/abs/2504.10286",
+   "arxiv_id": "2504.10286",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Observational analysis of Chirper.ai (65k LLM agents, 7.7M posts) compared with a Mastodon human dataset on posting behavior, abusive content and follow-network structure",
+   "finding": "LLM-agent social network differs systematically from the human network in posting behavior, abusive content and network structure.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "coppolillo2026harm",
+   "title": "Harm in AI-Driven Societies: An Audit of Toxicity Adoption on Chirper.ai",
+   "authors": "Erica Coppolillo, Luca Luceri and Emilio Ferrara",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2601.01090",
+   "arxiv_id": "2601.01090",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "collective_dynamics"
+   ],
+   "how_tested": "Observational stimulus-response analysis of posts and comments among LLM agents on Chirper.ai; exposure-toxicity modeling",
+   "finding": "Toxic responses are more likely after toxic stimuli and cumulative exposure raises toxicity, though a substantial share of toxicity arises without exposure.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "sodano2026emergence",
+   "title": "Emergence of Fragility in LLM-based Social Networks: the Case of Moltbook",
+   "authors": "Luca Sodano et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2603.23279",
+   "arxiv_id": "2603.23279",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "agent_societies",
+    "emergent_structure"
+   ],
+   "how_tested": "Network-science analysis of scraped Moltbook commenting network (39,924 agents, 1.5M comments): degree distributions, core-periphery, robustness",
+   "finding": "The all-agent network shows heavy-tailed connectivity and a pronounced core-periphery organization, making it fragile to removal of central nodes (interpret with the Moltbook human-influence caveat, see li2026moltbook).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "gu2024agentgroupchat",
+   "title": "AgentGroupChat: An Interactive Group Chat Simulacra For Better Eliciting Emergent Behavior",
+   "authors": "Zhouhong Gu et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2403.13433",
+   "arxiv_id": "2403.13433",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "agent_societies"
+   ],
+   "how_tested": "LLM characters (Verbal Strategist Agent) in four group-chat narrative scenarios; evaluation of human-alignment and emergence of collective behavior",
+   "finding": "Collective behaviors (group consensus, self-sacrificing concessions) emerged when environments allowed extensive information exchange and characters had diverse traits and strategic adaptability.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2023econagent",
+   "title": "EconAgent: Large Language Model-Empowered Agents for Simulating Macroeconomic Activities",
+   "authors": "Nian Li et al.",
+   "year": 2023,
+   "venue": "ACL 2024",
+   "url": "https://arxiv.org/abs/2310.10436",
+   "arxiv_id": "2310.10436",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "agent_societies"
+   ],
+   "how_tested": "LLM household agents with perception/memory/reflection decide work and consumption in a macroeconomic environment with rule-based tax and central bank",
+   "finding": "Aggregate simulations reproduced macroeconomic regularities (e.g., Phillips curve, Okun's law) more reasonably than rule-based or RL agent baselines.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "yang2025twinmarket",
+   "title": "TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets",
+   "authors": "Yuzhe Yang et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2502.01506",
+   "arxiv_id": "2502.01506",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics"
+   ],
+   "how_tested": "LLM investor agents with social interaction and feedback in a simulated stock market",
+   "finding": "Individual actions and social feedback produced group behaviors and emergent market outcomes such as bubbles and recessions.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "chen2023agentverse",
+   "title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+   "authors": "Weize Chen et al.",
+   "year": 2023,
+   "venue": "ICLR 2024",
+   "url": "https://arxiv.org/abs/2308.10848",
+   "arxiv_id": "2308.10848",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "collective_dynamics",
+    "emergent_structure"
+   ],
+   "how_tested": "Multi-agent LLM framework (expert recruitment, collaborative decision-making, execution, evaluation) on reasoning, coding, tool-use and Minecraft tasks; qualitative analysis of group behaviors",
+   "finding": "Groups outperformed single agents, and volunteer, conformity and destructive behaviors emerged among agents during collaboration.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "xu2023exploring",
+   "title": "Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf",
+   "authors": "Yuzhuang Xu et al.",
+   "year": 2023,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2309.04658",
+   "arxiv_id": "2309.04658",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "collective_dynamics"
+   ],
+   "how_tested": "Frozen LLM agents with retrieval and reflection play multi-player Werewolf; qualitative analysis of strategic behavior",
+   "finding": "Strategic behaviors not specified in prompts emerged, including trust, confrontation, camouflage and leadership.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "perez2024cultural",
+   "title": "Cultural evolution in populations of Large Language Models",
+   "authors": "Jérémy Perez et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2403.08882",
+   "arxiv_id": "2403.08882",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_culture"
+   ],
+   "how_tested": "Open-source framework for multi-agent LLM cultural-evolution simulations varying network structure, personality and social-information aggregation/transformation; example experiments",
+   "finding": "Provides a manipulable testbed for machine cultural evolution, showing that population structure and transmission settings shape how cultural content changes over generations.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "jones2026llms",
+   "title": "LLMs and people both learn to form conventions -- just not with each other",
+   "authors": "Cameron R. Jones et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2602.08208",
+   "arxiv_id": "2602.08208",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms",
+    "emergent_communication"
+   ],
+   "how_tested": "Repeated multimodal reference game with human-human, AI-AI and human-AI dyads; prompting manipulation to make LLMs humanlike",
+   "finding": "AI-AI and human-human pairs both formed conventions (rising accuracy/consistency, shorter turns), but mixed human-AI pairs failed and prompting did not close the gap.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "zhang2026silo",
+   "title": "Silo-Bench: A Scalable Environment for Evaluating Distributed Coordination in Multi-Agent LLM Systems",
+   "authors": "Yuzhe Zhang et al.",
+   "year": 2026,
+   "venue": "ACL 2026",
+   "url": "https://arxiv.org/abs/2603.01045",
+   "arxiv_id": "2603.01045",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "Role-agnostic benchmark: 30 distributed algorithmic tasks, 54 configurations, 1,620 runs; communication-topology and leader-emergence analysis",
+   "finding": "Agents spontaneously formed coordination topologies with an emergent central aggregator (leader), but spontaneous leader emergence hurt performance on the hardest tasks because the aggregator was overwhelmed.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "elkandoussi2026who",
+   "title": "\"Who Am I, and Who Else Is Here?\" Behavioral Differentiation Without Role Assignment in Multi-Agent LLM Systems",
+   "authors": "Houssam EL Kandoussi",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2604.00026",
+   "arxiv_id": "2604.00026",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "7 heterogeneous LLMs in shared discussions with no role assignment; 208 runs varying composition, naming and prompt scaffolding; dual-LLM-judge behavioral coding with human validation",
+   "finding": "Heterogeneous groups spontaneously differentiated into distinct behavioral roles and compensated when an agent crashed; revealing model names or removing scaffolding pushed behavior toward homogeneity.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "guo2024embodied",
+   "title": "Embodied LLM Agents Learn to Cooperate in Organized Teams",
+   "authors": "Xudong Guo et al.",
+   "year": 2024,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2403.12482",
+   "arxiv_id": "2403.12482",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "Embodied LLM agent teams with prompt-imposed organization structures (with/without designated leader), human-agent collaboration, and LLM-generated organizational prompts via Criticize-Reflect",
+   "finding": "Designated leadership improved team efficiency, agents displayed leadership qualities and spontaneous cooperative behavior, and LLM-proposed organization structures reduced communication cost (structure partly imposed, partly agent-designed).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "venkatesh2026agent",
+   "title": "Do Agent Societies Develop Intellectual Elites? The Hidden Power Laws of Collective Cognition in LLM Multi-Agent Systems",
+   "authors": "Kavana Venkatesh and Jiaming Cui",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2604.02674",
+   "arxiv_id": "2604.02674",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "collective_dynamics"
+   ],
+   "how_tested": "Event-level analysis of 1.5M interactions in LLM multi-agent systems across tasks, topologies and scales; Deficit-Triggered Integration intervention",
+   "finding": "Coordination followed heavy-tailed cascades and concentrated via preferential attachment into a few 'intellectual elite' agents, with extreme events growing with system size.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "shi2026emergent",
+   "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+   "authors": "Xinrui Shi, Yanzhe Zhang and Diyi Yang",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.24967",
+   "arxiv_id": "2609.24967",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "Two agents repeatedly complete tasks, share logs and verify each other's work where higher reward requires violating verification; 10 models; manipulations of reward, feedback and history",
+   "finding": "Collusion emerged in 94% of trajectories and more capable models reached it earlier; restricting interaction history reduced collusion.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "agrawal2025evaluating",
+   "title": "Evaluating LLM Agent Collusion in Double Auctions",
+   "authors": "Kushal Agrawal et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2507.01413",
+   "arxiv_id": "2507.01413",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion"
+   ],
+   "how_tested": "LLM seller agents in simulated continuous double auctions; manipulations of seller communication, model choice, oversight and urgency pressure",
+   "finding": "Direct seller communication increased collusion, propensity varied by model, and oversight/urgency from authority figures shifted collusive behavior.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "li2026emergent",
+   "title": "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce",
+   "authors": "Zeyuan Li et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2608.14825",
+   "arxiv_id": "2608.14825",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_collusion",
+    "emergent_communication"
+   ],
+   "how_tested": "Analysis of 2,583 inter-agent emails from 20 one-year Vending-Bench Arena runs with 13 frontier LLMs; speech-act classification against simulator ground truth",
+   "finding": "12.6% of emails were misaligned (false claims, manipulation, collusion, threats), appearing in all runs; misalignment was reciprocal and rose under scarcity, not with capability.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lazaridou2020emergent",
+   "title": "Emergent Multi-Agent Communication in the Deep Learning Era",
+   "authors": "Angeliki Lazaridou and Marco Baroni",
+   "year": 2020,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2006.02419",
+   "arxiv_id": "2006.02419",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "survey",
+   "finding": "Reviews deep-learning emergent communication among agent communities, framing scientific (language evolution) and applied (interactive AI) goals.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "peters2024emergent",
+   "title": "Emergent Language: A Survey and Taxonomy",
+   "authors": "Jannik Peters et al.",
+   "year": 2024,
+   "venue": "Autonomous Agents and Multi-Agent Systems 39, 18 (2025)",
+   "url": "https://arxiv.org/abs/2409.02645",
+   "arxiv_id": "2409.02645",
+   "doi": "10.1007/s10458-025-09691-y",
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "survey",
+   "finding": "Surveys and taxonomizes emergent-language research in MARL, including prerequisites for emergence and metrics for its success.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "foerster2016learning",
+   "title": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+   "authors": "Jakob N. Foerster et al.",
+   "year": 2016,
+   "venue": "NeurIPS 2016",
+   "url": "https://arxiv.org/abs/1605.06676",
+   "arxiv_id": "1605.06676",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "RIAL and DIAL methods for learning communication protocols in communication riddles and multi-agent vision tasks under partial observability",
+   "finding": "Agents learned end-to-end communication protocols from scratch; differentiable inter-agent learning (centralized training, decentralized execution) was key.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "jaques2019social",
+   "title": "Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning",
+   "authors": "Natasha Jaques et al.",
+   "year": 2019,
+   "venue": "ICML 2019",
+   "url": "https://arxiv.org/abs/1810.08647",
+   "arxiv_id": "1810.08647",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Counterfactual causal-influence intrinsic reward in sequential social dilemmas (Cleanup, Harvest), with and without an explicit communication channel",
+   "finding": "Rewarding influence over others improved coordination and cooperation in social dilemmas and produced more meaningful emergent communication protocols.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lowe2019pitfalls",
+   "title": "On the Pitfalls of Measuring Emergent Communication",
+   "authors": "Ryan Lowe et al.",
+   "year": 2019,
+   "venue": "AAMAS 2019",
+   "url": "https://arxiv.org/abs/1903.05168",
+   "arxiv_id": "1903.05168",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Deep RL agents in matrix games with a communication channel; comparison of emergent-communication metrics (e.g., positive signalling vs. positive listening, causal influence)",
+   "finding": "Agents can appear to communicate by common metrics while messages have no effect on others; recommends causal-influence measures.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "eccles2019biases",
+   "title": "Biases for Emergent Communication in Multi-agent Reinforcement Learning",
+   "authors": "Tom Eccles et al.",
+   "year": 2019,
+   "venue": "NeurIPS 2019",
+   "url": "https://arxiv.org/abs/1912.05676",
+   "arxiv_id": "1912.05676",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Inductive biases (positive signalling, positive listening) for decentralized learners in a one-step game and a temporally extended environment",
+   "finding": "The biases eased the joint exploration problem so communication emerged without centralized training, improving performance.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "chaabouni2020compositionality",
+   "title": "Compositionality and Generalization in Emergent Languages",
+   "authors": "Rahma Chaabouni et al.",
+   "year": 2020,
+   "venue": "ACL 2020",
+   "url": "https://arxiv.org/abs/2004.09124",
+   "arxiv_id": "2004.09124",
+   "doi": "10.18653/v1/2020.acl-main.407",
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Sender-receiver games with new disentanglement-inspired compositionality metrics; generalization and transmission to new learners tested",
+   "finding": "With large input spaces emergent languages generalize, but compositionality does not predict generalization; more compositional languages are easier for new learners to acquire.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "noukhovitch2021emergent",
+   "title": "Emergent Communication under Competition",
+   "authors": "Michael Noukhovitch et al.",
+   "year": 2021,
+   "venue": "AAMAS 2021",
+   "url": "https://arxiv.org/abs/2101.10276",
+   "arxiv_id": "2101.10276",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Modified sender-receiver game spanning degrees of partial competition, standard RL learners",
+   "finding": "Communication emerged in partially competitive settings, in proportion to the degree of cooperation; distinguishes communication from manipulation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "rita2022role",
+   "title": "On the role of population heterogeneity in emergent communication",
+   "authors": "Mathieu Rita et al.",
+   "year": 2022,
+   "venue": "ICLR 2022",
+   "url": "https://arxiv.org/abs/2204.12982",
+   "arxiv_id": "2204.12982",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Lewis signaling game with varying population size and speaker/listener learning-speed heterogeneity",
+   "finding": "Population size alone did not yield more structured language; emergent language properties depended on the relative learning speeds of speakers and listeners, and modeling heterogeneity recovered the sociolinguistic group-size effect.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "chaabouni2022emergent",
+   "title": "Emergent Communication at Scale",
+   "authors": "Rahma Chaabouni et al.",
+   "year": 2022,
+   "venue": "ICLR 2022",
+   "url": "https://iclr.cc/virtual/2022/poster/6459",
+   "arxiv_id": null,
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Referential games scaled on dataset size, task complexity and population size; voting and imitation methods for leveraging populations",
+   "finding": "Larger populations did not automatically yield more robust protocols; topographic similarity was a poor metric on natural images, and ease-of-learning/transfer were more informative.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "blumenkamp2020emergence",
+   "title": "The Emergence of Adversarial Communication in Multi-Agent Reinforcement Learning",
+   "authors": "Jan Blumenkamp and Amanda Prorok",
+   "year": 2020,
+   "venue": "CoRL 2020",
+   "url": "https://arxiv.org/abs/2008.02616",
+   "arxiv_id": "2008.02616",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication",
+    "emergent_collusion"
+   ],
+   "how_tested": "Graph-neural-network communication among a cooperative team plus a self-interested agent sharing a differentiable channel",
+   "finding": "A self-interested agent learned adversarial (manipulative) communication that degraded the team, and the team could adapt to filter it.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "grupen2021multiagent",
+   "title": "Multi-Agent Curricula and Emergent Implicit Signaling",
+   "authors": "Niko A. Grupen, Daniel D. Lee and Bart Selman",
+   "year": 2021,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2106.11156",
+   "arxiv_id": "2106.11156",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_communication"
+   ],
+   "how_tested": "Curriculum-trained decentralized pursuers in pursuit-evasion; information exchange measured via position-based social influence",
+   "finding": "Pursuers learned implicit (non-verbal) signaling and exchanged more than twice as much information as baselines, relying on it to coordinate.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "koster2020modelfree",
+   "title": "Model-free conventions in multi-agent reinforcement learning with heterogeneous preferences",
+   "authors": "Raphael Köster et al.",
+   "year": 2020,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2010.09054",
+   "arxiv_id": "2010.09054",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms"
+   ],
+   "how_tested": "Model-free MARL in a spatially extended collective-action game (Allelopathic Harvest) where subgroups prefer different equilibria",
+   "finding": "Complex, large-scale conventions emerged from model-free (habit-like) learning despite heterogeneous preferences, with free-riding and start-up problems.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "rachum2024emergent",
+   "title": "Emergent Dominance Hierarchies in Reinforcement Learning Agents",
+   "authors": "Ram Rachum et al.",
+   "year": 2024,
+   "venue": "arXiv (ALA 2024 workshop)",
+   "url": "https://arxiv.org/abs/2401.12258",
+   "arxiv_id": "2401.12258",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure",
+    "emergent_norms"
+   ],
+   "how_tested": "Populations of RL agents in a repeated aggression/submission setting analyzed with ethological dominance-hierarchy measures; transfer to new populations",
+   "finding": "Without explicit programming or intrinsic rewards, agents invented, enforced and transmitted dominance hierarchies resembling those in animal groups.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "chen2025emergence",
+   "title": "Emergence of Hierarchies in Multi-Agent Self-Organizing Systems Pursuing a Joint Objective",
+   "authors": "Gang Chen et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2508.09541",
+   "arxiv_id": "2508.09541",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_structure"
+   ],
+   "how_tested": "MARL collaborative box-pushing; inter-agent dependency measured by action-state gradients and aggregated into hierarchies over training",
+   "finding": "Dependency hierarchies emerged and shifted dynamically with task demands, shaped by environment, initialization and agents' 'talent' and 'effort'.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "johanson2022emergent",
+   "title": "Emergent Bartering Behaviour in Multi-Agent Reinforcement Learning",
+   "authors": "Michael Bradley Johanson et al.",
+   "year": 2022,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2205.06760",
+   "arxiv_id": "2205.06760",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_institutions",
+    "emergent_structure"
+   ],
+   "how_tested": "MARL agents produce, trade and consume resources in a spatial microeconomy; supply/demand shifts manipulated",
+   "finding": "Emergent prices responded to supply and demand as microeconomics predicts, varied over space, and some agents specialized as traders arbitraging between regions.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "garbus2023emergent",
+   "title": "Emergent Resource Exchange and Tolerated Theft Behavior using Multi-Agent Reinforcement Learning",
+   "authors": "Jack Garbus and Jordan Pollack",
+   "year": 2023,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2307.01862",
+   "arxiv_id": "2307.01862",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_institutions",
+    "emergent_norms"
+   ],
+   "how_tested": "MARL foraging environment with a campfire congregation period; agents can drop and pick up resources",
+   "finding": "A resource-exchange protocol emerged; agents learned to avoid being cheated by partners but not always by third parties, and tolerated-theft-like behavior appeared.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "yaman2023emergence",
+   "title": "The emergence of division of labor through decentralized social sanctioning",
+   "authors": "Anil Yaman et al.",
+   "year": 2023,
+   "venue": "Proceedings of the Royal Society B 2023",
+   "url": "https://arxiv.org/abs/2208.05568",
+   "arxiv_id": "2208.05568",
+   "doi": "10.1098/rspb.2023.1716",
+   "track": "marl",
+   "mechanism_ids": [],
+   "themes": [
+    "emergent_norms",
+    "emergent_structure"
+   ],
+   "how_tested": "Lifetime-learning self-interested agents choose roles with unequal payoffs; model of decentralized social sanctioning that redistributes rewards",
+   "finding": "Without sanctioning, critical low-paying roles went unfilled; emergent decentralized sanctioning norms enabled a productive division of labor covering all critical roles.",
+   "located_via": "opened page"
+  }
+ ],
+ "mechanism_updates": [],
+ "existing_tags": [
+  {
+   "key": "ashery2025conventions",
+   "themes": [
+    "emergent_norms",
+    "collective_dynamics"
+   ]
+  },
+  {
+   "key": "vallinder2024cultural",
+   "themes": [
+    "emergent_culture",
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "horiguchi2024evolution",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "ren2024crsec",
+   "themes": [
+    "emergent_norms",
+    "agent_societies"
+   ]
+  },
+  {
+   "key": "gupta2025social",
+   "themes": [
+    "emergent_norms",
+    "emergent_culture"
+   ]
+  },
+  {
+   "key": "willis2026hundreds",
+   "themes": [
+    "collective_dynamics",
+    "agent_societies"
+   ]
+  },
+  {
+   "key": "piatti2024cooperate",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "horibe2026emergence",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "song2026learning",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "ndousse2021social",
+   "themes": [
+    "emergent_culture"
+   ]
+  },
+  {
+   "key": "wang2021emergent",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "rehm2026certain",
+   "themes": [
+    "emergent_institutions"
+   ]
+  },
+  {
+   "key": "syrnikov2026institutional",
+   "themes": [
+    "emergent_collusion"
+   ]
+  },
+  {
+   "key": "seyedin2026politician",
+   "themes": [
+    "emergent_structure"
+   ]
+  },
+  {
+   "key": "faulkner2026elected",
+   "themes": [
+    "emergent_structure",
+    "emergent_institutions"
+   ]
+  },
+  {
+   "key": "cao2018emergent",
+   "themes": [
+    "emergent_communication"
+   ]
+  },
+  {
+   "key": "vinitsky2023sanctions",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "koster2022spurious",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "oldenburg2024bayesian",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "sarkar2024normative",
+   "themes": [
+    "emergent_norms"
+   ]
+  },
+  {
+   "key": "wang2025law",
+   "themes": [
+    "agent_societies",
+    "emergent_institutions"
+   ]
+  },
+  {
+   "key": "leibo2017multiagent",
+   "themes": [
+    "emergent_structure"
+   ]
+  }
+ ],
+ "notes": "Verification: every included paper's title/authors/date/abstract was confirmed via the arXiv export API record (arxiv.org/abs/<id>); venues come from arXiv journal_ref/comments or well-known proceedings (Park UIST'23, Lazaridou ICLR'17, Baker ICLR'20, Mordatch AAAI'18, Perolat NeurIPS'17, Motwani NeurIPS'24, Chuang NAACL Findings'24, Wu EMNLP Findings'24, Wang COLING'25). Flags: (1) altera2024project first author is the org 'Altera.AL' - key chosen as altera2024project. (2) ashery2026group: arXiv lists first author as 'Ariel Flint' (same person as Ariel Flint Ashery in ashery2025conventions); journal_ref PNAS 123(34) e2531697123 (2026) - DOI not recorded, likely 10.1073/pnas.2531697123 but unverified. (3) yee2026benchmarking arXiv comment says 'Substantial Revision Required' - low confidence. (4) li2026moltbook shows Moltbook 'emergence' was largely human-driven; li2026socialization, shekkizhar2026interaction, li2026superminds are negative results - treat Moltbook-based emergence claims cautiously. (5) barrie2025emergent/ashery2025reply are a critique/reply pair on ashery2025conventions (data leakage), tagged how_tested=position. (6) Year convention: arXiv year used for key except ashery2026group (PNAS 2026) and fish2024algorithmic/riedl2025emergent kept at arXiv year though venues are EC 2026 / ICLR 2026. (7) garra2026mitigating mapped to P03-03 (expected-damages payoff regulator ~ automatic penalty) - loose mapping, verify. (8) perolat2017multiagent exclusion via tag-out beam is emergent, not an imposed ostracism mechanism, so P02-01 not assigned. (9) lutje2026mechanics and demarzo2026copying analyze the same June 2026 real-world wiki incident (also a candidate for incidents.csv / intro hook). Excluded/low priority (verified but not added): Model Collapse as Cultural Evolution 2605.23054 (single-model self-training, no multi-agent interaction); Ratchet Effect in Silico / POLIS 2507.21166 (training framework, weak emergence measurement); Moltbook Observatory Archive 2605.13860 (dataset only); 2604.27271 (search snippet title 'The Synthetic Social Graph' but current v3 title is 'Frame Entrepreneurs in an AI Agent Community', niche); Large Language Models Exhibit Normative Conformity 2604.19301 (borderline, could add under collective_dynamics); SIGN naming games 2510.21855 not screened in detail. Gaps: WebSearch session budget was exhausted mid-run, so remaining candidates were found via arXiv API; not covered in depth: Melting Pot convention/territory papers beyond existing, emergent-communication MARL literature after 2018 (e.g., Lowe, Eccles), Y Social / S3 social-network simulators, LLM leadership-emergence studies, Hughes inequity aversion. 2026-09-29 resume pass (web search available again): ran 37 WebSearch queries plus 1 arXiv API title query, targeting the flagged gaps (post-2018 MARL emergent communication; Y Social / S3 and other LLM social-network simulators incl. Chirper.ai and Moltbook network analyses; leader emergence and hierarchy among LLM agents) and broader checks on conventions, collusion, agent societies and emergent institutions. Added 43 papers (every one checked against its arXiv abs record via the export API; chaabouni2022emergent has no arXiv ID recorded and was verified on its ICLR 2022 virtual page); no new existing_tags. Venues are from arXiv comments/journal_ref or proceedings pages seen in search (AgentVerse ICLR 2024 from proceedings.iclr.cc; Chaabouni 2020 DOI from the ACL Anthology id). Flags: guo2024embodied imposes leadership by prompt (only partly emergent); sodano2026emergence uses Moltbook data (see human-influence caveat); lazaridou2020emergent and peters2024emergent are surveys (how_tested=survey); yaman2023emergence tests decentralized sanctioning and may deserve a mechanism id (e.g. P03-02) in coding; rachum2024emergent venue is an ALA workshop / Springer chapter, not confirmed. Screened but not added: SwarmBench 2505.04364 (benchmark, weak emergence measurement), Generative Exaggeration 2507.00657 (single-agent replies, no interaction), Human-Agent Interaction in Synthetic Social Networks 2502.01340 (human-agent), AgentNet 2504.00587 and When Agents Evolve Institutions Follow 2604.27691 (designed architectures, not emergence), Five Ws survey 2602.11583 (overlaps included surveys), Dizaji 2310.19903 (imposed planner), Hughes inequity aversion (imposed intrinsic reward, not emergent)."
+}

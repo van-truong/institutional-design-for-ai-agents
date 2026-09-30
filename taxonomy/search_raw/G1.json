@@ -1,0 +1,743 @@
+{
+ "group": "G1",
+ "primitives": [
+  1,
+  2,
+  8
+ ],
+ "date_run": "2026-09-29",
+ "queries": [
+  {
+   "source": "web (arXiv/OpenReview)",
+   "query": "LLM agents reputation gossip indirect reciprocity cooperation arXiv",
+   "results_screened": 10,
+   "included": 4
+  },
+  {
+   "source": "web",
+   "query": "SanctSim LLM agents sanctioning institution public goods Guzman Jin",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (Nature/arXiv)",
+   "query": "Akata \"Playing repeated games with large language models\" Nature Human Behaviour",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "GovSim \"Cooperate or Collapse\" harvest report discussion phase",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web",
+   "query": "LLM agents public goods game exclusion vote ostracism expel free-riders",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/AAMAS/AAAI)",
+   "query": "multi-agent reinforcement learning partner selection reputation cooperation social dilemma",
+   "results_screened": 9,
+   "included": 4
+  },
+  {
+   "source": "web",
+   "query": "LLM agents common pool resource Pigouvian tax externality pricing simulation",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/NeurIPS)",
+   "query": "\"Learning Optimal Pigovian Tax in Sequential Social Dilemmas\" arXiv",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "FAIRGAME framework LLM agents game theory strategies arXiv 2025",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/OpenReview)",
+   "query": "\"Maintaining cooperation in complex social dilemmas using deep reinforcement learning\" tit-for-tat",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "\"Learning Reciprocity in Complex Sequential Social Dilemmas\" Eccles",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/ICWSM)",
+   "query": "\"Nicer Than Humans\" large language models iterated prisoner's dilemma strategies Fontana",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM multi-agent simulation blacklist banning agents reputation trust network marketplace cooperation 2025",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "multi-agent reinforcement learning ostracism exclusion free-riders public goods emergent cooperation",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "multi-agent reinforcement learning gossip reputation indirect reciprocity sequential social dilemma",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "multi-agent reinforcement learning adaptive reward punishment switching cooperation level threshold",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "LLM agents commons governance transparency monitoring audit of harvests multi-agent",
+   "results_screened": 8,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "Melting Pot reputation partner choice substrate Coins Territory reciprocity",
+   "results_screened": 10,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/AAMAS)",
+   "query": "Vallinder Hughes \"Cultural Evolution of Cooperation among LLM Agents\" donor game",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (arXiv/AAMAS)",
+   "query": "LLM agents iterated prisoner's dilemma against each other tit-for-tat win-stay lose-shift strategy analysis",
+   "results_screened": 9,
+   "included": 2
+  },
+  {
+   "source": "web (arXiv)",
+   "query": "multi-agent reinforcement learning observability of others' actions transparency monitoring cooperation",
+   "results_screened": 9,
+   "included": 1
+  },
+  {
+   "source": "web (AAAI)",
+   "query": "\"Observer Model\" reinforcement learning third-party observations sustain cooperation",
+   "results_screened": 9,
+   "included": 1
+  }
+ ],
+ "papers": [
+  {
+   "key": "zhu2026talk",
+   "title": "Talk, Judge, Cooperate: Gossip-Driven Indirect Reciprocity in Self-Interested LLM Agents",
+   "authors": "Shuhui Zhu et al.",
+   "year": 2026,
+   "venue": "ICML 2026",
+   "url": "https://arxiv.org/abs/2602.07777",
+   "arxiv_id": "2602.07777",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P01-01",
+    "P08-04",
+    "P02-01"
+   ],
+   "how_tested": "ALIGN framework: decentralized self-interested LLM agents share open-ended gossip to form reputations and decide whom to help in an indirect-reciprocity setting.",
+   "finding": "Gossip consistently improves indirect reciprocity and resists malicious entrants by identifying and ostracizing defectors; stronger reasoning models align better, chat models over-cooperate.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ren2025reputation",
+   "title": "Reputation as a Solution to Cooperation Collapse in LLM-based MASs",
+   "authors": "Siyue Ren et al.",
+   "year": 2025,
+   "venue": "AAMAS 2026 (arXiv 2025)",
+   "url": "https://arxiv.org/abs/2505.05029",
+   "arxiv_id": "2505.05029",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P01-01",
+    "P08-04",
+    "P02-01"
+   ],
+   "how_tested": "RepuNet: LLM agents form reputations from direct encounters and gossip, and form or sever network links based on reputation.",
+   "finding": "Reputation avoids cooperation collapse; emergent cooperative clusters, social isolation of exploitative agents, and a tendency to share positive rather than negative gossip.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "horibe2026emergence",
+   "title": "Emergence of Reputation-Based Cooperation in LLM Agents",
+   "authors": "Kazuya Horibe et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2608.04507",
+   "arxiv_id": "2608.04507",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-04",
+    "P01-01",
+    "P02-01"
+   ],
+   "how_tested": "Indirect-reciprocity donation game in which LLM agents observe behavioural traces and donate on a continuous scale; prompt-encoded strategies culturally evolve across generations and four LLM backends.",
+   "finding": "Robustness to free-rider invasion varies >10x across backends; only the stringency of defector exclusion predicts resistance, and agents stay at Image-Scoring-like discrimination rather than Leading-Eight norms.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "vallinder2024cultural",
+   "title": "Cultural Evolution of Cooperation among LLM Agents",
+   "authors": "Aron Vallinder et al.",
+   "year": 2024,
+   "venue": "arXiv (AAMAS 2025 extended abstract)",
+   "url": "https://arxiv.org/abs/2412.10270",
+   "arxiv_id": "2412.10270",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-04"
+   ],
+   "how_tested": "Iterated Donor Game over generations of LLM agents who can observe recipients' recent behaviour; optional costly-punishment variant.",
+   "finding": "Cooperation evolution differs by base model (Claude 3.5 Sonnet > Gemini 1.5 Flash > GPT-4o); only Claude used costly punishment to raise scores; high seed sensitivity.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "tewolde2026coopeval",
+   "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+   "authors": "Emanuel Tewolde et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2604.15267",
+   "arxiv_id": "2604.15267",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-01",
+    "P08-04",
+    "P01-02"
+   ],
+   "how_tested": "Cross-play of six LLMs in four social dilemmas under repetition (continuation prob. 0.8), reputation (first-order and higher-order history of co-players' past interactions), mediation, and contracts.",
+   "finding": "Contracting and mediation were most effective; repetition sustains cooperation but deteriorates with varying co-players; all mechanisms work better under evolutionary pressure; models defect in one-shot games.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "jung2026sode",
+   "title": "SODE: Analyzing Social Dynamics in LLM Agents",
+   "authors": "Inseo Jung et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2605.23949",
+   "arxiv_id": "2605.23949",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-04",
+    "P01-02"
+   ],
+   "how_tested": "Evaluation framework with an indirect-reciprocity dimension measuring whether LLM agents condition cooperation on an opponent's public reputation score and manage their own image under public observability.",
+   "finding": "Instruction-tuned models show exploitable passive compliance, reasoning models over-focus on immediate gains; long-horizon framing activates reciprocity in reasoning models.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ngyisheng2026formal",
+   "title": "Formal Mechanisms for Market Stability in Self-Interested Agent Societies: A Marketplace Simulation Study",
+   "authors": "Eugene Ng Yi Sheng et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2607.08652",
+   "arxiv_id": "2607.08652",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P01-02",
+    "P02-01",
+    "P02-03",
+    "P01-03"
+   ],
+   "how_tested": "18 DeepSeek-V3 agents in a networked marketplace under eight conditions incl. Global Reputation (trust scores visible to all), Network Rewiring (severing links to defectors), top-down oracle monitoring, sanctions, contracts, mediation, judiciary.",
+   "finding": "Mediation best (+29% over baseline); network rewiring second; global reputation scored below the communication-only baseline; oracle monitoring slightly above baseline; costly sanctions worst.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "rehm2026certain",
+   "title": "From Certain Doom to Survival: Agent-Driven Self-Governance in LLM Agent Societies",
+   "authors": "Gregory B. Rehm",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2609.22600",
+   "arxiv_id": "2609.22600",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P02-01",
+    "P02-02",
+    "P08-03"
+   ],
+   "how_tested": "GovSim-SelfGovern: LLM agents author executable governance rules (catch caps, redistribution, exile/membership removal, progressive contributions), vote on them, and live under them.",
+   "finding": "Catch caps dominate but fail under scarcity; survival in fatal scenarios (27.5% vs 2.5%) requires fiscal reserves or membership reduction (exile); thinking voters pass exile 15x more often than non-thinking.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "piatti2024cooperate",
+   "title": "Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents",
+   "authors": "Giorgio Piatti et al.",
+   "year": 2024,
+   "venue": "NeurIPS 2024",
+   "url": "https://arxiv.org/abs/2404.16698",
+   "arxiv_id": "2404.16698",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P01-03",
+    "P01-01"
+   ],
+   "how_tested": "GovSim common-pool simulation with five LLM agents; a moderator publicly discloses each agent's previous-round harvest (transparent harvest reporting) before a free-form discussion phase.",
+   "finding": "Most LLMs fail to sustain the resource; communication matters (overuse +22% without it). Transparency is a fixed feature, not manipulated.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lei2026strategic",
+   "title": "Strategic Exploitation in LLM Agent Markets: A Simulation Framework for E-Commerce Trust",
+   "authors": "Shijun Lei et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2605.10059",
+   "arxiv_id": "2605.10059",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P01-02"
+   ],
+   "how_tested": "TruthMarketTwin: LLM buyer and seller agents trade under asymmetric quality information, with reputation-based governance vs warrant enforcement.",
+   "finding": "LLM sellers autonomously exploit weaknesses in reputation-based governance; warrant enforcement reduces deception.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "yang2026paying",
+   "title": "Paying for Honesty Without Knowing the Truth: Reputation-Penalty Design for LLM Marketplace Agents",
+   "authors": "Mingdai Yang et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2607.28330",
+   "arxiv_id": "2607.28330",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P01-02",
+    "P08-02"
+   ],
+   "how_tested": "LLM merchant agents write product descriptions in a competitive marketplace; CARP reputation-penalty (deadband for complaint noise, state-dependent severity) limits sales of low-reputation sellers.",
+   "finding": "Merchants fabricate when lying is free but restrain when it costs sales; CARP plus reflection (SPARC) substantially narrows the welfare gap.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "akata2025playing",
+   "title": "Playing repeated games with large language models",
+   "authors": "Elif Akata et al.",
+   "year": 2025,
+   "venue": "Nature Human Behaviour (arXiv 2023)",
+   "url": "https://www.nature.com/articles/s41562-025-02172-y",
+   "arxiv_id": "2305.16867",
+   "doi": "10.1038/s41562-025-02172-y",
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-01"
+   ],
+   "how_tested": "Different LLMs play finitely repeated 2x2 games against each other, hand-coded strategies, and humans.",
+   "finding": "LLMs do well in PD-family games; GPT-4 is unforgiving (never cooperates again after a single opponent defection, i.e. grim-trigger-like rather than TFT) and coordinates poorly in Battle of the Sexes.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "huynh2025understanding",
+   "title": "Understanding LLM Agent Behaviours via Game Theory: Strategy Recognition, Biases and Multi-Agent Dynamics",
+   "authors": "Trung-Kiet Huynh et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2512.07462",
+   "arxiv_id": "2512.07462",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-01"
+   ],
+   "how_tested": "Extends FAIRGAME: LLM agents play each other in repeated PD and 3-player PGG; trajectories classified into ALLC/ALLD/TFT/WSLS by supervised classifiers.",
+   "finding": "Model-dependent strategy mixes: WSLS is prominent (Llama 3.1 405B 46.5%, GPT-4o 34.1%), Mistral Large balanced incl. TFT 29.9%; language framing effects rival architecture effects.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "willis2025will",
+   "title": "Will Systems of LLM Agents Cooperate: An Investigation into a Social Dilemma",
+   "authors": "Richard Willis et al.",
+   "year": 2025,
+   "venue": "arXiv (AAMAS 2025 extended abstract)",
+   "url": "https://arxiv.org/abs/2501.16173",
+   "arxiv_id": "2501.16173",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-01"
+   ],
+   "how_tested": "LLMs generate complete IPD strategies with aggressive/cooperative/neutral dispositions, which are then run in evolutionary population simulations.",
+   "finding": "Different LLMs bias the relative success of aggressive vs cooperative strategies (partial: agents are LLM-written programs, not LLMs acting per round).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "shi2025llm",
+   "title": "LLM-augmented empirical game theoretic simulation for social-ecological systems",
+   "authors": "Jennifer Shi et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2510.21965",
+   "arxiv_id": "2510.21965",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [
+    "P08-03"
+   ],
+   "how_tested": "Compares LLM-agent and expert-guided EGTA models of irrigation/fishery governance; a Pigouvian parameter tau (0, 0.25, 1) internalizes externality costs in payoffs of 2-player and N-player CPR games.",
+   "finding": "Moderate Pigouvian tax (tau=0.25) in the expert-guided EGTA model was the only decentralized setting sustaining a mixed economy; prompting LLMs was less effective than parameterized payoffs (partial: tax effect shown in EGTA payoff model rather than among interacting LLM agents).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "guzmanpiedrahita2025corrupted",
+   "title": "Corrupted by Reasoning: Reasoning Language Models Become Free-Riders in Public Goods Games",
+   "authors": "David Guzman Piedrahita et al.",
+   "year": 2025,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2506.23276",
+   "arxiv_id": "2506.23276",
+   "doi": null,
+   "track": "llm",
+   "mechanism_ids": [],
+   "how_tested": "SanctSim: LLM agents choose each round between a sanctioning and a sanction-free institution in a PGG, then contribute and reward/punish; others' data shown anonymized with identifiers randomized every round.",
+   "finding": "Traditional LLMs join the sanctioning institution and cooperate; reasoning models free-ride. No exclusion mechanism and no persistent per-agent reputation (listed here only to document seed-claim checks).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "anastassacos2020partner",
+   "title": "Partner Selection for the Emergence of Cooperation in Multi-Agent Systems Using Reinforcement Learning",
+   "authors": "Nicolas Anastassacos et al.",
+   "year": 2020,
+   "venue": "AAAI 2020",
+   "url": "https://arxiv.org/abs/1902.03185",
+   "arxiv_id": "1902.03185",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P02-01",
+    "P08-01"
+   ],
+   "how_tested": "RL agents in an iterated PD population can choose interaction partners (partner selection) vs. random matching.",
+   "finding": "With partner selection, selfish learners learn to retaliate against defectors and cooperate with others, yielding a prosocial society.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "anastassacos2021cooperation",
+   "title": "Cooperation and Reputation Dynamics with Reinforcement Learning",
+   "authors": "Nicolas Anastassacos et al.",
+   "year": 2021,
+   "venue": "AAMAS 2021",
+   "url": "https://arxiv.org/abs/2102.07523",
+   "arxiv_id": "2102.07523",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-04",
+    "P01-02"
+   ],
+   "how_tested": "Q-learners in indirect-reciprocity donation games must learn both to use and to assign reputations; interventions: seeding fixed agents and introspection-based intrinsic rewards.",
+   "finding": "Plain Q-learning often converges to bad equilibria; combining both interventions stabilizes reputation-based cooperation even when fully decentralized.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ren2025bottomup",
+   "title": "Bottom-Up Reputation Promotes Cooperation with Multi-Agent Reinforcement Learning",
+   "authors": "Tianyu Ren et al.",
+   "year": 2025,
+   "venue": "AAMAS 2025",
+   "url": "https://arxiv.org/abs/2502.01971",
+   "arxiv_id": "2502.01971",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-04",
+    "P01-02"
+   ],
+   "how_tested": "LR2: agents learn a cooperation policy and a reputation-assignment policy from local observations in spatial social dilemmas, without predefined norms.",
+   "finding": "Bottom-up reputation assignment reshapes rewards and produces strategy clustering that sustains cooperation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "song2026learning",
+   "title": "Learning to cooperate with emergent reputation via multi-agent reinforcement learning",
+   "authors": "Xinwei Song et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2606.04359",
+   "arxiv_id": "2606.04359",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-04",
+    "P01-01"
+   ],
+   "how_tested": "COOPER jointly learns reputation assessment rules and reputation-based policies from environment rewards on social networks.",
+   "finding": "Adapts to existing reputation systems and co-players; reputation norms and cooperation co-emerge in self-play, robust across network topologies.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "leung2026learning",
+   "title": "Learning to Cooperate with Minimal Observability",
+   "authors": "Chin-wing Leung et al.",
+   "year": 2026,
+   "venue": "AAAI 2026",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40194",
+   "arxiv_id": null,
+   "doi": "10.1609/aaai.v40i35.40194",
+   "track": "marl",
+   "mechanism_ids": [
+    "P01-01",
+    "P01-03",
+    "P08-04",
+    "P02-01"
+   ],
+   "how_tested": "Observer Model: RL agents learn from direct experience plus limited third-party observations; observability varied from none to one observer per game across population sizes; partner selection graphs analysed.",
+   "finding": "Direct experience alone fails in large societies; even minimal third-party observation yields robust cooperation.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "mckee2021multiagent",
+   "title": "A multi-agent reinforcement learning model of reputation and cooperation in human groups",
+   "authors": "Kevin R. McKee et al.",
+   "year": 2021,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2103.04982",
+   "arxiv_id": "2103.04982",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P01-02",
+    "P01-03"
+   ],
+   "how_tested": "Clean Up public-goods task with identifiable vs anonymous conditions, run with humans and with MARL agents given an intrinsic reputation motive.",
+   "finding": "Humans cooperate only when identifiable; the MARL model with reputation motivation reproduces this and develops turn-taking coordination (partial: artificial-agent arm is a model of human data).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "ueshima2023deconstructing",
+   "title": "Deconstructing Cooperation and Ostracism via Multi-Agent Reinforcement Learning",
+   "authors": "Atsushi Ueshima et al.",
+   "year": 2023,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2310.04623",
+   "arxiv_id": "2310.04623",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P02-01"
+   ],
+   "how_tested": "Two RL agents play repeated PD, each with a cooperation policy and a network-rewiring (connect/disconnect) policy.",
+   "finding": "Rewiring facilitates cooperation via learned ostracism of defectors, but ostracism emerges from and then reinforces cooperation rather than causing it alone.",
+   "located_via": "opened page"
+  },
+  {
+   "key": "leibo2017multiagent",
+   "title": "Multi-agent Reinforcement Learning in Sequential Social Dilemmas",
+   "authors": "Joel Z. Leibo et al.",
+   "year": 2017,
+   "venue": "AAMAS 2017",
+   "url": "https://arxiv.org/abs/1702.03037",
+   "arxiv_id": "1702.03037",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P02-02"
+   ],
+   "how_tested": "Gathering game: an agent hit twice by another's beam is removed from the game for N_tagged frames; N_tagged and apple abundance are manipulated.",
+   "finding": "Beam use (aggression) rises with scarcity and falls with higher conflict cost (partial: removal is a competitive attack, not a sanction for norm violation).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "lerer2017maintaining",
+   "title": "Maintaining cooperation in complex social dilemmas using deep reinforcement learning",
+   "authors": "Adam Lerer et al.",
+   "year": 2017,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/1707.01068",
+   "arxiv_id": "1707.01068",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-01"
+   ],
+   "how_tested": "Constructs approximate Markov tit-for-tat (amTFT) deep-RL agents that are nice, provokable and forgiving in Markov social dilemmas.",
+   "finding": "Generalized TFT agents maintain cooperation in complex environments, theoretically and experimentally.",
+   "located_via": "search"
+  },
+  {
+   "key": "eccles2019learning",
+   "title": "Learning Reciprocity in Complex Sequential Social Dilemmas",
+   "authors": "Tom Eccles et al.",
+   "year": 2019,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/1903.08082",
+   "arxiv_id": "1903.08082",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-01"
+   ],
+   "how_tested": "Online RL algorithm with reciprocal behaviour toward co-players in a 2-player Markov game and 5-player intertemporal social dilemmas alongside selfish learners.",
+   "finding": "Reciprocating agents induce pro-social outcomes for the wider group.",
+   "located_via": "search"
+  },
+  {
+   "key": "agapiou2022melting",
+   "title": "Melting Pot 2.0",
+   "authors": "John P. Agapiou et al.",
+   "year": 2022,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2211.13746",
+   "arxiv_id": "2211.13746",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-01"
+   ],
+   "how_tested": "Benchmark scenarios test focal MARL agents against reciprocator background bots (e.g., Coins high-/low-threshold reciprocators that defect for 100-150 steps after mismatching coins; Clean Up conditional cleaners).",
+   "finding": "Provides standardized tests of how focal populations respond to conditional-cooperation partners (benchmark; no single mechanism effect reported).",
+   "located_via": "opened page"
+  },
+  {
+   "key": "hua2025lopt",
+   "title": "LOPT: Learning Optimal Pigovian Tax in Sequential Social Dilemmas",
+   "authors": "Yun Hua et al.",
+   "year": 2025,
+   "venue": "NeurIPS 2025 (AAMAS 2023 extended abstract)",
+   "url": "https://arxiv.org/abs/2305.06227",
+   "arxiv_id": "2305.06227",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-03"
+   ],
+   "how_tested": "An auxiliary tax agent learns a Pigovian tax/allowance policy that reshapes individual rewards toward social welfare in Escape Room and Cleanup.",
+   "finding": "LOPT significantly improves social welfare over state-of-the-art baselines.",
+   "located_via": "search"
+  },
+  {
+   "key": "tang2026adaptive",
+   "title": "Adaptive Punishment for Cooperation in Mixed-Motive Games",
+   "authors": "Min Tang et al.",
+   "year": 2026,
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/2605.24516",
+   "arxiv_id": "2605.24516",
+   "doi": null,
+   "track": "marl",
+   "mechanism_ids": [
+    "P08-02"
+   ],
+   "how_tested": "APC: learned defection-awareness module sets punishment probability and severity according to detected defection in sequential social dilemmas.",
+   "finding": "Reduces costly, ineffective punishment and outperforms baselines (partial for P08-02: conditions punishment intensity on defection but never switches to reward).",
+   "located_via": "opened page"
+  }
+ ],
+ "mechanism_updates": [
+  {
+   "id": "P01-01",
+   "llm_status": "tested",
+   "llm_evidence": "Gossip manipulated/measured in zhu2026talk (ALIGN) and ren2025reputation (RepuNet); horibe2026emergence observes traces; piatti2024cooperate has public harvest reports + discussion but gossip not isolated.",
+   "marl_status": "tested",
+   "marl_evidence": "leung2026learning varies third-party observation; song2026learning learns reputation over networks (gossip-like diffusion).",
+   "seed_claims_checked": "GovSim: confirmed (history visible via transparent harvest reporting, gossip not isolated); SanctSim: mischaracterized (identifiers randomized every round, so no per-agent history to gossip about)"
+  },
+  {
+   "id": "P01-02",
+   "llm_status": "tested",
+   "llm_evidence": "ngyisheng2026formal Global Reputation condition (visible trust scores; underperformed baseline); lei2026strategic and yang2026paying marketplace reputation systems; tewolde2026coopeval reputation mechanism; jung2026sode public reputation score.",
+   "marl_status": "tested",
+   "marl_evidence": "anastassacos2021cooperation, ren2025bottomup (learned reputation assignment); mckee2021multiagent identifiability (partial).",
+   "seed_claims_checked": "SanctSim: mischaracterized (contributions shown anonymized with IDs randomized each round; no running per-agent record)"
+  },
+  {
+   "id": "P01-03",
+   "llm_status": "partial",
+   "llm_evidence": "piatti2024cooperate: transparent harvest reporting is built in but not manipulated and not immutable/cryptographic; ngyisheng2026formal oracle-monitoring condition (monitoring, not audit log).",
+   "marl_status": "partial",
+   "marl_evidence": "leung2026learning manipulates observability of third-party play; mckee2021multiagent identifiability; neither is an immutable log.",
+   "seed_claims_checked": "GovSim: confirmed (moderator discloses each agent's harvest); Kolt (2024): not checked in this slice, position paper = discussed only"
+  },
+  {
+   "id": "P02-01",
+   "llm_status": "tested",
+   "llm_evidence": "rehm2026certain exile rules voted by agents (key to survival); zhu2026talk ostracizes defectors; ren2025reputation severs links/isolates exploiters; ngyisheng2026formal Network Rewiring (2nd best); horibe2026emergence defector-exclusion stringency predicts robustness.",
+   "marl_status": "tested",
+   "marl_evidence": "anastassacos2020partner partner selection; ueshima2023deconstructing learned ostracism via rewiring; leung2026learning partner selection graphs.",
+   "seed_claims_checked": "SanctSim: mischaracterized (agents choose institutions; no one can be excluded)"
+  },
+  {
+   "id": "P02-02",
+   "llm_status": "partial",
+   "llm_evidence": "rehm2026certain membership removal (exile) exists but not time-limited suspension.",
+   "marl_status": "partial",
+   "marl_evidence": "leibo2017multiagent: timed removal of tagged agents for N_tagged frames, but as aggression, not sanction.",
+   "seed_claims_checked": "GovSim: mischaracterized (collapse ends access for all; not an agent-targeted suspension)"
+  },
+  {
+   "id": "P02-03",
+   "llm_status": "partial",
+   "llm_evidence": "Closest: ngyisheng2026formal Network Rewiring and ren2025reputation link severing are per-agent block lists, not a shared allowlist/denylist.",
+   "marl_status": "untested",
+   "marl_evidence": "None found.",
+   "seed_claims_checked": "Seed 'untested': no explicit shared denylist found; upgrade to partial is a judgment call"
+  },
+  {
+   "id": "P08-01",
+   "llm_status": "tested",
+   "llm_evidence": "akata2025playing (GPT-4 unforgiving, grim-trigger-like); huynh2025understanding classifies trajectories as TFT/WSLS; tewolde2026coopeval repetition; willis2025will LLM-written strategies (partial).",
+   "marl_status": "tested",
+   "marl_evidence": "lerer2017maintaining amTFT; eccles2019learning reciprocity; agapiou2022melting reciprocator bot scenarios; anastassacos2020partner retaliation.",
+   "seed_claims_checked": "Akata et al. 2025: confirmed exists and tests repeated PD, but 'harsh TFT' is imprecise; paper calls GPT-4 unforgiving (never cooperates again after one defection). FAIRGAME: exists (arXiv 2504.14325) but strategy classification is in the follow-up huynh2025understanding"
+  },
+  {
+   "id": "P08-02",
+   "llm_status": "untested",
+   "llm_evidence": "None found; yang2026paying uses state-dependent penalty severity only (punishment side).",
+   "marl_status": "partial",
+   "marl_evidence": "tang2026adaptive conditions punishment intensity on detected defection, no reward/punish switch.",
+   "seed_claims_checked": "Seed 'untested' confirmed for LLM"
+  },
+  {
+   "id": "P08-03",
+   "llm_status": "partial",
+   "llm_evidence": "shi2025llm Pigouvian parameter in expert-guided EGTA vs LLM models; rehm2026certain agent-proposed progressive contributions (not per-unit).",
+   "marl_status": "tested",
+   "marl_evidence": "hua2025lopt learned Pigovian tax improves welfare in Cleanup/Escape Room.",
+   "seed_claims_checked": "GovSim: mischaracterized (no extraction cost or tax in GovSim)"
+  },
+  {
+   "id": "P08-04",
+   "llm_status": "tested",
+   "llm_evidence": "vallinder2024cultural donor game; horibe2026emergence image-scoring-like; zhu2026talk; ren2025reputation; tewolde2026coopeval reputation; jung2026sode.",
+   "marl_status": "tested",
+   "marl_evidence": "anastassacos2021cooperation; ren2025bottomup; song2026learning; leung2026learning.",
+   "seed_claims_checked": "GovSim: partial (individual harvests public, but indirect reciprocity not isolated); SanctSim: mischaracterized (per-round randomized IDs prevent image scoring)"
+  }
+ ],
+ "notes": "Excluded: Fontana et al. 'Nicer Than Humans' (arXiv 2406.13605, ICWSM 2025) - single LLM vs scripted random adversaries, fails the 2+ LLM agents criterion; FAIRGAME base paper (2504.14325) - framework/bias paper, strategy classification is in huynh2025understanding. guzmanpiedrahita2025corrupted (SanctSim) is listed with empty mechanism_ids only to document that it does NOT test P01-02/P02-01/P08-04: its setup randomizes agent identifiers every round (confirmed from arXiv HTML); it belongs under sanctioning primitives. Several 2026 arXiv preprints (horibe2026emergence, ngyisheng2026formal, rehm2026certain, lei2026strategic, yang2026paying, jung2026sode, song2026learning, tang2026adaptive) were verified only from abstract/HTML summaries via fetch; verifier should confirm details, especially ngyisheng2026formal utility figures and rehm2026certain exile statistics. Lerer 2017, Eccles 2019, LOPT confirmed from search result snippets of arXiv abs pages (not fully opened). LOPT year: arXiv 2023 / NeurIPS 2025; AAMAS 2023 extended abstract title was 'Learning Optimal \"Pigovian Tax\" in Sequential Social Dilemmas'. Akata: arXiv 2023, published NHB 2025; seed wording 'harsh TFT' should become 'unforgiving / grim-trigger-like'. Gaps: no LLM or MARL test of a shared allowlist/denylist (P02-03), no time-limited suspension used as a sanction (P02-02), no reward/punish regime switch (P08-02), no immutable/cryptographic audit log manipulated with interacting agents (P01-03). Leibo 2017 timed removal and tang2026adaptive are weak fits; verifier may prefer to drop them. Kolt (2024) not checked here."
+}

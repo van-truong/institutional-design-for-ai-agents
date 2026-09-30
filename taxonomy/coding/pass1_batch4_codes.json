@@ -1,0 +1,397 @@
+[
+ {
+  "code": "reciprocate partner's prior action",
+  "definition": "An agent conditions its action on what its partner did previously, cooperating after cooperation and retaliating after defection.",
+  "n_instances": 7
+ },
+ {
+  "code": "costly peer penalty on deviator",
+  "definition": "A peer pays a cost to reduce the payoff of an agent who deviated from cooperation.",
+  "n_instances": 6
+ },
+ {
+  "code": "authenticated identity and scoped permissions",
+  "definition": "Agents must prove identity and act only within delegated, bounded permissions that leave an accountable chain.",
+  "n_instances": 4
+ },
+ {
+  "code": "binding contract between agents",
+  "definition": "Agents voluntarily agree to enforceable, pre-specified conditional transfers or obligations.",
+  "n_instances": 4
+ },
+ {
+  "code": "deposit forfeited on breach",
+  "definition": "An agent posts a deposit up front that is forfeited if it is found to violate the agreed rule.",
+  "n_instances": 4
+ },
+ {
+  "code": "cap on per-agent action rate",
+  "definition": "A hard ceiling limits how often a single agent may take an action or draw on a shared resource in a time window.",
+  "n_instances": 3
+ },
+ {
+  "code": "help conditional on reputation",
+  "definition": "Agents give help to others depending on the recipients' reputation from past conduct toward third parties.",
+  "n_instances": 3
+ },
+ {
+  "code": "peer reward and penalty options",
+  "definition": "Agents (or a manager) may reward cooperators and penalize deviators, with both instruments available.",
+  "n_instances": 3
+ },
+ {
+  "code": "public record of past conduct",
+  "definition": "A shared, persistent record of agents' past behavior is available to future counterparts.",
+  "n_instances": 3
+ },
+ {
+  "code": "binding commitment to future action",
+  "definition": "Agents can voluntarily lock themselves into a declared future action or plan before others move.",
+  "n_instances": 2
+ },
+ {
+  "code": "bundle of commons design principles",
+  "definition": "A package of community governance principles (boundaries, local rules, collective choice, monitoring, graduated sanctions, dispute resolution, nesting) evaluated together.",
+  "n_instances": 2
+ },
+ {
+  "code": "charge for imposed externality",
+  "definition": "Agents pay a charge proportional to the harm their actions impose on others, internalizing the externality.",
+  "n_instances": 2
+ },
+ {
+  "code": "escalating response to repeat deviation",
+  "definition": "Each repeated deviation triggers a more severe response than the last.",
+  "n_instances": 2
+ },
+ {
+  "code": "explicit rules with central enforcement",
+  "definition": "Norms are written as explicit obligations and prohibitions that a central controller monitors and enforces.",
+  "n_instances": 2
+ },
+ {
+  "code": "group-voted adoption of rules",
+  "definition": "Group members vote on and adopt the rules or sanctions that will govern them.",
+  "n_instances": 2
+ },
+ {
+  "code": "incentive-compatible allocation auction",
+  "definition": "An allocation and payment rule is designed so that truthful reporting is each agent's best strategy.",
+  "n_instances": 2
+ },
+ {
+  "code": "learn norms from observed sanctions",
+  "definition": "Agents infer the group's norms by observing which behaviors others sanction or approve.",
+  "n_instances": 2
+ },
+ {
+  "code": "monitoring of inter-agent communication",
+  "definition": "A monitor inspects messages or internal states exchanged between agents to detect covert coordination.",
+  "n_instances": 2
+ },
+ {
+  "code": "non-binding pre-play promise",
+  "definition": "Agents announce intended actions before interacting without any enforcement of the announcement.",
+  "n_instances": 2
+ },
+ {
+  "code": "opt into sanctioning institution",
+  "definition": "Agents choose whether to join an institution in which contributions are enforced by sanctions.",
+  "n_instances": 2
+ },
+ {
+  "code": "peer-assigned reputation scores",
+  "definition": "Agents themselves assign reputation scores to others from local observation, and these scores shape rewards.",
+  "n_instances": 2
+ },
+ {
+  "code": "remove deviator from group",
+  "definition": "A deviating agent is excluded or expelled from the group or system.",
+  "n_instances": 2
+ },
+ {
+  "code": "reward for reporting collusion",
+  "definition": "An agent who reports a collusive agreement it belongs to receives leniency or a reward.",
+  "n_instances": 2
+ },
+ {
+  "code": "self-imposed back-off on congestion",
+  "definition": "Agents reduce their own use of a shared resource when they detect congestion signals.",
+  "n_instances": 2
+ },
+ {
+  "code": "sever ties with deviating partner",
+  "definition": "Agents cut their link to a partner who deviated and interact with others instead.",
+  "n_instances": 2
+ },
+ {
+  "code": "sharing reputational information",
+  "definition": "Agents pass information about others' conduct to third parties who might interact with them.",
+  "n_instances": 2
+ },
+ {
+  "code": "tamper-evident record of actions",
+  "definition": "Agents' actions are recorded in a log that cannot be altered undetectably and is attributable to the actor.",
+  "n_instances": 2
+ },
+ {
+  "code": "visibility of individual conduct to peers",
+  "definition": "Each agent's conduct is identifiable and observable by peers.",
+  "n_instances": 2
+ },
+ {
+  "code": "adaptive central incentive payments",
+  "definition": "A central planner learns and adjusts rewards and penalties paid to agents to steer them toward cooperation.",
+  "n_instances": 1
+ },
+ {
+  "code": "appeal of sanction decisions",
+  "definition": "Sanctioned agents can contest an enforcement decision through a review process run by the enforcer.",
+  "n_instances": 1
+ },
+ {
+  "code": "attributable identity for agents",
+  "definition": "Each agent carries a persistent identifier linking it to a responsible party so counterparts and investigators can act on it.",
+  "n_instances": 1
+ },
+ {
+  "code": "audit of tamper-evident logs",
+  "definition": "Designated auditors check agents' tamper-evident action logs against expected behavior to expose faults with verifiable evidence.",
+  "n_instances": 1
+ },
+ {
+  "code": "authorized payment settlement protocol",
+  "definition": "A staged protocol governs authorization, execution and accounting of payments between untrusted agents.",
+  "n_instances": 1
+ },
+ {
+  "code": "budget-constrained audit scheduling",
+  "definition": "Audits of agent behavior are scheduled selectively to maximize detection under a fixed monitoring budget.",
+  "n_instances": 1
+ },
+ {
+  "code": "collective override of protocol outcome",
+  "definition": "The community collectively reverses or overrides an outcome produced by the formal rules.",
+  "n_instances": 1
+ },
+ {
+  "code": "conditional path to reinstatement",
+  "definition": "An excluded or suspended agent can regain membership by meeting specified conditions.",
+  "n_instances": 1
+ },
+ {
+  "code": "consensus with binding veto",
+  "definition": "Decisions require consensus, and a qualified member's justified objection blocks the decision.",
+  "n_instances": 1
+ },
+ {
+  "code": "contained environment for agent interaction",
+  "definition": "Agent interactions are confined to a bounded environment with controlled permeability to the outside.",
+  "n_instances": 1
+ },
+ {
+  "code": "credit earned by serving others",
+  "definition": "Agents earn credit for providing service to others and spend credit to obtain service themselves.",
+  "n_instances": 1
+ },
+ {
+  "code": "cut off after failure threshold",
+  "definition": "Interaction with a counterpart is suspended automatically once its failures exceed a threshold, with periodic trials to resume.",
+  "n_instances": 1
+ },
+ {
+  "code": "escrow held until delivery",
+  "definition": "Payment is held by a neutral mechanism and released only when the counterpart's performance is confirmed.",
+  "n_instances": 1
+ },
+ {
+  "code": "fine calibrated to detection probability",
+  "definition": "Penalty severity is set in relation to the probability of detection to deter deviation at least cost.",
+  "n_instances": 1
+ },
+ {
+  "code": "group liable for member default",
+  "definition": "A group is held jointly responsible for any member's default, giving members reason to monitor and pressure each other.",
+  "n_instances": 1
+ },
+ {
+  "code": "horizontal mutual accountability",
+  "definition": "Equals check in on and hold each other to account without a formal authority.",
+  "n_instances": 1
+ },
+ {
+  "code": "independent review of appeals",
+  "definition": "A body independent of the rule-maker hears appeals of enforcement decisions and issues binding rulings.",
+  "n_instances": 1
+ },
+ {
+  "code": "inspection to verify compliance",
+  "definition": "Compliance is verified through inspection or testing of agents' conduct.",
+  "n_instances": 1
+ },
+ {
+  "code": "label source of messages",
+  "definition": "Messages are tagged with their origin so receivers can distinguish agent-originated content from authoritative instructions.",
+  "n_instances": 1
+ },
+ {
+  "code": "low-cost channel for disclosure",
+  "definition": "A standard, easy-to-find channel lowers the cost of reporting problems to the responsible party.",
+  "n_instances": 1
+ },
+ {
+  "code": "mandatory checklist before action",
+  "definition": "Agents must complete prescribed verification steps before taking consequential actions.",
+  "n_instances": 1
+ },
+ {
+  "code": "monitor chosen by group vote",
+  "definition": "The group elects the agent who monitors compliance, lending the monitor legitimacy.",
+  "n_instances": 1
+ },
+ {
+  "code": "nested rule-making tiers",
+  "definition": "Higher-tier rules, harder to change, govern how lower-tier operational rules are made.",
+  "n_instances": 1
+ },
+ {
+  "code": "open communication among agents",
+  "definition": "Agents can discuss freely before or between decisions.",
+  "n_instances": 1
+ },
+ {
+  "code": "partner choice among competitors",
+  "definition": "Agents choose among competing potential partners, so cooperation terms are set by supply and demand.",
+  "n_instances": 1
+ },
+ {
+  "code": "partner selection by reputation",
+  "definition": "Agents form or sever relationships based on others' reputations.",
+  "n_instances": 1
+ },
+ {
+  "code": "pay forward to any member",
+  "definition": "Agents contribute to the community without direct exchange, expecting others to contribute in turn.",
+  "n_instances": 1
+ },
+ {
+  "code": "penalize failure to punish",
+  "definition": "Agents who fail to punish deviators are themselves punished.",
+  "n_instances": 1
+ },
+ {
+  "code": "penalty scaled to deviation severity",
+  "definition": "The probability or size of a penalty is adjusted to the detected degree of deviation.",
+  "n_instances": 1
+ },
+ {
+  "code": "per-use cost on actions",
+  "definition": "Each action carries a small cost that is negligible for normal use but prohibitive for abusive volume.",
+  "n_instances": 1
+ },
+ {
+  "code": "pre-agreed penalty for exit",
+  "definition": "Agents may unilaterally exit a commitment by paying a penalty fixed in advance.",
+  "n_instances": 1
+ },
+ {
+  "code": "prompt instilling prosocial reasoning",
+  "definition": "Agents are instructed to reason about the social consequences of their actions before acting.",
+  "n_instances": 1
+ },
+ {
+  "code": "recognize legitimate rule source",
+  "definition": "Agents identify which institution is authoritative and follow and enforce only its rules.",
+  "n_instances": 1
+ },
+ {
+  "code": "remove violating content",
+  "definition": "A moderator removes contributions that violate the community's rules.",
+  "n_instances": 1
+ },
+ {
+  "code": "restrict permitted actions ex ante",
+  "definition": "Designers remove conflicting options from agents' action sets before interaction.",
+  "n_instances": 1
+ },
+ {
+  "code": "reward per accepted contribution",
+  "definition": "Agents receive a fixed reward for each contribution the system accepts.",
+  "n_instances": 1
+ },
+ {
+  "code": "selection of successful strategies",
+  "definition": "Strategies that earn more spread in the population through selection or imitation.",
+  "n_instances": 1
+ },
+ {
+  "code": "self-executing contract rules",
+  "definition": "Code-based contracts automatically execute registration, allocation and bookkeeping rules among agents.",
+  "n_instances": 1
+ },
+ {
+  "code": "shared blocklist of deviators",
+  "definition": "A third party maintains a list of known deviators that others use to refuse interaction.",
+  "n_instances": 1
+ },
+ {
+  "code": "signed attestation of compliance",
+  "definition": "Agents sign an attributable statement certifying that their contribution complies with the rules.",
+  "n_instances": 1
+ },
+ {
+  "code": "social disapproval of deviator",
+  "definition": "Peers express disapproval or shame toward a deviator, imposing a non-monetary cost.",
+  "n_instances": 1
+ },
+ {
+  "code": "stake in others' payoffs",
+  "definition": "Agents hold shares in others' returns so that their own payoff rises with others' success.",
+  "n_instances": 1
+ },
+ {
+  "code": "status reward for contribution",
+  "definition": "Contributors are rewarded with prestige or elevated social status.",
+  "n_instances": 1
+ },
+ {
+  "code": "third party bonds agent for premium",
+  "definition": "A third party posts a forfeitable bond on an agent's behalf in exchange for a premium and audit rights.",
+  "n_instances": 1
+ },
+ {
+  "code": "third party verifies obligation met",
+  "definition": "A neutral clearing party determines whether an agent met its obligation and which settlement follows.",
+  "n_instances": 1
+ },
+ {
+  "code": "third-party observation of interactions",
+  "definition": "Agents learn about others by observing interactions they are not part of.",
+  "n_instances": 1
+ },
+ {
+  "code": "threat of cost imposition",
+  "definition": "A credible threat to impose costs is used to induce compliance before any cost is imposed.",
+  "n_instances": 1
+ },
+ {
+  "code": "transfer payoffs to align incentives",
+  "definition": "Payoffs are redistributed among agents so that the social optimum becomes individually optimal.",
+  "n_instances": 1
+ },
+ {
+  "code": "trusted monitor blocks suspicious actions",
+  "definition": "A trusted monitor inspects an untrusted agent's actions and blocks or resamples suspicious ones.",
+  "n_instances": 1
+ },
+ {
+  "code": "withhold resources from non-contributor",
+  "definition": "A partner reduces the resources it supplies to a partner that fails to contribute.",
+  "n_instances": 1
+ },
+ {
+  "code": "written code of conduct",
+  "definition": "A written code states expected conduct, with designated handlers for reported violations.",
+  "n_instances": 1
+ }
+]

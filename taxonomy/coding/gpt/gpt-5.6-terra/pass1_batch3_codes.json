@@ -1,0 +1,547 @@
+[
+  {
+    "code": "Byzantine-robust answer aggregation",
+    "definition": "A cooperation-shaping mechanism that uses Byzantine-robust answer aggregation.",
+    "n_instances": 1
+  },
+  {
+    "code": "access conditional on compliance",
+    "definition": "A cooperation-shaping mechanism that uses access conditional on compliance.",
+    "n_instances": 1
+  },
+  {
+    "code": "appeal and error correction",
+    "definition": "A cooperation-shaping mechanism that uses appeal and error correction.",
+    "n_instances": 1
+  },
+  {
+    "code": "automated failure attribution",
+    "definition": "A cooperation-shaping mechanism that uses automated failure attribution.",
+    "n_instances": 1
+  },
+  {
+    "code": "automatically enforced conditional transfer",
+    "definition": "A cooperation-shaping mechanism that uses automatically enforced conditional transfer.",
+    "n_instances": 1
+  },
+  {
+    "code": "binary exclusion list",
+    "definition": "A cooperation-shaping mechanism that uses binary exclusion list.",
+    "n_instances": 1
+  },
+  {
+    "code": "central identity certification",
+    "definition": "A cooperation-shaping mechanism that uses central identity certification.",
+    "n_instances": 1
+  },
+  {
+    "code": "centralized matching rule",
+    "definition": "A cooperation-shaping mechanism that uses centralized matching rule.",
+    "n_instances": 1
+  },
+  {
+    "code": "certified agent directory",
+    "definition": "A cooperation-shaping mechanism that uses certified agent directory.",
+    "n_instances": 1
+  },
+  {
+    "code": "codified conduct standards",
+    "definition": "A cooperation-shaping mechanism that uses codified conduct standards.",
+    "n_instances": 1
+  },
+  {
+    "code": "collective enforcement against dominance",
+    "definition": "A cooperation-shaping mechanism that uses collective enforcement against dominance.",
+    "n_instances": 1
+  },
+  {
+    "code": "collective monitoring and sanctions",
+    "definition": "A cooperation-shaping mechanism that uses collective monitoring and sanctions.",
+    "n_instances": 1
+  },
+  {
+    "code": "collective rule-making and vote",
+    "definition": "A cooperation-shaping mechanism that uses collective rule-making and vote.",
+    "n_instances": 1
+  },
+  {
+    "code": "compensating transaction rollback",
+    "definition": "A cooperation-shaping mechanism that uses compensating transaction rollback.",
+    "n_instances": 1
+  },
+  {
+    "code": "competence-based task outsourcing",
+    "definition": "A cooperation-shaping mechanism that uses competence-based task outsourcing.",
+    "n_instances": 1
+  },
+  {
+    "code": "computed reputation score",
+    "definition": "A cooperation-shaping mechanism that uses computed reputation score.",
+    "n_instances": 1
+  },
+  {
+    "code": "cooperation-favoring reward redesign",
+    "definition": "A cooperation-shaping mechanism that uses cooperation-favoring reward redesign.",
+    "n_instances": 1
+  },
+  {
+    "code": "cooperative default option",
+    "definition": "A cooperation-shaping mechanism that uses cooperative default option.",
+    "n_instances": 1
+  },
+  {
+    "code": "correlated stake forfeiture",
+    "definition": "A cooperation-shaping mechanism that uses correlated stake forfeiture.",
+    "n_instances": 1
+  },
+  {
+    "code": "costly public commitment",
+    "definition": "A cooperation-shaping mechanism that uses costly public commitment.",
+    "n_instances": 1
+  },
+  {
+    "code": "costly self-binding commitment",
+    "definition": "A cooperation-shaping mechanism that uses costly self-binding commitment.",
+    "n_instances": 1
+  },
+  {
+    "code": "credible punishment for breach",
+    "definition": "A cooperation-shaping mechanism that uses credible punishment for breach.",
+    "n_instances": 1
+  },
+  {
+    "code": "crowdsourced violation adjudication",
+    "definition": "A cooperation-shaping mechanism that uses crowdsourced violation adjudication.",
+    "n_instances": 1
+  },
+  {
+    "code": "cryptographic fault attribution",
+    "definition": "A cooperation-shaping mechanism that uses cryptographic fault attribution.",
+    "n_instances": 1
+  },
+  {
+    "code": "decentralized community governance",
+    "definition": "A cooperation-shaping mechanism that uses decentralized community governance.",
+    "n_instances": 1
+  },
+  {
+    "code": "decentralized ethical consensus",
+    "definition": "A cooperation-shaping mechanism that uses decentralized ethical consensus.",
+    "n_instances": 1
+  },
+  {
+    "code": "defection-contingent punishment",
+    "definition": "A cooperation-shaping mechanism that uses defection-contingent punishment.",
+    "n_instances": 1
+  },
+  {
+    "code": "deposit refunded on return",
+    "definition": "A cooperation-shaping mechanism that uses deposit refunded on return.",
+    "n_instances": 1
+  },
+  {
+    "code": "elected group leadership",
+    "definition": "A cooperation-shaping mechanism that uses elected group leadership.",
+    "n_instances": 1
+  },
+  {
+    "code": "enforceable bilateral contract",
+    "definition": "A cooperation-shaping mechanism that uses enforceable bilateral contract.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalating account blocking",
+    "definition": "A cooperation-shaping mechanism that uses escalating account blocking.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalating account restrictions",
+    "definition": "A cooperation-shaping mechanism that uses escalating account restrictions.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalating audit and arbitration",
+    "definition": "A cooperation-shaping mechanism that uses escalating audit and arbitration.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalating fines and suspension",
+    "definition": "A cooperation-shaping mechanism that uses escalating fines and suspension.",
+    "n_instances": 1
+  },
+  {
+    "code": "escalating sanctions for violations",
+    "definition": "A cooperation-shaping mechanism that uses escalating sanctions for violations.",
+    "n_instances": 1
+  },
+  {
+    "code": "evolutionary selection of strategies",
+    "definition": "A cooperation-shaping mechanism that uses evolutionary selection of strategies.",
+    "n_instances": 1
+  },
+  {
+    "code": "expiring access right",
+    "definition": "A cooperation-shaping mechanism that uses expiring access right.",
+    "n_instances": 1
+  },
+  {
+    "code": "externality tax and allowance",
+    "definition": "A cooperation-shaping mechanism that uses externality tax and allowance.",
+    "n_instances": 1
+  },
+  {
+    "code": "filter antisocial punishment",
+    "definition": "A cooperation-shaping mechanism that uses filter antisocial punishment.",
+    "n_instances": 1
+  },
+  {
+    "code": "fixed interaction network",
+    "definition": "A cooperation-shaping mechanism that uses fixed interaction network.",
+    "n_instances": 2
+  },
+  {
+    "code": "global reputation score",
+    "definition": "A cooperation-shaping mechanism that uses global reputation score.",
+    "n_instances": 1
+  },
+  {
+    "code": "gossip-based reputation and exclusion",
+    "definition": "A cooperation-shaping mechanism that uses gossip-based reputation and exclusion.",
+    "n_instances": 1
+  },
+  {
+    "code": "graduated service degradation",
+    "definition": "A cooperation-shaping mechanism that uses graduated service degradation.",
+    "n_instances": 1
+  },
+  {
+    "code": "hard action constraint filtering",
+    "definition": "A cooperation-shaping mechanism that uses hard action constraint filtering.",
+    "n_instances": 1
+  },
+  {
+    "code": "individual resource quota",
+    "definition": "A cooperation-shaping mechanism that uses individual resource quota.",
+    "n_instances": 1
+  },
+  {
+    "code": "institutional self-selection",
+    "definition": "A cooperation-shaping mechanism that uses institutional self-selection.",
+    "n_instances": 3
+  },
+  {
+    "code": "intrinsic reward for reputation use",
+    "definition": "A cooperation-shaping mechanism that uses intrinsic reward for reputation use.",
+    "n_instances": 1
+  },
+  {
+    "code": "learning incentive for imitation",
+    "definition": "A cooperation-shaping mechanism that uses learning incentive for imitation.",
+    "n_instances": 1
+  },
+  {
+    "code": "least-privilege access control",
+    "definition": "A cooperation-shaping mechanism that uses least-privilege access control.",
+    "n_instances": 1
+  },
+  {
+    "code": "mandatory entry requirement",
+    "definition": "A cooperation-shaping mechanism that uses mandatory entry requirement.",
+    "n_instances": 1
+  },
+  {
+    "code": "milestone-based recognition reward",
+    "definition": "A cooperation-shaping mechanism that uses milestone-based recognition reward.",
+    "n_instances": 1
+  },
+  {
+    "code": "monitor and isolate colluders",
+    "definition": "A cooperation-shaping mechanism that uses monitor and isolate colluders.",
+    "n_instances": 1
+  },
+  {
+    "code": "monitor and isolate misbehavior",
+    "definition": "A cooperation-shaping mechanism that uses monitor and isolate misbehavior.",
+    "n_instances": 1
+  },
+  {
+    "code": "multi-source partner reputation",
+    "definition": "A cooperation-shaping mechanism that uses multi-source partner reputation.",
+    "n_instances": 1
+  },
+  {
+    "code": "mutual aid risk pool",
+    "definition": "A cooperation-shaping mechanism that uses mutual aid risk pool.",
+    "n_instances": 1
+  },
+  {
+    "code": "norm creation and diffusion",
+    "definition": "A cooperation-shaping mechanism that uses norm creation and diffusion.",
+    "n_instances": 1
+  },
+  {
+    "code": "outcome-contingent payment contract",
+    "definition": "A cooperation-shaping mechanism that uses outcome-contingent payment contract.",
+    "n_instances": 1
+  },
+  {
+    "code": "output-contingent pay",
+    "definition": "A cooperation-shaping mechanism that uses output-contingent pay.",
+    "n_instances": 1
+  },
+  {
+    "code": "partner choice and reciprocity",
+    "definition": "A cooperation-shaping mechanism that uses partner choice and reciprocity.",
+    "n_instances": 1
+  },
+  {
+    "code": "payment conditional on conservation",
+    "definition": "A cooperation-shaping mechanism that uses payment conditional on conservation.",
+    "n_instances": 1
+  },
+  {
+    "code": "payment conditional on delivery",
+    "definition": "A cooperation-shaping mechanism that uses payment conditional on delivery.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer compliance review",
+    "definition": "A cooperation-shaping mechanism that uses peer compliance review.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer policing of reproduction",
+    "definition": "A cooperation-shaping mechanism that uses peer policing of reproduction.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer punishment of defection",
+    "definition": "A cooperation-shaping mechanism that uses peer punishment of defection.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer punishment of norm violation",
+    "definition": "A cooperation-shaping mechanism that uses peer punishment of norm violation.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer rewards and sanctions",
+    "definition": "A cooperation-shaping mechanism that uses peer rewards and sanctions.",
+    "n_instances": 1
+  },
+  {
+    "code": "peer sanction for default",
+    "definition": "A cooperation-shaping mechanism that uses peer sanction for default.",
+    "n_instances": 1
+  },
+  {
+    "code": "planner-assigned rewards and penalties",
+    "definition": "A cooperation-shaping mechanism that uses planner-assigned rewards and penalties.",
+    "n_instances": 1
+  },
+  {
+    "code": "platform reputation ratings",
+    "definition": "A cooperation-shaping mechanism that uses platform reputation ratings.",
+    "n_instances": 1
+  },
+  {
+    "code": "pre-agreed breach penalty",
+    "definition": "A cooperation-shaping mechanism that uses pre-agreed breach penalty.",
+    "n_instances": 1
+  },
+  {
+    "code": "pre-play communication",
+    "definition": "A cooperation-shaping mechanism that uses pre-play communication.",
+    "n_instances": 2
+  },
+  {
+    "code": "protocol-based trust constraints",
+    "definition": "A cooperation-shaping mechanism that uses protocol-based trust constraints.",
+    "n_instances": 1
+  },
+  {
+    "code": "public commitment announcement",
+    "definition": "A cooperation-shaping mechanism that uses public commitment announcement.",
+    "n_instances": 2
+  },
+  {
+    "code": "public disclosure of resource use",
+    "definition": "A cooperation-shaping mechanism that uses public disclosure of resource use.",
+    "n_instances": 1
+  },
+  {
+    "code": "public record of past conduct",
+    "definition": "A cooperation-shaping mechanism that uses public record of past conduct.",
+    "n_instances": 1
+  },
+  {
+    "code": "public sanction norm learning",
+    "definition": "A cooperation-shaping mechanism that uses public sanction norm learning.",
+    "n_instances": 1
+  },
+  {
+    "code": "public verifiable issuance log",
+    "definition": "A cooperation-shaping mechanism that uses public verifiable issuance log.",
+    "n_instances": 1
+  },
+  {
+    "code": "publish revoked credential list",
+    "definition": "A cooperation-shaping mechanism that uses publish revoked credential list.",
+    "n_instances": 1
+  },
+  {
+    "code": "reciprocal community currency",
+    "definition": "A cooperation-shaping mechanism that uses reciprocal community currency.",
+    "n_instances": 1
+  },
+  {
+    "code": "reciprocal response strategy",
+    "definition": "A cooperation-shaping mechanism that uses reciprocal response strategy.",
+    "n_instances": 1
+  },
+  {
+    "code": "refund bonus on failed threshold",
+    "definition": "A cooperation-shaping mechanism that uses refund bonus on failed threshold.",
+    "n_instances": 1
+  },
+  {
+    "code": "relationship severance for defection",
+    "definition": "A cooperation-shaping mechanism that uses relationship severance for defection.",
+    "n_instances": 1
+  },
+  {
+    "code": "remove violating community",
+    "definition": "A cooperation-shaping mechanism that uses remove violating community.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-based exclusion",
+    "definition": "A cooperation-shaping mechanism that uses reputation-based exclusion.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-based indirect reciprocity",
+    "definition": "A cooperation-shaping mechanism that uses reputation-based indirect reciprocity.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-based partner exclusion",
+    "definition": "A cooperation-shaping mechanism that uses reputation-based partner exclusion.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-based task allocation",
+    "definition": "A cooperation-shaping mechanism that uses reputation-based task allocation.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-linked access control",
+    "definition": "A cooperation-shaping mechanism that uses reputation-linked access control.",
+    "n_instances": 1
+  },
+  {
+    "code": "reputation-linked sales restriction",
+    "definition": "A cooperation-shaping mechanism that uses reputation-linked sales restriction.",
+    "n_instances": 1
+  },
+  {
+    "code": "resilient peer communication network",
+    "definition": "A cooperation-shaping mechanism that uses resilient peer communication network.",
+    "n_instances": 1
+  },
+  {
+    "code": "restoration of inflicted harm",
+    "definition": "A cooperation-shaping mechanism that uses restoration of inflicted harm.",
+    "n_instances": 1
+  },
+  {
+    "code": "retaliation against punishers",
+    "definition": "A cooperation-shaping mechanism that uses retaliation against punishers.",
+    "n_instances": 1
+  },
+  {
+    "code": "reward consensus reporting",
+    "definition": "A cooperation-shaping mechanism that uses reward consensus reporting.",
+    "n_instances": 1
+  },
+  {
+    "code": "role-differentiating prompts",
+    "definition": "A cooperation-shaping mechanism that uses role-differentiating prompts.",
+    "n_instances": 1
+  },
+  {
+    "code": "sender authentication policy",
+    "definition": "A cooperation-shaping mechanism that uses sender authentication policy.",
+    "n_instances": 1
+  },
+  {
+    "code": "signed agent capability registry",
+    "definition": "A cooperation-shaping mechanism that uses signed agent capability registry.",
+    "n_instances": 1
+  },
+  {
+    "code": "stake forfeiture for violation",
+    "definition": "A cooperation-shaping mechanism that uses stake forfeiture for violation.",
+    "n_instances": 1
+  },
+  {
+    "code": "standardized incident reporting",
+    "definition": "A cooperation-shaping mechanism that uses standardized incident reporting.",
+    "n_instances": 1
+  },
+  {
+    "code": "structured task delegation",
+    "definition": "A cooperation-shaping mechanism that uses structured task delegation.",
+    "n_instances": 1
+  },
+  {
+    "code": "swift certain breach sanction",
+    "definition": "A cooperation-shaping mechanism that uses swift certain breach sanction.",
+    "n_instances": 1
+  },
+  {
+    "code": "tailored institutional rules",
+    "definition": "A cooperation-shaping mechanism that uses tailored institutional rules.",
+    "n_instances": 1
+  },
+  {
+    "code": "temporary activity restriction",
+    "definition": "A cooperation-shaping mechanism that uses temporary activity restriction.",
+    "n_instances": 1
+  },
+  {
+    "code": "third party adjudication",
+    "definition": "A cooperation-shaping mechanism that uses third party adjudication.",
+    "n_instances": 1
+  },
+  {
+    "code": "third party behavioral observation",
+    "definition": "A cooperation-shaping mechanism that uses third party behavioral observation.",
+    "n_instances": 1
+  },
+  {
+    "code": "third party mediation",
+    "definition": "A cooperation-shaping mechanism that uses third party mediation.",
+    "n_instances": 3
+  },
+  {
+    "code": "third party punishment",
+    "definition": "A cooperation-shaping mechanism that uses third party punishment.",
+    "n_instances": 1
+  },
+  {
+    "code": "verified agent identity",
+    "definition": "A cooperation-shaping mechanism that uses verified agent identity.",
+    "n_instances": 1
+  },
+  {
+    "code": "verified contribution-based rewards",
+    "definition": "A cooperation-shaping mechanism that uses verified contribution-based rewards.",
+    "n_instances": 1
+  },
+  {
+    "code": "voluntary peer reward transfer",
+    "definition": "A cooperation-shaping mechanism that uses voluntary peer reward transfer.",
+    "n_instances": 1
+  }
+]

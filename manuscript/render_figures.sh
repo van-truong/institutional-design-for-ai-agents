@@ -11,7 +11,7 @@ for command_name in python3 rsvg-convert pdfcrop; do
   fi
 done
 
-output_dir=".build/figures"
+output_dir="figures"
 mkdir -p "$output_dir"
 
 if command -v chromium >/dev/null 2>&1; then
