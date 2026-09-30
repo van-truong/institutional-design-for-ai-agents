@@ -3,7 +3,7 @@
 
   figure_nested-rings       nested systems around interacting agents, with the 66 mechanisms as a ring
                             (gen_rings_taxonomy.py, text enlarged for print)          -> Fig. 1, introduction
-  figure_agent-in-context   the layer stack (left panel of gen_multilayer.py)          -> Section 2, top-down / bottom-up
+  figure_agent-in-context   compact layer stack (gen_agent_in_context.py)              -> Section 2, top-down / bottom-up
   figure_design-space       the design space of agent institutions (right panel of gen_multilayer.py) -> Section 3
   figure_coleman-boat       the agent-institution Coleman boat (gen_coleman_boat.py)   -> Section 5
 Each source's CSS classes and element ids are prefixed so nothing collides. Writes figs/<name>.html and
@@ -45,7 +45,12 @@ def main():
     multi = os.path.join(FIGS, 'figure4_multi-layer-institutions.html')
     _, mvb, _ = extract(multi, 'm')
     write('figure_nested-rings', 'Nested systems around interacting agents', os.path.join(DRAFTS, 'figure_rings-taxonomy.html'), 'r')
-    write('figure_agent-in-context', 'Agent-in-context', multi, 'a', (0, 0, 246, mvb[3]))
+    # Fig. 2 has its own compact generator (half the height of the layer stack in gen_multilayer.py)
+    run('gen_agent_in_context.py')
+    subprocess.run([sys.executable, os.path.join(HERE, 'extract_svg.py'), os.path.join(FIGS, 'figure_agent-in-context.html'),
+                    os.path.join(FIGURES, 'figure_agent-in-context.svg')], check=True)
+    subprocess.run(['rsvg-convert', '--format', 'pdf1.5', '-o', os.path.join(FIGURES, 'figure_agent-in-context.pdf'),
+                    os.path.join(FIGURES, 'figure_agent-in-context.svg')], check=True)
     write('figure_design-space', 'Design space of agent institutions', multi, 'd', (252, 0, mvb[2] - 252, mvb[3]))
     write('figure_coleman-boat', 'A Coleman boat for agent institutions', os.path.join(DRAFTS, 'figure_coleman-boat.html'), 'c')
     run('gen_multilayer.py')          # restore the combined figure with its A/B letters
