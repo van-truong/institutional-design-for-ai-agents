@@ -162,7 +162,7 @@ Consider two ways an autonomous agent might execute a \$10M purchase on behalf o
     \centering
     \includegraphics[width=0.86\linewidth]{figures/figure_nested-rings.pdf}
     % Previous Fig. 1 (same agents, different institutions): figures/figure1_position-summary.pdf, caption: \caption{\rework{[Draft figure, not final.] Same agents, different institutions. Three identical, individually aligned agents share a finite resource. \textbf{(A)}~With no institution, they deplete it. \textbf{(B)}~A fixed fine raises measured cooperation but brings hidden costs: agents game the rule, and false fines erode trust. \textbf{(C)}~A designed institution, with graduated sanctions, repair, and appeal under rules that humans set and can override, sustains cooperation at low cost. Bars are schematic. We argue that multi-agent AI safety should evaluate the \emph{model-in-institution}, not the model alone.}}
-    \caption{\voice{Nested systems around interacting agents, after Bronfenbrenner~\mbox{\citep{bronfenbrenner1979ecology}}. Agents sit inside the settings they act in (microsystem) and the links between those settings (mesosystem). The 66 cooperation-shaping mechanisms of our taxonomy (Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) form the ring through which platform, market, and legal institutions (exosystem and macrosystem) act on them. Each dot is one mechanism: filled if tested with LLM agents, dotted if only proposed, and open if untested. Model-level evaluation examines only the center.}}
+    \caption{\voice{Nested systems around interacting agents, after Bronfenbrenner~\mbox{\citep{bronfenbrenner1979ecology}}. Agents sit inside the settings they act in (microsystem) and the links between those settings (mesosystem). The 66 cooperation-shaping mechanisms of our taxonomy (Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) form the ring through which platform, market, and legal institutions (exosystem and macrosystem) act on them. Each dot is one mechanism: filled if tested with LLM agents, dotted if only proposed, and open if untested. Model-level evaluation examines only the center. Fig.~\mbox{\ref{fig:agent-in-context}} groups the rings into three layers.}}
     \label{fig:summary}
 \end{figure}
 
@@ -221,14 +221,11 @@ The design challenge for cooperative AI is therefore to determine which institut
 In this section, we discuss ideas from economics and political philosophy treating the formation of human institutions, which can contribute to understanding the LLM counterpart that is being formed.
 The literature on its formation splits along two broad traditions, tracing back to the Scottish Enlightenment and Hayek's account of spontaneous order \citep{hayek1978law}. Institutions can emerge bottom-up through repeated interaction, or they can be built through deliberate design. Figure~\mbox{\ref{fig:agent-in-context}} shows both directions. This link between individual action and institutional structure has a long history in social theory and agent-based modeling~\citep{coleman1990foundations,bronfenbrenner1979ecology,ostrom2011background,macy2002factors,castelfranchi1998modelling,gao2024llmabm}. 
 
-% Tall, narrow figure: a normal float with the caption beside it (wrapfig can run off the page).
 \begin{figure}[!t]
   \centering
-  \begin{minipage}[c]{0.6\linewidth}\centering\includegraphics[width=\linewidth]{figures/figure_agent-in-context.pdf}\end{minipage}\hfill
-  \begin{minipage}[c]{0.37\linewidth}
-    \caption{\voice{Agent-in-context. Individual models are nested within agent--group interactions and governing institutions. Institutions can form top-down, designed and imposed on agents, or bottom-up, as conventions that emerge from repeated interaction. For AI agents today, we argue that the first must lead.}}
-    \label{fig:agent-in-context}
-  \end{minipage}
+  \includegraphics[width=0.9\linewidth]{figures/figure_agent-in-context.pdf}
+  \caption{\voice{Agent-in-context. Individual models are nested within agent--group interactions and governing institutions. Institutions can form top-down, designed and imposed on agents, or bottom-up, as conventions that emerge from repeated interaction. For AI agents today, we argue that the first must lead. The rings beside each label match Fig.~\mbox{\ref{fig:summary}}: the individual model is its center, agent--group interactions its micro- and mesosystem, and governing institutions its mechanism ring, exosystem, and macrosystem.}}
+  \label{fig:agent-in-context}
 \end{figure}
 \textbf{Top-down tradition.} On the one hand, in the top-down direction, institutions are rules, mechanisms, and governance arrangements intentionally designed to align incentives, resolve conflicts, and protect collective outcomes \citep{buchananCalculusConsentLogical1965, elsterUlyssesSirensTheory1977, maskinMechanismDesignHow2008, myersonOptimalAuctionDesign1981}.
 The 1929 market crash illustrates a narrower point: institutional arrangements around credit, leverage, and crisis response can shape both financial fragility and the consequences of individually rational trading~\citep{kindlebergerManiasPanicsCrashes2005}.

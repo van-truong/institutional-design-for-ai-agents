@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Fig. 2, agent-in-context: a compact, wide version of the layer stack in gen_multilayer.py.
 
-The three isometric layers (governing institutions, agent-group interactions, individual model) sit closer together,
-with each label to the right of its plate, between the top-down and bottom-up arrows. About half the height of the
-original panel at the same printed text size. Reuses gen_multilayer's plates, node glyphs, arrows, and colors.
+The three isometric layers (governing institutions, agent-group interactions, individual model) sit close together,
+with each label to the right of its plate, between the top-down and bottom-up arrows. Each label also carries a
+miniature of Fig. 1 (the nested rings) with the rings that correspond to that layer filled in, and a short note
+naming them, so the two figures read as the same picture at two resolutions. Reuses gen_multilayer's plates, node
+glyphs, arrows, and colors.
 Run from manuscript/:  python3 scripts/gen_agent_in_context.py
 """
 import os, sys
@@ -13,13 +15,28 @@ sys.path.insert(0, HERE)
 import gen_multilayer as ml  # noqa: E402
 
 OUT = os.path.join(HERE, '..', 'figs', 'figure_agent-in-context.html')
-W, H = 440, 300
+W, H = 626, 300
 CX, PW, PH, TH = 128, 56, 23, 9
-LAYERS = [  # (y, top fill, side fill, label lines, label color, node glyph)
-    (52, ml.AM_TOP, ml.AM_SIDE, ['Governing', 'institutions'], ml.AM_D, ml.nodes_net),
-    (150, ml.BL_TOP, ml.BL_SIDE, ['Agent–group', 'interactions'], ml.BL_D, ml.nodes_tri),
-    (248, ml.VI_TOP, ml.VI_SIDE, ['Individual model', '(even if aligned)'], ml.VI_D, ml.nodes_one),
+LAYERS = [  # (y, top fill, side fill, label lines, label color, node glyph, Fig. 1 rings, note)
+    (52, ml.AM_TOP, ml.AM_SIDE, ['Governing institutions'], ml.AM_D, ml.nodes_net, ('mech', 'exo', 'macro'),
+     'Fig. 1: mechanism ring, exo- and macrosystem'),
+    (150, ml.BL_TOP, ml.BL_SIDE, ['Agent–group interactions'], ml.BL_D, ml.nodes_tri, ('micro', 'meso'),
+     'Fig. 1: micro- and mesosystem'),
+    (248, ml.VI_TOP, ml.VI_SIDE, ['Individual model', '(even if aligned)'], ml.VI_D, ml.nodes_one, ('agents',),
+     'Fig. 1: the agents at the center'),
 ]
+# Fig. 1's rings, inner to outer: (key, radius, fill when highlighted), in the colors of gen_rings_taxonomy.py
+RINGS = [('agents', 5, '#6C5CD0'), ('micro', 9, '#A9C4E0'), ('meso', 12.5, '#9FD9C7'), ('mech', 17.5, '#D3D9E0'),
+         ('exo', 21, '#BBD9C4'), ('macro', 24.5, '#E3C88C')]
+
+def ring_icon(cx, cy, keys):
+    """A miniature of Fig. 1 with the rings that correspond to one layer filled in."""
+    o = []
+    for key, r, col in reversed(RINGS):
+        on = key in keys
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{col if on else "#fff"}" '
+                 f'stroke="{"#8A96A3" if on else "#C9D1DA"}" stroke-width="{1.1 if on else 0.9}"/>')
+    return ''.join(o)
 
 def build():
     o = [f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" xmlns="http://www.w3.org/2000/svg" font-family="{ml.FONT}">',
@@ -28,7 +45,7 @@ def build():
     for (ya, *_), (yb, *_) in zip(LAYERS, LAYERS[1:]):
         for x in (CX - PW, CX + PW):
             o.append(f'<line x1="{x}" y1="{ya + TH + 2}" x2="{x}" y2="{yb - 2}" stroke="{ml.HAIR}" stroke-width="1" stroke-dasharray="2 4" opacity="0.7"/>')
-    for y, top, side, label, col, nodes in LAYERS:
+    for y, top, side, label, col, nodes, _, _ in LAYERS:
         o.append(ml.diamond(CX, y, PW, PH, TH, top, side, [], col, nodes))
     # arrows: top-down on the left, bottom-up to the right of the plates
     ytop, ybot = LAYERS[0][0] - PH - 6, LAYERS[-1][0] + PH + TH + 6
@@ -37,12 +54,15 @@ def build():
     o.append(f'<text x="18" y="{ymid:.0f}" text-anchor="middle" font-size="15.5" font-weight="700" fill="{ml.AM_M}" transform="rotate(-90 18 {ymid:.0f})">Top-down</text>')
     o.append(ml.varrow(214, ybot, ytop, ml.VI_M))
     o.append(f'<text x="234" y="{ymid:.0f}" text-anchor="middle" font-size="15.5" font-weight="700" fill="{ml.VI_M}" transform="rotate(-90 234 {ymid:.0f})">Bottom-up</text>')
-    # labels to the right
-    for y, top, side, label, col, nodes in LAYERS:
-        y0 = y + 5 - (len(label) - 1) * 9
+    # labels, a note naming the matching rings of Fig. 1, and a ring icon
+    for y, top, side, label, col, nodes, rings, note in LAYERS:
+        o.append(ring_icon(266, y + 2, rings))
+        n = len(label) + 1
+        y0 = y + 5 - (n - 1) * 9.5
         for i, line in enumerate(label):
             style = 'font-weight="400" font-style="italic"' if line.startswith('(') else 'font-weight="700"'
-            o.append(f'<text x="262" y="{y0 + i * 19:.0f}" font-size="16.5" {style} fill="{col}">{ml.esc(line)}</text>')
+            o.append(f'<text x="302" y="{y0 + i * 19:.0f}" font-size="16.5" {style} fill="{col}">{ml.esc(line)}</text>')
+        o.append(f'<text x="302" y="{y0 + len(label) * 19 + 2:.0f}" font-size="14.5" font-style="italic" fill="{ml.MUT}">{ml.esc(note)}</text>')
     o.append('</svg>')
     return '\n'.join(o)
 
