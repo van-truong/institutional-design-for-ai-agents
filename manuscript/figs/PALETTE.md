@@ -29,3 +29,11 @@ some symbolism is approximate (harmony is prioritized over one-color-per-concept
 ## Taxonomy (Fig 5) — six families -> six master accents
 social=Terracotta · formal=Amber · economic=Green · technical=Blue ·
 mutual-aid=Violet · restorative=Teal
+
+## Institutional functions (Fig. 2, Table 1, Fig. 1)
+The seven functions have their own two hues, distinct from the six mechanism families (which use the
+master accents above), so amber is not read as both "functions" and "normative family".
+| Layer       | mid       | dark      | light fill |
+|-------------|-----------|-----------|------------|
+| Information (norms & protocols, monitoring, reputation) | `#5B6B7D` | `#34465A` | `#E9EDF2` |
+| Consequence (sanctions, constraints, adjudication & appeal, repair & reintegration) | `#9C4A78` | `#6B2350` | `#F6E7EF` |

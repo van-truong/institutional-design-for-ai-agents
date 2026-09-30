@@ -53,8 +53,11 @@ def varrow(ax,ytail,yhead,color):
     return f'<polygon points="{p}" fill="{color}" opacity="0.9"/>'
 
 # Panel B tree: (group, dark, bg, mid, [(name, sublabel|None)])
-MECH=[("Information layer",AM_D,AM_BG,AM_M,[("Norms & protocols",None),("Monitoring",None),("Reputation",None)]),
-      ("Consequence layer",AM_D,AM_BG,AM_M,[("Sanctions",None),("Constraints",None),("Adjudication & appeal",None),("Repair & reintegration",None)])]
+# Institutional functions: slate grey for the information layer, plum for the consequence layer (figs/PALETTE.md).
+FI_D="#34465A"; FI_M="#5B6B7D"; FI_BG="#E9EDF2"
+FC_D="#6B2350"; FC_M="#9C4A78"; FC_BG="#F6E7EF"
+MECH=[("Information layer",FI_D,FI_BG,FI_M,[("Norms & protocols",None),("Monitoring",None),("Reputation",None)]),
+      ("Consequence layer",FC_D,FC_BG,FC_M,[("Sanctions",None),("Constraints",None),("Adjudication & appeal",None),("Repair & reintegration",None)])]
 CHAN=[("Soft channels",VI_D,VI_BG,VI_M,[("Normative","beliefs"),("Social","relationships"),("Epistemic","information")]),
       ("Hard channels",VI_D,VI_BG,VI_M,[("Incentive","payoffs"),("Constraint","access"),("Restorative","repair")])]
 
@@ -87,7 +90,7 @@ def build():
     # first lay out Panel B to know total height
     body=[]
     y=Y0; groups=[]; seclabels=[]
-    for sname,scol,grp in [("INSTITUTIONAL FUNCTIONS",AM_M,MECH),("MECHANISM FAMILIES",VI_M,CHAN)]:
+    for sname,scol,grp in [("INSTITUTIONAL FUNCTIONS",FC_M,MECH),("MECHANISM FAMILIES",VI_M,CHAN)]:
         first_ly=y; last_ly=y
         for (gname,dcol,bg,mcol,leaves) in grp:
             lys=[y+i*PITCH for i in range(len(leaves))]
