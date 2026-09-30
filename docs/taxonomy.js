@@ -107,10 +107,13 @@ function build() {
     const fr = polar(fa, R.fam), fl = L.list.get(f.id);
     const fg = el("g", { class: "tx-fam" }, gNodes);
     el("circle", { r: 6, fill: f.mid }, fg);
+    // list view: the family name sits on a filled pill in the family color (as in the paper's Fig. 4)
+    const rule = el("line", { class: "tx-fam-rule", stroke: f.mid, x1: 0, x2: LIST.colW - 8, y1: 2, y2: 2 }, fg);
+    const pill = el("rect", { class: "tx-fam-pill", fill: f.dark, x: -8, y: -11, height: 26, rx: 13,
+      width: 26 + f.label.length * FONT.fam[1] * 0.78 }, fg);
     const label = el("text", { class: "tx-fam-label", fill: f.dark }, fg);
     label.textContent = f.label.toUpperCase();
-    const rule = el("line", { class: "tx-fam-rule", stroke: f.mid, x1: 0, x2: LIST.colW - 8, y1: 12, y2: 12 }, fg);
-    const famNode = { kind: "fam", g: fg, label, rule, r: fr, l: fl, a: fa, f };
+    const famNode = { kind: "fam", g: fg, label, rule, pill, r: fr, l: fl, a: fa, f };
     nodes.push(famNode);
     links.push({ path: el("path", { class: "tx-link tx-link-root", stroke: f.mid }, gLinks), from: { r: center, l: fl, a: fa, rr: 0 }, to: famNode, rr: R.fam, root: true });
 
@@ -190,8 +193,11 @@ function render(k) {
       p.x += nx; p.y += ny;
       n.label.style.fontSize = `${lerp(FONT.fam[0], FONT.fam[1], e).toFixed(2)}px`;
       const inRadial = k < 0.5;
-      n.label.setAttribute("x", inRadial ? p.x : 0);
-      n.label.setAttribute("y", inRadial ? p.y + 4 : 4);
+      n.label.setAttribute("x", inRadial ? p.x : 5);
+      n.label.setAttribute("y", inRadial ? p.y + 4 : 8);
+      n.label.setAttribute("fill", inRadial ? n.f.dark : "#fff");
+      n.label.classList.toggle("on-pill", !inRadial);
+      n.pill.style.opacity = Math.max(0, 2 * k - 1);
       n.label.setAttribute("text-anchor", inRadial ? (Math.cos((n.a * Math.PI) / 180) < -0.2 ? "end" : Math.cos((n.a * Math.PI) / 180) > 0.2 ? "start" : "middle") : "start");
       n.label.style.opacity = labelFade;
       n.rule.style.opacity = Math.max(0, 2 * k - 1);
