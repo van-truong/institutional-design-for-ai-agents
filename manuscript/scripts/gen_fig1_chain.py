@@ -28,7 +28,7 @@ def t(x, y, s, cls, anchor='middle', extra=''):
 CHAIN = [('slate', 'Aligned agents', ['each passes', 'model-level tests']),
          ('blue', 'Shared resource', ['memory, compute,', 'code, budgets']),
          ('terra', 'Emergent failure', ['depletion, collusion,', 'duplicated work']),
-         ('amber', 'Institution', ['human-designed rules,', 'monitoring, repair']),
+         ('amber', 'Institution', ['human-designed', 'rules and roles']),
          ('green', 'Outcomes + costs', ['cooperation, burden,', 'false punishment'])]
 BW, BG, BY, BH = 160, 25, 92, 96
 
@@ -128,16 +128,41 @@ def circle(cx, cy):
            + t(cx, cy + 2, str(n), 'hubn') + t(cx, cy + 16, 'mechanisms', 'hubs'))
     return links + dots + [hub] + flabels + labels
 
+FUNCTIONS = [('Norms & protocols', 'info'), ('Monitoring', 'info'), ('Reputation', 'info'),
+             ('Sanctions', 'cons'), ('Constraints', 'cons'), ('Adjudication & appeal', 'cons'),
+             ('Repair & reintegration', 'cons')]
+# Institutional-function colors (figs/PALETTE.md): grey information layer, plum consequence layer.
+FN = {'info': ('#5B6B7D', '#34465A', '#E9EDF2'), 'cons': ('#9C4A78', '#6B2350', '#F6E7EF')}
+
+def functions_row(y, inst_cx):
+    """The seven institutional functions as chips, bracketed under the institution box."""
+    s = []
+    widths = [18 + 7.3 * len(n) for n, _ in FUNCTIONS]
+    gap = 8
+    total = sum(widths) + gap * (len(widths) - 1)
+    x = (W - total) / 2
+    s.append(f'<path d="M{inst_cx} {BY+BH} L{inst_cx} {y-12} M{x} {y-12} L{x+total} {y-12}" stroke="{INK}" stroke-width="1.2" fill="none"/>')
+    s.append(t(inst_cx + 8, y - 17, 'performs seven functions', 'pnote', 'start'))
+    for (name, layer), w in zip(FUNCTIONS, widths):
+        mid, dark, bg = FN[layer]
+        s.append(f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="26" rx="13" fill="{bg}" stroke="{mid}" stroke-width="1.3"/>')
+        s.append(t(x + w / 2, y + 17.5, name, 'fnchip', extra=f' fill="{dark}"'))
+        x += w + gap
+    return s, (W - total) / 2, (W - total) / 2 + total
+
 def build():
     s = chain()
-    # panel B frame, fed from the institution box
-    top = BY + BH + 40
     inst_x = 3 * (BW + BG)
+    fy = BY + BH + 44
+    frow, fx0, fx1 = functions_row(fy, inst_x + BW / 2)
+    s += frow
+    # panel B frame, fed from the functions row
+    top = fy + 26 + 38
     bx0, bx1, by1 = 300, W, top + 640
     cx, cy = (bx0 + bx1) / 2, top + 345
     s.append(f'<rect x="{bx0}" y="{top}" width="{bx1-bx0}" height="{by1-top}" rx="14" fill="{ROLE["amber"][2]}" fill-opacity=".45" stroke="{ROLE["amber"][0]}" stroke-width="1.4" stroke-dasharray="6 4"/>')
-    s.append(f'<path d="M{inst_x} {BY+BH} L{bx0+40} {top}" stroke="{ROLE["amber"][0]}" stroke-width="1.3" stroke-dasharray="6 4" fill="none"/>')
-    s.append(f'<path d="M{inst_x+BW} {BY+BH} L{bx1-40} {top}" stroke="{ROLE["amber"][0]}" stroke-width="1.3" stroke-dasharray="6 4" fill="none"/>')
+    s.append(f'<path d="M{max(fx0, bx0 - 10):.1f} {fy+26} L{bx0+40} {top}" stroke="{ROLE["amber"][0]}" stroke-width="1.3" stroke-dasharray="6 4" fill="none"/>')
+    s.append(f'<path d="M{fx1:.1f} {fy+26} L{bx1-40} {top}" stroke="{ROLE["amber"][0]}" stroke-width="1.3" stroke-dasharray="6 4" fill="none"/>')
     s.append(t(bx0 + 18, top + 30, 'B', 'plabel', 'start'))
     s.append(t(bx0 + 40, top + 30, 'What an institution can use', 'ptitle', 'start'))
     s.append(t(bx0 + 40, top + 52, '66 coded mechanisms in 18 themes and six families (Fig. 4)', 'pnote', 'start'))
@@ -180,7 +205,8 @@ def main():
   .hubs{{font-size:9.5px;font-weight:700;fill:{MUTED};letter-spacing:.06em;}}
   .claim{{font-size:26px;font-weight:900;fill:#111;letter-spacing:-.3px;}}
   .note{{font-size:15px;fill:{INK};}}
-  .key{{font-size:14px;fill:{MUTED};}}'''
+  .key{{font-size:14px;fill:{MUTED};}}
+  .fnchip{{font-size:13.5px;font-weight:800;}}'''
     body = '\n'.join(s)
     html = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Fig. 1 draft: causal chain with taxonomy circle</title>
