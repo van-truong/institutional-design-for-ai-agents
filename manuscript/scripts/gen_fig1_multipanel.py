@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Draft Fig. 1 as three panels composed from the other draft generators (exploration, not yet in the paper).
 
-(A) the agent-institution Coleman boat (gen_coleman_boat.py), (B) the nested systems around an agent
-(gen_nested_rings.py, rings only), and (C) the taxonomy circle (the circle panel of gen_fig1_chain.py).
+(A) the agent-institution Coleman boat (gen_coleman_boat.py) and (B) nested systems around interacting agents,
+with the 66 mechanisms as one ring (gen_rings_taxonomy.py).
 Each source's CSS classes and element ids are prefixed so the panels cannot collide.
 Run from manuscript/:  python3 scripts/gen_fig1_multipanel.py
 """
@@ -15,8 +15,7 @@ INK, MUTED = '#3F4D5A', '#6B7787'
 
 SOURCES = {  # panel: (generator, html, crop viewBox or None for the full figure)
     'a': ('gen_coleman_boat.py', 'figure_coleman-boat.html', None),
-    'b': ('gen_nested_rings.py', 'figure_nested-rings.html', (0, 12, 592, 636)),
-    'c': ('gen_fig1_chain.py', 'figure1_causal-chain.html', (315, 356, 570, 572)),
+    'b': ('gen_rings_taxonomy.py', 'figure_rings-taxonomy.html', None),
 }
 
 def extract(path, prefix):
@@ -45,17 +44,13 @@ def main():
     parts.append(f'<text x="20" y="26" class="ptitle">A  From rules to outcomes, and back (after Coleman)</text>')
     parts.append(f'<svg x="20" y="36" width="{aw:.0f}" height="{ah:.0f}" viewBox="{" ".join(map(str, vb))}" class="a">{body}</svg>')
     y2 = 36 + ah + 56
-    # panels B and C side by side
-    pw = 470
-    for (key, x, title) in (('b', 10, 'B  Nested systems around an agent'),
-                            ('c', 520, 'C  What institutions can use')):
-        st, _, body = extract(os.path.join(DRAFTS, SOURCES[key][1]), key)
-        styles.append(st)
-        crop = SOURCES[key][2]
-        ph = pw * crop[3] / crop[2]
-        parts.append(f'<text x="{x + 10}" y="{y2 - 14:.0f}" class="ptitle">{title}</text>')
-        parts.append(f'<svg x="{x}" y="{y2:.0f}" width="{pw}" height="{ph:.0f}" viewBox="{" ".join(map(str, crop))}" class="{key}">{body}</svg>')
-    H = y2 + pw * 636 / 600 + 10
+    # panel B: nested systems with the taxonomy as one ring (full width, with its legend)
+    st, vb, body = extract(os.path.join(DRAFTS, SOURCES['b'][1]), 'b')
+    styles.append(st)
+    bw = W - 40; bh = bw * vb[3] / vb[2]
+    parts.append(f'<text x="20" y="{y2 - 14:.0f}" class="ptitle">B  Nested systems around interacting agents, with the 66 mechanisms as a ring</text>')
+    parts.append(f'<svg x="20" y="{y2:.0f}" width="{bw:.0f}" height="{bh:.0f}" viewBox="{" ".join(map(str, vb))}" class="b">{body}</svg>')
+    H = y2 + bh + 10
     css = '\n'.join(styles) + f'\n  .ptitle{{font-family:"Helvetica Neue",Arial,sans-serif;font-size:20px;font-weight:800;fill:{INK};}}'
     html = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Draft Fig. 1: boat, rings, and taxonomy</title>
