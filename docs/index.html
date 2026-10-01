@@ -10,6 +10,10 @@
   <script src="phenomena.js" defer></script>
   <script src="rings.js" defer></script>
   <script src="coleman.js" defer></script>
+  <script src="failures.js" defer></script>
+  <link rel="stylesheet" href="figs-extra.css">
+  <script src="context.js" defer></script>
+  <script src="designspace.js" defer></script>
 </head>
 <body>
   <header class="poster-header" id="top">
@@ -116,6 +120,20 @@
       </div>
     </section>
 
+    <section id="context" class="rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>The agent in its institutional context</h2>
+          <h3>Institutions can be designed or can emerge. For AI agents today, design must lead.</h3>
+        </div>
+        <p>Individual models sit inside agent&ndash;group interactions, which sit inside governing institutions. The rings beside each layer match the nested systems above.</p>
+      </div>
+      <div class="fx-layout">
+        <figure><div id="ctx-stage" class="ctx-stage"></div></figure>
+        <aside id="ctx-panel" class="fx-panel" aria-live="polite"></aside>
+      </div>
+    </section>
+
     <section class="motivation rule-top">
       <div class="section-intro">
         <div>
@@ -146,6 +164,20 @@
       <figure class="wide-figure">
         <img src="assets/cooperation-dilemmas.svg" alt="Extractive, contributive, second-order, and repair dilemmas shown with human and LLM-agent examples.">
       </figure>
+    </section>
+
+    <section id="design-space" class="rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>The design space of agent institutions</h2>
+          <h3>Functions say what an institution must do; mechanism families say how it acts on agents.</h3>
+        </div>
+        <p>Seven institutional functions, in an information layer and a consequence layer, and six mechanism families, in soft and hard channels.</p>
+      </div>
+      <div class="fx-layout">
+        <figure><div id="ds-stage" class="ds-stage"></div></figure>
+        <aside id="ds-panel" class="fx-panel" aria-live="polite"></aside>
+      </div>
     </section>
 
     <section id="taxonomy" class="taxonomy-section">
@@ -200,6 +232,20 @@
       <div class="ph-legend" id="ph-legend"></div>
       <div class="ph-matrix" id="ph-matrix">Loading…</div>
       <p class="ph-hint">Click any row to open the papers behind it and, where they exist, the real-world incidents.</p>
+    </section>
+
+    <section id="failures" class="rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>When cooperation mechanisms fail</h2>
+          <h3>Adding a mechanism does not reliably add cooperation.</h3>
+        </div>
+        <p>Three ways a mechanism can backfire, each at the enforcement stage where it breaks: the observer, the arbiter, or the enforcer. Each column runs from the mechanism to what to measure and the safeguards that address it, then loops back to revise and retest.</p>
+      </div>
+      <div class="boat-layout">
+        <figure><div id="fail-stage" class="fail-stage"></div></figure>
+        <aside id="fail-panel" class="fail-panel" aria-live="polite"></aside>
+      </div>
     </section>
 
     <section id="boat" class="boat-section rule-top">
