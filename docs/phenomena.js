@@ -95,8 +95,8 @@
     const svg = svgEl("svg", { xmlns: NS, "font-family": FONT, role: "img" }, host);
     // panel headings in the taxonomy figure's title style (bold ink, centered), sized to print like Fig. 5's title
     const panel = (y, letter, title) => {
-      stext(20, y, letter, { "font-size": 25, "font-weight": 800, fill: "#3F4D5A" }, svg);
-      stext(W / 2, y, title, { "font-size": 25, "font-weight": 700, fill: "#3F4D5A", "text-anchor": "middle" }, svg);
+      stext(20, y, letter, { "font-size": 27.5, "font-weight": 700, fill: "#2C2C2A" }, svg);
+      stext(W / 2, y, title, { "font-size": 27.5, "font-weight": 700, fill: "#2C2C2A", "text-anchor": "middle" }, svg);
     };
     panel(28, "A", "Phenomena by type and kind of agent");
     const ga = svgEl("g", { transform: `translate(${((W - 1200 * SA) / 2).toFixed(1)} ${(50 - RAD_TOP * SA).toFixed(1)}) scale(${SA})` }, svg);

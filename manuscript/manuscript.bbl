@@ -7,7 +7,7 @@
 Acemoglu, D., Johnson, S., Robinson, J.: Institutions as the {{Fundamental
   Cause}} of {{Long-Run Growth}} (May 2004). \doi{10.3386/w10481}
 
-\bibitem{ackerman2026humanoid}
+\bibitem{ackerman2025humanoid}
 Ackerman, E.: Humanoid hype dominates top robotics stories of 2025. IEEE
   Spectrum (Dec 2025),
   \url{https://spectrum.ieee.org/top-robotics-stories-2025}, accessed:
@@ -67,7 +67,7 @@ Bansal, G., Hua, W., Huang, Z., Fourney, A., Swearngin, A., Epperson, W.,
   S.: Magentic marketplace: An open-source environment for studying agentic
   markets (2025), \url{https://arxiv.org/abs/2510.25779}
 
-\bibitem{baumol1952welfare}
+\bibitem{baumol2004welfare}
 Baumol, W.J.: Welfare economics and the theory of the state. In: Rowley, C.K.,
   Schneider, F. (eds.) The Encyclopedia of Public Choice, pp. 937--940.
   Springer, Boston, MA (2004). \doi{10.1007/978-0-306-47828-4_214},
@@ -266,13 +266,13 @@ Grimm, V., Revilla, E., Berger, U., Jeltsch, F., Mooij, W.M., Railsback, S.F.,
   modeling of agent-based complex systems: Lessons from ecology. Science
   \textbf{310}(5750),  987--991 (2005). \doi{10.1126/science.1116681}
 
-\bibitem{gross2025hidden}
+\bibitem{gross2026hidden}
 Gross, J., Graf, C., Rossetti, C.S.L.: The hidden costs of human cooperation.
   Trends in Cognitive Sciences  \textbf{30}(4),  322--334 (2026).
   \doi{10.1016/j.tics.2025.09.016},
   \url{https://doi.org/10.1016/j.tics.2025.09.016}
 
-\bibitem{gupta2025social}
+\bibitem{gupta2026social}
 Gupta, P., Zhong, Q., Yakura, H., Eisenmann, T., Rahwan, I.: The role of social
   learning and collective norm formation in fostering cooperation in {LLM}
   multi-agent systems. In: Proceedings of the 25th International Conference on
@@ -331,7 +331,7 @@ Harsanyi, J.C.: Games with {{Incomplete Information Played}} by
 Hart, H.L.A.: The Concept of Law. Oxford University Press, Oxford, 3 edn.
   (2012)
 
-\bibitem{hayek1978law}
+\bibitem{hayek1973law}
 Hayek, F.A.: Law, Legislation and Liberty, Volume 1: Rules and Order.
   University of Chicago Press, Chicago (1973),
   \url{https://press.uchicago.edu/ucp/books/book/chicago/L/bo26122880.html}
@@ -395,7 +395,7 @@ Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
 Knight, J.: Institutions and Social Conflict. Political Economy of Institutions
   and Decisions, Cambridge University Press, Cambridge (1992)
 
-\bibitem{kolt2025governingaiagents}
+\bibitem{kolt2026governingaiagents}
 Kolt, N.: Governing {AI} agents. Notre Dame Law Review  \textbf{101}(1), ~335
   (2026), \url{https://ndlawreview.org/governing-ai-agents/}
 
@@ -405,7 +405,7 @@ Korosec, K.: Waymo's robotaxi expansion accelerates with 3 new cities.
   \url{https://techcrunch.com/2025/11/03/waymos-robotaxi-expansion-accelerates-with-3-new-cities/},
   accessed: 2026-05-07
 
-\bibitem{leggSpecificationGamingFlip2020}
+\bibitem{krakovnaSpecificationGamingFlip2020}
 Krakovna, V., Uesato, J., Mikulik, V., Rahtz, M., Everitt, T., Kumar, R.,
   Kenton, Z., Leike, J., Legg, S.: Specification gaming: The flip side of
   {{AI}} ingenuity.
@@ -457,7 +457,7 @@ Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
   Association for Computational Linguistics (2022).
   \doi{10.18653/v1/2022.acl-long.229}
 
-\bibitem{liu2025agentbenchevaluatingllmsagents}
+\bibitem{liu2024agentbenchevaluatingllmsagents}
 Liu, X., Yu, H., Zhang, H., Xu, Y., Lei, X., Lai, H., Gu, Y., Ding, H., Men,
   K., Yang, K., Zhang, S., Deng, X., Zeng, A., Du, Z., Zhang, C., Shen, S.,
   Zhang, T., Su, Y., Sun, H., Huang, M., Dong, Y., Tang, J.: {AgentBench}:
@@ -639,7 +639,7 @@ Seyedin, F., Weller, A., Yun, J., Babaei, M.: The politician, the liar, and the
   arXiv preprint arXiv:2608.09574 (2026),
   \url{https://arxiv.org/abs/2608.09574}
 
-\bibitem{shapiraCleverHansNeural2023}
+\bibitem{shapiraCleverHansNeural2024}
 Shapira, N., Levy, M., Alavi, S.H., Zhou, X., Choi, Y., Goldberg, Y., Sap, M.,
   Shwartz, V.: Clever {Hans} or neural theory of mind? {Stress} testing social
   reasoning in large language models. In: Graham, Y., Purver, M. (eds.)
@@ -766,7 +766,7 @@ Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
   \doi{10.1038/S42256-025-00986-Z},
   \url{https://doi.org/10.1038/s42256-025-00986-z}
 
-\bibitem{wang2025lawinsilico}
+\bibitem{wang2026lawinsilico}
 Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
   Simulating legal society with {LLM}-based agents. In: Findings of the
   Association for Computational Linguistics: ACL 2026. pp. 8061--8104.
@@ -796,7 +796,7 @@ Wooldridge, M., Jennings, N.R.: Intelligent agents: Theory and practice. The
   Knowledge Engineering Review  \textbf{10}(2),  115--152 (1995).
   \doi{10.1017/S0269888900008122}
 
-\bibitem{wu2023autogenenablingnextgenllm}
+\bibitem{wu2024autogenenablingnextgenllm}
 Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X.,
   Zhang, S., Liu, J., Awadallah, A.H., White, R.W., Burger, D., Wang, C.:
   {AutoGen}: Enabling next-gen {LLM} applications via multi-agent

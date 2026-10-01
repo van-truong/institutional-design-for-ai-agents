@@ -81,20 +81,20 @@ def build():
     o=[f'<svg width="100%" viewBox="0 0 {W} {{H}}" role="img" xmlns="http://www.w3.org/2000/svg" font-family="{FONT}">']
     o.append('<title>Design dimensions for cooperation-shaping institutions</title>')
     # Panel A label
-    o.append(f'<text x="{M}" y="22" font-size="13" font-weight="700" fill="#2C2C2A">A</text>')
-    o.append(f'<text x="{W/2:.1f}" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#2C2C2A">Enforcement stages</text>')
+    o.append(f'<text x="{M}" y="22" font-size="13.5" font-weight="700" fill="#2C2C2A">A</text>')
+    o.append(f'<text x="{W/2:.1f}" y="22" text-anchor="middle" font-size="13.5" font-weight="700" fill="#2C2C2A">Enforcement stages</text>')
     for i,(b,t,q,ex) in enumerate(STAGES):
         x=M+i*(SCW+SG); o.append(stage_card(x,b,t,q,ex))
         # arrow between cards
         if i<2:
             ax=x+SCW+2; o.append(f'<path d="M {ax:.1f} {SY+SCH/2:.1f} L {ax+SG-4:.1f} {SY+SCH/2:.1f}" stroke="{INK}" stroke-width="1.4" marker-end="url(#ah3)"/>')
     # Panel B label
-    blab=SY+SCH+22
-    o.append(f'<text x="{M}" y="{blab}" font-size="13" font-weight="700" fill="#2C2C2A">B</text>')
-    o.append(f'<text x="{W/2:.1f}" y="{blab}" text-anchor="middle" font-size="13" font-weight="700" fill="#2C2C2A">Evaluation properties</text>')
+    blab=SY+SCH+40
+    o.append(f'<text x="{M}" y="{blab}" font-size="13.5" font-weight="700" fill="#2C2C2A">B</text>')
+    o.append(f'<text x="{W/2:.1f}" y="{blab}" text-anchor="middle" font-size="13.5" font-weight="700" fill="#2C2C2A">Evaluation properties</text>')
     # property rows
     row1=PROPS[:4]; row2=PROPS[4:]
-    ry1=SY+SCH+38
+    ry1=SY+SCH+56
     x0=(W-(4*PBW+3*PGAP))/2
     for i,(t,q,ex) in enumerate(row1):
         o.append(prop_box(x0+i*(PBW+PGAP),ry1,t,q,ex))
