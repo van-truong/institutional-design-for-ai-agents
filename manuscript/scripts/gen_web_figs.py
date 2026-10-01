@@ -21,6 +21,7 @@ FIGS = {
     'figure_failure-modes': ('manuscript/figs/failures-paper.html', 'Paid, not obeyed'),
     'figure_agent-in-context-web': ('manuscript/figs/context-paper.html', 'Individual model'),
     'figure_design-space-web': ('manuscript/figs/designspace-paper.html', 'Agent institution'),
+    'figure_taxonomy-circle': ('manuscript/figs/taxcircle-paper.html', 'mechanisms'),
     'figure_design-space-game': ('manuscript/figs/designspace-game-paper.html', 'Badges'),  # draft: Fig. 4 with game badges
     'figure_dilemmas': ('manuscript/figs/dilemmas-paper.html', 'Extractive'),
     'figure_phenomena-map': ('manuscript/figs/phenomena-paper.html', 'Collusion'),
