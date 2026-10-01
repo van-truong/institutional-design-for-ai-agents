@@ -93,17 +93,18 @@
   function drawPaper(data, host) {
     const W = 1000, SA = 0.75, FS = 1.4, RAD_TOP = 4, RAD_BOT = 880;  // spoke-map crop (its own 1200-wide frame)
     const svg = svgEl("svg", { xmlns: NS, "font-family": FONT, role: "img" }, host);
+    // panel headings in the taxonomy figure's title style (bold ink, centered), sized to print like Fig. 5's title
     const panel = (y, letter, title) => {
-      stext(20, y, letter, { "font-size": 24, "font-weight": 800, fill: "#2C2C2A" }, svg);
-      stext(48, y, title, { "font-size": 19, "font-weight": 700, fill: "#2C2C2A" }, svg);
+      stext(20, y, letter, { "font-size": 25, "font-weight": 800, fill: "#3F4D5A" }, svg);
+      stext(W / 2, y, title, { "font-size": 25, "font-weight": 700, fill: "#3F4D5A", "text-anchor": "middle" }, svg);
     };
-    panel(26, "A", "Spokes are phenomenon types; rings are substrates");
-    const ga = svgEl("g", { transform: `translate(${((W - 1200 * SA) / 2).toFixed(1)} ${(40 - RAD_TOP * SA).toFixed(1)}) scale(${SA})` }, svg);
+    panel(28, "A", "Phenomena by type and substrate");
+    const ga = svgEl("g", { transform: `translate(${((W - 1200 * SA) / 2).toFixed(1)} ${(50 - RAD_TOP * SA).toFixed(1)}) scale(${SA})` }, svg);
     radialMap(ga, data, { fs: FS, idp: "pp-", ringKey: false, interactive: false });
-    const yb = 40 + (RAD_BOT - RAD_TOP) * SA + 18;
+    const yb = 50 + (RAD_BOT - RAD_TOP) * SA + 18;
     svgEl("line", { x1: 20, y1: yb - 10, x2: W - 20, y2: yb - 10, stroke: HAIR, "stroke-width": 1 }, svg);
-    panel(yb + 20, "B", "The same counts, unravelled into a list, with incidents");
-    const H = drawList(svg, data, yb + 34);
+    panel(yb + 24, "B", "Phenomena with documented real-world incidents");
+    const H = drawList(svg, data, yb + 40);
     svg.setAttribute("viewBox", `0 0 ${W} ${H.toFixed(0)}`);
     svg.setAttribute("width", W); svg.setAttribute("height", H.toFixed(0));
     host.style.width = W + "px"; host.style.height = H.toFixed(0) + "px";
@@ -173,7 +174,7 @@
       stext(lx + 14, ly, lab, { "font-size": 15, fill: INK }, svg);
       lx += lab.length * 8 + 46;
     });
-    stext(W - 20, ly, `Dot area ∝ coded instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
+    stext(W - 20, ly, `Dot area ∝ instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
     return ly + 12;
   }
 
@@ -232,7 +233,7 @@
     });
     svgEl("circle", { cx: CX, cy: CY, r: 70, fill: "#fff", stroke: HAIR, "stroke-width": 1.2 }, svg);
     stext(CX, CY + 6 * k, String(data.counts.total), { "text-anchor": "middle", "font-size": 40 * k, "font-weight": 800, fill: INK }, svg);
-    stext(CX, CY + 30 * k, k > 1 ? "instances" : "coded instances", { "text-anchor": "middle", "font-size": 13.5 * k, fill: MUT }, svg);
+    stext(CX, CY + 30 * k, "instances", { "text-anchor": "middle", "font-size": 13.5 * k, fill: MUT }, svg);
 
     const nodes = [];
     data.types.forEach((t) => {

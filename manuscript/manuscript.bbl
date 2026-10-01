@@ -9,7 +9,7 @@ Acemoglu, D., Johnson, S., Robinson, J.: Institutions as the {{Fundamental
 
 \bibitem{ackerman2026humanoid}
 Ackerman, E.: Humanoid hype dominates top robotics stories of 2025. IEEE
-  Spectrum (Jan 2026),
+  Spectrum (Dec 2025),
   \url{https://spectrum.ieee.org/top-robotics-stories-2025}, accessed:
   2026-05-07
 
@@ -30,9 +30,9 @@ Anshelevich, E., Dasgupta, A., Kleinberg, J., Tardos, {\'E}., Wexler, T.,
 \bibitem{anthis2025llmsocialsimulationspromising}
 Anthis, J.R., Liu, R., Richardson, S.M., Kozlowski, A.C., Koch, B.,
   Brynjolfsson, E., Evans, J.A., Bernstein, M.S.: Position: {LLM} social
-  simulations are a promising research method. In: Forty-second International
-  Conference on Machine Learning, {ICML} 2025, Vancouver, BC, Canada, July
-  13-19, 2025 - Position Paper Track. OpenReview.net (2025),
+  simulations are a promising research method. In: Proceedings of the 42nd
+  International Conference on Machine Learning. Proceedings of Machine Learning
+  Research, vol.~267, pp. 81005--81034. PMLR (2025),
   \url{https://proceedings.mlr.press/v267/anthis25a.html}
 
 \bibitem{aokiComparativeInstitutionalAnalysis2001}
@@ -43,6 +43,11 @@ Aoki, M.: Toward a {{Comparative Institutional Analysis}}. Comparative
 Axelrod, R., Hamilton, W.D.: The evolution of cooperation. Science
   \textbf{211}(4489),  1390--1396 (1981). \doi{10.1126/science.7466396},
   \url{https://www.science.org/doi/abs/10.1126/science.7466396}
+
+\bibitem{axtell1996aligning}
+Axtell, R., Axelrod, R., Epstein, J.M., Cohen, M.D.: Aligning simulation
+  models: A case study and results. Computational and Mathematical Organization
+  Theory  (1996). \doi{10.1007/BF01299065}
 
 \bibitem{bacharachIndividualChoiceTeams2006}
 Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
@@ -64,14 +69,14 @@ Baumol, W.J.: Welfare economics and the theory of the state. In: Rowley, C.K.,
   \url{https://doi.org/10.1007/978-0-306-47828-4_214}
 
 \bibitem{secFlashCrash2010}
-Berman, G.E.: Market participants and the may 6 flash crash (Oct 2010),
+Berman, G.E.: Market participants and the {May} 6 flash crash (Oct 2010),
   \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech by the
   U.S. Securities and Exchange Commission
 
 \bibitem{boella2006normative}
 Boella, G., van~der Torre, L., Verhagen, H.: Introduction to normative
   multiagent systems. Computational and Mathematical Organization Theory
-  \textbf{12}(2--3),  71--80 (2006)
+  \textbf{12}(2--3),  71--79 (2006). \doi{10.1007/s10588-006-9537-7}
 
 \bibitem{bowlesPoliciesDesignedSelfInterested2008}
 Bowles, S.: Policies {{Designed}} for {{Self-Interested Citizens May
@@ -79,14 +84,25 @@ Bowles, S.: Policies {{Designed}} for {{Self-Interested Citizens May
   Experiments}}. Science  \textbf{320}(5883),  1605--1609 (Jun 2008).
   \doi{10.1126/science.1152110}
 
+\bibitem{bronfenbrenner1979ecology}
+Bronfenbrenner, U.: The Ecology of Human Development: Experiments by Nature and
+  Design. Harvard University Press, Cambridge, MA (1979).
+  \doi{10.4159/9780674028845}
+
 \bibitem{buchananCalculusConsentLogical1965}
 Buchanan, J.M., Tullock, G.: The {{Calculus}} of {{Consent}}: {{Logical
   Foundations}} of {{Constitutional Democracy}}. University of Michigan Press
   (1965)
 
 \bibitem{calvertRationalActorsEquilibrium1995}
-Calvert, R.: Rational {{Actors}}, {{Equilibrium}} and {{Social Institutions}}.
-  Explaining social institutions  (Jan 1995)
+Calvert, R.: Rational actors, equilibrium, and social institutions. In: Knight,
+  J., Sened, I. (eds.) Explaining Social Institutions, pp. 57--94. University
+  of Michigan Press, Ann Arbor, MI (1995)
+
+\bibitem{castelfranchi1998modelling}
+Castelfranchi, C.: Modelling social action for {AI} agents. Artificial
+  Intelligence  \textbf{103}(1--2),  157--182 (1998).
+  \doi{10.1016/S0004-3702(98)00056-3}
 
 \bibitem{chan2024visibility}
 Chan, A., Ezell, C., Kaufmann, M., et~al.: Visibility into {AI} agents. In:
@@ -95,13 +111,21 @@ Chan, A., Ezell, C., Kaufmann, M., et~al.: Visibility into {AI} agents. In:
 
 \bibitem{chan2025infrastructure}
 Chan, A., Wei, K., Huang, S., Rajkumar, N., Perrier, E., Lazar, S., Hadfield,
-  G.K., Anderljung, M.: Infrastructure for {AI} agents (2025),
-  \url{https://arxiv.org/abs/2501.10114}
+  G.K., Anderljung, M.: Infrastructure for {AI} agents. Transactions on Machine
+  Learning Research  (2025), \url{https://openreview.net/forum?id=Ckh17xN2R2}
+
+\bibitem{coleman1990foundations}
+Coleman, J.S.: Foundations of Social Theory. Belknap Press of Harvard
+  University Press, Cambridge, MA (1990)
 
 \bibitem{cox2010designprinciples}
 Cox, M., Arnold, G., Villamayor~Tom{\'a}s, S.: A review of design principles
   for community-based natural resource management. Ecology and Society
   \textbf{15}(4), ~38 (2010). \doi{10.5751/ES-03704-150438}
+
+\bibitem{crawford1995grammar}
+Crawford, S.E.S., Ostrom, E.: A grammar of institutions. American Political
+  Science Review  \textbf{89}(3),  582--600 (1995). \doi{10.2307/2082975}
 
 \bibitem{dafoe2021cooperative}
 Dafoe, A., Bachrach, Y., Hadfield, G., Horvitz, E., Larson, K., Graepel, T.:
@@ -121,6 +145,13 @@ Delimitrou, C., Kozyrakis, C.: Quasar: Resource-efficient and {{QoS-aware}}
   pp. 127--144. {{ASPLOS}} '14, Association for Computing Machinery, New York,
   NY, USA (Feb 2014). \doi{10.1145/2541940.2541941}
 
+\bibitem{dupontExperimentsAlgorithmicGovernance2017}
+Dupont, Q.: Experiments in {{Algorithmic Governance}}: {{A}} history and
+  ethnography of " {{The DAO}}, " a failed {{Decentralized Autonomous
+  Organization}}. In: Campbell-Verduyn, M. (ed.) Bitcoin and Beyond: The
+  Challenges and Opportunities of Blockchains for Global Governance, pp.
+  157--177. Routledge (Jan 2017). \doi{10.4324/9781315211909-8}
+
 \bibitem{eisenAmazon2011}
 Eisen, M.: Amazon's \$23,698,655.93 book about flies.
   https://www.michaeleisen.org/blog/p/358/ (Apr 2011)
@@ -129,6 +160,11 @@ Eisen, M.: Amazon's \$23,698,655.93 book about flies.
 Elster, J.: Ulysses and the sirens: {{A}} theory of imperfect rationality.
   Social Science Information/sur les sciences sociales  \textbf{16}(5),
   469--526 (1977). \doi{10.1177/053901847701600501}
+
+\bibitem{epstein1996growing}
+Epstein, J.M., Axtell, R.L.: Growing Artificial Societies: Social Science from
+  the Bottom Up. MIT Press, Cambridge, MA (1996).
+  \doi{10.7551/mitpress/3374.001.0001}
 
 \bibitem{esteva2001electronic}
 Esteva, M., Rodr{\'\i}guez-Aguilar, J.A., Sierra, C., Garcia, P., Arcos, J.L.:
@@ -143,13 +179,24 @@ Fan, T., Yang, Y., Jiang, Y., Zhang, Y., Chen, Y., Huang, C.: {{AI-Trader}}:
   2025). \doi{10.48550/arXiv.2512.10971}
 
 \bibitem{faulkner2026evaluatingcooperationllmsocial}
-Faulkner, R., Deshpande, A., Piedrahita, D.G., Leibo, J.Z., Jin, Z.: Evaluating
-  cooperation in llm social groups through elected leadership (2026),
-  \url{https://arxiv.org/abs/2604.11721}
+Faulkner, R., Deshpande, A., Guzman~Piedrahita, D., Leibo, J.Z., Jin, Z.:
+  Evaluating cooperation in {LLM} social groups through elected leadership
+  (2026), \url{https://arxiv.org/abs/2604.11721}
 
 \bibitem{fehr2000cooperation}
 Fehr, E., G{\"a}chter, S.: Cooperation and punishment in public goods
   experiments. American Economic Review  \textbf{90}(4),  980--994 (2000)
+
+\bibitem{fenner1988smallpox}
+Fenner, F., Henderson, D.A., Arita, I., Je{\v{z}}ek, Z., Ladnyi, I.D.: Smallpox
+  and Its Eradication. World Health Organization, Geneva (1988),
+  \url{https://iris.who.int/handle/10665/39485}, verified against the WHO IRIS
+  record and library catalogs, 2026-10-01
+
+\bibitem{frantz2021ig2}
+Frantz, C.K., Siddiki, S.: Institutional grammar 2.0: A specification for
+  encoding and analyzing institutional design. Public Administration
+  \textbf{99}(2),  222--247 (2021). \doi{10.1111/padm.12719}
 
 \bibitem{freyDoesPayMotivate1999}
 Frey, B., Goette, L.: Does {{Pay Motivate Volunteers}}? Working Paper~7,
@@ -161,10 +208,16 @@ Fudenberg, D., Maskin, E.: The {{Folk Theorem}} in {{Repeated Games}} with
   {{Discounting}} or with {{Incomplete Information}}. Econometrica
   \textbf{54}(3),  533--554 (1986). \doi{10.2307/1911307}
 
+\bibitem{gao2024llmabm}
+Gao, C., Lan, X., Li, N., Yuan, Y., Ding, J., Zhou, Z., Xu, F., Li, Y.: Large
+  language models empowered agent-based modeling and simulation: A survey and
+  perspectives. Humanities and Social Sciences Communications  \textbf{11}(1),
+  ~1259 (2024). \doi{10.1057/s41599-024-03611-3}
+
 \bibitem{garcinAggregatingReputationFeedback2009}
-Garcin, F., Faltings, B., Jurca, R.: Aggregating {{Reputation Feedback}}.
+Garcin, F., Faltings, B., Jurca, R.: Aggregating reputation feedback. In:
   Proceedings of the First International Conference on Reputation: Theory and
-  Technology  (Jan 2009)
+  Technology (ICORE 09) (2009), \url{https://infoscience.epfl.ch/record/140266}
 
 \bibitem{gneezy2000fine}
 Gneezy, U., Rustichini, A.: A fine is a price. The Journal of Legal Studies
@@ -188,11 +241,31 @@ Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S.,
   B., Bowman, S.R., Hubinger, E.: Alignment faking in large language models
   (2024), \url{https://arxiv.org/abs/2412.14093}
 
+\bibitem{grimm2020odd}
+Grimm, V., Railsback, S.F., Vincenot, C.E., et~al.: The {ODD} protocol for
+  describing agent-based and other simulation models: A second update to
+  improve clarity, replication, and structural realism. Journal of Artificial
+  Societies and Social Simulation  \textbf{23}(2), ~7 (2020).
+  \doi{10.18564/jasss.4259}
+
+\bibitem{grimm2005pattern}
+Grimm, V., Revilla, E., Berger, U., Jeltsch, F., Mooij, W.M., Railsback, S.F.,
+  Thulke, H.H., Weiner, J., Wiegand, T., DeAngelis, D.L.: Pattern-oriented
+  modeling of agent-based complex systems: Lessons from ecology. Science
+  \textbf{310}(5750),  987--991 (2005). \doi{10.1126/science.1116681}
+
 \bibitem{gross2025hidden}
 Gross, J., Graf, C., Rossetti, C.S.L.: The hidden costs of human cooperation.
-  Trends in Cognitive Sciences  (2025). \doi{10.1016/j.tics.2025.09.016},
-  \url{https://doi.org/10.1016/j.tics.2025.09.016}, in press, corrected proof.
-  Available online 15 October 2025
+  Trends in Cognitive Sciences  \textbf{30}(4),  322--334 (2026).
+  \doi{10.1016/j.tics.2025.09.016},
+  \url{https://doi.org/10.1016/j.tics.2025.09.016}
+
+\bibitem{gupta2025social}
+Gupta, P., Zhong, Q., Yakura, H., Eisenmann, T., Rahwan, I.: The role of social
+  learning and collective norm formation in fostering cooperation in {LLM}
+  multi-agent systems. In: Proceedings of the 25th International Conference on
+  Autonomous Agents and Multiagent Systems (AAMAS) (2026),
+  \url{https://arxiv.org/abs/2510.14401}
 
 \bibitem{guzmanpiedrahita2026aiposes}
 Guzman~Piedrahita, D., Banerjee, D., Blin, K., Cobben, P., Corsi, G., Huang,
@@ -207,7 +280,8 @@ Guzman~Piedrahita, D., Banerjee, D., Blin, K., Cobben, P., Corsi, G., Huang,
 \bibitem{piedrahita2025corruptedreasoningreasoninglanguage}
 Guzman~Piedrahita, D., Yang, Y., Sachan, M., Ramponi, G., Sch{\"o}lkopf, B.,
   Jin, Z.: Corrupted by reasoning: Reasoning language models become free-riders
-  in public goods games (2025), \url{https://arxiv.org/abs/2506.23276}
+  in public goods games. In: Second Conference on Language Modeling (COLM)
+  (2025), \url{https://openreview.net/forum?id=kH6LOHGjEl}
 
 \bibitem{hadfieldmenell2019incomplete}
 Hadfield-Menell, D., Hadfield, G.K.: Incomplete contracting and {AI} alignment.
@@ -215,9 +289,9 @@ Hadfield-Menell, D., Hadfield, G.K.: Incomplete contracting and {AI} alignment.
   pp. 417--422 (2019). \doi{10.1145/3306618.3314250}
 
 \bibitem{hamilton1964genetical}
-Hamilton, W.D.: The genetical evolution of social behaviour. ii. Journal of
+Hamilton, W.D.: The genetical evolution of social behaviour. {II}. Journal of
   Theoretical Biology  \textbf{7}(1),  17--52 (1964).
-  \doi{https://doi.org/10.1016/0022-5193(64)90039-6},
+  \doi{10.1016/0022-5193(64)90039-6},
   \url{https://www.sciencedirect.com/science/article/pii/0022519364900396}
 
 \bibitem{hammond2025multiagentrisksadvancedai}
@@ -229,16 +303,11 @@ Hammond, L., Chan, A., Clifton, J., Hoelscher-Obermaier, J., Khan, A., McLean,
   A., Motwani, S., Reuel, A., Conitzer, V., Dennis, M., Gabriel, I., Gleave,
   A., Hadfield, G., Haghtalab, N., Kasirzadeh, A., Krier, S., Larson, K.,
   Lehman, J., Parkes, D.C., Piliouras, G., Rahwan, I.: Multi-agent risks from
-  advanced ai (2025), \url{https://arxiv.org/abs/2502.14143}
+  advanced {AI} (2025), \url{https://arxiv.org/abs/2502.14143}
 
 \bibitem{hardinTragedyCommons1968}
 Hardin, G.: The {{Tragedy}} of the {{Commons}}. Science  \textbf{162}(3859),
   1243--1248 (Dec 1968). \doi{10.1126/science.162.3859.1243}
-
-\bibitem{harding_aws_2025}
-Harding, S.: {AWS} outage reminds us why \$2,449 {Internet}-dependent beds are
-  a bad idea (Oct 2025),
-  \url{https://arstechnica.com/gadgets/2025/10/smart-beds-leave-sleepers-hot-and-bothered-during-aws-outage/}
 
 \bibitem{harsanyiGamesIncompleteInformation1967}
 Harsanyi, J.C.: Games with {{Incomplete Information Played}} by
@@ -251,10 +320,9 @@ Hart, H.L.A.: The Concept of Law. Oxford University Press, Oxford, 3 edn.
   (2012)
 
 \bibitem{hayek1978law}
-Hayek, F.: Law, Legislation and Liberty: A New Statement of the Liberal
-  Principles of Justice and Political Economy. No.~v. 3 in Law, legislation,
-  and liberty, University of Chicago Press (1978),
-  \url{https://books.google.com/books?id=X3QihjxsYlMC}
+Hayek, F.A.: Law, Legislation and Liberty, Volume 1: Rules and Order.
+  University of Chicago Press, Chicago (1973),
+  \url{https://press.uchicago.edu/ucp/books/book/chicago/L/bo26122880.html}
 
 \bibitem{herrmannAntisocialPunishmentSocieties2008}
 Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
@@ -263,8 +331,9 @@ Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
 
 \bibitem{hota2025nomiclaw}
 Hota, A., Jokinen, J.P.P.: {NomicLaw}: Emergent trust and strategic
-  argumentation in {LLMs} during collaborative law-making (2025),
-  \url{https://arxiv.org/abs/2508.05344}
+  argumentation in {LLMs} during collaborative law-making. In: Proceedings of
+  the AAAI/ACM Conference on AI, Ethics, and Society. vol.~8, pp. 1278--1289
+  (2025). \doi{10.1609/aies.v8i2.36629}
 
 \bibitem{huDissociativeIdentityLanguage2026}
 Hu, B.A., Rong, H., Kleek, M.V.: Dissociative {{Identity}}: {{Language Model
@@ -281,10 +350,16 @@ Huang, X.A., La~Malfa, E., Marro, S., Asperti, A., Cohn, A.G., Wooldridge,
   {{EMNLP}} 2024. pp. 2964--2983. Association for Computational Linguistics,
   Miami, Florida, USA (Nov 2024). \doi{10.18653/v1/2024.findings-emnlp.167}
 
+\bibitem{huang2026groupalignment}
+Huang, X.A., Marro, S., Tharas, C., Truong, V.Q., La~Malfa, E., Jin, Z.: Group
+  alignment: Internal and external incentives for cooperation in social
+  dilemmas (2026), \url{https://openreview.net/forum?id=d5Fvm1QYm8}, under
+  review at ICLR 2027
+
 \bibitem{huang2026mechanismdesignenoughprosocial}
 Huang, X.A., Tharas, C., Marro, S., Truong, V.Q., Schölkopf, B., Malfa, E.L.,
-  Jin, Z.: Mechanism design is not enough: Prosocial agents for cooperative ai
-  (2026), \url{https://arxiv.org/abs/2605.08426}
+  Jin, Z.: Mechanism design is not enough: Prosocial agents for cooperative
+  {AI} (2026), \url{https://arxiv.org/abs/2605.08426}
 
 \bibitem{hubner2002moise}
 H{\"u}bner, J.F., Sichman, J.S., Boissier, O.: A model for the structural,
@@ -306,8 +381,9 @@ Jaques, N., Lazaridou, A., Hughes, E., Gulcehre, C., Ortega, P., Strouse, D.,
   (09--15 Jun 2019), \url{https://proceedings.mlr.press/v97/jaques19a.html}
 
 \bibitem{kindlebergerManiasPanicsCrashes2005}
-Kindleberger, C., Aliber, R.: Manias, {{Panics}} and {{Crashes}}: {{A History}}
-  of {{Financial Crises}}. Springer (Aug 2005)
+Kindleberger, C.P., Aliber, R.Z.: Manias, Panics and Crashes: A History of
+  Financial Crises. Palgrave Macmillan, London, 5th edn. (2005).
+  \doi{10.1057/9780230628045}
 
 \bibitem{kirilenkoFlashCrashHighFrequency2017}
 Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
@@ -316,11 +392,11 @@ Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
 
 \bibitem{knight1992institutions}
 Knight, J.: Institutions and Social Conflict. Political Economy of Institutions
-  and Decisions, Cambridge University Press (1992),
-  \url{https://books.google.com/books?id=VeoKtu_22q0C}
+  and Decisions, Cambridge University Press, Cambridge (1992)
 
 \bibitem{kolt2025governingaiagents}
-Kolt, N.: Governing ai agents (2025), \url{https://arxiv.org/abs/2501.07913}
+Kolt, N.: Governing {AI} agents. Notre Dame Law Review  \textbf{101}(1), ~335
+  (2026), \url{https://ndlawreview.org/governing-ai-agents/}
 
 \bibitem{korosec2025waymo}
 Korosec, K.: Waymo's robotaxi expansion accelerates with 3 new cities.
@@ -344,23 +420,34 @@ Larcher, H., Carreira, A., G., R., Rannou, C.: Anatomy of a frontier lab agent
 Leibo, J.Z., Due{\~n}ez-Guzm{\'a}n, E.A., Vezhnevets, A., Agapiou, J.P.,
   Sunehag, P., Koster, R., Matyas, J., Beattie, C., Mordatch, I., Graepel, T.:
   Scalable evaluation of multi-agent reinforcement learning with {Melting Pot}.
-  In: International Conference on Machine Learning. pp. 6187--6199. PMLR
-  (2021). \doi{10.48550/arXiv.2107.06857},
-  \url{https://doi.org/10.48550/arXiv.2107.06857}
+  In: Proceedings of the 38th International Conference on Machine Learning.
+  Proceedings of Machine Learning Research, vol.~139, pp. 6187--6199. PMLR
+  (2021), \url{https://proceedings.mlr.press/v139/leibo21a.html}
+
+\bibitem{leibo2024appropriateness}
+Leibo, J.Z., Vezhnevets, A.S., Diaz, M., Agapiou, J.P., Cunningham, W.A.,
+  Sunehag, P., Haas, J., Koster, R., Du{\'e}{\~n}ez-Guzm{\'a}n, E.A., Isaac,
+  W.S., Piliouras, G., Bileschi, S.M., Rahwan, I., Osindero, S.: A theory of
+  appropriateness with applications to generative artificial intelligence
+  (2024), \url{https://arxiv.org/abs/2412.19010}, verified against the arXiv
+  abstract page, 2026-10-01
 
 \bibitem{leibo2017multiagentreinforcementlearningsequential}
 Leibo, J.Z., Zambaldi, V., Lanctot, M., Marecki, J., Graepel, T.: Multi-agent
-  reinforcement learning in sequential social dilemmas (2017),
-  \url{https://arxiv.org/abs/1702.03037}
+  reinforcement learning in sequential social dilemmas. In: Proceedings of the
+  16th Conference on Autonomous Agents and MultiAgent Systems (AAMAS). pp.
+  464--473. S\~{a}o Paulo, Brazil (2017),
+  \url{https://www.ifaamas.org/Proceedings/aamas2017/pdfs/p464.pdf}
 
 \bibitem{lewisConventionPhilosophicalStudy2008}
 Lewis, D.: Convention: {{A Philosophical Study}}. Wiley-Blackwell, Cambridge,
   MA, USA (2008)
 
 \bibitem{li2023camelcommunicativeagentsmind}
-Li, G., Hammoud, H.A.A.K., Itani, H., Khizbullin, D., Ghanem, B.: Camel:
-  Communicative agents for "mind" exploration of large language model society
-  (2023), \url{https://arxiv.org/abs/2303.17760}
+Li, G., Hammoud, H.A.A.K., Itani, H., Khizbullin, D., Ghanem, B.: {CAMEL}:
+  Communicative agents for ``mind'' exploration of large language model
+  society. In: Advances in Neural Information Processing Systems. vol.~36, pp.
+  51991--52008 (2023). \doi{10.52202/075280-2264}
 
 \bibitem{lin2022truthfulqa}
 Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
@@ -371,14 +458,26 @@ Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
 \bibitem{liu2025agentbenchevaluatingllmsagents}
 Liu, X., Yu, H., Zhang, H., Xu, Y., Lei, X., Lai, H., Gu, Y., Ding, H., Men,
   K., Yang, K., Zhang, S., Deng, X., Zeng, A., Du, Z., Zhang, C., Shen, S.,
-  Zhang, T., Su, Y., Sun, H., Huang, M., Dong, Y., Tang, J.: Agentbench:
-  Evaluating llms as agents (2025), \url{https://arxiv.org/abs/2308.03688}
+  Zhang, T., Su, Y., Sun, H., Huang, M., Dong, Y., Tang, J.: {AgentBench}:
+  Evaluating {LLMs} as agents. In: The Twelfth International Conference on
+  Learning Representations (ICLR) (2024),
+  \url{https://proceedings.iclr.cc/paper_files/paper/2024/hash/e9df36b21ff4ee211a8b71ee8b7e9f57-Abstract-Conference.html}
 
 \bibitem{ma2020artificial}
-{Ma}, Y., {Wang}, Z., {Yang}, H., {Yang}, L.: Artificial intelligence
-  applications in the development of autonomous vehicles: a survey. CAA Journal
-  of Automatica Sinica  \textbf{7}(2),  315--329 (Mar 2020).
+Ma, Y., Wang, Z., Yang, H., Yang, L.: Artificial intelligence applications in
+  the development of autonomous vehicles: a survey. IEEE/CAA Journal of
+  Automatica Sinica  \textbf{7}(2),  315--329 (Mar 2020).
   \doi{10.1109/JAS.2020.1003021}
+
+\bibitem{macy2002factors}
+Macy, M.W., Willer, R.: From factors to actors: Computational sociology and
+  agent-based modeling. Annual Review of Sociology  \textbf{28},  143--166
+  (2002). \doi{10.1146/annurev.soc.28.110601.141117}
+
+\bibitem{martinezpena2024coleman}
+Mart{\'i}nez-Pe{\~n}a, R., Ylikoski, P.: Coupling social and ecological
+  mechanisms with the {Coleman} boat. Ecology and Society  \textbf{29}(4), ~6
+  (2024), \url{https://ecologyandsociety.org/vol29/iss4/art6/}
 
 \bibitem{maskinMechanismDesignHow2008}
 Maskin, E.S.: Mechanism {{Design}}: {{How}} to {{Implement Social Goals}}. The
@@ -389,7 +488,8 @@ Mazeika, M., Phan, L., Yin, X., Zou, A., Wang, Z., Mu, N., Sakhaee, E., Li, N.,
   Basart, S., Li, B., Forsyth, D., Hendrycks, D.: {HarmBench}: A standardized
   evaluation framework for automated red teaming and robust refusal. In:
   Proceedings of the 41st International Conference on Machine Learning.
-  Proceedings of Machine Learning Research, vol.~235 (2024)
+  Proceedings of Machine Learning Research, vol.~235, pp. 35181--35224. PMLR
+  (2024), \url{https://proceedings.mlr.press/v235/mazeika24a.html}
 
 \bibitem{mccoyEmbersAutoregressionShow2024}
 McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
@@ -403,20 +503,47 @@ Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:
   \textbf{6}(4),  845--863 (Jun 2008). \doi{10.1162/JEEA.2008.6.4.845}
 
 \bibitem{metr2026hfinvestigation}
-{METR}, {Redwood Research}: Brief independent investigation of agents'
-  behavior, reasoning and collaboration in the {OpenAI} / {Hugging Face}
-  hacking incident.
-  https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
-  (Aug 2026)
+{METR}: Brief independent investigation of agents' behavior, reasoning and
+  collaboration in the {OpenAI} / {Hugging Face} hacking incident. METR blog
+  (Aug 2026),
+  \url{https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/},
+  contributors include Ryan Greenblatt (Redwood Research). Accessed: 2026-09-29
+
+\bibitem{millerChipWarFight2025}
+Miller, C.: Chip {{War}}: {{The Fight}} for the {{World}}'s {{Most Critical
+  Technology}}. {Simon and Schuster} (Sep 2025)
+
+\bibitem{morgan2023teamintheloop}
+Morgan, D., Hashem, Y., Francis, J., Esnaashari, S., Straub, V.J., Bright, J.:
+  `team-in-the-loop': {Ostrom's} {IAD} framework `rules in use' to map and
+  measure contextual impacts of {AI}. arXiv preprint arXiv:2303.14007 (2023),
+  \url{https://arxiv.org/abs/2303.14007}
+
+\bibitem{muller2013oddd}
+M{\"u}ller, B., Bohn, F., Dre{\ss}ler, G., Groeneveld, J., Klassert, C.,
+  Martin, R., Schl{\"u}ter, M., Schulze, J., Weise, H., Schwarz, N.: Describing
+  human decisions in agent-based models -- {ODD + D}, an extension of the {ODD}
+  protocol. Environmental Modelling \& Software  \textbf{48},  37--48 (2013).
+  \doi{10.1016/j.envsoft.2013.06.003}
 
 \bibitem{myersonOptimalAuctionDesign1981}
 Myerson, R.B.: Optimal {{Auction Design}}. Mathematics of Operations Research
   \textbf{6}(1),  58--73 (1981)
 
+\bibitem{myersonSatterthwaite1983efficient}
+Myerson, R.B., Satterthwaite, M.A.: Efficient mechanisms for bilateral trading.
+  Journal of Economic Theory  \textbf{29}(2),  265--281 (1983).
+  \doi{10.1016/0022-0531(83)90048-0}
+
 \bibitem{needham2025evalaware}
 Needham, J., Edkins, G., Pimpale, G., Bartsch, H., Hobbhahn, M.: Large language
   models often know when they are being evaluated (2025),
   \url{https://arxiv.org/abs/2505.23836}
+
+\bibitem{ngyisheng2026formal}
+Ng~Yi~Sheng, E., Shen, B.: Formal mechanisms for market stability in
+  self-interested agent societies: A marketplace simulation study. arXiv
+  preprint arXiv:2607.08652 (2026), \url{https://arxiv.org/abs/2607.08652}
 
 \bibitem{nickerson2013taxonomy}
 Nickerson, R.C., Varshney, U., Muntermann, J.: A method for taxonomy
@@ -445,6 +572,15 @@ Ostrom, E.: Governing the {{Commons}}: {{The Evolution}} of {{Institutions}}
   {{Decisions}}, Cambridge University Press, Cambridge (1990).
   \doi{10.1017/CBO9780511807763}
 
+\bibitem{ostrom2005understanding}
+Ostrom, E.: Understanding Institutional Diversity. Princeton University Press,
+  Princeton, NJ (2005). \doi{10.1515/9781400831739}
+
+\bibitem{ostrom2011background}
+Ostrom, E.: Background on the institutional analysis and development framework.
+  Policy Studies Journal  \textbf{39}(1),  7--27 (2011).
+  \doi{10.1111/j.1541-0072.2010.00394.x}
+
 \bibitem{ostrom1992covenants}
 Ostrom, E., Walker, J., Gardner, R.: Covenants with and without a sword:
   Self-governance is possible. American Political Science Review
@@ -458,10 +594,16 @@ Papadimitriou, C.: Algorithms, games, and the internet. In: Proceedings of the
 
 \bibitem{piatti2024govsim}
 Piatti, G., Jin, Z., Kleiman-Weiner, M., Sch\"{o}lkopf, B., Sachan, M.,
-  Mihalcea, R.: Cooperate or collapse: emergence of sustainable cooperation in
-  a society of llm agents. In: Proceedings of the 38th International Conference
-  on Neural Information Processing Systems. NIPS '24, Curran Associates Inc.,
-  Red Hook, NY, USA (2024)
+  Mihalcea, R.: Cooperate or collapse: Emergence of sustainable cooperation in
+  a society of {LLM} agents. In: Proceedings of the 38th International
+  Conference on Neural Information Processing Systems. NIPS '24, Curran
+  Associates Inc., Red Hook, NY, USA (2024)
+
+\bibitem{LostPasswordsLock2021}
+Popper, N.: Lost {{Passwords Lock Millionaires Out}} of {{Their Bitcoin
+  Fortunes}} - {{The New York Times}} (Mar 2021),
+  \url{https://web.archive.org/web/20210321104514/https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html},
+  accessed 30th of June 2026
 
 \bibitem{premackDoesChimpanzeeHave1978}
 Premack, D., Woodruff, G.: Does the chimpanzee have a theory of mind?
@@ -477,14 +619,24 @@ Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
   Commun. ACM  \textbf{43}(12),  45--48 (Dec 2000). \doi{10.1145/355112.355122}
 
 \bibitem{schellingStrategyConflictNew1960}
-Schelling, T.C.: The {{Strategy}} of {{Conflict}}: {{With}} a {{New Preface}}
-  by the {{Author}}. Harvard University Press (1960)
+Schelling, T.C.: The Strategy of Conflict. Harvard University Press, Cambridge,
+  MA (1960)
+
+\bibitem{seyedin2026politician}
+Seyedin, F., Weller, A., Yun, J., Babaei, M.: The politician, the liar, and the
+  obedient worker: Emerging behavior of {LLM} agents in hierarchical games.
+  arXiv preprint arXiv:2608.09574 (2026),
+  \url{https://arxiv.org/abs/2608.09574}
 
 \bibitem{shapiraCleverHansNeural2023}
 Shapira, N., Levy, M., Alavi, S.H., Zhou, X., Choi, Y., Goldberg, Y., Sap, M.,
-  Shwartz, V.: Clever {{Hans}} or {{Neural Theory}} of {{Mind}}? {{Stress
-  Testing Social Reasoning}} in {{Large Language Models}} (May 2023).
-  \doi{10.48550/arXiv.2305.14763}
+  Shwartz, V.: Clever {Hans} or neural theory of mind? {Stress} testing social
+  reasoning in large language models. In: Graham, Y., Purver, M. (eds.)
+  Proceedings of the 18th Conference of the European Chapter of the Association
+  for Computational Linguistics (Volume 1: Long Papers). pp. 2257--2273.
+  Association for Computational Linguistics, St. Julian's, Malta (Mar 2024).
+  \doi{10.18653/v1/2024.eacl-long.138},
+  \url{https://aclanthology.org/2024.eacl-long.138/}
 
 \bibitem{shoham1995sociallaws}
 Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
@@ -492,8 +644,9 @@ Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
 
 \bibitem{skalseDefiningCharacterizingReward2022}
 Skalse, J., Howe, N.H.R., Krasheninnikov, D., Krueger, D.: Defining and
-  {{Characterizing Reward Hacking}}. https://arxiv.org/abs/2209.13085v2 (Sep
-  2022)
+  characterizing reward hacking. In: Advances in Neural Information Processing
+  Systems. vol.~35, pp. 9460--9471. Curran Associates, Inc. (2022),
+  \url{https://proceedings.neurips.cc/paper_files/paper/2022/hash/3d719fee332caa23d5038b8a90e81796-Abstract-Conference.html}
 
 \bibitem{sofroniew2026emotionconceptsfunctionlarge}
 Sofroniew, N., Kauvar, I., Saunders, W., Chen, R., Henighan, T., Hydrie, S.,
@@ -501,6 +654,16 @@ Sofroniew, N., Kauvar, I., Saunders, W., Chen, R., Henighan, T., Hydrie, S.,
   Rivoire, K., Fish, K., Olah, C., Lindsey, J.: Emotion concepts and their
   function in a large language model (2026),
   \url{https://arxiv.org/abs/2604.07729}
+
+\bibitem{sorensen2024roadmap}
+Sorensen, T., Moore, J., Fisher, J., Gordon, M.L., Mireshghallah, N., Rytting,
+  C.M., Ye, A., Jiang, L., Lu, X., Dziri, N., Althoff, T., Choi, Y.: Position:
+  {A} roadmap to pluralistic alignment. In: Salakhutdinov, R., Kolter, Z.,
+  Heller, K.A., Weller, A., Oliver, N., Scarlett, J., Berkenkamp, F. (eds.)
+  Forty-first International Conference on Machine Learning, {ICML} 2024,
+  Vienna, Austria, July 21-27, 2024. pp. 46280--46302. Proceedings of Machine
+  Learning Research, {PMLR} / OpenReview.net (2024),
+  \url{https://proceedings.mlr.press/v235/sorensen24a.html}
 
 \bibitem{steinberger2026openclaw}
 Steinberger, P.: {OpenClaw}: Your own personal {AI} assistant.
@@ -522,9 +685,12 @@ Tang, X., Kim, K., Song, Y., Lothritz, C., Li, B., Ezzini, S., Tian, H., Klein,
   \doi{10.18653/v1/2024.emnlp-main.632}
 
 \bibitem{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}
-Tewolde, E., Zhang, X., Piedrahita, D.G., Conitzer, V., Jin, Z.: Coopeval:
-  Benchmarking cooperation-sustaining mechanisms and llm agents in social
-  dilemmas (2026), \url{https://arxiv.org/abs/2604.15267}
+Tewolde, E., Zhang, X., Guzman~Piedrahita, D., Conitzer, V., Jin, Z.:
+  {CoopEval}: Benchmarking cooperation-sustaining mechanisms and {LLM} agents
+  in social dilemmas. In: Proceedings of the 43rd International Conference on
+  Machine Learning. Proceedings of Machine Learning Research, vol.~306, pp.
+  120222--120287. PMLR (2026),
+  \url{https://proceedings.mlr.press/v306/tewolde26a.html}
 
 \bibitem{robotreport2025serve}
 {The Robot Report Staff}: Serve robotics has deployed 2,000+ delivery robots
@@ -542,13 +708,20 @@ Tomuschat, C.: The {{Legacy}} of {{Nuremberg}}. Journal of International
   \doi{10.1093/jicj/mql051}
 
 \bibitem{trivedi2026solipsistic}
-Trivedi, R.S., Jaques, N., Cross, L., Vezhnevets, A.S., Leibo, J.Z.:
-  Solipsistic superintelligence is unlikely to be cooperative (2026),
-  \url{https://arxiv.org/abs/2606.03237}
+Trivedi, R.S., Jaques, N., Cross, L., Vezhnevets, A.S., Leibo, J.Z.: Position:
+  Solipsistic superintelligence is unlikely to be cooperative. In: Proceedings
+  of the 43rd International Conference on Machine Learning. Proceedings of
+  Machine Learning Research, vol.~306, pp. 172306--172329. PMLR (2026),
+  \url{https://proceedings.mlr.press/v306/trivedi26a.html}
+
+\bibitem{truong2026eras}
+Truong, V.Q., Ritchie, M.D.: Eras of bioinformatics technologies from
+  command-line interfaces to artificial intelligence ({AI}) chatbots. Briefings
+  in Bioinformatics  \textbf{27}(4),  bbag256 (2026). \doi{10.1093/bib/bbag256}
 
 \bibitem{citibankRevlonAppeal2022}
 {United States Court of Appeals for the Second Circuit}: In re: {Citibank}
-  august 11, 2020 wire transfers (Sep 2022),
+  {August} 11, 2020 wire transfers (Sep 2022),
   \url{https://www.govinfo.gov/content/pkg/USCOURTS-ca2-21-00487/pdf/USCOURTS-ca2-21-00487-0.pdf},
   docket No. 21-487, decided September 8, 2022
 
@@ -557,16 +730,27 @@ Trivedi, R.S., Jaques, N., Cross, L., Vezhnevets, A.S., Leibo, J.Z.:
   for breaking clearly erroneous trades (Oct 2009),
   \url{https://www.sec.gov/newsroom/press-releases/2009-215-sec-approves-new-exchange-rules-breaking-clearly-erroneous-trades}
 
+\bibitem{vallinder2024cultural}
+Vallinder, A., Hughes, E.: Cultural evolution of cooperation among {LLM}
+  agents. arXiv preprint arXiv:2412.10270 (2024),
+  \url{https://arxiv.org/abs/2412.10270}
+
+\bibitem{vedanta2026corrupt}
+{Vedanta S P}, Kumaraguru, P.: I can't believe it's corrupt: Evaluating
+  corruption in multi-agent governance systems. arXiv preprint arXiv:2603.18894
+  (2026), \url{https://arxiv.org/abs/2603.18894}
+
 \bibitem{vezhnevets2023concordia}
 Vezhnevets, A.S., Agapiou, J.P., Aharon, A., Ziv, R., Matyas, J.,
   Duéñez-Guzmán, E.A., Cunningham, W.A., Osindero, S., Karmon, D., Leibo,
   J.Z.: Generative agent-based modeling with actions grounded in physical,
-  social, or digital space using concordia (2023),
+  social, or digital space using {Concordia} (2023),
   \url{https://arxiv.org/abs/2312.03664}
 
 \bibitem{CitibankSues2020}
-Walker, A.: Citibank sues for \$176m payment made in error. BBC News  (Aug
-  2020)
+Walker, A.: Citibank sues for \$176m payment made in error. BBC News (Aug
+  2020), \url{https://www.bbc.co.uk/news/business-53802994}, accessed:
+  2026-06-09
 
 \bibitem{wangmdreplacehumans2025}
 Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
@@ -577,23 +761,40 @@ Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
 
 \bibitem{wang2025lawinsilico}
 Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
-  Simulating legal society with {LLM}-based agents (2025),
-  \url{https://arxiv.org/abs/2510.24442}
+  Simulating legal society with {LLM}-based agents. In: Findings of the
+  Association for Computational Linguistics: ACL 2026. pp. 8061--8104.
+  Association for Computational Linguistics, San Diego, California, United
+  States (2026). \doi{10.18653/v1/2026.findings-acl.396},
+  \url{https://aclanthology.org/2026.findings-acl.396/}
+
+\bibitem{weidinger2023sociotechnical}
+Weidinger, L., Rauh, M., Marchal, N., Manzini, A., Hendricks, L.A.,
+  Mateos-Garcia, J., Bergman, S., Kay, J., Griffin, C., Bariach, B., Gabriel,
+  I., Rieser, V., Isaac, W.: Sociotechnical safety evaluation of generative
+  {AI} systems. arXiv preprint arXiv:2310.11986 (2023),
+  \url{https://arxiv.org/abs/2310.11986}
 
 \bibitem{vanderweij2024sandbagging}
 van~der Weij, T., Hofst{\"a}tter, F., Jaffe, O., Brown, S.F., Ward, F.R.: {AI}
-  sandbagging: Language models can strategically underperform on evaluations
-  (2024), \url{https://arxiv.org/abs/2406.07358}
+  sandbagging: Language models can strategically underperform on evaluations.
+  In: The Thirteenth International Conference on Learning Representations
+  (ICLR) (2025), \url{https://openreview.net/forum?id=7Qa2SpjxIS}
 
 \bibitem{willis2026evaluatingcollectivebehaviourhundreds}
 Willis, R., Zhao, J., Du, Y., Leibo, J.Z.: Evaluating collective behaviour of
-  hundreds of llm agents (2026), \url{https://arxiv.org/abs/2602.16662}
+  hundreds of {LLM} agents (2026), \url{https://arxiv.org/abs/2602.16662}
+
+\bibitem{wooldridge1995intelligent}
+Wooldridge, M., Jennings, N.R.: Intelligent agents: Theory and practice. The
+  Knowledge Engineering Review  \textbf{10}(2),  115--152 (1995).
+  \doi{10.1017/S0269888900008122}
 
 \bibitem{wu2023autogenenablingnextgenllm}
 Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X.,
   Zhang, S., Liu, J., Awadallah, A.H., White, R.W., Burger, D., Wang, C.:
-  Autogen: Enabling next-gen llm applications via multi-agent conversation
-  (2023), \url{https://arxiv.org/abs/2308.08155}
+  {AutoGen}: Enabling next-gen {LLM} applications via multi-agent
+  conversations. In: First Conference on Language Modeling (COLM) (2024),
+  \url{https://openreview.net/forum?id=BAakY1hNKS}
 
 \bibitem{wuHumanMemoryAI2025}
 Wu, Y., Liang, S., Zhang, C., Wang, Y., Zhang, Y., Guo, H., Tang, R., Liu, Y.:
@@ -619,7 +820,15 @@ Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
 \bibitem{zhu2025multiagentbench}
 Zhu, K., Du, H., Hong, Z., Yang, X., Guo, S., Wang, Z., Wang, Z., Qian, C.,
   Tang, X., Ji, H., You, J.: {MultiAgentBench}: Evaluating the collaboration
-  and competition of {LLM} agents (2025),
-  \url{https://arxiv.org/abs/2503.01935}
+  and competition of {LLM} agents. In: Proceedings of the 63rd Annual Meeting
+  of the Association for Computational Linguistics (Volume 1: Long Papers). pp.
+  8580--8622. Association for Computational Linguistics, Vienna, Austria
+  (2025). \doi{10.18653/v1/2025.acl-long.421},
+  \url{https://aclanthology.org/2025.acl-long.421/}
+
+\bibitem{zhu2026talkjudgecooperategossipdriven}
+Zhu, S., Lin, Y., Kaistha, S., Li, W., Wang, B., Zha, H., Hadfield, G.K.,
+  Poupart, P.: Talk, judge, cooperate: Gossip-driven indirect reciprocity in
+  self-interested {LLM} agents (2026), \url{https://arxiv.org/abs/2602.07777}
 
 \end{thebibliography}
