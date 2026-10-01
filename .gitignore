@@ -34,3 +34,6 @@ __pycache__/
 # Final Springer submission package (contains the signed LTP; never commit)
 OpenReview_308_Truong/
 OpenReview_308_Truong.zip
+
+# Local poster sources (reference only; visuals adapted into docs/ by hand)
+archive/2026-04-21_VQT-ai-agent-sanctions-poster.svg

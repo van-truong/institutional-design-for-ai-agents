@@ -321,3 +321,24 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding-block
 .fl-plabel { margin: 0 0 .3rem !important; color: #6B7787; font-size: .72rem !important; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .fl-step-name { margin: .2rem 0 .2rem; font-weight: 800; }
 .fl-gloss { color: var(--muted); font-size: .85rem !important; }
+
+/* Title (archival version) */
+.title-long { max-width: 1030px; font-size: clamp(1.4rem, 3.1vw, 3rem); line-height: 1.12; }
+
+/* Where it started: polaroids from ICML 2026 */
+.presented { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; padding-bottom: 1rem; }
+.presented-copy h2 { margin-bottom: .8rem; }
+.presented-copy p { font-size: 1.02rem; }
+.presented-copy a { color: var(--burgundy); font-weight: 700; }
+.hand-note { margin: 0 0 .4rem; color: var(--burgundy); font-family: Georgia, serif; font-size: 1.05rem; font-style: italic; }
+.polaroids { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(.6rem, 1.6vw, 1.2rem); padding: 1rem .5rem; }
+.polaroid { position: relative; padding: .55rem .55rem 0; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.18), 0 1px 3px rgba(0,0,0,.12); transform: rotate(var(--tilt, 0deg)); transition: transform .3s ease, box-shadow .3s ease; }
+.polaroid::before { content: ""; position: absolute; top: -10px; left: 50%; width: 62px; height: 20px; background: rgba(117, 172, 224, .55); transform: translateX(-50%) rotate(-3deg); }
+.polaroid img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.polaroid figcaption { padding: .55rem .2rem .7rem; color: #333; font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; font-size: .92rem; text-align: center; }
+.polaroid:hover, .polaroid:focus-within { z-index: 2; transform: rotate(0deg) scale(1.06); box-shadow: 0 14px 30px rgba(0,0,0,.25); }
+@media (max-width: 900px) {
+  .presented { grid-template-columns: 1fr; }
+  .polaroids { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem 1rem; }
+}
+@media (prefers-reduced-motion: reduce) { .polaroid, .polaroid:hover { transition: none; } }
