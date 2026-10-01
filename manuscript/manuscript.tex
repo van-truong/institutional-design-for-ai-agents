@@ -157,7 +157,7 @@ The design challenge for cooperative AI is therefore to determine which institut
 
 Institutional design connects individual action to the rules and structures of collective life. Institutions may emerge through repeated interaction or be deliberately designed; Figure~\mbox{\ref{fig:agent-in-context}} shows both directions. This distinction draws on traditions of spontaneous order and institutional analysis~\citep{hayek1978law}, as well as social theory and agent-based modeling~\citep{coleman1990foundations,bronfenbrenner1979ecology,ostrom2011background,macy2002factors,castelfranchi1998modelling,gao2024llmabm}. For AI, the question is how to support useful forms of self-organization while retaining human authority over their purposes and limits.
 
-\subsection{Relation to prior work.}
+\subsection{Relation to Prior Work}
 Our agenda builds on the multi-agent risk taxonomy of Hammond et al.~\mbox{\citep{hammond2025multiagentrisksadvancedai}}, which catalogs miscoordination, conflict, and collusion but does not develop institutional responses into a framework, and on the premise of Dafoe et al.~\mbox{\citep{dafoe2021cooperative}} that cooperative intelligence must be deliberately designed.
 Institutions for artificial agents are not a new idea. Work on social laws for artificial agent societies~\mbox{\citep{shoham1995sociallaws}} and on normative multi-agent systems~\mbox{\citep{boella2006normative}} formalized how designers can constrain agents through norms, roles, and permissions, and frameworks. In the early 2000s, models for electronic institutions~\mbox{\citep{esteva2001electronic}} and the Model for the Structural, Functional, and Deontic Specification (`MOISE+')~\mbox{\citep{hubner2002moise}} made such organizational specifications even more executable.
 Ostrom's design principles for long-lived commons~\mbox{\citep{ostromGoverningCommonsEvolution1990}}, which a later review of 91 empirical studies largely supported~\mbox{\citep{cox2010designprinciples}}, remain the best-grounded account of which institutional features sustain cooperation. Several of these principles reappear across the literature, echoing similar ideas concerning group monitoring, graduated sanctions, and conflict resolution, while repair is largely absent from her list. Her emphasis on collective-choice arrangements, in which participants help set the rules, may not be directly applicable to AI agent societies if choosing the rules stays squarely in human territory.
@@ -225,7 +225,7 @@ Our results are two maps drawn from a single collated corpus: the mechanisms tha
     \includegraphics[width=\linewidth]{figures/figure_taxonomy-circle.pdf}
   \end{minipage}\hfill
   \begin{minipage}[c]{0.44\linewidth}
-  \caption{The taxonomy at a glance: six family hubs, 18 themes, and 66 mechanisms (outer dots), colored as in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Filled dots have been reported in LLM agents settings, dashed dots are proposed, and open dots have no equivalent LLM study yet. Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} details every mechanism.}
+  \caption{The taxonomy at a glance: six family hubs, 18 themes, and over 60 mechanisms (outer dots), colored as in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Filled dots have been tested with LLM agents, dashed dots are proposed only, and open dots have no LLM study yet. Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} details every mechanism.}
   \label{fig:taxonomy-circle}
   \end{minipage}
 \end{figure}
@@ -273,7 +273,7 @@ With the institution as the object of design, the next questions are what it has
 \begin{figure}[!b]
   \centering
   \includegraphics[width=\linewidth]{figures/figure_design-space-game.pdf}
-  \caption{A tree diagram outlining the design space of agent institutions. On the left, institutional functions split into an information layer (grey) and a consequence layer (plum). On the right, mechanism families, grouped into soft and hard channels, act on agents; their colors follow Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A badge on each family marks the part of a Bayesian game $\mathcal{G}=(N, A_i, \Theta_i, p, u_i)$ that it changes (solid), or what it adds beyond the one-shot game (dashed).}
+  \caption{The design space of agent institutions. On the left, institutional functions split into an information layer (grey) and a consequence layer (plum). On the right, mechanism families, grouped into soft and hard channels, act on agents; their colors follow Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A badge on each family marks the part of a Bayesian game $\mathcal{G}=(N, A_i, \Theta_i, p, u_i)$ that it changes (solid), or what it adds beyond the one-shot game (dashed).}
   \label{fig:design-space}
 \end{figure}
 
@@ -314,7 +314,7 @@ The map also shows where research effort has gone, and where it has not. Work wi
 \begin{figure*}[tp]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/figure5_cooperation-taxonomy.pdf}
-  \caption{Cooperation-shaping mechanisms for agent groups: 66 mechanisms in 18 themes, thematically coded from 645 instances across AI and 18 other disciplines (Section~\mbox{\ref{sec:method}}) and grouped by the six mechanism families. Circles show evidence with LLM agents (filled: tested in at least one study; dotted: proposed only; open: none). Squares count the fields outside AI in which a mechanism is also documented; six filled squares means six or more.}
+  \caption{Cooperation-shaping mechanisms for agent groups: over 60 mechanisms in 18 themes, thematically coded from over 600 instances across AI and nearly twenty other disciplines (Section~\mbox{\ref{sec:method}}) and grouped by the six mechanism families. Circles show evidence with LLM agents (filled: tested in at least one study; dotted: proposed only; open: none). Squares count the fields outside AI in which a mechanism is also documented; six filled squares means six or more.}
   \label{fig:cooperation_taxonomy_tree}
 \end{figure*}
 
@@ -327,7 +327,7 @@ The emphasis has shifted with the technology. Multi-agent reinforcement learning
 \begin{figure*}[!tbp]
   \centering
   \includegraphics[width=0.86\textwidth]{figures/figure_phenomena-map.pdf}
-  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 thematically coded instances that record an emergent pattern rather than a designed mechanism. (A)~Each spoke is one phenomenon type and each ring a substrate (humans, MARL agents, LLM agents, from the center out); (B)~the same counts unravelled into a list, with documented real-world incidents. Dot area is proportional to the number of instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. The list follows the layout of the taxonomy in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A first-pass reading of a fast-moving literature.}}
+  \caption{Group-level phenomena in multi-agent systems, by substrate: 82 coded instances that record an emergent pattern rather than a designed mechanism. (A)~Each spoke is one phenomenon type and each ring a substrate (humans, MARL agents, and LLM agents, from the center out). (B)~The same counts as a list, with documented real-world incidents. Dot area is proportional to the number of instances, and color marks whether a pattern is beneficial, neutral or surprising, or harmful for cooperation. Human examples are rare here because most human cases appear as the designed mechanisms of Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}.}
   \label{fig:phenomena}
 \end{figure*}
 
@@ -349,7 +349,7 @@ Monitoring can miss relevant behavior or expose too much. Adjudication can miscl
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=\textwidth]{figures/figure3_institutional-design-dimensions.pdf}
-  \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design. These properties describe the institution being designed; Section~\mbox{\ref{sec:evaluation}} lists the outcomes to measure. \voice{The enforcement stages are the points at which an institution can respond to the dilemmas of Fig.~\mbox{\ref{fig:dilemmas-response}}; their colors follow the information (slate) and consequence (plum) layers of Table~\mbox{\ref{tab:functions}}.}}
+  \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design. These properties describe the institution being designed; Section~\mbox{\ref{sec:evaluation}} lists the outcomes to measure. \voice{The enforcement stages are the points at which an institution can respond to the dilemmas of Fig.~\mbox{\ref{fig:dilemmas-response}}; their colors follow the information (grey) and consequence (plum) layers of Table~\mbox{\ref{tab:functions}}.}}
   \label{fig:design-dimensions}
 \end{figure}
 
@@ -389,14 +389,11 @@ mediators can be captured by the parties they adjudicate, sanctioners can be gam
 \end{tabular}
 \end{table}
 
-\textbf{Graduated and reversible responses.} \voice{One response to these failures comes from the same record.} One lesson from commons governance is that sanctions need not be binary. Graduated sanctions respond to violations with escalating consequences rather than immediate exclusion \citep{ostromGoverningCommonsEvolution1990}. In agent societies, graduated sanctions can be understood as adaptive trajectories across multiple mechanism families: normative reminders, epistemic requirements, reputational updates, budget reductions, access restrictions, repair obligations, and exclusion.
+\textbf{Graduated and reversible responses.} One response to these failures comes from the same record. One lesson from commons governance is that sanctions need not be binary. Graduated sanctions respond to violations with escalating consequences rather than immediate exclusion \citep{ostromGoverningCommonsEvolution1990}. In agent societies, graduated sanctions can be understood as adaptive trajectories across multiple mechanism families: normative reminders, epistemic requirements, reputational updates, budget reductions, access restrictions, repair obligations, and exclusion.
 
-\textbf{Sanctions need to be generalizable to high intelligence.}
-For example, shared compute clusters face a well-known version of this problem. Schedulers such as Slurm's fairshare decay the priority of heavy consumers~\mbox{\citep{yalimDynamicallyControllingSlurms2020}}, which works because the resource types, job semantics, and load patterns are known in advance~\mbox{\citep{delimitrouQuasarResourceefficientQoSaware2014}}, so a graduated response can be encoded once and applied indefinitely.
-Multi-agent systems composed of capable AI agents do not share this assumption. Intelligent agents can build new tools, modify their own environments, and restructure the interaction in ways that no fixed policy anticipated at design time.
-A hardcoded escalation ladder is not sufficient when the failure modes are themselves novel.
-Graduated sanctions must instead be implemented generalizably, adapted to each case as it arises. Section~\mbox{\ref{sec:discussion}} returns to who should do the adapting.
-This framing avoids treating all failures as equally severe. It also foregrounds reversibility. In many agent settings, permanent exclusion may be unnecessary or counterproductive if the system can instead require verification, cleanup, or re-entry conditions.
+\textbf{Graduated responses need to adapt as agents become more capable.} Shared compute clusters face a well-known version of this problem. Schedulers such as Slurm's fairshare decay the priority of heavy consumers~\mbox{\citep{yalimDynamicallyControllingSlurms2020}}, which works because the resource types, job semantics, and load patterns are known in advance~\mbox{\citep{delimitrouQuasarResourceefficientQoSaware2014}}, so a graduated response can be encoded once and applied indefinitely. Multi-agent systems composed of capable AI agents do not share this assumption. Intelligent agents can build new tools, modify their own environments, and restructure the interaction in ways that no fixed policy anticipated at design time, so a hardcoded escalation ladder will not be enough when the failure modes are themselves novel. Graduated responses therefore need procedures for revising the rules and reviewing exceptional cases as they arise, and Section~\mbox{\ref{sec:discussion}} returns to who should be allowed to make those revisions.
+
+Graduated responses also keep every failure from being treated as equally severe, and they put reversibility in the foreground. In many agent settings, permanent exclusion may be unnecessary or even counterproductive if the system can instead require verification, cleanup, or re-entry conditions.
 
 \subsection{Toward Evaluating Agent Institutions}\label{sec:evaluation}
 \label{sec:design_dim}
