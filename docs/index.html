@@ -117,7 +117,7 @@
     <section id="nested" class="rings-section rule-top">
       <div class="section-intro">
         <div>
-          <h2>From one model to a society of institutions</h2>
+          <h2>From an individual model to a society of institutions</h2>
           <h3>Model-level evaluation examines only the center.</h3>
         </div>
         <p>After Bronfenbrenner's nested systems: an individual model acts inside settings, links between settings, and the platform, market, and legal institutions that govern it from outside. Influence runs both ways, and every layer changes over time.</p>
@@ -125,7 +125,7 @@
       <div class="rings-layout">
         <figure>
           <div id="rings-stage" class="rings-stage"></div>
-          <figcaption class="rings-caption">The cutaway reads outward: one model becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another.</figcaption>
+          <figcaption class="rings-caption">The cutaway reads outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another. Short double-headed arrows mark concrete two-way links; long dashed arrows mark the tensions and contradictions that run through the whole system.</figcaption>
         </figure>
         <div class="rings-side">
           <div id="rings-legend" class="rings-legend" aria-label="Layers"></div>
@@ -187,7 +187,7 @@
         <p>Seven institutional functions, in an information layer and a consequence layer, and six mechanism families, in soft and hard channels.</p>
       </div>
       <div class="fx-layout">
-        <figure><div id="ds-stage" class="ds-stage"></div></figure>
+        <figure><div id="ds-stage" class="ds-stage" data-variant="game"></div><figcaption>A badge on each mechanism family marks the part of a Bayesian game <em>G</em> = (<em>N</em>, <em>A<sub>i</sub></em>, <em>&Theta;<sub>i</sub></em>, <em>p</em>, <em>u<sub>i</sub></em>) that it changes (solid), or what it adds beyond the one-shot game (dashed).</figcaption></figure>
         <aside id="ds-panel" class="fx-panel" aria-live="polite"></aside>
       </div>
     </section>
@@ -196,7 +196,7 @@
       <div class="taxonomy-copy">
         <div>
           <h2>We mapped what’s in the literature to a unified taxonomy.</h2>
-          <p>We coded <span data-tx-count="corpus">645</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies. <span data-tx-count="instances">549</span> of them act through one of <span data-tx-count="mechanisms">66</span> mechanisms in <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper; the rest describe group-level phenomena or fall outside the scope. Choose any mechanism to see its definition and the sources behind it.</p>
+          <p>We thematically coded <span data-tx-count="corpus">645</span> documented uses of cooperation-shaping mechanisms, from lab experiments and legal rules to peer-to-peer protocols and LLM-agent studies. <span data-tx-count="instances">549</span> of them act through one of <span data-tx-count="mechanisms">66</span> mechanisms in <span data-tx-count="themes">18</span> themes, grouped by the six mechanism families of the paper; the rest describe group-level phenomena or fall outside the scope. Choose any mechanism to see its definition and the sources behind it.</p>
           <p class="tx-counts"><strong>How the counts add up.</strong> <span data-tx-count="from_studies">256</span> instances from <span data-tx-count="studies">185</span> multi-agent studies (one per mechanism a study tests) + <span data-tx-count="cross">321</span> from other fields and systems + <span data-tx-count="seed">68</span> seed examples = <span data-tx-count="corpus">645</span>. Of these, <span data-tx-count="single">440</span> single mechanisms + <span data-tx-count="combo">109</span> named combinations = <span data-tx-count="instances">549</span> appear in the map; the other <span data-tx-count="phenomenon">82</span> describe group-level phenomena and <span data-tx-count="out_of_scope">14</span> fall outside the scope.</p>
         </div>
         <aside class="sticky-note">Open circles mark mechanisms that no LLM-agent study has tested yet. We keep the gaps visible.</aside>
@@ -217,7 +217,7 @@
       <div class="taxonomy-interactive">
         <figure class="tx-figure">
           <div id="tx-stage" class="tx-stage"><p class="tx-loading">Loading the taxonomy…</p></div>
-          <figcaption>Circles show LLM-agent evidence (filled: tested in at least one study; dotted: proposed only; open: none). In the list view, squares count the fields outside AI where a mechanism appears (up to six).</figcaption>
+          <figcaption>Circles show LLM-agent evidence (filled: tested in at least one study; dotted: proposed only; open: none). In the list view, squares count the fields outside AI where a mechanism is also documented; six filled squares means six or more.</figcaption>
         </figure>
         <aside class="leaf-card tx-panel" id="tx-panel" aria-live="polite">
           <p class="leaf-card-label">Interactive taxonomy</p>
@@ -239,7 +239,7 @@
     <section id="phenomena" class="phenomena-section rule-top">
       <div class="ph-copy">
         <h2>Mechanisms are what we design. Phenomena are what emerges.</h2>
-        <p>Alongside the mechanisms above, we coded <span data-ph-count="total">82</span> <strong>group-level phenomena</strong>&mdash;patterns that arise from interaction rather than levers a designer applies. The emphasis has shifted with the technology: multi-agent reinforcement learning mostly documented emergent <em>communication</em>, while LLM-agent studies increasingly report emergent <em>society</em>&mdash;conventions, social structure, culture&mdash;and failure modes. Most are neutral or surprising, but <span data-ph-count="harmful">20</span> are already harmful, almost all in LLM systems and with no institution present.</p>
+        <p>Alongside the mechanisms above, we thematically coded <span data-ph-count="total">82</span> <strong>group-level phenomena</strong>&mdash;patterns that arise from interaction rather than levers a designer applies. The emphasis has shifted with the technology: multi-agent reinforcement learning mostly documented emergent <em>communication</em>, while LLM-agent studies increasingly report emergent <em>society</em>&mdash;conventions, social structure, culture&mdash;and failure modes. Most are neutral or surprising, but <span data-ph-count="harmful">20</span> are already harmful, almost all in LLM systems and with no institution present.</p>
       </div>
       <div class="ph-legend" id="ph-legend"></div>
       <div class="ph-matrix" id="ph-matrix">Loading…</div>
