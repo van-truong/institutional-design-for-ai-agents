@@ -86,7 +86,7 @@ Springer wants one ZIP per paper with actual copies (no links) of: all `.tex` fi
 |---|---|
 | `manuscript.tex` | `manuscript/manuscript.tex` (review flags off) |
 | `references.bib` | `manuscript/references.bib` |
-| `manuscript.bbl` | `manuscript/.build/manuscript.bbl` (the copy in `manuscript/` is stale) |
+| `manuscript.bbl` | `manuscript/manuscript.bbl` (`make pdf` keeps it in sync with `.build/`) |
 | `llncs.cls`, `splncs04.bst` | `manuscript/` |
 | `figures/*.pdf` | only the figures the paper includes (9 files) |
 | `manuscript.pdf` | the compiled PDF, `springer-lncs-proceedings.pdf` |
