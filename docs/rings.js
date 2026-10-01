@@ -242,7 +242,7 @@
   // ---------- paper mode: title and legend inside the SVG ----------
   if (PAPER) {
     const t = el("text", { x: 780, y: -2, "text-anchor": "middle", "font-size": 40, "font-weight": 800, fill: INK }, svg);
-    t.textContent = "From one model to a society of institutions";
+    t.textContent = "From an individual model to a society of institutions";
     const L = el("g", { class: "rg-paper-legend" }, svg);
     let y = 270;
     [["gov", "GOVERNING INSTITUTIONS"], ["inter", "AGENT–GROUP INTERACTIONS"], ["model", "INDIVIDUAL MODEL"]].forEach(([g, label]) => {

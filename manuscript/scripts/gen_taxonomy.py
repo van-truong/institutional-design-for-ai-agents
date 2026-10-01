@@ -78,7 +78,7 @@ def build():
     W = PAD * 2 + COL_W * 2 + COL_GAP
     body = max(column_height(c, themes) for c in COLUMNS)
     LEG = 46.0
-    H = TOP + body + LEG
+    H = TOP + body + LEG + 22  # two legend lines
     scale = TEXTWIDTH_PT / W
     assert min(FS.values()) * scale >= 6.0, f'min font {min(FS.values()) * scale:.2f}pt < 6pt'
 
@@ -157,11 +157,17 @@ def build():
         o.append(f'<text class="leg" x="{lx + 8:.1f}" y="{ly + 4:.1f}">{txt}</text>')
         lx += 8 + len(txt) * 6.6 + 16
     lx += 6
-    o.append(f'<text class="leg" x="{lx:.1f}" y="{ly + 4:.1f}">Disciplines outside AI:</text>')
-    lx += 140
-    for i in range(3):
-        o.append(f'<rect x="{lx + i * (SQ + SQ_GAP):.1f}" y="{ly - SQ / 2:.1f}" width="{SQ}" height="{SQ}" rx="1" fill="{MUTED}" stroke="{MUTED}" stroke-width="0.8"/>')
-    o.append(f'<text class="leg" x="{lx + 3 * (SQ + SQ_GAP) + 4:.1f}" y="{ly + 4:.1f}">= 3 (max 6)</text>')
+    # breadth key: show the scale itself (empty slots + what a full row means), not a bare count
+    ly += 22; lx = PAD  # second line
+    o.append(f'<text class="leg" x="{lx:.1f}" y="{ly + 4:.1f}">Also documented in fields outside AI:</text>')
+    lx += 222
+    for n, txt in ((1, '1 field'), (3, '3'), (MAX_SQ, f'{MAX_SQ} or more')):
+        for i in range(MAX_SQ):
+            fill = MUTED if i < n else '#FFFFFF'
+            o.append(f'<rect x="{lx + i * (SQ + SQ_GAP):.1f}" y="{ly - SQ / 2:.1f}" width="{SQ}" height="{SQ}" rx="1" fill="{fill}" stroke="{MUTED}" stroke-width="0.8"/>')
+        lx += MAX_SQ * (SQ + SQ_GAP) + 4
+        o.append(f'<text class="leg" x="{lx:.1f}" y="{ly + 4:.1f}">{txt}</text>')
+        lx += len(txt) * 6.6 + 14
     o.append('</svg>')
     return '\n'.join(o), len(rows), len(themes), min(FS.values()) * scale, W, H
 

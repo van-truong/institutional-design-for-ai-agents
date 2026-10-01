@@ -68,7 +68,11 @@
   const x0 = (W - (4 * COLW + 2 * COLGAP + SECGAP)) / 2;
   const LEFTS = [x0, x0 + COLW + COLGAP, x0 + 2 * COLW + COLGAP + SECGAP, x0 + 3 * COLW + 2 * COLGAP + SECGAP];
   const ROOT_Y = 44, BAR1 = 84, SEC_Y = 110, BAR2 = 134, GRP_Y = 150, GRP_H = 42, LEAF0 = 238, PITCH = 52, LEAF_H = 42;
-  const H = LEAF0 + 3 * PITCH + LEAF_H / 2 + 16;
+  // draft variant (stage data-variant="game"): badges naming the part of the Bayesian game each family changes
+  const GAME = stage.dataset.variant === "game";
+  const BADGE = { Constraint: ["A\u1d62", true], Epistemic: ["p, \u0398", true], Incentive: ["u\u1d62", true],
+    Normative: ["deontic", false], Social: ["N, links", false], Restorative: ["ex post", false] };
+  const H = LEAF0 + 3 * PITCH + LEAF_H / 2 + 16 + (GAME ? 40 : 0);
 
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, xmlns: "http://www.w3.org/2000/svg", role: "img", class: "ds-svg", "font-family": FONT,
     "aria-labelledby": "ds-title ds-desc" }, stage);
@@ -145,7 +149,16 @@
         const lg = hitG(id);
         const lx = left + 32, lw = COLW - 32;
         el("rect", { x: lx, y: ly - LEAF_H / 2, width: lw, height: LEAF_H, rx: 12, fill: lc[2], stroke: lc[0], "stroke-width": 1.3 }, lg);
-        if (fam) {
+        if (fam && GAME) {
+          const [sym, inGame] = BADGE[name], bw = Math.max(40, sym.length * (inGame ? 8 : 7) + 18), bx = lx + lw - bw - 6;
+          const tx = lx + (lw - bw - 6) / 2;
+          text(tx, ly - 2, name, { "text-anchor": "middle", "font-size": 15.5, "font-weight": 700, fill: lc[1] }, lg);
+          text(tx, ly + 14, fam[0], { "text-anchor": "middle", "font-size": 13, "font-style": "italic", fill: MUT }, lg);
+          el("rect", { x: bx, y: ly - 12, width: bw, height: 24, rx: 12, fill: "#fff", stroke: lc[0], "stroke-width": 1.3,
+            ...(inGame ? {} : { "stroke-dasharray": "4 3" }) }, lg);
+          text(bx + bw / 2, ly + 5, sym, { "text-anchor": "middle", "font-size": inGame ? 15 : 12, "font-style": "italic",
+            "font-family": inGame ? "'Times New Roman', Times, serif" : FONT, "font-weight": inGame ? 400 : 600, fill: lc[1] }, lg);
+        } else if (fam) {
           text(lx + lw / 2, ly - 2, name, { "text-anchor": "middle", "font-size": 16, "font-weight": 700, fill: lc[1] }, lg);
           text(lx + lw / 2, ly + 14, fam[0], { "text-anchor": "middle", "font-size": 13.5, "font-style": "italic", fill: MUT }, lg);
         } else {
@@ -154,6 +167,17 @@
       });
     });
   });
+  if (GAME) {
+    const ly = H - 18;
+    const t = el("text", { x: W / 2, y: ly, "text-anchor": "middle", "font-size": 14, fill: MUT }, svg);
+    const parts = [["Badges: the part of a Bayesian game ", 0], ["G", 1], [" = (", 0], ["N", 1], [", ", 0], ["A\u1d62", 1], [", ", 0],
+      ["\u0398\u1d62", 1], [", ", 0], ["p", 1], [", ", 0], ["u\u1d62", 1], [") each family changes (solid), or what it adds beyond the one-shot game (dashed)", 0]];
+    parts.forEach(([str, math]) => {
+      const sp = el("tspan", math ? { "font-family": "'Times New Roman', Times, serif", "font-style": "italic", "font-size": 15.5 } : {}, t);
+      sp.textContent = str;
+    });
+  }
+
   // ---------- interaction ----------
   const lineage = (id) => {
     const set = new Set([id]);
