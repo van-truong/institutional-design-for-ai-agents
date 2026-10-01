@@ -808,6 +808,12 @@ Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
   Paying for honesty without knowing the truth: Reputation-penalty design for
   {LLM} marketplace agents (2026), \url{https://arxiv.org/abs/2607.28330}
 
+\bibitem{zheng2023judging}
+Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
+  Li, Z., Li, D., Xing, E.P., Zhang, H., Gonzalez, J.E., Stoica, I.: Judging
+  {LLM}-as-a-judge with {MT}-bench and chatbot arena. In: Advances in Neural
+  Information Processing Systems. vol.~36 (2023), datasets and Benchmarks Track
+
 \bibitem{zhou2023ifeval}
 Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
   L.: Instruction-following evaluation for large language models (2023)
