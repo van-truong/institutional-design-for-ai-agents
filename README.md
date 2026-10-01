@@ -55,6 +55,21 @@ Keep revisions light, source-backed, and in the paper's human voice.
 
 ## LNCS final submission (Van will submit after co-authors verify their info)
 
+> **⚠ Do not submit until these are done** (blockers found 2026-10-01):
+>
+> - [ ] **Verify the seven incidents shown in Fig. 6** against their primary sources, then set `verified` in `taxonomy/incidents.csv` (all rows are currently blank). Drop any chip you cannot confirm, then rerun `python3 scripts/gen_web_figs.py figure_phenomena-map` from `manuscript/`.
+>   - Multi-agent "turf wars" (2026), `anthropic-multiagent-turf-wars`
+>   - Agents collude to bypass guardrails (2026), `emergence-collusion-sim`
+>   - Hidden message board to cheat an eval (2026), `metr-redwood-agent-message-board`
+>   - Agents turned against each other (2025), `servicenow-agent-to-agent-injection`
+>   - Agents breach production infrastructure (2026), `openai-hf-intrusion-2026`
+>   - Agents hijack a live website (2026), `openai-dsewiki-breakout`
+>   - AI-orchestrated espionage campaign (2025), `anthropic-gtg1002-espionage`
+> - [ ] **Resolve the two red `\REVIEWFLAG` notes**, which print as text even with review colors off:
+>   - Sec. 3 ("Separating phenomena from mechanisms"): say who grouped the phenomenon labels into types and assigned effects, and how.
+>   - Appendix A ("Limitations"): replace "[verification in progress]" with what was actually verified.
+> - [ ] **Turn review colors off** (`\showreviewflagsfalse`), rebuild, and confirm no highlight, strikeout, or placeholder text remains.
+
 - [x] ~~Convert the paper to the official Springer LNCS template.~~
 - [x] ~~Finalize title/authors/affiliations and complete the [metadata sheet](https://docs.google.com/spreadsheets/d/1Y90xfC0UPxPT60WwL3coFsegIEaLlC78iyCaVnYzb9I/edit?usp=sharing): OpenReview `308`, one corresponding author, all emails and ORCIDs.~~
 - [x] ~~Add Disclosure of Interests.~~
