@@ -221,13 +221,10 @@ We present two complementary maps that we constructed from a single collated cor
 \paragraph{Corpus.} We searched the literature in two stages. Between April and June 2026, the authors' manual and AI-assisted searches produced a working list of mechanisms. In September 2026, LLM search agents then ran logged searches over multi-agent LLM studies from 2023 onward and their multi-agent reinforcement-learning (MARL) precursors, across arXiv, the ACL Anthology, and the main machine-learning and multi-agent venues, with citation chasing; one search targeted emergent group behavior specifically. Further searches covered the social and life sciences, technical and sociotechnical systems, and agent governance. Our unit of analysis is an \emph{instance}: one documented use of a mechanism, or one report of a group-level pattern, in one source, so a study that tests several mechanisms contributes several instances. The corpus holds over 600 instances from AI and nearly twenty other fields.
 
 \begin{figure}[!t]
-  \begin{minipage}[c]{0.52\linewidth}
-    \includegraphics[width=\linewidth]{figures/figure_taxonomy-circle.pdf}
-  \end{minipage}\hfill
-  \begin{minipage}[c]{0.44\linewidth}
+  \centering
+  \includegraphics[width=0.8\linewidth]{figures/figure_taxonomy-circle.pdf}
   \caption{The taxonomy at a glance: six family hubs, 18 themes, and over 60 mechanisms (outer dots), colored as in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Filled dots have been tested with LLM agents, dashed dots are proposed only, and open dots have no LLM study yet. Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} details every mechanism.}
   \label{fig:taxonomy-circle}
-  \end{minipage}
 \end{figure}
 
 \paragraph{Coding mechanisms.} We built the taxonomy (Figure~\mbox{\ref{fig:taxonomy-circle}}) by thematic coding, a qualitative method in which researchers tag passages of text with short descriptive labels and then group related labels into themes. We followed the taxonomy-development method of Nickerson et al.~\mbox{\citep{nickerson2013taxonomy}}, which starts by choosing a \emph{meta-characteristic}: the single property on which every distinction in the taxonomy is based. We chose the \emph{lever}, meaning what an intervention changes about agents' options, information, payoffs, relationships, norms, or what happens after a deviation, since the term is familiar to system designers in both the social sciences and AI. In a first pass, coders named each instance's lever in field-neutral terms, so that a `deposit-refund scheme' and `proof-of-stake slashing' could receive the same label. Labels that act through the same lever were merged into mechanisms, grouped into themes, and placed in the six families of Section~\mbox{\ref{sec:functions}}, while named combinations of levers, such as Ostrom's design principles, were kept separately as configurations. In a second, blinded pass, coders relabeled every instance against the resulting codebook and recorded the kind of evidence behind it (tested, proposed, descriptive, theory, or review), which gives the circles of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} showing whether a mechanism has been tested with LLM agents. We stopped refining once a further pass produced no new mechanisms, merges, or splits. Table~\mbox{\ref{tab:coding-fields}} lists the fields each pass recorded.
@@ -539,14 +536,14 @@ Our position is not that institutions will solve all multi-agent cooperation pro
 We do not yet have all the answers for this research agenda. We offer this map as something researchers can test, question, and extend as multi-agent systems become more capable and consequential. So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions---even if capable AI systems might inevitably be able to design and run those institutions themselves.
 
 \subsubsection*{Data and Code Availability}
-An interactive website, with clickable maps, figures, and links to every coded source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}. The site will be updated as the maps grow; this paper describes the version of September 2026.
+An interactive website, with clickable maps, figures, and links to every coded source, is available at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}. The site will be updated as the maps grow; this paper describes the version of September 2026.
 
 \subsubsection*{Author Contributions}\label{sec:contributions}
 V.Q.T. and D.G.P. led the initial conceptualization. V.Q.T. and X.A.H. together further evolved and developed the research framework, including incorporating feedback from D.G.P., E.I., R.F., J.N.C., T.J.Z., and Z.J. All manuscript writing was led by V.Q.T. and X.A.H. and every author, E.I., R.F., J.N.C., D.G.P., T.J.Z., and Z.J., contributed to writing, reviewing, and/or editing both original and final drafts. V.Q.T. led the visualizations and website build, with assistance from E.I. Funding was acquired by T.J.Z., D.G.P., and Z.J. V.Q.T. and X.A.H. led project management, while D.G.P., T.J.Z., and Z.J. co-supervised.
 
 \subsubsection*{Acknowledgments}
 
-This work was supported in part by the German Federal Ministry of Education and Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B; by the Machine Learning Cluster of Excellence, EXC number 2064/1--Project number 390727645; by the Schmidt Sciences SAFE-AI Grant; by the Frontier Model Forum and AI Safety Fund; and by Coefficient Giving. V.Q.T. was supported by the ACM SIGHPC Computational \& Data Science Fellowship.
+This work was supported in part by the German Federal Ministry of Education and Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B; by the Machine Learning Cluster of Excellence, EXC number 2064/1--Project number 390727645; by the Schmidt Sciences SAFE-AI Grant; by the Frontier Model Forum and AI Safety Fund; and by Coefficient Giving. V.Q.T. is supported by the ACM SIGHPC Computational \& Data Science Fellowship and thanks her mentors in the humanities and social sciences: Sophia Acord (UF Sociology/Ask Associates, Inc.), John Krigbaum (UF Anthropology), Dennis Culhane (UPenn SP2), and Stefano Puntoni (UPenn Wharton).
 
 \subsubsection*{Disclosure of Interests}
 The authors have no competing interests to declare.
