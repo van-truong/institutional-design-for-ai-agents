@@ -15,22 +15,23 @@ sys.path.insert(0, HERE)
 import gen_multilayer as ml  # noqa: E402
 
 OUT = os.path.join(HERE, '..', 'figs', 'figure_agent-in-context.html')
-W, H = 720, 470
+W, H = 720, 504
 CX, PW, PH, TH = 120, 56, 23, 9
+TITLE = 'The agent in its institutional context'
 LAYERS = [  # (y, top fill, side fill, label lines, label color, node glyph, Fig. 1 rings, bullets, note)
-    (84, ml.AM_TOP, ml.AM_SIDE, ['Governing institutions'], ml.AM_D, ml.nodes_net, ('exo', 'macro'),
+    (114, ml.AM_TOP, ml.AM_SIDE, ['Governing institutions'], ml.AM_D, ml.nodes_net, ('exo', 'macro'),
      ['norms, monitoring, sanctions, repair', 'platform, market & legal structure', 'who sets and enforces the rules'],
      'Fig. 1: exo- and macrosystem'),
-    (234, ml.BL_TOP, ml.BL_SIDE, ['Agent–group interactions'], ml.BL_D, ml.nodes_tri, ('micro', 'meso'),
+    (264, ml.BL_TOP, ml.BL_SIDE, ['Agent–group interactions'], ml.BL_D, ml.nodes_tri, ('micro', 'meso'),
      ['communication, handoffs, shared memory', 'conventions, reciprocity, reputation', 'emergent roles & coordination'],
      'Fig. 1: micro- and mesosystem'),
-    (384, ml.VI_TOP, ml.VI_SIDE, ['Individual model', '(even if aligned)'], ml.VI_D, ml.nodes_one, ('model',),
+    (414, ml.VI_TOP, ml.VI_SIDE, ['Individual model', '(even if aligned)'], ml.VI_D, ml.nodes_one, ('model',),
      ['alignment, refusals, capabilities', 'truthfulness, instruction-following', 'what single-model evals test'],
      'Fig. 1: the model at the center'),
 ]
 # Fig. 1's rings, inner to outer: (key, radius, fill when highlighted); colors match gen_nested_rings.py
-RINGS = [('model', 5, '#6C5CD0'), ('micro', 10, '#A9C4E0'), ('meso', 15, '#9FD9C7'),
-         ('exo', 20, '#BBD9C4'), ('macro', 25, '#E3C88C')]
+RINGS = [('model', 6, '#6C5CD0'), ('micro', 12, '#A9C4E0'), ('meso', 18, '#9FD9C7'),
+         ('exo', 24, '#BBD9C4'), ('macro', 30, '#E3C88C')]
 LX = 300           # left edge of the ring icon / text block
 
 
@@ -46,7 +47,8 @@ def ring_icon(cx, cy, keys):
 
 def build():
     o = [f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" xmlns="http://www.w3.org/2000/svg" font-family="{ml.FONT}">',
-         '<title>Agent-in-context</title>']
+         '<title>Agent-in-context</title>',
+         f'<text x="{W/2:.0f}" y="40" text-anchor="middle" font-size="19" font-weight="800" fill="{ml.INK}">{ml.esc(TITLE)}</text>']
     # dotted guides joining the plate edges
     for (ya, *_), (yb, *_) in zip(LAYERS, LAYERS[1:]):
         for x in (CX - PW, CX + PW):
@@ -64,7 +66,7 @@ def build():
     tx = LX + 42
     for y, top, side, label, col, nodes, rings, bullets, note in LAYERS:
         yb = y - 46
-        o.append(ring_icon(LX + 2, yb + 8, rings))
+        o.append(ring_icon(LX + 2, yb + 32, rings))
         for i, line in enumerate(label):
             style = 'font-weight="400" font-style="italic"' if line.startswith('(') else 'font-weight="800"'
             o.append(f'<text x="{tx}" y="{yb + i * 19:.0f}" font-size="16.5" {style} fill="{col}">{ml.esc(line)}</text>')
