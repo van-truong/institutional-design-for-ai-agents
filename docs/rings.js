@@ -71,7 +71,7 @@
   };
 
   // ---------- svg ----------
-  const svg = el("svg", { viewBox: PAPER ? "0 -40 1560 1064" : "0 34 1000 990", role: "img", class: "rg-svg", xmlns: NS, "font-family": FONT,
+  const svg = el("svg", { viewBox: PAPER ? "0 -50 1000 1290" : "0 34 1000 990", role: "img", class: "rg-svg", xmlns: NS, "font-family": FONT,
     "aria-labelledby": "rg-title rg-desc" }, stage);
   el("title", { id: "rg-title" }, svg).textContent = "From one model to a society of institutions";
   el("desc", { id: "rg-desc" }, svg).textContent =
@@ -271,23 +271,22 @@
 
   // ---------- paper mode: title and legend inside the SVG ----------
   if (PAPER) {
-    const t = el("text", { x: 780, y: -2, "text-anchor": "middle", "font-size": 40, "font-weight": 800, fill: INK }, svg);
+    const t = el("text", { x: CX, y: -10, "text-anchor": "middle", "font-size": 31, "font-weight": 800, fill: INK }, svg);
     t.textContent = "From an individual model to a society of institutions";
+    // legend in a row under the rings, so the rings can span the full figure width
     const L = el("g", { class: "rg-paper-legend" }, svg);
-    let y = 270;
-    [["gov", "GOVERNING INSTITUTIONS"], ["inter", "AGENT–GROUP INTERACTIONS"], ["model", "INDIVIDUAL MODEL"]].forEach(([g, label]) => {
-      const h = el("text", { x: 1060, y, "font-size": 20, "font-weight": 800, "letter-spacing": "0.1em", fill: MUT }, L);
+    el("line", { x1: 20, y1: 1036, x2: 980, y2: 1036, stroke: "#D8DEE5", "stroke-width": 1.4 }, L);
+    [["gov", "GOVERNING INSTITUTIONS", 20], ["inter", "AGENT–GROUP INTERACTIONS", 384], ["model", "INDIVIDUAL MODEL", 730]].forEach(([g, label, x]) => {
+      const h = el("text", { x, y: 1072, "font-size": 16, "font-weight": 800, "letter-spacing": "0.08em", fill: MUT }, L);
       h.textContent = label;
-      y += 46;
-      LEVELS.filter((l) => l.group === g).forEach((l) => {
-        el("circle", { cx: 1080, cy: y - 2, r: 17, fill: l.c[2], stroke: l.c[0], "stroke-width": 3 }, L);
-        const n = el("text", { x: 1112, y: y + 6, "font-size": 31, "font-weight": 800, fill: l.c[1] }, L);
+      LEVELS.filter((l) => l.group === g).forEach((l, i) => {
+        const y = 1112 + i * 74;
+        el("circle", { cx: x + 14, cy: y - 8, r: 14, fill: l.c[2], stroke: l.c[0], "stroke-width": 3 }, L);
+        const n = el("text", { x: x + 38, y, "font-size": 24, "font-weight": 800, fill: l.c[1] }, L);
         n.textContent = l.name;
-        const d = el("text", { x: 1112, y: y + 40, "font-size": 23, fill: INK }, L);
+        const d = el("text", { x: x + 38, y: y + 25, "font-size": 16.5, fill: INK }, L);
         d.textContent = l.summary;
-        y += 92;
       });
-      y += 18;
     });
     return;
   }
