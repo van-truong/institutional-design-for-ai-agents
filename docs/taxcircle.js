@@ -39,8 +39,11 @@
       slot += 1.6;
     });
 
-    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, xmlns: NS, "font-family": FONT, role: "img" }, stage);
+    const TOP = 44;  // headroom for the figure title
+    const svg = el("svg", { viewBox: `0 ${-TOP} ${W} ${H + TOP}`, width: W, height: H + TOP, xmlns: NS, "font-family": FONT, role: "img" }, stage);
     el("title", {}, svg).textContent = "The taxonomy at a glance";
+    const ttl = el("text", { x: CX, y: -14, "text-anchor": "middle", "font-size": 20.5, "font-weight": 700, fill: "#2C2C2A" }, svg);
+    ttl.textContent = "Cooperation-shaping mechanisms at a glance";
     const defs = el("defs", {}, svg);
     const glow = el("radialGradient", { id: "tc-bg", cx: CX, cy: CY, r: R.label + 30, gradientUnits: "userSpaceOnUse" }, defs);
     el("stop", { offset: "0", "stop-color": "#FFFFFF" }, glow);
