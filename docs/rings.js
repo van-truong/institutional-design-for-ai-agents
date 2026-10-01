@@ -43,7 +43,7 @@
   const inner = (l) => { const i = LEVELS.indexOf(l); return i < LEVELS.length - 1 ? LEVELS[i + 1].r : 0; };
   const EXTRA = {
     wedge: { name: "Cutaway", c: [INK, INK, "#F7F9FB"], summary: "from one model to many societies",
-      note: "Reading outward: one model becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another." },
+      note: "Reading outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another." },
     chrono: { name: "Chronosystem", c: [MUT, INK, "#EEF2F6"], summary: "change over time",
       note: "Every layer changes over time. Models are updated, groups re-form, and rules are rewritten, so an institution that works today may not work tomorrow." },
     recip: { name: "Reciprocal influence", c: [MUT, INK, "#EEF2F6"], summary: "each layer shapes the others",
@@ -117,6 +117,18 @@
       "stroke-dasharray": "6 6", "marker-start": "url(#rg-arrow)", "marker-end": "url(#rg-arrow)", opacity: "0.75" }, recip);
     el("line", { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: "transparent", "stroke-width": "18" }, recip);
   });
+  // short two-way arrows across single boundaries (micro-meso, meso-exo, exo-macro), at varied angles
+  [[258, 150, 228], [104, 238, 322], [250, 330, 420]].forEach(([deg, r0, r1]) => {
+    const [x0, y0] = pt(deg, r0), [x1, y1] = pt(deg, r1);
+    el("line", { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: MUT, "stroke-width": "1.6", "stroke-dasharray": "5 5",
+      "marker-start": "url(#rg-arrow)", "marker-end": "url(#rg-arrow)", opacity: "0.7" }, recip);
+  });
+  // links among an agent's settings: two-way arcs inside the mesosystem band
+  [[306, 330], [30, 54]].forEach(([a0, a1]) => {
+    const r = 216, [x0, y0] = pt(a0, r), [x1, y1] = pt(a1, r);
+    el("path", { d: `M ${f(x0)} ${f(y0)} A ${r} ${r} 0 0 1 ${f(x1)} ${f(y1)}`, fill: "none", stroke: BY.meso.c[0], "stroke-width": "1.8",
+      "stroke-dasharray": "5 4", "marker-start": "url(#rg-arrow)", "marker-end": "url(#rg-arrow)", opacity: "0.8" }, recip);
+  });
 
   // cutaway wedge
   const WA = 30;
@@ -137,8 +149,8 @@
     "stroke-opacity": "0.75", "pointer-events": "none" }, wedge);
 
   // glyphs
-  const agent = (x, y, s, col, parent) => {
-    const g = el("g", { transform: `translate(${f(x)} ${f(y)}) scale(${s})` }, parent);
+  const agent = (x, y, s, col, parent, rot = 0) => {
+    const g = el("g", { transform: `translate(${f(x)} ${f(y)}) rotate(${f(rot)}) scale(${s})` }, parent);
     el("line", { x1: 0, y1: -15, x2: 0, y2: -20, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, g);
     el("circle", { cx: 0, cy: -21.5, r: 2.2, fill: col[0] }, g);
     el("rect", { x: -11, y: -15, width: 22, height: 15, rx: 5, fill: "#fff", stroke: col[1], "stroke-width": 1.6 }, g);
@@ -183,8 +195,8 @@
   [[-30, 148], [30, 148], [0, 186]].forEach(([dx, r]) => agent(CX + dx, CY - r + 12, 0.8, cI, story));
   wtext(200, "a group interacts", cI[1], story);
   up(226, 252, story);
-  for (let i = -4; i <= 4; i++) agent(CX + i * 27, CY - 272, 0.52, cS, story);
-  wtext(288, "a society forms", cS[1], story);
+  for (let i = -4; i <= 4; i++) { const deg = i * 5.6, [ax, ay] = pt(deg, 266); agent(ax, ay, 0.52, cS, story, deg); }
+  wtext(292, "a society forms", cS[1], story);
   up(312, 332, story);
   const inst = [[-92, 350], [0, 384], [92, 350]];
   inst.forEach(([dx, r], i) => {
@@ -201,7 +213,7 @@
   const [om0, om1, omY, omR] = [CX - 66, CX + 66, CY + 30, 150];
   const omSag = omR - Math.sqrt(omR * omR - 66 * 66);
   const mt = arcText("rg-one-model", `M ${om0} ${f(omY - omSag)} A ${omR} ${omR} 0 0 0 ${om1} ${f(omY - omSag)}`,
-    "one model", cM[1], svg, FS.model);
+    "an AI agent", cM[1], svg, FS.model);
   mt.setAttribute("pointer-events", "none");
 
   // ring names (curved along the bottom) and example chips
