@@ -14,3 +14,15 @@
 .ph-rcounts { display: flex; flex-wrap: wrap; gap: .4rem .9rem; color: #595959; font-size: .88rem !important; }
 .ph-rinc { color: #8f3f1e; font-size: .88rem !important; }
 @media (max-width: 900px) { .ph-radial-wrap { grid-template-columns: 1fr; } }
+
+/* Draft opt-in overlay: informal reports and automated systems outside AI (phenomena_informal.json) */
+.ph-inf-toggle[aria-pressed="true"] { border-color: #3F4D5A; border-style: dashed; background: #EEF2F6; color: #3F4D5A; }
+.ph-inf-note { max-width: 860px; margin: .8rem 0; padding: .6rem .8rem; border: 1.5px dashed #6B7787; border-radius: 10px; color: #3F4D5A; font-size: .9rem; }
+.ph-cell .ph-inf-dot { display: inline-flex; justify-content: center; align-items: center; min-width: 26px; height: 26px; margin-left: 4px; padding: 0 4px; border: 2px dashed #6B7787; border-radius: 13px; background: transparent; color: #3F4D5A; font-size: .72rem; font-weight: 800; }
+.ph-inf-badge { margin-left: .5rem; padding: .05rem .5rem; border: 1.5px dashed #6B7787; border-radius: 999px; color: #3F4D5A; font-size: .72rem; font-weight: 700; white-space: nowrap; }
+.ph-inf-band { border-top-style: dashed !important; }
+.ph-inf-row .ph-name { font-style: italic; }
+.ph-inf-group h4 { color: #3F4D5A; }
+.ph-inf-tier { display: inline-block; margin-right: .45rem; padding: 0 .45rem; border: 1.2px dashed #6B7787; border-radius: 999px; font-size: .68rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: #3F4D5A; }
+.ph-inf-tier.ph-inf-peer_reviewed { border-style: solid; }
+.ph-inf-pattern { display: block; margin-top: .15rem; color: #595959; font-size: .85rem; }

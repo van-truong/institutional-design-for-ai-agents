@@ -308,6 +308,70 @@
     // open a row from the URL hash (#ph-<key>), a shareable permalink, in the list view
     const key = (location.hash.match(/^#ph-(.+)$/) || [])[1];
     if (key) radial.openInList(key);
+    addInformal(data, matrix, radial);
+  }
+
+  // ---------------------------------------------------------------- website: opt-in informal slice (draft)
+  // assets/phenomena_informal.json holds a separate, lower-evidence tier: informal reports (blog posts, project pages)
+  // and automated systems outside AI research. Nothing changes until a visitor presses "Include informal reports";
+  // then the list view shows dashed dots, a badge for systems beyond AI agents, the sources in each row, and the
+  // proposed new types as extra rows.
+  function addInformal(data, matrix, radial) {
+    fetch("assets/phenomena_informal.json").then((r) => r.json()).then((inf) => {
+      const added = [];
+      const hide = (n) => { n.hidden = true; added.push(n); return n; };
+      const btn = html("button", { class: "tx-btn ph-inf-toggle", type: "button", "aria-pressed": "false" }, "Include informal reports");
+      radial.bar.appendChild(btn);
+      const note = hide(html("p", { class: "ph-inf-note" },
+        `Added after the paper: ${inf.total} instances from informal reports (${inf.tiers.informal}) and from automated systems ` +
+        `outside AI research (${inf.tiers.peer_reviewed}). They form a separate, lower-evidence tier and are not counted ` +
+        `in the paper. Dashed dots mark them; open a row for the sources.`));
+      matrix.parentNode.insertBefore(note, matrix);
+
+      const decorate = (row, rows) => {
+        if (!row || !rows.length) return;
+        const cells = row.querySelectorAll(".ph-rowhead .ph-cell");
+        const n = { marl: 0, llm: 0, other: 0 };
+        rows.forEach((r) => { n[r.substrate === "llm" ? "llm" : r.substrate === "marl" || r.substrate === "rl_other" ? "marl" : "other"] += 1; });
+        [["marl", 1], ["llm", 2]].forEach(([s, i]) => {
+          if (n[s] && cells[i]) cells[i].appendChild(hide(html("span", { class: "ph-inf-dot", title: `${n[s]} informal-slice instances` }, `+${n[s]}`)));
+        });
+        if (n.other) row.querySelector(".ph-label").appendChild(hide(html("span", { class: "ph-inf-badge" }, `+${n.other} beyond AI agents`)));
+        const g = hide(html("div", { class: "ph-group ph-inf-group" }));
+        g.appendChild(html("h4", {}, `Informal reports and automated systems (${rows.length})`));
+        const ul = html("ul", { class: "ph-sources" });
+        rows.forEach((r) => {
+          const li = html("li");
+          li.appendChild(html("span", { class: `ph-inf-tier ph-inf-${r.tier}` }, r.tier === "informal" ? "informal" : "outside AI"));
+          li.appendChild(r.url ? html("a", { href: r.url, target: "_blank", rel: "noopener" }, r.title) : html("span", {}, r.title));
+          li.appendChild(html("span", { class: "ph-meta" }, [r.substrate_label, r.authors, r.date].filter(Boolean).join(" · ")));
+          li.appendChild(html("span", { class: "ph-inf-pattern" }, r.pattern));
+          ul.appendChild(li);
+        });
+        g.appendChild(ul);
+        const detail = row.querySelector(".ph-detail");
+        detail.insertBefore(g, detail.querySelector(".ph-permalink"));
+      };
+
+      data.types.forEach((t) => decorate(matrix.querySelector(`#ph-${CSS.escape(t.key)}`), inf.types[t.key] || []));
+      if (inf.new_types.length) {
+        matrix.appendChild(hide(html("div", { class: "ph-band ph-inf-band" }, "Proposed from informal reports")));
+        inf.new_types.forEach((nt) => {
+          const t = { ...nt, counts: { human: 0, marl: 0, llm: 0 }, sources: {}, incidents: [] };
+          const row = hide(rowFor(t, {}));
+          row.classList.add("ph-inf-row");
+          matrix.appendChild(row);
+          decorate(row, inf.types[nt.key] || []);
+        });
+      }
+      btn.addEventListener("click", () => {
+        const on = btn.getAttribute("aria-pressed") !== "true";
+        btn.setAttribute("aria-pressed", String(on));
+        btn.textContent = on ? "Hide informal reports" : "Include informal reports";
+        added.forEach((n) => { n.hidden = !on; });
+        if (on) radial.setView(true);
+      });
+    }).catch(() => {});
   }
 
   function rowFor(t, incByKey) {
@@ -458,6 +522,6 @@
         target.scrollIntoView({ block: "center", behavior: "smooth" });
       }
     }
-    return { openInList };
+    return { openInList, setView, bar };
   }
 })();
