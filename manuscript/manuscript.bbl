@@ -21,6 +21,11 @@ Amir, D., Ahl, R.E., Jordan, M.R., Bolotin, H., Bogese, M., Gonz{\'a}lez, G.T.,
   \textbf{12}(6),  eadw9995 (2026). \doi{10.1126/sciadv.adw9995},
   \url{https://www.science.org/doi/abs/10.1126/sciadv.adw9995}
 
+\bibitem{andreoni1988why}
+Andreoni, J.: Why free ride? {S}trategies and learning in public goods
+  experiments. Journal of Public Economics  \textbf{37}(3),  291--304 (1988).
+  \doi{10.1016/0047-2727(88)90043-6}
+
 \bibitem{anshelevichPriceStabilityNetwork2008}
 Anshelevich, E., Dasgupta, A., Kleinberg, J., Tardos, {\'E}., Wexler, T.,
   Roughgarden, T.: The {{Price}} of {{Stability}} for {{Network Design}} with
@@ -47,7 +52,7 @@ Axelrod, R., Hamilton, W.D.: The evolution of cooperation. Science
 \bibitem{axtell1996aligning}
 Axtell, R., Axelrod, R., Epstein, J.M., Cohen, M.D.: Aligning simulation
   models: A case study and results. Computational and Mathematical Organization
-  Theory  (1996). \doi{10.1007/BF01299065}
+  Theory  \textbf{1}(2),  123--141 (1996). \doi{10.1007/BF01299065}
 
 \bibitem{bacharachIndividualChoiceTeams2006}
 Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
@@ -67,6 +72,11 @@ Baumol, W.J.: Welfare economics and the theory of the state. In: Rowley, C.K.,
   Schneider, F. (eds.) The Encyclopedia of Public Choice, pp. 937--940.
   Springer, Boston, MA (2004). \doi{10.1007/978-0-306-47828-4_214},
   \url{https://doi.org/10.1007/978-0-306-47828-4_214}
+
+\bibitem{CitibankSues2020}
+{BBC News}: Citibank sues for \$176m payment made in error. BBC News (Aug
+  2020), \url{https://www.bbc.co.uk/news/business-53802994}, accessed:
+  2026-06-09
 
 \bibitem{secFlashCrash2010}
 Berman, G.E.: Market participants and the {May} 6 flash crash (Oct 2010),
@@ -146,11 +156,11 @@ Delimitrou, C., Kozyrakis, C.: Quasar: Resource-efficient and {{QoS-aware}}
   NY, USA (Feb 2014). \doi{10.1145/2541940.2541941}
 
 \bibitem{dupontExperimentsAlgorithmicGovernance2017}
-Dupont, Q.: Experiments in {{Algorithmic Governance}}: {{A}} history and
+DuPont, Q.: Experiments in {{Algorithmic Governance}}: {{A}} history and
   ethnography of " {{The DAO}}, " a failed {{Decentralized Autonomous
   Organization}}. In: Campbell-Verduyn, M. (ed.) Bitcoin and Beyond: The
   Challenges and Opportunities of Blockchains for Global Governance, pp.
-  157--177. Routledge (Jan 2017). \doi{10.4324/9781315211909-8}
+  157--177. Routledge (Nov 2017). \doi{10.4324/9781315211909-8}
 
 \bibitem{eisenAmazon2011}
 Eisen, M.: Amazon's \$23,698,655.93 book about flies.
@@ -185,7 +195,8 @@ Faulkner, R., Deshpande, A., Guzman~Piedrahita, D., Leibo, J.Z., Jin, Z.:
 
 \bibitem{fehr2000cooperation}
 Fehr, E., G{\"a}chter, S.: Cooperation and punishment in public goods
-  experiments. American Economic Review  \textbf{90}(4),  980--994 (2000)
+  experiments. American Economic Review  \textbf{90}(4),  980--994 (2000).
+  \doi{10.1257/aer.90.4.980}
 
 \bibitem{fenner1988smallpox}
 Fenner, F., Henderson, D.A., Arita, I., Je{\v{z}}ek, Z., Ladnyi, I.D.: Smallpox
@@ -226,7 +237,8 @@ Gneezy, U., Rustichini, A.: A fine is a price. The Journal of Legal Studies
 
 \bibitem{gneezyPayEnoughDont2000}
 Gneezy, U., Rustichini, A.: Pay {{Enough}} or {{Don}}'t {{Pay}} at {{All}}. The
-  Quarterly Journal of Economics  \textbf{115}(3),  791--810 (2000)
+  Quarterly Journal of Economics  \textbf{115}(3),  791--810 (2000).
+  \doi{10.1162/003355300554917}
 
 \bibitem{goodhartProblemsMonetaryManagement1984}
 Goodhart, C.A.E.: Problems of {{Monetary Management}}: {{The UK Experience}}.
@@ -350,12 +362,6 @@ Huang, X.A., La~Malfa, E., Marro, S., Asperti, A., Cohn, A.G., Wooldridge,
   {{EMNLP}} 2024. pp. 2964--2983. Association for Computational Linguistics,
   Miami, Florida, USA (Nov 2024). \doi{10.18653/v1/2024.findings-emnlp.167}
 
-\bibitem{huang2026groupalignment}
-Huang, X.A., Marro, S., Tharas, C., Truong, V.Q., La~Malfa, E., Jin, Z.: Group
-  alignment: Internal and external incentives for cooperation in social
-  dilemmas (2026), \url{https://openreview.net/forum?id=d5Fvm1QYm8}, under
-  review at ICLR 2027
-
 \bibitem{huang2026mechanismdesignenoughprosocial}
 Huang, X.A., Tharas, C., Marro, S., Truong, V.Q., Schölkopf, B., Malfa, E.L.,
   Jin, Z.: Mechanism design is not enough: Prosocial agents for cooperative
@@ -383,7 +389,7 @@ Jaques, N., Lazaridou, A., Hughes, E., Gulcehre, C., Ortega, P., Strouse, D.,
 \bibitem{kirilenkoFlashCrashHighFrequency2017}
 Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
   {{High-Frequency Trading}} in an {{Electronic Market}}. The Journal of
-  Finance  \textbf{72}(3),  967--998 (2017)
+  Finance  \textbf{72}(3),  967--998 (2017). \doi{10.1111/jofi.12498}
 
 \bibitem{knight1992institutions}
 Knight, J.: Institutions and Social Conflict. Political Economy of Institutions
@@ -435,8 +441,8 @@ Leibo, J.Z., Zambaldi, V., Lanctot, M., Marecki, J., Graepel, T.: Multi-agent
   \url{https://www.ifaamas.org/Proceedings/aamas2017/pdfs/p464.pdf}
 
 \bibitem{lewisConventionPhilosophicalStudy2008}
-Lewis, D.: Convention: {{A Philosophical Study}}. Wiley-Blackwell, Cambridge,
-  MA, USA (2008)
+Lewis, D.: Convention: {{A Philosophical Study}}. Wiley-Blackwell, Oxford, UK
+  (2008)
 
 \bibitem{li2023camelcommunicativeagentsmind}
 Li, G., Hammoud, H.A.A.K., Itani, H., Khizbullin, D., Ghanem, B.: {CAMEL}:
@@ -448,7 +454,8 @@ Li, G., Hammoud, H.A.A.K., Itani, H., Khizbullin, D., Ghanem, B.: {CAMEL}:
 Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
   falsehoods. In: Proceedings of the 60th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers). pp. 3214--3252.
-  Association for Computational Linguistics (2022)
+  Association for Computational Linguistics (2022).
+  \doi{10.18653/v1/2022.acl-long.229}
 
 \bibitem{liu2025agentbenchevaluatingllmsagents}
 Liu, X., Yu, H., Zhang, H., Xu, Y., Lei, X., Lai, H., Gu, Y., Ding, H., Men,
@@ -472,11 +479,13 @@ Macy, M.W., Willer, R.: From factors to actors: Computational sociology and
 \bibitem{martinezpena2024coleman}
 Mart{\'i}nez-Pe{\~n}a, R., Ylikoski, P.: Coupling social and ecological
   mechanisms with the {Coleman} boat. Ecology and Society  \textbf{29}(4), ~6
-  (2024), \url{https://ecologyandsociety.org/vol29/iss4/art6/}
+  (2024). \doi{10.5751/ES-15209-290406},
+  \url{https://ecologyandsociety.org/vol29/iss4/art6/}
 
 \bibitem{maskinMechanismDesignHow2008}
 Maskin, E.S.: Mechanism {{Design}}: {{How}} to {{Implement Social Goals}}. The
-  American Economic Review  \textbf{98}(3),  567--576 (2008)
+  American Economic Review  \textbf{98}(3),  567--576 (2008).
+  \doi{10.1257/aer.98.3.567}
 
 \bibitem{mazeika2024harmbench}
 Mazeika, M., Phan, L., Yin, X., Zou, A., Wang, Z., Mu, N., Sakhaee, E., Li, N.,
@@ -502,7 +511,8 @@ Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:
   collaboration in the {OpenAI} / {Hugging Face} hacking incident. METR blog
   (Aug 2026),
   \url{https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/},
-  contributors include Ryan Greenblatt (Redwood Research). Accessed: 2026-09-29
+  contributors: Ryan Greenblatt, Ajeya Cotra, and Hjalmar Wijk. Accessed:
+  2026-09-29
 
 \bibitem{millerChipWarFight2025}
 Miller, C.: Chip {{War}}: {{The Fight}} for the {{World}}'s {{Most Critical
@@ -523,7 +533,7 @@ M{\"u}ller, B., Bohn, F., Dre{\ss}ler, G., Groeneveld, J., Klassert, C.,
 
 \bibitem{myersonOptimalAuctionDesign1981}
 Myerson, R.B.: Optimal {{Auction Design}}. Mathematics of Operations Research
-  \textbf{6}(1),  58--73 (1981)
+  \textbf{6}(1),  58--73 (1981). \doi{10.1287/moor.6.1.58}
 
 \bibitem{myersonSatterthwaite1983efficient}
 Myerson, R.B., Satterthwaite, M.A.: Efficient mechanisms for bilateral trading.
@@ -596,9 +606,9 @@ Piatti, G., Jin, Z., Kleiman-Weiner, M., Sch\"{o}lkopf, B., Sachan, M.,
 
 \bibitem{LostPasswordsLock2021}
 Popper, N.: Lost {{Passwords Lock Millionaires Out}} of {{Their Bitcoin
-  Fortunes}} - {{The New York Times}} (Mar 2021),
+  Fortunes}}. The New York Times (Jan 2021),
   \url{https://web.archive.org/web/20210321104514/https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html},
-  accessed 30th of June 2026
+  accessed: 2026-06-09
 
 \bibitem{premackDoesChimpanzeeHave1978}
 Premack, D., Woodruff, G.: Does the chimpanzee have a theory of mind?
@@ -616,6 +626,12 @@ Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
 \bibitem{schellingStrategyConflictNew1960}
 Schelling, T.C.: The Strategy of Conflict. Harvard University Press, Cambridge,
   MA (1960)
+
+\bibitem{selten1986end}
+Selten, R., Stoecker, R.: End behavior in sequences of finite {Prisoner's
+  Dilemma} supergames: A learning theory approach. Journal of Economic Behavior
+  \& Organization  \textbf{7}(1),  47--70 (1986).
+  \doi{10.1016/0167-2681(86)90021-1}
 
 \bibitem{seyedin2026politician}
 Seyedin, F., Weller, A., Yun, J., Babaei, M.: The politician, the liar, and the
@@ -635,11 +651,12 @@ Shapira, N., Levy, M., Alavi, S.H., Zhou, X., Choi, Y., Goldberg, Y., Sap, M.,
 
 \bibitem{shoham1995sociallaws}
 Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
-  Off-line design. Artificial Intelligence  \textbf{73}(1--2),  231--252 (1995)
+  Off-line design. Artificial Intelligence  \textbf{73}(1--2),  231--252
+  (1995). \doi{10.1016/0004-3702(94)00007-N}
 
 \bibitem{skalseDefiningCharacterizingReward2022}
 Skalse, J., Howe, N.H.R., Krasheninnikov, D., Krueger, D.: Defining and
-  characterizing reward hacking. In: Advances in Neural Information Processing
+  characterizing reward gaming. In: Advances in Neural Information Processing
   Systems. vol.~35, pp. 9460--9471. Curran Associates, Inc. (2022),
   \url{https://proceedings.neurips.cc/paper_files/paper/2022/hash/3d719fee332caa23d5038b8a90e81796-Abstract-Conference.html}
 
@@ -695,7 +712,7 @@ Tewolde, E., Zhang, X., Guzman~Piedrahita, D., Conitzer, V., Jin, Z.:
 
 \bibitem{tomaselloNaturalHistoryHuman2016}
 Tomasello, M.: A {{Natural History}} of {{Human Morality}}. Harvard University
-  Press (2016)
+  Press (2016). \doi{10.4159/9780674915855}
 
 \bibitem{tomuschatLegacyNuremberg2006}
 Tomuschat, C.: The {{Legacy}} of {{Nuremberg}}. Journal of International
@@ -741,11 +758,6 @@ Vezhnevets, A.S., Agapiou, J.P., Aharon, A., Ziv, R., Matyas, J.,
   J.Z.: Generative agent-based modeling with actions grounded in physical,
   social, or digital space using {Concordia} (2023),
   \url{https://arxiv.org/abs/2312.03664}
-
-\bibitem{CitibankSues2020}
-Walker, A.: Citibank sues for \$176m payment made in error. BBC News (Aug
-  2020), \url{https://www.bbc.co.uk/news/business-53802994}, accessed:
-  2026-06-09
 
 \bibitem{wangmdreplacehumans2025}
 Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
@@ -807,6 +819,16 @@ Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
 Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
   Paying for honesty without knowing the truth: Reputation-penalty design for
   {LLM} marketplace agents (2026), \url{https://arxiv.org/abs/2607.28330}
+
+\bibitem{yao2026competition}
+Yao, J., Chen, C., Zhang, B.: Competition and cooperation of {LLM} agents in
+  games (2026), \url{https://arxiv.org/abs/2604.00487}
+
+\bibitem{zheng2023judging}
+Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
+  Li, Z., Li, D., Xing, E.P., Zhang, H., Gonzalez, J.E., Stoica, I.: Judging
+  {LLM}-as-a-judge with {MT}-bench and chatbot arena. In: Advances in Neural
+  Information Processing Systems. vol.~36 (2023), datasets and Benchmarks Track
 
 \bibitem{zhou2023ifeval}
 Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,

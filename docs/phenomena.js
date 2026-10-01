@@ -98,7 +98,7 @@
       stext(20, y, letter, { "font-size": 25, "font-weight": 800, fill: "#3F4D5A" }, svg);
       stext(W / 2, y, title, { "font-size": 25, "font-weight": 700, fill: "#3F4D5A", "text-anchor": "middle" }, svg);
     };
-    panel(28, "A", "Phenomena by type and substrate");
+    panel(28, "A", "Phenomena by type and kind of agent");
     const ga = svgEl("g", { transform: `translate(${((W - 1200 * SA) / 2).toFixed(1)} ${(50 - RAD_TOP * SA).toFixed(1)}) scale(${SA})` }, svg);
     radialMap(ga, data, { fs: FS, idp: "pp-", ringKey: false, interactive: false });
     const yb = 50 + (RAD_BOT - RAD_TOP) * SA + 18;
@@ -400,7 +400,7 @@
     matrix.parentNode.insertBefore(wrapEl, matrix);
 
     const svg = svgEl("svg", { viewBox: "0 0 1200 925", "font-family": FONT, role: "img", class: "ph-rsvg",
-      "aria-label": "Radial map of group-level phenomena by substrate" }, stage);
+      "aria-label": "Radial map of group-level phenomena by type and kind of agent" }, stage);
     const nodes = radialMap(svg, data, { fs: 1, idp: "ph-", ringKey: true, interactive: true });
 
     const intro = () => {
