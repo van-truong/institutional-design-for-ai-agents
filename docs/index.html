@@ -298,8 +298,26 @@
 
   <footer>
     <strong>Cooperation Mechanisms and Emergent Patterns in Multi-Agent AI</strong>
-    <span>An evolving companion to the archival paper</span>
+    <span>An evolving companion to the archival paper &middot; Last updated <time id="last-updated" datetime="2026-10-01">October 1, 2026</time></span>
     <a href="#top">Back to top ↑</a>
   </footer>
+  <script>
+  // "Last updated": the time of the latest commit to the site (docs/ on the published branch), from the GitHub API;
+  // falls back to the page's Last-Modified date, then to the date written above.
+  (function () {
+    var t = document.getElementById("last-updated");
+    if (!t) return;
+    var show = function (d) {
+      if (isNaN(d)) return;
+      t.dateTime = d.toISOString();
+      t.textContent = d.toLocaleString(undefined, { year: "numeric", month: "long", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+    };
+    if (document.lastModified) show(new Date(document.lastModified));
+    fetch("https://api.github.com/repos/van-truong/institutional-design-for-ai-agents/commits?sha=website&path=docs&per_page=1")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j && j[0] && j[0].commit) show(new Date(j[0].commit.committer.date)); })
+      .catch(function () {});
+  })();
+  </script>
 </body>
 </html>

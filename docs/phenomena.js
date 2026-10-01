@@ -323,7 +323,7 @@
       const btn = html("button", { class: "tx-btn ph-inf-toggle", type: "button", "aria-pressed": "false" }, "Include informal reports");
       radial.bar.appendChild(btn);
       const note = hide(html("p", { class: "ph-inf-note" },
-        `Draft overlay: ${inf.total} instances from informal reports (${inf.tiers.informal}) and from automated systems ` +
+        `Added after the paper: ${inf.total} instances from informal reports (${inf.tiers.informal}) and from automated systems ` +
         `outside AI research (${inf.tiers.peer_reviewed}). They form a separate, lower-evidence tier and are not counted ` +
         `in the paper. Dashed dots mark them; open a row for the sources.`));
       matrix.parentNode.insertBefore(note, matrix);
