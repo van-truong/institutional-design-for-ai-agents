@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- the site's robot agent (rings.js), as a tab icon -->
+  <line x1="32" y1="9" x2="32" y2="16" stroke="#463BA0" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="32" cy="7" r="4.5" fill="#6C5CD0"/>
+  <rect x="9" y="16" width="46" height="34" rx="11" fill="#fff" stroke="#463BA0" stroke-width="4"/>
+  <circle cx="23" cy="33" r="4.6" fill="#463BA0"/>
+  <circle cx="41" cy="33" r="4.6" fill="#463BA0"/>
+  <path d="M 25 42 Q 32 46 39 42" fill="none" stroke="#463BA0" stroke-width="2.8" stroke-linecap="round"/>
+  <rect x="17" y="52" width="30" height="10" rx="4" fill="#6C5CD0"/>
+</svg>

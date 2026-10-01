@@ -17,7 +17,10 @@ DATA = os.path.join(HERE, '..', '..', 'docs', 'assets', 'taxonomy.json')
 OUT = os.path.join(HERE, '..', 'figs', 'drafts', 'figure_rings-taxonomy.html')
 
 INK, MUTED, HAIR, PAGE = '#3F4D5A', '#6B7787', '#B3BEC9', '#FBFAF7'
-W, H = 1080, 1170
+RING_W, H = 1080, 1170
+LEG_SCALE = 1.3                    # legend text relative to the ring text
+LEG_X, LEG_W = RING_W + 10, 550   # side legend: one row per ring
+W = LEG_X + LEG_W
 CX, CY = 540, 548
 AGENT = ('#6C5CD0', '#463BA0', '#ECE9FB')
 MICRO = ('#3A6EA5', '#2F3D6B', '#DCE8F5')
@@ -144,18 +147,75 @@ def build():
     R = R_MACRO + 20
     (x0, y0), (x1, y1) = P(150, R), P(30, R)
     s.append(f'<path d="M{x0:.1f} {y0:.1f} A{R} {R} 0 0 0 {x1:.1f} {y1:.1f}" fill="none" stroke="{MUTED}" stroke-width="2.4" marker-end="url(#ah)"/>')
-    s.append(t(CX, CY + R + 26, 'CHRONOSYSTEM: model updates, drift, deprecations, incidents over time', 'chrono'))
-    # corner notes: evidence key and attribution
-    kx, ky = W - 190, 40
-    s.append(t(kx, ky, 'LLM-agent evidence', 'khead', 'start'))
-    for k, (kind, label) in enumerate((('tested', 'tested'), ('proposed', 'proposed only'), ('none', 'none yet'))):
-        x, y = kx + 8, ky + 24 + k * 21
-        s.append(f'<circle cx="{x}" cy="{y - 5}" r="4.3" fill="{INK if kind == "tested" else "#fff"}" stroke="{INK}" stroke-width="1.4"/>')
-        if kind == 'proposed':
-            s.append(f'<circle cx="{x}" cy="{y - 5}" r="1.5" fill="{INK}"/>')
-        s.append(t(x + 14, y, label, 'kitem', 'start'))
-    s.append(t(20, 40, 'After Bronfenbrenner (1979)', 'note', 'start'))
+    s.append(t(CX, CY + R + 26, 'CHRONOSYSTEM (TIME)', 'chrono'))
+    s += legend()
     return s
+
+# side legend, inner ring first: (name, colors, description lines)
+LEGEND = [
+    ('Agents', AGENT, ['the interacting models, each acting', 'for a principal']),
+    ('Microsystem', MICRO, ['settings each agent acts in directly']),
+    ('Mesosystem', MESO, ['links between those settings']),
+    ('66 mechanisms', MECH, ['levers institutions use, in six families;', 'one dot per mechanism']),
+    ('Exosystem', EXO, ['settings the agents are not part of', 'that still shape them']),
+    ('Macrosystem', MACRO, ['law, markets, professional norms,', 'and cultural values']),
+]
+# brackets: how the rings group into the three layers of Fig. 2
+GROUPS = [(0, 0, ['individual', 'model']), (1, 2, ['agent-group', 'interactions']), (3, 5, ['governing institutions'])]
+
+def legend():
+    """Rows stacked top to bottom, then shifted so the legend is centered on the rings."""
+    s = []
+    LS = SC * LEG_SCALE
+    lx = LEG_X + 58
+    line, sw = 20 * LS, 17 * LS
+    tx = lx + sw + 10
+    y = 0
+    s.append(t(LEG_X + 8, y, 'What each ring holds', 'lhead', 'start'))
+    y += 34 * LS
+    tops, bots = [], []
+    for name, (mid, dark, bg), lines in LEGEND:
+        y += 10 * LS
+        s.append(f'<rect x="{lx}" y="{y - sw + 3:.1f}" width="{sw:.1f}" height="{sw:.1f}" rx="4" fill="{bg}" stroke="{mid}" stroke-width="1.6"/>')
+        s.append(t(tx, y, name, 'lname', 'start', f' fill="{dark}"'))
+        tops.append(y - sw + 3)
+        for ln in lines:
+            y += line
+            s.append(t(tx, y + 2, ln, 'lex', 'start'))
+        if name == '66 mechanisms':   # the evidence key sits with the mechanism ring
+            y += line + 4
+            x = tx + 6
+            for kind, label in (('tested', 'tested'), ('proposed', 'proposed only'), ('none', 'none')):
+                s.append(f'<circle cx="{x:.1f}" cy="{y - 5 * LS:.1f}" r="4.3" fill="{INK if kind == "tested" else "#fff"}" stroke="{INK}" stroke-width="1.4"/>')
+                if kind == 'proposed':
+                    s.append(f'<circle cx="{x:.1f}" cy="{y - 5 * LS:.1f}" r="1.5" fill="{INK}"/>')
+                s.append(t(x + 10, y, label, 'kitem', 'start'))
+                x += (24 + 7.2 * len(label)) * LS
+            y += line
+            s.append(t(tx, y, 'LLM-agent evidence', 'kitem', 'start', f' fill="{MUTED}"'))
+        y += 8
+        bots.append(y)
+        y += 12 * LS
+    bx = lx - 18
+    for a, b, label in GROUPS:
+        ya, yb = tops[a] - 2, bots[b]
+        s.append(f'<path d="M{bx + 7} {ya:.1f} L{bx} {ya:.1f} L{bx} {yb:.1f} L{bx + 7} {yb:.1f}" fill="none" stroke="{HAIR}" stroke-width="1.8"/>')
+        ym = (ya + yb) / 2
+        for k, ln in enumerate(label):
+            x = bx - 10 - (len(label) - 1 - k) * 19 * LS
+            s.append(t(x, ym, ln, 'bracket', extra=f' transform="rotate(-90 {x:.1f} {ym:.1f})"'))
+    y += 20 * LS
+    s.append(f'<path d="M{lx} {y - 6 * LS:.1f} L{lx + sw:.1f} {y - 6 * LS:.1f}" stroke="{MUTED}" stroke-width="2.4" marker-end="url(#ah)"/>')
+    s.append(t(tx, y, 'Chronosystem', 'lname', 'start', f' fill="{INK}"'))
+    for ln in ['model updates, drift, deprecations,', 'incidents that change the rules']:
+        y += line
+        s.append(t(tx, y + 2, ln, 'lex', 'start'))
+    y += 34 * LS
+    s.append(t(LEG_X + 8, y, 'After Bronfenbrenner (1979). Brackets show', 'note', 'start'))
+    y += line
+    s.append(t(LEG_X + 8, y, 'the three layers of Fig. 2.', 'note', 'start'))
+    top = CY - y / 2
+    return [f'<g transform="translate(0 {top:.1f})">'] + s + ['</g>']
 
 def main():
     body = '\n'.join(build())
@@ -169,8 +229,12 @@ def main():
   .mechsub{{font-size:{13.0*SC:.1f}px;font-style:italic;fill:{MUTED};}}
   .chrono{{font-size:{14.0*SC:.1f}px;font-weight:800;letter-spacing:.5px;fill:{MUTED};}}
   .khead{{font-size:{14.5*SC:.1f}px;font-weight:800;fill:{INK};}}
-  .kitem{{font-size:{14.0*SC:.1f}px;fill:{INK};}}
-  .note{{font-size:{14.0*SC:.1f}px;font-style:italic;fill:{MUTED};}}'''
+  .kitem{{font-size:{14.0*SC*LEG_SCALE:.1f}px;fill:{INK};}}
+  .note{{font-size:{14.0*SC*LEG_SCALE:.1f}px;font-style:italic;fill:{MUTED};}}
+  .lhead{{font-size:{17.0*SC*LEG_SCALE:.1f}px;font-weight:800;fill:{INK};}}
+  .lname{{font-size:{16.5*SC*LEG_SCALE:.1f}px;font-weight:800;}}
+  .lex{{font-size:{14.5*SC*LEG_SCALE:.1f}px;fill:{INK};}}
+  .bracket{{font-size:{13.5*SC*LEG_SCALE:.1f}px;font-style:italic;fill:{MUTED};}}'''
     marker = lambda k, c: f'<marker id="{k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{c}"/></marker>'
     html = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Draft: nested systems with the taxonomy as a ring</title>

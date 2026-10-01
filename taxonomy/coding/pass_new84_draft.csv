@@ -1,0 +1,85 @@
+instance_id,kind,mechanism,secondary_p2,fit,evidence_type,effect,coder_note
+I0562,mechanism,M04,,good,descriptive,supports_cooperation,A2A Agent Card = persistent identity/attribution
+I0563,phenomenon,,,good,descriptive,mixed,harmful task decomposition bypasses per-trajectory monitors (collusion/monitoring failure)
+I0564,mechanism,M34,M04,good,descriptive,supports_cooperation,AP2 signed mandates = scoped authorization bound to user
+I0565,mechanism,M01,,good,descriptive,supports_cooperation,AI Agent Index = public transparency registry
+I0566,mechanism,M01,M02,good,tested,supports_cooperation,LLM monitor scores transcripts for covert side tasks
+I0567,mechanism,M02,,partial,proposed,supports_cooperation,proposes collusion (incl. steganographic) detection via comm oversight
+I0568,mechanism,M30,M33,partial,proposed,supports_cooperation,credible commitment + mutual transparency to establish trust
+I0569,mechanism,M21,M64,partial,proposed,supports_cooperation,peer/pool incentivisation; adaptive mechanism design
+I0570,mechanism,M01,,good,tested,supports_cooperation,SHUSHCAST suspicion-score transcript monitor
+I0571,mechanism,M34,,good,descriptive,supports_cooperation,MCP OAuth 2.1 scoped authorization
+I0572,mechanism,M35,,good,descriptive,supports_cooperation,pause/stop + confirmation gates + sandbox = runtime interception
+I0573,mechanism,M04,,good,descriptive,supports_cooperation,agent self-identification (AI disclosure/User-Agent) to third parties
+I0574,phenomenon,,,good,tested,mixed,LLM collusion in double auctions
+I0575,phenomenon,,,good,tested,,AgentVerse collaboration framework (capability; borderline out_of_scope)
+I0576,phenomenon,,,good,tested,,opinion-dynamics social-media simulation
+I0577,phenomenon,,,good,descriptive,harms_cooperation,toxicity adoption audit
+I0578,phenomenon,,,good,tested,,scale-free network emergence
+I0579,phenomenon,,,good,tested,,coordination on arbitrary binary choice (convention)
+I0580,phenomenon,,,good,tested,,behavioral differentiation of heterogeneous LLMs
+I0581,phenomenon,,,good,tested,,S3 social-network simulation
+I0582,phenomenon,,,good,tested,,AgentGroupChat group-chat simulacra
+I0583,mechanism,M44,M38,partial,tested,mixed,team org structure w/ designated leader (leadership)
+I0584,phenomenon,,,good,tested,,convention formation in reference games
+I0585,mechanism,M60,M38,good,tested,mixed,prosocial platform interventions (feed/bridging = choice architecture)
+I0586,phenomenon,,,good,tested,,EconAgent macroeconomic simulation
+I0587,phenomenon,,,good,tested,harms_cooperation,emergent misaligned inter-agent communication
+I0588,phenomenon,,,good,tested,,network formation among LLMs
+I0589,phenomenon,,,good,tested,,cultural-evolution simulation framework
+I0590,phenomenon,,,good,descriptive,,Y Social platform (digital twin; tooling)
+I0591,phenomenon,,,good,tested,harms_cooperation,emergent collusion in long-horizon tasks
+I0592,phenomenon,,,good,tested,,fragility of LLM social networks
+I0593,phenomenon,,,good,tested,,operational validation of agent social sims
+I0594,phenomenon,,,good,tested,,emergence of intellectual elites
+I0595,phenomenon,,,good,descriptive,,Werewolf communication game
+I0596,phenomenon,,,good,tested,,TwinMarket behavioral/social market sim
+I0597,phenomenon,,,good,tested,,Silo-Bench distributed tasks; leader emergence
+I0598,phenomenon,,,good,descriptive,harms_cooperation,Chirper.ai social-network characterization
+I0599,phenomenon,,,good,tested,,emergent adversarial communication (MARL)
+I0600,phenomenon,,,good,tested,,compositionality/generalization in emergent language
+I0601,phenomenon,,,good,tested,,emergent communication at scale
+I0602,phenomenon,,,good,tested,,emergence of hierarchies (MARL)
+I0603,phenomenon,,,good,tested,,inductive biases for emergent communication
+I0604,phenomenon,,,good,tested,,learning to communicate (RIAL/DIAL)
+I0605,phenomenon,,,good,tested,,emergent resource exchange / tolerated theft
+I0606,phenomenon,,,good,tested,,emergent implicit signaling (curricula)
+I0607,phenomenon,,,good,tested,supports_cooperation,social influence as intrinsic motivation (borderline mechanism M59)
+I0608,phenomenon,,,good,tested,,emergent bartering behaviour
+I0609,phenomenon,,,good,tested,,model-free conventions (Allelopathic Harvest)
+I0610,phenomenon,,,good,review,,emergent multi-agent communication survey
+I0611,phenomenon,,,good,tested,,pitfalls of measuring emergent communication
+I0612,phenomenon,,,good,tested,,emergent communication under competition
+I0613,phenomenon,,,good,review,,emergent language survey/taxonomy
+I0614,phenomenon,,,good,tested,,emergent dominance hierarchies (RL)
+I0615,phenomenon,,,good,tested,,population heterogeneity in emergent communication
+I0616,mechanism,M14,M38,partial,tested,supports_cooperation,decentralized social sanctioning redistributes rewards (also division-of-labor phenomenon)
+I0617,mechanism,M66,M61,good,tested,supports_cooperation,OPOWER social-comparison energy feedback (normative)
+I0618,mechanism,M27,,good,descriptive,supports_cooperation,responsive-regulation enforcement pyramid = graduated sanctions
+I0619,mechanism,M66,,good,tested,mixed,threshold location/impact info in climate PGG
+I0620,mechanism,M55,M18,good,theory,supports_cooperation,reintegrative shaming
+I0621,configuration,M01,M67;M58;M52,good,descriptive,supports_cooperation,managerial compliance model (transparency+reporting+verification+assistance+dispute)
+I0622,mechanism,M38,,partial,theory,supports_cooperation,embeddedness of economic action (social structure; borderline phenomenon)
+I0623,configuration,M40,M07;M11,good,descriptive,supports_cooperation,Maghribi coalition = multilateral reputation punishment
+I0624,mechanism,M20,,good,theory,mixed,collective sanctions / group-mediated social control
+I0625,mechanism,M49,,good,tested,supports_cooperation,metanorms reward those who sanction
+I0626,mechanism,M31,,good,descriptive,supports_cooperation,online escrow (verify-then-pay)
+I0627,mechanism,M01,,good,descriptive,supports_cooperation,NPT/IAEA comprehensive safeguards verification (monitoring)
+I0628,mechanism,M01,M66,good,tested,mixed,commons visibility of resource/others manipulation
+I0629,mechanism,M10,M05,good,tested,supports_cooperation,committed exchange relations under information asymmetry
+I0630,mechanism,M63,M40,good,theory,supports_cooperation,Mauss gift-exchange obligations (mutual aid/reciprocity)
+I0631,mechanism,M66,,good,tested,supports_cooperation,expert climate-state info before contributing
+I0632,mechanism,M67,,good,descriptive,supports_cooperation,Montreal Multilateral Fund (financial/technical assistance)
+I0633,mechanism,M67,,good,descriptive,supports_cooperation,Montreal non-compliance first measure = assistance
+I0634,mechanism,M66,M58,good,tested,mixed,Cialdini social-comparison feedback (descriptive+injunctive norm; boomerang)
+I0635,mechanism,M67,,good,tested,mixed,EPA compliance assistance (carrots)
+I0636,configuration,M67,M01;M27,good,descriptive,supports_cooperation,management-enforcement ladder
+I0637,mechanism,M23,M21,good,tested,supports_cooperation,status as selective incentive for contributors
+I0638,mechanism,M65,M43,good,descriptive,supports_cooperation,CBAA/CBBA consensus-based task auctions
+I0639,mechanism,M65,,good,review,supports_cooperation,market-based multirobot coordination survey
+I0640,mechanism,M65,,good,descriptive,supports_cooperation,MURDOCH auction-based task allocation
+I0641,mechanism,M51,M28,good,descriptive,supports_cooperation,Kleros decentralized arbitration (juror staking)
+I0642,mechanism,M05,,good,tested,supports_cooperation,adaptive inter-robot trust weightings (reputation)
+I0643,mechanism,M43,,good,tested,supports_cooperation,resilient flocking consensus despite malicious robots
+I0644,mechanism,M43,M29,good,tested,supports_cooperation,blockchain smart-contract swarm consensus (Byzantine)
+I0645,mechanism,M28,M25,good,tested,supports_cooperation,crypto-token stake to participate; contract redistributes by contribution

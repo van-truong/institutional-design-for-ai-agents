@@ -29,3 +29,11 @@ archive/icml2026/ICML_Vangelo_24inx36in_Institution_Design_Poster.svg
 
 # Session notebooks live in the separate Projects/lab-notebook repo
 lab-notebook/
+__pycache__/
+
+# Final Springer submission package (contains the signed LTP; never commit)
+OpenReview_308_Truong/
+OpenReview_308_Truong.zip
+
+# Local poster sources (reference only; visuals adapted into docs/ by hand)
+archive/2026-04-21_VQT-ai-agent-sanctions-poster.svg

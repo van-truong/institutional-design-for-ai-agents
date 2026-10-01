@@ -1,0 +1,154 @@
+<svg viewBox="0 0 900 572" width="900" height="572" xmlns="http://www.w3.org/2000/svg">
+<defs><style type="text/css"><![CDATA[
+text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+
+  text{font-family:"Helvetica Neue",Arial,sans-serif;}
+  .banner{font-size:15px;font-weight:700;fill:#3F4D5A;}
+  .axis{font-size:16px;font-weight:900;letter-spacing:.05em;}
+  .colh,.rowh{font-size:17px;font-weight:800;}
+  .sub{font-size:14px;fill:#6B7787;font-style:italic;}
+  .slot{font-size:15px;font-weight:800;fill:#6B7787;}
+  .slotk{font-size:13px;font-weight:800;fill:#6B7787;}
+  .cellnote{font-size:13.5px;fill:#6B7787;font-style:italic;}
+  .note{font-size:15.5px;font-weight:700;fill:#3F4D5A;}
+  .notesub{font-size:14px;fill:#6B7787;font-style:italic;}
+  .intx{font-size:17px;font-weight:900;}
+  .key{font-size:14px;fill:#3F4D5A;}
+  html,body{margin:0;background:#fff;} .fig{width:900px;margin:0 auto;padding:12px;}
+
+]]></style></defs>
+<rect x="196" y="6" width="666" height="30" rx="15" fill="#EEF2F6" stroke="#6B7787" stroke-width="1.3"/>
+<text x="529.0" y="26.5" class="banner" text-anchor="middle">Held fixed: one task and one shared resource</text>
+<text x="529.0" y="60.0" class="axis" text-anchor="middle" fill="#2F3D6B">AGENT POPULATION</text>
+<text x="10.0" y="102.0" class="axis" text-anchor="start" fill="#8A5A0B">INSTITUTION</text>
+<text x="303.0" y="84.0" class="colh" text-anchor="middle" fill="#2F3D6B">Homogeneous</text>
+<text x="303.0" y="102.0" class="sub" text-anchor="middle">one model family</text>
+<text x="529.0" y="84.0" class="colh" text-anchor="middle" fill="#2F3D6B">Mixed</text>
+<text x="529.0" y="102.0" class="sub" text-anchor="middle">several model families</text>
+<text x="755.0" y="84.0" class="colh" text-anchor="middle" fill="#2F3D6B">Adversarial</text>
+<text x="755.0" y="102.0" class="sub" text-anchor="middle">plus a defecting entrant</text>
+<text x="10.0" y="160.0" class="rowh" text-anchor="start" fill="#8A5A0B">No rules</text>
+<text x="10.0" y="179.0" class="sub" text-anchor="start">shared resource only</text>
+<rect x="196" y="118" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="208.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="228.0" y="158.5" class="slot" text-anchor="middle">C</text>
+<rect x="258.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="278.0" y="158.5" class="slot" text-anchor="middle">E</text>
+<rect x="308.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="328.0" y="158.5" class="slot" text-anchor="middle">F</text>
+<rect x="358.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="378.0" y="158.5" class="slot" text-anchor="middle">R</text>
+<text x="303.0" y="192.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="422" y="118" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="434.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="454.0" y="158.5" class="slot" text-anchor="middle">C</text>
+<rect x="484.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="504.0" y="158.5" class="slot" text-anchor="middle">E</text>
+<rect x="534.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="554.0" y="158.5" class="slot" text-anchor="middle">F</text>
+<rect x="584.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="604.0" y="158.5" class="slot" text-anchor="middle">R</text>
+<text x="529.0" y="192.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="648" y="118" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="660.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="680.0" y="158.5" class="slot" text-anchor="middle">C</text>
+<rect x="710.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="730.0" y="158.5" class="slot" text-anchor="middle">E</text>
+<rect x="760.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="780.0" y="158.5" class="slot" text-anchor="middle">F</text>
+<rect x="810.0" y="136" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="830.0" y="158.5" class="slot" text-anchor="middle">R</text>
+<text x="755.0" y="192.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<text x="10.0" y="260.0" class="rowh" text-anchor="start" fill="#8A5A0B">Fixed fine</text>
+<text x="10.0" y="279.0" class="sub" text-anchor="start">one flat penalty</text>
+<rect x="196" y="218" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="208.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="228.0" y="258.5" class="slot" text-anchor="middle">C</text>
+<rect x="258.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="278.0" y="258.5" class="slot" text-anchor="middle">E</text>
+<rect x="308.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="328.0" y="258.5" class="slot" text-anchor="middle">F</text>
+<rect x="358.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="378.0" y="258.5" class="slot" text-anchor="middle">R</text>
+<text x="303.0" y="292.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="422" y="218" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="434.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="454.0" y="258.5" class="slot" text-anchor="middle">C</text>
+<rect x="484.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="504.0" y="258.5" class="slot" text-anchor="middle">E</text>
+<rect x="534.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="554.0" y="258.5" class="slot" text-anchor="middle">F</text>
+<rect x="584.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="604.0" y="258.5" class="slot" text-anchor="middle">R</text>
+<text x="529.0" y="292.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="648" y="218" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="660.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="680.0" y="258.5" class="slot" text-anchor="middle">C</text>
+<rect x="710.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="730.0" y="258.5" class="slot" text-anchor="middle">E</text>
+<rect x="760.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="780.0" y="258.5" class="slot" text-anchor="middle">F</text>
+<rect x="810.0" y="236" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="830.0" y="258.5" class="slot" text-anchor="middle">R</text>
+<text x="755.0" y="292.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<text x="10.0" y="360.0" class="rowh" text-anchor="start" fill="#8A5A0B">Graduated + appeal</text>
+<text x="10.0" y="379.0" class="sub" text-anchor="start">escalation, appeal, repair</text>
+<rect x="196" y="318" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="208.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="228.0" y="358.5" class="slot" text-anchor="middle">C</text>
+<rect x="258.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="278.0" y="358.5" class="slot" text-anchor="middle">E</text>
+<rect x="308.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="328.0" y="358.5" class="slot" text-anchor="middle">F</text>
+<rect x="358.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="378.0" y="358.5" class="slot" text-anchor="middle">R</text>
+<text x="303.0" y="392.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="422" y="318" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="434.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="454.0" y="358.5" class="slot" text-anchor="middle">C</text>
+<rect x="484.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="504.0" y="358.5" class="slot" text-anchor="middle">E</text>
+<rect x="534.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="554.0" y="358.5" class="slot" text-anchor="middle">F</text>
+<rect x="584.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="604.0" y="358.5" class="slot" text-anchor="middle">R</text>
+<text x="529.0" y="392.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="648" y="318" width="214" height="88" rx="10" fill="#fff" stroke="#B3BEC9" stroke-width="1.3"/>
+<rect x="660.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="680.0" y="358.5" class="slot" text-anchor="middle">C</text>
+<rect x="710.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="730.0" y="358.5" class="slot" text-anchor="middle">E</text>
+<rect x="760.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="780.0" y="358.5" class="slot" text-anchor="middle">F</text>
+<rect x="810.0" y="336" width="40" height="34" rx="6" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="830.0" y="358.5" class="slot" text-anchor="middle">R</text>
+<text x="755.0" y="392.0" class="cellnote" text-anchor="middle">repeated rounds × seeds</text>
+<rect x="189" y="211" width="680" height="102" rx="14" fill="none" stroke="#3A6EA5" stroke-width="3"/>
+<rect x="415" y="111" width="228" height="302" rx="14" fill="none" stroke="#C79A3A" stroke-width="3" stroke-dasharray="9 5"/>
+<line x1="10" y1="452" x2="50" y2="452" stroke="#3A6EA5" stroke-width="3.2"/>
+<text x="62.0" y="457.0" class="note" text-anchor="start">Vary the population at a</text>
+<text x="62.0" y="477.0" class="note" text-anchor="start">fixed institution</text>
+<text x="62.0" y="497.0" class="notesub" text-anchor="start">(what most benchmarks do)</text>
+<line x1="310" y1="452" x2="350" y2="452" stroke="#C79A3A" stroke-width="3.2" stroke-dasharray="9 5"/>
+<text x="362.0" y="457.0" class="note" text-anchor="start">Vary the institution at a</text>
+<text x="362.0" y="477.0" class="note" text-anchor="start">fixed population</text>
+<text x="362.0" y="497.0" class="notesub" text-anchor="start">(a growing body of work)</text>
+<rect x="610" y="440" width="40" height="24" rx="12" fill="#ECE9FB" stroke="#6C5CD0" stroke-width="1.4"/><text x="630.0" y="456.5" class="intx" text-anchor="middle" fill="#463BA0">×</text>
+<text x="662.0" y="457.0" class="note" text-anchor="start">Interaction: does the</text>
+<text x="662.0" y="477.0" class="note" text-anchor="start">institution&#x27;s effect depend</text>
+<text x="662.0" y="497.0" class="note" text-anchor="start">on the population?</text>
+<text x="10.0" y="536.0" class="key" text-anchor="start">In every cell:</text>
+<rect x="118" y="521" width="22" height="20" rx="4" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="129.0" y="536.0" class="slotk" text-anchor="middle">C</text>
+<text x="148.0" y="536.0" class="key" text-anchor="start">cooperation</text>
+<rect x="254.4" y="521" width="22" height="20" rx="4" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="265.4" y="536.0" class="slotk" text-anchor="middle">E</text>
+<text x="284.4" y="536.0" class="key" text-anchor="start">enforcement cost</text>
+<rect x="432.8" y="521" width="22" height="20" rx="4" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="443.8" y="536.0" class="slotk" text-anchor="middle">F</text>
+<text x="462.8" y="536.0" class="key" text-anchor="start">false punishment</text>
+<rect x="611.2" y="521" width="22" height="20" rx="4" fill="#FBFAF7" stroke="#B3BEC9" stroke-width="1.1" stroke-dasharray="3 3"/>
+<text x="622.2" y="536.0" class="slotk" text-anchor="middle">R</text>
+<text x="641.2" y="536.0" class="key" text-anchor="start">repair</text>
+<text x="10.0" y="560.0" class="notesub" text-anchor="start">Each outcome is reported with its uncertainty across runs. Cells stay empty until the study is run.</text>
+</svg>
