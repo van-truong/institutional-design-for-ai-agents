@@ -40,7 +40,6 @@ def write(name, title, src, key, crop=None):
     print(f'wrote figs/{name}.html and figures/{name}.pdf ({w:.0f}x{h:.0f})')
 
 def main():
-    run('gen_phenomena.py')          # standalone phenomena figure (writes its own PDF)
     run('gen_web_figs.py')           # Fig. 1 and the Coleman boat: drawn by docs/rings.js and docs/coleman.js in paper mode
     run('gen_multilayer.py', {'PANEL_LETTERS': '0'})
     multi = os.path.join(FIGS, 'figure4_multi-layer-institutions.html')

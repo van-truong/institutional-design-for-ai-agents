@@ -286,14 +286,14 @@ One might object that a sufficiently capable agent community could itself design
 
 \begin{figure}[!ht]
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=1.12\linewidth]{figures/figure2_four-cooperation-dilemmas.pdf}}
-  \caption{Four cooperation dilemmas that recur in shared-resource settings, each shown with its core tension and parallel examples in human and LLM-agent systems.}
+  \includegraphics[width=\linewidth]{figures/figure_dilemmas.pdf}
+  \caption{\voice{Cooperation dilemmas, each shown with its core tension and parallel examples in human and LLM-agent systems. Four recur in shared-resource settings (solid borders); coordination and collusion fall outside that framing but yield to the same institutional lens (dashed borders).}}
   \label{fig:dilemmas-response}
 \end{figure}
 
 Human institutions are imperfect guides for AI, but centuries of practice at exactly these dilemmas make them a tractable place to start. The classic cooperation dilemmas recur in four familiar forms (Figure~\mbox{\ref{fig:dilemmas-response}}). \emph{Extractive} dilemmas arise when overuse degrades a shared resource---overfishing a fishery, or agents exhausting a shared tool-call budget, context window, or rate limit. \emph{Contributive} dilemmas arise when everyone draws on a common good but few maintain it, which is often seen in unpaid open-source upkeep and moderation, or agents that consume shared memory without verifying or cleaning what they leave behind. \emph{Second-order} dilemmas arise because monitoring and punishment are themselves costly: someone must watch, and someone must watch the watchers. \emph{Repair} dilemmas arise after harm has occurred and decisions must be made on just whom bears the cost of fixing these disrupted states.
 
-Two further challenges fall outside this shared-resource framing but yield to the same institutional lens. \emph{Coordination} dilemmas turn on selecting among several acceptable equilibria---which convention, protocol, or standard to adopt---rather than on curbing defection. \emph{Collusion} is the inverse case, in which agents cooperate all too effectively, coordinating against human oversight; it is a reminder that cooperation is not an unqualified good, and we return to collusion and authority capture in Section~\mbox{\ref{sec:failures}}. \voice{Next we turn to what has already been tried: how we gathered the record, what institutions must do, and what agents do when no institution is present.}
+Two further challenges fall outside this shared-resource framing but yield to the same institutional lens (dashed cards in Figure~\mbox{\ref{fig:dilemmas-response}}). \emph{Coordination} dilemmas turn on selecting among several acceptable equilibria---which convention, protocol, or standard to adopt---rather than on curbing defection. \emph{Collusion} is the inverse case, in which agents cooperate all too effectively, coordinating against human oversight; it is a reminder that cooperation is not an unqualified good, and we return to collusion and authority capture in Section~\mbox{\ref{sec:failures}}. \voice{Next we turn to what has already been tried: how we gathered the record, what institutions must do, and what agents do when no institution is present.}
 
 
 % ==============================================
@@ -404,14 +404,14 @@ Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in the 
 
 \voice{The emphasis tracks the technology. Multi-agent reinforcement learning mostly documented emergent communication, whereas LLM-agent studies increasingly report emergent conventions, social structure, and culture, alongside failure modes such as collusion, biased consensus, and toxicity. Human behavior barely appears, because in human societies these patterns were long ago codified into the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Most patterns are neutral or beneficial, but about a quarter are already harmful, almost all in LLM systems and with no institution present. Several harmful types now have counterparts outside the laboratory, from the Hugging Face incident that opened this paper~\mbox{\citep{metr2026hfinvestigation}} to agents acting outside their intended scope on live systems. We read these as recurring patterns worth watching rather than settled findings: the literature is young, and many patterns rest on one or two studies.}
 
-\begin{figure*}[tp]
+\begin{figure*}[!tbp]
   \centering
-  \includegraphics[width=\textwidth]{figures/figure_phenomena.pdf}
-  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 coded instances that record an emergent pattern rather than a designed mechanism. Dot area is proportional to the number of coded instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. A first-pass reading of a fast-moving literature; the harmful patterns are tied to documented incidents at right.}}
+  \includegraphics[width=\textwidth]{figures/figure_phenomena-map.pdf}
+  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 coded instances that record an emergent pattern rather than a designed mechanism. Dot area is proportional to the number of coded instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. Patterns with a documented real-world incident are flagged at right, and the layout follows the taxonomy of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A first-pass reading of a fast-moving literature; an interactive radial version is on the project website.}}
   \label{fig:phenomena}
 \end{figure*}
 
-\begin{table}[!ht]
+\begin{table}[!tbp]
 \centering
 \caption{An inventory of group-level \emph{phenomena} observed in multi-agent systems, as of September 2026: 82 coded instances that record an emergent pattern rather than a designed mechanism (companion to the mechanisms of Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} and to Fig.~\mbox{\ref{fig:phenomena}}). Columns \textbf{H}, \textbf{M}, \textbf{L} count instances studied with humans, MARL agents, and LLM agents. A checkmark marks patterns with a documented real-world incident. The full list, with links to every source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}.}
 \label{tab:phenomena}
@@ -455,7 +455,7 @@ Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragi
 
 
 
-\FloatBarrier
+% \FloatBarrier % removed 2026-10-01: let Sec. 6 text flow around the Sec. 5 floats
 \section{When Cooperation Mechanisms Fail}\label{sec:failures}
 
 
@@ -606,7 +606,7 @@ This framing avoids treating all failures as equally severe. It also foregrounds
 
 
 
-\FloatBarrier
+% \FloatBarrier % removed 2026-10-01: let text flow around floats
 % % ============================================
 \section{Toward Evaluating Agent Institutions}\label{sec:evaluation}
 \label{sec:design_dim}
