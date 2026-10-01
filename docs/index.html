@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="figs-extra.css">
   <script src="context.js" defer></script>
   <script src="designspace.js" defer></script>
+  <link rel="stylesheet" href="commons.css">
+  <script src="commons.js" defer></script>
+  <link rel="stylesheet" href="agenda.css">
+  <script src="agenda.js" defer></script>
 </head>
 <body>
   <header class="poster-header" id="top">
@@ -104,15 +108,8 @@
         <p>Every day, teams of sub-agents—on your computer or on the Internet—must vie for and share finite tools and resources. Shared codebases, public databases, and compute form <em>artificial commons</em>, where classic collective-action failures can reappear.</p>
         <p class="red-strip">Aligned individual agents do not simply add up to a cooperative society.</p>
       </div>
-      <figure class="framed-figure poster-crop-figure">
-        <div class="crop-headings" aria-hidden="true">
-          <span>Familiar commons examples<br><small>in human social dilemmas</small></span>
-          <span>Artificial commons examples<br><small>in LLM-agent systems</small></span>
-        </div>
-        <div class="poster-crop">
-          <img src="assets/poster-position-framework.png" alt="Familiar human commons—pasture, river, and pond—alongside artificial commons shared by LLM agents: a power grid, database, and codebase.">
-        </div>
-        <figcaption>Human and artificial commons can face related collective-action problems.</figcaption>
+      <figure class="commons-figure" aria-label="Familiar commons and artificial commons">
+        <div id="commons-stage"></div>
       </figure>
     </section>
 
@@ -284,12 +281,7 @@
       <h2>Charting a promising research agenda</h2>
       <h3>It is worth asking: what are the best ways to capture cooperative outcomes?</h3>
       <p>Capturing cooperation may require empirical, quantitative, qualitative, and interpretive methods. The practical question is which interaction levels and metrics are feasible to evaluate as group- and population-level dynamics become more complex.</p>
-      <div class="agenda-cards">
-        <article><span>01</span><strong>See the evidence</strong><p>Connect leaves to exact human, LLM-agent, and computational-agent studies.</p></article>
-        <article><span>02</span><strong>See the gaps</strong><p>Distinguish strong, weak, conflicting, and not-yet-curated coverage.</p></article>
-        <article><span>03</span><strong>Question the map</strong><p>Show limitations and open questions instead of treating citation count as quality.</p></article>
-        <article><span>04</span><strong>Help it grow</strong><p>Welcome reviewed corrections and additions through GitHub.</p></article>
-      </div>
+      <div id="agenda-stage"></div>
     </section>
 
     <section id="parting-words" class="parting-words">
