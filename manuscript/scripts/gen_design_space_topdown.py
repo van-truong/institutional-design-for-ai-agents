@@ -60,7 +60,7 @@ def build():
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H:.0f}" width="{W}" height="{H:.0f}" '
          f'font-family="{FONT}" role="img">', '<title>Design space of agent institutions</title>',
          '<rect width="100%" height="100%" fill="#fff"/>',
-         f'<text x="{MARGIN}" y="26" font-size="17" font-weight="700" fill="{BLK}">Design space of agent institutions</text>']
+         f'<text x="{W / 2:.1f}" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="{BLK}">Design space of agent institutions</text>']
     # root
     rcx = W / 2
     sec_cx = [(l[0] + l[1] + COLW) / 2 for _, _, _, l in sections]

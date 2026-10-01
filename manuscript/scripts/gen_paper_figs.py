@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build the paper's standalone figures that are cut from, or composed of, other generators' output.
 
-  figure_nested-rings       nested systems around interacting agents, with the 66 mechanisms as a ring
-                            (gen_rings_taxonomy.py, text enlarged for print)          -> Fig. 1, introduction
+  figure_nested-rings       nested systems around interacting agents, drawn by the website's docs/rings.js
+                            in paper mode (gen_rings_web.py)                          -> Fig. 1, introduction
   figure_agent-in-context   compact layer stack (gen_agent_in_context.py)              -> Section 2, top-down / bottom-up
   figure_design-space       the design space of agent institutions (right panel of gen_multilayer.py) -> Section 3
   figure_coleman-boat       the agent-institution Coleman boat (gen_coleman_boat.py)   -> Section 5
@@ -41,7 +41,7 @@ def write(name, title, src, key, crop=None):
 def main():
     run('gen_coleman_boat.py')
     run('gen_phenomena.py')          # standalone phenomena figure (writes its own PDF)
-    run('gen_nested_rings.py', {'RINGS_TEXT_SCALE': '1.35'})   # Fig. 1: nested rings + cutaway window (writes its own PDF)
+    run('gen_rings_web.py')          # Fig. 1: drawn by docs/rings.js (the website figure) in paper mode
     run('gen_multilayer.py', {'PANEL_LETTERS': '0'})
     multi = os.path.join(FIGS, 'figure4_multi-layer-institutions.html')
     _, mvb, _ = extract(multi, 'm')
