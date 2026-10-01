@@ -8,6 +8,7 @@
   const playBtn = document.getElementById("boat-play");
   const failBtn = document.getElementById("boat-fail");
   if (!stage) return;
+  const PAPER = stage.dataset.mode === "paper";  // static export for the paper: no token or controls
 
   const NS = "http://www.w3.org/2000/svg";
   const FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
@@ -61,7 +62,7 @@
   };
   const text = (x, y, s, attrs, parent) => { const t = el("text", { x, y, ...attrs }, parent); t.textContent = s; return t; };
 
-  const svg = el("svg", { viewBox: "0 -10 1000 690", role: "img", class: "bt-svg", "font-family": FONT,
+  const svg = el("svg", { viewBox: "0 -10 1000 700", xmlns: NS, role: "img", class: "bt-svg", "font-family": FONT,
     "aria-labelledby": "bt-title bt-desc" }, stage);
   el("title", { id: "bt-title" }, svg).textContent = "A Coleman boat for agent institutions";
   el("desc", { id: "bt-desc" }, svg).textContent =
@@ -77,8 +78,12 @@
   // levels
   el("rect", { x: 10, y: 40, width: 980, height: 180, rx: 22, fill: "#FAF6EE" }, svg);
   el("rect", { x: 10, y: 286, width: 980, height: 360, rx: 22, fill: "#F3F6F9" }, svg);
-  text(30, 210, "GROUP AND INSTITUTION · MACRO", { "font-size": 14, "font-weight": 800, "letter-spacing": "0.12em", fill: MUT }, svg);
-  text(30, 670, "EACH AGENT · MICRO", { "font-size": 14, "font-weight": 800, "letter-spacing": "0.12em", fill: MUT }, svg);
+  // the two levels are named in a small legend under the figure instead of inside it
+  const legend = el("g", { class: "bt-legend" }, svg);
+  [["#FAF6EE", "#E4D6BC", "Group and institution (macro)", 300], ["#F3F6F9", "#C9D3DE", "Each agent (micro)", 600]].forEach(([fill, edge, label, x]) => {
+    el("rect", { x: x - 12, y: 664, width: 26, height: 16, rx: 5, fill, stroke: edge, "stroke-width": 1.2 }, legend);
+    text(x + 22, 677, label, { "font-size": 14.5, "font-weight": 700, fill: MUT }, legend);
+  });
 
   const hits = [];
   const hit = (g, key) => { g.setAttribute("tabindex", "0"); g.dataset.key = key; g.classList.add("bt-hit"); hits.push(g); return g; };
@@ -164,8 +169,34 @@
 
   // substrate
   const sg = hit(el("g", { class: "bt-sub" }, svg), "sub");
-  el("rect", { x: 40, y: 606, width: 920, height: 30, rx: 15, fill: "#fff", stroke: HAIR, "stroke-width": 1.4, "stroke-dasharray": "5 4" }, sg);
-  text(500, 626, "technical substrate: shared memory, compute, tools, logs", { "text-anchor": "middle", "font-size": 14.5, fill: MUT }, sg);
+  // a foundation strip along the floor of the micro level: what the agents run on
+  el("path", { d: "M 10 600 L 990 600 L 990 624 Q 990 646 968 646 L 32 646 Q 10 646 10 624 Z", fill: "#E4EAF0" }, sg);
+  el("line", { x1: 10, y1: 600, x2: 990, y2: 600, stroke: "#C9D3DE", "stroke-width": 1.4 }, sg);
+  text(32, 628, "RUNS ON", { "font-size": 12.5, "font-weight": 800, "letter-spacing": "0.12em", fill: MUT }, sg);
+  const icon = {
+    memory: (g) => [0, 6, 12].forEach((dy) => el("ellipse", { cx: 0, cy: -6 + dy, rx: 9, ry: 3.6, fill: "#fff", stroke: INK, "stroke-width": 1.4 }, g)),
+    compute: (g) => {
+      el("rect", { x: -8, y: -8, width: 16, height: 16, rx: 2.5, fill: "#fff", stroke: INK, "stroke-width": 1.4 }, g);
+      el("rect", { x: -3.5, y: -3.5, width: 7, height: 7, fill: INK }, g);
+      [-4, 0, 4].forEach((d) => [["M", d, -8, d, -11], ["M", d, 8, d, 11], ["M", -8, d, -11, d], ["M", 8, d, 11, d]].forEach(([, x1, y1, x2, y2]) =>
+        el("line", { x1, y1, x2, y2, stroke: INK, "stroke-width": 1.2 }, g)));
+    },
+    tools: (g) => {
+      el("path", { d: "M -8 8 L 3 -3", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, g);
+      el("circle", { cx: 5, cy: -5, r: 5, fill: "#fff", stroke: INK, "stroke-width": 1.6 }, g);
+      el("rect", { x: 4, y: -11, width: 3, height: 6, fill: "#E4EAF0" }, g);
+    },
+    logs: (g) => {
+      el("rect", { x: -7, y: -9, width: 14, height: 18, rx: 2, fill: "#fff", stroke: INK, "stroke-width": 1.4 }, g);
+      [-4, 0, 4].forEach((d) => el("line", { x1: -4, y1: d, x2: 4, y2: d, stroke: INK, "stroke-width": 1.2 }, g));
+    },
+  };
+  [["memory", "shared memory", 250], ["compute", "compute", 440], ["tools", "tools", 600], ["logs", "logs", 750]].forEach(([k, label, x]) => {
+    icon[k](el("g", { transform: `translate(${x} 623)` }, sg));
+    text(x + 18, 628, label, { "font-size": 14.5, "font-weight": 700, fill: INK }, sg);
+  });
+
+  if (PAPER) return;
 
   // moving token for Play
   const token = el("circle", { r: 9, fill: "#de553f", stroke: "#fff", "stroke-width": 3, class: "bt-token", opacity: 0 }, svg);

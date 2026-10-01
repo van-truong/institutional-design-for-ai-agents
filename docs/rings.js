@@ -21,19 +21,19 @@
   const LEVELS = [
     { key: "macro", name: "Macrosystem", r: 442, c: ["#C79A3A", "#8A5A0B", "#FBEEDA"], group: "gov",
       summary: "law, markets, norms, culture",
-      items: [["law & regulation", 222], ["markets", 138], ["cultural values", 180]],
+      items: [["law & regulation", 216], ["markets", 150], ["cultural values", 180]],
       note: "The broadest rules a society lives by. For agents, these are the legal, economic, and cultural institutions that will decide what agent groups may do and who answers for it." },
     { key: "exo", name: "Exosystem", r: 352, c: ["#4F9070", "#2F6B4A", "#E5F0E1"], group: "gov",
       summary: "settings that shape it from outside",
-      items: [["platform policy", 226], ["API limits", 134], ["other agents", 180]],
+      items: [["platform policy", 222], ["API limits", 140], ["other agents", 180]],
       note: "Settings the model never enters directly but that still shape it: a platform's usage policy, rate and budget limits, and agents in other systems competing for the same resources." },
     { key: "meso", name: "Mesosystem", r: 262, c: ["#0F766E", "#04342C", "#E3F1EC"], group: "inter",
       summary: "links between those settings",
-      items: [["handoffs", 229], ["orchestrator", 131], ["shared memory", 180]],
+      items: [["handoffs", 232], ["orchestrator", 122], ["shared memory", 180]],
       note: "The web of links among the settings an agent acts in: work handed from one agent to another, an orchestrator routing tasks, and memory that many agents read and write." },
     { key: "micro", name: "Microsystem", r: 170, c: ["#3A6EA5", "#2F3D6B", "#DCE8F5"], group: "inter",
       summary: "settings it acts in directly",
-      items: [["user", 287], ["tools", 73], ["task", 180]],
+      items: [["user", 270], ["tools", 90], ["task", 180]],
       note: "The settings the model acts in directly: the user it serves, the tools it calls, and the task it is given." },
     { key: "model", name: "Individual model", r: 78, c: ["#6C5CD0", "#463BA0", "#ECE9FB"], group: "model",
       summary: "the agent at the center", items: [],
@@ -111,7 +111,7 @@
   // reciprocal influence: dashed two-way arrows through the rings
   const recip = el("g", { class: "rg-recip rg-hit", "data-key": "recip", tabindex: "0",
     "aria-label": "Reciprocal influence: each layer shapes the others" }, svg);
-  [252, 108].forEach((deg) => {
+  [300, 60].forEach((deg) => {  // upper sides, clear of the example chips
     const [x0, y0] = pt(deg, 92), [x1, y1] = pt(deg, 432);
     el("line", { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: MUT, "stroke-width": "1.8",
       "stroke-dasharray": "6 6", "marker-start": "url(#rg-arrow)", "marker-end": "url(#rg-arrow)", opacity: "0.75" }, recip);
@@ -159,11 +159,18 @@
     el("line", { x1: CX, y1: y0, x2: CX, y2: y1, stroke: INK, "stroke-width": 1.8, "stroke-opacity": 0.7,
       "marker-end": "url(#rg-arrow-ink)" }, parent);
   };
-  const wtext = (r, s, col, parent, size = FS.story) => {
-    const t = el("text", { x: CX, y: f(CY - r), "text-anchor": "middle", class: "rg-wtext", fill: col, "font-size": size,
-      "font-style": "italic", "font-weight": 600 }, parent);
-    t.textContent = s;
+  // cutaway captions curve with the rings: across the top for the story, along the bottom for "one model"
+  const arcText = (id, d, s, col, parent, size = FS.story) => {
+    el("path", { id, d, fill: "none" }, defs);
+    const t = el("text", { class: "rg-wtext", fill: col, "font-size": size, "font-style": "italic", "font-weight": 600 }, parent);
+    el("textPath", { href: `#${id}`, startOffset: "50%", "text-anchor": "middle" }, t).textContent = s;
+    return t;
   };
+  const topArc = (r, span = 54) => {
+    const [x0, y0] = pt(-span / 2, r), [x1, y1] = pt(span / 2, r);
+    return `M ${f(x0)} ${f(y0)} A ${r} ${r} 0 0 1 ${f(x1)} ${f(y1)}`;
+  };
+  const wtext = (r, s, col, parent) => arcText(`rg-story-${r}`, topArc(r), s, col, parent);
   const story = el("g", { class: "rg-story", "pointer-events": "none" }, wedge);
   const cM = BY.model.c, cI = BY.micro.c, cS = BY.exo.c, cG = BY.macro.c;
   agent(CX, CY - 30, 1.15, cM, story);
@@ -174,10 +181,10 @@
       "stroke-dasharray": "3 3" }, story);
   });
   [[-30, 148], [30, 148], [0, 186]].forEach(([dx, r]) => agent(CX + dx, CY - r + 12, 0.8, cI, story));
-  wtext(206, "a group interacts", cI[1], story);
+  wtext(200, "a group interacts", cI[1], story);
   up(226, 252, story);
   for (let i = -4; i <= 4; i++) agent(CX + i * 27, CY - 272, 0.52, cS, story);
-  wtext(292, "a society forms", cS[1], story);
+  wtext(288, "a society forms", cS[1], story);
   up(312, 332, story);
   const inst = [[-92, 350], [0, 384], [92, 350]];
   inst.forEach(([dx, r], i) => {
@@ -189,14 +196,12 @@
     for (let k = -1; k <= 1; k++) agent(CX + dx + k * 12, CY - r + 28, 0.36, cG, story);
   });
   // curved along the outer ring, like the ring itself
-  const [ix0, iy0] = pt(-27, 416), [ix1, iy1] = pt(27, 416);
-  el("path", { id: "rg-inst-text", d: `M ${f(ix0)} ${f(iy0)} A 416 416 0 0 1 ${f(ix1)} ${f(iy1)}`, fill: "none" }, defs);
-  const itx = el("text", { class: "rg-wtext", fill: cG[1], "font-size": FS.story, "font-style": "italic", "font-weight": 600 }, story);
-  const itp = el("textPath", { href: "#rg-inst-text", startOffset: "50%", "text-anchor": "middle" }, itx);
-  itp.textContent = "institutions & societies interact";
-  const mt = el("text", { x: CX, y: CY + 30, "text-anchor": "middle", class: "rg-wtext", fill: cM[1], "font-size": FS.model,
-    "font-style": "italic", "font-weight": 600 }, svg);
-  mt.textContent = "one model";
+  wtext(416, "institutions & societies interact", cG[1], story);
+  // a gentle upward curve: a wide, shallow arc whose lowest point sits just below the center
+  const [om0, om1, omY, omR] = [CX - 66, CX + 66, CY + 30, 150];
+  const omSag = omR - Math.sqrt(omR * omR - 66 * 66);
+  const mt = arcText("rg-one-model", `M ${om0} ${f(omY - omSag)} A ${omR} ${omR} 0 0 0 ${om1} ${f(omY - omSag)}`,
+    "one model", cM[1], svg, FS.model);
   mt.setAttribute("pointer-events", "none");
 
   // ring names (curved along the bottom) and example chips
@@ -204,32 +209,24 @@
   LEVELS.filter((l) => l.key !== "model").forEach((l) => {
     const ri = inner(l);
     const pid = `rg-name-${l.key}`;
-    el("path", { id: pid, d: bottomArc(ri + 27), fill: "none" }, defs);
+    el("path", { id: pid, d: bottomArc(l.r - 7), fill: "none" }, defs);  // name near the outer edge
     const t = el("text", { class: "rg-name", fill: l.c[1], "data-key": l.key, "font-size": FS.name, "font-weight": 800,
       "letter-spacing": PAPER ? "0.06em" : "0.14em" }, labels);
     const tp = el("textPath", { href: `#${pid}`, startOffset: "50%", "text-anchor": "middle" }, t);
     tp.textContent = l.name.toUpperCase();
     l.items.forEach(([label, deg0]) => {
       let deg = deg0;
-      const r = deg === 180 ? ri + 62 : (ri + l.r) / 2;
-      if (PAPER && deg !== 180 && l.key !== "micro") deg = 180 + (deg - 180) * 1.14;  // clear the larger ring names
-      const [x, y] = pt(deg, r);
       const k = FS.chip / 15, w = label.length * 8.6 * k + 26 * k, h = 26 * k;
+      const r = deg === 180 ? ri + h / 2 + 7 : (ri + l.r) / 2;  // bottom chip near the inner edge, above the name
+      const [x, y] = pt(deg, r);
       const chip = el("g", { class: "rg-chip", "data-key": l.key, transform: `translate(${f(x)} ${f(y)})` }, labels);
       el("rect", { x: f(-w / 2), y: f(-h / 2), width: f(w), height: f(h), rx: f(h / 2), fill: "#fff", stroke: l.c[0], "stroke-width": 1.4,
         filter: "url(#rg-soft)" }, chip);
       const ct = el("text", { y: f(5.5 * k), "text-anchor": "middle", fill: l.c[1], class: "rg-chip-text", "font-size": FS.chip,
         "font-weight": 700 }, chip);
       ct.textContent = label;
-      if (l.key === "micro") {
-        // the settings the model acts in point in at it
-        const [ax, ay] = pt(deg, r - 18 * k), [bx, by] = pt(deg, BY.model.r + 8);
-        el("line", { x1: f(ax), y1: f(ay), x2: f(bx), y2: f(by), stroke: l.c[0], "stroke-width": 1.6,
-          "marker-end": "url(#rg-arrow-micro)", class: "rg-micro-arrow", "data-key": "micro" }, labels);
-      }
     });
   });
-  labels.querySelectorAll(".rg-micro-arrow").forEach((a) => labels.insertBefore(a, labels.firstChild));
 
   // chronosystem: time runs along the bottom
   const chrono = el("g", { class: "rg-chrono rg-hit", "data-key": "chrono", tabindex: "0",

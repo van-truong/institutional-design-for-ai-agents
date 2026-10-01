@@ -470,7 +470,7 @@ Monitoring can miss relevant behavior or expose too much. Adjudication can miscl
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=\textwidth]{figures/figure3_institutional-design-dimensions.pdf}
-  \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design. These properties describe the institution being designed; Section~\mbox{\ref{sec:evaluation}} lists the outcomes to measure. \voice{The enforcement stages are the points at which an institution can respond to the dilemmas of Fig.~\mbox{\ref{fig:dilemmas-response}}.}}
+  \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design. These properties describe the institution being designed; Section~\mbox{\ref{sec:evaluation}} lists the outcomes to measure. \voice{The enforcement stages are the points at which an institution can respond to the dilemmas of Fig.~\mbox{\ref{fig:dilemmas-response}}; their colors follow the information (slate) and consequence (plum) layers of Table~\mbox{\ref{tab:functions}}.}}
   \label{fig:design-dimensions}
 \end{figure}
 
@@ -507,12 +507,12 @@ Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unif
 
 
 
-\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which (Section~\mbox{\ref{sec:evaluation}}). Figure~\mbox{\ref{fig:failure-guide}} condenses these lessons into a short guide: for each failure mode, the families most exposed to it, what to measure, and the safeguards that address it.
+\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which (Section~\mbox{\ref{sec:evaluation}}). Figure~\mbox{\ref{fig:failure-guide}} condenses these lessons into a short guide: for each failure mode, the enforcement stage where it breaks, the families most exposed to it, what to measure, and the safeguards that address it.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\linewidth]{figures/figure7_failure-modes-flow.pdf}
-  \caption{A practical guide linking the mechanism families to the failure modes of Section~\mbox{\ref{sec:failures}}. Each row follows one failure and names where it breaks, from the rule meeting behavior to the institution feeding back on itself: a mechanism (amber) fails in a characteristic way (terracotta); an evaluation measures the failure and checks whether cooperation holds (blue, metrics from Table~\mbox{\ref{tab:metrics}}); if it does not, safeguards drawn from the taxonomy (green; Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) revise the institution, which is then tested again. Tags name the mechanism families most exposed to each failure (violet).}
+  \includegraphics[width=\linewidth]{figures/figure_failure-modes.pdf}
+  \caption{\voice{A practical guide to the three failure modes of Section~\mbox{\ref{sec:failures}}, each placed at the enforcement stage where it breaks (headers, colored as in Fig.~\mbox{\ref{fig:design-dimensions}}) and at the arrow of the Coleman boat it affects (Fig.~\mbox{\ref{fig:model-in-institution}}). Down each column, a mechanism (amber) fails in a characteristic way (terracotta); an evaluation measures the failure and checks whether cooperation holds (blue; metrics in Table~\mbox{\ref{tab:metrics}}); if it does not, safeguards from the taxonomy (green; Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) revise the institution, which is then tested again (dashed loop). Chips name the mechanism families most exposed to each failure (violet).}}
   \label{fig:failure-guide}
 \end{figure}
 
