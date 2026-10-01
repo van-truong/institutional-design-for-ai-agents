@@ -38,9 +38,11 @@ EXO_ITEMS = [('platform policy', 150), ('API limits', 30), ('other agents', 90)]
 MACRO_ITEMS = [('law & regulation', 152), ('markets', 28), ('cultural values', 90)]
 # cutaway wedge: a sector at the top
 WA0, WA1 = -125, -55          # wedge angular span (deg); -90 = straight up
-LEG_X, LEG_W = 1180, 470
+LEG_X, LEG_W = 1180, 600
 W = LEG_X + LEG_W
-H = 1250
+TOP_PAD = 0
+H = 1250 + TOP_PAD
+TITLE = 'From one model to a society of institutions'
 
 
 def P(a, r):
@@ -94,9 +96,12 @@ def society_node(x, y, s, col):
 
 
 def build():
-    o = [f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" xmlns="http://www.w3.org/2000/svg" font-family="{FONT}">',
+    vbx, vby, vbw, vbh = 26, 2, W-32, H-8
+    o = [f'<svg viewBox="{vbx} {vby} {vbw} {vbh}" width="{vbw}" height="{vbh}" role="img" xmlns="http://www.w3.org/2000/svg" font-family="{FONT}">',
          '<title>Nested systems around interacting agents</title>',
-         f'<rect width="{W}" height="{H}" fill="#fff"/>']
+         f'<rect x="{vbx}" y="{vby}" width="{vbw}" height="{vbh}" fill="#fff"/>']
+    o.append(t(CX, 42, TITLE, 34*SC, INK, weight='800'))
+    o.append(f'<g transform="translate(0 {TOP_PAD})">')
     # rings
     for r, (mid, dark, tint), _ in BANDS:
         o.append(f'<circle cx="{CX}" cy="{CY}" r="{r}" fill="{tint}" stroke="{mid}" stroke-width="1.8"/>')
@@ -165,6 +170,7 @@ def build():
     o.append(f'<path d="M{x0:.1f} {y0:.1f} A{R} {R} 0 0 0 {x1:.1f} {y1:.1f}" fill="none" stroke="{MUT}" stroke-width="2.4" marker-end="url(#ar)"/>')
     o.append(t(CX, CY + R + 30*SC, 'CHRONOSYSTEM (TIME)', 18*SC, MUT, weight='800'))
     o += legend()
+    o.append('</g>')
     o.append('</svg>')
     return o
 
