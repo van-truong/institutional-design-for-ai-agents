@@ -1,6 +1,6 @@
 # Institutional Design for AI Agents
 
-Springer LNCS proceedings source for *Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment*, presented at the ICML 2026 Trustworthy AI4GOOD Workshop.
+Springer LNCS proceedings source for *From Aligned Models to Governed Societies: A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns*, presented at the ICML 2026 Trustworthy AI4GOOD Workshop (originally titled *Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment*).
 
 **Website:** [Interactive paper companion](https://www.vanquynh.com/institutional-design-for-ai-agents/)
 
@@ -36,7 +36,7 @@ The switches near the top of `manuscript.tex` control whether review colors appe
 
 - [x] ~~Add ORCIDs, the co-first-author and corresponding-author markers, and the corresponding email to the manuscript.~~
 - [x] ~~**Author metadata:** each co-author confirms order, co-first authorship, affiliations, emails, ORCIDs, and disclosures.~~
-- [x] ~~**Final title:** keep `Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment`.~~
+- [x] ~~**Final title:** `From Aligned Models to Governed Societies: A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns`.~~
 - [x] ~~**Claim audit:** resolve the opening anecdotes, Flash Crash chronology, and flagged daycare/AWS/Amazon/1929/Ostrom/deployment claims with exact sources or narrower wording.~~
 - [x] ~~Verify every cited reference (no fabricated sources); update preprints to their published versions.~~
 - [x] ~~Rebuild the taxonomy from a documented search and thematic coding (Appendix A), with a cross-model coding check.~~
@@ -58,8 +58,43 @@ Keep revisions light, source-backed, and in the paper's human voice.
 - [x] ~~Convert the paper to the official Springer LNCS template.~~
 - [x] ~~Finalize title/authors/affiliations and complete the [metadata sheet](https://docs.google.com/spreadsheets/d/1Y90xfC0UPxPT60WwL3coFsegIEaLlC78iyCaVnYzb9I/edit?usp=sharing): OpenReview `308`, one corresponding author, all emails and ORCIDs.~~
 - [x] ~~Add Disclosure of Interests.~~
-- [ ] Confirm permissions and supplementary material; complete the [Springer LTP](https://docs.google.com/document/d/1JD0O4ZdV08ZwD7Os7CmzxDF3gm_FQFae/edit?usp=sharing).
-- [ ] Package the matching PDF and clean source as `OpenReview_308_Truong.zip`, then upload it to the [submission folder](https://drive.google.com/drive/folders/1Pt1cvqcWZGlNgVKuyEwlLPJ_Hm3sA_oI?usp=sharing).
+- [x] ~~Sign the [Springer LTP](https://docs.google.com/document/d/1JD0O4ZdV08ZwD7Os7CmzxDF3gm_FQFae/edit?usp=sharing) (handwritten signature).~~ Saved in `manuscript/OpenReview_308_Truong/`, which is git-ignored and must never be committed.
+- [ ] Confirm third-party permissions and any supplementary material (none planned beyond the public website and dataset).
+- [ ] Turn review flags off (`\showreviewflagsfalse`), rebuild, and check the PDF has no colored flags, strikeouts, or placeholder text.
+- [ ] Assemble the package in `manuscript/OpenReview_308_Truong/` (see below), test-compile it, then zip it as `OpenReview_308_Truong.zip` and upload it to the [submission folder](https://drive.google.com/drive/folders/1Pt1cvqcWZGlNgVKuyEwlLPJ_Hm3sA_oI?usp=sharing).
+
+### Submission package
+
+Springer wants one ZIP per paper with actual copies (no links) of: all `.tex` files, the figures, the required style files, the `.bib` and `.bbl` files, the compiled PDF, and the signed LTP. The PDF must correspond exactly to the source, file names should be short, and only one version of each file may be included. Alt text is optional; Springer may generate it in production.
+
+| File | Source |
+|---|---|
+| `manuscript.tex` | `manuscript/manuscript.tex` (review flags off) |
+| `references.bib` | `manuscript/references.bib` |
+| `manuscript.bbl` | `manuscript/.build/manuscript.bbl` (the copy in `manuscript/` is stale) |
+| `llncs.cls`, `splncs04.bst` | `manuscript/` |
+| `figures/*.pdf` | only the figures the paper includes (9 files) |
+| `manuscript.pdf` | the compiled PDF, `springer-lncs-proceedings.pdf` |
+| `LTP_308_Truong.pdf` | the signed LTP, renamed to a short name |
+
+From `manuscript/`, after the final `make pdf`:
+
+```bash
+PKG=OpenReview_308_Truong
+mkdir -p $PKG/figures
+cp manuscript.tex references.bib llncs.cls splncs04.bst $PKG/
+cp .build/manuscript.bbl $PKG/
+cp ../springer-lncs-proceedings.pdf $PKG/manuscript.pdf
+grep -v '^[[:space:]]*%' manuscript.tex | grep -o 'includegraphics[^{]*{figures/[^}]*}' \
+  | grep -o 'figures/[^}]*' | sort -u | xargs -I{} cp {} $PKG/figures/
+ls $PKG $PKG/figures
+
+# test-compile a throwaway copy to confirm the package is complete and matches the PDF
+rm -rf /tmp/pkgtest && cp -r $PKG /tmp/pkgtest && (cd /tmp/pkgtest && latexmk -pdf -interaction=nonstopmode manuscript.tex >/dev/null)
+pdfinfo /tmp/pkgtest/manuscript.pdf | grep Pages; pdfinfo $PKG/manuscript.pdf | grep Pages
+
+zip -r OpenReview_308_Truong.zip $PKG
+```
 - [ ] Be available for the Springer proof turnaround (approximately 72 hours).
 
 ## Website follow-up
