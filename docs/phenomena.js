@@ -173,7 +173,7 @@
       stext(lx + 14, ly, lab, { "font-size": 15, fill: INK }, svg);
       lx += lab.length * 8 + 46;
     });
-    stext(W - 20, ly, `Dot area ∝ coded instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
+    stext(W - 20, ly, `Dot area ∝ instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
     return ly + 12;
   }
 
@@ -232,7 +232,7 @@
     });
     svgEl("circle", { cx: CX, cy: CY, r: 70, fill: "#fff", stroke: HAIR, "stroke-width": 1.2 }, svg);
     stext(CX, CY + 6 * k, String(data.counts.total), { "text-anchor": "middle", "font-size": 40 * k, "font-weight": 800, fill: INK }, svg);
-    stext(CX, CY + 30 * k, k > 1 ? "instances" : "coded instances", { "text-anchor": "middle", "font-size": 13.5 * k, fill: MUT }, svg);
+    stext(CX, CY + 30 * k, "instances", { "text-anchor": "middle", "font-size": 13.5 * k, fill: MUT }, svg);
 
     const nodes = [];
     data.types.forEach((t) => {
