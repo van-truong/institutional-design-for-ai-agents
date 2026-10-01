@@ -364,18 +364,22 @@ mediators can be captured by the parties they adjudicate, sanctioners can be gam
 
 \begin{table}[!tbp]
 \centering
-\caption{\voice{A practical guide to the three failure modes of Section~\mbox{\ref{sec:failures}}. Each breaks at one enforcement stage (Fig.~\mbox{\ref{fig:design-dimensions}}) and one arrow of the Coleman boat (Fig.~\mbox{\ref{fig:model-in-institution}}). An evaluation measures the failure and checks whether cooperation holds; if it does not, safeguards from the taxonomy revise the institution, which is then tested again. The last column names the mechanism families most exposed.}}
+\caption{\voice{A practical guide to the three failure modes of Section~\mbox{\ref{sec:failures}}. Read each column top to bottom: where the mechanism breaks (enforcement stage, colored as in Fig.~\mbox{\ref{fig:design-dimensions}}, and arrow of the Coleman boat in Fig.~\mbox{\ref{fig:model-in-institution}}), how it fails, what an evaluation should measure and check, and the safeguards from the taxonomy that revise the institution before it is tested again.}}
 \label{tab:failure-guide}
-\scriptsize
-\renewcommand{\arraystretch}{1.08}
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.15\linewidth} >{\raggedright\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.18\linewidth} >{\raggedright\arraybackslash}p{0.2\linewidth} >{\raggedright\arraybackslash}p{0.1\linewidth}@{}}
+\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.15\linewidth} >{\raggedright\arraybackslash}p{0.262\linewidth} >{\raggedright\arraybackslash}p{0.262\linewidth} >{\raggedright\arraybackslash}p{0.262\linewidth}@{}}
 \toprule
-\textbf{Failure mode} & \textbf{Breaks at} & \textbf{Mechanism $\rightarrow$ failure} & \textbf{Measure and check} & \textbf{Safeguards} & \textbf{Most exposed} \\
+ & \textbf{A.~A fine becomes a price} & \textbf{B.~A score becomes the target} & \textbf{C.~A role becomes an authority} \\
 \midrule
-A.~A fine becomes a price & Enforcer; boat arrow~2 & Fine $\rightarrow$ paid, not obeyed: agents treat the fine as a fee for the act & Contribution stability. Does cooperation hold without the fine? & State the norm, not only the price; graduated sanctions & Incentive \\ \rowline
-B.~A score becomes the target & Observer; boat arrow~4 & Reputation score $\rightarrow$ gamed: reputation farming, shallow cooperation & Gameability; false negatives. Does the score match real conduct? & Tamper-evident records; peer review; audits of messages, not only scores & Social, epistemic \\ \rowline
-C.~A role becomes an authority & Arbiter; the feedback loop & Monitor or judge $\rightarrow$ over-detects, or is captured & False punishment; capture; override. Are rulings accurate and reversible? & Checks on sanctioners; appeals; elected or rotating roles; a human stop & Epistemic, constraint \\
+\emph{Breaks at} & \fnmark{fncons}Enforcer; boat arrow~2 & \fnmark{fninfo}Observer; boat arrow~4 & \fnmark{fncons}Arbiter; the feedback loop \\ \rowline
+\emph{Mechanism} & A fine for a violation & A reputation score that sets trust & A monitor or judge who can sanction \\ \rowline
+\emph{How it fails} & Paid, not obeyed: the fine becomes a fee for the act & Gamed: reputation farming and shallow cooperation & Over-detects to earn rewards, or is captured \\ \rowline
+\emph{Measure} & Contribution stability & Gameability; false negatives & False punishment; capture; human override \\ \rowline
+\emph{Check} & Does cooperation hold without the fine? & Does the score match real conduct? & Are rulings accurate and reversible? \\ \rowline
+\emph{Safeguards} & State the norm, not only the price; graduated sanctions & Tamper-evident records; peer review; audits of messages, not only scores & Checks on sanctioners; appeals; elected or rotating roles; a human stop \\ \rowline
+\emph{Most exposed} & Incentive family & Social and epistemic families & Epistemic and constraint families \\
 \bottomrule
 \end{tabular}
 \end{table}
