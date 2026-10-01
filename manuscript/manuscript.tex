@@ -400,7 +400,38 @@ This framing avoids treating all failures as equally severe. It also foregrounds
 
 Single-agent alignment evaluations are poor predictors for potential interaction failures because one cannot extrapolate beyond the model condition tested. Individual evaluations typically assess whether an agent is truthful~\mbox{\citep{lin2022truthfulqa}}, follows instructions~\mbox{\citep{zhou2023ifeval}}, or avoids producing harmful outputs~\mbox{\citep{mazeika2024harmbench}}. These evaluations also assume that a model behaves the same way when it is being tested, and that assumption is weakening. Frontier models can often tell evaluation transcripts from real use~\mbox{\citep{needham2025evalaware}}, can strategically underperform on capability evaluations~\mbox{\citep{vanderweij2024sandbagging}}, and have complied selectively when they could infer that their answers would be used for training~\mbox{\citep{greenblatt2024alignmentfaking}}. Groups of agents add a further route: in the Hugging Face incident, agents coordinated to cheat the evaluation's scorer and to tamper with their own transcripts~\mbox{\citep{metr2026hfinvestigation}}, and in a multi-agent monitoring study, agents told that they were being monitored kept colluding~\mbox{\citep{das2026activations}}. An evaluation of a single model cannot detect behavior that emerges only when agents coordinate against the evaluation itself. \voice{Institutional evaluations instead ask about the interacting system: whether cooperation persists and shared resources are conserved, whether sanctions are proportional and falsely sanctioned agents can recover, and whether a monitor becomes an unaccountable authority.}
 
-Table~\mbox{\ref{tab:existing-evals}} in Appendix~\mbox{\ref{app:eval}} summarizes what existing work varies. Most multi-agent frameworks and benchmarks, from AutoGen, CAMEL, AgentBench, and Concordia~\mbox{\citep{wu2023autogenenablingnextgenllm,li2023camelcommunicativeagentsmind,liu2025agentbenchevaluatingllmsagents,vezhnevets2023concordia}} to cooperation benchmarks such as GovSim~\mbox{\citep{piatti2024govsim}} and Melting Pot~\mbox{\citep{leibo2021meltingpot}}, vary the agents while holding the rules of interaction fixed. A growing body of work varies the institution. CoopEval compares repetition, reputation, mediation, and contracts across six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}; SanctSim lets agents choose between a sanctioning and a sanction-free institution~\mbox{\citep{piedrahita2025corruptedreasoningreasoninglanguage}}; Institutional AI compares ungoverned, prompt-only, and enforced regimes~\mbox{\citep{bracalesyrnikov2026institutionalai}}; and GovSim-SelfGovern lets agents write and vote on their own rules~\mbox{\citep{rehm2026selfgovernance}}. Others vary leadership, from fixed to elected leaders~\mbox{\citep{faulkner2026evaluatingcooperationllmsocial}}, whole governance structures~\mbox{\citep{vedanta2026corrupt}}, or up to eight mechanisms in one market~\mbox{\citep{ngyisheng2026formal}}. Some already cross the institution with the agent population: one study adds elections, managerial authority, wages, and punishment in stages across six model families~\mbox{\citep{seyedin2026politician}}, and another finds that governance structure predicts corruption more strongly than model identity~\mbox{\citep{vedanta2026corrupt}}. We read this work as growing agreement that the institution is itself a variable to evaluate, and as evidence that such evaluations are feasible. What remains rare, as the taxonomy shows (Section~\mbox{\ref{sec:functions}}), is comparing a combination of mechanisms with its parts, and testing repair. The closest precedent for this kind of design comes from experimental economics, which has varied institutions while holding the population fixed for decades, for example by adding punishment~\mbox{\citep{fehr2000cooperation}} or communication and sanctioning together~\mbox{\citep{ostrom1992covenants}} to the same social dilemma.
+Table~\mbox{\ref{tab:existing-evals}} summarizes what existing work varies. Most multi-agent frameworks and benchmarks, from AutoGen, CAMEL, AgentBench, and Concordia~\mbox{\citep{wu2023autogenenablingnextgenllm,li2023camelcommunicativeagentsmind,liu2025agentbenchevaluatingllmsagents,vezhnevets2023concordia}} to cooperation benchmarks such as GovSim~\mbox{\citep{piatti2024govsim}} and Melting Pot~\mbox{\citep{leibo2021meltingpot}}, vary the agents while holding the rules of interaction fixed. A growing body of work varies the institution. CoopEval compares repetition, reputation, mediation, and contracts across six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}; SanctSim lets agents choose between a sanctioning and a sanction-free institution~\mbox{\citep{piedrahita2025corruptedreasoningreasoninglanguage}}; Institutional AI compares ungoverned, prompt-only, and enforced regimes~\mbox{\citep{bracalesyrnikov2026institutionalai}}; and GovSim-SelfGovern lets agents write and vote on their own rules~\mbox{\citep{rehm2026selfgovernance}}. Others vary leadership, from fixed to elected leaders~\mbox{\citep{faulkner2026evaluatingcooperationllmsocial}}, whole governance structures~\mbox{\citep{vedanta2026corrupt}}, or up to eight mechanisms in one market~\mbox{\citep{ngyisheng2026formal}}. Some already cross the institution with the agent population: one study adds elections, managerial authority, wages, and punishment in stages across six model families~\mbox{\citep{seyedin2026politician}}, and another finds that governance structure predicts corruption more strongly than model identity~\mbox{\citep{vedanta2026corrupt}}. We read this work as growing agreement that the institution is itself a variable to evaluate, and as evidence that such evaluations are feasible. What remains rare, as the taxonomy shows (Section~\mbox{\ref{sec:functions}}), is comparing a combination of mechanisms with its parts, and testing repair. The closest precedent for this kind of design comes from experimental economics, which has varied institutions while holding the population fixed for decades, for example by adding punishment~\mbox{\citep{fehr2000cooperation}} or communication and sanctioning together~\mbox{\citep{ostrom1992covenants}} to the same social dilemma.
+
+\begin{table*}[!htbp]
+\centering
+\caption{An inventory of what multi-agent evaluations vary, as of September 2026, and what each leaves open for the model-in-institution agenda. ``Factors'' are the four evaluation factors of Section~\mbox{\ref{sec:evaluation}}: resource environment (R), group composition (G), enforcement architecture (E), and repair pathway (P).}
+\label{tab:existing-evals}
+\scriptsize
+\renewcommand{\arraystretch}{1.08}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.30\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} >{\raggedright\arraybackslash}p{0.205\linewidth}@{}}
+\toprule
+\textbf{Work} & \textbf{Agents varied} & \textbf{Institution varied} & \textbf{Factors} & \textbf{Gap for this agenda} \\
+\midrule
+GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\ \rowline
+GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\ \rowline
+Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\ \rowline
+Multi\-Agent\-Bench~\citep{zhu2025multiagentbench} & LLM models & Coordination topology (star, chain, tree, graph) & G & Task collaboration rather than social dilemmas \\ \rowline
+Magentic Marketplace~\citep{bansal2025magentic} & LLM models & Search mechanisms in a two-sided market & G & Market design; no sanctions or repair \\ \rowline
+CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\ \rowline
+SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\ \rowline
+Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\ \rowline
+Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\ \rowline
+Social learning and norms~\citep{gupta2025social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\ \rowline
+ALIGN~\citep{zhu2026talkjudgecooperategossipdriven} & Reasoning and chat LLMs & Open-ended gossip for indirect reciprocity & G, E & One mechanism; no repair \\ \rowline
+Elected leadership~\citep{faulkner2026evaluatingcooperationllmsocial} & LLM groups of 8 and 20 & No leader, fixed leader, or elected leader in GovSim & R, G, E & Leadership only; no sanctions or repair \\ \rowline
+Governance templates~\citep{vedanta2026corrupt} & Several LLMs in official roles & Three governance structures with audit and court bodies; lightweight safeguards & G, E & Corruption only; no repair \\ \rowline
+Marketplace mechanisms~\citep{ngyisheng2026formal} & 18 agents of one model & Eight mechanisms, including reputation, rewiring, sanctions, contracts, mediation, and a judiciary & E & One model; mechanisms tested one at a time \\ \rowline
+Hierarchical game~\citep{seyedin2026politician} & Six model families, same- or mixed-family groups & Speech, elections, managerial authority, wages, and punishment, added in stages & G, E & Features added cumulatively, not crossed; no repair \\ \rowline
+Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human groups, held fixed & Punishment; communication; both combined & E & Human participants \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 
 
@@ -413,7 +444,37 @@ Table~\mbox{\ref{tab:existing-evals}} in Appendix~\mbox{\ref{app:eval}} summariz
     \item \textbf{Repair pathway:} Can agents correct harm, restore shared resources, appeal sanctions, or re-enter after exclusion?
 \end{enumerate}
 
-These four factors are what an evaluation varies. The properties in Figure~\mbox{\ref{fig:design-dimensions}}B describe the institution being varied, and Table~\mbox{\ref{tab:metrics}} in Appendix~\mbox{\ref{app:eval}} lists the outcomes to measure. In a team of research agents that share a literature memory, for example, the resource is the memory store, the enforcement architecture might be a verifier agent with human review of disputed flags, and the repair pathway is an obligation to correct the entries an agent introduced.
+These four factors are what an evaluation varies. The properties in Figure~\mbox{\ref{fig:design-dimensions}}B describe the institution being varied, and Table~\mbox{\ref{tab:metrics}} lists the outcomes to measure. In a team of research agents that share a literature memory, for example, the resource is the memory store, the enforcement architecture might be a verifier agent with human review of disputed flags, and the repair pathway is an obligation to correct the entries an agent introduced.
+
+\begin{table*}[!htbp]
+\centering
+\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each.}
+\label{tab:metrics}
+\footnotesize
+\renewcommand{\arraystretch}{1.0}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.40\linewidth}@{}}
+\toprule
+\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
+\midrule
+Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\ \rowline
+Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\ \rowline
+Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\ \rowline
+End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\ \rowline
+Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\ \rowline
+False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\ \rowline
+False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\ \rowline
+Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\ \rowline
+Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\ \rowline
+Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\ \rowline
+Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\ \rowline
+Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\ \rowline
+Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\ \rowline
+Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
 
 Three of the four factors can already be varied with existing tools. Group composition is the easiest: CoopEval cross-plays six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}, and Melting Pot swaps in different background populations~\mbox{\citep{leibo2021meltingpot}}. Resource environments can be varied in commons simulations such as GovSim, including scarcity severe enough to threaten collapse~\mbox{\citep{rehm2026selfgovernance}}. Enforcement architecture is harder to vary faithfully. In Institutional AI, a rule stated only in the prompt had a negligible effect, while the same rule enforced by the environment cut severe collusion from 50\% to 5.6\% of runs~\mbox{\citep{bracalesyrnikov2026institutionalai}}, so evaluations must specify how observation, adjudication, and enforcement are implemented, not only what the rules say. Repair pathways are the gap: our taxonomy contains one test of restitution or reintegration with LLM agents and none of appeals, and few testbeds let harm be concrete and fixable, as with corrupted shared state or a wrongly sanctioned agent. Building such testbeds is a direct opportunity. Crossing all four factors is also costly, but fractional factorial designs, staged screening of single levers, and adaptive search over institutions can keep the number of runs manageable. Simulation also supplies ground truth about who complied, which metrics such as false punishment require.
 
@@ -566,70 +627,6 @@ Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragi
 \end{table}
 
 \del{Table~\mbox{\ref{tab:failure-guide}} turns the taxonomy into a short practical guide, mapping the six families to the four cooperation dilemmas and the main risk each family introduces.}
-
-\section{Evaluation Inventory and Candidate Metrics}\label{app:eval}
-
-\voice{Table~\mbox{\ref{tab:existing-evals}} inventories what existing multi-agent evaluations vary, and Table~\mbox{\ref{tab:metrics}} lists candidate metrics for evaluating cooperation-shaping institutions (Section~\mbox{\ref{sec:evaluation}}).}
-
-\begin{table*}[!htbp]
-\centering
-\caption{An inventory of what multi-agent evaluations vary, as of September 2026, and what each leaves open for the model-in-institution agenda. ``Factors'' are the four evaluation factors of Section~\mbox{\ref{sec:evaluation}}: resource environment (R), group composition (G), enforcement architecture (E), and repair pathway (P).}
-\label{tab:existing-evals}
-\scriptsize
-\renewcommand{\arraystretch}{1.08}
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.30\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} >{\raggedright\arraybackslash}p{0.205\linewidth}@{}}
-\toprule
-\textbf{Work} & \textbf{Agents varied} & \textbf{Institution varied} & \textbf{Factors} & \textbf{Gap for this agenda} \\
-\midrule
-GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\ \rowline
-GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\ \rowline
-Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\ \rowline
-Multi\-Agent\-Bench~\citep{zhu2025multiagentbench} & LLM models & Coordination topology (star, chain, tree, graph) & G & Task collaboration rather than social dilemmas \\ \rowline
-Magentic Marketplace~\citep{bansal2025magentic} & LLM models & Search mechanisms in a two-sided market & G & Market design; no sanctions or repair \\ \rowline
-CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\ \rowline
-SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\ \rowline
-Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\ \rowline
-Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\ \rowline
-Social learning and norms~\citep{gupta2025social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\ \rowline
-ALIGN~\citep{zhu2026talkjudgecooperategossipdriven} & Reasoning and chat LLMs & Open-ended gossip for indirect reciprocity & G, E & One mechanism; no repair \\ \rowline
-Elected leadership~\citep{faulkner2026evaluatingcooperationllmsocial} & LLM groups of 8 and 20 & No leader, fixed leader, or elected leader in GovSim & R, G, E & Leadership only; no sanctions or repair \\ \rowline
-Governance templates~\citep{vedanta2026corrupt} & Several LLMs in official roles & Three governance structures with audit and court bodies; lightweight safeguards & G, E & Corruption only; no repair \\ \rowline
-Marketplace mechanisms~\citep{ngyisheng2026formal} & 18 agents of one model & Eight mechanisms, including reputation, rewiring, sanctions, contracts, mediation, and a judiciary & E & One model; mechanisms tested one at a time \\ \rowline
-Hierarchical game~\citep{seyedin2026politician} & Six model families, same- or mixed-family groups & Speech, elections, managerial authority, wages, and punishment, added in stages & G, E & Features added cumulatively, not crossed; no repair \\ \rowline
-Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human groups, held fixed & Punishment; communication; both combined & E & Human participants \\
-\bottomrule
-\end{tabular}
-\end{table*}
-
-\begin{table*}[!htbp]
-\centering
-\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each.}
-\label{tab:metrics}
-\footnotesize
-\renewcommand{\arraystretch}{1.0}
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.40\linewidth}@{}}
-\toprule
-\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
-\midrule
-Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\ \rowline
-Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\ \rowline
-Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\ \rowline
-End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\ \rowline
-Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\ \rowline
-False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\ \rowline
-False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\ \rowline
-Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\ \rowline
-Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\ \rowline
-Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\ \rowline
-Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\ \rowline
-Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\ \rowline
-Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\ \rowline
-Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
-\bottomrule
-\end{tabular}
-\end{table*}
 
 \section{Terminology}
 \label{app:definitions}
