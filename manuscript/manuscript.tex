@@ -663,7 +663,7 @@ Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human g
     \item \textbf{Repair pathway:} Can agents correct harm, restore shared resources, appeal sanctions, or re-enter after exclusion?
 \end{enumerate}
 
-These four factors are what an evaluation varies. The properties in Figure~\mbox{\ref{fig:design-dimensions}}B describe the institution being varied, and Table~\mbox{\ref{tab:metrics}} lists the outcomes to measure. In a team of research agents that share a literature memory, for example, the resource is the memory store, the enforcement architecture might be a verifier agent with human review of disputed flags, and the repair pathway is an obligation to correct the entries an agent introduced (Appendix~\mbox{\ref{app:example-institutions}}).
+These four factors are what an evaluation varies. The properties in Figure~\mbox{\ref{fig:design-dimensions}}B describe the institution being varied, and Table~\mbox{\ref{tab:metrics}} lists the outcomes to measure. In a team of research agents that share a literature memory, for example, the resource is the memory store, the enforcement architecture might be a verifier agent with human review of disputed flags, and the repair pathway is an obligation to correct the entries an agent introduced.
 
 Three of the four factors can already be varied with existing tools. Group composition is the easiest: CoopEval cross-plays six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}, and Melting Pot swaps in different background populations~\mbox{\citep{leibo2021meltingpot}}. Resource environments can be varied in commons simulations such as GovSim, including scarcity severe enough to threaten collapse~\mbox{\citep{rehm2026selfgovernance}}. Enforcement architecture is harder to vary faithfully. In Institutional AI, a rule stated only in the prompt had a negligible effect, while the same rule enforced by the environment cut severe collusion from 50\% to 5.6\% of runs~\mbox{\citep{bracalesyrnikov2026institutionalai}}, so evaluations must specify how observation, adjudication, and enforcement are implemented, not only what the rules say. Repair pathways are the gap: our taxonomy contains one test of restitution or reintegration with LLM agents and none of appeals, and few testbeds let harm be concrete and fixable, as with corrupted shared state or a wrongly sanctioned agent. Building such testbeds is a direct opportunity. Crossing all four factors is also costly, but fractional factorial designs, staged screening of single levers, and adaptive search over institutions can keep the number of runs manageable. Simulation also supplies ground truth about who complied, which metrics such as false punishment require.
 
@@ -1006,6 +1006,9 @@ The \emph{model-in-institution} is the unit of evaluation consisting of a model 
 
 
 
+% Appendix C (hypothetical example institutions) cut from the submission copy 2026-09-30; to be expanded with
+% illustrated examples on the project website. Kept via \iffalse; delete the block to make the cut permanent.
+\iffalse
 \section{Example Institutional Designs for LLM-Agent Systems}
 \label{app:example-institutions}
 
@@ -1023,6 +1026,7 @@ A generator agent produces outputs while verifier agents check correctness. The 
 
 \paragraph{Mediator-governed agent teams.}
 A mediator agent resolves disputes among task agents. The artificial commons includes decision authority and shared task state. Possible failures include mediator bias, bottlenecks, over-centralization, and unappealable decisions. Institutional mechanisms may include transparent adjudication criteria, appeal to human review, rotating mediator roles, or multi-agent voting before severe sanctions.
+\fi
 
 \bibliographystyle{splncs04}
 \bibliography{references}
