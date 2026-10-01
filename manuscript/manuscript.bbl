@@ -21,6 +21,10 @@ Amir, D., Ahl, R.E., Jordan, M.R., Bolotin, H., Bogese, M., Gonz{\'a}lez, G.T.,
   \textbf{12}(6),  eadw9995 (2026). \doi{10.1126/sciadv.adw9995},
   \url{https://www.science.org/doi/abs/10.1126/sciadv.adw9995}
 
+\bibitem{andreoni1988why}
+Andreoni, J.: Why free ride? {S}trategies and learning in public goods
+  experiments. Journal of Public Economics  \textbf{37}(3),  291--304 (1988)
+
 \bibitem{anshelevichPriceStabilityNetwork2008}
 Anshelevich, E., Dasgupta, A., Kleinberg, J., Tardos, {\'E}., Wexler, T.,
   Roughgarden, T.: The {{Price}} of {{Stability}} for {{Network Design}} with
@@ -617,6 +621,11 @@ Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
 Schelling, T.C.: The Strategy of Conflict. Harvard University Press, Cambridge,
   MA (1960)
 
+\bibitem{selten1986end}
+Selten, R., Stoecker, R.: End behavior in sequences of finite {Prisoner's
+  Dilemma} supergames: A learning theory approach. Journal of Economic Behavior
+  \& Organization  \textbf{7}(1),  47--70 (1986)
+
 \bibitem{seyedin2026politician}
 Seyedin, F., Weller, A., Yun, J., Babaei, M.: The politician, the liar, and the
   obedient worker: Emerging behavior of {LLM} agents in hierarchical games.
@@ -807,6 +816,10 @@ Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
 Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
   Paying for honesty without knowing the truth: Reputation-penalty design for
   {LLM} marketplace agents (2026), \url{https://arxiv.org/abs/2607.28330}
+
+\bibitem{yao2026competition}
+Yao, J., et~al.: Competition and cooperation of {LLM} agents in games (2026),
+  \url{https://arxiv.org/abs/2604.00487}
 
 \bibitem{zheng2023judging}
 Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
