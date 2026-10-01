@@ -97,6 +97,47 @@ def main():
     json.dump(data, open(OUT, 'w'), ensure_ascii=False, separators=(',', ':'))
     print(f"wrote {os.path.relpath(OUT, ROOT)}: {total} phenomena across {len(types)} types, "
           f"{len(incidents)} incidents, {os.path.getsize(OUT)//1024} KB")
+    build_informal({k for k, *_ in TYPES})
+
+
+# Draft supplementary slice (taxonomy/phenomena_informal.csv, see coding/INFORMAL_SLICE.md): informal reports and
+# automated systems outside AI research, kept as a separate evidence tier and shown on the website only when a
+# visitor opts in. Proposed new types ("new:<name>") are passed through with their own labels.
+OUT_INFORMAL = os.path.join(ROOT, 'docs', 'assets', 'phenomena_informal.json')
+SUBSTRATE_LABEL = {'llm': 'LLM agents', 'marl': 'MARL agents', 'rl_other': 'RL pricing agents',
+                   'abm': 'agent-based model', 'alife': 'artificial life', 'robots': 'robot swarm',
+                   'bots_in_the_wild': 'bots in the wild', 'distributed_systems': 'distributed systems'}
+NEW_TYPE_DESC = {
+    'conversational attractor': 'Agent-to-agent dialogue converges on a self-reinforcing theme without outside input.',
+    'inter-agent conflict': 'Agents built to help persistently undo or contest each other’s work.',
+    'collective identity': 'Agents running the same model identify with each other as one collective agent.',
+}
+
+
+def build_informal(known):
+    path = os.path.join(TAX, 'phenomena_informal.csv')
+    if not os.path.exists(path):
+        return
+    rows = list(csv.DictReader(open(path)))
+    by_type, new_types = {}, {}
+    for r in rows:
+        key = r['phenomenon_type']
+        if key.startswith('new:'):
+            name = key[4:]
+            key = 'new-' + name.replace(' ', '-')
+            new_types.setdefault(key, dict(key=key, label=name[0].upper() + name[1:], valence=r['valence'],
+                                           description=NEW_TYPE_DESC.get(name, '')))
+        elif key not in known:
+            continue
+        by_type.setdefault(key, []).append(dict(
+            id=r['instance_id'], title=r['title'], authors=r['authors_or_org'], date=r['date'], url=r['url'],
+            substrate=r['substrate'], substrate_label=SUBSTRATE_LABEL.get(r['substrate'], r['substrate']),
+            tier=r['evidence_tier'], valence=r['valence'], pattern=r['pattern']))
+    data = dict(types=by_type, new_types=list(new_types.values()), total=len(rows),
+                tiers={t: sum(r['evidence_tier'] == t for r in rows) for t in ('informal', 'peer_reviewed')})
+    json.dump(data, open(OUT_INFORMAL, 'w'), ensure_ascii=False, separators=(',', ':'))
+    print(f"wrote {os.path.relpath(OUT_INFORMAL, ROOT)}: {len(rows)} informal-slice instances, "
+          f"{len(new_types)} proposed types")
 
 
 if __name__ == '__main__':
