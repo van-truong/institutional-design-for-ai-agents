@@ -449,29 +449,29 @@ Figure~\mbox{\ref{fig:design-dimensions}}B lists properties of the institution b
 
 \begin{table*}[!htbp]
 \centering
-\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each.}
+\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each. ``Used in'' gives existing work that reports the metric or a close variant; \emph{partial} marks a related but narrower measure, and \emph{none found} a gap in our corpus.}
 \label{tab:metrics}
-\footnotesize
-\renewcommand{\arraystretch}{1.0}
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.40\linewidth}@{}}
+\scriptsize
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.15\linewidth} >{\raggedright\arraybackslash}p{0.22\linewidth} >{\raggedright\arraybackslash}p{0.29\linewidth} >{\raggedright\arraybackslash}p{0.27\linewidth}@{}}
 \toprule
-\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
+\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} & \textbf{Used in} \\
 \midrule
-Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\ \rowline
-Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\ \rowline
-Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\ \rowline
-End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\ \rowline
-Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\ \rowline
-False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\ \rowline
-False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\ \rowline
-Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\ \rowline
-Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\ \rowline
-Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\ \rowline
-Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\ \rowline
-Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\ \rowline
-Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\ \rowline
-Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
+Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification & Human public-goods games~\citep{fehr2000cooperation}; LLM agents~\citep{piedrahita2025corruptedreasoningreasoninglanguage,vallinder2024cultural,gupta2025social} \\ \rowline
+Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction & Decay without punishment~\citep{fehr2000cooperation}; survival of the commons~\citep{piatti2024govsim,faulkner2026evaluatingcooperationllmsocial,rehm2026selfgovernance} \\ \rowline
+Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task & Efficiency and over-usage in GovSim~\citep{piatti2024govsim} \\ \rowline
+End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds & Known from human repeated games; \emph{none found} with LLM agents \\ \rowline
+Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement & \emph{Partial}: costly sanctions and free-riding on enforcement~\citep{piedrahita2025corruptedreasoningreasoninglanguage,ngyisheng2026formal} \\ \rowline
+False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant & Antisocial punishment in humans~\citep{herrmannAntisocialPunishmentSocieties2008}; \emph{partial}: detector tuned for few false positives~\citep{bracalesyrnikov2026institutionalai} \\ \rowline
+False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned & \emph{Partial}: collusion detection~\citep{bracalesyrnikov2026institutionalai} \\ \rowline
+Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal & \emph{Partial}: incumbency bias and corruption of officials~\citep{seyedin2026politician,vedanta2026corrupt,wang2025lawinsilico} \\ \rowline
+Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation & \emph{None found} \\ \rowline
+Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied & One illustrative case; no systematic test \\ \rowline
+Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types & \emph{Partial}: equality of gains, not of labor~\citep{piatti2024govsim} \\ \rowline
+Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment & \emph{Partial}: reputation scores that underperform; collusion under monitoring~\citep{ngyisheng2026formal,das2026activations} \\ \rowline
+Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups & Cross-play and model-family comparisons~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms,seyedin2026politician,vallinder2024cultural} \\ \rowline
+Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure & \emph{None found} \\
 \bottomrule
 \end{tabular}
 \end{table*}
