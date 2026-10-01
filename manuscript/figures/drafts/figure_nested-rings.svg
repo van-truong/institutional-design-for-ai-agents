@@ -1,0 +1,62 @@
+<svg viewBox="0 0 960 660" width="960" height="660" xmlns="http://www.w3.org/2000/svg">
+<defs><style type="text/css"><![CDATA[
+text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+
+  text{font-family:"Helvetica Neue",Arial,sans-serif;}
+  .ring{font-size:14px;font-weight:900;letter-spacing:1.2px;}
+  .chrono{font-size:14px;font-weight:800;letter-spacing:.6px;fill:#6B7787;}
+  .lhead{font-size:16px;font-weight:800;fill:#3F4D5A;}
+  .lname{font-size:16px;font-weight:800;}
+  .lex{font-size:14.5px;fill:#3F4D5A;}
+  .bracket{font-size:13px;font-style:italic;fill:#6B7787;}
+  .note{font-size:13.5px;font-style:italic;fill:#6B7787;}
+  html,body{margin:0;background:#fff;} .fig{width:960px;margin:0 auto;padding:12px;}
+
+]]></style></defs>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7787"/></marker></defs>
+<circle cx="300" cy="316" r="272" fill="#FBEEDA" stroke="#C79A3A" stroke-width="1.6"/>
+<circle cx="300" cy="316" r="218" fill="#E5F0E1" stroke="#4F9070" stroke-width="1.6"/>
+<circle cx="300" cy="316" r="164" fill="#E3F1EC" stroke="#0F766E" stroke-width="1.6"/>
+<circle cx="300" cy="316" r="110" fill="#DCE8F5" stroke="#3A6EA5" stroke-width="1.6"/>
+<circle cx="300" cy="316" r="54" fill="#ECE9FB" stroke="#6C5CD0" stroke-width="1.6"/>
+<text x="300.0" y="76.0" class="ring" text-anchor="middle" fill="#8A5A0B">MACROSYSTEM</text>
+<text x="300.0" y="130.0" class="ring" text-anchor="middle" fill="#2F6B4A">EXOSYSTEM</text>
+<text x="300.0" y="184.0" class="ring" text-anchor="middle" fill="#04342C">MESOSYSTEM</text>
+<text x="300.0" y="239.0" class="ring" text-anchor="middle" fill="#2F3D6B">MICROSYSTEM</text>
+<text x="300.0" y="321.0" class="ring" text-anchor="middle" fill="#463BA0">MODEL</text>
+<path d="M25.6 415.9 A292 292 0 0 0 574.4 415.9" fill="none" stroke="#6B7787" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="300.0" y="634.0" class="chrono" text-anchor="middle">CHRONOSYSTEM (TIME)</text>
+<text x="632.0" y="36.0" class="lhead" text-anchor="start">What each ring holds for an AI agent</text>
+<rect x="632" y="58" width="16" height="16" rx="4" fill="#ECE9FB" stroke="#6C5CD0" stroke-width="1.5"/>
+<text x="658.0" y="71.0" class="lname" text-anchor="start" fill="#463BA0">Model</text>
+<text x="658.0" y="92.0" class="lex" text-anchor="start">weights, training,</text>
+<text x="658.0" y="110.0" class="lex" text-anchor="start">system prompt</text>
+<rect x="632" y="144" width="16" height="16" rx="4" fill="#DCE8F5" stroke="#3A6EA5" stroke-width="1.5"/>
+<text x="658.0" y="157.0" class="lname" text-anchor="start" fill="#2F3D6B">Microsystem</text>
+<text x="658.0" y="178.0" class="lex" text-anchor="start">its user, tools, memory, task,</text>
+<text x="658.0" y="196.0" class="lex" text-anchor="start">and the agents it talks to</text>
+<rect x="632" y="230" width="16" height="16" rx="4" fill="#E3F1EC" stroke="#0F766E" stroke-width="1.5"/>
+<text x="658.0" y="243.0" class="lname" text-anchor="start" fill="#04342C">Mesosystem</text>
+<text x="658.0" y="264.0" class="lex" text-anchor="start">handoffs, orchestrators, memory</text>
+<text x="658.0" y="282.0" class="lex" text-anchor="start">shared across tasks</text>
+<rect x="632" y="316" width="16" height="16" rx="4" fill="#E5F0E1" stroke="#4F9070" stroke-width="1.5"/>
+<text x="658.0" y="329.0" class="lname" text-anchor="start" fill="#2F6B4A">Exosystem</text>
+<text x="658.0" y="350.0" class="lex" text-anchor="start">platform policy, API limits, other firms&#x27;</text>
+<text x="658.0" y="368.0" class="lex" text-anchor="start">agents, the monitoring stack</text>
+<rect x="632" y="402" width="16" height="16" rx="4" fill="#FBEEDA" stroke="#C79A3A" stroke-width="1.5"/>
+<text x="658.0" y="415.0" class="lname" text-anchor="start" fill="#8A5A0B">Macrosystem</text>
+<text x="658.0" y="436.0" class="lex" text-anchor="start">law and regulation, market structure,</text>
+<text x="658.0" y="454.0" class="lex" text-anchor="start">professional norms, cultural values</text>
+<path d="M622 60 L616 60 L616 106 L622 106" fill="none" stroke="#B3BEC9" stroke-width="1.6"/>
+<text x="608.0" y="83.0" class="bracket" text-anchor="middle" transform="rotate(-90 608 83.0)">individual model</text>
+<path d="M622 146 L616 146 L616 278 L622 278" fill="none" stroke="#B3BEC9" stroke-width="1.6"/>
+<text x="608.0" y="212.0" class="bracket" text-anchor="middle" transform="rotate(-90 608 212.0)">agent-group interactions</text>
+<path d="M622 318 L616 318 L616 450 L622 450" fill="none" stroke="#B3BEC9" stroke-width="1.6"/>
+<text x="608.0" y="384.0" class="bracket" text-anchor="middle" transform="rotate(-90 608 384.0)">governing institutions</text>
+<path d="M632 496 L648 496" stroke="#6B7787" stroke-width="2.2" marker-end="url(#ah)"/>
+<text x="658.0" y="501.0" class="lname" text-anchor="start" fill="#3F4D5A">Chronosystem</text>
+<text x="658.0" y="522.0" class="lex" text-anchor="start">model updates, drift, deprecations,</text>
+<text x="658.0" y="540.0" class="lex" text-anchor="start">incidents that change the rules</text>
+<text x="632.0" y="574.0" class="note" text-anchor="start">After Bronfenbrenner (1979). Brackets show the</text>
+<text x="632.0" y="592.0" class="note" text-anchor="start">three levels of Fig. 2A.</text>
+</svg>

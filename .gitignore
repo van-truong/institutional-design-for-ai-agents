@@ -29,3 +29,4 @@ archive/icml2026/ICML_Vangelo_24inx36in_Institution_Design_Poster.svg
 
 # Session notebooks live in the separate Projects/lab-notebook repo
 lab-notebook/
+__pycache__/
