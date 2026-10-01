@@ -41,24 +41,24 @@
 A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns}
 \titlerunning{Cooperation Mechanisms and Emergent Patterns in Multi-Agent AI}
 
-\author{Van QT Truong\inst{1,2}\orcidID{0000-0002-5485-1818} \and
-Xuanqiang Angelo Huang\inst{2,3,4,5}\orcidID{0009-0004-1421-6854} \and
-Erivan Inan\inst{2,3}\orcidID{0009-0002-8711-0634} \and
-Ryan Faulkner\inst{2,3}\orcidID{0009-0009-8949-0387} \and
-Joel Naoki Christoph\inst{6}\orcidID{0000-0003-2704-3222} \and
-Terry Jingchen Zhang\inst{2,3}\orcidID{0009-0009-1271-4696}\thanks{Co-last authors.} \and
-David Guzman Piedrahita\inst{2,3,7}\orcidID{0009-0007-2694-1123}$^{\star}$ \and
-Zhijing Jin\inst{2,3,8}\orcidID{0000-0003-0238-9024}$^{\star}$}
+\author{Van QT Truong\inst{1,3}\orcidID{0000-0002-5485-1818} \and
+Xuanqiang Angelo Huang\inst{2,3,4,8}\orcidID{0009-0004-1421-6854} \and
+Erivan Inan\inst{3,8}\orcidID{0009-0002-8711-0634} \and
+Ryan Faulkner\inst{3,8}\orcidID{0009-0009-8949-0387} \and
+Joel Naoki Christoph\inst{5}\orcidID{0000-0003-2704-3222} \and
+Terry Jingchen Zhang\inst{3,8}\orcidID{0009-0009-1271-4696}\thanks{Co-last authors.} \and
+David Guzman Piedrahita\inst{3,6,8}\orcidID{0009-0007-2694-1123}$^{\star}$ \and
+Zhijing Jin\inst{3,7,8}\orcidID{0000-0003-0238-9024}$^{\star}$}
 \authorrunning{V. Q. Truong et al.}
 
 \institute{University of Pennsylvania, Philadelphia, USA \and
-Jinesis Lab, University of Toronto and Vector Institute, Toronto, Canada \and
-EuroSafeAI, Z\"urich, Switzerland \and
-ETH Z\"urich, Z\"urich, Switzerland \and
 Institute for Decentralized AI, Oxford, UK \and
+University of Toronto and Vector Institute, Toronto, Canada \and
+ETH Z\"urich, Z\"urich, Switzerland \and
 Harvard Kennedy School, Cambridge, USA \and
-Institute of Computer and Communication Sciences, EPFL, Lausanne, Switzerland \and
-Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
+School of Computer and Communication Sciences, EPFL, Lausanne, Switzerland \and
+Max Planck Institute for Intelligent Systems, T\"ubingen, Germany \and
+EuroSafeAI, Z\"urich, Switzerland\\
 Corresponding author: \email{scientistvan@gmail.com}}
 
 \maketitle
@@ -105,13 +105,9 @@ Corresponding author: \email{scientistvan@gmail.com}}
 \newcommand{\delbanner}[1]{\par\noindent{\color{red!70!black}\textbf{[DELETE: #1]}}\par}
 
 \begin{abstract}
-\voice{Autonomous AI agents built on large language models increasingly act in groups, sharing tools, finite resources, and decision authority---an \emph{artificial commons} in which familiar collective-action failures can reappear. Current alignment techniques evaluate one model at a time, so they cannot see the behavior that emerges only when agents interact.}
+\voice{AI agents built on large language models increasingly act in groups, sharing tools, compute, memory, and decision authority. Together they form an \emph{artificial commons}, where familiar collective-action failures can return. Alignment is evaluated one model at a time, so it misses behavior that emerges only when agents interact.}
 \textbf{\voice{This position paper argues that AI safety research should evaluate agent societies as governed systems, not only as collections of individually aligned models.}}
-We make four contributions.
-\textbf{First}, \voice{the unit of design and evaluation should be the \emph{model-in-institution}, not the individual model, and the choice of which values an institution enforces should stay with humans.}
-\textbf{Second}, \voice{we distinguish seven institutional functions from six mechanism families and ground them in a cross-disciplinary taxonomy of over 60 cooperation-shaping mechanisms, thematically coded from over 600 documented instances across AI and nearly twenty other fields and released as an open, interactive resource.}
-\textbf{Third}, \voice{we take stock of the group-level phenomena already observed in agent societies---what emerges, and where it goes wrong---and link them to recent real-world incidents.}
-\textbf{Fourth}, \voice{we draw on established methods from social-ecological systems research and experimental economics to outline how the institution itself can be studied as a variable, with cooperation scored together with its costs.}
+\voice{We make the case for the \emph{model-in-institution}, rather than the model alone, as the unit of design and evaluation, with humans choosing which values institutions enforce. We then map how human and artificial groups have sustained cooperation: a taxonomy of over 60 mechanisms, thematically coded from over 600 documented instances across AI and nearly twenty other fields and released as an interactive resource. Alongside it, we take stock of the group-level patterns already emerging among agents, from shared conventions to collusion, and link them to recent incidents. Finally, we show how methods from social-ecological systems research and experimental economics can treat the institution itself as a variable.}
 \textbf{Our goal is to design agent institutions that sustain \emph{beneficial} forms of cooperation, rather than simply maximizing cooperation as an end in itself.}
 
 \keywords{Multi-agent AI \and AI agents \and Cooperation \and Institutional design \and AI safety}
@@ -145,7 +141,7 @@ The design challenge for cooperative AI is therefore to determine which institut
 \textbf{First}, \voice{building on Hammond et al.'s observation that group-level failures can arise even when individual agents appear aligned~\mbox{\citep{hammond2025multiagentrisksadvancedai}}, we argue that the \emph{model-in-institution}, not the individual model, should be the unit of design and evaluation, and that the choice of which values an institution enforces should remain with humans (Section~\mbox{\ref{sec:institutional-design}}).}
 \textbf{Second}, we distinguish seven institutional functions from six mechanism families and ground them in a cross-disciplinary taxonomy of over 60 cooperation-shaping mechanisms, thematically coded from hundreds of documented instances found in literature across nearly twenty fields and released as an open, interactive resource (Sections~\mbox{\ref{sec:method}} and~\mbox{\ref{sec:functions}}).
 \textbf{Third}, we take stock of the group-level phenomena already observed in agent societies---what emerges, and where it goes wrong---and connect them to recent real-world incidents (Section~\mbox{\ref{sec:phenomena}}).
-\textbf{Fourth}, \voice{after examining how cooperation mechanisms themselves fail (Section~\mbox{\ref{sec:failures}}), we draw on established methods from social-ecological systems research and experimental economics to outline how the institution can be studied as a variable, varied alongside the agents and scored on cooperation together with its costs, such as enforcement burden, false punishment, and resistance to human oversight (Section~\mbox{\ref{sec:evaluation}}).}
+\textbf{Fourth}, \voice{after examining how cooperation mechanisms themselves fail (Section~\mbox{\ref{sec:failures}}), we draw on established methods from social-ecological systems research and experimental economics to show how the institution itself can be treated as a variable, varied alongside the agents and scored on cooperation together with its costs, such as enforcement burden, false punishment, and resistance to human oversight (Section~\mbox{\ref{sec:evaluation}}).}
 
 \begin{figure}[!t]
   \centering
