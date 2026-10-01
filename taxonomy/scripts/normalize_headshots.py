@@ -17,9 +17,13 @@ TARGET, MID_Y, SIZE, MAX_ZOOM_OUT = 0.20, 0.47, 400, 1.32  # eye-to-chin / diame
 HEADS = {
     'van-truong': (150, 112, 172, True), 'xuanqiang-angelo-huang': (152, 112, 156, False),
     'erivan-inan': (145, 105, 152, False), 'ryan-faulkner': (150, 113, 200, False),
-    'joel-naoki-christoph': (95, 96, 150, False), 'terry-jingchen-zhang': (185, 142, 210, True),
+    'joel-naoki-christoph': (95, 96, 150, False), 'terry-jingchen-zhang': (150, 142, 222, True),
     'david-guzman-piedrahita': (138, 114, 205, True), 'zhijing-jin': (150, 132, 215, True),
 }
+# per-person zoom after normalizing (<1 zooms in): keeps the tight studio crops from needing large fills,
+# and brings Ryan and Joel a little closer
+ZOOM = {'terry-jingchen-zhang': 0.7, 'david-guzman-piedrahita': 0.8, 'zhijing-jin': 0.8,
+        'ryan-faulkner': 0.9, 'joel-naoki-christoph': 0.9}
 
 
 def main():
@@ -32,6 +36,7 @@ def main():
         side = (cy - ey) / TARGET
         usable = (min(w, h) if circle else max(w, h))
         side = min(side, MAX_ZOOM_OUT * usable)  # very tight sources stay a little closer than the rest
+        side *= ZOOM.get(name, 1.0)
         mx, my = fx, (ey + cy) / 2
         x0, y0 = mx - side / 2, my - MID_Y * side
         a = np.asarray(im).astype(np.float32)
