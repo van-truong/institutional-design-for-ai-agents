@@ -47,7 +47,7 @@ GAP_THEME, GAP_FAM = 5.0, 14.0
 COL_W, COL_GAP, PAD = 336.0, 22.0, 14.0
 TOP = 58.0
 SQ, SQ_GAP, MAX_SQ = 6.0, 2.2, 6
-FS = {'leaf': 13.0, 'theme': 13.0, 'fam': 15.5, 'title': 17.0, 'legend': 12.6}
+FS = {'leaf': 13.0, 'theme': 13.0, 'fam': 15.5, 'title': 19.5, 'legend': 12.6}
 
 def esc(s): return html.escape(s, quote=False)
 

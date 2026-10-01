@@ -271,7 +271,7 @@
 
   // ---------- paper mode: title and legend inside the SVG ----------
   if (PAPER) {
-    const t = el("text", { x: 780, y: -2, "text-anchor": "middle", "font-size": 40, "font-weight": 800, fill: INK }, svg);
+    const t = el("text", { x: 780, y: -6, "text-anchor": "middle", "font-size": 35, "font-weight": 700, fill: "#2C2C2A" }, svg);
     t.textContent = "From an individual model to a society of institutions";
     const L = el("g", { class: "rg-paper-legend" }, svg);
     let y = 270;
