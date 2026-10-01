@@ -19,6 +19,10 @@ FIGS = {
     'figure_nested-rings': ('manuscript/figs/rings-paper.html', 'Macrosystem'),
     'figure_coleman-boat': ('manuscript/figs/coleman-paper.html', 'Institutional change'),
     'figure_failure-modes': ('manuscript/figs/failures-paper.html', 'Paid, not obeyed'),
+    'figure_agent-in-context-web': ('manuscript/figs/context-paper.html', 'Individual model'),
+    'figure_design-space-web': ('manuscript/figs/designspace-paper.html', 'Agent institution'),
+    'figure_dilemmas': ('manuscript/figs/dilemmas-paper.html', 'Extractive'),
+    'figure_phenomena-map': ('manuscript/figs/phenomena-paper.html', 'Collusion'),
 }
 WIN_CHROME = '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
 

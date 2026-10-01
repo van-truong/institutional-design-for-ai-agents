@@ -110,7 +110,7 @@
     text(bx + 12, y + 55, m.mech[1], { "font-size": 13, fill: INK }, g);
     y += 78;
     g = node("fail", y, 78, C.terra); lab(g, y + 18, "failure");
-    text(bx + 12, y + 38, m.fail[0], { "font-size": 16, "font-weight": 800, fill: C.terra[1] }, g);
+    text(bx + 12, y + 38, m.fail[0], { "font-size": 15, "font-weight": 800, fill: C.terra[1] }, g);
     wrap(m.fail[1], 34).forEach((ln, k) => text(bx + 12, y + 55 + k * 15, ln, { "font-size": 13, fill: INK }, g));
     y += 92;
     g = node("meas", y, 56, C.blue, true); lab(g, y + 18, "measure");
@@ -135,18 +135,34 @@
       stroke: C.green[0], "stroke-width": 1.8, "stroke-dasharray": "6 5", "marker-end": "url(#fl-ar-g)", class: "fl-loop" }, col);
     // families
     const fy = H - 46;
-    text(x + 20, fy + 4, "MOST EXPOSED", { "font-size": 10.5, "font-weight": 800, "letter-spacing": "0.1em", fill: MUT }, col);
-    let fx = x + 122;
+    text(x + 18, fy + 4, "MOST EXPOSED", { "font-size": 10, "font-weight": 800, "letter-spacing": "0.1em", fill: MUT }, col);
+    let fx = x + 120;
     m.families.forEach((f) => {
-      const w = f.length * 7.6 + 20;
+      const w = f.length * 7 + 18;
       el("rect", { x: fx, y: fy - 13, width: w, height: 24, rx: 12, fill: C.violet[2], stroke: C.violet[0], "stroke-width": 1.2 }, col);
-      text(fx + w / 2, fy + 4, f, { "text-anchor": "middle", "font-size": 13, "font-weight": 700, "font-style": "italic", fill: C.violet[1] }, col);
+      text(fx + w / 2, fy + 4, f, { "text-anchor": "middle", "font-size": 12, "font-weight": 700, "font-style": "italic", fill: C.violet[1] }, col);
       fx += w + 6;
     });
     text(x + COLW - 16, fy + 26, "↺ revise, then test again", { "text-anchor": "end", "font-size": 12, "font-style": "italic", fill: C.green[1] }, col);
   });
 
   if (PAPER) return;
+
+  // on the web, each column becomes its own card so the three can sit in a row or stack on a phone;
+  // the shared defs (shadow, arrowheads) stay in a zero-size SVG that every card can reference
+  const cards = document.createElement("div");
+  cards.className = "fl-cards";
+  stage.appendChild(cards);
+  hits.forEach((col, i) => {
+    const x = X0 + i * (COLW + GAP);
+    const card = el("svg", { viewBox: `${x - 4} 2 ${COLW + 8} ${H - 4}`, xmlns: NS, "font-family": FONT, class: "fl-svg fl-card",
+      role: "img", "aria-label": `${MODES[i].tag}. ${MODES[i].title} (${MODES[i].stage} stage)` });
+    card.appendChild(col);
+    cards.appendChild(card);
+  });
+  svg.setAttribute("class", "fl-defs");
+  svg.setAttribute("width", "0"); svg.setAttribute("height", "0");
+  svg.setAttribute("aria-hidden", "true");
 
   // ---------- interaction ----------
   let locked = null;
@@ -171,12 +187,12 @@
     } else panel.innerHTML = `${head}<p>${m.note}</p>`;
   };
   const activate = (tag, step) => {
-    svg.classList.toggle("has-active", !!tag);
+    stage.classList.toggle("has-active", !!tag);
     hits.forEach((c) => c.classList.toggle("is-on", c.dataset.key === tag));
-    svg.querySelectorAll(".fl-step").forEach((s) => s.classList.toggle("is-step", !!step && s.dataset.key === tag && s.dataset.step === step));
+    stage.querySelectorAll(".fl-step").forEach((s) => s.classList.toggle("is-step", !!step && s.dataset.key === tag && s.dataset.step === step));
     show(tag, step);
   };
-  svg.querySelectorAll(".fl-col, .fl-step").forEach((n) => {
+  stage.querySelectorAll(".fl-col, .fl-step").forEach((n) => {
     const tag = n.dataset.key, step = n.dataset.step;
     const on = (e) => { e.stopPropagation(); activate(tag, step); };
     const off = (e) => { e.stopPropagation(); activate(locked ? locked[0] : null, locked ? locked[1] : null); };
@@ -185,6 +201,6 @@
     n.addEventListener("click", (e) => { e.stopPropagation(); locked = locked && locked[0] === tag && locked[1] === step ? null : [tag, step]; activate(tag, step); });
     n.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); n.dispatchEvent(new Event("click")); } });
   });
-  svg.addEventListener("click", () => { locked = null; activate(null); });
+  stage.addEventListener("click", () => { locked = null; activate(null); });
   show(null);
 })();

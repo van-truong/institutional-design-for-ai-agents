@@ -305,7 +305,12 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding-block
 .fl-svg { display: block; width: 100%; height: auto; }
 .fl-col, .fl-step { cursor: pointer; outline: none; transition: opacity .25s ease; }
 .fl-col:focus-visible, .fl-step:focus-visible { filter: drop-shadow(0 0 4px #4d87e8); }
-.fl-svg.has-active .fl-col:not(.is-on) { opacity: .35; }
+.fail-stage.has-active .fl-col:not(.is-on) { opacity: .35; }
+.fl-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.fl-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.fl-card { transition: transform .25s ease; }
+.fl-card:hover { transform: translateY(-4px); }
+@media (prefers-reduced-motion: reduce) { .fl-card, .fl-card:hover { transition: none; transform: none; } }
 .fl-step.is-step rect { stroke-width: 3; }
 .fl-loop { animation: fl-dash 1.6s linear infinite; }
 @keyframes fl-dash { to { stroke-dashoffset: -22; } }

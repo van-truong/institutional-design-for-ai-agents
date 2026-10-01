@@ -32,7 +32,7 @@ for html in figs/*.html; do
   name="$(basename "$html" .html)"
   case "$name" in
     # drawn by the website scripts in paper mode (scripts/gen_web_figs.py); the old HTML here is superseded
-    figure_nested-rings|figure_coleman-boat|rings-paper|coleman-paper|failures-paper|figure-options-gallery) continue ;;
+    figure_nested-rings|figure_coleman-boat|*-paper|figure-options-gallery) continue ;;
   esac
   svg="$output_dir/$name.svg"
   pdf="$output_dir/$name.pdf"

@@ -70,7 +70,7 @@
   const ROOT_Y = 44, BAR1 = 84, SEC_Y = 110, BAR2 = 134, GRP_Y = 150, GRP_H = 42, LEAF0 = 238, PITCH = 52, LEAF_H = 42;
   const H = LEAF0 + 3 * PITCH + LEAF_H / 2 + 16;
 
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", class: "ds-svg", "font-family": FONT,
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, xmlns: "http://www.w3.org/2000/svg", role: "img", class: "ds-svg", "font-family": FONT,
     "aria-labelledby": "ds-title ds-desc" }, stage);
   el("title", { id: "ds-title" }, svg).textContent = "Design space of agent institutions";
   el("desc", { id: "ds-desc" }, svg).textContent =
