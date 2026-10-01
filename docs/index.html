@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styles.css">
   <script src="taxonomy.js" defer></script>
   <script src="phenomena.js" defer></script>
+  <script src="rings.js" defer></script>
+  <script src="coleman.js" defer></script>
 </head>
 <body>
   <header class="poster-header" id="top">
@@ -61,6 +63,7 @@
 
   <nav aria-label="Primary navigation">
     <a href="#position">Our position</a>
+    <a href="#nested">Nested systems</a>
     <a href="#framework">Framework</a>
     <a href="#taxonomy">Taxonomy</a>
     <a href="#parting-words">Parting words</a>
@@ -91,6 +94,26 @@
         </div>
         <figcaption>Human and artificial commons can face related collective-action problems.</figcaption>
       </figure>
+    </section>
+
+    <section id="nested" class="rings-section rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>From one model to a society of institutions</h2>
+          <h3>Model-level evaluation examines only the center.</h3>
+        </div>
+        <p>After Bronfenbrenner's nested systems: an individual model acts inside settings, links between settings, and the platform, market, and legal institutions that govern it from outside. Influence runs both ways, and every layer changes over time.</p>
+      </div>
+      <div class="rings-layout">
+        <figure>
+          <div id="rings-stage" class="rings-stage"></div>
+          <figcaption class="rings-caption">The cutaway reads outward: one model becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another.</figcaption>
+        </figure>
+        <div class="rings-side">
+          <div id="rings-legend" class="rings-legend" aria-label="Layers"></div>
+          <aside id="rings-panel" class="rings-panel" aria-live="polite"></aside>
+        </div>
+      </div>
     </section>
 
     <section class="motivation rule-top">
@@ -177,6 +200,24 @@
       <div class="ph-legend" id="ph-legend"></div>
       <div class="ph-matrix" id="ph-matrix">Loading…</div>
       <p class="ph-hint">Click any row to open the papers behind it and, where they exist, the real-world incidents.</p>
+    </section>
+
+    <section id="boat" class="boat-section rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>From a rule change to group outcomes</h2>
+          <h3>Every arrow is a place where an institution can fail.</h3>
+        </div>
+        <p>A Coleman boat, after Coleman (1990) and Mart&iacute;nez-Pe&ntilde;a and Ylikoski (2024): a change to the rules reaches each agent's situation, shapes what the model does, and only then adds up to outcomes for the group. Designers often hope for the dashed shortcut.</p>
+      </div>
+      <div class="boat-toolbar">
+        <button id="boat-play" class="tx-btn tx-btn-primary" type="button">&#9654; Play the four questions</button>
+        <button id="boat-fail" class="tx-btn" type="button" aria-pressed="false">Where it can fail</button>
+      </div>
+      <div class="boat-layout">
+        <figure><div id="boat-stage" class="boat-stage"></div></figure>
+        <aside id="boat-panel" class="boat-panel" aria-live="polite"></aside>
+      </div>
     </section>
 
     <section class="research-agenda rule-top">
