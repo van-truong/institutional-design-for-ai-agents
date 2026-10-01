@@ -72,7 +72,7 @@
   const GAME = stage.dataset.variant === "game";
   const BADGE = { Constraint: ["A\u1d62", true], Epistemic: ["p, \u0398", true], Incentive: ["u\u1d62", true],
     Normative: ["deontic", false], Social: ["N, links", false], Restorative: ["ex post", false] };
-  const H = LEAF0 + 3 * PITCH + LEAF_H / 2 + 16 + (GAME ? 40 : 0);
+  const H = LEAF0 + 3 * PITCH + LEAF_H / 2 + 16;  // the badge key lives in the paper's caption
 
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, xmlns: "http://www.w3.org/2000/svg", role: "img", class: "ds-svg", "font-family": FONT,
     "aria-labelledby": "ds-title ds-desc" }, stage);
@@ -167,17 +167,6 @@
       });
     });
   });
-  if (GAME) {
-    const ly = H - 18;
-    const t = el("text", { x: W / 2, y: ly, "text-anchor": "middle", "font-size": 14, fill: MUT }, svg);
-    const parts = [["Badges: the part of a Bayesian game ", 0], ["G", 1], [" = (", 0], ["N", 1], [", ", 0], ["A\u1d62", 1], [", ", 0],
-      ["\u0398\u1d62", 1], [", ", 0], ["p", 1], [", ", 0], ["u\u1d62", 1], [") each family changes (solid), or what it adds beyond the one-shot game (dashed)", 0]];
-    parts.forEach(([str, math]) => {
-      const sp = el("tspan", math ? { "font-family": "'Times New Roman', Times, serif", "font-style": "italic", "font-size": 15.5 } : {}, t);
-      sp.textContent = str;
-    });
-  }
-
   // ---------- interaction ----------
   const lineage = (id) => {
     const set = new Set([id]);
