@@ -3,8 +3,9 @@
    Website: two views, like the taxonomy. A radial "map" (default) places the ten phenomenon types around a circle,
    with one ring per substrate (humans, MARL agents, LLM agents) and dots sized by coded instances; the "list" view
    is the substrate matrix whose rows expand to the papers behind each type and the real-world incidents.
-   Paper (a container with data-mode="paper"): a static, unravelled list drawn in the style of the taxonomy figure
-   (Fig. 5): band pills, tree connectors, sized evidence dots, and incident chips. */
+   Paper (a container with data-mode="paper"): a static two-panel figure, (A) the same spoke map with larger print
+   text above (B) the unravelled list drawn in the style of the taxonomy figure (Fig. 5): band pills, tree
+   connectors, sized evidence dots, and incident chips. */
 (function () {
   const $ = (sel, p = document) => p.querySelector(sel);
   const html = (tag, attrs = {}, text) => {
@@ -87,46 +88,61 @@
   };
   const dotR = (n, k = 1) => (n ? (6 + 3.4 * Math.sqrt(n)) * k : 3 * k);
 
-  // ---------------------------------------------------------------- paper: the unravelled list, styled like Fig. 5
+  // ---------------------------------------------------------------- paper: (A) the spoke map above (B) the
+  // unravelled list, styled like the taxonomy figure (Fig. 5)
   function drawPaper(data, host) {
+    const W = 1000, SA = 0.75, FS = 1.4, RAD_TOP = 4, RAD_BOT = 880;  // spoke-map crop (its own 1200-wide frame)
+    const svg = svgEl("svg", { xmlns: NS, "font-family": FONT, role: "img" }, host);
+    const panel = (y, letter, title) => {
+      stext(20, y, letter, { "font-size": 24, "font-weight": 800, fill: "#2C2C2A" }, svg);
+      stext(48, y, title, { "font-size": 19, "font-weight": 700, fill: "#2C2C2A" }, svg);
+    };
+    panel(26, "A", "Spokes are phenomenon types; rings are substrates");
+    const ga = svgEl("g", { transform: `translate(${((W - 1200 * SA) / 2).toFixed(1)} ${(40 - RAD_TOP * SA).toFixed(1)}) scale(${SA})` }, svg);
+    radialMap(ga, data, { fs: FS, idp: "pp-", ringKey: false, interactive: false });
+    const yb = 40 + (RAD_BOT - RAD_TOP) * SA + 18;
+    svgEl("line", { x1: 20, y1: yb - 10, x2: W - 20, y2: yb - 10, stroke: HAIR, "stroke-width": 1 }, svg);
+    panel(yb + 20, "B", "The same counts, unravelled into a list, with incidents");
+    const H = drawList(svg, data, yb + 34);
+    svg.setAttribute("viewBox", `0 0 ${W} ${H.toFixed(0)}`);
+    svg.setAttribute("width", W); svg.setAttribute("height", H.toFixed(0));
+    host.style.width = W + "px"; host.style.height = H.toFixed(0) + "px";
+  }
+
+  // the list, drawn from y0 down; returns the bottom edge (including the legend)
+  function drawList(svg, data, y0) {
     const incBy = Object.fromEntries(data.incidents.map((x) => [x.key, x]));
-    const W = 1000, LX = 64, COL = [404, 484, 564], IX = 616;
-    const rowH = (t) => Math.max(wrap(t.label, 30).length > 1 ? 54 : 44, (t.incidents || []).length * 25 + 14);
+    const W = 1000, LX = 64, COL = [452, 524, 596], IX = 642, IP = 21, WR = 40;
+    const rowH = (t) => Math.max(wrap(t.label, WR).length > 1 ? 44 : 32, (t.incidents || []).length * IP + 8);
     const bands = [
       { title: "WHAT AGENT GROUPS BUILD", c: VC.neutral, types: data.types.filter((t) => t.valence !== "harmful") },
       { title: "WHERE IT GOES WRONG", c: VC.harmful, types: data.types.filter((t) => t.valence === "harmful") },
     ];
-    let H = 136;
-    bands.forEach((b) => { H += 50 + b.types.reduce((a, t) => a + rowH(t), 0) + 14; });
-    H += 64;
-    const svg = svgEl("svg", { xmlns: NS, viewBox: `0 0 ${W} ${H}`, width: W, height: H, "font-family": FONT, role: "img" }, host);
-    host.style.width = W + "px"; host.style.height = H + "px";
-    stext(W / 2, 34, "Group-level phenomena in multi-agent systems", { "text-anchor": "middle", "font-size": 25, "font-weight": 800, fill: "#2C2C2A" }, svg);
     // column heads with substrate glyphs
     SUBS.forEach(([k, lab], i) => {
-      glyph(k, COL[i], 70, 1.2, INK, svg);
-      lab.split(" ").forEach((w, j) => stext(COL[i], 104 + j * 17, w, { "text-anchor": "middle", "font-size": 15, "font-weight": 700, fill: INK }, svg));
+      glyph(k, COL[i], y0 + 24, 1.05, INK, svg);
+      stext(COL[i], y0 + 58, lab.split(" ")[0], { "text-anchor": "middle", "font-size": 15, "font-weight": 700, fill: INK }, svg);
     });
-    flag(IX + 8, 100, 1.5, svg);
-    stext(IX + 24, 106, "Documented in the wild", { "font-size": 15.5, "font-weight": 700, fill: VC.harmful[1] }, svg);
-    let y = 136;
+    flag(IX + 8, y0 + 52, 1.5, svg);
+    stext(IX + 24, y0 + 58, "Documented in the wild", { "font-size": 15.5, "font-weight": 700, fill: VC.harmful[1] }, svg);
+    let y = y0 + 66;
     bands.forEach((b) => {
       // band pill and rule, as for the taxonomy's families
       const pw = b.title.length * 12.2 + 34;
-      svgEl("rect", { x: 20, y: y + 8, width: pw, height: 32, rx: 16, fill: b.c[1] }, svg);
-      stext(20 + pw / 2, y + 30, b.title, { "text-anchor": "middle", "font-size": 16, "font-weight": 800, "letter-spacing": "0.08em", fill: "#fff" }, svg);
-      svgEl("line", { x1: 26 + pw, y1: y + 24, x2: W - 16, y2: y + 24, stroke: b.c[0], "stroke-width": 1.6 }, svg);
-      y += 50;
+      svgEl("rect", { x: 20, y: y + 6, width: pw, height: 30, rx: 15, fill: b.c[1] }, svg);
+      stext(20 + pw / 2, y + 27, b.title, { "text-anchor": "middle", "font-size": 16, "font-weight": 800, "letter-spacing": "0.08em", fill: "#fff" }, svg);
+      svgEl("line", { x1: 26 + pw, y1: y + 21, x2: W - 16, y2: y + 21, stroke: b.c[0], "stroke-width": 1.6 }, svg);
+      y += 44;
       const top = y, mids = [];
       b.types.forEach((t, i) => {
         const h = rowH(t), mid = y + h / 2, c = VC[t.valence];
         mids.push(mid);
         if (i % 2 === 1) svgEl("rect", { x: LX - 18, y, width: W - LX + 2, height: h, rx: 8, fill: "#F7F6F2" }, svg);
         svgEl("circle", { cx: 40, cy: mid, r: 5.5, fill: "#fff", stroke: c[0], "stroke-width": 2.2 }, svg);
-        const lines = wrap(t.label, 30);
-        lines.forEach((ln, k) => stext(LX, mid + 6 - (lines.length - 1) * 10 + k * 20, ln, { "font-size": 17.5, "font-weight": 700, fill: c[1] }, svg));
+        const lines = wrap(t.label, WR);
+        lines.forEach((ln, k) => stext(LX, mid + 5.5 - (lines.length - 1) * 9.5 + k * 19, ln, { "font-size": 16.5, "font-weight": 700, fill: c[1] }, svg));
         SUBS.forEach(([k], j) => {
-          const n = t.counts[k], r = dotR(n);
+          const n = t.counts[k], r = Math.min(dotR(n), h / 2 - 1);
           if (n) {
             svgEl("circle", { cx: COL[j], cy: mid, r, fill: c[2], stroke: c[0], "stroke-width": 1.8 }, svg);
             stext(COL[j], mid + 5.5, String(n), { "text-anchor": "middle", "font-size": 15, "font-weight": 800, fill: c[1] }, svg);
@@ -134,22 +150,22 @@
         });
         const incs = (t.incidents || []).map((key) => incBy[key]).filter(Boolean);
         incs.forEach((inc, k) => {
-          const iy = mid - (incs.length - 1) * 12.5 + k * 25;
+          const iy = mid - (incs.length - 1) * IP / 2 + k * IP;
           const label = (SHORT[inc.key] || inc.short) + (inc.year ? ` (${inc.year})` : "");
-          const w = label.length * 7.25 + 36;
-          svgEl("rect", { x: IX, y: iy - 11, width: w, height: 22, rx: 11, fill: VC.harmful[2], stroke: VC.harmful[0], "stroke-width": 1.1 }, svg);
-          flag(IX + 14, iy, 0.95, svg);
-          stext(IX + 26, iy + 5, label, { "font-size": 14.5, "font-weight": 600, fill: VC.harmful[1] }, svg);
+          const w = label.length * 6.9 + 34;
+          svgEl("rect", { x: IX, y: iy - 9.5, width: w, height: 19, rx: 9.5, fill: VC.harmful[2], stroke: VC.harmful[0], "stroke-width": 1.1 }, svg);
+          flag(IX + 14, iy, 0.9, svg);
+          stext(IX + 26, iy + 5, label, { "font-size": 14, "font-weight": 600, fill: VC.harmful[1] }, svg);
         });
         y += h;
       });
       // tree connector from the pill down to each row
-      svgEl("line", { x1: 40, y1: top - 10, x2: 40, y2: mids[mids.length - 1] - 6, stroke: b.c[0], "stroke-width": 1.6, opacity: 0.6 }, svg);
-      y += 14;
+      svgEl("line", { x1: 40, y1: top - 8, x2: 40, y2: mids[mids.length - 1] - 6, stroke: b.c[0], "stroke-width": 1.6, opacity: 0.6 }, svg);
+      y += 10;
     });
     // legend, in the taxonomy figure's footer style
-    const ly = H - 28;
-    svgEl("line", { x1: 20, y1: ly - 26, x2: W - 20, y2: ly - 26, stroke: HAIR, "stroke-width": 1 }, svg);
+    const ly = y + 30;
+    svgEl("line", { x1: 20, y1: ly - 22, x2: W - 20, y2: ly - 22, stroke: HAIR, "stroke-width": 1 }, svg);
     stext(20, ly, "Effect on cooperation:", { "font-size": 15, "font-weight": 700, fill: INK }, svg);
     let lx = 200;
     [["beneficial", "beneficial"], ["neutral", "neutral / surprising"], ["harmful", "harmful"]].forEach(([k, lab]) => {
@@ -157,7 +173,99 @@
       stext(lx + 14, ly, lab, { "font-size": 15, fill: INK }, svg);
       lx += lab.length * 8 + 46;
     });
-    stext(W - 20, ly, "Dot area ∝ coded instances (82 in all)", { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
+    stext(W - 20, ly, `Dot area ∝ coded instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
+    return ly + 12;
+  }
+
+  // ---------------------------------------------------------------- the radial "spoke" map, shared by the website
+  // and the paper. Draws in a 1200 x 925 frame into `svg` (an <svg> or <g>); o.fs scales the text for print.
+  function radialMap(svg, data, o) {
+    const W = 1200, CX = 600, CY = 430, RING = { human: 150, marl: 228, llm: 306 }, k = o.fs, P = o.idp;
+    const builds = data.types.filter((t) => t.valence !== "harmful"), wrongs = data.types.filter((t) => t.valence === "harmful");
+    const ang = {};
+    builds.forEach((t, i) => { ang[t.key] = -96 + (192 * i) / (builds.length - 1); });
+    wrongs.forEach((t, i) => { ang[t.key] = 154 + (52 * i) / Math.max(1, wrongs.length - 1); });
+    const pt = (deg, r) => { const a = (deg * Math.PI) / 180; return [CX + r * Math.sin(a), CY - r * Math.cos(a)]; };
+    const f = (n) => n.toFixed(1);
+    const defs = svgEl("defs", {}, svg);
+    const sh = svgEl("filter", { id: P + "shadow", x: "-10%", y: "-10%", width: "120%", height: "120%" }, defs);
+    svgEl("feDropShadow", { dx: 0, dy: 6, stdDeviation: 10, "flood-color": INK, "flood-opacity": 0.12 }, sh);
+    const donut = (a0, a1, r0, r1) => {
+      const [x0, y0] = pt(a0, r1), [x1, y1] = pt(a1, r1), [x2, y2] = pt(a1, r0), [x3, y3] = pt(a0, r0);
+      const lg = a1 - a0 > 180 ? 1 : 0;
+      return `M ${f(x0)} ${f(y0)} A ${r1} ${r1} 0 ${lg} 1 ${f(x1)} ${f(y1)} L ${f(x2)} ${f(y2)} A ${r0} ${r0} 0 ${lg} 0 ${f(x3)} ${f(y3)} Z`;
+    };
+    const sectors = svgEl("g", { filter: `url(#${P}shadow)` }, svg);
+    svgEl("path", { d: donut(-112, 112, 84, 336), fill: "#EEF4FA", stroke: "#C9DAEC", "stroke-width": 1.2 }, sectors);
+    svgEl("path", { d: donut(144, 216, 84, 336), fill: "#FCF1EA", stroke: "#EBC9B4", "stroke-width": 1.2 }, sectors);
+    // substrate rings with glyph labels in the right-hand gap
+    SUBS.forEach(([k, lab]) => {
+      svgEl("circle", { cx: CX, cy: CY, r: RING[k], fill: "none", stroke: HAIR, "stroke-width": 1.2, "stroke-dasharray": "4 5" }, svg);
+    });
+    if (o.ringKey) {
+      // ring key under the map: substrates from the center out
+      stext(CX - 400, 908, "RINGS, FROM THE CENTER OUT", { "font-size": 13, "font-weight": 800, "letter-spacing": "0.1em", fill: MUT }, svg);
+      SUBS.forEach(([sk, lab], i) => {
+        const x = CX - 90 + i * 160;
+        glyph(sk, x, 908, 0.8, INK, svg);
+        stext(x + 20, 913, lab, { "font-size": 15, "font-weight": 700, fill: INK }, svg);
+      });
+    } else {
+      // print: name each ring in the empty lower-right gap between the two sectors
+      SUBS.forEach(([sk, lab]) => {
+        const [x, y] = pt(134, RING[sk]);
+        stext(f(x), f(y + 5 * k), lab, { "text-anchor": "middle", "font-size": 13.5 * k, "font-weight": 700, fill: MUT,
+          stroke: "#fff", "stroke-width": 4, "paint-order": "stroke" }, svg);
+      });
+    }
+    // sector titles curved inside the donut
+    const arcPath = (id, r, a0, a1, sweep) => {
+      const [x0, y0] = pt(a0, r), [x1, y1] = pt(a1, r);
+      svgEl("path", { id, d: `M ${f(x0)} ${f(y0)} A ${r} ${r} 0 0 ${sweep} ${f(x1)} ${f(y1)}`, fill: "none" }, defs);
+    };
+    arcPath(P + "arc-build", k > 1 ? 113 : 110, k > 1 ? -92 : -78, k > 1 ? 92 : 78, 1);
+    arcPath(P + "arc-wrong", 120, 236, 124, 0);
+    [[P + "arc-build", "WHAT AGENT GROUPS BUILD", VC.neutral[1]], [P + "arc-wrong", "WHERE IT GOES WRONG", VC.harmful[1]]].forEach(([id, s, c]) => {
+      const t = svgEl("text", { "font-size": 13.5 * Math.min(k, 1.2), "font-weight": 800, "letter-spacing": k > 1 ? "0.05em" : "0.12em", fill: c }, svg);
+      const tp = svgEl("textPath", { href: `#${id}`, startOffset: "50%", "text-anchor": "middle" }, t);
+      tp.textContent = s;
+    });
+    svgEl("circle", { cx: CX, cy: CY, r: 70, fill: "#fff", stroke: HAIR, "stroke-width": 1.2 }, svg);
+    stext(CX, CY + 6 * k, String(data.counts.total), { "text-anchor": "middle", "font-size": 40 * k, "font-weight": 800, fill: INK }, svg);
+    stext(CX, CY + 30 * k, k > 1 ? "instances" : "coded instances", { "text-anchor": "middle", "font-size": 13.5 * k, fill: MUT }, svg);
+
+    const nodes = [];
+    data.types.forEach((t) => {
+      const a = ang[t.key], c = VC[t.valence];
+      const g = svgEl("g", o.interactive ? { class: "ph-rnode", tabindex: "0", role: "button", "aria-label": `${t.label}: ${t.total} instances` } : {}, svg);
+      g.dataset.key = t.key;
+      const [sx, sy] = pt(a, 78), [ex, ey] = pt(a, 334);
+      svgEl("line", { x1: f(sx), y1: f(sy), x2: f(ex), y2: f(ey), stroke: c[0], "stroke-width": 1.4, opacity: 0.35, class: "ph-spoke" }, g);
+      SUBS.forEach(([sk]) => {
+        const n = t.counts[sk], [x, y] = pt(a, RING[sk]);
+        if (n) {
+          svgEl("circle", { cx: f(x), cy: f(y), r: f(dotR(n, 1.1 * Math.sqrt(k))), fill: c[2], stroke: c[0], "stroke-width": 2 }, g);
+          stext(f(x), f(y + 5.5 * k), String(n), { "text-anchor": "middle", "font-size": 15 * k, "font-weight": 800, fill: c[1] }, g);
+        } else svgEl("circle", { cx: f(x), cy: f(y), r: 3.5, fill: "#fff", stroke: HAIR, "stroke-width": 1.3 }, g);
+      });
+      // horizontal label outside the circle
+      const s = Math.sin((a * Math.PI) / 180), co = Math.cos((a * Math.PI) / 180);
+      const [lx, ly] = pt(a, 356 + (k - 1) * 20), LH = 19 * k;
+      const anchor = s > 0.25 ? "start" : s < -0.25 ? "end" : "middle";
+      const lines = wrap(t.label, 22);
+      const y0 = co > 0.5 ? ly - (lines.length - 1) * LH : co < -0.5 ? ly + 14 * k : ly - ((lines.length - 1) * LH) / 2 + 5 * k;
+      lines.forEach((ln, j) => stext(f(lx), f(y0 + j * LH), ln, { "text-anchor": anchor, "font-size": 16.5 * k, "font-weight": 700, fill: c[1] }, g));
+      const incs = (t.incidents || []).length;
+      if (incs) {
+        const iy = y0 + lines.length * LH + 2 * k, label = `${incs} documented incident${incs > 1 ? "s" : ""}`;
+        const iw = (label.length * 7 + 26) * k, ix = anchor === "start" ? lx : anchor === "end" ? lx - iw : lx - iw / 2;
+        svgEl("rect", { x: f(ix), y: f(iy - 14 * k), width: f(iw), height: f(21 * k), rx: f(10.5 * k), fill: VC.harmful[2], stroke: VC.harmful[0], "stroke-width": 1 }, g);
+        flag(f(ix + 12 * k), f(iy - 3.5 * k), 0.85 * k, g);
+        stext(f(ix + 22 * k), f(iy + 1 * k), label, { "font-size": 12.5 * k, "font-weight": 700, fill: VC.harmful[1] }, g);
+      }
+      nodes.push(g);
+    });
+    return nodes;
   }
 
   // ---------------------------------------------------------------- website
@@ -290,84 +398,9 @@
     matrix.parentNode.insertBefore(bar, legend || matrix);
     matrix.parentNode.insertBefore(wrapEl, matrix);
 
-    const W = 1200, H = 925, CX = 600, CY = 430, RING = { human: 150, marl: 228, llm: 306 };
-    const builds = data.types.filter((t) => t.valence !== "harmful"), wrongs = data.types.filter((t) => t.valence === "harmful");
-    const ang = {};
-    builds.forEach((t, i) => { ang[t.key] = -96 + (192 * i) / (builds.length - 1); });
-    wrongs.forEach((t, i) => { ang[t.key] = 154 + (52 * i) / Math.max(1, wrongs.length - 1); });
-    const pt = (deg, r) => { const a = (deg * Math.PI) / 180; return [CX + r * Math.sin(a), CY - r * Math.cos(a)]; };
-    const f = (n) => n.toFixed(1);
-    const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, "font-family": FONT, role: "img", class: "ph-rsvg",
+    const svg = svgEl("svg", { viewBox: "0 0 1200 925", "font-family": FONT, role: "img", class: "ph-rsvg",
       "aria-label": "Radial map of group-level phenomena by substrate" }, stage);
-    const defs = svgEl("defs", {}, svg);
-    const sh = svgEl("filter", { id: "ph-shadow", x: "-10%", y: "-10%", width: "120%", height: "120%" }, defs);
-    svgEl("feDropShadow", { dx: 0, dy: 6, stdDeviation: 10, "flood-color": INK, "flood-opacity": 0.12 }, sh);
-    const donut = (a0, a1, r0, r1) => {
-      const [x0, y0] = pt(a0, r1), [x1, y1] = pt(a1, r1), [x2, y2] = pt(a1, r0), [x3, y3] = pt(a0, r0);
-      const lg = a1 - a0 > 180 ? 1 : 0;
-      return `M ${f(x0)} ${f(y0)} A ${r1} ${r1} 0 ${lg} 1 ${f(x1)} ${f(y1)} L ${f(x2)} ${f(y2)} A ${r0} ${r0} 0 ${lg} 0 ${f(x3)} ${f(y3)} Z`;
-    };
-    const sectors = svgEl("g", { filter: "url(#ph-shadow)" }, svg);
-    svgEl("path", { d: donut(-112, 112, 84, 336), fill: "#EEF4FA", stroke: "#C9DAEC", "stroke-width": 1.2 }, sectors);
-    svgEl("path", { d: donut(144, 216, 84, 336), fill: "#FCF1EA", stroke: "#EBC9B4", "stroke-width": 1.2 }, sectors);
-    // substrate rings with glyph labels in the right-hand gap
-    SUBS.forEach(([k, lab]) => {
-      svgEl("circle", { cx: CX, cy: CY, r: RING[k], fill: "none", stroke: HAIR, "stroke-width": 1.2, "stroke-dasharray": "4 5" }, svg);
-    });
-    // ring key under the map: substrates from the center out
-    stext(CX - 400, 908, "RINGS, FROM THE CENTER OUT", { "font-size": 13, "font-weight": 800, "letter-spacing": "0.1em", fill: MUT }, svg);
-    SUBS.forEach(([k, lab], i) => {
-      const x = CX - 90 + i * 160;
-      glyph(k, x, 908, 0.8, INK, svg);
-      stext(x + 20, 913, lab, { "font-size": 15, "font-weight": 700, fill: INK }, svg);
-    });
-    // sector titles curved inside the donut
-    const arcPath = (id, r, a0, a1, sweep) => {
-      const [x0, y0] = pt(a0, r), [x1, y1] = pt(a1, r);
-      svgEl("path", { id, d: `M ${f(x0)} ${f(y0)} A ${r} ${r} 0 0 ${sweep} ${f(x1)} ${f(y1)}`, fill: "none" }, defs);
-    };
-    arcPath("ph-arc-build", 110, -78, 78, 1);
-    arcPath("ph-arc-wrong", 120, 236, 124, 0);
-    [["ph-arc-build", "WHAT AGENT GROUPS BUILD", VC.neutral[1]], ["ph-arc-wrong", "WHERE IT GOES WRONG", VC.harmful[1]]].forEach(([id, s, c]) => {
-      const t = svgEl("text", { "font-size": 13.5, "font-weight": 800, "letter-spacing": "0.12em", fill: c }, svg);
-      const tp = svgEl("textPath", { href: `#${id}`, startOffset: "50%", "text-anchor": "middle" }, t);
-      tp.textContent = s;
-    });
-    svgEl("circle", { cx: CX, cy: CY, r: 70, fill: "#fff", stroke: HAIR, "stroke-width": 1.2 }, svg);
-    stext(CX, CY + 6, String(data.counts.total), { "text-anchor": "middle", "font-size": 40, "font-weight": 800, fill: INK }, svg);
-    stext(CX, CY + 30, "coded instances", { "text-anchor": "middle", "font-size": 13.5, fill: MUT }, svg);
-
-    const nodes = [];
-    data.types.forEach((t) => {
-      const a = ang[t.key], c = VC[t.valence];
-      const g = svgEl("g", { class: "ph-rnode", tabindex: "0", role: "button", "aria-label": `${t.label}: ${t.total} instances` }, svg);
-      g.dataset.key = t.key;
-      const [sx, sy] = pt(a, 78), [ex, ey] = pt(a, 334);
-      svgEl("line", { x1: f(sx), y1: f(sy), x2: f(ex), y2: f(ey), stroke: c[0], "stroke-width": 1.4, opacity: 0.35, class: "ph-spoke" }, g);
-      SUBS.forEach(([k]) => {
-        const n = t.counts[k], [x, y] = pt(a, RING[k]);
-        if (n) {
-          svgEl("circle", { cx: f(x), cy: f(y), r: f(dotR(n, 1.1)), fill: c[2], stroke: c[0], "stroke-width": 2 }, g);
-          stext(f(x), f(y + 5.5), String(n), { "text-anchor": "middle", "font-size": 15, "font-weight": 800, fill: c[1] }, g);
-        } else svgEl("circle", { cx: f(x), cy: f(y), r: 3.5, fill: "#fff", stroke: HAIR, "stroke-width": 1.3 }, g);
-      });
-      // horizontal label outside the circle
-      const s = Math.sin((a * Math.PI) / 180), co = Math.cos((a * Math.PI) / 180);
-      const [lx, ly] = pt(a, 356);
-      const anchor = s > 0.25 ? "start" : s < -0.25 ? "end" : "middle";
-      const lines = wrap(t.label, 22);
-      const y0 = co > 0.5 ? ly - (lines.length - 1) * 19 : co < -0.5 ? ly + 14 : ly - ((lines.length - 1) * 19) / 2 + 5;
-      lines.forEach((ln, k) => stext(f(lx), f(y0 + k * 19), ln, { "text-anchor": anchor, "font-size": 16.5, "font-weight": 700, fill: c[1] }, g));
-      const incs = (t.incidents || []).length;
-      if (incs) {
-        const iy = y0 + lines.length * 19 + 2, label = `${incs} documented incident${incs > 1 ? "s" : ""}`;
-        const iw = label.length * 7 + 26, ix = anchor === "start" ? lx : anchor === "end" ? lx - iw : lx - iw / 2;
-        svgEl("rect", { x: f(ix), y: f(iy - 14), width: f(iw), height: 21, rx: 10.5, fill: VC.harmful[2], stroke: VC.harmful[0], "stroke-width": 1 }, g);
-        flag(f(ix + 12), f(iy - 3.5), 0.85, g);
-        stext(f(ix + 22), f(iy + 1), label, { "font-size": 12.5, "font-weight": 700, fill: VC.harmful[1] }, g);
-      }
-      nodes.push(g);
-    });
+    const nodes = radialMap(svg, data, { fs: 1, idp: "ph-", ringKey: true, interactive: true });
 
     const intro = () => {
       panel.style.removeProperty("--c");
