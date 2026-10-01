@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Build the paper's standalone figures that are cut from, or composed of, other generators' output.
 
-  figure_nested-rings       nested systems around interacting agents, with the 66 mechanisms as a ring
-                            (gen_rings_taxonomy.py, text enlarged for print)          -> Fig. 1, introduction
+  figure_nested-rings       nested systems around interacting agents, drawn by the website's docs/rings.js
+                            in paper mode (gen_web_figs.py)                           -> Fig. 1, introduction
   figure_agent-in-context   compact layer stack (gen_agent_in_context.py)              -> Section 2, top-down / bottom-up
   figure_design-space       the design space of agent institutions (right panel of gen_multilayer.py) -> Section 3
-  figure_coleman-boat       the agent-institution Coleman boat (gen_coleman_boat.py)   -> Section 5
+  figure_coleman-boat       the agent-institution Coleman boat, drawn by docs/coleman.js in paper mode
+                            (gen_web_figs.py)                                         -> Section 7
 Each source's CSS classes and element ids are prefixed so nothing collides. Writes figs/<name>.html and
 figures/<name>.svg/.pdf. Run from manuscript/:  python3 scripts/gen_paper_figs.py
 """
@@ -39,9 +40,7 @@ def write(name, title, src, key, crop=None):
     print(f'wrote figs/{name}.html and figures/{name}.pdf ({w:.0f}x{h:.0f})')
 
 def main():
-    run('gen_coleman_boat.py')
-    run('gen_phenomena.py')          # standalone phenomena figure (writes its own PDF)
-    run('gen_nested_rings.py', {'RINGS_TEXT_SCALE': '1.35'})   # Fig. 1: nested rings + cutaway window (writes its own PDF)
+    run('gen_web_figs.py')           # Fig. 1 and the Coleman boat: drawn by docs/rings.js and docs/coleman.js in paper mode
     run('gen_multilayer.py', {'PANEL_LETTERS': '0'})
     multi = os.path.join(FIGS, 'figure4_multi-layer-institutions.html')
     _, mvb, _ = extract(multi, 'm')
@@ -52,7 +51,6 @@ def main():
     subprocess.run(['rsvg-convert', '--format', 'pdf1.5', '-o', os.path.join(FIGURES, 'figure_agent-in-context.pdf'),
                     os.path.join(FIGURES, 'figure_agent-in-context.svg')], check=True)
     write('figure_design-space', 'Design space of agent institutions', multi, 'd', (252, 0, mvb[2] - 252, mvb[3]))
-    write('figure_coleman-boat', 'A Coleman boat for agent institutions', os.path.join(DRAFTS, 'figure_coleman-boat.html'), 'c')
     run('gen_multilayer.py')          # restore the combined figure with its A/B letters
     run('gen_rings_taxonomy.py')      # keep the mechanism-circle taxonomy available as a side artifact
 

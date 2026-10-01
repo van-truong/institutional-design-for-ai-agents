@@ -214,7 +214,7 @@ The design challenge for cooperative AI is therefore to determine which institut
 
 \begin{figure}[!t]
   \centering
-  \includegraphics[width=0.9\linewidth]{figures/figure_agent-in-context.pdf}
+  \includegraphics[width=0.9\linewidth]{figures/figure_agent-in-context-web.pdf}
   \caption{Individual models are nested within agent--group interactions and governing institutions. Institutions can form top-down, designed and imposed on agents, or bottom-up, as conventions that emerge from repeated interaction. For AI agents today, we argue that the first must lead. The rings beside each label match Fig.~\mbox{\ref{fig:summary}}: the individual model is at the center, agent--group interactions operate on the micro- and mesosystem scale, and governing institutions exist within the exosystem and macrosystem.}
   \label{fig:agent-in-context}
 \end{figure}
@@ -286,14 +286,14 @@ One might object that a sufficiently capable agent community could itself design
 
 \begin{figure}[!ht]
   \centering
-  \makebox[\linewidth][c]{\includegraphics[width=1.12\linewidth]{figures/figure2_four-cooperation-dilemmas.pdf}}
-  \caption{Four cooperation dilemmas that recur in shared-resource settings, each shown with its core tension and parallel examples in human and LLM-agent systems.}
+  \includegraphics[width=\linewidth]{figures/figure_dilemmas.pdf}
+  \caption{\voice{Cooperation dilemmas, each shown with its core tension and parallel examples in human and LLM-agent systems. Four recur in shared-resource settings (solid borders); coordination and collusion fall outside that framing but yield to the same institutional lens (dashed borders).}}
   \label{fig:dilemmas-response}
 \end{figure}
 
 Human institutions are imperfect guides for AI, but centuries of practice at exactly these dilemmas make them a tractable place to start. The classic cooperation dilemmas recur in four familiar forms (Figure~\mbox{\ref{fig:dilemmas-response}}). \emph{Extractive} dilemmas arise when overuse degrades a shared resource---overfishing a fishery, or agents exhausting a shared tool-call budget, context window, or rate limit. \emph{Contributive} dilemmas arise when everyone draws on a common good but few maintain it, which is often seen in unpaid open-source upkeep and moderation, or agents that consume shared memory without verifying or cleaning what they leave behind. \emph{Second-order} dilemmas arise because monitoring and punishment are themselves costly: someone must watch, and someone must watch the watchers. \emph{Repair} dilemmas arise after harm has occurred and decisions must be made on just whom bears the cost of fixing these disrupted states.
 
-Two further challenges fall outside this shared-resource framing but yield to the same institutional lens. \emph{Coordination} dilemmas turn on selecting among several acceptable equilibria---which convention, protocol, or standard to adopt---rather than on curbing defection. \emph{Collusion} is the inverse case, in which agents cooperate all too effectively, coordinating against human oversight; it is a reminder that cooperation is not an unqualified good, and we return to collusion and authority capture in Section~\mbox{\ref{sec:failures}}. \voice{Next we turn to what has already been tried: how we gathered the record, what institutions must do, and what agents do when no institution is present.}
+Two further challenges fall outside this shared-resource framing but yield to the same institutional lens (dashed cards in Figure~\mbox{\ref{fig:dilemmas-response}}). \emph{Coordination} dilemmas turn on selecting among several acceptable equilibria---which convention, protocol, or standard to adopt---rather than on curbing defection. \emph{Collusion} is the inverse case, in which agents cooperate all too effectively, coordinating against human oversight; it is a reminder that cooperation is not an unqualified good, and we return to collusion and authority capture in Section~\mbox{\ref{sec:failures}}. \voice{Next we turn to what has already been tried: how we gathered the record, what institutions must do, and what agents do when no institution is present.}
 
 
 % ==============================================
@@ -312,7 +312,7 @@ Two further challenges fall outside this shared-resource framing but yield to th
 
 \paragraph{Incidents.} \voice{Separately from the literature, we collected news reports and public disclosures, from mid-2025 to September 2026, of AI agents acting outside their authorization, gaining unauthorized access, or leaking data; about half involve more than one agent. We link an incident to a phenomenon type only where the report describes that pattern. Incidents are not counted as instances, and we are still checking each report against primary sources.}
 
-\paragraph{What the maps can show.} \voice{All coders were LLMs, so the agreement between passes is an upper bound on independent agreement, not a human inter-rater reliability; one author is verifying codes and merges against the sources. Counts describe where research effort has gone, not how common or effective a mechanism is, and a mechanism with no LLM study is untested, not failed. Thematic coding is also interpretive: another team, or a lens that groups mechanisms by discipline or by who holds authority, could draw the boundaries differently. We therefore treat both maps as working versions. The interactive site versions the dataset, links every coded source, and invites readers to propose alternative codings.}
+\paragraph{What the maps can show.} \voice{All coders were LLMs, so the agreement between passes is an upper bound on independent agreement, not a human inter-rater reliability; one author is verifying codes and merges against the sources. Counts describe where research effort has gone, not how common or effective a mechanism is, and a mechanism with no LLM study is untested, not failed. The phenomena come from the research literature and the incident list above; informal reports, such as blog posts and public logs of small multi-agent experiments, and automated systems outside AI research, such as pricing, trading, and encyclopedia-editing bots, are left for a later pass. Thematic coding is also interpretive: another team, or a lens that groups mechanisms by discipline or by who holds authority, could draw the boundaries differently. We therefore treat both maps as working versions. The interactive site versions the dataset, links every coded source, and invites readers to propose alternative codings.}
 
 
 % ==============================================
@@ -344,7 +344,7 @@ Having fixed the institution as the object of design, we next ask what it must d
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\linewidth]{figures/figure_design-space-topdown.pdf}
+  \includegraphics[width=\linewidth]{figures/figure_design-space-web.pdf}
   \caption{\voice{The design space of agent institutions. Seven institutional functions, grouped into an information layer (grey) and a consequence layer (plum), act on agents through six mechanism families, colored as in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} and split into soft and hard channels.}}
   \label{fig:design-space}
 \end{figure}
@@ -404,14 +404,14 @@ Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in the 
 
 \voice{The emphasis tracks the technology. Multi-agent reinforcement learning mostly documented emergent communication, whereas LLM-agent studies increasingly report emergent conventions, social structure, and culture, alongside failure modes such as collusion, biased consensus, and toxicity. Human behavior barely appears, because in human societies these patterns were long ago codified into the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Most patterns are neutral or beneficial, but about a quarter are already harmful, almost all in LLM systems and with no institution present. Several harmful types now have counterparts outside the laboratory, from the Hugging Face incident that opened this paper~\mbox{\citep{metr2026hfinvestigation}} to agents acting outside their intended scope on live systems. We read these as recurring patterns worth watching rather than settled findings: the literature is young, and many patterns rest on one or two studies.}
 
-\begin{figure*}[tp]
+\begin{figure*}[!tbp]
   \centering
-  \includegraphics[width=\textwidth]{figures/figure_phenomena.pdf}
-  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 coded instances that record an emergent pattern rather than a designed mechanism. Dot area is proportional to the number of coded instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. A first-pass reading of a fast-moving literature; the harmful patterns are tied to documented incidents at right.}}
+  \includegraphics[width=0.88\textwidth]{figures/figure_phenomena-map.pdf}
+  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 coded instances that record an emergent pattern rather than a designed mechanism. (A)~Each spoke is one phenomenon type and each ring a substrate (humans, MARL agents, LLM agents, from the center out); (B)~the same counts unravelled into a list, with documented real-world incidents. Dot area is proportional to the number of coded instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. The list follows the layout of the taxonomy in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A first-pass reading of a fast-moving literature; an interactive radial version is on the project website.}}
   \label{fig:phenomena}
 \end{figure*}
 
-\begin{table}[!ht]
+\begin{table}[!tbp]
 \centering
 \caption{An inventory of group-level \emph{phenomena} observed in multi-agent systems, as of September 2026: 82 coded instances that record an emergent pattern rather than a designed mechanism (companion to the mechanisms of Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} and to Fig.~\mbox{\ref{fig:phenomena}}). Columns \textbf{H}, \textbf{M}, \textbf{L} count instances studied with humans, MARL agents, and LLM agents. A checkmark marks patterns with a documented real-world incident. The full list, with links to every source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}.}
 \label{tab:phenomena}
@@ -455,7 +455,7 @@ Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragi
 
 
 
-\FloatBarrier
+% \FloatBarrier % removed 2026-10-01: let Sec. 6 text flow around the Sec. 5 floats
 \section{When Cooperation Mechanisms Fail}\label{sec:failures}
 
 
@@ -470,7 +470,7 @@ Monitoring can miss relevant behavior or expose too much. Adjudication can miscl
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=\textwidth]{figures/figure3_institutional-design-dimensions.pdf}
-  \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design. These properties describe the institution being designed; Section~\mbox{\ref{sec:evaluation}} lists the outcomes to measure. \voice{The enforcement stages are the points at which an institution can respond to the dilemmas of Fig.~\mbox{\ref{fig:dilemmas-response}}.}}
+  \caption{Design dimensions for cooperation-shaping institutions in multi-agent AI systems. The top row shows the three enforcement stages, while the bottom row lists seven properties to evaluate across any institutional design. These properties describe the institution being designed; Section~\mbox{\ref{sec:evaluation}} lists the outcomes to measure. \voice{The enforcement stages are the points at which an institution can respond to the dilemmas of Fig.~\mbox{\ref{fig:dilemmas-response}}; their colors follow the information (slate) and consequence (plum) layers of Table~\mbox{\ref{tab:functions}}.}}
   \label{fig:design-dimensions}
 \end{figure}
 
@@ -507,12 +507,12 @@ Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unif
 
 
 
-\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which (Section~\mbox{\ref{sec:evaluation}}). Figure~\mbox{\ref{fig:failure-guide}} condenses these lessons into a short guide: for each failure mode, the families most exposed to it, what to measure, and the safeguards that address it.
+\textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which (Section~\mbox{\ref{sec:evaluation}}). Figure~\mbox{\ref{fig:failure-guide}} condenses these lessons into a short guide: for each failure mode, the enforcement stage where it breaks, the families most exposed to it, what to measure, and the safeguards that address it.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\linewidth]{figures/figure7_failure-modes-flow.pdf}
-  \caption{A practical guide linking the mechanism families to the failure modes of Section~\mbox{\ref{sec:failures}}. Each row follows one failure and names where it breaks, from the rule meeting behavior to the institution feeding back on itself: a mechanism (amber) fails in a characteristic way (terracotta); an evaluation measures the failure and checks whether cooperation holds (blue, metrics from Table~\mbox{\ref{tab:metrics}}); if it does not, safeguards drawn from the taxonomy (green; Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) revise the institution, which is then tested again. Tags name the mechanism families most exposed to each failure (violet).}
+  \includegraphics[width=\linewidth]{figures/figure_failure-modes.pdf}
+  \caption{\voice{A practical guide to the three failure modes of Section~\mbox{\ref{sec:failures}}, each placed at the enforcement stage where it breaks (headers, colored as in Fig.~\mbox{\ref{fig:design-dimensions}}) and at the arrow of the Coleman boat it affects (Fig.~\mbox{\ref{fig:model-in-institution}}). Down each column, a mechanism (amber) fails in a characteristic way (terracotta); an evaluation measures the failure and checks whether cooperation holds (blue; metrics in Table~\mbox{\ref{tab:metrics}}); if it does not, safeguards from the taxonomy (green; Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}) revise the institution, which is then tested again (dashed loop). Chips name the mechanism families most exposed to each failure (violet).}}
   \label{fig:failure-guide}
 \end{figure}
 
@@ -606,7 +606,7 @@ This framing avoids treating all failures as equally severe. It also foregrounds
 
 
 
-\FloatBarrier
+% \FloatBarrier % removed 2026-10-01: let text flow around floats
 % % ============================================
 \section{Toward Evaluating Agent Institutions}\label{sec:evaluation}
 \label{sec:design_dim}
@@ -840,7 +840,7 @@ This position paper argues that the safety of multi-agent AI systems should be e
 % ===== END CUT (Impact Statement) =====
 
 \subsubsection*{Author Contributions}\label{sec:contributions}
-V.Q.T. and D.G.P. led the initial conceptualization. V.Q.T. and X.A.H. together further evolved and developed the research framework, including incorporating feedback from D.G.P., E.I., R.F., J.N.C., T.J.Z., and Z.J. All manuscript writing was led by V.Q.T. and X.A.H. and every author, E.I., R.F., J.N.C., D.G.P., T.J.Z., and Z.J., contributed to writing, reviewing, and/or editing both original and final drafts. V.Q.T. led the visualizations, with assistance from E.I. Funding was acquired by T.J.Z., D.G.P., and Z.J. V.Q.T. and X.A.H. led project management. Z.J., D.G.P., and T.J.Z. contributed supervision.
+V.Q.T. and D.G.P. led the initial conceptualization. V.Q.T. and X.A.H. together further evolved and developed the research framework, including incorporating feedback from D.G.P., E.I., R.F., J.N.C., T.J.Z., and Z.J. All manuscript writing was led by V.Q.T. and X.A.H. and every author, E.I., R.F., J.N.C., D.G.P., T.J.Z., and Z.J., contributed to writing, reviewing, and/or editing both original and final drafts. V.Q.T. led the visualizations and website build, with assistance from E.I. Funding was acquired by T.J.Z., D.G.P., and Z.J. V.Q.T. and X.A.H. led project management, while D.G.P., T.J.Z., and Z.J. co-supervised.
 % We use the CRediT system for author credit 
 
 % ====================================
@@ -851,7 +851,7 @@ V.Q.T. and D.G.P. led the initial conceptualization. V.Q.T. and X.A.H. together 
 \subsubsection*{Acknowledgments}
 % \VAN{We thank several people who have gave feedback on our project, or contributed to the ideas, including XYZ.}
 
-This work was supported in part by the German Federal Ministry of Education and Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B; by the Machine Learning Cluster of Excellence, EXC number 2064/1--Project number 390727645; by the Schmidt Sciences SAFE-AI Grant; by the Frontier Model Forum and AI Safety Fund; and by Coefficient Giving.
+This work was supported in part by the German Federal Ministry of Education and Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B; by the Machine Learning Cluster of Excellence, EXC number 2064/1--Project number 390727645; by the Schmidt Sciences SAFE-AI Grant; by the Frontier Model Forum and AI Safety Fund; and by Coefficient Giving. V.Q.T. was supported by the ACM SIGHPC Computational \& Data Science Fellowship. 
 % by NSERC Discovery Grant RGPIN-2025-06491; 
 %by the Canadian AI Safety Institute Research Program
 %at CIFAR through a Catalyst Award;
