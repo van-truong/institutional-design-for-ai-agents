@@ -82,7 +82,7 @@ def build():
     o.append('<title>Design dimensions for cooperation-shaping institutions</title>')
     # Panel A label
     o.append(f'<text x="{M}" y="22" font-size="13" font-weight="700" fill="#2C2C2A">A</text>')
-    o.append(f'<text x="{M+14}" y="22" font-size="13" font-weight="700" fill="#2C2C2A">Enforcement stages</text>')
+    o.append(f'<text x="{W/2:.1f}" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#2C2C2A">Enforcement stages</text>')
     for i,(b,t,q,ex) in enumerate(STAGES):
         x=M+i*(SCW+SG); o.append(stage_card(x,b,t,q,ex))
         # arrow between cards
@@ -91,7 +91,7 @@ def build():
     # Panel B label
     blab=SY+SCH+22
     o.append(f'<text x="{M}" y="{blab}" font-size="13" font-weight="700" fill="#2C2C2A">B</text>')
-    o.append(f'<text x="{M+14}" y="{blab}" font-size="13" font-weight="700" fill="#2C2C2A">Evaluation properties</text>')
+    o.append(f'<text x="{W/2:.1f}" y="{blab}" text-anchor="middle" font-size="13" font-weight="700" fill="#2C2C2A">Evaluation properties</text>')
     # property rows
     row1=PROPS[:4]; row2=PROPS[4:]
     ry1=SY+SCH+38

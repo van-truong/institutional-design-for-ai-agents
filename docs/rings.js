@@ -43,11 +43,11 @@
   const inner = (l) => { const i = LEVELS.indexOf(l); return i < LEVELS.length - 1 ? LEVELS[i + 1].r : 0; };
   const EXTRA = {
     wedge: { name: "Cutaway", c: [INK, INK, "#F7F9FB"], summary: "from one model to many societies",
-      note: "Reading outward: one model becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another." },
+      note: "Reading outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another." },
     chrono: { name: "Chronosystem", c: [MUT, INK, "#EEF2F6"], summary: "change over time",
       note: "Every layer changes over time. Models are updated, groups re-form, and rules are rewritten, so an institution that works today may not work tomorrow." },
     recip: { name: "Reciprocal influence", c: [MUT, INK, "#EEF2F6"], summary: "each layer shapes the others",
-      note: "Influence runs both ways: each layer shapes, and is shaped by, the others. Agent societies will also draw on human resources, infrastructure, and services, and their behavior will feed back into them." },
+      note: "Influence runs both ways: each layer shapes, and is shaped by, the others, and the tensions and contradictions between them run through the whole system. Agent societies will also draw on human resources, infrastructure, and services, and their behavior will feed back into them." },
   };
 
   // ---------- helpers ----------
@@ -117,6 +117,14 @@
       "stroke-dasharray": "6 6", "marker-start": "url(#rg-arrow)", "marker-end": "url(#rg-arrow)", opacity: "0.75" }, recip);
     el("line", { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: "transparent", "stroke-width": "18" }, recip);
   });
+  // the long arrows carry the system's tensions and contradictions through every layer
+  {
+    const [lx0, ly0] = pt(60, 150), [lx1, ly1] = pt(60, 425);
+    const nx = Math.cos((60 * Math.PI) / 180) * -9, ny = Math.sin((60 * Math.PI) / 180) * -9;  // offset above the line
+    el("path", { id: "rg-tension", d: `M ${f(lx0 + nx)} ${f(ly0 + ny)} L ${f(lx1 + nx)} ${f(ly1 + ny)}`, fill: "none" }, defs);
+    const tt = el("text", { fill: MUT, "font-size": FS.story - 1, "font-style": "italic", "font-weight": 600 }, recip);
+    el("textPath", { href: "#rg-tension", startOffset: "50%", "text-anchor": "middle" }, tt).textContent = "tensions & contradictions";
+  }
 
   // cutaway wedge
   const WA = 30;
@@ -137,8 +145,8 @@
     "stroke-opacity": "0.75", "pointer-events": "none" }, wedge);
 
   // glyphs
-  const agent = (x, y, s, col, parent) => {
-    const g = el("g", { transform: `translate(${f(x)} ${f(y)}) scale(${s})` }, parent);
+  const agent = (x, y, s, col, parent, rot = 0) => {
+    const g = el("g", { transform: `translate(${f(x)} ${f(y)}) rotate(${f(rot)}) scale(${s})` }, parent);
     el("line", { x1: 0, y1: -15, x2: 0, y2: -20, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, g);
     el("circle", { cx: 0, cy: -21.5, r: 2.2, fill: col[0] }, g);
     el("rect", { x: -11, y: -15, width: 22, height: 15, rx: 5, fill: "#fff", stroke: col[1], "stroke-width": 1.6 }, g);
@@ -183,8 +191,8 @@
   [[-30, 148], [30, 148], [0, 186]].forEach(([dx, r]) => agent(CX + dx, CY - r + 12, 0.8, cI, story));
   wtext(200, "a group interacts", cI[1], story);
   up(226, 252, story);
-  for (let i = -4; i <= 4; i++) agent(CX + i * 27, CY - 272, 0.52, cS, story);
-  wtext(288, "a society forms", cS[1], story);
+  for (let i = -4; i <= 4; i++) { const deg = i * 5.6, [ax, ay] = pt(deg, 266); agent(ax, ay, 0.52, cS, story, deg); }
+  wtext(292, "a society forms", cS[1], story);
   up(312, 332, story);
   const inst = [[-92, 350], [0, 384], [92, 350]];
   inst.forEach(([dx, r], i) => {
@@ -201,7 +209,7 @@
   const [om0, om1, omY, omR] = [CX - 66, CX + 66, CY + 30, 150];
   const omSag = omR - Math.sqrt(omR * omR - 66 * 66);
   const mt = arcText("rg-one-model", `M ${om0} ${f(omY - omSag)} A ${omR} ${omR} 0 0 0 ${om1} ${f(omY - omSag)}`,
-    "one model", cM[1], svg, FS.model);
+    "an AI agent", cM[1], svg, FS.model);
   mt.setAttribute("pointer-events", "none");
 
   // ring names (curved along the bottom) and example chips
@@ -228,6 +236,28 @@
     });
   });
 
+  // two-way arrows only where the relationship is concrete: a link between settings and the setting it serves,
+  // and an outer layer with the one it governs
+  {
+    const chipAt = (label) => {
+      for (const l of LEVELS) for (const [name, deg] of l.items) if (name === label) {
+        const ri = inner(l), k = FS.chip / 15, w = name.length * 8.6 * k + 26 * k, h = 26 * k;
+        const r = deg === 180 ? ri + h / 2 + 7 : (ri + l.r) / 2, [x, y] = pt(deg, r);
+        return { x, y, hw: w / 2, hh: h / 2 };
+      }
+    };
+    const edge = (c, dx, dy) => { const t = Math.min(c.hw / Math.max(Math.abs(dx), 1e-6), c.hh / Math.max(Math.abs(dy), 1e-6)); return [c.x + dx * (t + 5), c.y + dy * (t + 5)]; };
+    const links = el("g", { class: "rg-recip rg-hit", "data-key": "recip", "aria-label": "Two-way links between layers" }, svg);
+    [["orchestrator", "tools"], ["handoffs", "user"], ["platform policy", "law & regulation"]].forEach(([a1, b1]) => {
+      const A = chipAt(a1), B = chipAt(b1); if (!A || !B) return;
+      const L = Math.hypot(B.x - A.x, B.y - A.y), dx = (B.x - A.x) / L, dy = (B.y - A.y) / L;
+      const [x0, y0] = edge(A, dx, dy), [x1, y1] = edge(B, -dx, -dy);
+      el("line", { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: INK, "stroke-width": 1.7, "stroke-opacity": 0.7,
+        "marker-start": "url(#rg-arrow-ink)", "marker-end": "url(#rg-arrow-ink)" }, links);
+    });
+    svg.insertBefore(links, labels);
+  }
+
   // chronosystem: time runs along the bottom
   const chrono = el("g", { class: "rg-chrono rg-hit", "data-key": "chrono", tabindex: "0",
     "aria-label": "Chronosystem: change over time" }, svg);
@@ -242,7 +272,7 @@
   // ---------- paper mode: title and legend inside the SVG ----------
   if (PAPER) {
     const t = el("text", { x: 780, y: -2, "text-anchor": "middle", "font-size": 40, "font-weight": 800, fill: INK }, svg);
-    t.textContent = "From one model to a society of institutions";
+    t.textContent = "From an individual model to a society of institutions";
     const L = el("g", { class: "rg-paper-legend" }, svg);
     let y = 270;
     [["gov", "GOVERNING INSTITUTIONS"], ["inter", "AGENT–GROUP INTERACTIONS"], ["model", "INDIVIDUAL MODEL"]].forEach(([g, label]) => {

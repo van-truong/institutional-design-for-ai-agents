@@ -8,6 +8,8 @@ pdf:
 	mkdir -p $(BUILD_DIR)
 	latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=$(BUILD_DIR) $(SOURCE)
 	cp $(BUILD_DIR)/manuscript.pdf $(PDF)
+	@# keep the tracked .bbl next to the source in sync: LaTeX reads ./manuscript.bbl before the build copy
+	cp $(BUILD_DIR)/manuscript.bbl manuscript.bbl
 
 figures:
 	./render_figures.sh

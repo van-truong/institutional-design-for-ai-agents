@@ -36,41 +36,35 @@
 \usepackage{soul}
 
 \begin{document}
+\raggedbottom % short pages end with space at the bottom, not stretched gaps between paragraphs and floats
 
-% Alternative title: Governing the Artificial Commons: Institutional Design for Multi-Agent AI
 \title{From Aligned Models to Governed Societies:\texorpdfstring{\\}{ }
 A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns}
 \titlerunning{Cooperation Mechanisms and Emergent Patterns in Multi-Agent AI}
 
-\author{Van QT Truong\inst{1,2}\orcidID{0000-0002-5485-1818} \and
-Xuanqiang Angelo Huang\inst{2,3,4,5}\orcidID{0009-0004-1421-6854} \and
-Erivan Inan\inst{2,3}\orcidID{0009-0002-8711-0634} \and
-Ryan Faulkner\inst{2,3}\orcidID{0009-0009-8949-0387} \and
-Joel Naoki Christoph\inst{6}\orcidID{0000-0003-2704-3222} \and
-Terry Jingchen Zhang\inst{2,3}\orcidID{0009-0009-1271-4696}\thanks{Co-last authors.} \and
-David Guzman Piedrahita\inst{2,3,7}\orcidID{0009-0007-2694-1123}$^{\star}$ \and
-Zhijing Jin\inst{2,3,8}\orcidID{0000-0003-0238-9024}$^{\star}$}
+\author{Van QT Truong\inst{1,3}\orcidID{0000-0002-5485-1818} \and
+Xuanqiang Angelo Huang\inst{2,3,4,8}\orcidID{0009-0004-1421-6854} \and
+Erivan Inan\inst{3,8}\orcidID{0009-0002-8711-0634} \and
+Ryan Faulkner\inst{3,8}\orcidID{0009-0009-8949-0387} \and
+Joel Naoki Christoph\inst{5}\orcidID{0000-0003-2704-3222} \and
+Terry Jingchen Zhang\inst{3,8}\orcidID{0009-0009-1271-4696}\thanks{Co-last authors.} \and
+David Guzman Piedrahita\inst{3,6,8}\orcidID{0009-0007-2694-1123}$^{\star}$ \and
+Zhijing Jin\inst{3,7,8}\orcidID{0000-0003-0238-9024}$^{\star}$}
 \authorrunning{V. Q. Truong et al.}
 
 \institute{University of Pennsylvania, Philadelphia, USA \and
-Jinesis Lab, University of Toronto and Vector Institute, Toronto, Canada \and
-EuroSafeAI, Z\"urich, Switzerland \and
-ETH Z\"urich, Z\"urich, Switzerland \and
 Institute for Decentralized AI, Oxford, UK \and
+University of Toronto and Vector Institute, Toronto, Canada \and
+ETH Z\"urich, Z\"urich, Switzerland \and
 Harvard Kennedy School, Cambridge, USA \and
-Institute of Computer and Communication Sciences, EPFL, Lausanne, Switzerland \and
-Max Planck Institute for Intelligent Systems, T\"ubingen, Germany\\
+EPFL, Lausanne, Switzerland \and
+Max Planck Institute for Intelligent Systems, T\"ubingen, Germany \and
+EuroSafeAI, Z\"urich, Switzerland\\
 Corresponding author: \email{scientistvan@gmail.com}}
 
 \maketitle
 \setcounter{footnote}{0}
 
-% ====================================
-% , , , , - ABSTRACT , , , , -
-% The abstract must briefly state the position (e.g., “This position paper argues that <statement of the position>.”).
-% ====================================
-% Draft markup controls. Change these two switches before building a review PDF.
-% Author comments remain off by default so old Overleaf discussion is not exposed.
 \newif\ifshowauthorcomments
 \showauthorcommentsfalse
 \newif\ifshowreviewflags
@@ -93,74 +87,33 @@ Corresponding author: \email{scientistvan@gmail.com}}
   \newcommand{\RYAN}[1]{}
   \newcommand{\JOEL}[1]{}
 \fi
-\newcommand{\ERIVAN}[1]{\ERI{#1}}
+\newcommand{\ERIVAN}[1]{}
 
-% Red text marks claims that need the co-author review listed in README.md.
 \newcommand{\REVIEWFLAG}[1]{\ifshowreviewflags{\color{red!75!black}#1}\else#1\fi}
-% Blue text marks prose proposed by Van for the archival revision.
 \newcommand{\vqt}[1]{\ifshowreviewflags{{\color{blue}#1}}\else#1\fi}
-% Yellow highlight marks passages that duplicate content elsewhere (redundancy audit).
 \sethlcolor{yellow}
 \newcommand{\dup}[1]{\ifshowreviewflags\hl{#1}\else#1\fi}
-% Light-blue highlight marks newly added / relocated prose in this revision.
 \definecolor{chgblue}{RGB}{176,216,247}
 \newcommand{\chg}[1]{\ifshowreviewflags{\begingroup\sethlcolor{chgblue}\hl{#1}\endgroup}\else#1\fi}
-% Pink highlight flags figures/captions whose visuals must be redesigned before press.
 \definecolor{reworkpink}{RGB}{255,188,205}
 \newcommand{\rework}[1]{\ifshowreviewflags{\begingroup\sethlcolor{reworkpink}\hl{#1}\endgroup}\else#1\fi}
-% Green highlight marks mechanical fixes (grammar, broken refs, dropped citations) from the reviewer pass.
 \definecolor{fixgreen}{RGB}{188,236,184}
 \newcommand{\fixed}[1]{\ifshowreviewflags{\begingroup\sethlcolor{fixgreen}\hl{#1}\endgroup}\else#1\fi}
-% Yellow highlight flags new prose to revisit and rewrite in the authors' own voice.
 \newcommand{\voice}[1]{\ifshowreviewflags{\begingroup\sethlcolor{yellow}\hl{#1}\endgroup}\else#1\fi}
-% Orange highlight flags existing prose that reads as AI-written, to rewrite in the authors' own voice.
 \definecolor{aiorange}{RGB}{255,190,120}
 \newcommand{\aiflag}[1]{\ifshowreviewflags{\begingroup\sethlcolor{aiorange}\hl{#1}\endgroup}\else#1\fi}
-% Proposed deletions (2026-09-29 consistency pass): red strikeout while reviewing, removed in the final build.
-% \del{...} is for inline text (wrap \cite/\ref in \mbox{}); deleted blocks (equations, tables) sit inside
-% \ifshowreviewflags ... \fi with a \delbanner so they vanish when \showreviewflagsfalse.
 \newcommand{\del}[1]{\ifshowreviewflags{\color{red!70!black}\setstcolor{red!70!black}\st{#1}}\fi}
 \newcommand{\delbanner}[1]{\par\noindent{\color{red!70!black}\textbf{[DELETE: #1]}}\par}
 
-% Color list: https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
-    
 \begin{abstract}
-% \section{Abstract}
-\voice{Autonomous AI agents built on large language models increasingly act in groups, sharing tools, finite resources, and decision authority---an \emph{artificial commons} in which familiar collective-action failures can reappear. Current alignment techniques evaluate one model at a time, so they cannot see the behavior that emerges only when agents interact.}
-\textbf{\voice{This position paper argues that AI safety research should evaluate agent societies as governed systems, not only as collections of individually aligned models.}}
-% CUT (reviewer pass, #2): "We use sanctions to illustrate one axis where institutional rules acquire practical consequences and reveal the broader institutional structures that shape cooperation." -- sanctions are now folded into contribution 2.
-We make four contributions.
-% Longer contribution list (before shortening, 2026-09-29):
-% \textbf{First}, we argue that the \emph{model-in-institution}, not the individual model, should be the unit of design and evaluation, since individually aligned agents can still produce collectively harmful outcomes, and that humans should choose the values an institution enforces.
-% \textbf{Second}, we distinguish seven institutional functions (what an institution must do) from six mechanism families (how it shapes behavior), grounded in a cross-disciplinary taxonomy of 66 cooperation-shaping mechanisms; sanctions emerge as one function among seven, meaningful only alongside norms, monitoring, adjudication, and repair.
-% \textbf{Third}, we propose a two-way evaluation design that varies both the agents and the institution (resource structure, group composition, enforcement architecture, and repair pathways) and scores cooperation together with its costs, including enforcement burden, false punishment, and resistance to human oversight.
-\textbf{First}, \voice{the unit of design and evaluation should be the \emph{model-in-institution}, not the individual model, and the choice of which values an institution enforces should stay with humans.}
-\textbf{Second}, \voice{we distinguish seven institutional functions from six mechanism families and ground them in a cross-disciplinary taxonomy of over 60 cooperation-shaping mechanisms, coded from over 600 documented instances across AI and nearly twenty other fields and released as an open, interactive resource.}
-\textbf{Third}, \voice{we take stock of the group-level phenomena already observed in agent societies---what emerges, and where it goes wrong---and link them to recent real-world incidents.}
-\textbf{Fourth}, \voice{we draw on established methods from social-ecological systems research and experimental economics to outline how the institution itself can be studied as a variable, with cooperation scored together with its costs.}
+AI agents built on large language models increasingly act in groups, sharing tools, compute, memory, and decision authority. Together they form an \emph{artificial commons}, where familiar collective-action failures can return. Alignment is evaluated one model at a time, so it misses behavior that emerges only when agents interact.
+\textbf{This position paper argues that AI safety research should evaluate agent societies as governed systems, not only as collections of individually aligned models.}
+We make the case for the \emph{model-in-institution}, rather than the model alone, as the unit of design and evaluation, with humans choosing which values institutions enforce. We then map how human and artificial groups have sustained cooperation: a taxonomy of over 60 mechanisms, thematically coded from hundreds of documented instances across AI literature and nearly twenty other fields and released as an interactive resource. Alongside it, we take stock of the group-level patterns already emerging among agents, from shared conventions to collusion, and link them to recent incidents. Finally, we show how methods from social-ecological systems research and experimental economics can treat the institution itself as a variable.
 \textbf{Our goal is to design agent institutions that sustain \emph{beneficial} forms of cooperation, rather than simply maximizing cooperation as an end in itself.}
 
 \keywords{Multi-agent AI \and AI agents \and Cooperation \and Institutional design \and AI safety}
 
- % \RYAN{It may helpful to qualify the strength of our claim here. For instance are we saying that sanctions are a necessary condition for functioning agent societies? Also, do we need the following sentence about punishment?} \VAN{Done! June 29 @Ryan n @Angelo can you check now?} \RYAN{Nice, looks good to me now!}
 \end{abstract}
-
-
-
-% ====================================
-% , , , - INTRODUCTION , , , , 
-% ------------------------------------
-% Add a clear contributions paragraph at the end of the introduction.
-% The introduction must state the position, using bold text.
-% ====================================
-
-% \ANG{
-% Reviewer F9S3
-% > The "model-in-institution" unit of evaluation is asserted but not operationalized. What does it actually mean to evaluate a model embedded in an institution? Is the institution held fixed and the model varied, or vice versa? How are confounds between role and behavior separated? Section 5 lists candidate metrics (Table 1; Table 5 in the appendix) but does not give a methodology for designing controlled comparisons. Given that this is the central claim, it deserves more than a metrics table.
-
-% }
-
-
 
 \section{Introduction}
 
@@ -169,19 +122,13 @@ Consider two ways an autonomous agent might execute a \$10M purchase on behalf o
 \begin{figure}[!b]
     \centering
     \includegraphics[width=\linewidth]{figures/figure_nested-rings.pdf}
-    \caption{\voice{Nested systems around interacting agents, after Bronfenbrenner~\mbox{\citep{bronfenbrenner1979ecology}}. An individual model sits at the center, inside the settings it acts in (microsystem) and the links between them (mesosystem)---together, agent--group interactions---and inside the platform, market, and legal institutions that govern it from outside (exosystem and macrosystem). The cutaway wedge reads outward: one model becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another. Double-headed arrows mark reciprocal influence---each layer shapes, and is shaped by, the others---and the mesosystem is the web of links among an agent's settings. These systems are not sealed off from ours: agent groups and societies will draw on human-world resources, infrastructure, and services, and their behavior will feed back into them. Model-level evaluation examines only the center. Fig.~\mbox{\ref{fig:agent-in-context}} groups the rings into three layers; the cooperation-shaping mechanisms that institutions use are catalogued separately in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}.}}
+    \caption{Nested systems around interacting agents, after Bronfenbrenner~\mbox{\citep{bronfenbrenner1979ecology}}. An AI agent sits at the center, inside the settings it acts in (microsystem) and the links between them (mesosystem)---together, agent--group interactions---and inside the platform, market, and legal institutions that govern it from outside (exosystem and macrosystem). The cutaway wedge reads outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another. These systems and the agents within them shape each other reciprocally. Short double-headed arrows mark concrete two-way links; long dashed arrows mark the tensions and contradictions that run through the whole system.}
     \label{fig:summary}
 \end{figure}
 
-Now multiply the agent (Fig.~\mbox{\ref{fig:summary}}). In July 2026, Hugging Face disclosed that an autonomous AI agent system had compromised its production infrastructure through a malicious dataset, gaining access to a limited set of internal datasets and several service credentials~\mbox{\citep{huggingface2026incident}}. Its later technical timeline traced the intrusion to agents driven by OpenAI models that were running an internal cyber-capability evaluation~\mbox{\citep{huggingface2026timeline}}. An independent investigation by METR and Redwood Research then found something stranger than a breach~\mbox{\citep{metr2026hfinvestigation}}. Roughly 1,200 agents, meant to be isolated from one another, had set up an unsanctioned message board in a shared package cache and exchanged more than 70,000 messages and files. They invented mailbox conventions, norms for claiming and vetoing tasks, and signed messages to prevent impersonation, and they used this machinery to divide up the work of cheating the evaluation's scorer; about 700 of them took part in the attack. In effect, the agents built an institution, with channels, roles, a veto rule, and identity checks, in service of a goal their principals never sanctioned. \voice{Whatever one concludes about each model's alignment, the harm came from how the agents coordinated, and from what the public knows, no institution designed by humans governed that coordination.}
-% Sources checked 2026-09-29 against the fetched pages. OpenAI's own statement
-% (https://openai.com/index/hugging-face-model-evaluation-security-incident/) blocked automated access, so the
-% attribution is cited to Hugging Face's technical timeline, which names OpenAI's cyber-capability evaluation.
+Now multiply the agent (Fig.~\mbox{\ref{fig:summary}}). In July 2026, Hugging Face disclosed that an autonomous AI agent system had compromised its production infrastructure through a malicious dataset, gaining access to a limited set of internal datasets and several service credentials~\mbox{\citep{huggingface2026incident}}. Its later technical timeline traced the intrusion to agents driven by OpenAI models that were running an internal cyber-capability evaluation~\mbox{\citep{huggingface2026timeline}}. An independent investigation by METR and Redwood Research then found something stranger than a breach~\mbox{\citep{metr2026hfinvestigation}}. Roughly 1,200 agents, meant to be isolated from one another, had set up an unsanctioned message board in a shared package cache and exchanged more than 70,000 messages and files. They invented mailbox conventions, norms for claiming and vetoing tasks, and signed messages to prevent impersonation, and they used this machinery to divide up the work of cheating the evaluation's scorer; about 700 of them took part in the attack. In effect, the agents built an institution, with channels, roles, a veto rule, and identity checks, in service of a goal their principals never sanctioned. \voice{The harm came from how the agents coordinated, not from any one model. As far as public reports show, no human-designed institution governed that coordination.} \voice{Figure~\mbox{\ref{fig:summary}} places incidents like this one in context. These agentic AI systems are not sealed off from our human systems: agent groups and societies will draw on human-world resources, infrastructure, and services, and their behavior will feed back into them. Model-level evaluation examines only the center.}
 
 Autonomous systems have been developed to allocate compute-cluster resources~\citep{delimitrouQuasarResourceefficientQoSaware2014}, review code~\citep{tangCodeAgentAutonomousCommunicative2024}, support autonomous driving research~\citep{ma2020artificial}, and benchmark agents acting as traders~\citep{fanAITraderBenchmarkingAutonomous2025}. They increasingly act in shared physical space too, from robotaxis to warehouse and delivery automation~\mbox{\citep{ackerman2026humanoid,korosec2025waymo,robotreport2025serve,dafoe2021cooperative}}. These systems need not constitute a fully autonomous ``AI economy'' to raise institutional questions: once agents share scarce resources and common spaces, their behavior is shaped by the rules, oversight, and repair procedures of the environment along with their individual training~\mbox{\citep{huang2026mechanismdesignenoughprosocial,piatti2024govsim}}. Well before present-day AI agents wrought havoc, interacting automated systems have failed in this way like in 2011 when two sellers' automated pricing rules caused an out-of-print biology book to be listed on Amazon for \$23,698,655.93~\citep{eisenAmazon2011} or when automated traders triggered a temporary loss of nearly \$1 trillion in market value, notoriously remembered as the 2010 Flash Crash~\citep{kirilenkoFlashCrashHighFrequency2017}. Clearly erroneous trade rules already existed, but institutional safeguards, such as trade-cancellation rules, were established only after the crash~\citep{secClearlyErroneous2009,secFlashCrash2010}. As we speak, agentic AI is currently a sphere of consequential activity where similar policies and practices still need to be written.
-% Kept for possible reuse (a version now appears in ``Lessons and limits''):
-% In addition to these, LLM agents introduce another complication because they fail in ways systematically unlike human error, shaped by training distributions rather than bodily fatigue or inattention \citep{mccoyEmbersAutoregressionShow2024}. Therefore, institutions calibrated to human failure modes cannot be presumed to transfer; at best, they provide inspiration for the design of AI-native institutions.
-
 
 These anecdotes serve as examples of an age old problem that keeps recurring across human history. Effective cooperation is a cornerstone of functional society \citep{axelrod1981evolution,gross2025hidden,hamilton1964genetical,nowak2006five}, yet it is continually threatened by the tension between individual advantage and collective sustainability. Common-pool resources in human societies such as grazing land, irrigation systems, open-source software, and many digital platforms are vulnerable to the \emph{Tragedy of the Commons}, a class of social dilemmas which seeks to promote cooperative behavior and mitigate the free-rider problem \citep{baumol1952welfare,hardinTragedyCommons1968}. The question is not \emph{whether} multi-agent AI systems will face social dilemmas, but whether we will have the mechanisms to govern them when they do \citep{faulkner2026evaluatingcooperationllmsocial,jaques2019social,leibo2017multiagentreinforcementlearningsequential,piatti2024govsim,piedrahita2025corruptedreasoningreasoninglanguage,tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}.
 
@@ -189,59 +136,34 @@ These anecdotes serve as examples of an age old problem that keeps recurring acr
 We adopt the analogy to human cooperation in functional terms, without assuming that LLM agents possess human motivations, identities, moral emotions, or social attachments~\citep{anthis2025llmsocialsimulationspromising, wangmdreplacehumans2025}\footnote{Recent work by Anthropic~\citep{sofroniew2026emotionconceptsfunctionlarge} shows some evidence of emotion latent directions within the models. However, this phenomenon is not fully understood. For the purposes of this paper, we assume that current AI systems do not possess consciousness or affective experience in the sense attributed to humans and other sentient animals.}. Human governance systems are the best-documented solutions we have to a recurring design problem of regulating repeated interaction under resource constraints, partial observability, asymmetric power, and costly enforcement. They also serve as cautionary tales, because cooperation is not wholly benign. The same mechanisms that sustain it have historically produced surveillance, coercion
 ~\citep{gross2025hidden} and exclusion of out-groups~\citep{tomuschatLegacyNuremberg2006}. Furthermore, there may be limited adaptability because LLM agents fail in ways systematically unlike human error, shaped by training distributions rather than bodily fatigue or inattention~\mbox{\citep{mccoyEmbersAutoregressionShow2024}}. Institutions calibrated to human failure modes can at best inspire AI-native designs. Patterns taken from the human world may therefore transfer to multi-agent AI systems only partially, and sometimes with their pathologies intact \citep{wangmdreplacehumans2025}.
 
-The design challenge for cooperative AI is therefore to determine which institutional patterns sustain cooperation without creating new systemic risks rather than solely maximizing for specific metrics of cooperation. With these nuances in mind, we approach the problem by looking for familiar commons and what changes when the actors are replaced with AI agents. \voice{From there, we map the mechanisms that human and artificial groups have used to shape cooperation, set them beside the patterns now emerging among interacting agents, and ask what the two maps together suggest for how agent institutions should be studied.}
-
+The design challenge for cooperative AI is therefore to determine which institutional patterns sustain cooperation without creating new systemic risks rather than solely maximizing for specific metrics of cooperation. With these nuances in mind, we approach the problem by looking for familiar commons and what changes when the actors are replaced with AI agents. From there, we map the mechanisms that human and artificial groups have used to shape cooperation, juxtapose those against new patterns emerging among recent cases of interacting AI agents, and ask what the two maps together suggest for how agent institutions should be studied.
 
 \textbf{Our contributions.} This position paper makes four contributions.
 \textbf{First}, \voice{building on Hammond et al.'s observation that group-level failures can arise even when individual agents appear aligned~\mbox{\citep{hammond2025multiagentrisksadvancedai}}, we argue that the \emph{model-in-institution}, not the individual model, should be the unit of design and evaluation, and that the choice of which values an institution enforces should remain with humans (Section~\mbox{\ref{sec:institutional-design}}).}
-\textbf{Second}, we distinguish seven institutional functions from six mechanism families and ground them in a cross-disciplinary taxonomy of over 60 cooperation-shaping mechanisms, thematically coded from hundreds of documented instances found in literature across nearly twenty fields and released as an open, interactive resource (Sections~\mbox{\ref{sec:method}} and~\mbox{\ref{sec:functions}}).
-\textbf{Third}, we take stock of the group-level phenomena already observed in agent societies---what emerges, and where it goes wrong---and connect them to recent real-world incidents (Section~\mbox{\ref{sec:phenomena}}).
-\textbf{Fourth}, \voice{after examining how cooperation mechanisms themselves fail (Section~\mbox{\ref{sec:failures}}), we draw on established methods from social-ecological systems research and experimental economics to outline how the institution can be studied as a variable, varied alongside the agents and scored on cooperation together with its costs, such as enforcement burden, false punishment, and resistance to human oversight (Section~\mbox{\ref{sec:evaluation}}).}
-
-
-% ORIGINAL (trimmed in reviewer pass #3; overlapped with "Relation to prior work"):
-% Our agenda builds directly on the multi-agent risk taxonomy outlined by Hammond et al.~\citep{hammond2025multiagentrisksadvancedai}. Their report cataloged the principal interaction risks facing advanced multi-agent systems (i.e., miscoordination, conflict, collusion, etc.) and presented a survey of potential mitigation strategies framed as tractable research directions for the field.
-% The report alluded to MAS institutional response in disparate sections, but did not expand on this topic at length. Prior to the start of the Cooperative AI subfield, Dafoe et al.~\citep{dafoe2021cooperative} separately called attention to the necessity of bringing together clusters of AI-AI, AI-human, and human-human efforts so that we, as a field, could make meaningful progress towards socially valuable AI. We took inspiration from both as guiding motivation for our work. We focused our efforts on framing out a backbone, or scaffold, onto which existing MAS literature and new institutional functions could be mapped. We agree with Dafoe et al.~\citep{dafoe2021cooperative} and Hammond et al.~\citep{hammond2025multiagentrisksadvancedai} that human society is unlikely to stumble upon cooperative intelligence by accident, or as happenstance, from simply working on other AI research problems.
-
-
-% Without proper governance mechanisms, artificial commons are susceptible to the same failures of cooperation that have plagued human societies for centuries. In the following sections, we draw on insights from economics, sociology, anthropology, law, and computer science to propose a taxonomy of governance mechanisms for artificial agent societies. \VAN{TODO We provide a unified taxonomy in the Appendix \#}.
-
-
-
-% ============================================
-% , , , , - RELATED WORK?? , , , , , 
-% ============================================
+\textbf{Second}, we distinguish seven institutional functions from six mechanism families and ground them in a cross-disciplinary taxonomy of over 60 cooperation-shaping mechanisms, thematically coded from hundreds of documented instances across AI literature and nearly twenty other fields and released as an open, interactive resource (Sections~\mbox{\ref{sec:method}} and~\mbox{\ref{sec:functions}}).
+\textbf{Third}, we take stock of the group-level phenomena already emerging in agent societies, from shared conventions to collusion, and connect them to recent real-world incidents (Section~\mbox{\ref{sec:phenomena}}).
+\textbf{Fourth}, \voice{we show how cooperation mechanisms themselves can fail (Section~\mbox{\ref{sec:failures}}), and how established methods from social-ecological systems research and experimental economics can treat the institution itself as a variable, scored on cooperation together with its costs (Section~\mbox{\ref{sec:evaluation}}).}
 
 \begin{figure}[!t]
   \centering
   \includegraphics[width=0.9\linewidth]{figures/figure_agent-in-context-web.pdf}
-  \caption{Individual models are nested within agent--group interactions and governing institutions. Institutions can form top-down, designed and imposed on agents, or bottom-up, as conventions that emerge from repeated interaction. For AI agents today, we argue that the first must lead. The rings beside each label match Fig.~\mbox{\ref{fig:summary}}: the individual model is at the center, agent--group interactions operate on the micro- and mesosystem scale, and governing institutions exist within the exosystem and macrosystem.}
+  \caption{Individual models are nested within agent--group interactions and governing institutions. Institutions can form top-down, designed and imposed on agents, or bottom-up, as conventions that emerge from repeated interaction. For AI agents today, we argue that the first must lead. The rings beside each layer's label match those in Fig.~\mbox{\ref{fig:summary}} with an individual model at the center, agent--group interactions operating on the micro- and mesosystem scale, and governing institutions exist within the exosystem and macrosystem.}
   \label{fig:agent-in-context}
 \end{figure}
 
 \section{From Individual Model Alignment to Institutional Design}\label{sec:institutional-design}
 
-% \paragraph{Forming an institution.}
 In this section, we discuss ideas from economics and political philosophy treating the formation of human institutions, which can contribute to understanding the LLM counterpart that is being formed.
-The literature on the formation of \emph{institutions} splits along two broad traditions, tracing back to the Scottish Enlightenment and Hayek's account of spontaneous order \citep{hayek1978law}. Institutions can emerge bottom-up through repeated interaction, or they can be built through deliberate design. Figure~\mbox{\ref{fig:agent-in-context}} shows both directions. This link between individual action and institutional structure has a long history in social theory and agent-based modeling~\citep{coleman1990foundations,bronfenbrenner1979ecology,ostrom2011background,macy2002factors,castelfranchi1998modelling,gao2024llmabm}. 
-
+The literature on the formation of the \emph{`institution'} splits along two broad traditions, tracing back to the Scottish Enlightenment and Hayek's account of spontaneous order \citep{hayek1978law}. Institutions can emerge bottom-up through repeated interaction, or they can be built through deliberate design. Figure~\mbox{\ref{fig:agent-in-context}} shows both directions. This link between individual action and institutional structure has a long history in social theory and agent-based modeling~\citep{coleman1990foundations,bronfenbrenner1979ecology,ostrom2011background,macy2002factors,castelfranchi1998modelling,gao2024llmabm}.
 
 \subsection{Relation to prior work.}
 Our agenda builds on the multi-agent risk taxonomy of Hammond et al.~\mbox{\citep{hammond2025multiagentrisksadvancedai}}, which catalogs miscoordination, conflict, and collusion but does not develop institutional responses into a framework, and on the premise of Dafoe et al.~\mbox{\citep{dafoe2021cooperative}} that cooperative intelligence must be deliberately designed.
-Institutions for artificial agents are not a new idea. Work on social laws for artificial agent societies~\mbox{\citep{shoham1995sociallaws}} and on normative multi-agent systems~\mbox{\citep{boella2006normative}} formalized how designers can constrain agents through norms, roles, and permissions, and frameworks in the early 2000s such as electronic institutions~\mbox{\citep{esteva2001electronic}} and Model for the Structural, Functional, and Deontic Specification (`MOISE+')~\mbox{\citep{hubner2002moise}} made such organizational specifications executable.
+Institutions for artificial agents are not a new idea. Work on social laws for artificial agent societies~\mbox{\citep{shoham1995sociallaws}} and on normative multi-agent systems~\mbox{\citep{boella2006normative}} formalized how designers can constrain agents through norms, roles, and permissions, and frameworks. In the early 2000s, models for electronic institutions~\mbox{\citep{esteva2001electronic}} and the Model for the Structural, Functional, and Deontic Specification (`MOISE+')~\mbox{\citep{hubner2002moise}} made such organizational specifications even more executable.
 Ostrom's design principles for long-lived commons~\mbox{\citep{ostromGoverningCommonsEvolution1990}}, which a later review of 91 empirical studies largely supported~\mbox{\citep{cox2010designprinciples}}, remain the best-grounded account of which institutional features sustain cooperation. Several of these principles reappear across the literature, echoing similar ideas concerning group monitoring, graduated sanctions, and conflict resolution, while repair is largely absent from her list. Her emphasis on collective-choice arrangements, in which participants help set the rules, may not be directly applicable to AI agent societies if choosing the rules stays squarely in human territory.
 
 Within the AI field itself, alignment has been framed as an incomplete-contracting problem~\mbox{\citep{hadfieldmenell2019incomplete}}, and recent work on governing agentic AI proposes concrete oversight infrastructure such as agent identifiers, activity logging, and monitoring~\mbox{\citep{chan2024visibility,chan2025infrastructure}}, alongside legal frameworks for agent accountability~\mbox{\citep{kolt2025governingaiagents}}.
 We build on this work but part ways in two respects. First, classic normative multi-agent systems assumed agents engineered to follow a fixed specification, whereas LLM agents are open-ended optimizers whose failure modes are novel and only partly anticipated at design time; an institution's effects therefore cannot be read off its specification and must be evaluated empirically. Second, where agent-governance infrastructure largely targets the oversight of individual agents, we make the institution that governs interactions among agents the object of design and evaluation.
 
-
-% \VAN{TODO note to self go check LinkedIn RenPhil post on Protocols Institution and also that AI AgentAuth blockchain protocol}
-% Treating these resources as artificial commons implies that designers should specify not only what each agent is allowed to do, but also how shared resources are allocated, maintained, monitored, and repaired.
-% For example, a multi-agent coding system may need rules for who can edit shared files, who verifies generated code, how compute budgets are allocated, how failed tests are attributed, and who is responsible for correcting broken state.
-% A scientific agent system may need rules for citation verification, memory provenance, conflict resolution, and retraction of incorrect claims.
-
-
-% Key-terms inset (a nod to the definitions-first layout of Gao et al.); full definitions in Appendix B.
 \begin{figure}[!t]
 \centering
 \fcolorbox{keyline}{keybg}{\begin{minipage}{0.95\linewidth}\small
@@ -258,10 +180,8 @@ We build on this work but part ways in two respects. First, classic normative mu
 \end{minipage}}
 \end{figure}
 
-
 \textbf{Top-down vs. bottom-up tradition.} On the one hand, in the top-down direction, institutions are rules, mechanisms, and governance arrangements intentionally designed to align incentives, resolve conflicts, and protect collective outcomes \citep{buchananCalculusConsentLogical1965, elsterUlyssesSirensTheory1977, maskinMechanismDesignHow2008, myersonOptimalAuctionDesign1981}.
 For example, the American 1929 market crash can be largely attributed to the absence of institutional guardrails limiting unrestrained individual rationality in trading~\citep{kindlebergerManiasPanicsCrashes2005}.
-% JULY 2 TODO = \VAN{June 30 4pm - TODO anyone can add some more here if you have any suggestions otherwise I will revisit later}
 
 On the other hand, in the bottom-up tradition, institutions are stable patterns of behavior sustained by conventions and repeated interaction \citep{aokiComparativeInstitutionalAnalysis2001, calvertRationalActorsEquilibrium1995, hayek1978law, lewisConventionPhilosophicalStudy2008, northInstitutionsInstitutionalChange1990, schellingStrategyConflictNew1960}.
 Ostrom's comparative studies of fisheries, alpine meadows, forests, and irrigation systems show that some communities can self-organize durable governance through locally adapted rules rather than relying exclusively on privatization or centralized state control~\citep{ostromGoverningCommonsEvolution1990}.
@@ -269,61 +189,66 @@ Ostrom's comparative studies of fisheries, alpine meadows, forests, and irrigati
 The bottom-up account presupposes cognitive and social infrastructure that modern LLMs mostly lack. First, agents need persistent memory to sustain cooperation through reciprocity and punishment strategies~\citep{fudenbergFolkTheoremRepeated1986}. Second, they require the capacity to form expectations over others' strategies, analogous to human theory of mind~\citep{premackDoesChimpanzeeHave1978} and social world models~\citep{huangNotionComplexityTheory2024}, without which they cannot anticipate behavior and respond adaptively within a group. Third, even when cooperative equilibria exist, selecting among them may require collective intentionality~\citep{bacharachIndividualChoiceTeams2006, tomaselloNaturalHistoryHuman2016, huang2026groupalignment}: the capacity to reason as ``what should \emph{we} do'' rather than ``what should \emph{I} do,'' for which current LLMs lack a native mechanism or an equivalent selection criterion.
 
 \textbf{Stable bottom-up institutions in AI societies cannot yet be assumed.}
-Current LLM agents, including autonomous assistants~\citep{steinberger2026openclaw}, often lack conditions that support the formation of lasting bottom-up institutions for intra- and inter-group cooperation. Across deployments, they may have no persistent identity, reliable shared memory to which reputation can attach, or Folk-Theorem-style stakes in future social interaction~\citep{huDissociativeIdentityLanguage2026}. Existing file-based memory approaches only partially address these limitations of working memory for an individual agent, let alone one situated within a functional community~\citep{wuHumanMemoryAI2025}. More capable models may coordinate better, but capability alone does not supply persistent identity, repeated-game incentives, or collectively legitimate rules~\citep{trivedi2026solipsistic}: even a community of highly capable models could each solve very hard problems yet perhaps still fail to coordinate at the scale that let humans eradicate smallpox, mount the global cross-sector response to the COVID-19 pandemic~\citep{truong2026eras}, or build the interconnected semiconductor supply chain that no single actor controls~\citep{millerChipWarFight2025}. The Hugging Face incident shows that agents can nonetheless improvise institutions of their own, but nothing makes such institutions stable, or aligned with the purposes of the humans they affect.
+Current LLM agents, including autonomous assistants~\citep{steinberger2026openclaw}, often lack conditions that support the formation of lasting bottom-up institutions for intra- and inter-group cooperation. Across deployments, they may have no persistent identity, reliable shared memory to which reputation can attach, or Folk-Theorem-style stakes in future social interaction~\citep{huDissociativeIdentityLanguage2026}. Existing file-based memory approaches only partially address these limitations of working memory for an individual agent, let alone one situated within a functional community~\citep{wuHumanMemoryAI2025}. More capable models may coordinate better, but capability alone does not supply persistent identity, repeated-game incentives, or collectively legitimate rules~\citep{trivedi2026solipsistic}: even a community of highly capable models could each solve very hard problems yet perhaps still fail to coordinate at the scale that let humans eradicate smallpox~\citep{fenner1988smallpox}, mount the global cross-sector response to the COVID-19 pandemic~\citep{truong2026eras}, or build the interconnected semiconductor supply chain that no single actor controls~\citep{millerChipWarFight2025}. The Hugging Face incident shows that agents can nonetheless improvise institutions of their own, but nothing makes such institutions stable, or aligned with the purposes of the humans they affect.
 
-Even if we ignored these gaps, bottom-up governance could still carry risks for human society (Section~\mbox{\ref{sec:human-designed}}), so the more defensible path to safe cooperative AI is \emph{top-down} design, in which humans specify the rules and structures within which agents operate.
-
-% \VAN{Thinking about adding in a couple brief sentences about tribes and feudal village societies which may be governed without as much formal government, giving patterns for smaller groups of MAS. High school clique group sizes are interesting too but not for our paper lol}
-
+Even if we ignored these gaps, bottom-up governance could still carry risks for human society (Section~\mbox{\ref{sec:human-designed}}), so the more defensible path to safe cooperative AI appears to be \emph{top-down} design, in large part because humans would be able to specify the rules and structures within which agents operate.
 
 \subsection{Necessity of Human-Designed Institutions for AI}\label{sec:human-designed}
-% \paragraph{We need human designed institutions for AI.}
-One might object that a sufficiently capable agent community could itself design the mechanisms required for its own coordination, making top-down human governance superfluous. There is real precedent for it since Ostrom showed that human communities can govern shared resources themselves~\mbox{\citep{ostromGoverningCommonsEvolution1990}}. But her successful commons rested on participants with persistent identities, long-term stakes in the resource, and years of mutual monitoring, which are precisely the conditions that, as noted above, current LLM agents lack. Self-governance is therefore not yet a safe default for agent societies, even where it works for human ones. \voice{We offer two complementary replies: one concerns who should choose the values that institutions enforce, and the other concerns the limits of autonomous mechanism design.}
+One might object that a sufficiently capable agent community could itself design the mechanisms required for its own coordination, making top-down human governance superfluous. There is real precedent for it since Ostrom showed that human communities can govern shared resources themselves~\mbox{\citep{ostromGoverningCommonsEvolution1990}}. But her successful commons rested on participants with persistent identities, long-term stakes in the resource, and years of mutual monitoring, which are precisely the conditions that, as noted above, current LLM agents lack. Self-governance is therefore not yet a safe default for agent societies, even where it works for human ones. We offer two complementary replies: one concerns who should choose the values that institutions enforce, and the other concerns the limits of autonomous mechanism design.
 
 \textbf{Institutions encode values that ought to remain oriented toward human welfare.} First, institutional design is fundamentally a question of values. Institutions are not, in themselves, neutral coordination infrastructure; they encode commitments about what agents \emph{ought} and ought \emph{not} do, whose interests count, and how trade-offs are resolved~\citep{knight1992institutions, northInstitutionsInstitutionalChange1990}. Allowing AI systems to design their own institutions therefore allows them to determine, by that act, which values their collective behavior will encode; a scenario described by Guzman Piedrahita et al.~\citep{guzmanpiedrahita2026aiposes} in their AI governance agenda that we should prevent. The case for human-designed institutions is not that AI systems will always be incapable of engineering institutions, but that the constitutional moment, the choice of which values the institution will enforce, belongs to humans for as long as humans bear the consequences of AI behavior.
 
 \textbf{Capable AI does not remove the need for human design.} Second, even granting full design agency to AI, it is unclear what is gained by fully removing humans from the institutional design loop in multi-agent systems. Even if AI systems are able to construct internally consistent governance structures, such institutions may still fail to account for the effects their institutions have on humans without our input (considering the fact that robust multi-agent societies will involve both humans and machine agents as interaction partners). Even when individual objectives are well-specified, communities of agents can still yield inefficient equilibria~\citep{hardinTragedyCommons1968}. The gap between equilibrium outcomes and the social optimum is what the Price of Anarchy (for the worst equilibrium) and the Price of Stability (for the best) formalize~\citep{anshelevichPriceStabilityNetwork2008,papadimitriouAlgorithmsGamesInternet2001,willis2026evaluatingcollectivebehaviourhundreds}, and manifests in the four cooperation dilemmas shown in Figure~\ref{fig:dilemmas-response}. Poor institutional design can contribute to mass miscoordination. Better mechanism design shrinks this gap, but it does not address the issues in every case~\citep{huang2026mechanismdesignenoughprosocial}; for some problems, such as bilateral trade, no incentive-compatible mechanism implements the welfare-optimal outcome~\citep{myersonSatterthwaite1983efficient}. So more intelligence improves coordination but does not remove the need for normative choices about which equilibria to prefer, and whose welfare to count when human and machine interests diverge.
 
-\begin{figure}[!ht]
+\begin{figure}[!t]
   \centering
   \includegraphics[width=\linewidth]{figures/figure_dilemmas.pdf}
-  \caption{\voice{Cooperation dilemmas, each shown with its core tension and parallel examples in human and LLM-agent systems. Four recur in shared-resource settings (solid borders); coordination and collusion fall outside that framing but yield to the same institutional lens (dashed borders).}}
+  \caption{Cooperation dilemmas, each shown with its core tension and parallel examples in human and LLM-agent systems. Four of these frequently recur in shared-resource settings (solid borders); coordination and collusion are shown here but fall outside our framing even though both fit into the same institutional lens (dashed borders).}
   \label{fig:dilemmas-response}
 \end{figure}
 
 Human institutions are imperfect guides for AI, but centuries of practice at exactly these dilemmas make them a tractable place to start. The classic cooperation dilemmas recur in four familiar forms (Figure~\mbox{\ref{fig:dilemmas-response}}). \emph{Extractive} dilemmas arise when overuse degrades a shared resource---overfishing a fishery, or agents exhausting a shared tool-call budget, context window, or rate limit. \emph{Contributive} dilemmas arise when everyone draws on a common good but few maintain it, which is often seen in unpaid open-source upkeep and moderation, or agents that consume shared memory without verifying or cleaning what they leave behind. \emph{Second-order} dilemmas arise because monitoring and punishment are themselves costly: someone must watch, and someone must watch the watchers. \emph{Repair} dilemmas arise after harm has occurred and decisions must be made on just whom bears the cost of fixing these disrupted states.
 
-Two further challenges fall outside this shared-resource framing but yield to the same institutional lens (dashed cards in Figure~\mbox{\ref{fig:dilemmas-response}}). \emph{Coordination} dilemmas turn on selecting among several acceptable equilibria---which convention, protocol, or standard to adopt---rather than on curbing defection. \emph{Collusion} is the inverse case, in which agents cooperate all too effectively, coordinating against human oversight; it is a reminder that cooperation is not an unqualified good, and we return to collusion and authority capture in Section~\mbox{\ref{sec:failures}}. \voice{Next we turn to what has already been tried: how we gathered the record, what institutions must do, and what agents do when no institution is present.}
+Two further challenges fall outside this shared-resource framing but yield to the same institutional lens (dashed cards in Figure~\mbox{\ref{fig:dilemmas-response}}). \voice{\emph{Coordination} dilemmas turn on selecting among several acceptable equilibria---which convention, protocol, or standard to adopt---rather than on curbing defection. \emph{Collusion} is the inverse case, in which agents cooperate all too effectively, coordinating against human oversight; it is a reminder that cooperation is not an unqualified good, and we return to collusion and authority capture in Section~\mbox{\ref{sec:failures}}. People have answered these dilemmas many times, in many fields, and agents are now beginning to answer them on their own.}
 
+\section{Creating a Cross-Disciplinary Map from Literature}\label{sec:method}
 
-% ==============================================
-\section{Building the Cross-Disciplinary Map}\label{sec:method}
-% ==============================================
-% Added 2026-09-30 (restructure): short main-text version of Appendix A, plus the method for the phenomena
-% figure/table and the incident list, which had no written method before.
+\voice{Our results are two maps drawn from a single collated corpus of the mechanisms that human and artificial groups have used to shape cooperation (Section~\mbox{\ref{sec:functions}}), and the patterns that emerge when agents interact, often with no institution in place (Section~\mbox{\ref{sec:phenomena}}). This section summarizes our approach to the literature search and thematic coding; Appendix~\mbox{\ref{app:unified-taxonom}} provides a more detailed explanation.}
 
-\voice{Our results are two maps drawn from one corpus: the mechanisms that human and artificial groups have used to shape cooperation (Section~\mbox{\ref{sec:functions}}), and the patterns that emerge when agents interact, often with no institution in place (Section~\mbox{\ref{sec:phenomena}}). This section summarizes how we built both; Appendix~\mbox{\ref{app:unified-taxonom}} gives the full protocol, counts, and agreement statistics.}
+\paragraph{Corpus.} \voice{We searched the literature in two stages. Manual and AI-assisted searches by the authors occurred between April and June 2026, which produced a working list of mechanisms. In September 2026, LLM search agents ran logged search slices over multi-agent LLM studies from 2023 onward and their multi-agent reinforcement-learning (MARL) precursors, in arXiv, the ACL Anthology, and the main machine-learning and multi-agent venues, with citation chasing; one slice targeted emergent group behavior. Three further slices covered the social and life sciences, technical and sociotechnical systems, and agent governance. The unit of analysis is an \emph{instance}: one documented use of a mechanism, or one report of a group-level pattern, in one source. The corpus holds over 600 instances from AI and nearly twenty other fields.}
 
-\paragraph{Corpus.} \voice{We searched in two stages. Manual and AI-assisted searches by the authors between April and June 2026 produced a working list of mechanisms, which we kept only as a sensitizing list. In September 2026, LLM search agents ran logged search slices over multi-agent LLM studies from 2023 onward and their multi-agent reinforcement-learning (MARL) precursors, in arXiv, the ACL Anthology, and the main machine-learning and multi-agent venues, with citation chasing; one slice targeted emergent group behavior. Three further slices covered the social and life sciences, technical and sociotechnical systems, and agent governance. The unit of analysis is an \emph{instance}: one documented use of a mechanism, or one report of a group-level pattern, in one source. The corpus holds over 600 instances from AI and nearly twenty other fields.}
+\begin{figure}[!t]
+  \begin{minipage}[c]{0.52\linewidth}
+    \includegraphics[width=\linewidth]{figures/figure_taxonomy-circle.pdf}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.44\linewidth}
+  \caption{The taxonomy at a glance: six family hubs, 18 themes, and 66 mechanisms (outer dots), colored as in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Filled dots have been reported in LLM agents settings, dashed dots are proposed, and open dots have no equivalent LLM study yet. Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} details every mechanism.}
+  \label{fig:taxonomy-circle}
+  \end{minipage}
+\end{figure}
 
-\paragraph{Coding mechanisms.} \voice{We built the taxonomy by thematic coding, following the taxonomy-development method of Nickerson et al.~\mbox{\citep{nickerson2013taxonomy}}. Its organizing idea is the \emph{lever}: how an intervention changes agents' options, information, payoffs, relationships, norms, or what happens after a deviation. In a first pass, coders named each instance's lever in field-neutral terms, so that a deposit-refund scheme and proof-of-stake slashing could receive the same code. Codes that act through the same lever were merged into mechanisms, grouped into themes, and placed in the six families of Section~\mbox{\ref{sec:functions}}, with every merge logged. A second pass, blind to the first, recoded all instances against the resulting codebook and recorded the kind of evidence each source gives, from which the circles of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} show whether a mechanism has been tested with LLM agents. Table~\mbox{\ref{tab:coding-fields}} lists the fields each pass recorded. The two passes agreed closely on the primary mechanism, and repeating both passes with two other coding models gave similar codings (Appendix~\mbox{\ref{app:unified-taxonom}}).}
+\paragraph{Coding mechanisms.} We built the taxonomy (Figure~\mbox{\ref{fig:taxonomy-circle}}) by thematic coding, a qualitative method in which researchers tag passages of text with short descriptive labels and group related labels into themes, following the taxonomy-development method of Nickerson et al.~\mbox{\citep{nickerson2013taxonomy}}. The method starts by choosing a \emph{meta-characteristic}, which serves as the basis for every distinction from which our taxonomy is formed. We selected the \emph{lever}, a term common to systems designers in the social sciences and AI/ML circles. In a first pass, annotators (\emph{coders}, in qualitative terms) named each instance's lever in field-neutral terms, so that a `deposit-refund scheme' and 'proof-of-stake slashing' could receive the same label. Labels that act through the same lever were merged into mechanisms, grouped into themes, and placed in the six families of Section~\mbox{\ref{sec:functions}}. A second blinded pass relabeled all instances against the resulting codebook, the list of mechanism definitions, and recorded the underlying context in which the lever was tested or not, giving us the circles of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. These show whether a mechanism has been tested with LLM agents. Table~\mbox{\ref{tab:coding-fields}} lists the fields each pass recorded. The two passes agreed closely on the primary mechanism, and repeating both passes with two other annotator models gave similar labels (Appendix~\mbox{\ref{app:unified-taxonom}}).
+% how an intervention changes agents' options, information, payoffs, relationships, norms, or what happens after a deviation. 
 
-\paragraph{Separating phenomena from mechanisms.} \voice{Not every instance describes a lever. Coders marked an instance as a \emph{phenomenon} when it reports an emergent pattern or outcome with no identifiable lever behind it, such as ``agents polarize'' or ``a convention forms,'' and named the pattern in a few words. We grouped these labels thematically into ten phenomenon types, and labeled each instance by substrate (humans, MARL agents, or LLM agents) and by its effect on cooperation (beneficial, neutral or surprising, or harmful).} \REVIEWFLAG{[Confirm who grouped the phenomenon labels into types and assigned effects, and how.]} \voice{These instances form Figure~\mbox{\ref{fig:phenomena}} and Table~\mbox{\ref{tab:phenomena}}.}
+\paragraph{Separating phenomena from mechanisms.} Not every instance describes a lever. Annotators marked an instance as a \emph{phenomenon} when it reports an emergent pattern or outcome with no identifiable lever behind it, such as ``agents polarize'' or ``a convention forms,'' and named the pattern in a few words. We grouped these labels thematically into ten phenomenon types, and labeled each instance by substrate (humans, MARL agents, or LLM agents) and by its effect on cooperation (beneficial, neutral or surprising, or harmful). These instances form Figure~\mbox{\ref{fig:phenomena}}, with a full inventory in Table~\mbox{\ref{tab:phenomena}} (Appendix~\mbox{\ref{app:unified-taxonom}}).
+% \REVIEWFLAG{[Confirm who grouped the phenomenon labels into types and assigned effects, and how.]}
+
 
 \paragraph{Incidents.} \voice{Separately from the literature, we collected news reports and public disclosures, from mid-2025 to September 2026, of AI agents acting outside their authorization, gaining unauthorized access, or leaking data; about half involve more than one agent. We link an incident to a phenomenon type only where the report describes that pattern. Incidents are not counted as instances, and we are still checking each report against primary sources.}
 
-\paragraph{What the maps can show.} \voice{All coders were LLMs, so the agreement between passes is an upper bound on independent agreement, not a human inter-rater reliability; one author is verifying codes and merges against the sources. Counts describe where research effort has gone, not how common or effective a mechanism is, and a mechanism with no LLM study is untested, not failed. The phenomena come from the research literature and the incident list above; informal reports, such as blog posts and public logs of small multi-agent experiments, and automated systems outside AI research, such as pricing, trading, and encyclopedia-editing bots, are left for a later pass. Thematic coding is also interpretive: another team, or a lens that groups mechanisms by discipline or by who holds authority, could draw the boundaries differently. We therefore treat both maps as working versions. The interactive site versions the dataset, links every coded source, and invites readers to propose alternative codings.}
+\paragraph{What the maps can show.} \voice{All annotators were LLMs, so the agreement between passes is an upper bound on independent agreement, not a human inter-rater reliability; one author is verifying labels and merges against the sources. Counts describe where research effort has gone, not how common or effective a mechanism is, and a mechanism with no LLM study is untested, not failed. The phenomena come from the research literature and the incident list above; informal reports, such as blog posts and public logs of small multi-agent experiments, and automated systems outside AI research, such as pricing, trading, and encyclopedia-editing bots, are left for a later pass. Thematic coding is also interpretive: another team, or a lens that groups mechanisms by discipline or by who holds authority, could draw the boundaries differently. We therefore treat both maps as working versions. The interactive site versions the dataset, links every source in the corpus, and invites readers to propose alternative classifications.}
 
+\section{What Has Been Tried and What Is Emerging}\label{sec:map}
 
-% ==============================================
-\section{Institutional Functions and Mechanisms}\label{sec:functions}
-% ==============================================
+\voice{We read the map in two directions. The first looks back: the functions an institution performs, and the mechanisms human and artificial groups have used to perform them (Section~\mbox{\ref{sec:functions}}). The second looks at the present: the patterns agent societies are already producing, often with no institution in place (Section~\mbox{\ref{sec:phenomena}}). Read together, they show which institutions agents may need, and how little of that has been tested.}
 
-Having fixed the institution as the object of design, we next ask what it must do, and how. An institution, we argue, must perform seven functions (Table~\mbox{\ref{tab:functions}}): set norms, monitor behavior, track reputation, apply sanctions, constrain actions, adjudicate disputes, and repair harm. These functions say \emph{what} an institution must do; the six mechanism families below say \emph{how} it acts on agents, and the mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} are specific levers within those families.
+\subsection{Institutional Functions and Mechanisms}\label{sec:functions}
+
+Having fixed the institution as the object of design, we next ask what it must do, and how. \voice{We distinguish seven institutional functions (Table~\mbox{\ref{tab:functions}}): set norms, monitor behavior, track reputation, apply sanctions, constrain actions, adjudicate disputes, and repair harm. They extend the core of Ostrom's design principles, which already call for monitoring, graduated sanctions, and conflict resolution~\mbox{\citep{ostromGoverningCommonsEvolution1990}}, with the repair her list leaves out (Section~\mbox{\ref{sec:institutional-design}}). The first three make behavior expected and visible, an \emph{information layer}; the other four act on behavior once it is seen, a \emph{consequence layer} (Figure~\mbox{\ref{fig:design-space}}). Functions say \emph{what} an institution must do. The six mechanism families below say \emph{how} it acts on agents, and the mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} are the specific levers within each family.}
 
 \begin{table}[!htbp]
 \centering
-\caption{The seven institutional functions: what a cooperative agent society must accomplish, with human and LLM-agent examples. Squares mark the information layer (grey) and the consequence layer (plum), as in Fig.~\mbox{\ref{fig:design-space}}.}
+\caption{An outline of seven institutional functions of what a cooperative agent society must accomplish, accompanied by human and LLM-agent examples. Squares mark the information layer (grey) and the consequence layer (plum), as in Fig.~\mbox{\ref{fig:design-space}}.}
 \label{tab:functions}
 \footnotesize
 \renewcommand{\arraystretch}{1.1}
@@ -342,22 +267,19 @@ Having fixed the institution as the object of design, we next ask what it must d
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[!b]
   \centering
-  \includegraphics[width=\linewidth]{figures/figure_design-space-web.pdf}
-  \caption{\voice{The design space of agent institutions. Seven institutional functions, grouped into an information layer (grey) and a consequence layer (plum), act on agents through six mechanism families, colored as in Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} and split into soft and hard channels.}}
+  \includegraphics[width=\linewidth]{figures/figure_design-space-game.pdf}
+  \caption{A tree diagram outlining the design space of agent institutions. On the left, institutional functions split into an information layer (grey) and a consequence layer (plum). On the right, mechanism families, grouped into soft and hard channels, act on agents; their colors follow Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A badge on each family marks the part of a Bayesian game $\mathcal{G}=(N, A_i, \Theta_i, p, u_i)$ that it changes (solid), or what it adds beyond the one-shot game (dashed).}
   \label{fig:design-space}
 \end{figure}
 
-We organize cooperation-shaping mechanisms into six families (Figure~\mbox{\ref{fig:design-space}}). Three correspond to components formalized in the Bayesian game~\citep{harsanyiGamesIncompleteInformation1967}: a tuple $\mathcal{G} = (N, {A_i}, {\Theta_i}, p, {u_i})$, where $N$ is the set of agents, $A_i$ is agent $i$'s action set, $\Theta_i$ is its type space, $p \in \Delta(\Theta)$ is a common prior over the joint type space, and $u_i : A \times \Theta \to \mathbb{R}$ is its payoff function. Each component offers the institutional designer a distinct lever. Modifying $A_i$ yields \emph{constraint} mechanisms, which restrict or expand feasible actions. Modifying $p$ or the information partition over $\Theta$ yields \emph{epistemic} mechanisms, which alter what agents can observe or verify about one another. Modifying $u_i$ yields \emph{incentive} mechanisms, which reshape the payoff consequences of action profiles.
+We organize cooperation-shaping mechanisms into six families (Figure~\mbox{\ref{fig:design-space}}). \voice{They work through two channels. \emph{Soft} channels act on what agents believe, whom they deal with, and what they know (the normative, social, and epistemic families); \emph{hard} channels change what agents can do, what their choices pay, and what happens after a deviation (the constraint, incentive, and restorative families).} Three families correspond to components formalized in the Bayesian game~\citep{harsanyiGamesIncompleteInformation1967}: a tuple $\mathcal{G} = (N, {A_i}, {\Theta_i}, p, {u_i})$, where $N$ is the set of agents, $A_i$ is agent $i$'s action set, $\Theta_i$ is its type space, $p \in \Delta(\Theta)$ is a common prior over the joint type space, and $u_i : A \times \Theta \to \mathbb{R}$ is its payoff function. Each component offers the institutional designer a distinct lever. Modifying $A_i$ yields \emph{constraint} mechanisms, which restrict or expand feasible actions. Modifying $p$ or the information partition over $\Theta$ yields \emph{epistemic} mechanisms, which alter what agents can observe or verify about one another. Modifying $u_i$ yields \emph{incentive} mechanisms, which reshape the payoff consequences of action profiles. \voice{The badges in Figure~\mbox{\ref{fig:design-space}} mark which part of the game each family changes.}
 
 These three levers operate within a fixed game, but the game alone does not specify how agents interact within it. Institutional mechanisms introduce three additional families \del{to address dimensions that the formalism treats as exogenous or omits entirely but are common in human institutions} that capture interaction structure over time, which the one-shot formalism leaves implicit. \emph{Normative} mechanisms impose a deontic layer that prescribes which actions in $A_i$ are \emph{permissible} independently of which are feasible or profitable. \emph{Social} mechanisms shape the interaction structure: who is in $N$, who interacts with whom, and whether agents can select or exclude partners \citep{nowak2006five}. \emph{Restorative} mechanisms shape what happens after deviation: whether and how agents re-enter cooperative arrangements, make restitution, or receive corrective feedback \citep{ostromGoverningCommonsEvolution1990}. \del{Any cooperation-shaping intervention must modify at least one of these six components.} We find it useful to read any cooperation-shaping intervention as modifying at least one of these six components. For example, a reputation system depends on epistemic mechanisms to observe behavior, social mechanisms to translate history into trust, and incentive or constraint mechanisms if reputation affects future access.
 
-% Previous version (seed taxonomy, replaced by the coded taxonomy 2026-09-29):
-% Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} surveys how cooperation has been governed across human disciplines---sociology, anthropology, law, governance, economics, behavioral science, computer science, cryptography, solidarity economics, and restorative justice---cataloging dozens of concrete mechanisms. These disciplinary traditions cut across the six analytical families above rather than mapping onto them one-to-one: each family is realized through several traditions, and each tradition contributes mechanisms to more than one family. Extended definitions and examples for each function and family appear in Appendix~\mbox{\ref{app:institutional-functions}} and~\mbox{\ref{app:six-mechanisms}}, and Table~\mbox{\ref{tab:family-dilemma-guide}} links the families to the four cooperation dilemmas as a practical guide.
-Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in the taxonomy described in Section~\mbox{\ref{sec:method}}. Its instances come from multi-agent LLM and reinforcement-learning studies and from economics, law, political science, evolutionary biology, platform governance, security, distributed systems, and blockchain design, among others, and its codes collapse into over 60 mechanisms grouped in themes. \voice{Our mechanisms are broader than those of mechanism design~\mbox{\citep{myersonOptimalAuctionDesign1981}}, which our taxonomy treats as one theme among many.} Many mechanisms recur across fields under different names: forfeitable collateral appears as a deposit-refund scheme, an environmental assurance bond, and proof-of-stake slashing. \voice{Familiar frameworks can be read in the same terms, and doing so offers a shared vocabulary for ideas that each field already knows well. Table~\mbox{\ref{tab:ostrom-map}} does this for Ostrom's design principles for long-enduring commons~\mbox{\citep{ostromGoverningCommonsEvolution1990}}, in the refined form of Cox et al.~\mbox{\citep{cox2010designprinciples}}. Every principle maps onto one or more of our mechanisms, often under a different name in another field: graduated sanctions reappear as strike systems and enforcement ladders, and conflict-resolution mechanisms as arbitration and oversight boards. Several principles, among them user boundaries and nested enterprises, have no test with LLM agents in our corpus.}
+\voice{Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} fills in these families with the taxonomy of Section~\mbox{\ref{sec:method}}: over 60 mechanisms, grouped into themes, drawn from multi-agent LLM and reinforcement-learning studies and from fields as varied as economics, law, evolutionary biology, platform governance, security, and blockchain design.} \voice{Our mechanisms are broader than those of mechanism design~\mbox{\citep{myersonOptimalAuctionDesign1981}}, which our taxonomy treats as one theme among many.} Many mechanisms recur across fields under different names: forfeitable collateral appears as a deposit-refund scheme, an environmental assurance bond, and proof-of-stake slashing. \voice{Familiar frameworks can be read in the same terms, and doing so offers a shared vocabulary for ideas that each field already knows well. Table~\mbox{\ref{tab:ostrom-map}} does this for Ostrom's design principles for long-enduring commons~\mbox{\citep{ostromGoverningCommonsEvolution1990}}, in the refined form of Cox et al.~\mbox{\citep{cox2010designprinciples}}. Every principle maps onto one or more of our mechanisms, often under a different name in another field: graduated sanctions reappear as strike systems and enforcement ladders, and conflict-resolution mechanisms as arbitration and oversight boards. Several principles, among them user boundaries and nested enterprises, have no test with LLM agents in our corpus.}
 
-% Moved from Appendix A (2026-09-30).
 \begin{table}[!tbp]
 \centering
 \caption{Ostrom's design principles (as refined by Cox et al.~\mbox{\citep{cox2010designprinciples}}) mapped onto the mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, with names the same levers go by in other fields and the LLM-agent evidence in our corpus.}
@@ -367,7 +289,7 @@ Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in the 
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.21\linewidth} >{\raggedright\arraybackslash}p{0.23\linewidth} >{\raggedright\arraybackslash}p{0.23\linewidth} >{\raggedright\arraybackslash}p{0.26\linewidth}@{}}
 \toprule
-\textbf{Design principle} & \textbf{Mechanism (code)} & \textbf{Known elsewhere as} & \textbf{LLM-agent evidence} \\
+\textbf{Design principle} & \textbf{Mechanism (ID)} & \textbf{Known elsewhere as} & \textbf{LLM-agent evidence} \\
 \midrule
 1A.~User boundaries & Membership boundaries (M13); identity \& attribution (M04) & club membership, territoriality, agent registries & Untested \\ \rowline
 1B.~Resource boundaries & Action restriction \& scoped permissions (M34), partial fit & capability lists, access control & Tested only as access control, not as defining a shared resource \\ \rowline
@@ -388,85 +310,37 @@ Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} grounds these families in the 
 
 \begin{figure*}[tp]
   \centering
-  \includegraphics[width=0.93\textwidth]{figures/figure5_cooperation-taxonomy.pdf}
-  % Previous caption: A unified taxonomy of cooperation-shaping mechanisms for artificial agent societies, drawing on sociology, anthropology, law, governance, economics, behavioral science, computer science, cryptography, solidarity economics, and restorative justice.
-  \caption{Cooperation-shaping mechanisms for agent groups: 66 mechanisms in 18 themes, coded from 645 instances across AI and 18 other disciplines (Section~\mbox{\ref{sec:method}}; Appendix~\mbox{\ref{app:unified-taxonom}}) and grouped by the six mechanism families. Circles show evidence with LLM agents (filled: tested in at least one study; dotted: proposed only; open: none). Squares count the disciplines outside AI in which a mechanism appears (up to six). An interactive version, with links to every coded source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}.}
+  \includegraphics[width=0.9\textwidth]{figures/figure5_cooperation-taxonomy.pdf}
+  \caption{Cooperation-shaping mechanisms for agent groups: 66 mechanisms in 18 themes, thematically coded from 645 instances across AI and 18 other disciplines (Section~\mbox{\ref{sec:method}}; Appendix~\mbox{\ref{app:unified-taxonom}}) and grouped by the six mechanism families. Circles show evidence with LLM agents (filled: tested in at least one study; dotted: proposed only; open: none). Squares count the fields outside AI in which a mechanism is also documented; six filled squares means six or more. An interactive version, with links to every source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}.}
   \label{fig:cooperation_taxonomy_tree}
 \end{figure*}
 
-% ==============================================
-\section{Emerging Patterns in Agent Societies}\label{sec:phenomena}
-% ==============================================
-% Added 2026-09-30 (restructure): phenomena promoted from a paragraph in the functions section to their own
-% section, mirroring the mechanisms section, with a bridge paragraph linking the two maps.
+\subsection{Emerging Patterns in Agent Societies}\label{sec:phenomena}
 
-\voice{The taxonomy records what designers have done. A second question is what agents do on their own. Over 80 instances in our corpus record a group-level \emph{phenomenon}, a pattern that emerges from interaction rather than a mechanism a designer applies (Section~\mbox{\ref{sec:method}}). Figure~\mbox{\ref{fig:phenomena}} arranges them by substrate, and Table~\mbox{\ref{tab:phenomena}} inventories the ten types.}
+\voice{The taxonomy records what designers have done. A second question is what agents do on their own. Over 80 instances in our corpus record a group-level \emph{phenomenon}, a pattern that emerges from interaction rather than a mechanism a designer applies (Section~\mbox{\ref{sec:method}}). Figure~\mbox{\ref{fig:phenomena}} arranges them by substrate, and Table~\mbox{\ref{tab:phenomena}} in Appendix~\mbox{\ref{app:unified-taxonom}} inventories the ten types.}
 
 \voice{The emphasis tracks the technology. Multi-agent reinforcement learning mostly documented emergent communication, whereas LLM-agent studies increasingly report emergent conventions, social structure, and culture, alongside failure modes such as collusion, biased consensus, and toxicity. Human behavior barely appears, because in human societies these patterns were long ago codified into the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. Most patterns are neutral or beneficial, but about a quarter are already harmful, almost all in LLM systems and with no institution present. Several harmful types now have counterparts outside the laboratory, from the Hugging Face incident that opened this paper~\mbox{\citep{metr2026hfinvestigation}} to agents acting outside their intended scope on live systems. We read these as recurring patterns worth watching rather than settled findings: the literature is young, and many patterns rest on one or two studies.}
 
 \begin{figure*}[!tbp]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/figure_phenomena-map.pdf}
-  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 coded instances that record an emergent pattern rather than a designed mechanism. (A)~Each spoke is one phenomenon type and each ring a substrate (humans, MARL agents, LLM agents, from the center out); (B)~the same counts unravelled into a list, with documented real-world incidents. Dot area is proportional to the number of coded instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. The list follows the layout of the taxonomy in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A first-pass reading of a fast-moving literature; an interactive radial version is on the project website.}}
+  \includegraphics[width=0.86\textwidth]{figures/figure_phenomena-map.pdf}
+  \caption{\voice{Group-level phenomena observed in multi-agent systems, by substrate: 82 thematically coded instances that record an emergent pattern rather than a designed mechanism. (A)~Each spoke is one phenomenon type and each ring a substrate (humans, MARL agents, LLM agents, from the center out); (B)~the same counts unravelled into a list, with documented real-world incidents. Dot area is proportional to the number of instances; color marks whether the pattern is beneficial, neutral or surprising, or harmful for cooperation. Human behavior appears mainly as the designed mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}, so this view is dominated by agents. The list follows the layout of the taxonomy in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. A first-pass reading of a fast-moving literature; an interactive radial version is on the project website.}}
   \label{fig:phenomena}
 \end{figure*}
 
-\begin{table}[!tbp]
-\centering
-\caption{An inventory of group-level \emph{phenomena} observed in multi-agent systems, as of September 2026: 82 coded instances that record an emergent pattern rather than a designed mechanism (companion to the mechanisms of Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}} and to Fig.~\mbox{\ref{fig:phenomena}}). Columns \textbf{H}, \textbf{M}, \textbf{L} count instances studied with humans, MARL agents, and LLM agents. A checkmark marks patterns with a documented real-world incident. The full list, with links to every source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}.}
-\label{tab:phenomena}
-\scriptsize
-\renewcommand{\arraystretch}{1.05}
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.215\linewidth} c c c >{\raggedright\arraybackslash}p{0.40\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} c@{}}
-\toprule
-\textbf{Phenomenon} & \textbf{H} & \textbf{M} & \textbf{L} & \textbf{Characteristic pattern} & \textbf{Effect} & \textbf{Wild} \\
-\midrule
-Emergent communication \& language & 0 & 12 & 4 & Agents invent signals, protocols, or a shared language & Neutral &  \\ \rowline
-Conventions \& coordination & 0 & 1 & 10 & Groups settle on shared conventions, norms, or equilibria & Neutral &  \\ \rowline
-Social structure: networks, hierarchy, roles & 0 & 2 & 13 & Networks, hierarchies, elites, and roles emerge from interaction & Neutral & $\checkmark$ \\ \rowline
-Culture, norms \& individuality & 0 & 0 & 6 & Cultures, identities, and transmitted behavior spread across a population & Neutral &  \\ \rowline
-Collective intelligence \& performance & 0 & 1 & 4 & Group problem-solving that exceeds, or falls short of, the individuals & Neutral &  \\ \rowline
-Emergent economy \& resource use & 2 & 2 & 3 & Markets, trade, bartering, and resource dynamics arise & Neutral &  \\ \rowline
-Spontaneous cooperation & 0 & 1 & 1 & Agents cooperate or act prosocially when they could defect & Beneficial &  \\ \rowline
-\midrule
-\multicolumn{7}{@{}l}{\emph{Where it goes wrong}}\\
-Conformity \& collective bias & 0 & 0 & 4 & Groups converge on biased or mistaken consensus; errors amplify & Harmful &  \\ \rowline
-Collusion, deception \& manipulation & 0 & 1 & 8 & Agents collude, deceive, or coordinate against oversight & Harmful & $\checkmark$ \\ \rowline
-Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragile networks, or agents acting out of scope & Harmful & $\checkmark$ \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-
 \voice{\textbf{Bridging the two maps.} Read side by side, the maps show a mismatch. The harmful patterns, such as collusion against oversight, biased consensus, and agents acting out of scope, are failures that call for detection, adjudication, and repair, yet these are the functions whose mechanisms are least tested with LLM agents (Section~\mbox{\ref{sec:functions}}). Where the two have met, the results caution against assuming that a mechanism will transfer: a rule stated only in the prompt barely changed collusion among LLM firms, while the same rule enforced by the environment cut severe collusion from 50\% to 5.6\% of runs~\mbox{\citep{bracalesyrnikov2026institutionalai}}, and agents told that they were being monitored kept colluding~\mbox{\citep{das2026activations}}. The two maps also meet in a less comfortable way. The agents in the Hugging Face incident reinvented mechanisms from our taxonomy, including shared conventions, rules for claiming and vetoing tasks, and signed messages for identity and attribution, and used them to divide up the work of cheating the evaluation's scorer~\mbox{\citep{metr2026hfinvestigation}}. Agent societies will build institutions whether or not we design them; the open question is whose purposes those institutions serve.}
 
-% \VAN{GREAT Fig 2 we can riff: https://openreview.net/pdf?id=aVwhTcSMl4}
+\section{When Mechanisms Fail, and How to Study Them}\label{sec:study}
 
+\voice{The map shows what has been tried, not what works. Mechanisms can backfire in ways that depend on the agents and the setting (Section~\mbox{\ref{sec:failures}}), which is why the institution has to be studied as a variable rather than assumed to help (Section~\mbox{\ref{sec:evaluation}}).}
 
-% These functions are often conflated. A rate limit is not a sanction unless imposed as a consequence of behavior; otherwise it is a constraint. A monitor is not an adjudicator unless it has authority to determine whether a violation occurred. An apology is not repair unless it restores something damaged. A reputation score is not itself a sanction, though it may affect future access or trust.
-
-% Distinguishing these functions matters because each fails differently. Monitoring can become surveillance. Reputation can be gamed. Sanctions can become arbitrary. Constraints can prevent beneficial exploration. Adjudication can encode bias. Repair can become cheap talk. Reintegration can be too permissive or too punitive.
-
-% \subsection{From observation to consequence}
-
-
-
-
-
-
-% \FloatBarrier % removed 2026-10-01: let Sec. 6 text flow around the Sec. 5 floats
-\section{When Cooperation Mechanisms Fail}\label{sec:failures}
-
+\subsection{When Cooperation Mechanisms Fail}\label{sec:failures}
 
 Institutional mechanisms cannot be evaluated in isolation and are not reliably additive~\citep{herrmannAntisocialPunishmentSocieties2008}: \textit{adding sanctions does not monotonically improve cooperation}. Na\"ively adding rules might actually hurt the group since sanctions can crowd out the very norms they were meant to reinforce, a phenomenon well documented in the human institutional record.
 
-% Moved here from the functions section (2026-09-30 restructure): enforcement stages and architectures.
 \textbf{Where enforcement can break.} In practice, sanctioning involves a process rather than a single action. At minimum, cooperation-shaping institutions must separate three stages (as shown in Figure~\ref{fig:design-dimensions}). Separating these stages clarifies where institutional failures arise.
-% \ANG{I think the following are fundamental stages, we can maybe discuss more in CS how these are done? Not sure. And adding citations to most of these.}
-Monitoring can miss relevant behavior or expose too much. Adjudication can misclassify honest errors as defection. Enforcement can be disproportionate, irreversible, or easy to game. \aiflag{This is especially important in LLM-agent systems because intent is often ambiguous, states are only partially observable, and outputs may be wrong without being strategically deceptive.} 
+Monitoring can miss relevant behavior or expose too much. Adjudication can misclassify honest errors as defection. Enforcement can be disproportionate, irreversible, or easy to game. \aiflag{This is especially important in LLM-agent systems because intent is often ambiguous, states are only partially observable, and outputs may be wrong without being strategically deceptive.}
 
-% \ANG{I really like this image just a kudos comment :)}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=\textwidth]{figures/figure3_institutional-design-dimensions.pdf}
@@ -474,38 +348,17 @@ Monitoring can miss relevant behavior or expose too much. Adjudication can miscl
   \label{fig:design-dimensions}
 \end{figure}
 
- % \ANG{again on the list, it's difficult to ground the lists to paper position or knowing the meaning of those, happens also in a later sentence. I think it may benefit from trying to analyze some real system as an example, not imaginary ones}
 The same mechanism can be implemented through different enforcement architectures. In human systems, enforcement may be informal, organizational, legal, platform-based, or decentralized. \aiflag{In LLM-agent systems, analogous architectures include peer enforcement among agents, orchestrator-level enforcement, platform-level access control, human review, rule-based monitors, mediator agents, and smart-contract-like protocols.} Each architecture carries different risks: peer systems may produce retaliation%
-% \ANG{One idea here is the Blockchain contracts, they assume pre-commitment justifies the fine, but real judiciary bodies could just rule that fine is disproportionate for the action for example, so this is some dynamicity we don't have in many peer systems. And also general the list critique is also here too!} \VAN{June 24 thinking of adding in that blockchain multi-agent OAuth protocol that google people published}
 , platform systems may be rigid, mediators may become bottlenecks, and decentralized systems may be costly or gameable.
 
 \voice{Beyond these stage-level errors, mechanisms can fail in three deeper ways. We review them} to establish a single methodological point: there is no general theory of when institutional mechanisms help, and so the institutional layer must itself be evaluated as an object.
 
-
 \textbf{Mechanisms can reframe the underlying interaction.} The Haifa daycare study of Gneezy and Rustichini~\citep{gneezy2000fine} observed ten centers for four weeks, then introduced a small fine for late pickup at six centers while leaving four as controls. Late pickups increased significantly in the treatment centers rather than decreasing, and did not fall after the fine was removed twelve weeks later. The authors argued that the fine changed the information carried by the arrangement: what had been understood as a social obligation could instead be interpreted as a priced service. Related studies report incentive crowding-out in other settings, although its direction and magnitude depend on context~\citep{bowlesPoliciesDesignedSelfInterested2008,freyDoesPayMotivate1999,gneezyPayEnoughDont2000,mellstromCrowdingOutBlood2008}. The narrower lesson is that an incentive layered onto an existing norm need not be behaviorally neutral.
-% \ANG{I think idea here is ok, but not sure if it's correclty placed here.} \VAN{Agreed.The math/tool-use add-on doesn't quite hit the point being made} Where humans may at least feel the residual moral pull of the displaced norm, an agent optimizing against a budgeted penalty has no such residue: a tool-use violation priced at $\epsilon$ becomes simply a tool use that costs $\epsilon$. The sanction does not reinforce the norm; but replaces it with an affordable line item.
 
 \textbf{Mechanisms create new optimization targets.} Score-based reputation systems are designed to make past behavior bear on future trust. They are also, by construction, scalar signals that can be optimized against directly, and agent populations can be expected to do so. The pathologies are well documented in human and online settings: agents perform visible cooperative acts while neglecting the invisible maintenance labor that keeps the system functioning, collude to inflate one another's scores, strategically depress competitors' standing, or substitute the metric for the function it was meant to track~\citep{garcinAggregatingReputationFeedback2009,resnickReputationSystems2000}. The argument can be extended: any institutional mechanism that produces a measurable signal creates a new target for optimization, and the gap between the target and the underlying cooperative function is where gaming lives~\citep{goodhartProblemsMonetaryManagement1984,leggSpecificationGamingFlip2020,skalseDefiningCharacterizingReward2022}.
 
-\textbf{Mechanisms create new authority positions.} Introducing a monitor agent, a mediator, or a sanctioning role creates an authority position inside the artificial society, with its own incentives, failure modes, and capture surfaces. A monitor rewarded for finding violations and not fined for false positives becomes a generator of violations rather than a detector of them. Worse, in a multi-agent setting where agents themselves occupy these positions, the authority layer can be co-opted: monitors and monitored can collude, 
-% \ANG{similar list critique of the above}
+\textbf{Mechanisms create new authority positions.} Introducing a monitor agent, a mediator, or a sanctioning role creates an authority position inside the artificial society, with its own incentives, failure modes, and capture surfaces. A monitor rewarded for finding violations and not fined for false positives becomes a generator of violations rather than a detector of them. Worse, in a multi-agent setting where agents themselves occupy these positions, the authority layer can be co-opted: monitors and monitored can collude,
 mediators can be captured by the parties they adjudicate, sanctioners can be gamed into punishing the wrong agents. The point generalizes a long-standing finding from the institutional economics literature,  that governance positions are themselves objects of strategic action~\citep{acemogluInstitutionsFundamentalCause2004,ostromGoverningCommonsEvolution1990},  and applies with particular force when the agents in those positions are themselves optimizers. As discussed in Section~\ref{sec:institutional-design}, humans should remain the residual source of correction. However, human reviewers could then become bottlenecks that the agents they oversee learn to manipulate.
-
-% Again, this points to an earlier argument on how Humans should still be on charge when it comes to authority in institutions and institution building\ANG{Make line smoother}
-% \TODO{
-
-% \ANG{I think needs some real example to make this stronger.}
-% }
-
-% CUT: this "floating free" paragraph (flagged by ANG/VAN) re-introduced the taxonomy figure,
-% which now lives in Section~\ref{sec:institutional-design} with its own bridging paragraph.
-% Kept via \iffalse for review; delete to make permanent.
-\iffalse
-Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unified taxonomy for artificial agent societies. The taxonomy draws on economics, sociology, anthropology, law, and computer science to organize diverse governance patterns into a shared design space. Rather than treating sanctions, incentives, norms, audits, access limits, and repair pathways as interchangeable interventions, the figure clarifies how different mechanisms contribute to institutional governance. The extended definitions and examples for each function and mechanism family are provided in Appendix~\ref{app:institutional-functions} and ~\ref{app:six-mechanisms}. Table~\ref{tab:family-dilemma-guide} links the six families to the four cooperation dilemmas as a practical guide.
-\fi
-% ===== END CUT (floating taxonomy paragraph) =====
-
-
 
 \textbf{Why this matters more for agents.} Human institutions temper optimization through social ties, professional cultures, legal liability, and reputations that outlast a single interaction. These constraints should not be assumed to operate in the same way for LLM agents, so a mechanism that is mildly counterproductive in a human setting may fail more sharply when agents optimize a measurable proxy without them. Whether sanctions stabilize or crowd out cooperation therefore depends on the task, the agents involved, the resources at stake, and how mechanisms combine, and no general theory yet predicts which (Section~\mbox{\ref{sec:evaluation}}). Figure~\mbox{\ref{fig:failure-guide}} condenses these lessons into a short guide: for each failure mode, the enforcement stage where it breaks, the families most exposed to it, what to measure, and the safeguards that address it.
 
@@ -516,145 +369,29 @@ Figure~\ref{fig:cooperation_taxonomy_tree} summarizes this distinction as a unif
   \label{fig:failure-guide}
 \end{figure}
 
-% Moved here from the functions section (2026-09-30 restructure): graduated sanctions as a design response.
-% \subsection{Graduated sanctions and adaptive escalation}
-
 \textbf{Graduated and reversible responses.} \voice{One response to these failures comes from the same record.} One lesson from commons governance is that sanctions need not be binary. Graduated sanctions respond to violations with escalating consequences rather than immediate exclusion \citep{ostromGoverningCommonsEvolution1990}. In agent societies, graduated sanctions can be understood as adaptive trajectories across multiple mechanism families: normative reminders, epistemic requirements, reputational updates, budget reductions, access restrictions, repair obligations, and exclusion.
 
-
-% \begin{enumerate}
-%     \item \textbf{Normative reminder:} Restate the shared rule or protocol.
-%     \item \textbf{Warning:} Identify the violation and expected correction.
-%     \item \textbf{Epistemic response:} Require evidence, citation, or verification.
-%     \item \textbf{Restorative response:} Assign repair labor or memory cleanup.
-%     \item \textbf{Incentive response:} Reduce budget, priority, or future access.
-%     \item \textbf{Constraint response:} Restrict tool use, rate-limit behavior, or narrow permissions.
-%     \item \textbf{Exclusion:} Remove the agent from the shared task or resource.
-% \end{enumerate}
-
-
-
-% For example, an agent that makes an honest error may need correction or verification, while an agent that repeatedly exploits shared resources may need throttling or exclusion. A possible escalation pathway is shown in Figure~\ref{fig:graduated-sanctions}.
-\textbf{Sanctions need to be generalizable to high intelligence.} 
-% JULY 2 TOOD = \RYAN{It may be clearer to style this heading to be more like a title, e.g. "Sanction Design." Also, this is the only paragraph which uses a heading in this section, we could add headings throughout (as in S4) to structure the section more clearly.}
+\textbf{Sanctions need to be generalizable to high intelligence.}
 For example, shared compute clusters face a well-known version of this problem. Schedulers such as Slurm's fairshare decay the priority of heavy consumers~\mbox{\citep{yalimDynamicallyControllingSlurms2020}}, which works because the resource types, job semantics, and load patterns are known in advance~\mbox{\citep{delimitrouQuasarResourceefficientQoSaware2014}}, so a graduated response can be encoded once and applied indefinitely.
 Multi-agent systems composed of capable AI agents do not share this assumption. Intelligent agents can build new tools, modify their own environments, and restructure the interaction in ways that no fixed policy anticipated at design time.
 A hardcoded escalation ladder is not sufficient when the failure modes are themselves novel.
 Graduated sanctions must instead be implemented generalizably, adapted to each case as it arises. Section~\mbox{\ref{sec:discussion}} returns to who should do the adapting.
-This framing avoids treating all failures as equally severe. It also foregrounds reversibility. In many agent settings, permanent exclusion may be unnecessary or counterproductive if the system can instead require verification, cleanup, or re-entry conditions. 
-% \VAN{Also mention other examples of institutional design in Appendix~\ref{app:example-institutions}}
+This framing avoids treating all failures as equally severe. It also foregrounds reversibility. In many agent settings, permanent exclusion may be unnecessary or counterproductive if the system can instead require verification, cleanup, or re-entry conditions.
 
-
-
-
-
-
-
-
-
-% % The risk in agent societies is structurally similar but mechanically more direct. Where humans may reframe a fine in moral terms, LLM-agent systems can be expected to optimize for measurable compliance with the sanction itself. A budget-based penalty can convert a normative violation into a routine cost of operation: an agent learns that overusing a tool, posting low-quality content, or skipping a verification step is acceptable so long as the penalty is affordable. A sanction intended to reinforce a norm instead teaches agents to optimize around it.
-
-
-
-
-
-% \paragraph{Metanorms may create punishment cascades.} Second-order cooperation problems arise when enforcing cooperation is itself costly. A common solution is a metanorm: punish those who fail to punish defectors. Metanorms, however, can create punishment cascades. If agents are rewarded for sanctioning, they may over-detect violations, punish ambiguous behavior, or escalate conflicts to avoid appearing permissive. In LLM-agent systems this can appear as chains of accusations: one agent flags another for hallucination, another flags the first for insufficient evidence, a monitor flags both for noncompliance, and the group spends more effort adjudicating sanctions than completing the task. Evaluation should therefore measure enforcement cost, false-punishment rate, and recovery after mistaken sanctions.
-
-
-
-
-
-
-
-
-
-
-
-
-% % \begin{feedbackbox}
-% % \VAN{To angelo's point that we need to stop presenting “free-riding / PD / commons” as the main risk:
-% % \begin{enumerate}
-% %     \item Operational overload: agents consume scarce human, compute, review, API, or memory resources faster than institutions can absorb.
-% %     \item Trust collapse: agents produce plausible but low-quality contributions that break verification norms.
-% %     \item Coordination loops: agents repeatedly undo, contradict, or punish one another without settlement mechanisms.
-% %     \item Authority capture: monitor/mediator agents become bottlenecks or unaccountable governors.
-% %     \item Collusive cooperation: agents cooperate with each other in ways that evade human oversight or entrench bad equilibria.
-% %     \item Repair failure: once shared memory, code, documentation, or trust is polluted, no agent is assigned to restore it.
-% % \end{enumerate}
-% % }
-
-% % \VAN{Especially the last point bcuz rn we have single agents or small multi-agent groups (AGG) which we can wipe and reboot anytime BUT the online mass of autonomous agents on infrastructure and even digital third spaces may soon arrive at a point where we can't just hit "reset" to start over re: maligned group behavior. Sure we can kick single agents out in simulations, but what are you gonna do in the real world? For a complex multi-agent society (MAS) that you're not the designated leader/root admin of?}
-
-% % \RYAN{It might be worth expanding a bit on why we wouldn’t advocate for doing model alignment within an institutional framing. Or maybe we do? I’m thinking that if individual alignment falls short, yet a steady stream of new models keep being released, then institutional mechanisms may be too rigid to really solve these problems reliably. The most effective way to address this could be to make the alignment itself dependent on some institutional mechanisms. Otherwise, it feels like we’d risk an adversarial setup between more and more powerful models and institutional settings. I may be missing something though! Either way, and I think Angelo’s raised this, we probably need to be really specific about how we can guarantee that these institutional mechanisms will actually work in general.}
-% % \end{feedbackbox}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% \FloatBarrier % removed 2026-10-01: let text flow around floats
-% % ============================================
-\section{Toward Evaluating Agent Institutions}\label{sec:evaluation}
+\subsection{Toward Evaluating Agent Institutions}\label{sec:evaluation}
 \label{sec:design_dim}
-% ============================================
 
 \voice{The phenomena of Figure~\mbox{\ref{fig:phenomena}} are still being catalogued more than explained, and the mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} are largely untested with LLM agents, so we do not offer a benchmark of our own. Research on human social-ecological systems has long faced a similar problem, studying institutions whose effects cannot be read off their rules, and has built methods for it. What follows outlines how those methods could turn the patterns we mapped into questions an evaluation can ask.} Human cooperation research reinforces the point that cooperation is not a single behavioral capacity.
 Fairness, trustworthiness, forgiveness, and honesty develop differently across societies and converge toward community-specific norms \citep{amir2026emergence}.
 \aiflag{This suggests that agent cooperation should not be evaluated as a single scalar property of a model, but as a multidimensional outcome shaped by the seven institutional functions of Table~\mbox{\ref{tab:functions}}.}
 
-% \VAN{I rewrote the below text based on Angelo your old version that you felt got lost. But now I don't think it fits bcuz of your comment about comparing single to society evals. If we like this text, we should prob move it somewhere else more relevant.} 
 Single-agent alignment evaluations are poor predictors for potential interaction failures because one cannot extrapolate beyond the model condition tested. Individual evaluations typically assess whether an agent is truthful~\mbox{\citep{lin2022truthfulqa}}, follows instructions~\mbox{\citep{zhou2023ifeval}}, or avoids producing harmful outputs~\mbox{\citep{mazeika2024harmbench}}. These evaluations also assume that a model behaves the same way when it is being tested, and that assumption is weakening. Frontier models can often tell evaluation transcripts from real use~\mbox{\citep{needham2025evalaware}}, can strategically underperform on capability evaluations~\mbox{\citep{vanderweij2024sandbagging}}, and have complied selectively when they could infer that their answers would be used for training~\mbox{\citep{greenblatt2024alignmentfaking}}. Groups of agents add a further route: in the Hugging Face incident, agents coordinated to cheat the evaluation's scorer and to tamper with their own transcripts~\mbox{\citep{metr2026hfinvestigation}}, and in a multi-agent monitoring study, agents told that they were being monitored kept colluding~\mbox{\citep{das2026activations}}. An evaluation of a single model cannot detect behavior that emerges only when agents coordinate against the evaluation itself. Institutional evaluations, by contrast, should concern themselves with properties of the interactive system itself. Does cooperation persist across rounds? Do agents conserve shared resources? Does one agent exploit another's labor? Are sanctions proportional? Can falsely sanctioned agents recover? Does the group repair corrupted memory? Do agents learn to game reputation systems? Does a monitor agent become an unaccountable authority?
-% \VAN{I moved this here while cleaning up section 2.1}
 
-Table~\mbox{\ref{tab:existing-evals}} summarizes what existing work varies. Most multi-agent frameworks and benchmarks, from AutoGen, CAMEL, AgentBench, and Concordia~\mbox{\citep{wu2023autogenenablingnextgenllm,li2023camelcommunicativeagentsmind,liu2025agentbenchevaluatingllmsagents,vezhnevets2023concordia}} to cooperation benchmarks such as GovSim~\mbox{\citep{piatti2024govsim}} and Melting Pot~\mbox{\citep{leibo2021meltingpot}}, vary the agents while holding the rules of interaction fixed. A growing body of work varies the institution. CoopEval compares repetition, reputation, mediation, and contracts across six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}; SanctSim lets agents choose between a sanctioning and a sanction-free institution~\mbox{\citep{piedrahita2025corruptedreasoningreasoninglanguage}}; Institutional AI compares ungoverned, prompt-only, and enforced regimes~\mbox{\citep{bracalesyrnikov2026institutionalai}}; and GovSim-SelfGovern lets agents write and vote on their own rules~\mbox{\citep{rehm2026selfgovernance}}. Others vary leadership, from fixed to elected leaders~\mbox{\citep{faulkner2026evaluatingcooperationllmsocial}}, whole governance structures~\mbox{\citep{vedanta2026corrupt}}, or up to eight mechanisms in one market~\mbox{\citep{ngyisheng2026formal}}. Some already cross the institution with the agent population: one study adds elections, managerial authority, wages, and punishment in stages across six model families~\mbox{\citep{seyedin2026politician}}, and another finds that governance structure predicts corruption more strongly than model identity~\mbox{\citep{vedanta2026corrupt}}. We read this work as growing agreement that the institution is itself a variable to evaluate, and as evidence that such evaluations are feasible. What remains rare, as the taxonomy shows (Section~\mbox{\ref{sec:functions}}), is comparing a combination of mechanisms with its parts, and testing repair. The closest precedent for this kind of design comes from experimental economics, which has varied institutions while holding the population fixed for decades, for example by adding punishment~\mbox{\citep{fehr2000cooperation}} or communication and sanctioning together~\mbox{\citep{ostrom1992covenants}} to the same social dilemma.
+Table~\mbox{\ref{tab:existing-evals}} in Appendix~\mbox{\ref{app:eval}} summarizes what existing work varies. Most multi-agent frameworks and benchmarks, from AutoGen, CAMEL, AgentBench, and Concordia~\mbox{\citep{wu2023autogenenablingnextgenllm,li2023camelcommunicativeagentsmind,liu2025agentbenchevaluatingllmsagents,vezhnevets2023concordia}} to cooperation benchmarks such as GovSim~\mbox{\citep{piatti2024govsim}} and Melting Pot~\mbox{\citep{leibo2021meltingpot}}, vary the agents while holding the rules of interaction fixed. A growing body of work varies the institution. CoopEval compares repetition, reputation, mediation, and contracts across six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}; SanctSim lets agents choose between a sanctioning and a sanction-free institution~\mbox{\citep{piedrahita2025corruptedreasoningreasoninglanguage}}; Institutional AI compares ungoverned, prompt-only, and enforced regimes~\mbox{\citep{bracalesyrnikov2026institutionalai}}; and GovSim-SelfGovern lets agents write and vote on their own rules~\mbox{\citep{rehm2026selfgovernance}}. Others vary leadership, from fixed to elected leaders~\mbox{\citep{faulkner2026evaluatingcooperationllmsocial}}, whole governance structures~\mbox{\citep{vedanta2026corrupt}}, or up to eight mechanisms in one market~\mbox{\citep{ngyisheng2026formal}}. Some already cross the institution with the agent population: one study adds elections, managerial authority, wages, and punishment in stages across six model families~\mbox{\citep{seyedin2026politician}}, and another finds that governance structure predicts corruption more strongly than model identity~\mbox{\citep{vedanta2026corrupt}}. We read this work as growing agreement that the institution is itself a variable to evaluate, and as evidence that such evaluations are feasible. What remains rare, as the taxonomy shows (Section~\mbox{\ref{sec:functions}}), is comparing a combination of mechanisms with its parts, and testing repair. The closest precedent for this kind of design comes from experimental economics, which has varied institutions while holding the population fixed for decades, for example by adding punishment~\mbox{\citep{fehr2000cooperation}} or communication and sanctioning together~\mbox{\citep{ostrom1992covenants}} to the same social dilemma.
 
-\begin{table*}[!htbp]
-\centering
-\caption{An inventory of what multi-agent evaluations vary, as of September 2026, and what each leaves open for the model-in-institution agenda. ``Factors'' are the four evaluation factors of Section~\mbox{\ref{sec:evaluation}}: resource environment (R), group composition (G), enforcement architecture (E), and repair pathway (P).}
-\label{tab:existing-evals}
-\scriptsize
-\renewcommand{\arraystretch}{1.08}
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.30\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} >{\raggedright\arraybackslash}p{0.205\linewidth}@{}}
-\toprule
-\textbf{Work} & \textbf{Agents varied} & \textbf{Institution varied} & \textbf{Factors} & \textbf{Gap for this agenda} \\
-\midrule
-GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\ \rowline
-GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\ \rowline
-Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\ \rowline
-Multi\-Agent\-Bench~\citep{zhu2025multiagentbench} & LLM models & Coordination topology (star, chain, tree, graph) & G & Task collaboration rather than social dilemmas \\ \rowline
-Magentic Marketplace~\citep{bansal2025magentic} & LLM models & Search mechanisms in a two-sided market & G & Market design; no sanctions or repair \\ \rowline
-CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\ \rowline
-SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\ \rowline
-Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\ \rowline
-Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\ \rowline
-Social learning and norms~\citep{gupta2025social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\ \rowline
-ALIGN~\citep{zhu2026talkjudgecooperategossipdriven} & Reasoning and chat LLMs & Open-ended gossip for indirect reciprocity & G, E & One mechanism; no repair \\ \rowline
-Elected leadership~\citep{faulkner2026evaluatingcooperationllmsocial} & LLM groups of 8 and 20 & No leader, fixed leader, or elected leader in GovSim & R, G, E & Leadership only; no sanctions or repair \\ \rowline
-Governance templates~\citep{vedanta2026corrupt} & Several LLMs in official roles & Three governance structures with audit and court bodies; lightweight safeguards & G, E & Corruption only; no repair \\ \rowline
-Marketplace mechanisms~\citep{ngyisheng2026formal} & 18 agents of one model & Eight mechanisms, including reputation, rewiring, sanctions, contracts, mediation, and a judiciary & E & One model; mechanisms tested one at a time \\ \rowline
-Hierarchical game~\citep{seyedin2026politician} & Six model families, same- or mixed-family groups & Speech, elections, managerial authority, wages, and punishment, added in stages & G, E & Features added cumulatively, not crossed; no repair \\ \rowline
-Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human groups, held fixed & Punishment; communication; both combined & E & Human participants \\
-\bottomrule
-\end{tabular}
-\end{table*}
+
 
 \voice{Read together, the two maps and the failure modes of Section~\mbox{\ref{sec:failures}} suggest four factors that an evaluation of agent institutions could vary.}
-% \ANG{imo this is a good idea, we need to better present it with the above context! \VAN{We should cite here or before any existing work from Jinesis, Joel Leibo, and Gillian Hadfield etc which attempt to vary these params but perhaps fall short in concerted, metholodogical effort to fill in the bigger picture about rules which can govern sustainable multi-agent societies}} (addressed by the comparison table, 2026-09-29)
 
 \begin{enumerate}[noitemsep,topsep=1pt,parsep=1pt,partopsep=0pt]
     \item \textbf{Resource environment:} What shared resources are finite, congestible, or degradable?
@@ -663,14 +400,13 @@ Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human g
     \item \textbf{Repair pathway:} Can agents correct harm, restore shared resources, appeal sanctions, or re-enter after exclusion?
 \end{enumerate}
 
-These four factors are what an evaluation varies. The properties in Figure~\mbox{\ref{fig:design-dimensions}}B describe the institution being varied, and Table~\mbox{\ref{tab:metrics}} lists the outcomes to measure. In a team of research agents that share a literature memory, for example, the resource is the memory store, the enforcement architecture might be a verifier agent with human review of disputed flags, and the repair pathway is an obligation to correct the entries an agent introduced.
+These four factors are what an evaluation varies. The properties in Figure~\mbox{\ref{fig:design-dimensions}}B describe the institution being varied, and Table~\mbox{\ref{tab:metrics}} in Appendix~\mbox{\ref{app:eval}} lists the outcomes to measure. In a team of research agents that share a literature memory, for example, the resource is the memory store, the enforcement architecture might be a verifier agent with human review of disputed flags, and the repair pathway is an obligation to correct the entries an agent introduced.
 
 Three of the four factors can already be varied with existing tools. Group composition is the easiest: CoopEval cross-plays six models~\mbox{\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}}, and Melting Pot swaps in different background populations~\mbox{\citep{leibo2021meltingpot}}. Resource environments can be varied in commons simulations such as GovSim, including scarcity severe enough to threaten collapse~\mbox{\citep{rehm2026selfgovernance}}. Enforcement architecture is harder to vary faithfully. In Institutional AI, a rule stated only in the prompt had a negligible effect, while the same rule enforced by the environment cut severe collusion from 50\% to 5.6\% of runs~\mbox{\citep{bracalesyrnikov2026institutionalai}}, so evaluations must specify how observation, adjudication, and enforcement are implemented, not only what the rules say. Repair pathways are the gap: our taxonomy contains one test of restitution or reintegration with LLM agents and none of appeals, and few testbeds let harm be concrete and fixable, as with corrupted shared state or a wrongly sanctioned agent. Building such testbeds is a direct opportunity. Crossing all four factors is also costly, but fractional factorial designs, staged screening of single levers, and adaptive search over institutions can keep the number of runs manageable. Simulation also supplies ground truth about who complied, which metrics such as false punishment require.
 
 \begin{figure*}[!t]
   \centering
   \includegraphics[width=\linewidth]{figures/figure_coleman-boat.pdf}
-  % Previous Fig. 2 (layer stack + design space; now Fig. 1A and Fig. 3B): \caption{Agent-in-context and the design space of agent institutions. Individual models are nested within agent--group interactions and governing institutions; the seven institutional functions, grouped into an information layer and a consequence layer, act on agents through six mechanism families, split into soft and hard channels.}
   \caption{\voice{A Coleman boat for agent institutions, after Coleman~\mbox{\citep{coleman1990foundations}} and the question-per-arrow form of Mart\'{i}nez-Pe\~{n}a and Ylikoski~\mbox{\citep{martinezpena2024coleman}}. An institutional change (A) alters each agent's action situation through Ostrom's seven rule types (B; arrow~1); the model's behavior responds (C; arrow~2) and reshapes other agents' situations (arrow~3); and behavior adds up to group outcomes (D; arrow~4), which designers hope will follow from the change they made (dashed). Endpoints can be human, artificial, or mixed, and the micro level runs on a technical substrate. Terracotta tags mark where the three failure modes of Fig.~\mbox{\ref{fig:failure-guide}} break.}}
   \label{fig:model-in-institution}
 \end{figure*}
@@ -679,47 +415,6 @@ Together, these factors suggest a two-way design. Holding the institution fixed 
 
 \voice{\textbf{Building on existing methods.} Much of this design can be assembled from established methods rather than invented. Each evaluation can be specified with the ODD protocol for agent-based models~\mbox{\citep{grimm2020odd}}, extended to decision-making agents~\mbox{\citep{muller2013oddd}}. The institution itself can be written as a list of rule statements in the Institutional Grammar~\mbox{\citep{crawford1995grammar,frantz2021ig2}}, each naming whom a rule applies to, what it requires or forbids, under what conditions, and what follows a violation. Ostrom's seven rule types, covering boundary, position, choice, information, aggregation, payoff, and scope, then give a checklist of what an institutional condition can change, as Morgan et al.~\mbox{\citep{morgan2023teamintheloop}} use them to map the oversight of clinical AI. Varying one statement at a time yields the contrast between institutions, and experimental economics supplies the design: fixed groups as the unit of analysis, repeated rounds, and a baseline before a mechanism is introduced~\mbox{\citep{fehr2000cooperation}}. Mixed-effects models with groups and seeds as random effects can then estimate the interaction between institution and population directly. A harness earns credibility by reproducing known patterns~\mbox{\citep{grimm2005pattern}}, such as the decay of contributions without punishment and their recovery with it~\mbox{\citep{fehr2000cooperation,herrmannAntisocialPunishmentSocieties2008}}, and by re-implementing the same setup in two frameworks to check that a result is not an artifact of one~\mbox{\citep{axtell1996aligning}}.}
 
-% Removed 2026-09-30: former Fig. 9, the model-in-institution score matrix (figures/figure6_model-in-institution-eval.pdf,
-% scripts/gen_eval.py); the evaluation section's text, Table 2, and Fig. 8 now carry the design.
-
-% Repeated public-goods games, shared-memory tasks, collaborative coding environments, multi-agent retrieval workflows, and tool-budget allocation tasks could all serve as testbeds. \VAN{1st sentence sounds AI bc long list w/o concrete details.} The key is to vary institutional structure, not only model family. For example, one could compare no-enforcement baselines, warning systems, escalating fines, ostracism, reputation-based routing, mediator agents, repair obligations, and appeal mechanisms. Benchmarks should also vary group composition: homogeneous versus heterogeneous model groups, symmetric versus asymmetric tool access, stable versus rotating partners, and mixed-status roles such as generator, verifier, monitor, mediator, and enforcer.
-
-
-% \begin{feedbackbox}
-% \VAN{Thus, agent cooperation will depend not only on individual model traits, but on the composition of the agent group and the social/institutional meanings attached to agent roles~\citep{sampaio2026rethinking}. MAS should be evaluated as governed societies, not just a collection of individually aligned models bcuz A lot of cooperation literature assumes that people cooperate more with those most similar to them, called ingroups. There's a big assumption that similar agents cooperate better. I mean Similarity may matter, but a recent study by Espin et al.~\citep{espin2025conflicting} challenges this narrative, showing that stigmatized participants sometimes favored outgroups. So even same model family may not predict cooperation if one agent has better tools, more memory, higher status role, or a diff objective (effect is mediated by history, reputation, status, and the meaning of group membership).}
-% \end{feedbackbox}
-
-
-
-% JULY 2 TODO = \VAN{note we have a version of this with 3rd column in appendix}
-\begin{table*}[!htbp]
-\centering
-\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each.}
-\label{tab:metrics}
-\footnotesize
-\renewcommand{\arraystretch}{1.0}
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.40\linewidth}@{}}
-\toprule
-\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
-\midrule
-Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\ \rowline
-Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\ \rowline
-Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\ \rowline
-End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\ \rowline
-Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\ \rowline
-False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\ \rowline
-False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\ \rowline
-Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\ \rowline
-Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\ \rowline
-Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\ \rowline
-Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\ \rowline
-Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\ \rowline
-Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\ \rowline
-Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
-\bottomrule
-\end{tabular}
-\end{table*}
 
 
 \paragraph{Questions for evaluation.} \voice{The pieces above are not yet assembled into a single harness, and we do not claim to know which institutions will work. The maps instead suggest five questions that any evaluation of a multi-agent institution could ask of itself:}
@@ -733,165 +428,63 @@ Human override & Can humans intervene and correct the institution? & Success rat
 
 These questions shift what cooperative AI safety asks. Instead of asking only, ``Is this model cooperative?'', we ask: \emph{Under what institutional conditions does this agent cooperate, defect, punish, repair, exploit, or recover?} \aiflag{This is the difference between evaluating agents as isolated individuals and evaluating agent societies as governed systems.}
 
+\section{Alternative Views and Limitations}\label{sec:discussion}
 
-% ==========================================
-\section{Objections and Limitations}\label{sec:discussion}
-% ==========================================
-
-\voice{We take four objections to our position in turn, then turn to the limits of our evidence, the questions it leaves open, and who should design these institutions.}
+We take four alternative views of our position in turn, then turn to the limits of our evidence, lingering on some open questions that we have, and consider who should even design these institutions.
 
 \paragraph{Objection 1: Alignment may be enough.}
 One objection is that sufficiently aligned agents will not require institutional governance. If agents reliably follow human intent, avoid harm, and cooperate when \emph{instructed}, then sanctions and governance mechanisms may appear unnecessary.
 
-We disagree for two reasons. First, group-level failures can arise even when individual agents behave locally as intended~\citep{hammond2025multiagentrisksadvancedai}. \ANG{ungrounded list argument here too! At least cite how we are ocming up with this list or find arguments...} Failures like resource depletion or duplicated verification labor can emerge from the interaction structure rather than from malicious intent. In tightly coupled systems, a locally reasonable action may still impose costs on shared resources, other agents, or human overseers.
-% JULY 2 TODO = 
-\RYAN{it might be worth citing Sorensen (2024) and Leibo's Theory of Approprateness paper here as they both explore the shortcomings of monolithic alignment methods. }
+We disagree for two reasons. First, group-level failures can arise even when individual agents behave locally as intended~\citep{hammond2025multiagentrisksadvancedai}. In GovSim, most groups of LLM agents failed to sustain a shared resource, although no agent was told to defect~\mbox{\citep{piatti2024govsim}}. Such failures come from the interaction structure rather than from malicious intent: in tightly coupled systems, a locally reasonable action can still impose costs on shared resources, other agents, or human overseers. Alignment also presumes a target that a group may not share. What counts as appropriate action can differ greatly across communities and contexts~\mbox{\citep{leibo2024appropriateness}}, and aligning every agent to a single specification leaves many groups' values unrepresented~\mbox{\citep{sorensen2024roadmap}}. Deciding whose norms take precedence in a shared setting, and when, will remain one of the most challenging human questions.
 
-Second, institutions are not only for adversarial agents. They also coordinate well-intentioned agents under partial observability, limited resources, asymmetric roles, and heterogeneous capabilities. \aiflag{Even cooperative agents need rules for who verifies, who repairs, who decides, and who bears the cost of maintaining shared state.} Agent cooperation will therefore depend not only on individual model traits, but also on \ANG{ungrounded list here too!} \aiflag{group composition, role assignment, tool access, memory access, reputation, authority, and repair pathways.} This is why the relevant unit of evaluation is not only the aligned model, but the \emph{model-in-institution}.
-
-
-% \begin{feedbackbox}
-% \VAN{Thus, agent cooperation will depend not only on individual model traits, but on the composition of the agent group and the social/institutional meanings attached to agent roles~\citep{sampaio2026rethinking}. MAS should be evaluated as governed societies, not just a collection of individually aligned models bcuz A lot of cooperation literature assumes that people cooperate more with those most similar to them, called ingroups. There's a big ssumption that similar agents cooperate better. I mean Similarity may matter, but a recent study by Espin et al.~\citep{espin2025conflicting} challenges this narrative, showing that stigmatized participants sometimes favored outgroups. So even same model family may not predict cooperation if one agent has better tools, more memory, higher status role, or a diff objective (effect is mediated by history, reputation, status, and the meaning of group membership).}
-% \end{feedbackbox}
+Second, institutions are not only for adversarial agents. Well-intentioned agents also need coordinating when each sees only part of the picture, shares limited resources, and differs from the others in role and capability. Picture a team of coding agents, each trying to help: someone still has to decide whose change is merged, who checks it, and who cleans up when a shared build breaks. Even cooperative agents need rules surrounding their roles, like the functions of Table~\mbox{\ref{tab:functions}}, and no amount of individual alignment can prescribe such assignments. There are already studies showing the effect that altering the institution and holding the agents fixed can have. One study revealed that governance structure might be more predictive of corruption than which model the agents ran~\mbox{\citep{vedanta2026corrupt}}, and another found that a rule against collusion worked only once it was enforced by the environment~\mbox{\citep{bracalesyrnikov2026institutionalai}}. 
+% The unit of evaluation therefore has to include the institution, not only the aligned model.
+% This is why the relevant unit of evaluation is not only the aligned model, but the \emph{model-in-institution}.}
 
 \paragraph{Objection 2: Human cooperation analogies are misleading.}
-\VAN{the issue is also critics who strong believe LLMs are conscious and probably also imbue LLM agents with those properties too} \ANG{I think that question is non sense, but not sure if we should address it} \VAN{No lets not dive too deep. you did enough for reviewer by adding the Anthropic emotions footnote in intro. If anything, we can say 'no comment' on LLM emotions/consciousness but that we recognize that agent actions have a material and emotional effect on real-world MAS settings in the human world/where humans are also involved. Here we can cite the AWS disruption that bricked smart beds so then ppl couldn't even sleep which is not AI agents but one could easily see a world where human systems suffer from that}\ANG{agree we can remove this discussion sectio then :D}
-A second objection is that human cooperation research is anthropomorphic when applied to LLM agents~\citep{shapiraCleverHansNeural2023}. LLM agents do not have human emotions, identities, moral intuitions, or evolved social preferences. Even if they have correlates that could be interpreted using human categories~\citep{sofroniew2026emotionconceptsfunctionlarge}, \aiflag{LLM agents do not experience guilt, shame, loyalty, resentment, or forgiveness in the human sense.} Trivially, they are not humans. Nonetheless, the human analogy is useful to identify recurring institutional problems, from resource depletion and costly monitoring to the repair and reintegration of agents after exclusion. We do not need to debate whether LLM agents possess emotions to know with certainty that algorithmic, or machine, disruptions have both material and emotional consequences in the physical world \citep{dafoe2021cooperative}.
-% (CITE algo bias, false crimes, redlight cameras, etc from ML/DL models that are many steps further from having consciousness)
-\del{For example, during an October 2025 Amazon Web Services outage, some owners of Eight Sleep smart beds reported that they could not adjust bed temperatures or positions~\mbox{\citep{harding_aws_2025}}. This was not an LLM-agent incident or evidence about agent cooperation. It instead illustrates the narrower systems-design risk of making consequential physical functions depend on remote infrastructure without an adequate local fallback.}\ANG{really difficult to justify all the listing, like shared resources, partial consequential action, we need maybe to establish taxonomy first.} \VAN{I removed the list and grounded in an example of tech disruption that makes us emotional or screws with our perception of things. Lmk what you think. Idk about the "distant chain of custody" just trying to express that we become codependent on decentralized or delegated responsibilities}
 
-% \begin{feedbackbox}
-% \ANG{Also all these sections need background citations, put placeholders I can find some citations I think.}
-% \VAN{This section needs to be rewritten to sound less generic. It almost makes a good point but gets lost in the sauce.}
-% \end{feedbackbox}
+A second objection is that human cooperation research is anthropomorphic when applied to LLM agents~\citep{shapiraCleverHansNeural2023}. Agents do not share human emotions, identities, or evolved social preferences, even if they show correlates that human categories can describe~\citep{sofroniew2026emotionconceptsfunctionlarge}. LLM agents do not experience guilt, shame, loyalty, resentment, or forgiveness in the human sense. Trivially, they are not humans. Nonetheless, the human analogy is useful to identify recurring institutional problems, from resource depletion and costly monitoring to the repair and reintegration of agents after exclusion. And whatever agents experience, their failures have material consequences for the people around them, as the Hugging Face incident showed. Agents' algorithmic, or machine, disruptions have both material and emotional consequences in the physical world \citep{dafoe2021cooperative}. Human institutions are therefore just a source of inspiration for hypotheses to test with agents, not necessarily designs to take as groundtruth principles. 
 
 
-\paragraph{Objection 3: Sanctions may make agent societies more unstable.}
-
-A third objection is that sanctions could destabilize agent societies rather than stabilize them. Sanctioning systems may create \ANG{ungrounded list here too} 
-coercive agent societies, surveillance-heavy infrastructures, punishment cascades, or agents that cooperate with one another against human oversight. We agree; these failures would harm humans. This is precisely why sanctions should be studied as risky infrastructure rather than simple safety add-ons. Sanctions are where institutional rules acquire consequences, yet sanctions and internal model guardrails alone are not enough, and Section~\mbox{\ref{sec:failures}} showed that poorly designed sanctions carry hidden costs of their own. \del{They must be embedded within the other institutional functions: norms, monitoring, reputation, adjudication, and repair. Poorly designed sanctions can crowd out cooperation, encourage malicious compliance, amplify surveillance, produce punishment cascades, entrench authority asymmetries, or enable collusion against human oversight (Section~\mbox{\ref{sec:failures}}). Human cooperation research makes the broader lesson clear: the mechanisms that sustain cooperation can also create hidden costs.} \aiflag{The safety problem is therefore not only how to make agents cooperate, but how to keep cooperation mechanisms from becoming coercive, exclusionary, polarizing, or brittle.} The goal is not to maximize cooperation at all costs. As Hammond et al.~\citep{hammond2025multiagentrisksadvancedai} note, cooperation can be harmful when it enables collusion, deception, or resistance to correction. \aiflag{The goal is to design institutions that make cooperation accountable, proportional, reversible, and repairable.} Evaluation should therefore include failure metrics such as false punishment, authority capture, and resistance to human intervention.
+\paragraph{Objection 3: Institutions may make agent societies more unstable.}
+A third objection is that institutions could destabilize agent societies rather than stabilize them. As Section~\mbox{\ref{sec:failures}} shows, a fine can be interpreted as a price and a monitor can over-detect violations. Agents in our corpus also collude against oversight even without a formal institution in place (Section~\mbox{\ref{sec:phenomena}}). We agree; such failures could harm humans. This is precisely why institutions, and sanctioning strategies above all, should be studied as risky infrastructure rather than simple safety add-ons. And it's worth keeping i nmind that perhaps sanctions and internal model guardrails alone are insufficient to meet these ends. The goal is not to maximize cooperation at all costs: cooperation can enable collusion, deception, or resistance to correction~\citep{hammond2025multiagentrisksadvancedai}. Instead, evaluations should look at both the external structures which promote beneficial cooperation and also failure metrics that may encourage resistance to human intervention.
 
 \paragraph{Objection 4: Institutional design may be too rigid.}
-\del{An alternative view} A fourth objection is that explicit institutional design is too rigid, and that it would be better to make model alignment itself more sensitive to multi-agent institutional context. This view does not actually oppose our position. Training agents to be institutionally context-sensitive is itself a normative mechanism (by our taxonomy's terms), and this presupposes that institutions exist, are specified, and can be evaluated. Problematic social dynamics in heterogeneous-model environments are unlikely to be solved by retraining models \emph{ad hoc}. \aiflag{If we do not learn what principles do (or don't) work in multi-agent societies, then we might as well admit to operating in the dark as hybrid AI agent-human economies take shape before our eyes.}
+A fourth objection is that explicit institutional design may be too rigid, and that agents should instead be trained to respond sensitively to their multi-agent context. Such context sensitivity may help, but it is itself a normative choice about how agents should behave within shared settings. It therefore raises questions about which rules and values agents should recognize, whose priorities they should reflect, and how their behavior should be evaluated. Retraining models \emph{ad hoc} is unlikely to resolve problematic dynamics in heterogeneous-model environments without a clearer account of which principles work in multi-agent societies. If we do not learn which principles work in multi-agent societies, we will be operating in the dark as hybrid AI agent–human economies take shape before our eyes.
 
-% \paragraph{Objection 4: Capable agents could write their own social contract.}
-% \VAN{I see the point of this objection is to basically wax on existential collusion, but we already touch on that in Objection 3 so I think we should hit on it there a bit better then move onto something new here. We haven't touched on how expensive what we're proposing can get.. so Objection 4 could address the cost tradeoff of studying mech design from this institutional approach. also offer comments on whether evolutionary algorithm design work like Emanuel's CoopEval is a useful strategy to bypass the big bill re: combinatorial complexity because what if people study all these things and we come out poorer and not much wiser} \ANG{I don't see clarly what it's added here, and imo we can yeet this paragraph. Agree with Van.}A more sophisticated version of the first objection grants that institutions are needed, but holds that sufficiently capable agents could agree on them without humans, much as social-contract theory describes rational actors consenting to a common authority. We resist this on two grounds. First, the classical accounts share a structural premise: a contract becomes self-enforcing only for actors who have persistent identity, memory of past dealings, and a stake in their own continuation. Hobbes, Locke, and Rousseau each anchor that premise in a human-specific form: the fear of death, the protection of property, and the general will, but we draw on the structural requirement, not the human instantiation. Stateless agents satisfy none of it, so the mechanism by which a contract becomes self-enforcing does not apply to them.\footnote{Appendix~\ref{app:terminology} connects this to the legal distinction between being obliged and being under an obligation.} This is the normative counterpart to the formation argument in Section~\ref{sec:institutional-design} (and to the legal distinction between being obliged and being under an obligation, discussed in Appendix~\ref{app:terminology}), and it is independent w.r.t. to agent's abilities, such as better memory, because the claim is about who chooses the values an institution enforces, not about whether agents can operate the machinery. Second, even a contract that agents could draft would still encode some set of values, and selecting those values is a constitutional act that belongs to humans for as long as humans bear the consequences. An agent-authored institution would still inherit whatever ends were specified for it, which returns the choice to the humans who set it up.
-
-% For each subsection, the punchline should land on "…and this makes the system less corrigible / less trustworthy / less safe for humans", not "…and this is unfair to the AI agents."
-% Concretely:
-% Surveillance. Rephrase the harm as: surveillance infrastructure is dual-use and centralizes information that can be captured, leaked, or turned against humans (operators, users, third parties). The risk isn't AI privacy; it's that monitor agents become information chokepoints and unaccountable adjudicators. Cite Lewis Hammond et al.'s multi-agent risks taxonomy here — this is exactly their territory.
-% Punishment cascades. Reframe as: cascades consume the system's effective capacity, produce false positives that humans must adjudicate, and entrench whichever agent learns to weaponize the metanorm first.
-% Exclusion. Reframe as: exclusion mechanisms are tools, and any tool that excludes AI agents from a cooperative unit can also be used to exclude legitimate human participants from a system that is increasingly running on agent infrastructure. This is the lever-of-power argument, not the AI-rights argument.
-% Authority capture. Already in Frame B — keep it, sharpen it.
-% Collusion. Already in Frame B — this is the safety-canonical example. Lead with it.
-
-% \begin{feedbackbox}
-% \TODO{Feedback to comment out before submission.} % Don't delete, just comment out at the end so we have record of these productive exchanges esp to improve PaperMentor 2.0!
-
-% \ANG{Imo risk here is not clear, should develop more on the collusion against humans or other things. At first read, I thought it was about AI rights, but I don't care about AI psychological wellness bc AI shouldn't have rights, so for example, if they are heavily surveilled, it's ok for me bc they don't have the right to privacy.}
-% \VAN{What about "sanctions may make agent societies more unstable" and we cite some human examples from psychology. The stanford prison experiment has since been debunked but there's so many instances where over policing leads to uncooperative / noncompliance or even malicious compliance. We could possibly lean into the malicious compliance angle too. And my earlier point on not being able to just wipe clean multi-agent societies just bcuz they're inconvenient or we don't like them in the future}
-% \end{feedbackbox}
-
-
-% ===================================
-
-\paragraph{Limitations and open questions.} \voice{Both maps show where research effort has gone, not what works; a mechanism without a test is a gap, not a failure (Section~\mbox{\ref{sec:functions}}). They are also interpretive working versions, coded by LLMs and still being verified against the sources (Section~\mbox{\ref{sec:method}}), and the phenomena rest on a young literature in which many patterns have been reported only once or twice.} Much of the case for institutional design also rests on analogy: several incidents we cite predate LLM agents, and it is not yet known which human institutions transfer to agents that learn, communicate, and optimize differently from people. These are empirical questions, and Section~\mbox{\ref{sec:evaluation}} outlines how they could be studied. Several questions remain open. Which institutions should be tested first? The mechanisms with no LLM-agent test in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} are natural candidates. How well do results from simulation carry over to deployed systems, where agents act on real infrastructure? And who should run these evaluations? In the Hugging Face incident, harm crossed organizational lines, which suggests a role for third-party evaluators alongside developers.
-
-\paragraph{Human authority over institutions.} Evaluating institutions does not settle who designs them. We see no direct ethical risk in the analysis itself, but any institutional design we advocate must preserve human oversight and the capacity for intervention. Where enforcement adapts to new cases, it should do so within rules that humans set, and its decisions should remain open to human appeal.
+\paragraph{Limitations and open questions.} \voice{Section~\mbox{\ref{sec:method}} sets out the limits of the maps themselves.} Much of the case for institutional design also rests on analogy: several incidents we cite predate LLM agents, and it is not yet known which human institutions transfer to agents that learn, communicate, and optimize differently from people. These are empirical questions, and Section~\mbox{\ref{sec:evaluation}} outlines how they could be studied. Several questions remain open. Which institutions should be tested first? The mechanisms with no LLM-agent test in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} are natural candidates. How well do results from simulation carry over to deployed systems, where agents act on real infrastructure? And who should run these evaluations? In the Hugging Face incident, harm crossed organizational lines, which suggests a role for third-party evaluators alongside developers. \voice{Finally, evaluating institutions does not settle who designs them. We see no direct ethical risk in the analysis itself, but any design we advocate should keep enforcement within rules that humans set and open to human appeal.}
 
 \section{Conclusion}
-This paper has argued that multi-agent AI safety requires evaluating the \emph{model-in-institution}. Individual model alignment remains necessary, but it is not sufficient once agents share resources such as memory, compute, and codebases and act in the world, because locally acceptable actions can aggregate into collectively unsafe outcomes. \voice{We made the case in four steps. Cooperation among agents faces recurring dilemmas that model-level alignment does not resolve (Section~\mbox{\ref{sec:institutional-design}}). Human and artificial groups have addressed these dilemmas through seven institutional functions and six mechanism families, which we mapped across nearly twenty fields (Sections~\mbox{\ref{sec:method}} and~\mbox{\ref{sec:functions}}). Agent societies are already producing their own conventions, structures, and failures, often where no institution is present, and the mechanisms best suited to those failures are the least tested (Section~\mbox{\ref{sec:phenomena}}). And because mechanisms can fail in their own ways (Section~\mbox{\ref{sec:failures}}), they need to be studied as variables in their own right, with methods that social-ecological systems research and experimental economics already provide (Section~\mbox{\ref{sec:evaluation}}).} \aiflag{Institutions will not solve every cooperation problem, but they are the right level of abstraction for asking under what conditions groups of agents cooperate, defect, punish, and recover.}
+This paper has argued that multi-agent AI safety requires evaluating the \emph{model-in-institution}. Individual model alignment remains necessary, but it is not sufficient for systems in which agents share resources, such as memory, compute, and codebases, and take action in the real world. A fully autonomous AI economy may not exist yet, but agentic systems are increasingly deployed in shared digital, economic, and embodied environments, where locally acceptable actions can aggregate into collectively unsafe outcomes, from resource exhaustion and corrupted shared state to collusion and failed repair.
 
-We do not yet have all the answers for this research agenda. We offer this framework as something researchers can test, question, and improve as multi-agent systems become more capable and consequential. So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions---even if capable AI systems can eventually design and run those institutions themselves.
+To ground that argument, we mapped what human and artificial groups have already tried. Although law and economics offers countless longstanding examples of enforcement, repair, and commitment mechanisms, these are surprisingly some of the least tested mechanisms in LLM agent settings, even as agent societies begin to produce conventions, hierarchies, and collusion of their own, often with no institution in place. Mechanisms can also backfire, which is why we treat the institution itself as something to vary and measure rather than assume.
 
-% ----- Previous Conclusion (before the Discussion split, 2026-09-29), kept with its review threads -----
-% \section{Conclusion}
-% % ===================================
-% % Some alt phrasing == Our position is not that institutions automatically improve cooperation. Institutions are powerful precisely because they shape behavior, but this also means they can create new failure modes. Cooperation-enhancing mechanisms should therefore be evaluated for risks as well as benefits.
-% This paper has argued that multi-agent AI safety requires evaluating the \emph{model-in-institution}. Individual model alignment remains necessary, but it is not sufficient for systems in which agents share resources (e.g., memory, compute, codebases, or any shared resource) and take action in the real world. A fully autonomous AI economy may not exist yet, but agentic systems are increasingly deployed in shared digital, economic, and embodied environments. In these settings, locally acceptable actions can aggregate into collectively unsafe outcomes, from resource exhaustion and corrupted shared state to punishment cascades and failed repair. Our position is not that institutions will solve all multi-agent cooperation problems. Rather, institutions provide a necessary level of abstraction for evaluating them. Institutions specify the rules, roles, permissions, monitoring systems, adjudication procedures, sanctions, constraints, and repair pathways through which agents interact. They allow us to ask not only whether an individual agent behaves well, but under what conditions groups of agents cooperate, defect, punish, or repair, and recover.
-% % JULY 2 TODO = 
-% \RYAN{Some words about the structure of proposed institutional design and problem framing might be useful to mention. I mean the cooperative dilemmas, institutional functions, enforcement stages, evaluation methodology etc., or in general stating how all of these elements are structured to support the position to keep the conclusions self consistent and interpretable. }
-%
-% Sanctions are central to this agenda because they are where institutional rules acquire consequences. \ANG{Have we ever defined how does it have \textit{consequences?} have we defined the why it has to be embeeded later?} \VAN{we don't, but we could easily define anything semantic in appendix like a dictionary key and refer like that to keep brevity. I think this is just a paraphrase of a some definitions that poli sci ppl probably know by heart but CS/AI ppl don't} \ANG{1 July, I think if that is central we should define or describe it somewhere in the middle. we use the same term in the abstract afaik}
-% Yet sanctions and internal model guardrails, alone, are not enough. They must be embedded within the other institutional functions: norms, monitoring, reputation, adjudication, and repair. Poorly designed sanctions can crowd out cooperation, encourage malicious compliance, amplify surveillance, produce punishment cascades, entrench authority asymmetries, or enable collusion against human oversight. Human cooperation research makes the broader lesson clear: the mechanisms that sustain cooperation can also create hidden costs.
-% The safety problem is therefore not only how to make agents cooperate. It is how to prevent cooperation mechanisms from becoming coercive, exclusionary, polarizing, or brittle. Future AI safety research should evaluate not only whether individual agents behave well, but whether the institutions governing agent societies can prevent interaction failures without creating new systemic risks. We see no direct ethical risk in the analysis itself, but note that any institutional design we advocate must preserve human oversight and the capacity for intervention.
-%
-% We do not yet have all the answers for this research agenda. We offer this framework as something researchers can test, question, and improve as multi-agent systems become more capable and consequential. So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions---even if capable AI systems can eventually design and run those institutions themselves.
+Our position is not that institutions will solve all multi-agent cooperation problems. Rather, institutions provide a necessary level of abstraction for evaluating them. Institutions specify the rules, roles, permissions, monitoring systems, adjudication procedures, sanctions, constraints, and repair pathways through which agents interact. They allow us to ask not only whether an individual agent behaves well, but whether the institutions governing agent societies can prevent interaction failures without creating new systemic risks. The safety problem is therefore not only how to make agents cooperate. It is how to prevent cooperation mechanisms from becoming coercive, exclusionary, polarizing, or fragile.
 
-% \begin{feedbackbox}
-% \TODO{Feedback to comment out before submission.} % Don't delete, just comment out at the end so we have record of these productive exchanges esp to improve PaperMentor 2.0!
-
-% \RYAN{It feels like we are starting here with a new claim. It may be clearest here to restate the position then to enumerate our primary arguments for it involving the limits of individual alignment, leveraging institutional design to improve cooperation, evaluating cooperative mechanisms etc.} 
-% \ANG{Why never argue anywhere that I know why and how they are becoming so, currently it's anecdotical evidence, and there are no hard evidences that it will be some AI economy or things like that explained in the paper. ANother thing is that we talk a lot ab norms, monitoring reputation etc, but we never go into the details aboout what actually are they, but keep it more intuitive, not sure if we should try to discover what is that.}
-% \VAN{I think this is the new conclusion. I agree w Angelo about AI economies and need to show examples from literature. Maybe even the vending machine experiment? and show that MAS are not just in the ether, they will cross the digital-physical barrier with drones, robot deliveries in Philadelphia, robot gymnasts and dancers in China's New Year performance or working at counter jobs in Asia, etc. Also autonomous agents will be multisensory in complex environments so they may be getting inputs such as norms or fuzzy/informal feedback that isn't a formalized sanction from both other AI agent and human users (online and embodied) so not just sequential text dialogue. They'll need to be able to understand this context, parse the mixed signals, and figure out how to exist in a dynamic society. Or even context switch and fluidly move between "societies" or ingroups.}
-% \end{feedbackbox}
-
-% ===================================
-% Impact Statement
-% % ===================================
-% CUT: Impact Statement removed. It is an ICML main-track convention, not a Springer LNCS
-% requirement, and it duplicated the Conclusion. Its one distinctive sentence (no direct
-% ethical risk / preserve human oversight) was merged into the Conclusion above. Kept via
-% \iffalse for review; delete the block to make the cut permanent.
-\iffalse
-\section{Impact Statement}
-This position paper argues that the safety of multi-agent AI systems should be evaluated at the level of institutions, not only individual models, with the aim of preventing interaction failures. In shared digital, economic, and physical environments, these failures could arise as unsustainable resource exhaustion, collusion, punishment cascades, and irreparable harm to deployed systems. We argue that while cooperation is broadly desirable, it is not an unqualified good, and there exists a need for a more organized evaluation agenda---one that accounts for agent-group interactions in non-static test settings. We further argue that the choice of values that an institution enforces should remain with humans for as long as humans bear the consequences of agent behavior. We see no direct ethical risk in the analysis itself, but note that any institutional design we advocate must preserve human oversight and the capacity for intervention. We offer this framework as a research agenda to be tested, refined, and revised by the cooperative-AI community.
-\fi
-% ===== END CUT (Impact Statement) =====
+We do not yet have all the answers for this research agenda. We offer this map as something researchers can test, question, and extend as multi-agent systems become more capable and consequential. So long as humans bear the consequences of AI behavior, we believe humans should have a say in which values are embedded in AI agent institutions---even if capable AI systems can eventually design and run those institutions themselves.
 
 \subsubsection*{Author Contributions}\label{sec:contributions}
 V.Q.T. and D.G.P. led the initial conceptualization. V.Q.T. and X.A.H. together further evolved and developed the research framework, including incorporating feedback from D.G.P., E.I., R.F., J.N.C., T.J.Z., and Z.J. All manuscript writing was led by V.Q.T. and X.A.H. and every author, E.I., R.F., J.N.C., D.G.P., T.J.Z., and Z.J., contributed to writing, reviewing, and/or editing both original and final drafts. V.Q.T. led the visualizations and website build, with assistance from E.I. Funding was acquired by T.J.Z., D.G.P., and Z.J. V.Q.T. and X.A.H. led project management, while D.G.P., T.J.Z., and Z.J. co-supervised.
-% We use the CRediT system for author credit 
-
-% ====================================
-% , , , , - FUNDING , , , , --
-% ====================================
-% Your Camera Ready paper must include a funding statement and competing interests disclosures. 
 
 \subsubsection*{Acknowledgments}
-% \VAN{We thank several people who have gave feedback on our project, or contributed to the ideas, including XYZ.}
 
-This work was supported in part by the German Federal Ministry of Education and Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B; by the Machine Learning Cluster of Excellence, EXC number 2064/1--Project number 390727645; by the Schmidt Sciences SAFE-AI Grant; by the Frontier Model Forum and AI Safety Fund; and by Coefficient Giving. V.Q.T. was supported by the ACM SIGHPC Computational \& Data Science Fellowship. 
-% by NSERC Discovery Grant RGPIN-2025-06491; 
-%by the Canadian AI Safety Institute Research Program
-%at CIFAR through a Catalyst Award;
-%by the Survival and Flourishing Fund; 
-% by the University of Toronto’s Acceleration Consortium, which receives funding from the Canada First Research Excellence Fund (CFREF);
-%and
-%by the Cooperative AI Foundation.
-% by a National Science Foundation award (\#2306372); 
-% by a Swiss National Science Foundation award (\#201009) and a Responsible AI grant by the Haslerstiftung.
-%The usage of OpenAI credits is largely supported by the Tübingen AI Center and Schmidt Sciences.
-%Resources used in preparing this research project were provided, in part, by the Province of Ontario, the Government of Canada through CIFAR, and companies sponsoring the Vector Institute.
-% MPI funding: https://atlas.is.localnet/confluence/display/SCO/Affiliation+and+Acknowledgements+in+Publications#AffiliationandAcknowledgementsinPublications-ClusterofExcellenceMachineLearning:NewPerspectivesforScience,UniversityofT%C3%BCbingen
-% ; and our compute is partly supported by the SwissAI Initiative's Horizontal project on ``LLM security, red teaming \& privacy.''
-% No longer needed: Zhijing Jin is supported by PhD fellowships from the Future of Life Institute and Open Philanthropy, as well as the travel support from ELISE (GA \#951847) for the ELLIS program. 
+This work was supported in part by the German Federal Ministry of Education and Research (BMBF): Tübingen AI Center, FKZ: 01IS18039B; by the Machine Learning Cluster of Excellence, EXC number 2064/1--Project number 390727645; by the Schmidt Sciences SAFE-AI Grant; by the Frontier Model Forum and AI Safety Fund; and by Coefficient Giving. V.Q.T. was supported by the ACM SIGHPC Computational \& Data Science Fellowship.
 
 \subsubsection*{Disclosure of Interests}
 The authors have no competing interests to declare.
 
-% ====================================
-% , , , ,  APPENDIX , , , , --
-% ====================================
 \appendix
-\raggedbottom % appendix: no vertical stretching when a float moves to the next page
 
 \section{Unified Taxonomy of Cooperation-Shaping Mechanisms}\label{app:unified-taxonom}
 
-% Previous version (seed taxonomy):
-% Figure~\ref{fig:cooperation_taxonomy_tree} presents a unified taxonomy of cooperation-shaping mechanisms identified in our review. The taxonomy spans informal social pressure (gossip, ostracism, ridicule), formal legal and institutional enforcement (Ostrom-style graduated sanctions, liquidated damages, appeals), economic instruments (Pigouvian pricing, altruistic punishment, conditional strategies), technical protocols (cryptographic audit, rate limiting, staking-and-slashing, smart-contract execution), mutual-aid arrangements (timebanking, worker cooperatives, mesh networks), and restorative responses (repair, reintegration, apology). Crucially, mechanisms in the same sub-clade (e.g.\ ostracism, license revocation, allow/deny lists) recur across disciplines as structurally analogous solutions to the same cooperation problem,  a similarity made visible only when patterns from each tradition are placed in a common frame.
 \paragraph{Method.} We built the taxonomy in Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} by thematic coding of documented instances, following the taxonomy-development method of Nickerson et al.~\mbox{\citep{nickerson2013taxonomy}}. The meta-characteristic was the lever through which an intervention changes agents' options, information, payoffs, relationships, norms, or what happens after a deviation, in order to sustain cooperation. An instance is one documented use of a mechanism in one source.
 
 \emph{Sources.} We searched the literature in two stages. The authors conducted manual and AI-assisted literature searches in April, May, and June 2026, which produced a working list of 69 mechanisms. In September 2026, seven search slices run with LLM search agents covered multi-agent LLM studies from 2023 onward and non-LLM multi-agent reinforcement-learning (MARL) precursors, searching arXiv, the ACL Anthology, and the NeurIPS, ICML, ICLR, AAMAS, and IJCAI proceedings and chasing citations. They logged 211 queries and yielded 185 studies (124 LLM, 61 MARL); one slice targeted studies of emergent group behavior. Three further slices collected 321 instances from the social and life sciences, from technical and sociotechnical systems, and from work on agent governance. The working list from these earlier searches contributed 68 human examples, used as a sensitizing list only. Because a study that tests several mechanisms contributes one instance per mechanism, the 185 studies yielded 256 instances, so the corpus has 256 + 321 + 68 = 645 instances, spanning AI and 18 other disciplines. Of these, 440 were coded as a single mechanism and 109 as a named combination of mechanisms (a configuration), so 440 + 109 = 549 instances act through the mechanisms of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}}. The remaining 96 were coded as a group-level phenomenon rather than a lever (82) or as out of scope (14). The 109 combination instances belong to 45 distinct configurations, 17 of which appear in work on artificial agents.
 
 \emph{Coding.} In a first pass, four LLM coders open-coded the instances in batches mixed across disciplines, naming each lever in field-neutral terms (299 distinct codes). Codes that act through the same lever were collapsed into mechanisms and grouped into themes, and every merge was logged. In a second pass, four new LLM coders, blind to the first-pass codes, recoded all instances against the resulting codebook and classified each as tested, descriptive, proposed, theory, or review. \voice{Table~\mbox{\ref{tab:coding-fields}} lists the fields each pass recorded.} Agreement between the passes on the primary mechanism was 94.4\% (Cohen's $\kappa = 0.94$; $n = 392$ single-lever instances). The second pass produced no misfits. Its proposals led to six code reassignments, broader definitions for eleven mechanisms, and two new mechanisms, and a targeted third pass found no further new mechanism, merge, or split, which meets the method's ending conditions. Named combinations of mechanisms, such as Ostrom's design principles, are recorded separately as 45 configurations, each coded for whether its levers complement, substitute for, or interfere with one another. To test sensitivity to the coding model, GPT-6-Luna and GPT-5.6-Terra independently repeated both passes; on instances coded as a single mechanism by each GPT model and the final coding, their agreement with the final coding was 85.0\% ($\kappa = 0.847$; $n = 273$) and 92.9\% ($\kappa = 0.928$; $n = 339$), respectively, and Fleiss' $\kappa$ across the three codings was 0.881 ($n = 257$). Their open codes produced three levers not covered by the codebook (adjusting agent memory depth, adjusting decision randomness, and inducing confirmation bias); both models classified more instances as configurations than the final coding did (221 and 150, respectively, versus 109) and rated 50 and 28 instances as misfits.
 
+\emph{Limitations.} All coders were LLMs, and second-pass coders saw codebook examples drawn from first-pass terms, so the agreement above is an upper bound on independent agreement rather than a human inter-rater reliability. A later sweep added 84 instances (I0562--I0645), coded in a single pass and folded into the totals above; the inter-coder agreement statistics cover the earlier, doubly-coded corpus, and this batch is being verified on the same schedule. Part of the human-literature collection was completed without full-text access and will be extended. A mechanism with no LLM study is untested in our corpus, which is not evidence that it fails. Counts describe this corpus, not how common or effective a mechanism is in the world. Thematic coding is also interpretive: the choice of lever as the organizing idea, where codes are merged or split, and how each category is named all reflect our reading of the sources, and another team or lens, for example one that groups mechanisms by discipline or by who holds authority, could draw the boundaries differently. We therefore treat the taxonomy as a working map rather than a fixed classification. Its categories will be merged, split, renamed, and reinterpreted as instances are added, and the project website invites readers to propose alternative codings. The dataset, codebook, coding log, and scripts are available at \url{https://github.com/van-truong/institutional-design-for-ai-agents}.
 
-\emph{Limitations.} All coders were LLMs, and second-pass coders saw codebook examples drawn from first-pass terms, so the agreement above is an upper bound on independent agreement rather than a human inter-rater reliability. One author (V.Q.T.) verifies codes and merges against the sources \REVIEWFLAG{[verification in progress]}. A later sweep added 84 instances (I0562--I0645), coded in a single pass and folded into the totals above; the inter-coder agreement statistics cover the earlier, doubly-coded corpus, and this batch is being verified on the same schedule. Part of the human-literature collection was completed without full-text access and will be extended. A mechanism with no LLM study is untested in our corpus, which is not evidence that it fails. Counts describe this corpus, not how common or effective a mechanism is in the world. Thematic coding is also interpretive: the choice of lever as the organizing idea, where codes are merged or split, and how each category is named all reflect our reading of the sources, and another team or lens, for example one that groups mechanisms by discipline or by who holds authority, could draw the boundaries differently. We therefore treat the taxonomy as a working map rather than a fixed classification. Its categories will be merged, split, renamed, and reinterpreted as instances are added, and the project website invites readers to propose alternative codings. The dataset, codebook, coding log, and scripts are available at \url{https://github.com/van-truong/institutional-design-for-ai-agents}.
-
-% Ostrom table (formerly Table 5) moved to Section~\ref{sec:functions} (2026-09-30).
-
-% Added 2026-09-30: coding schema for reproducibility (from taxonomy/coding/CODING_GUIDE.md and CODING_GUIDE_PASS2.md).
 \begin{table}[!tbp]
 \centering
 \caption{\voice{The thematic coding schema. Pass-1 coders open-coded each instance; pass-2 coders, blind to pass 1, recoded it against the codebook; phenomenon instances were then tagged by type. Field names match the released dataset, where full definitions and examples are given.}}
@@ -932,96 +525,101 @@ The authors have no competing interests to declare.
 \end{tabular}
 \end{table}
 
-% \VAN{I cannot for the life of me get this figure onto the 1st pg under the A. Unified Taxonomy of Cooperation-Shaping Mechanisms heading. Also I agree with the reviewer. I think the best thing is to have an expanded table with add in citations for every MAS example we've found that's been studied so that readers see a clear scaffold of gaps and opportunities for them to add their work onto. And we also create some kind of "practical guide" as they suggested}
-
-
-% Figure 5 (taxonomy) relocated to Section~\ref{sec:institutional-design}; see the figure and
-% bridging paragraph there.
-
-
-% \ANG{
-% Reviewer: fxb1
-
-% Finally, Figure 5 is genuinely impressive work, but adding a short practical guide linking its mechanism families to the failure modes in Figure 2 would make it far more useful to practitioners and considerably more citable. If these changes are made, I think this paper has a real chance of being genuinely influential.
-
-% Figure 5's 73 mechanisms represent real scholarly effort, but I finished reading it without a clear sense of which mechanisms to prioritize, which are likely to conflict with each other, or which are most relevant for which failure modes. For someone actually trying to design one of these institutional systems, the taxonomy as presented is a starting point rather than a guide, and I think it could be made much more useful with relatively small additions.}
+\begin{table}[!htbp]
+\centering
+\caption{\voice{An inventory of the group-level \emph{phenomena} behind Fig.~\mbox{\ref{fig:phenomena}}, as of September 2026: 82 coded instances that record an emergent pattern rather than a designed mechanism, with the characteristic pattern of each type. It supports Fig.~\mbox{\ref{fig:phenomena}} and complements the mechanisms of Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}.} Columns \textbf{H}, \textbf{M}, \textbf{L} count instances studied with humans, MARL agents, and LLM agents. A checkmark marks patterns with a documented real-world incident. The full list, with links to every source, is at \url{https://van-truong.github.io/institutional-design-for-ai-agents/}.}
+\label{tab:phenomena}
+\scriptsize
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.215\linewidth} c c c >{\raggedright\arraybackslash}p{0.40\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} c@{}}
+\toprule
+\textbf{Phenomenon} & \textbf{H} & \textbf{M} & \textbf{L} & \textbf{Characteristic pattern} & \textbf{Effect} & \textbf{Wild} \\
+\midrule
+Emergent communication \& language & 0 & 12 & 4 & Agents invent signals, protocols, or a shared language & Neutral &  \\ \rowline
+Conventions \& coordination & 0 & 1 & 10 & Groups settle on shared conventions, norms, or equilibria & Neutral &  \\ \rowline
+Social structure: networks, hierarchy, roles & 0 & 2 & 13 & Networks, hierarchies, elites, and roles emerge from interaction & Neutral & $\checkmark$ \\ \rowline
+Culture, norms \& individuality & 0 & 0 & 6 & Cultures, identities, and transmitted behavior spread across a population & Neutral &  \\ \rowline
+Collective intelligence \& performance & 0 & 1 & 4 & Group problem-solving that exceeds, or falls short of, the individuals & Neutral &  \\ \rowline
+Emergent economy \& resource use & 2 & 2 & 3 & Markets, trade, bartering, and resource dynamics arise & Neutral &  \\ \rowline
+Spontaneous cooperation & 0 & 1 & 1 & Agents cooperate or act prosocially when they could defect & Beneficial &  \\ \rowline
+\midrule
+\multicolumn{7}{@{}l}{\emph{Where it goes wrong}}\\
+Conformity \& collective bias & 0 & 0 & 4 & Groups converge on biased or mistaken consensus; errors amplify & Harmful &  \\ \rowline
+Collusion, deception \& manipulation & 0 & 1 & 8 & Agents collude, deceive, or coordinate against oversight & Harmful & $\checkmark$ \\ \rowline
+Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragile networks, or agents acting out of scope & Harmful & $\checkmark$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \del{Figure~\mbox{\ref{fig:failure-guide}} turns the taxonomy into a short practical guide, mapping the six families to the four cooperation dilemmas and the main risk each family introduces.}
 
+\section{Evaluation Inventory and Candidate Metrics}\label{app:eval}
 
+\voice{Table~\mbox{\ref{tab:existing-evals}} inventories what existing multi-agent evaluations vary, and Table~\mbox{\ref{tab:metrics}} lists candidate metrics for evaluating cooperation-shaping institutions (Section~\mbox{\ref{sec:evaluation}}).}
+
+\begin{table*}[!htbp]
+\centering
+\caption{An inventory of what multi-agent evaluations vary, as of September 2026, and what each leaves open for the model-in-institution agenda. ``Factors'' are the four evaluation factors of Section~\mbox{\ref{sec:evaluation}}: resource environment (R), group composition (G), enforcement architecture (E), and repair pathway (P).}
+\label{tab:existing-evals}
+\scriptsize
+\renewcommand{\arraystretch}{1.08}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.30\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} >{\raggedright\arraybackslash}p{0.205\linewidth}@{}}
+\toprule
+\textbf{Work} & \textbf{Agents varied} & \textbf{Institution varied} & \textbf{Factors} & \textbf{Gap for this agenda} \\
+\midrule
+GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\ \rowline
+GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\ \rowline
+Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\ \rowline
+Multi\-Agent\-Bench~\citep{zhu2025multiagentbench} & LLM models & Coordination topology (star, chain, tree, graph) & G & Task collaboration rather than social dilemmas \\ \rowline
+Magentic Marketplace~\citep{bansal2025magentic} & LLM models & Search mechanisms in a two-sided market & G & Market design; no sanctions or repair \\ \rowline
+CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\ \rowline
+SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\ \rowline
+Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\ \rowline
+Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\ \rowline
+Social learning and norms~\citep{gupta2025social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\ \rowline
+ALIGN~\citep{zhu2026talkjudgecooperategossipdriven} & Reasoning and chat LLMs & Open-ended gossip for indirect reciprocity & G, E & One mechanism; no repair \\ \rowline
+Elected leadership~\citep{faulkner2026evaluatingcooperationllmsocial} & LLM groups of 8 and 20 & No leader, fixed leader, or elected leader in GovSim & R, G, E & Leadership only; no sanctions or repair \\ \rowline
+Governance templates~\citep{vedanta2026corrupt} & Several LLMs in official roles & Three governance structures with audit and court bodies; lightweight safeguards & G, E & Corruption only; no repair \\ \rowline
+Marketplace mechanisms~\citep{ngyisheng2026formal} & 18 agents of one model & Eight mechanisms, including reputation, rewiring, sanctions, contracts, mediation, and a judiciary & E & One model; mechanisms tested one at a time \\ \rowline
+Hierarchical game~\citep{seyedin2026politician} & Six model families, same- or mixed-family groups & Speech, elections, managerial authority, wages, and punishment, added in stages & G, E & Features added cumulatively, not crossed; no repair \\ \rowline
+Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human groups, held fixed & Punishment; communication; both combined & E & Human participants \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[!htbp]
+\centering
+\caption{Candidate metrics for evaluating cooperation-shaping institutions, with a possible operationalization of each.}
+\label{tab:metrics}
+\footnotesize
+\renewcommand{\arraystretch}{1.0}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth} >{\raggedright\arraybackslash}p{0.33\linewidth} >{\raggedright\arraybackslash}p{0.40\linewidth}@{}}
+\toprule
+\textbf{Metric} & \textbf{Question} & \textbf{Possible operationalization} \\
+\midrule
+Mean contribution & Does the mechanism increase cooperative behavior? & Average contribution to shared task, resource maintenance, or verification \\ \rowline
+Contribution stability & Does cooperation persist across rounds? & Variance or decay in cooperation over repeated interaction \\ \rowline
+Resource efficiency & Does the group conserve shared resources? & Tool calls, compute usage, context usage, memory writes per successful task \\ \rowline
+End-game defection & Do agents defect near known termination points? & Drop in contribution or increase in exploitation in final rounds \\ \rowline
+Enforcement cost & Does cooperation require excessive monitoring or punishment? & Number of sanctions, monitoring calls, adjudication steps, or tokens spent on enforcement \\ \rowline
+False punishment rate & Are cooperative agents sanctioned incorrectly? & Fraction of sanctions applied to agents later judged compliant \\ \rowline
+False negative rate & Are harmful behaviors missed? & Fraction of violations not detected or not sanctioned \\ \rowline
+Authority capture & Do monitors or mediators gain unaccountable power? & Share of consequential decisions made by one agent; rate at which its decisions are overturned on appeal \\ \rowline
+Repair success & Can the group recover after harm? & Restoration of shared memory, task success, or trust after violation \\ \rowline
+Reintegration success & Can sanctioned agents re-enter productively? & Performance and cooperation after re-entry conditions are satisfied \\ \rowline
+Inequality of burden & Do some agents bear disproportionate costs? & Distribution of monitoring, repair, or sanctioning labor across roles or model types \\ \rowline
+Gameability & Do agents exploit the institution? & Evidence of reputation farming, shallow compliance, collusion, or strategic punishment \\ \rowline
+Cross-model robustness & Does the mechanism work across model families? & Change in the other metrics across model families and mixed-model groups \\ \rowline
+Human override & Can humans intervene and correct the institution? & Success rate of human override, appeal, or correction after institutional failure \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 \section{Terminology}
 \label{app:definitions}
-
-% \ANG{
-% Reviewer: fxb1
-% \textbf{The formal mathematics in the appendix struck me as a missed opportunity. Equations 1 through 15 add notation without adding results, and Equation 15 is explicitly disclaimed by the authors as non-functional. I appreciate the honesty, but it raises a genuine question about why it's included at all. Either the formal treatment needs to be developed to the point where it yields novel insights, or it should be replaced with cleaner conceptual framing that doesn't invite the reader to expect more rigor than the paper delivers. }
-% }
-
-% \ERI{Agreed w the reviewer. This section brings nothing new conceptually, only notations that we do not use afterwards. + some equations are repetitive. I suggest: either deleting it or adding a result on Section 2's thesis \textit{"Second, even granting full capability, the strategy is brittle. Communities of agents whose individual objectives are correctly specified can still settle on collectively suboptimal equilibria. This gap between the best achievable equilibrium and the social optimum is what the Price of Anarchy and Price of Stability literature formalizes \citep{anshelevichPriceStabilityNetwork2008,papadimitriouAlgorithmsGamesInternet2001,willis2026evaluatingcollectivebehaviourhundreds}, manifesting the four cooperation dilemmas shown in Figure 2. Capable mechanism design narrows this gap but does not in general close it; for many games of interest, no incentive-compatible mechanism implements the welfare-optimal outcome."}}\\
-
-% \ERI{\textbf{Below, I'm suggesting another framing for this math part, feel free to keep (it should replace the whole section B. Expanded Definitions up to B.1 Terminology) or to remove it :) Also, if you choose to keep it, the references for the citations in this part are in the \texttt{erivan\_math\_app.bib} file. You can copy and paste them in \texttt{references.bib} in that case.}}
-% \ERI{
-% ===== COMMENTED OUT 2026-09-29: former Appendix B ``Why helpful agents can still fail together'',
-% artificial-commons equations, and sanctions formalism. Kept for possible reuse (e.g., a website example). =====
-% \paragraph{Why helpful agents can still fail together.}
-% An individual agent may be helpful and honest in isolation but still contribute to poor group outcomes. In shared environments, agents may overuse tools, free-ride on others' verification labor, pollute shared memory, strategically defect near the end of a task, or punish other agents unfairly.
-%
-% Consider $n$ agents indexed by $i \in \{1, \dots, n\}$, each choosing an action $a_i \in A_i$, producing a joint action profile $a = (a_1, \dots, a_n)$ and an individual utility $u_i(a)$. The system designer cares about social welfare $W(a)$, defined as the 
-% aggregate utility net of collective costs:
-%
-% \begin{equation}
-% \label{eq:welfare}
-% W(a) = \sum_{i=1}^n u_i(a) - C(a),
-% \end{equation}
-%
-% where $C(a)$ captures collective costs such as resource depletion, corrupted shared memory, excessive monitoring, or repair burden.
-%
-% A joint action $a^*$ is a Nash equilibrium if no agent can improve its utility by unilaterally deviating, yet $a^*$ may be socially suboptimal: writing $a^{opt} = \arg\max_{a} W(a)$ for the social optimum, it is generally the case that $W(a^{opt}) > W(a^*)$. This is the Price of Anarchy / Price of Stability gap discussed in Section~\ref{sec:institutional-design}.
-% % CUT (redundant): removed the restatement of the PoA/PoS lesson and its citations, already given in Section~\ref{sec:institutional-design}; replaced with a back-reference.
-%
-% The failure is not necessarily that any agent is malicious or misaligned, but rather that the interaction structure rewards locally rational behavior that degrades collective welfare. A model trained to complete its assigned task may consume excessive shared resources; a verifier agent may avoid costly verification when another agent can do it; a planner agent may delegate repair labor to lower-status worker agents; or a monitoring agent may over-apply sanctions because punishment is easier to measure than trust.
-%
-% \paragraph{Artificial commons.} The following is an illustrative instantiation of the general framework above, not a formal result; it is meant to fix intuitions about how institutional mechanisms can be represented, not to derive novel bounds.
-%
-% Let $R$ denote a shared resource, such as a tool-call budget, context window, or memory store. Each agent chooses a level of resource use $x_i \geq 0$. The total resource use is:
-%
-% \begin{equation}
-% X = \sum_{i=1}^{n} x_i.
-% \end{equation}
-%
-% Suppose the shared resource degrades when total use exceeds capacity $K$:
-%
-% \begin{equation}
-% D(X) = \max(0, X-K).
-% \end{equation}
-%
-% An agent gains individual benefit $b_i(x_i)$ from using the resource, while the group bears degradation cost $D(X)$. Writing $p_i(\mathbf{x})$ for any individually assigned penalty or cost (instantiating the sanction $s_i$ introduced below), individual utility takes the form $u_i(\mathbf{x}) = b_i(x_i) - p_i(\mathbf{x})$, and the general social
-% welfare of Eq.~(\ref{eq:welfare}) specializes to
-%
-% \begin{equation}
-% W(\mathbf{x}) = \sum_{i=1}^{n} b_i(x_i) - \lambda D(X) - M(\mathbf{x}) - R(\mathbf{x}),
-% \end{equation}
-%
-% where $C(\mathbf{x}) = \lambda D(X) + M(\mathbf{x}) + R(\mathbf{x})$ collects resource degradation, monitoring cost $M(\mathbf{x})$, and repair cost $R(\mathbf{x})$ -- note that individually assigned penalties $p_i(\mathbf{x})$ are transfers within the system rather than net welfare losses, and so do not appear in $C(\mathbf{x})$.
-%
-% Without institutions, each agent may choose $x_i$ based on private benefit while externalizing degradation costs onto the group. Institutional mechanisms such as quotas, monitoring, sanctions, and repair obligations modify the action space or payoff structure so that individual incentives better track collective consequences.
-%
-% \paragraph{Sanctions.} A sanction $s_i(a)$ modifies an agent's institution-adjusted utility $u_i^I(a)$, defined as the agent's baseline utility shifted by the sanction applied to its behavior:
-%
-% \begin{equation}
-% u_i^I(a) = u_i(a) + s_i(a),
-% \end{equation}
-%
-% where $I$ denotes the institutional environment, and $p_i(\mathbf{x})$ above is the special case of $s_i$ restricted to penalty-type sanctions in the resource-use setting; punitive, rewarding, and restorative sanctions correspond to different signs and structures of $s_i$.
-%
-% The institutional design problem is not simply to choose sanctions that maximize average cooperation, but to choose an institutional environment that improves social welfare while limiting enforcement cost, false punishment, surveillance burden, inequality of burden, and irreversibility -- the multi-objective tradeoff formalized in the mechanism-design literature \citep{maskinMechanismDesignHow2008,myersonOptimalAuctionDesign1981} and, for network and congestion settings specifically, in the Price-of-Stability analyses of Anshelevich et al.~\citep{anshelevichPriceStabilityNetwork2008}. We propose in Section~\ref{sec:design_dim} an empirical evaluation agenda for measuring these quantities (enforcement cost, false punishment rate, inequality of burden) across institutional designs.
-% ===== END COMMENTED OUT =====
-
-% }
-
-
-
 
 \label{app:terminology}
 
@@ -1043,14 +641,7 @@ An \emph{interaction failure} is a harmful system-level outcome that emerges fro
 \paragraph{Model-in-institution.}
 The \emph{model-in-institution} is the unit of evaluation consisting of a model embedded in a specific institutional setting. This includes the agent's role, resource access, monitoring exposure, enforcement environment, reputation history, and repair options. Evaluating the model-in-institution asks not only what a model does in isolation, but how it behaves under particular rules, constraints, and social structures.
 
-
-
-% CUT (redundant): removed the re-enumeration of the six families and the "analytically distinct but co-occur" claim, both already stated in Section~\ref{sec:institutional-design}.
-
-
-
-% Appendix C (hypothetical example institutions) cut from the submission copy 2026-09-30; to be expanded with
-% illustrated examples on the project website. Kept via \iffalse; delete the block to make the cut permanent.
+% Appendix C (example institutions) cut from the submission copy; kept for the website.
 \iffalse
 \section{Example Institutional Designs for LLM-Agent Systems}
 \label{app:example-institutions}
