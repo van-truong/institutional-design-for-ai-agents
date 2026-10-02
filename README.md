@@ -2,7 +2,7 @@
 
 Springer LNCS proceedings source for *From Aligned Models to Governed Societies: A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns*, presented at the ICML 2026 Trustworthy AI4GOOD Workshop (originally titled *Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment*).
 
-**Website:** [Interactive paper companion](https://www.vanquynh.com/institutional-design-for-ai-agents/)
+**Website:** [Interactive paper companion](van-truong.github.io/institutional-design-for-ai-agents/)
 
 The active paper, bibliography, figures, and LNCS style files are in `manuscript/`. The original ICML camera-ready materials are preserved in `archive/icml2026/`.
 
