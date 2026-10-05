@@ -1546,7 +1546,7 @@
   {
    "id": "recipe",
    "short": "Post-training recipe",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Post-Training Recipe, More Than Model Family, Shapes Multi-Agent LLM Conversational Behavior",
    "who": "Zhang et al.",

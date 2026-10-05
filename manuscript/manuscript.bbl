@@ -53,12 +53,6 @@ Bowles, S.: Policies {{Designed}} for {{Self-Interested Citizens May
   Experiments}}. Science  \textbf{320}(5883),  1605--1609 (Jun 2008).
   \doi{10.1126/science.1152110}
 
-\bibitem{bracalesyrnikov2026energy}
-{Bracale Syrnikov}, M., Pierucci, F., Prandi, M., Galisai, M., Bisconti, P.,
-  Giarrusso, F., Nardi, D.: Draining the energy commons: Self-defeating
-  over-appropriation as a coordination failure in agentic {LLM} collectives
-  (2026), \url{https://arxiv.org/abs/2607.22188}
-
 \bibitem{brazilek2026coercion}
 Brazilek, J., Chaudhary, M., Lu, Z., Tidmarsh, M.: Coercion and deception in
   {AI}-to-{AI} management: An agentic benchmark of unprompted escalation
@@ -224,16 +218,6 @@ Harsanyi, J.C.: Games with {{Incomplete Information Played}} by
   Management Science  \textbf{14}(3),  159--182 (Nov 1967).
   \doi{10.1287/mnsc.14.3.159}
 
-\bibitem{hayek1973law}
-Hayek, F.A.: Law, Legislation and Liberty, Volume 1: Rules and Order.
-  University of Chicago Press, Chicago (1973),
-  \url{https://press.uchicago.edu/ucp/books/book/chicago/L/bo26122880.html}
-
-\bibitem{he2026quorum}
-He, J., Yu, D.: The honest quorum problem: Epistemic {Byzantine} fault
-  tolerance for agentic infrastructure (2026),
-  \url{https://arxiv.org/abs/2607.16109}
-
 \bibitem{herrmannAntisocialPunishmentSocieties2008}
 Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
   Societies}}. Science  \textbf{319}(5868),  1362--1367 (Mar 2008).
@@ -244,12 +228,6 @@ Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
   deployed agentic {AI} frameworks fail public-facing safety requirements
   (2026), \url{https://arxiv.org/abs/2606.12797}, iCML 2026 Workshop on
   Trustworthy AI for Good (AI4GOOD)
-
-\bibitem{hota2025nomiclaw}
-Hota, A., Jokinen, J.P.P.: {NomicLaw}: Emergent trust and strategic
-  argumentation in {LLMs} during collaborative law-making. In: Proceedings of
-  the AAAI/ACM Conference on AI, Ethics, and Society. vol.~8, pp. 1278--1289
-  (2025). \doi{10.1609/aies.v8i2.36629}
 
 \bibitem{huDissociativeIdentityLanguage2026}
 Hu, B.A., Rong, H., Kleek, M.V.: Dissociative {{Identity}}: {{Language Model
@@ -295,10 +273,6 @@ Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
 Knecht, A., Schaller, U., Summerfield, C., Hagendorff, T.: Shutdown sabotage
   propensities in multi-agent systems (2026),
   \url{https://arxiv.org/abs/2609.28274}
-
-\bibitem{knight1992institutions}
-Knight, J.: Institutions and Social Conflict. Political Economy of Institutions
-  and Decisions, Cambridge University Press, Cambridge (1992)
 
 \bibitem{kolt2026governingaiagents}
 Kolt, N.: Governing {AI} agents. Notre Dame Law Review  \textbf{101}(1), ~335
@@ -352,13 +326,6 @@ Li, Z., Petersson, L., Acquisti, A., Bakker, M.A.: Emergent misaligned
   communication in long-horizon multi-agent {LLM} commerce (2026),
   \url{https://arxiv.org/abs/2608.14825}
 
-\bibitem{lin2022truthfulqa}
-Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
-  falsehoods. In: Proceedings of the 60th Annual Meeting of the Association for
-  Computational Linguistics (Volume 1: Long Papers). pp. 3214--3252.
-  Association for Computational Linguistics (2022).
-  \doi{10.18653/v1/2022.acl-long.229}
-
 \bibitem{liu2026reframing}
 Liu, L., Yu, H., Jiang, X., Wang, S., Qian, P., Chen, Y.: Operational reframing
   and approval-framed delegation in multi-agent {LLM} safety (2026),
@@ -368,11 +335,6 @@ Liu, L., Yu, H., Jiang, X., Wang, S., Qian, P., Chen, Y.: Operational reframing
 Liu, X., Li, H., Li, S., Fang, H., Xu, F., Shi, F., Evans, J.: Markets, not
   planners: Decentralized orchestration of {LLM} agents with private
   information (2026), \url{https://arxiv.org/abs/2608.23867}
-
-\bibitem{magistrali2026aligned}
-Magistrali, I., Shani, C.: Aligned alone, misaligned together: Forecasting
-  adversarial capture in {LLM} agent populations (2026),
-  \url{https://arxiv.org/abs/2608.22444}
 
 \bibitem{makins2026fragmentation}
 Makins, O., Angelini, O., Shams, Z., Phuong, M.: Multi-agent {AI} control:
@@ -389,14 +351,6 @@ Mart{\'i}nez-Pe{\~n}a, R., Ylikoski, P.: Coupling social and ecological
 Maskin, E.S.: Mechanism {{Design}}: {{How}} to {{Implement Social Goals}}. The
   American Economic Review  \textbf{98}(3),  567--576 (2008).
   \doi{10.1257/aer.98.3.567}
-
-\bibitem{mazeika2024harmbench}
-Mazeika, M., Phan, L., Yin, X., Zou, A., Wang, Z., Mu, N., Sakhaee, E., Li, N.,
-  Basart, S., Li, B., Forsyth, D., Hendrycks, D.: {HarmBench}: A standardized
-  evaluation framework for automated red teaming and robust refusal. In:
-  Proceedings of the 41st International Conference on Machine Learning.
-  Proceedings of Machine Learning Research, vol.~235, pp. 35181--35224. PMLR
-  (2024), \url{https://proceedings.mlr.press/v235/mazeika24a.html}
 
 \bibitem{mccoyEmbersAutoregressionShow2024}
 McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
@@ -474,11 +428,6 @@ Ostrom, E.: Governing the {{Commons}}: {{The Evolution}} of {{Institutions}}
 Ostrom, E.: Understanding Institutional Diversity. Princeton University Press,
   Princeton, NJ (2005). \doi{10.1515/9781400831739}
 
-\bibitem{ostrom2011background}
-Ostrom, E.: Background on the institutional analysis and development framework.
-  Policy Studies Journal  \textbf{39}(1),  7--27 (2011).
-  \doi{10.1111/j.1541-0072.2010.00394.x}
-
 \bibitem{ostrom1992covenants}
 Ostrom, E., Walker, J., Gardner, R.: Covenants with and without a sword:
   Self-governance is possible. American Political Science Review
@@ -501,11 +450,6 @@ Popper, N.: Lost {{Passwords Lock Millionaires Out}} of {{Their Bitcoin
   Fortunes}}. The New York Times (Jan 2021),
   \url{https://web.archive.org/web/20210321104514/https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html},
   accessed: 2026-06-09
-
-\bibitem{premackDoesChimpanzeeHave1978}
-Premack, D., Woodruff, G.: Does the chimpanzee have a theory of mind?
-  Behavioral and Brain Sciences  \textbf{1}(4),  515--526 (Dec 1978).
-  \doi{10.1017/S0140525X00076512}
 
 \bibitem{priyanshu2026secret}
 Priyanshu, A., Vijay, S., Pahwa, E.: Got a secret? {LLM} agents can't keep it:
@@ -674,12 +618,6 @@ Wu, Y., Liang, S., Zhang, C., Wang, Y., Zhang, Y., Guo, H., Tang, R., Liu, Y.:
   From {{Human Memory}} to {{AI Memory}}: {{A Survey}} on {{Memory Mechanisms}}
   in the {{Era}} of {{LLMs}} (Apr 2025). \doi{10.48550/arXiv.2504.15965}
 
-\bibitem{yan2026truth}
-Yan, C., Yue, Z., Zhao, F., Lin, E., Jia, L., Tong, H., Lyu, M., Sun, C., Zeng,
-  Y.: When truth is distributed: Misinformation derails collective fact
-  recovery in {LLM}-based multi-agent systems (2026),
-  \url{https://arxiv.org/abs/2608.03421}
-
 \bibitem{yang2026uptake}
 Yang, C.H., Jiang, J., Vasudevan, V., Yang, C.H., Zheng, H., Chen, L., Huerta,
   E.A., Vishwanath, V., Foster, I.T., Thakur, R.: Precise but uncoupled:
@@ -705,20 +643,11 @@ Zaman, A., Nordby, E., Heiding, F.: Manipulation is task-dependent: A
   multi-axis, multi-environment evaluation of frontier {LLMs} (2026),
   \url{https://arxiv.org/abs/2606.25899}
 
-\bibitem{zhang2026recipe}
-Zhang, L., Wang, J., Xue, F., Chu, Y.Y.: Post-training recipe, more than model
-  family, shapes multi-agent {LLM} conversational behavior (2026),
-  \url{https://arxiv.org/abs/2606.20632}
-
 \bibitem{zheng2023judging}
 Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
   Li, Z., Li, D., Xing, E.P., Zhang, H., Gonzalez, J.E., Stoica, I.: Judging
   {LLM}-as-a-judge with {MT}-bench and chatbot arena. In: Advances in Neural
   Information Processing Systems. vol.~36 (2023), datasets and Benchmarks Track
-
-\bibitem{zhou2023ifeval}
-Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
-  L.: Instruction-following evaluation for large language models (2023)
 
 \bibitem{zhou2026guardrail}
 Zhou, Y., Wang, X., Ma, P., Xue, Z., Wang, Z., Wang, S.: From shield to target:
