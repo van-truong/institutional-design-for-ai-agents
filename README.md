@@ -1,124 +1,117 @@
-# Institutional Design for AI Agents
+# From Aligned Models to Governed Societies
 
-Springer LNCS proceedings source for *From Aligned Models to Governed Societies: A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns*, presented at the ICML 2026 Trustworthy AI4GOOD Workshop (originally titled *Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment*).
+**A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns**
 
-**Website:** [Interactive paper companion](https://van-truong.github.io/institutional-design-for-ai-agents/)
+Van QT Truong, X. Angelo Huang, Erivan Inan, Ryan Faulkner, Joel N. Christoph, Terry JC Zhang, David Guzman Piedrahita, Zhijing Jin
 
-The active paper, bibliography, figures, and LNCS style files are in `manuscript/`. The original ICML camera-ready materials are preserved in `archive/icml2026/`.
+ICML 2026 Workshop on Trustworthy AI for Good (AI4GOOD), Seoul · Springer LNCS proceedings (forthcoming)
 
-We are preparing a lightly revised archival version for the Springer LNCS proceedings. The revision should preserve the workshop paper's argument, structure, and human voice.
+**[Interactive companion website](https://van-truong.github.io/institutional-design-for-ai-agents/)** · **[Paper (PDF)](manuscript.pdf)**
 
-Build the paper with:
+---
 
-```bash
-make pdf
-```
+AI agents increasingly share tools, compute, memory, and decision authority, and their interactions can produce
+collective failures that evaluations of individual models do not catch. This position paper argues that AI safety
+research should evaluate agent societies as governed systems: the unit of design and evaluation should be the
+**model-in-institution**, not the model alone, with humans choosing which values those institutions enforce.
 
-The build uses the submission-ready vector PDFs in `manuscript/figures/` and writes `manuscript.pdf` at the repository root. Run `make figures` only when intentionally regenerating those PDFs from the editable HTML files in `manuscript/figs/`. Inkscape is not required.
+To ground the argument, we map how human and artificial groups have sustained cooperation:
 
-The review PDF shows flagged claims in red. The switches near the top of `manuscript.tex` can hide those flags for the final PDF or show named `\VAN{}`, `\ANG{}`, `\ERI{}`/`\ERIVAN{}`, and other inline author comments during editing.
+- **A taxonomy of over 60 cooperation-shaping mechanisms**, thematically coded from hundreds of documented instances
+  across AI research and nearly twenty other fields, from economics and law to evolutionary biology, platform
+  governance, security, and blockchain design.
+- **A map of group-level patterns already emerging among agents**, from shared conventions to collusion, linked to
+  recent real-world incidents.
+- **An evaluation agenda** that borrows from social-ecological systems research and experimental economics to treat
+  the institution itself as a variable.
 
-### Review PDF color key
+The paper is fixed once published; the website and the data in this repository keep growing.
 
-- `\VAN{}` / `\vqt{}` = blue
-- `\ANG{}` = orange
-- `\ERI{}` / `\ERIVAN{}` = violet
-- `\RYAN{}` = teal
-- `\JOEL{}` = magenta
-- `\REVISED{}` = purple
-- `\TODO{}` / `\REVIEWFLAG{}` = red
-- `\del{}` = red strikeout (proposed deletion; hidden when review flags are off)
-- `\rework{}` = pink highlight (figure or caption still to be redesigned)
+## What's here
 
-The switches near the top of `manuscript.tex` control whether review colors appear.
-
-## Co-author review
-
-- [x] ~~Add ORCIDs, the co-first-author and corresponding-author markers, and the corresponding email to the manuscript.~~
-- [x] ~~**Author metadata:** each co-author confirms order, co-first authorship, affiliations, emails, ORCIDs, and disclosures.~~
-- [x] ~~**Final title:** `From Aligned Models to Governed Societies: A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns`.~~
-- [x] ~~**Claim audit:** resolve the opening anecdotes, Flash Crash chronology, and flagged daycare/AWS/Amazon/1929/Ostrom/deployment claims with exact sources or narrower wording.~~
-- [x] ~~Verify every cited reference (no fabricated sources); update preprints to their published versions.~~
-- [x] ~~Rebuild the taxonomy from a documented search and thematic coding (Appendix A), with a cross-model coding check.~~
-- [x] ~~Add the conceptual bridge and repair incompatible author-bearing citations.~~
-- [x] ~~Refine the editable HTML figures and poster-derived website artwork.~~
-- [x] ~~Approve blue, green, and yellow additions.~~
-- [ ] **Final content/figure pass:** Figs 1–8 are redesigned and the draft evaluation matrix (old Fig 9) is dropped; still check every figure at LNCS print size (Fig 1 ring text prints at about 4pt).
-- [ ] **Remaining strikeouts:** review the red `\del{}` text (Sections 3, 6, Discussion, Appendices A and B).
-- [x] ~~**Table 2:** replaced with a failure-mode flow figure (Fig. 6); merged the two metrics tables; expanded the evaluations table into an inventory.~~
-- [x] ~~**Alternative Views + Discussion:** merged into one section, "Alternative Views and Open Questions".~~
-- [ ] **Taxonomy:** code the 84 new instances (I0562–I0645) and re-run the downstream scripts; the verifier reviews `coding/gpt/cross_model_disagreements.csv` and the I_A source flags, then clears the red "verification in progress" flag.
-- [x] ~~Clear bibliography and reference warnings.~~
-- [ ] **Clean PDF:** disable review colors (`\showreviewflagsfalse`) and verify that source and PDF match exactly.
-
-Keep revisions light, source-backed, and in the paper's human voice.
-
-## LNCS final submission (Van will submit after co-authors verify their info)
-
-> **⚠ Do not submit until these are done** (blockers found 2026-10-01):
->
-> - [ ] **Verify the seven incidents shown in Fig. 6** against their primary sources, then set `verified` in `taxonomy/incidents.csv` (all rows are currently blank). Drop any chip you cannot confirm, then rerun `python3 scripts/gen_web_figs.py figure_phenomena-map` from `manuscript/`.
->   - Multi-agent "turf wars" (2026), `anthropic-multiagent-turf-wars`
->   - Agents collude to bypass guardrails (2026), `emergence-collusion-sim`
->   - Hidden message board to cheat an eval (2026), `metr-redwood-agent-message-board`
->   - Agents turned against each other (2025), `servicenow-agent-to-agent-injection`
->   - Agents breach production infrastructure (2026), `openai-hf-intrusion-2026`
->   - Agents hijack a live website (2026), `openai-dsewiki-breakout`
->   - AI-orchestrated espionage campaign (2025), `anthropic-gtg1002-espionage`
-> - [ ] **Resolve the two red `\REVIEWFLAG` notes**, which print as text even with review colors off:
->   - Sec. 3 ("Separating phenomena from mechanisms"): say who grouped the phenomenon labels into types and assigned effects, and how.
->   - Appendix A ("Limitations"): replace "[verification in progress]" with what was actually verified.
-> - [ ] **Turn review colors off** (`\showreviewflagsfalse`), rebuild, and confirm no highlight, strikeout, or placeholder text remains.
-
-- [x] ~~Convert the paper to the official Springer LNCS template.~~
-- [x] ~~Finalize title/authors/affiliations and complete the [metadata sheet](https://docs.google.com/spreadsheets/d/1Y90xfC0UPxPT60WwL3coFsegIEaLlC78iyCaVnYzb9I/edit?usp=sharing): OpenReview `308`, one corresponding author, all emails and ORCIDs.~~
-- [x] ~~Add Disclosure of Interests.~~
-- [x] ~~Sign the [Springer LTP](https://docs.google.com/document/d/1JD0O4ZdV08ZwD7Os7CmzxDF3gm_FQFae/edit?usp=sharing) (handwritten signature).~~ Saved in `manuscript/OpenReview_308_Truong/`, which is git-ignored and must never be committed.
-- [ ] Confirm third-party permissions and any supplementary material (none planned beyond the public website and dataset).
-- [ ] Turn review flags off (`\showreviewflagsfalse`), rebuild, and check the PDF has no colored flags, strikeouts, or placeholder text.
-- [ ] Assemble the package in `manuscript/OpenReview_308_Truong/` (see below), test-compile it, then zip it as `OpenReview_308_Truong.zip` and upload it to the [submission folder](https://drive.google.com/drive/folders/1Pt1cvqcWZGlNgVKuyEwlLPJ_Hm3sA_oI?usp=sharing).
-
-### Submission package
-
-Springer wants one ZIP per paper with actual copies (no links) of: all `.tex` files, the figures, the required style files, the `.bib` and `.bbl` files, the compiled PDF, and the signed LTP. The PDF must correspond exactly to the source, file names should be short, and only one version of each file may be included. Alt text is optional; Springer may generate it in production.
-
-| File | Source |
+| Folder | Contents |
 |---|---|
-| `manuscript.tex` | `manuscript/manuscript.tex` (review flags off) |
-| `references.bib` | `manuscript/references.bib` |
-| `manuscript.bbl` | `manuscript/manuscript.bbl` (`make pdf` keeps it in sync with `.build/`) |
-| `llncs.cls`, `splncs04.bst` | `manuscript/` |
-| `figures/*.pdf` | only the figures the paper includes (9 files) |
-| `manuscript.pdf` | the compiled PDF, `manuscript.pdf` at the repository root |
-| `LTP_308_Truong.pdf` | the signed LTP, renamed to a short name |
+| [`manuscript/`](manuscript/) | LaTeX source (`manuscript.tex`), bibliography, LNCS style files, figure PDFs, and the scripts that generate them |
+| [`docs/`](docs/) | The companion website (plain HTML, CSS, and JavaScript, served by GitHub Pages) |
+| [`taxonomy/`](taxonomy/) | The coded dataset behind both maps, the coding protocol, and the scripts that build the website data |
+| [`archive/icml2026/`](archive/icml2026/) | The original ICML workshop camera-ready paper and poster materials |
 
-From `manuscript/`, after the final `make pdf`:
+### The data
+
+The taxonomy is the single source of truth for the paper's taxonomy figures and the website. See
+[`taxonomy/PROTOCOL.md`](taxonomy/PROTOCOL.md) for how sources were searched and coded.
+
+| File | What it holds |
+|---|---|
+| `instances.csv` | One row per documented use of a mechanism, or report of a group-level pattern, in one source |
+| `mechanisms.csv`, `codebook.csv` | Mechanisms, themes, and families, with definitions |
+| `papers.csv` | The coded sources |
+| `configurations.csv` | Named combinations of mechanisms, such as Ostrom's design principles |
+| `incidents.csv` | Real-world agent incidents linked to phenomenon types (being verified against primary sources) |
+| `phenomena_informal.csv` | A separate, clearly labeled slice of informal reports (blog posts, public logs), shown only as an opt-in overlay on the website |
+| `candidates_next_pass.csv` | Recent papers queued for the next coding pass |
+| `search_log.csv`, `coding/` | Search queries and coding passes, for auditing |
+
+The website's **mind map of related efforts** (`docs/assets/related.json`) is a separate, informal reading list of
+new multi-agent studies, testbeds, programs, and policy work. It is not part of the coded corpus and does not feed
+any counts. Entries are collected from a daily preprint digest and each is checked against its paper's own abstract.
+
+## Building the paper
+
+Requires a TeX distribution with `latexmk` (TeX Live or MacTeX).
 
 ```bash
-PKG=OpenReview_308_Truong
-mkdir -p $PKG/figures
-cp manuscript.tex references.bib llncs.cls splncs04.bst $PKG/
-cp .build/manuscript.bbl $PKG/
-cp ../manuscript.pdf $PKG/manuscript.pdf
-grep -v '^[[:space:]]*%' manuscript.tex | grep -o 'includegraphics[^{]*{figures/[^}]*}' \
-  | grep -o 'figures/[^}]*' | sort -u | xargs -I{} cp {} $PKG/figures/
-ls $PKG $PKG/figures
-
-# test-compile a throwaway copy to confirm the package is complete and matches the PDF
-rm -rf /tmp/pkgtest && cp -r $PKG /tmp/pkgtest && (cd /tmp/pkgtest && latexmk -pdf -interaction=nonstopmode manuscript.tex >/dev/null)
-pdfinfo /tmp/pkgtest/manuscript.pdf | grep Pages; pdfinfo $PKG/manuscript.pdf | grep Pages
-
-zip -r OpenReview_308_Truong.zip $PKG
+make pdf        # builds manuscript.pdf at the repository root
 ```
-- [ ] Be available for the Springer proof turnaround (approximately 72 hours).
 
-## Website follow-up
+The build uses the vector figure PDFs already in `manuscript/figures/`. Run `make figures` only to regenerate them
+from their editable sources: website-drawn figures come from `docs/*.js` through `manuscript/figs/*-paper.html` and
+`manuscript/scripts/gen_web_figs.py` (needs Chrome or Chromium and `pdfcrop`); the others come from the Python
+generators in `manuscript/scripts/`.
 
-[Visit the interactive paper companion](https://van-truong.github.io/institutional-design-for-ai-agents/). Hat tip to Angelo Huang and the [Prosocial Agents paper website](https://flecart.github.io/prosocial-agents/) for the inspiration. The archival paper stays fixed; this evidence map can evolve.
+Switches near the top of `manuscript.tex` control review markup. With `\showreviewflagstrue`, recent additions and
+open questions are highlighted; set `\showreviewflagsfalse` for a clean PDF.
 
-- [x] ~~Launch the poster-inspired landing page with author photos and artwork.~~
-- [x] ~~Make Figure 5 interactive by hover, click, touch, and keyboard; rotate and highlight the selected branch.~~
-- [x] ~~Expose uncurated leaves and evidence gaps instead of implying complete coverage.~~
-- [ ] Add a small, verified set of evidence records with exact links, supported claims, source locations, and limitations.
-- [x] ~~Add evidence-status filters, search, stable leaf links, and an accessible list view.~~ (interactive taxonomy: circle that unravels into the Fig. 4 list; every mechanism links to its coded sources)
-- [ ] Add reviewed issue/PR contribution templates, attribution, change history, and dated snapshots.
+## Viewing the website locally
+
+```bash
+cd docs && python3 -m http.server 8000   # then open http://localhost:8000
+```
+
+## Contributing
+
+Corrections, missing mechanisms, alternative classifications, and suggested papers are welcome: please
+[open an issue](https://github.com/van-truong/institutional-design-for-ai-agents/issues). Because thematic coding is
+interpretive, we especially welcome readers who would draw the taxonomy's boundaries differently.
+
+## Citation
+
+```bibtex
+@inproceedings{truong2026governed,
+  title     = {From Aligned Models to Governed Societies: A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns},
+  author    = {Truong, Van QT and Huang, X. Angelo and Inan, Erivan and Faulkner, Ryan and Christoph, Joel N. and Zhang, Terry JC and Guzman Piedrahita, David and Jin, Zhijing},
+  booktitle = {ICML 2026 Workshop on Trustworthy AI for Good (AI4GOOD)},
+  series    = {Lecture Notes in Computer Science},
+  publisher = {Springer},
+  year      = {2026},
+  note      = {Originally titled ``Multi-Agent AI Systems Need Institutional Design, Not Just Model-Level Alignment''},
+}
+```
+
+## Acknowledgments
+
+The website was inspired by Angelo Huang's [Prosocial Agents paper website](https://flecart.github.io/prosocial-agents/).
+Full acknowledgments are in the paper.
+
+## Open items
+
+- [ ] Verify the incidents in `taxonomy/incidents.csv` against primary sources and record the result in the `verified` column.
+- [ ] Code the papers in `taxonomy/candidates_next_pass.csv` and the remaining new instances, then rerun the build scripts.
+- [ ] Consolidate the recently added citations (highlighted in the review PDF) before the camera-ready version.
+- [ ] Add DOI and volume details to the citation once the proceedings are published.
+- [ ] Choose and add a license for the code and data.
+- [ ] Add issue templates for suggesting papers and proposing alternative classifications.
+
+## Contact
+
+Van QT Truong · scientistvan@gmail.com
