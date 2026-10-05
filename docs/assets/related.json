@@ -137,7 +137,7 @@
   {
    "id": "magentic",
    "short": "Magentic Marketplace",
-   "status": "paper",
+   "status": "related",
    "kind": "testbed",
    "title": "Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets",
    "who": "Bansal et al.",
@@ -356,7 +356,7 @@
   {
    "id": "mabench",
    "short": "MultiAgentBench",
-   "status": "paper",
+   "status": "related",
    "kind": "testbed",
    "title": "MultiAgentBench: Evaluating the Collaboration and Competition of LLM Agents",
    "who": "Zhu et al.",
