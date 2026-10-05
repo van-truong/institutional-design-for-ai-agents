@@ -139,6 +139,11 @@ Chan, A., Wei, K., Huang, S., Rajkumar, N., Perrier, E., Lazar, S., Hadfield,
   G.K., Anderljung, M.: Infrastructure for {AI} agents. Transactions on Machine
   Learning Research  (2025), \url{https://openreview.net/forum?id=Ckh17xN2R2}
 
+\bibitem{chandra2026resourced}
+Chandra, P., Gujar, S., Ghalme, G.: Resourced authority: A mechanism-design
+  model for participatory governance of deployed {AI} agents (2026),
+  \url{https://arxiv.org/abs/2608.06353}
+
 \bibitem{coleman1990foundations}
 Coleman, J.S.: Foundations of Social Theory. Belknap Press of Harvard
   University Press, Cambridge, MA (1990)
@@ -774,6 +779,11 @@ Shapira, N., Levy, M., Alavi, S.H., Zhou, X., Choi, Y., Goldberg, Y., Sap, M.,
   \doi{10.18653/v1/2024.eacl-long.138},
   \url{https://aclanthology.org/2024.eacl-long.138/}
 
+\bibitem{shen2026relational}
+Shen, M., Shang, C., Shahriar, S., Kulshreshtha, D., Zhang, Y., Swamy, S., Qi,
+  Y.: Relational priors as convergence pressure in {LLM}-based multi-agent
+  systems (2026), \url{https://arxiv.org/abs/2608.03239}
+
 \bibitem{shoham1995sociallaws}
 Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
   Off-line design. Artificial Intelligence  \textbf{73}(1--2),  231--252
@@ -949,6 +959,12 @@ Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
   Computing}} 2020: {{Catch}} the {{Wave}}. pp. 538--542. {{PEARC}} '20,
   Association for Computing Machinery, New York, NY, USA (Jul 2020).
   \doi{10.1145/3311790.3399628}
+
+\bibitem{yan2026truth}
+Yan, C., Yue, Z., Zhao, F., Lin, E., Jia, L., Tong, H., Lyu, M., Sun, C., Zeng,
+  Y.: When truth is distributed: Misinformation derails collective fact
+  recovery in {LLM}-based multi-agent systems (2026),
+  \url{https://arxiv.org/abs/2608.03421}
 
 \bibitem{yang2026uptake}
 Yang, C.H., Jiang, J., Vasudevan, V., Yang, C.H., Zheng, H., Chen, L., Huerta,

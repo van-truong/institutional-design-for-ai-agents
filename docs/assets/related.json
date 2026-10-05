@@ -2867,7 +2867,7 @@
   {
    "id": "relpriors",
    "short": "Relational priors",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Relational Priors as Convergence Pressure in LLM-Based Multi-Agent Systems",
    "who": "Shen et al.",
@@ -2883,7 +2883,7 @@
   {
    "id": "truthdist",
    "short": "One deceiver derails the group",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems",
    "who": "Yan et al.",
@@ -2959,7 +2959,7 @@
   {
    "id": "resauth",
    "short": "Resourced authority",
-   "status": "related",
+   "status": "paper",
    "kind": "framework",
    "title": "Resourced Authority: A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
    "who": "Chandra, Gujar, and Ghalme",
