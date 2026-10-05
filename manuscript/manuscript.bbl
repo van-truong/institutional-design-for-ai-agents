@@ -490,10 +490,21 @@ Krakovna, V., Uesato, J., Mikulik, V., Rahtz, M., Everitt, T., Kumar, R.,
   https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/
   (Apr 2020)
 
+\bibitem{kumar2026air}
+Kumar, D., HN, R., Birur, N.A., Agarwal, S., Harshangi, P.: The agent incident
+  registry: Toward preventing repeated {AI} agent failures (2026),
+  \url{https://arxiv.org/abs/2609.11030}
+
 \bibitem{huggingface2026timeline}
 Larcher, H., Carreira, A., G., R., Rannou, C.: Anatomy of a frontier lab agent
   intrusion: A technical timeline of the {July} 2026 incident.
   https://huggingface.co/blog/agent-intrusion-technical-timeline (Jul 2026)
+
+\bibitem{lee2026faithful}
+Lee, D., Park, H.: Faithful yet collusive: Why chain-of-thought monitoring
+  cannot detect collusion in {LLM} pricing agents under oligopolistic
+  competition (2026), \url{https://arxiv.org/abs/2609.18346}, findings of EMNLP
+  2026
 
 \bibitem{leibo2021meltingpot}
 Leibo, J.Z., Due{\~n}ez-Guzm{\'a}n, E.A., Vezhnevets, A., Agapiou, J.P.,
@@ -807,6 +818,10 @@ Shapira, N., Levy, M., Alavi, S.H., Zhou, X., Choi, Y., Goldberg, Y., Sap, M.,
 Shen, M., Shang, C., Shahriar, S., Kulshreshtha, D., Zhang, Y., Swamy, S., Qi,
   Y.: Relational priors as convergence pressure in {LLM}-based multi-agent
   systems (2026), \url{https://arxiv.org/abs/2608.03239}
+
+\bibitem{shi2026collusion}
+Shi, X., Zhang, Y., Yang, D.: Emergent collusion in long-horizon {LLM} agent
+  interaction (2026), \url{https://arxiv.org/abs/2609.24967}
 
 \bibitem{shoham1995sociallaws}
 Shoham, Y., Tennenholtz, M.: On social laws for artificial agent societies:
