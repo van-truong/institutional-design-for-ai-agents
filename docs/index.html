@@ -22,6 +22,8 @@
   <script src="commons.js" defer></script>
   <link rel="stylesheet" href="agenda.css">
   <script src="agenda.js" defer></script>
+  <link rel="stylesheet" href="related.css">
+  <script src="related.js" defer></script>
   <script src="notes.js" defer></script>
 </head>
 <body>
@@ -78,6 +80,7 @@
     <a href="#nested">Nested systems</a>
     <a href="#framework">Framework</a>
     <a href="#taxonomy">Taxonomy</a>
+    <a href="#related">Related efforts</a>
     <a href="#parting-words">Parting words</a>
   </nav>
 
@@ -283,6 +286,22 @@
       <h3>It is worth asking: what are the best ways to capture cooperative outcomes?</h3>
       <p>Capturing cooperation may require empirical, quantitative, qualitative, and interpretive methods. The practical question is which interaction levels and metrics are feasible to evaluate as group- and population-level dynamics become more complex.</p>
       <div id="agenda-stage"></div>
+    </section>
+
+    <section id="related" class="related-section rule-top">
+      <h2>Related efforts</h2>
+      <p class="rel-intro">Many groups are now testing the same idea from different angles: that what agents do depends on the rules around them, not only on the model. This map links papers, testbeds, programs, and policy work to the topics in our framework. Work that shares topics sits close together.</p>
+      <p class="rel-caveat">This is an informal reading list, kept separately from the coded literature behind the taxonomy and the counts above. Filled dots are cited in the paper; open dots are work we have read since, summarized from each paper's own abstract. Last checked <time id="rel-checked" datetime="2026-10-05">October 5, 2026</time>. Know of something we missed? <a href="https://github.com/van-truong/institutional-design-for-ai-agents/issues">Suggest it on GitHub</a>.</p>
+      <div class="rel-controls">
+        <button class="rel-filter" type="button" data-rel-filter="paper" aria-pressed="true"><span class="rel-key rel-key-paper"></span><span>Cited in the paper <span class="rel-count"></span></span></button>
+        <button class="rel-filter" type="button" data-rel-filter="related" aria-pressed="true"><span class="rel-key rel-key-related"></span><span>Related, not cited <span class="rel-count"></span></span></button>
+        <span class="rel-legend"><span class="rel-key rel-key-prog"></span>Programs and policy</span>
+      </div>
+      <div class="rel-layout">
+        <figure><div id="rel-stage" class="rel-stage"></div></figure>
+        <aside id="rel-panel" class="rel-panel" aria-live="polite"></aside>
+      </div>
+      <div id="rel-list" class="rel-list"></div>
     </section>
 
     <section id="parting-words" class="parting-words">

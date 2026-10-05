@@ -1,0 +1,57 @@
+/* Related efforts (website), drawn by related.js: a connected-papers style map, a detail panel, and a reading list */
+.rel-intro { max-width: 820px; font-size: 1.05rem; }
+.rel-caveat { max-width: 820px; color: var(--muted); font-size: .9rem; }
+.rel-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; margin: 1.4rem 0 .8rem; font-size: .85rem; }
+.rel-filter { display: inline-flex; align-items: center; gap: .45rem; padding: .35rem .8rem; border: 1.5px solid #9AA6B2; border-radius: 999px; background: #fff; color: #2C2C2A; font: inherit; font-weight: 700; cursor: pointer; }
+.rel-filter[aria-pressed="false"] { opacity: .45; }
+.rel-filter:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.rel-key { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+.rel-key-paper { background: #7c1948; }
+.rel-key-related { border: 2.4px solid #2F5D8F; background: #fff; }
+.rel-key-prog { width: 10px; height: 10px; border-radius: 0; background: #C79A3A; transform: rotate(45deg); }
+.rel-legend { display: inline-flex; align-items: center; gap: .45rem; color: var(--muted); font-weight: 700; }
+.rel-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1.4rem; align-items: start; }
+.rel-stage { border: 1px solid var(--line); border-radius: 14px; background: #fcfcfb; }
+.rel-svg { display: block; width: 100%; height: auto; }
+.rel-hub, .rel-node { cursor: pointer; outline: none; }
+.rel-hub rect { transition: stroke-width .15s; }
+.rel-hub.on rect, .rel-hub:focus-visible rect { stroke-width: 3.5; }
+.rel-label { paint-order: stroke; stroke: #fcfcfb; stroke-width: 3.5px; stroke-linejoin: round; transition: opacity .15s; }
+.rel-label-hover { opacity: 0; }
+.rel-node.on .rel-label-hover, .rel-node:focus-visible .rel-label-hover { opacity: 1; }
+.rel-dim .rel-node:not(.on) { opacity: .2; }
+.rel-dim .rel-hub:not(.on) { opacity: .35; }
+.rel-node.on circle:not([fill="transparent"]), .rel-node:focus-visible circle:not([fill="transparent"]) { stroke-width: 3.2; }
+.rel-panel { position: sticky; top: 4rem; min-height: 180px; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 14px; background: #fff; font-size: .9rem; }
+.rel-p-hint { margin: 0; color: var(--muted); font-style: italic; }
+.rel-p-title { margin: .55rem 0 .35rem; font-size: 1.02rem; line-height: 1.25; }
+.rel-p-title a { color: #2C2C2A; }
+.rel-p-meta { margin: 0 0 .55rem; color: var(--muted); font-size: .82rem; }
+.rel-p-note { margin: 0 0 .7rem; line-height: 1.45; }
+.rel-badge { display: inline-block; padding: .12rem .55rem; border-radius: 999px; background: var(--c); color: #fff; font-size: .72rem; font-weight: 800; letter-spacing: .03em; }
+.rel-chips { display: flex; flex-wrap: wrap; gap: .3rem; }
+.rel-chip { padding: .08rem .5rem; border: 1.3px solid var(--c); border-radius: 999px; color: var(--c); font-size: .72rem; font-weight: 700; }
+.rel-p-list { margin: 0; padding: 0; list-style: none; }
+.rel-p-list li { margin: 0 0 .3rem; }
+.rel-linkbtn { padding: 0; border: 0; border-bottom: 1.5px solid var(--c); background: none; color: #2C2C2A; font: inherit; font-weight: 700; text-align: left; cursor: pointer; }
+.rel-list { margin-top: 2.4rem; }
+.rel-group { margin-bottom: 1.6rem; }
+.rel-group-title, .rel-adjacent summary { margin: 0 0 .7rem; font-size: 1.05rem; font-weight: 900; }
+.rel-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem 2rem; margin: 0; padding: 0; list-style: none; }
+.rel-item { font-size: .88rem; line-height: 1.38; }
+.rel-item-title { color: #2C2C2A; font-weight: 700; }
+.rel-item-meta { color: var(--muted); }
+.rel-item-note { margin: .2rem 0 .35rem; color: #384459; }
+.rel-adjacent { margin-top: 1rem; padding: .8rem 1rem; border: 1px dashed #9AA6B2; border-radius: 12px; }
+.rel-adjacent summary { margin: 0; cursor: pointer; }
+.rel-adjacent[open] summary { margin-bottom: .6rem; }
+.rel-adj-note { color: var(--muted); font-size: .85rem; }
+@media (max-width: 900px) {
+  .rel-layout { grid-template-columns: 1fr; }
+  .rel-panel { position: static; }
+  .rel-items { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .rel-label { display: none; }
+  .rel-dim .rel-node.on .rel-label { display: inline; }
+}
