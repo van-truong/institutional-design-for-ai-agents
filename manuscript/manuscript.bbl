@@ -569,6 +569,11 @@ Macy, M.W., Willer, R.: From factors to actors: Computational sociology and
   agent-based modeling. Annual Review of Sociology  \textbf{28},  143--166
   (2002). \doi{10.1146/annurev.soc.28.110601.141117}
 
+\bibitem{magistrali2026aligned}
+Magistrali, I., Shani, C.: Aligned alone, misaligned together: Forecasting
+  adversarial capture in {LLM} agent populations (2026),
+  \url{https://arxiv.org/abs/2608.22444}
+
 \bibitem{makins2026fragmentation}
 Makins, O., Angelini, O., Shams, Z., Phuong, M.: Multi-agent {AI} control:
   Distributed attacks hamper per-instance monitors (2026),
@@ -710,6 +715,11 @@ Ostrom, E., Walker, J., Gardner, R.: Covenants with and without a sword:
   Self-governance is possible. American Political Science Review
   \textbf{86}(2),  404--417 (1992). \doi{10.2307/1964229}
 
+\bibitem{paglieri2026swarm}
+Paglieri, D., Cross, L., Genewein, T., Leibo, J.Z., Tomasev, N., Vezhnevets,
+  A.S.: A case study on emergent cheating and whistleblowing in autonomous
+  research swarms (2026), \url{https://arxiv.org/abs/2609.04170}
+
 \bibitem{papadimitriouAlgorithmsGamesInternet2001}
 Papadimitriou, C.: Algorithms, games, and the internet. In: Proceedings of the
   Thirty-Third Annual {{ACM}} Symposium on {{Theory}} of Computing. pp.
@@ -751,6 +761,11 @@ Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
 \bibitem{resnickReputationSystems2000}
 Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
   Commun. ACM  \textbf{43}(12),  45--48 (Dec 2000). \doi{10.1145/355112.355122}
+
+\bibitem{ross2026riskier}
+Ross, J., So, E., {De Simone}, Z., Pozniak, C., Lo, A.W.: Why better models can
+  create riskier systems: Evidence from {LLM} agents in financial markets
+  (2026), \url{https://arxiv.org/abs/2609.04373}
 
 \bibitem{saab2026graph}
 Saab, S., Abdallah, C.: Graph feedback controls consensus and clique formation
