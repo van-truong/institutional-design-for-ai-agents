@@ -351,6 +351,10 @@ Hammond, L., Chan, A., Clifton, J., Hoelscher-Obermaier, J., Khan, A., McLean,
   Lehman, J., Parkes, D.C., Piliouras, G., Rahwan, I.: Multi-agent risks from
   advanced {AI} (2025), \url{https://arxiv.org/abs/2502.14143}
 
+\bibitem{han2026institutions}
+Han, Z.: When do institutions beat intelligence? (2026),
+  \url{https://arxiv.org/abs/2608.11357}
+
 \bibitem{hardinTragedyCommons1968}
 Hardin, G.: The {{Tragedy}} of the {{Commons}}. Science  \textbf{162}(3859),
   1243--1248 (Dec 1968). \doi{10.1126/science.162.3859.1243}
@@ -523,6 +527,11 @@ Li, G., Hammoud, H.A.A.K., Itani, H., Khizbullin, D., Ghanem, B.: {CAMEL}:
   Communicative agents for ``mind'' exploration of large language model
   society. In: Advances in Neural Information Processing Systems. vol.~36, pp.
   51991--52008 (2023). \doi{10.52202/075280-2264}
+
+\bibitem{li2026vending}
+Li, Z., Petersson, L., Acquisti, A., Bakker, M.A.: Emergent misaligned
+  communication in long-horizon multi-agent {LLM} commerce (2026),
+  \url{https://arxiv.org/abs/2608.14825}
 
 \bibitem{lin2022truthfulqa}
 Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
@@ -811,6 +820,11 @@ Sorensen, T., Moore, J., Fisher, J., Gordon, M.L., Mireshghallah, N., Rytting,
   Vienna, Austria, July 21-27, 2024. pp. 46280--46302. Proceedings of Machine
   Learning Research, {PMLR} / OpenReview.net (2024),
   \url{https://proceedings.mlr.press/v235/sorensen24a.html}
+
+\bibitem{srinivasan2026ddr}
+Srinivasan, V.: Deployment decision reliability: A generalizability-theory
+  framework for sizing long-horizon agent evaluations (2026),
+  \url{https://arxiv.org/abs/2608.11323}
 
 \bibitem{steinberger2026openclaw}
 Steinberger, P.: {OpenClaw}: Your own personal {AI} assistant.
