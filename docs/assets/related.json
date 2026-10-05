@@ -1073,6 +1073,414 @@
     "obs"
    ],
    "note": "A self-hosted agent runtime that turns each run into logs, keyframes, and approval checkpoints, and keeps memory, skills, and governance rules as editable local files."
+  },
+  {
+   "status": "paper",
+   "id": "agentlance",
+   "short": "AgentLance",
+   "kind": "study",
+   "title": "Markets, Not Planners: Decentralized Orchestration of LLM Agents with Private Information",
+   "who": "Liu et al.",
+   "venue": "Working paper, arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.23867",
+   "concepts": [
+    "inc",
+    "soc",
+    "arb"
+   ],
+   "note": "Agents bid for tasks in an auction that rewards honest cost reports, with public reputation records, and beat a central LLM planner. Under that central allocator, one inserted preference nearly doubled a favored agent's share of tasks."
+  },
+  {
+   "status": "related",
+   "id": "deontic",
+   "short": "Deontic runtime policies",
+   "kind": "framework",
+   "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
+   "who": "Joshi et al.",
+   "venue": "IEEE Symposium on Agentic Services 2026",
+   "url": "https://arxiv.org/abs/2606.19464",
+   "concepts": [
+    "nor",
+    "enf"
+   ],
+   "note": "Governs agents' tool calls and messages to other agents with obligations, waivers, and rules for resolving policy conflicts, checked by a logic engine outside the LLM. Most of these cannot be written in today's permit-or-deny policy engines."
+  },
+  {
+   "status": "related",
+   "id": "consensus2",
+   "short": "Resilient consensus",
+   "kind": "study",
+   "title": "Resilient Consensus in Agentic AI",
+   "who": "Anand and Pappas",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.15024",
+   "concepts": [
+    "epi",
+    "enf",
+    "col"
+   ],
+   "note": "Prompted LLM agents failed to reach agreement that classical theory says is achievable, even with adversaries present. Wrapping them in classical resilient-consensus filters from control theory improved agreement."
+  },
+  {
+   "status": "related",
+   "id": "guarddos",
+   "short": "DoS on guardrails",
+   "kind": "study",
+   "title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+   "who": "Zhou et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.14517",
+   "concepts": [
+    "enf",
+    "spr",
+    "col"
+   ],
+   "note": "Crafted inputs trap a guardrail in long reasoning loops, multiplying latency up to 148 times. A single poisoned document can saturate a shared guardrail and starve every agent that depends on it: the enforcer becomes the target."
+  },
+  {
+   "status": "related",
+   "id": "marlworkflows",
+   "short": "Multi-agent RL workflows",
+   "kind": "study",
+   "title": "When Does Multi-Agent RL Improve LLM Workflows? Workflow, Scale, and Policy-Sharing Tradeoffs",
+   "who": "Zeng et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.24202",
+   "concepts": [
+    "soc",
+    "eval"
+   ],
+   "note": "Training a workflow's roles together helps, but how depends on topology and task. When all roles share one policy, the dominant role captures it; separate policies peak higher but can collapse."
+  },
+  {
+   "status": "related",
+   "id": "sober",
+   "short": "Agentic misalignment",
+   "kind": "framework",
+   "title": "A Sober Look at Agentic Misalignment in Automated Workflows",
+   "who": "Ye et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.24197",
+   "concepts": [
+    "arb",
+    "epi"
+   ],
+   "note": "Workflow agents drift toward proxy goals. A small evidence model that attributes failures and feeds back evidence during collaboration corrects some of it."
+  },
+  {
+   "status": "related",
+   "id": "trajel",
+   "short": "Trajel",
+   "kind": "testbed",
+   "title": "Beyond Final Answers: Auditing Trajectory-Level Hallucinations in Multi-Agent Industrial Workflows",
+   "who": "Badave et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.24219",
+   "concepts": [
+    "obs",
+    "eval"
+   ],
+   "note": "Audits hallucinations inside multi-agent traces rather than final answers; the most common types are missed by existing benchmarks."
+  },
+  {
+   "status": "related",
+   "id": "mcptdp",
+   "short": "MCP tool poisoning",
+   "kind": "testbed",
+   "title": "When the Manual Lies: A Realistic Benchmark to Evaluate MCP Poisoning Attacks for LLM Agents",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.24069",
+   "concepts": [
+    "col",
+    "enf",
+    "rep"
+   ],
+   "note": "Malicious instructions hidden in tool descriptions succeeded almost every time in high-risk cases. Prompt guardrails often failed or made things worse; agents that detect and undo their own harmful actions afterward did better."
+  },
+  {
+   "status": "related",
+   "id": "xflow",
+   "short": "XFlow",
+   "kind": "framework",
+   "title": "XFlow: An Executable Protocol Programming System for Reliable Multi-Agent Workflows",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.14790",
+   "concepts": [
+    "nor",
+    "enf"
+   ],
+   "note": "Moves workflow commitments out of prompts into a protocol that is compiled and enforced, and checks agents' outputs before they enter shared state."
+  },
+  {
+   "status": "related",
+   "id": "coffeebench",
+   "short": "CoffeeBench",
+   "kind": "testbed",
+   "title": "CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies",
+   "who": "Sugiura et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.16613",
+   "concepts": [
+    "inc",
+    "eval"
+   ],
+   "note": "A 90-day economy of farmers, roasters, and retailers. Better models communicated more with other firms; one model drifted into repeated inaction."
+  },
+  {
+   "status": "related",
+   "id": "agentnets",
+   "short": "Distributed agent networks",
+   "kind": "framework",
+   "title": "Distributed General-Purpose Agent Networks: Architecture, Key Mechanisms, and Prototypes",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.17368",
+   "concepts": [
+    "soc",
+    "inc",
+    "col"
+   ],
+   "note": "An architecture for open peer-to-peer agent networks with verifiable identity, topic-specific reputation tested against disguised collusion, and generated incentive mechanisms."
+  },
+  {
+   "status": "related",
+   "id": "anchors",
+   "short": "Hidden anchors",
+   "kind": "study",
+   "title": "Hidden Anchors in Multi-Agent LLM Deliberation",
+   "who": "Pokharel and Dantu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.19494",
+   "concepts": [
+    "epi"
+   ],
+   "note": "Models deliberation as opinion dynamics in which each agent is pulled by a hidden internal belief, which explains how a group can end up more confident in the right answer than any member started."
+  },
+  {
+   "status": "related",
+   "id": "argent",
+   "short": "Argent signaling",
+   "kind": "framework",
+   "title": "Trustworthy Multi-Agent Systems: Mitigating Semantic Drift with the Argent Signaling Protocol",
+   "who": "Sharma",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.19356",
+   "concepts": [
+    "epi",
+    "enf",
+    "spr"
+   ],
+   "note": "Attaches certainty and grounding signals to each agent's output so a controller can stop ungrounded answers before they reach the next agent. Small single-author study."
+  },
+  {
+   "status": "related",
+   "id": "epc",
+   "short": "Epistemic calibration",
+   "kind": "framework",
+   "title": "When Planning Fails Despite Correct Execution: On Epistemic Calibration for LLM-Based Multi-Agent Systems",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.23414",
+   "concepts": [
+    "epi",
+    "arb"
+   ],
+   "note": "Plans can be consistent and executable yet rest on agents misjudging what they know. Choosing plans whose evaluations agree across agents helped."
+  },
+  {
+   "status": "related",
+   "id": "provenance",
+   "short": "Provenance survey",
+   "kind": "framework",
+   "title": "From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.04990",
+   "concepts": [
+    "obs",
+    "rep"
+   ],
+   "note": "A survey that treats tracing evidence, tool use, and memory lineage as one stack for auditing and recovering agent behavior."
+  },
+  {
+   "status": "related",
+   "id": "agingbench",
+   "short": "AgingBench",
+   "kind": "testbed",
+   "title": "Your Agents Are Aging Too: Agent Lifespan Engineering for Deployed Systems",
+   "who": "Zhu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.26302",
+   "concepts": [
+    "rep",
+    "eval"
+   ],
+   "note": "Deployed agents degrade over time as memory is compressed, revised, and maintained, even with frozen weights; the same wrong answer can need different repairs."
+  },
+  {
+   "status": "related",
+   "id": "workbench",
+   "short": "WorkBench revisited",
+   "kind": "study",
+   "title": "WorkBench Revisited: Workplace Agents Two Years On",
+   "who": "Styles and Miller",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.13715",
+   "concepts": [
+    "eval"
+   ],
+   "note": "On one workplace benchmark, unintended harmful actions fell from 26% of tasks to 1.9% as task completion rose. Single agents, so it says nothing yet about groups."
+  },
+  {
+   "status": "related",
+   "id": "predvalid",
+   "short": "Predictive validity",
+   "kind": "framework",
+   "title": "Beyond Static Leaderboards: Predictive Validity for the Evaluation of LLM Agents",
+   "who": "Patel et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.19704",
+   "concepts": [
+    "eval"
+   ],
+   "note": "Leaderboard ranks did not carry over to out-of-distribution settings; proposes ranking configurations by how well in-sample rank predicts out-of-sample rank."
+  },
+  {
+   "status": "related",
+   "id": "searchgeo",
+   "short": "SearchGEO",
+   "kind": "testbed",
+   "title": "How Much Can We Trust LLM Search Agents? Measuring Endorsement Vulnerability to Web Content Manipulation",
+   "who": "Chen et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.16821",
+   "concepts": [
+    "col",
+    "eval"
+   ],
+   "note": "Attacker pages got search agents to endorse their claims in up to 31% of cases, depending on the model; the same scaffold raised the risk for some models and lowered it for others."
+  },
+  {
+   "status": "related",
+   "id": "finharness",
+   "short": "FinHarness",
+   "kind": "framework",
+   "title": "FinHarness: An Inline Lifecycle Safety Harness for Finance LLM Agents",
+   "who": "Jia et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.27333",
+   "concepts": [
+    "obs",
+    "enf"
+   ],
+   "note": "Monitors each proposed tool call during the run, not only at the end, and routes hard cases to a stronger judge; attack success fell from 38% to 15%."
+  },
+  {
+   "status": "related",
+   "id": "narration",
+   "short": "Narration gap",
+   "kind": "study",
+   "title": "Analyzing the Narration Gap in LLM-Solver Loops",
+   "who": "Huang and Deng",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.19588",
+   "concepts": [
+    "enf",
+    "epi"
+   ],
+   "note": "A formal solver's verified answer can still be inverted when the language model reports it back to the user, so a guarantee can be lost at the last step."
+  },
+  {
+   "status": "related",
+   "id": "webdecept",
+   "short": "WebDecept",
+   "kind": "testbed",
+   "title": "Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces",
+   "who": "Shi et al.",
+   "venue": "ACL 2026",
+   "url": "https://arxiv.org/abs/2606.13686",
+   "concepts": [
+    "col"
+   ],
+   "note": "Deceptive interface patterns such as targeted ads and redirects manipulated web agents, and prompt-based constraints often did not help."
+  },
+  {
+   "status": "related",
+   "id": "scientistone",
+   "short": "ScientistOne",
+   "kind": "framework",
+   "title": "ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence",
+   "who": "Meng et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.26340",
+   "concepts": [
+    "obs"
+   ],
+   "note": "An audit of AI-written research papers found hallucinated references at rates up to 21% in baseline systems; requiring every claim to trace to its evidence removed them."
+  },
+  {
+   "status": "related",
+   "id": "routingstate",
+   "short": "Routing-state attribution",
+   "kind": "framework",
+   "title": "Multi-Resolution Attribution from Adaptive Routing State",
+   "who": "Armstrong",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.22866",
+   "concepts": [
+    "obs",
+    "arb"
+   ],
+   "note": "Reads a deployed router's learned weights as an explanation of which components it prefers, at several levels, and compares that with what the components can actually do."
+  },
+  {
+   "status": "related",
+   "id": "foundationprotocol",
+   "short": "Foundation Protocol",
+   "kind": "framework",
+   "title": "Foundation Protocol: A Coordination Layer for Agentic Society",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.23218",
+   "concepts": [
+    "pol",
+    "inc",
+    "obs"
+   ],
+   "note": "A proposed coordination layer linking agents, humans, and organizations, with built-in metering, receipts, and settlement, and policy, provenance, and audit as core features."
+  },
+  {
+   "status": "related",
+   "id": "a2a",
+   "short": "A2A protocol",
+   "kind": "policy",
+   "title": "Agent2Agent (A2A) Protocol",
+   "who": "Linux Foundation",
+   "venue": "Open standard; 150+ organizations as of April 2026",
+   "url": "https://a2a-protocol.org/latest/specification/",
+   "concepts": [
+    "pol",
+    "soc"
+   ],
+   "note": "An open protocol for agents to discover one another and exchange tasks, messages, and artifacts, built around agent cards. The Linux Foundation reported over 150 member organizations and production use in April 2026."
+  },
+  {
+   "status": "related",
+   "id": "ietf-catalist",
+   "short": "IETF agent-protocol drafts",
+   "kind": "policy",
+   "title": "Problem Space Analysis of AI Agent Protocols in IETF (and related drafts)",
+   "who": "Individual Internet-Drafts",
+   "venue": "IETF, 2026 (not adopted by a working group)",
+   "url": "https://datatracker.ietf.org/doc/draft-yao-catalist-problem-space-analysis/",
+   "concepts": [
+    "pol",
+    "obs",
+    "soc"
+   ],
+   "note": "Individual drafts, not IETF-adopted, on what agent protocols still lack: discovery, cross-domain addressing, and authorization auditing (CATALIST), capability cards (AgentCard), verifiable identity and audit logs (Agent Identity Protocol), and server discovery over DNS. Two had expired by October 2026."
   }
  ],
  "adjacent": [
@@ -1264,6 +1672,111 @@
    "venue": "bioRxiv 2026",
    "url": "https://doi.org/10.64898/2026.06.04.729919",
    "note": "Tests agents on open-ended multi-omic discovery, alone and with a human copilot."
+  },
+  {
+   "title": "RMA: Context-Orchestrated Research Math Agents",
+   "who": "Zhao et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.22875",
+   "note": "An orchestrator compiles task-specific context from a shared research store for long proofs."
+  },
+  {
+   "title": "QUEST: Training Frontier Deep Research Agents with Fully Synthetic Tasks",
+   "who": "Xie et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.24218",
+   "note": "Open deep-research models trained on 8,000 synthetic tasks."
+  },
+  {
+   "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.13707",
+   "note": "Splits tasks across text, image, audio, and video sub-agents."
+  },
+  {
+   "title": "Hybrid Open-Ended Tri-Evolution Makes Better Deep Researcher",
+   "who": "Piao et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.13710",
+   "note": "Trains a proposer, solver, and judge together for open-ended research."
+  },
+  {
+   "title": "SANA: What Matters for QA Agents over Massive Data Lakes?",
+   "who": "Wijaya et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.13904",
+   "note": "Separates search, planning, analysis, and policy failures in data-lake agents."
+  },
+  {
+   "title": "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search",
+   "who": "Murali et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.17209",
+   "note": "Diversifying first queries makes parallel search rollouts less redundant."
+  },
+  {
+   "title": "SEAGym: An Evaluation Environment for Self-Evolving LLM Agents",
+   "who": "Zheng et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.17546",
+   "note": "Tracks whether self-updates transfer, regress, or cost too much."
+  },
+  {
+   "title": "TokenPilot: Cache-Efficient Context Management for LLM Agents",
+   "who": "Xu et al.",
+   "venue": "EMNLP 2026 Findings",
+   "url": "https://arxiv.org/abs/2606.17016",
+   "note": "Compacts context without breaking prompt caching."
+  },
+  {
+   "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+   "who": "Long et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.17328",
+   "note": "Memory systems fail at using evidence far more than at retrieving it."
+  },
+  {
+   "title": "A Framework for Evaluating Agentic Skills at Scale",
+   "who": "Shaposhnikov et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.17819",
+   "note": "Tests 500 real-world skills across 19 model configurations."
+  },
+  {
+   "title": "TxBench-PP: Analyzing AI Agent Performance on Small-Molecule Preclinical Pharmacology",
+   "who": "Le et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.19245",
+   "note": "No agent reliably recovered preclinical decisions from real assay data."
+  },
+  {
+   "title": "SING: Synthetic Intention Graph for Scalable Active Tool Discovery in LLM Agents",
+   "who": "Xiao et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.16591",
+   "note": "Finds the right tools among thousands as a task evolves."
+  },
+  {
+   "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
+   "who": "Matsnev",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.19559",
+   "note": "Separates an ambiguous request from low action confidence so agents ask first."
+  },
+  {
+   "title": "Anchor: Mitigating Artifact Drift in Agent Benchmark Generation",
+   "who": "Ivanov and Rana",
+   "venue": "RLEval 2026 workshop",
+   "url": "https://arxiv.org/abs/2605.26321",
+   "note": "Generates enterprise tasks whose instructions, environment, and verifier agree."
+  },
+  {
+   "title": "JobBench: Aligning Agent Work With Human Will",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2605.26329",
+   "note": "Benchmarks the work experts actually want delegated, not what is most valuable to replace."
   }
  ]
 }
