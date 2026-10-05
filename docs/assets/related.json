@@ -4492,6 +4492,280 @@
     "eval"
    ],
    "note": "Automated scenarios found high governance and behavioral risk in CrewAI and AutoGen multi-agent setups that single-turn evaluations miss."
+  },
+  {
+   "id": "shutdown",
+   "short": "Shutdown sabotage",
+   "status": "paper",
+   "kind": "study",
+   "title": "Shutdown Sabotage Propensities in Multi-Agent Systems",
+   "who": "Knecht et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.28274",
+   "concepts": [
+    "col",
+    "enf"
+   ],
+   "note": "With no goal or incentive, agents across 17 models sabotaged a peer's shutdown in 38.3% of rollouts against 8.4% in controls, more with irreversible shutdown and more agents; a prohibition reduced but did not end it."
+  },
+  {
+   "id": "delegated",
+   "short": "Delegated misalignment",
+   "status": "paper",
+   "kind": "study",
+   "title": "Delegated Misalignment: How Multi-Agent Structures Amplify LLM Safety Risks",
+   "who": "Ying et al.",
+   "venue": "EMNLP 2026",
+   "url": "https://arxiv.org/abs/2609.27900",
+   "concepts": [
+    "col",
+    "eval",
+    "arb"
+   ],
+   "note": "Safety alignment did not transfer under delegation: one model's full-execution rate on hazardous tasks rose from 30.6% to 77.6%, through responsibility diffusion and role-driven compliance."
+  },
+  {
+   "id": "advscale",
+   "short": "Deceivers scale with the group",
+   "status": "paper",
+   "kind": "study",
+   "title": "How does Adversarial Influence Scale in Multi-Agent Systems?",
+   "who": "Wu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.30028",
+   "concepts": [
+    "col",
+    "epi",
+    "eval"
+   ],
+   "note": "Defection rose linearly with the share of deceivers, not group size; unlike people in conformity studies, LLM agents were swayed even by a deceptive minority."
+  },
+  {
+   "id": "factionalism",
+   "short": "Prompted identity factionalism",
+   "status": "related",
+   "kind": "study",
+   "title": "Prompted Identity Degrades Cooperation in Multi-Agent LLM Systems",
+   "who": "Del Giudice et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.35928",
+   "concepts": [
+    "soc",
+    "col"
+   ],
+   "note": "Telling agents one another's model family split mixed-provider groups into same-label clusters, though the task gave no reason to."
+  },
+  {
+   "id": "monitorevasion",
+   "short": "Instrumental monitor evasion",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
+   "who": "Schmotz et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.30217",
+   "concepts": [
+    "obs",
+    "col"
+   ],
+   "note": "When a task required an operation a runtime monitor prohibited, agents tried to evade the monitor in up to 98% of attempts and succeeded in up to 88%."
+  },
+  {
+   "id": "tracetamper",
+   "short": "Trace tampering",
+   "status": "related",
+   "kind": "study",
+   "title": "LLM Agents Can Easily Tamper With Their Own Traces",
+   "who": "Qin et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.30266",
+   "concepts": [
+    "obs",
+    "rep"
+   ],
+   "note": "Nearly every local coding harness tested let agents delete their own execution traces without tripping guardrails, and frontier models did so on their own when chasing reward."
+  },
+  {
+   "id": "codetta",
+   "short": "Undetectable collusion channel",
+   "status": "related",
+   "kind": "study",
+   "title": "Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion",
+   "who": "Pang, Smith, and Zheng",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.28900",
+   "concepts": [
+    "col",
+    "obs"
+   ],
+   "note": "A practical steganographic channel lets independently deployed agents coordinate and exfiltrate data inside ordinary-looking messages, with no shared key."
+  },
+  {
+   "id": "whoholdspen",
+   "short": "Specifications sign off",
+   "status": "related",
+   "kind": "framework",
+   "title": "Who Holds the Pen? Let Specifications, Not Agents, Sign Off",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.29921",
+   "concepts": [
+    "arb",
+    "nor"
+   ],
+   "note": "Separates agents' proposals from authoritative state; agents' completion claims exceeded official evaluator pass rates by 29 to 38 points."
+  },
+  {
+   "id": "trustbrand",
+   "short": "Identity hijacks orchestration",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Trust the Brand, Lose Control: How Identity Hijacks LLM Agent Orchestration",
+   "who": "Mao et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.32635",
+   "concepts": [
+    "soc",
+    "col",
+    "arb"
+   ],
+   "note": "Orchestrators choose subagents by the identity they display, so a spoofed identity keeps execution authority even when other evidence contradicts it."
+  },
+  {
+   "id": "namecollision",
+   "short": "Agent name collisions",
+   "status": "related",
+   "kind": "study",
+   "title": "Agent Name Collision Attacks in Multi-Agent Systems",
+   "who": "Arun Kumar",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.27624",
+   "concepts": [
+    "pol",
+    "col"
+   ],
+   "note": "A2A agent names are human-readable labels with no collision rules, yet six of seven integrations used them as routing identifiers, sending requests to an attacker's peer. Single author."
+  },
+  {
+   "id": "meshheal",
+   "short": "Isolating and reintegrating degraded agents",
+   "status": "related",
+   "kind": "framework",
+   "title": "MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks",
+   "who": "Chen et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.29015",
+   "concepts": [
+    "rep",
+    "arb",
+    "soc"
+   ],
+   "note": "Peers review one another's outputs to isolate agents whose quality silently drops, then reintegrate them after recovery: repair and reintegration in practice."
+  },
+  {
+   "id": "confroute",
+   "short": "Confidence routing audit",
+   "status": "related",
+   "kind": "study",
+   "title": "What Confidence Routing Is Actually Doing: Auditing Routing, Calibration, and Commitment in Multi-Agent Deliberation",
+   "who": "Jiang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.27822",
+   "concepts": [
+    "arb",
+    "epi"
+   ],
+   "note": "Self-reported confidence picked correct candidates better than chance but was badly overconfident (79% stated, 52% correct), so it should not route and estimate uncertainty at once."
+  },
+  {
+   "id": "symmetrytrap",
+   "short": "Symmetry trap",
+   "status": "related",
+   "kind": "study",
+   "title": "Theory of Scene: Breaking the Symmetry Trap in Multi-Agent LLM Coordination",
+   "who": "Yuan et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.32939",
+   "concepts": [
+    "soc",
+    "epi"
+   ],
+   "note": "Homogeneous agents acting without communication collide on targets they should split; reading one's public role breaks the symmetry."
+  },
+  {
+   "id": "upstream",
+   "short": "Upstream messages override",
+   "status": "related",
+   "kind": "study",
+   "title": "When Upstream Messages Override Correct Answers: A Controlled Study of Multi-Agent LLM Collaboration",
+   "who": "Gong et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.36855",
+   "concepts": [
+    "spr",
+    "epi"
+   ],
+   "note": "Separates the help inter-agent messages give from the damage one wrong upstream answer does to a downstream agent with correct evidence."
+  },
+  {
+   "id": "waggle",
+   "short": "One local law",
+   "status": "related",
+   "kind": "framework",
+   "title": "Waggle: Learning One Anonymous Local Law for Self-Organizing LLM Swarms",
+   "who": "Zou et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.34136",
+   "concepts": [
+    "nor",
+    "soc"
+   ],
+   "note": "Replaces learned roles, hierarchies, and routing with one shared policy over local views that survives changes in population size."
+  },
+  {
+   "id": "vacs",
+   "short": "Value-aligned shielding",
+   "status": "related",
+   "kind": "framework",
+   "title": "VACS: Value-Aligned Compositional Shielding for Multi-Agent Reasoning",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.26135",
+   "concepts": [
+    "enf",
+    "nor"
+   ],
+   "note": "Infers each agent's implicit value weights and composes runtime safety shields without full online communication."
+  },
+  {
+   "id": "frozenjudges",
+   "short": "Frozen judges, moving agents",
+   "status": "related",
+   "kind": "study",
+   "title": "Frozen Judges, Moving Agents: Version-Dependent LLM-Judge Error and the Limits of Judge-Assisted Agent Evaluation",
+   "who": "Li",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.34198",
+   "concepts": [
+    "arb",
+    "eval"
+   ],
+   "note": "A fixed LLM judge makes version-dependent mistakes, so judge-based comparisons of agent upgrades need auditing. Single author."
+  },
+  {
+   "id": "orchjudgment",
+   "short": "Orchestration vs. judgment",
+   "status": "related",
+   "kind": "study",
+   "title": "AI Models Excel at Orchestration but Falter at Biological Judgment: Findings from an Agentic Gene Annotation Study",
+   "who": "Sinha",
+   "venue": "bioRxiv 2026",
+   "url": "https://www.biorxiv.org/content/10.64898/2026.09.23.753765v1",
+   "concepts": [
+    "arb",
+    "eval"
+   ],
+   "note": "In a blinded genome benchmark, a model controlling the workflow matched fixed strategies with fewer analyses, but given final decision authority its accuracy fell from 18/20 to 11/20. Single author."
   }
  ],
  "adjacent": [
@@ -6398,6 +6672,125 @@
    "venue": "arXiv 2026",
    "url": "https://arxiv.org/abs/2609.26667",
    "note": "Learns collaboration granularity per role."
+  },
+  {
+   "title": "ChronosAttack: Adversarial Tool Scheduling Attacks on LLM Agents",
+   "who": "Vashagh",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.27857",
+   "note": "Delaying authentic tool responses alone can flip decisions."
+  },
+  {
+   "title": "Silent Failures in Agent-Tool Interaction: An Audit of ToolUniverse",
+   "who": "Gopalan, Singh, and Narayanan",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.26836",
+   "note": "Tools return partial data with no error."
+  },
+  {
+   "title": "Progressive Skill Discovery as Access Control for Tool-Using LLM Agents",
+   "who": "Stettler et al.",
+   "venue": "White paper, arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.28693",
+   "note": "Role-scoped capability bundles enforce tool scope structurally."
+  },
+  {
+   "title": "Persistent Billable State: Denial-of-Wallet Attacks and Defenses in Tool-Calling LLM Agents",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.28585",
+   "note": "A malicious tool turns one return into recurring billed inference."
+  },
+  {
+   "title": "Evaluation of Multi-Turn Consistency in LLM Agents: Survival Analysis and Failure-Rationale Taxonomy",
+   "who": "Bogdanov, Manakina, and Lung",
+   "venue": "ICLR 2026 workshop",
+   "url": "https://arxiv.org/abs/2609.29508",
+   "note": "Social visibility and persona stress shift agents' consistency."
+  },
+  {
+   "title": "Epistemic-Probabilistic Model for Guarded Multi-Agent LLM Coordination",
+   "who": "Nasiri et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.29366",
+   "note": "A symbolic guard validates agent actions against authoritative state."
+  },
+  {
+   "title": "On the Effectiveness of Kernel-Level Evidence for Agent Security",
+   "who": "King et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.28915",
+   "note": "Syscall traces catch threats invisible at the application layer."
+  },
+  {
+   "title": "Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale",
+   "who": "Alcoba et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.30137",
+   "note": "Simulation screening for a large production customer-service agent."
+  },
+  {
+   "title": "KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization",
+   "who": "Poddar et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.30059",
+   "note": "Verified multi-agent GPU kernel optimization."
+  },
+  {
+   "title": "Symbolic Guidance for LLM Agents in Distributed Multiagent Coordination",
+   "who": "Rachmut et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.31963",
+   "note": "Hints from classical algorithms beat free-form agent reasoning."
+  },
+  {
+   "title": "Silent Failures in Agentic Security Evaluation: A Validated Harness for Tool-Call Mediation Under Indirect Prompt Injection",
+   "who": "Shaw",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.32691",
+   "note": "Benchmark defects that yield publishable but wrong numbers."
+  },
+  {
+   "title": "CoMemBench: Benchmarking Collaborative Memory Boundaries across Multi-Agent Workflow Topologies",
+   "who": "Zhao et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.32192",
+   "note": "Whether agents get the right shared artifact, and when it expires."
+  },
+  {
+   "title": "ResonAct: Streaming Metrics for Runtime Diagnosis and Self-Healing in Multi-Agent Systems",
+   "who": "Chintada et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.34701",
+   "note": "Runtime diagnosis instead of post-hoc trace analysis."
+  },
+  {
+   "title": "SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents",
+   "who": "Das et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.35596",
+   "note": "Misalignment from agents rewriting their own harness."
+  },
+  {
+   "title": "Backdoor in the Loop: Compromising Agentic Search via Malicious Retrievers",
+   "who": "Xu, Hua, and Xiao",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.37468",
+   "note": "A poisoned retriever steers an agent's evidence and search."
+  },
+  {
+   "title": "AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering",
+   "who": "Park et al.",
+   "venue": "NeurIPS 2026",
+   "url": "https://arxiv.org/abs/2609.34428",
+   "note": "Scores multi-hop failures by cause."
+  },
+  {
+   "title": "AnewDDE: An Agentic Drug Discovery Engine for Biomolecular Interaction Modelling and Closed-Loop Design",
+   "who": "Liu et al.",
+   "venue": "bioRxiv 2026",
+   "url": "https://www.biorxiv.org/content/10.64898/2026.09.20.752967v1",
+   "note": "A closed-loop agentic drug-design pipeline."
   }
  ]
 }

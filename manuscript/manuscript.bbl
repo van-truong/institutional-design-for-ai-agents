@@ -469,6 +469,11 @@ Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
   {{High-Frequency Trading}} in an {{Electronic Market}}. The Journal of
   Finance  \textbf{72}(3),  967--998 (2017). \doi{10.1111/jofi.12498}
 
+\bibitem{knecht2026shutdown}
+Knecht, A., Schaller, U., Summerfield, C., Hagendorff, T.: Shutdown sabotage
+  propensities in multi-agent systems (2026),
+  \url{https://arxiv.org/abs/2609.28274}
+
 \bibitem{knight1992institutions}
 Knight, J.: Institutions and Social Conflict. Political Economy of Institutions
   and Decisions, Cambridge University Press, Cambridge (1992)
@@ -981,6 +986,11 @@ Wooldridge, M., Jennings, N.R.: Intelligent agents: Theory and practice. The
   Knowledge Engineering Review  \textbf{10}(2),  115--152 (1995).
   \doi{10.1017/S0269888900008122}
 
+\bibitem{wu2026adversarial}
+Wu, A.J., Cekinmez, J., Liao, M., Narasimhan, K., Griffiths, T.L.: How does
+  adversarial influence scale in multi-agent systems? (2026),
+  \url{https://arxiv.org/abs/2609.30028}
+
 \bibitem{wu2024autogenenablingnextgenllm}
 Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X.,
   Zhang, S., Liu, J., Awadallah, A.H., White, R.W., Burger, D., Wang, C.:
@@ -1024,6 +1034,11 @@ Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
 \bibitem{yao2026competition}
 Yao, J., Chen, C., Zhang, B.: Competition and cooperation of {LLM} agents in
   games (2026), \url{https://arxiv.org/abs/2604.00487}
+
+\bibitem{ying2026delegated}
+Ying, Z., Yan, J., Luo, H., Zou, Q., Liu, A., Liu, X.: Delegated misalignment:
+  How multi-agent structures amplify {LLM} safety risks (2026),
+  \url{https://arxiv.org/abs/2609.27900}, eMNLP 2026
 
 \bibitem{zaman2026manipulation}
 Zaman, A., Nordby, E., Heiding, F.: Manipulation is task-dependent: A
