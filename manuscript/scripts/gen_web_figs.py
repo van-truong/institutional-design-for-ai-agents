@@ -4,6 +4,7 @@
   figure_nested-rings   docs/rings.js    via figs/rings-paper.html     -> Fig. 1
   figure_coleman-boat   docs/coleman.js  via figs/coleman-paper.html   -> the Coleman boat
   figure_failure-modes  docs/failures.js via figs/failures-paper.html  -> where mechanisms fail
+  figure_related-map    docs/related.js  via figs/related-paper.html   -> mind map of related efforts (Sec. 3)
 
 Serves the repo on a local port, loads each page in headless Chrome, saves the <svg> the script draws to
 figures/<name>.svg, and prints the page to a vector PDF with Chrome (librsvg cannot draw curved textPath labels).
@@ -25,6 +26,7 @@ FIGS = {
     'figure_design-space-game': ('manuscript/figs/designspace-game-paper.html', 'deontic'),  # draft: Fig. 4 with game badges
     'figure_dilemmas': ('manuscript/figs/dilemmas-paper.html', 'Extractive'),
     'figure_phenomena-map': ('manuscript/figs/phenomena-paper.html', 'Collusion'),
+    'figure_related-map': ('manuscript/figs/related-paper.html', 'Mind map'),
 }
 WIN_CHROME = '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
 
