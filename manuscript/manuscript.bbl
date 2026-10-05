@@ -98,6 +98,12 @@ Bowles, S.: Policies {{Designed}} for {{Self-Interested Citizens May
   Experiments}}. Science  \textbf{320}(5883),  1605--1609 (Jun 2008).
   \doi{10.1126/science.1152110}
 
+\bibitem{bracalesyrnikov2026energy}
+{Bracale Syrnikov}, M., Pierucci, F., Prandi, M., Galisai, M., Bisconti, P.,
+  Giarrusso, F., Nardi, D.: Draining the energy commons: Self-defeating
+  over-appropriation as a coordination failure in agentic {LLM} collectives
+  (2026), \url{https://arxiv.org/abs/2607.22188}
+
 \bibitem{brazilek2026coercion}
 Brazilek, J., Chaudhary, M., Lu, Z., Tidmarsh, M.: Coercion and deception in
   {AI}-to-{AI} management: An agentic benchmark of unprompted escalation
@@ -373,6 +379,15 @@ Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
 Hills, J., Caspary, I., {Cooper Stickland}, A.: Distributed attacks in
   persistent-state {AI} control (2026), \url{https://arxiv.org/abs/2607.02514}
 
+\bibitem{holmstrom1982moral}
+Holmstr{\"o}m, B.: Moral hazard in teams. The Bell Journal of Economics
+  \textbf{13}(2),  324--340 (1982). \doi{10.2307/3003457}
+
+\bibitem{hossain2026channelguard}
+Hossain, E., Nipu, M.M.H., Faria, F.T.J., Ornee, T.N., Sheikh, M.:
+  {ChannelGuard}: Safe models do not compose into safe multi-agent systems
+  (2026), \url{https://arxiv.org/abs/2607.19430}
+
 \bibitem{hossain2026containment}
 Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
   deployed agentic {AI} frameworks fail public-facing safety requirements
@@ -545,6 +560,10 @@ Makins, O., Angelini, O., Shams, Z., Phuong, M.: Multi-agent {AI} control:
   Distributed attacks hamper per-instance monitors (2026),
   \url{https://arxiv.org/abs/2607.07368}
 
+\bibitem{malenfant2026moralhazard}
+Malenfant, D.: Moral hazard in multi-agent language models (2026),
+  \url{https://arxiv.org/abs/2607.23982}
+
 \bibitem{martinezpena2024coleman}
 Mart{\'i}nez-Pe{\~n}a, R., Ylikoski, P.: Coupling social and ecological
   mechanisms with the {Coleman} boat. Ecology and Society  \textbf{29}(4), ~6
@@ -569,6 +588,11 @@ McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
   autoregression show how large language models are shaped by the problem they
   are trained to solve. Proceedings of the National Academy of Sciences
   \textbf{121}(41),  e2322420121 (Oct 2024). \doi{10.1073/pnas.2322420121}
+
+\bibitem{mcdonnell2026agreement}
+McDonnell, S.S., Singh, A., Pham, Q.V., Havlik, V., O'Hare, G.M.P.: Harnessing
+  disagreement: Detecting correlated agreement blindness in multi-agent triage
+  (2026), \url{https://arxiv.org/abs/2607.19899}, pAAMS 2026
 
 \bibitem{mellstromCrowdingOutBlood2008}
 Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:

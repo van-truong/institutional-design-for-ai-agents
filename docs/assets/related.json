@@ -2536,7 +2536,7 @@
   {
    "id": "energycommons",
    "short": "Draining the energy commons",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Draining the Energy Commons: Self-Defeating Over-Appropriation as a Coordination Failure in Agentic LLM Collectives",
    "who": "Bracale Syrnikov et al.",
@@ -2552,7 +2552,7 @@
   {
    "id": "channelguard",
    "short": "Safe models don't compose",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "ChannelGuard: Safe Models Do Not Compose into Safe Multi-Agent Systems",
    "who": "Hossain et al.",
@@ -2568,7 +2568,7 @@
   {
    "id": "moralhazard",
    "short": "Moral hazard among agents",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Moral Hazard in Multi-Agent Language Models",
    "who": "Malenfant",
@@ -2583,7 +2583,7 @@
   {
    "id": "agreeblind",
    "short": "Correlated agreement blindness",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Harnessing Disagreement: Detecting Correlated Agreement Blindness in Multi-Agent Triage",
    "who": "McDonnell et al.",
