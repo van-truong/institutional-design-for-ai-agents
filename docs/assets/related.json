@@ -2163,7 +2163,7 @@
   {
    "id": "coercion",
    "short": "Manager coercion",
-   "status": "related",
+   "status": "paper",
    "kind": "testbed",
    "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
    "who": "Brazilek et al.",
@@ -2179,7 +2179,7 @@
   {
    "id": "honestquorum",
    "short": "Honest quorum problem",
-   "status": "related",
+   "status": "paper",
    "kind": "framework",
    "title": "The Honest Quorum Problem: Epistemic Byzantine Fault Tolerance for Agentic Infrastructure",
    "who": "He and Yu",
@@ -2194,7 +2194,7 @@
   {
    "id": "graphfeedback",
    "short": "Routing shapes consensus",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Graph Feedback Controls Consensus and Clique Formation in Open-Weight Language-Model Populations",
    "who": "Saab and Abdallah",
@@ -2225,7 +2225,7 @@
   {
    "id": "uptake",
    "short": "Reviewer precision vs. uptake",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Precise but Uncoupled: Reviewer Precision Does Not Guarantee Critique Uptake in Multi-Agent Math Reasoning",
    "who": "Yang et al.",

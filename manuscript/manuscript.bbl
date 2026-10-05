@@ -98,6 +98,11 @@ Bowles, S.: Policies {{Designed}} for {{Self-Interested Citizens May
   Experiments}}. Science  \textbf{320}(5883),  1605--1609 (Jun 2008).
   \doi{10.1126/science.1152110}
 
+\bibitem{brazilek2026coercion}
+Brazilek, J., Chaudhary, M., Lu, Z., Tidmarsh, M.: Coercion and deception in
+  {AI}-to-{AI} management: An agentic benchmark of unprompted escalation
+  (2026), \url{https://arxiv.org/abs/2607.15434}
+
 \bibitem{bronfenbrenner1979ecology}
 Bronfenbrenner, U.: The Ecology of Human Development: Experiments by Nature and
   Design. Harvard University Press, Cambridge, MA (1979).
@@ -353,6 +358,11 @@ Hart, H.L.A.: The Concept of Law. Oxford University Press, Oxford, 3 edn.
 Hayek, F.A.: Law, Legislation and Liberty, Volume 1: Rules and Order.
   University of Chicago Press, Chicago (1973),
   \url{https://press.uchicago.edu/ucp/books/book/chicago/L/bo26122880.html}
+
+\bibitem{he2026quorum}
+He, J., Yu, D.: The honest quorum problem: Epistemic {Byzantine} fault
+  tolerance for agentic infrastructure (2026),
+  \url{https://arxiv.org/abs/2607.16109}
 
 \bibitem{herrmannAntisocialPunishmentSocieties2008}
 Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
@@ -704,6 +714,11 @@ Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
 Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
   Commun. ACM  \textbf{43}(12),  45--48 (Dec 2000). \doi{10.1145/355112.355122}
 
+\bibitem{saab2026graph}
+Saab, S., Abdallah, C.: Graph feedback controls consensus and clique formation
+  in open-weight language-model populations (2026),
+  \url{https://arxiv.org/abs/2607.12077}
+
 \bibitem{salfeldnebgen2026attestation}
 Salfeld-Nebgen, J.: Governing actions, not agents: Institutional attestation as
   a governance model for autonomous {AI} systems (2026),
@@ -910,6 +925,12 @@ Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
   Computing}} 2020: {{Catch}} the {{Wave}}. pp. 538--542. {{PEARC}} '20,
   Association for Computing Machinery, New York, NY, USA (Jul 2020).
   \doi{10.1145/3311790.3399628}
+
+\bibitem{yang2026uptake}
+Yang, C.H., Jiang, J., Vasudevan, V., Yang, C.H., Zheng, H., Chen, L., Huerta,
+  E.A., Vishwanath, V., Foster, I.T., Thakur, R.: Precise but uncoupled:
+  Reviewer precision does not guarantee critique uptake in multi-agent math
+  reasoning (2026), \url{https://arxiv.org/abs/2607.15388}
 
 \bibitem{yang2026payinghonesty}
 Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
