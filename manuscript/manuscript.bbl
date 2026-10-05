@@ -410,6 +410,11 @@ Joshi, A., Finin, T., Joshi, K.P., Kagal, L.: Deontic policies for runtime
   \url{https://arxiv.org/abs/2606.19464}, to appear, 2026 IEEE Symposium on
   Agentic Services
 
+\bibitem{kaliyev2026noisefloor}
+Kaliyev, A.T., Maryanskyy, A.: How much coordination gain is real? {A} paired
+  noise-floor protocol for multi-agent {LLM} benchmarks (2026),
+  \url{https://arxiv.org/abs/2606.20695}
+
 \bibitem{kirilenkoFlashCrashHighFrequency2017}
 Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
   {{High-Frequency Trading}} in an {{Electronic Market}}. The Journal of
@@ -674,6 +679,11 @@ Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
 Resnick, P., Kuwabara, K., Zeckhauser, R., Friedman, E.: Reputation systems.
   Commun. ACM  \textbf{43}(12),  45--48 (Dec 2000). \doi{10.1145/355112.355122}
 
+\bibitem{salfeldnebgen2026attestation}
+Salfeld-Nebgen, J.: Governing actions, not agents: Institutional attestation as
+  a governance model for autonomous {AI} systems (2026),
+  \url{https://arxiv.org/abs/2606.26298}
+
 \bibitem{schellingStrategyConflictNew1960}
 Schelling, T.C.: The Strategy of Conflict. Harvard University Press, Cambridge,
   MA (1960)
@@ -884,6 +894,16 @@ Yang, M., Fan, S., Yu, K., Wang, D., Sun, L., Peng, H., Yu, P.S., Liu, Z.:
 \bibitem{yao2026competition}
 Yao, J., Chen, C., Zhang, B.: Competition and cooperation of {LLM} agents in
   games (2026), \url{https://arxiv.org/abs/2604.00487}
+
+\bibitem{zaman2026manipulation}
+Zaman, A., Nordby, E., Heiding, F.: Manipulation is task-dependent: A
+  multi-axis, multi-environment evaluation of frontier {LLMs} (2026),
+  \url{https://arxiv.org/abs/2606.25899}
+
+\bibitem{zhang2026recipe}
+Zhang, L., Wang, J., Xue, F., Chu, Y.Y.: Post-training recipe, more than model
+  family, shapes multi-agent {LLM} conversational behavior (2026),
+  \url{https://arxiv.org/abs/2606.20632}
 
 \bibitem{zheng2023judging}
 Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,

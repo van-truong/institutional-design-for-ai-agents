@@ -120,6 +120,7 @@
     const gEdges = el("g", { class: "rel-edges" }, svg);
     const gHubs = el("g", { class: "rel-hubs" }, svg);
     const gNodes = el("g", { class: "rel-nodes" }, svg);
+    const gLabels = PAPER ? el("g", { class: "rel-labels" }, svg) : null;   // print: labels sit above every dot
     const edges = [];
     nodes.forEach((n) => n.it.concepts.forEach((k) => {
       const h = H_[k];
@@ -148,14 +149,14 @@
       if (it.kind === "program" || it.kind === "policy")
         el("rect", { x: n.x - 6.5, y: n.y - 6.5, width: 13, height: 13, transform: `rotate(45 ${n.x} ${n.y})`, fill: col, stroke: "#fff", "stroke-width": 1.5 }, g);
       else
-        el("circle", { cx: n.x, cy: n.y, r: 7, fill: filled ? col : "#fff", stroke: col, "stroke-width": filled ? 1.5 : 2.4 }, g);
+        el("circle", { cx: n.x, cy: n.y, r: PAPER && !filled ? 5 : 7, fill: filled ? col : "#fff", stroke: col, "stroke-width": filled ? 1.5 : PAPER ? 1.8 : 2.4 }, g);
       const lp = n.lab;
       if (PAPER && !lp) return;
       if (lp && lp.lead) {
         const lx = lp.anchor === "start" ? lp.b[0] : lp.b[2], ly = (lp.b[1] + lp.b[3]) / 2;
         el("line", { x1: n.x, y1: n.y, x2: lx, y2: ly, stroke: "#8A8A8A", "stroke-width": 1.2 }, g).parentNode.insertBefore(g.lastChild, g.firstChild);
       }
-      const lab = el("text", { x: lp ? lp.x : n.x + 11, y: lp ? lp.y : n.y + 4, "text-anchor": lp ? lp.anchor : "start", "font-size": FS.item, "font-weight": 700, fill: "#2C2C2A", class: lp ? "rel-label" : "rel-label rel-label-hover" }, g);
+      const lab = el("text", { x: lp ? lp.x : n.x + 11, y: lp ? lp.y : n.y + 4, "text-anchor": lp ? lp.anchor : "start", "font-size": FS.item, "font-weight": 700, fill: "#2C2C2A", class: lp ? "rel-label" : "rel-label rel-label-hover" }, gLabels || g);
       if (PAPER) { lab.setAttribute("paint-order", "stroke"); lab.setAttribute("stroke", "#fff"); lab.setAttribute("stroke-width", 4); lab.setAttribute("stroke-linejoin", "round"); }
       lab.textContent = it.short;
       n.g = g;
