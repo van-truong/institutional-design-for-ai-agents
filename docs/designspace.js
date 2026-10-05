@@ -1,6 +1,6 @@
-/* Interactive design space of agent institutions (paper Fig. 4). Seven institutional functions, grouped into an
-   information layer and a consequence layer, say what an institution must do; six mechanism families, split into
-   soft and hard channels, say how it acts on agents. Function details follow Table 1; family definitions follow
+/* Interactive design space of agent institutions (paper Fig. 6). Seven institutional functions, grouped into those
+   that make behavior expected and visible and those that respond to it, say what an institution must do; six mechanism
+   families, grouped into those that change the game and those that shape interaction over time, say how it acts on agents. Function details follow Table 1; family definitions follow
    Section 4. Hover, tap, or tab to any node to trace its branch. Palette: figs/PALETTE.md. */
 (function () {
   const stage = document.getElementById("ds-stage");
@@ -30,29 +30,29 @@
   };
   // Section 4: what each family modifies
   const FAMS = {
-    Normative: ["beliefs", "Imposes a deontic layer that prescribes which actions are permissible, independently of which are feasible or profitable."],
+    Normative: ["beliefs", "Says which actions are allowed, separately from which are possible or profitable."],
     Social: ["relationships", "Shapes the interaction structure: who is in the group, who interacts with whom, and whether agents can select or exclude partners."],
-    Epistemic: ["information", "Modifies the information available to agents, and hence their beliefs about one another's types, without necessarily changing the common prior: what agents can observe or verify about one another."],
+    Epistemic: ["information", "Changes what agents know about one another: what they can observe or verify."],
     Incentive: ["payoffs", "Modifies each agent's payoff function, reshaping the payoff consequences of action profiles."],
     Constraint: ["access", "Modifies each agent's action set, restricting or expanding the actions that are feasible."],
     Restorative: ["repair", "Shapes what happens after a deviation: whether and how agents re-enter cooperative arrangements, make restitution, or receive corrective feedback."],
   };
   const TREE = [
     { id: "fun", label: "INSTITUTIONAL FUNCTIONS", c: PLUM,
-      text: "What an institution must do. The seven functions fall into an information layer and a consequence layer.",
+      text: "What an institution must do. Three functions make behavior expected and visible; four act on behavior once it is seen.",
       groups: [
-        { id: "info", label: "Information layer", c: INFO, leaves: ["Norms & protocols", "Monitoring", "Reputation"],
+        { id: "info", label: "Expect & observe", c: INFO, leaves: ["Norms & protocols", "Monitoring", "Reputation"],
           text: "Functions that set what behavior is expected, what is observable, and how past behavior bears on future trust." },
-        { id: "cons", label: "Consequence layer", c: CONS, leaves: ["Sanctions", "Constraints", "Adjudication & appeal", "Repair & reintegration"],
+        { id: "cons", label: "Respond & correct", c: CONS, leaves: ["Sanctions", "Constraints", "Adjudication & appeal", "Repair & reintegration"],
           text: "Functions that set what follows behavior, what actions are possible, who decides what happened, and how harm is corrected." },
       ] },
     { id: "fam", label: "MECHANISM FAMILIES", c: VIO,
-      text: "How an institution acts on agents. Two families act directly on components of a Bayesian game (actions, payoffs) and a third on agents' information about it; three capture interaction structure over time (norms, relationships, repair).",
+      text: "How an institution acts on agents. Three families change the game agents play (what they can do, what their choices pay, what they know); three shape how interaction unfolds over time (norms, relationships, repair).",
       groups: [
-        { id: "soft", label: "Soft channels", c: VIO, leaves: ["Normative", "Social", "Epistemic"],
-          text: "The normative, social, and epistemic families." },
-        { id: "hard", label: "Hard channels", c: VIO, leaves: ["Incentive", "Constraint", "Restorative"],
-          text: "The incentive, constraint, and restorative families." },
+        { id: "game", label: "Change the game", c: VIO, leaves: ["Constraint", "Incentive", "Epistemic"],
+          text: "The constraint, incentive, and epistemic families: what agents can do, what their choices pay, and what they know about one another." },
+        { id: "time", label: "Shape interaction", c: VIO, leaves: ["Normative", "Social", "Restorative"],
+          text: "The normative, social, and restorative families: which actions are allowed, who interacts with whom, and what happens after a deviation." },
       ] },
   ];
 
@@ -78,8 +78,8 @@
     "aria-labelledby": "ds-title ds-desc" }, stage);
   el("title", { id: "ds-title" }, svg).textContent = "Design space of agent institutions";
   el("desc", { id: "ds-desc" }, svg).textContent =
-    "A tree with the agent institution at the top. It branches into seven institutional functions, in an information layer and a consequence layer, " +
-    "and six mechanism families, in soft and hard channels.";
+    "A tree with the agent institution at the top. It branches into seven institutional functions, three that make behavior expected and visible and four that respond to it, " +
+    "and six mechanism families, three that change the game agents play and three that shape interaction over time.";
   const defs = el("defs", {}, svg);
   const sh = el("filter", { id: "ds-shadow", x: "-10%", y: "-30%", width: "120%", height: "170%" }, defs);
   el("feDropShadow", { dx: 0, dy: 3, stdDeviation: 4, "flood-color": INK, "flood-opacity": 0.14 }, sh);

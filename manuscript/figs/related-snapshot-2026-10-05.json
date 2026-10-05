@@ -137,7 +137,7 @@
   {
    "id": "magentic",
    "short": "Magentic Marketplace",
-   "status": "paper",
+   "status": "related",
    "kind": "testbed",
    "title": "Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets",
    "who": "Bansal et al.",
@@ -216,7 +216,7 @@
   {
    "id": "polis",
    "short": "POLIS",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Multi-Agent AI Safety as an Institutional Design Problem",
    "who": "Abdullah X",
@@ -356,7 +356,7 @@
   {
    "id": "mabench",
    "short": "MultiAgentBench",
-   "status": "paper",
+   "status": "related",
    "kind": "testbed",
    "title": "MultiAgentBench: Evaluating the Collaboration and Competition of LLM Agents",
    "who": "Zhu et al.",
@@ -1485,7 +1485,7 @@
   {
    "id": "attestation",
    "short": "Institutional attestation",
-   "status": "paper",
+   "status": "related",
    "kind": "framework",
    "title": "Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems",
    "who": "Salfeld-Nebgen",
@@ -1546,7 +1546,7 @@
   {
    "id": "recipe",
    "short": "Post-training recipe",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Post-Training Recipe, More Than Model Family, Shapes Multi-Agent LLM Conversational Behavior",
    "who": "Zhang et al.",
@@ -1608,7 +1608,7 @@
   {
    "id": "noisefloor",
    "short": "Coordination noise floor",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "How Much Coordination Gain Is Real? A Paired Noise-Floor Protocol for Multi-Agent LLM Benchmarks",
    "who": "Kaliyev and Maryanskyy",
@@ -1892,7 +1892,7 @@
   {
    "id": "persistattack",
    "short": "Gradual attacks across PRs",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Distributed Attacks in Persistent-State AI Control",
    "who": "Hills, Caspary, and Cooper Stickland",
@@ -1907,7 +1907,7 @@
   {
    "id": "otr",
    "short": "Public vs. off-the-record",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
    "who": "Ghaffarizadeh et al.",

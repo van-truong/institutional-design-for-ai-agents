@@ -138,8 +138,11 @@
   box("A", 60, 70, 276, 108, C.amber, "A. Institutional change", ["e.g. add graduated sanctions", "or an appeal step"], "human, agent, or mixed");
   box("D", 664, 70, 276, 108, C.green, "D. Group outcomes", ["cooperation, enforcement cost,", "false punishment, repair"], "human, agent, or mixed");
   box("C", 664, 346, 276, 132, C.violet, "C. Agent behavior", ["what each model does", "with its new options"]);
-  const bBox = box("B", 36, 326, 346, 172, C.blue, "B. Each agent's action situation", [], null, 18);
-  // Ostrom's seven rule types as chips
+  const bBox = PAPER
+    ? box("B", 36, 326, 346, 172, C.blue, "B. What each agent faces", ["its permissions, tools, and budgets;", "its context, memory, and instructions;", "and what its underlying model can do"], null, 19)
+    : box("B", 36, 326, 346, 172, C.blue, "B. Each agent's action situation", [], null, 18);
+  // Ostrom's seven rule types as chips (website only; the paper keeps box B in plain words)
+  if (!PAPER) {
   const rows = [["boundary", "position", "choice"], ["information", "aggregation"], ["payoff", "scope"]];
   rows.forEach((row, ri) => {
     const widths = row.map((r) => r.length * 8.4 + 24);
@@ -153,6 +156,7 @@
     });
   });
   text(209, 488, "Ostrom's seven rule types", { "text-anchor": "middle", "font-size": 13, "font-style": "italic", fill: MUT }, bBox);
+  }
 
   // failure tags
   const fail = (key, x, y, letter, label) => {
