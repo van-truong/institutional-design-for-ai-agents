@@ -148,6 +148,14 @@ Das, A., Ponde, J., More, M., Gupta, D.: You can't escape your own activations:
   Evaluation awareness and multi-agent monitoring (2026),
   \url{https://arxiv.org/abs/2609.03035}
 
+\bibitem{deck2026normcore}
+Deck, L., Allmendinger, S., M{\"u}ller, L., K{\"u}hl, N.: Normative common
+  ground replication ({NormCoRe}): Replication-by-translation for studying
+  norms in multi-agent {AI}. In: Proceedings of the 2026 {ACM} Conference on
+  Fairness, Accountability, and Transparency. pp. 1881--1902. {FAccT} '26,
+  Association for Computing Machinery, New York, NY, USA (2026).
+  \doi{10.1145/3805689.3806731}
+
 \bibitem{delimitrouQuasarResourceefficientQoSaware2014}
 Delimitrou, C., Kozyrakis, C.: Quasar: Resource-efficient and {{QoS-aware}}
   cluster management. In: Proceedings of the 19th International Conference on
@@ -571,6 +579,13 @@ Nowak, M.A.: Five rules for the evolution of cooperation. Science
   \textbf{314}(5805),  1560--1563 (2006). \doi{10.1126/science.1133755},
   \url{https://www.science.org/doi/abs/10.1126/science.1133755}
 
+\bibitem{ohalloran2026houserules}
+O'Halloran, T., Zhuang, A., Zhang, M., Soubeste, T., Sallinen, A., Krsteski,
+  S., Meyer, C., Allegre, G., Seiler, K.: House rules: Institutional design in
+  multi-agent {LLM} code markets. In: Second Workshop on Agents in the Wild:
+  Safety, Security, and Beyond, International Conference on Machine Learning
+  ({ICML}) (2026), \url{https://openreview.net/forum?id=sXuKYyXCSs}
+
 \bibitem{ostromGoverningCommonsEvolution1990}
 Ostrom, E.: Governing the {{Commons}}: {{The Evolution}} of {{Institutions}}
   for {{Collective Action}}. Political {{Economy}} of {{Institutions}} and
@@ -807,6 +822,10 @@ Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X.,
 Wu, Y., Liang, S., Zhang, C., Wang, Y., Zhang, Y., Guo, H., Tang, R., Liu, Y.:
   From {{Human Memory}} to {{AI Memory}}: {{A Survey}} on {{Memory Mechanisms}}
   in the {{Era}} of {{LLMs}} (Apr 2025). \doi{10.48550/arXiv.2504.15965}
+
+\bibitem{x2026polis}
+X, A.: Multi-agent {AI} safety as an institutional design problem (2026),
+  \url{https://arxiv.org/abs/2608.09828}
 
 \bibitem{yalimDynamicallyControllingSlurms2020}
 Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
