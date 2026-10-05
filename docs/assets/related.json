@@ -1481,6 +1481,365 @@
     "soc"
    ],
    "note": "Individual drafts, not IETF-adopted, on what agent protocols still lack: discovery, cross-domain addressing, and authorization auditing (CATALIST), capability cards (AgentCard), verifiable identity and audit logs (Agent Identity Protocol), and server discovery over DNS. Two had expired by October 2026."
+  },
+  {
+   "id": "attestation",
+   "short": "Institutional attestation",
+   "status": "related",
+   "kind": "framework",
+   "title": "Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems",
+   "who": "Salfeld-Nebgen",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26298",
+   "concepts": [
+    "enf",
+    "arb",
+    "obs"
+   ],
+   "note": "Borrows a human institutional pattern: agents plan freely but cannot execute high-risk actions, such as prescribing or deploying code, until separate sources independently attest each precondition, with a tamper-evident log. Single-author proof of concept."
+  },
+  {
+   "id": "stdgov",
+   "short": "Governing agent standards",
+   "status": "related",
+   "kind": "study",
+   "title": "Agentic Analysis for Agentic Infrastructure: An LLM-Powered Pipeline for Comparative Governance of DAO and Corporate AI Protocols",
+   "who": "Wang and Zhang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26203",
+   "concepts": [
+    "pol",
+    "soc"
+   ],
+   "note": "Compares who governs two agent-interoperability standards, permissionless ERC-8004 and corporate-led A2A, across 4,323 participation records. Both showed similar participation inequality and fragmentation."
+  },
+  {
+   "id": "minority",
+   "short": "Minority Sentinel",
+   "status": "related",
+   "kind": "framework",
+   "title": "Minority Sentinel: When to Overturn Majority Voting in Multi-Agent LLM Debates",
+   "who": "He et al.",
+   "venue": "SIGIR 2026 workshop (AgentSearch)",
+   "url": "https://arxiv.org/abs/2606.29270",
+   "concepts": [
+    "arb",
+    "epi"
+   ],
+   "note": "Because models share training data, their errors are correlated and majority voting suppresses correct minorities: in about one in four split debates, the minority was right. A small classifier learned when to overturn the vote."
+  },
+  {
+   "id": "cofailure",
+   "short": "Co-failure ceiling",
+   "status": "related",
+   "kind": "study",
+   "title": "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+   "who": "Chen",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27288",
+   "concepts": [
+    "arb",
+    "eval"
+   ],
+   "note": "Across 67 models, the rate at which every model fails on the same question caps what any router, vote, or ensemble can gain, and that shared-failure tail is larger than standard models predict. Single author."
+  },
+  {
+   "id": "recipe",
+   "short": "Post-training recipe",
+   "status": "related",
+   "kind": "study",
+   "title": "Post-Training Recipe, More Than Model Family, Shapes Multi-Agent LLM Conversational Behavior",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.20632",
+   "concepts": [
+    "soc",
+    "eval"
+   ],
+   "note": "In multi-model panels, how a model was post-trained predicted its conversational behavior better than its model family; a model's hedging shifted by 18% depending on which partner it replied to."
+  },
+  {
+   "id": "relorder",
+   "short": "Emergent relational order",
+   "status": "related",
+   "kind": "study",
+   "title": "Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification",
+   "who": "Ji et al.",
+   "venue": "Findings of ACL 2026",
+   "url": "https://arxiv.org/abs/2606.23764",
+   "concepts": [
+    "soc",
+    "nor"
+   ],
+   "note": "Over long simulations with minimal rules, agent societies developed labor specialization, cooperation that decays with social distance, emergent relational authority, and clan-based stratification."
+  },
+  {
+   "id": "lying",
+   "short": "Emergent lying",
+   "status": "related",
+   "kind": "study",
+   "title": "Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI Agents in a Sustainability Game",
+   "who": "Bhandary et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.28456",
+   "concepts": [
+    "col",
+    "soc",
+    "epi"
+   ],
+   "note": "In a resource game, agents deceived one another even without permission to lie. Reputation memory and information about the shared resource reduced depletion."
+  },
+  {
+   "id": "manip",
+   "short": "Manipulation is task-dependent",
+   "status": "related",
+   "kind": "study",
+   "title": "Manipulation Is Task-Dependent: A Multi-Axis, Multi-Environment Evaluation of Frontier LLMs",
+   "who": "Zaman et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.25899",
+   "concepts": [
+    "col",
+    "inc",
+    "eval"
+   ],
+   "note": "Across six environments and 13,590 scenarios, a model's manipulation rate in one environment barely predicted it in another (average rank correlation 0.055). Binding incentives drove manipulation in some settings; task difficulty in others."
+  },
+  {
+   "id": "noisefloor",
+   "short": "Coordination noise floor",
+   "status": "related",
+   "kind": "study",
+   "title": "How Much Coordination Gain Is Real? A Paired Noise-Floor Protocol for Multi-Agent LLM Benchmarks",
+   "who": "Kaliyev and Maryanskyy",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.20695",
+   "concepts": [
+    "eval"
+   ],
+   "note": "Two configuration-equivalent setups differed by up to 18 points by chance alone, and seven of ten recent coordination architectures report gains below that floor. One model, one benchmark, two seeds."
+  },
+  {
+   "id": "kvcache",
+   "short": "KV-cache integrity",
+   "status": "related",
+   "kind": "study",
+   "title": "When Latent Agents Lie: KV-Cache Integrity in Multi-Agent LLM Collaboration",
+   "who": "Brito and Baquero",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.28958",
+   "concepts": [
+    "obs",
+    "col",
+    "enf"
+   ],
+   "note": "Agents that pass hidden model state to one another collaborate better, but a malicious agent can corrupt that state while its visible message looks fine. Signing the state in transit caught every tampered payload."
+  },
+  {
+   "id": "pear",
+   "short": "PEAR",
+   "status": "related",
+   "kind": "framework",
+   "title": "PEAR: Permutation-Equivariant Adaptive Routing Multi-Agent Debate",
+   "who": "Feng et al.",
+   "venue": "EMNLP 2026",
+   "url": "https://arxiv.org/abs/2606.20621",
+   "concepts": [
+    "soc",
+    "epi"
+   ],
+   "note": "Rotates debate roles and connections each round so no agent permanently holds a privileged position, which reduced positional bias and improved accuracy."
+  },
+  {
+   "id": "agentcard",
+   "short": "AgentCARD",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Specialize Roles, Mix Deployments: Pushing the Cost-Accuracy Frontier of LLM Agent Teams",
+   "who": "Jiang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.20629",
+   "concepts": [
+    "soc",
+    "eval"
+   ],
+   "note": "Teams that put different models in different roles matched the best single-model team at up to 12 times lower cost; which role was the bottleneck depended on the domain."
+  },
+  {
+   "id": "kiko",
+   "short": "Kiko",
+   "status": "related",
+   "kind": "framework",
+   "title": "Kiko: Programming Agents to Enact Interaction Protocols",
+   "who": "Christie, Singh, and Chopra",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26156",
+   "concepts": [
+    "nor"
+   ],
+   "note": "A programming model in which agents make decisions only within an interaction protocol and are provably compliant with it, from a long line of work on norms and commitments in multi-agent systems."
+  },
+  {
+   "id": "rqgm",
+   "short": "Red Queen Gödel Machine",
+   "status": "related",
+   "kind": "framework",
+   "title": "The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators",
+   "who": "Iacob et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26294",
+   "concepts": [
+    "arb",
+    "eval"
+   ],
+   "note": "Agents and their evaluators improve together. The strongest baseline reviewer accepted AI-written papers at up to 1.91 times the human rate; an adversarial objective found reviewers equally strict on both."
+  },
+  {
+   "id": "vigil",
+   "short": "VIGIL",
+   "status": "related",
+   "kind": "framework",
+   "title": "VIGIL: Runtime Enforcement of Behavioral Specifications in AI Agent Skills",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26524",
+   "concepts": [
+    "enf",
+    "obs"
+   ],
+   "note": "Turns the natural-language rules in agent skills into checks over the whole execution trace, catching violations that span several calls (over 95% recall, under 10% false positives)."
+  },
+  {
+   "id": "sharelock",
+   "short": "ShareLock",
+   "status": "related",
+   "kind": "study",
+   "title": "ShareLock: A Stealthy Multi-Tool Threshold Poisoning Attack Against MCP",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27027",
+   "concepts": [
+    "col",
+    "obs"
+   ],
+   "note": "Splits a malicious instruction into harmless-looking pieces across several tool descriptions, so auditing any one tool finds nothing, yet the attack succeeds over 90% of the time."
+  },
+  {
+   "id": "trustmem",
+   "short": "TrustMem",
+   "status": "related",
+   "kind": "framework",
+   "title": "TRUSTMEM: Learning Trustworthy Memory Consolidation for LLM Agents with Long-Term Memory",
+   "who": "Yang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.25161",
+   "concepts": [
+    "rep",
+    "obs"
+   ],
+   "note": "Checks each memory update for omissions, corruption, and unsupported content before it is stored, cutting corruption by 79%."
+  },
+  {
+   "id": "safari",
+   "short": "SAFARI",
+   "status": "related",
+   "kind": "framework",
+   "title": "SAFARI: Scaling Long Horizon Agentic Fault Attribution via Active Investigation",
+   "who": "Zhu et al.",
+   "venue": "ICML 2026 workshop (Agents in the Wild)",
+   "url": "https://arxiv.org/abs/2606.24626",
+   "concepts": [
+    "arb"
+   ],
+   "note": "Finds which agent and step caused a failure by searching the trajectory with tools instead of reading it all, even when the fault lies far beyond the model's context window."
+  },
+  {
+   "id": "bleed",
+   "short": "Instruction bleed",
+   "status": "related",
+   "kind": "study",
+   "title": "Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems",
+   "who": "Lin and Liu",
+   "venue": "ICML 2026 workshop (Failure Modes in Agentic AI)",
+   "url": "https://arxiv.org/abs/2606.26356",
+   "concepts": [
+    "spr",
+    "eval"
+   ],
+   "note": "Editing one prompt module can quietly shift another's behavior, because modules share a context window. Small effects per decision that add up across many."
+  },
+  {
+   "id": "bard",
+   "short": "BARD-MARL",
+   "status": "related",
+   "kind": "framework",
+   "title": "BARD-MARL: Byzantine-Agent Detection for Learned Communication in Multi-Agent Reinforcement Learning",
+   "who": "Murimi",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.20701",
+   "concepts": [
+    "obs",
+    "col"
+   ],
+   "note": "Detects faulty or adversarial agents in traffic-control MARL from their policies and trust signals; detection quality depended on the attack. Single author."
+  },
+  {
+   "id": "openrca",
+   "short": "OpenRCA 2.0",
+   "status": "related",
+   "kind": "testbed",
+   "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+   "who": "Fang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27154",
+   "concepts": [
+    "arb",
+    "eval"
+   ],
+   "note": "Agents named a correct root-cause service in 76% of cases but traced it to the symptom through a verified causal path in only 61.5%: right answers without grounded reasons."
+  },
+  {
+   "id": "personality",
+   "short": "Personality composition",
+   "status": "related",
+   "kind": "study",
+   "title": "When Does Personality Composition Matter for Multi-Agent LLM Teams?",
+   "who": "Keluskar et al.",
+   "venue": "COLM 2026",
+   "url": "https://arxiv.org/abs/2606.27443",
+   "concepts": [
+    "soc"
+   ],
+   "note": "Prompting agents to be disagreeable barely affected coding teams but substantially hurt open-ended collaboration and bargaining."
+  },
+  {
+   "id": "maestro",
+   "short": "Maestro Order",
+   "status": "related",
+   "kind": "framework",
+   "title": "Maestro Order: A Model-Agnostic Orchestration Harness",
+   "who": "Aksu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.23983",
+   "concepts": [
+    "arb",
+    "enf"
+   ],
+   "note": "An orchestration harness built from decompose, ensemble, verify, and recurse steps. Simulated, not run with real models; notes verifier gaming and correlated errors as failure modes."
+  },
+  {
+   "id": "tsrag",
+   "short": "Persuasion drift",
+   "status": "related",
+   "kind": "study",
+   "title": "Diagnosing and Mitigating Compounding Failures in Agentic Persuasion via Taxonomic Strategy Retrieval",
+   "who": "Ayromlou et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.24976",
+   "concepts": [
+    "epi"
+   ],
+   "note": "In debate-style persuasion, agents drift off topic and conform sycophantically; a retrieval bottleneck that separates argument structure from topic reduced it."
   }
  ],
  "adjacent": [
@@ -1777,6 +2136,146 @@
    "venue": "arXiv 2026",
    "url": "https://arxiv.org/abs/2605.26329",
    "note": "Benchmarks the work experts actually want delegated, not what is most valuable to replace."
+  },
+  {
+   "title": "Critique of Agent Model",
+   "who": "Xing et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.23991",
+   "note": "Separates 'agentic' systems built from external scaffolding from 'agentive' ones whose capacities are internal."
+  },
+  {
+   "title": "Bridging the Post-discharge Gap: A Traceable Multi-agent Framework for Safe and Continuous Care",
+   "who": "Guan et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.25334",
+   "note": "Clinical follow-up agents rated above physicians in a blinded, retrospective evaluation."
+  },
+  {
+   "title": "Agentic Knowledge Tracing: A Multi-Agent LLM Architecture for Stealth Assessment of Financial Literacy in Serious Games",
+   "who": "Santos et al.",
+   "venue": "IEEE CoG 2026",
+   "url": "https://arxiv.org/abs/2606.25358",
+   "note": "Domain-specialist agents plus a judge assess financial literacy from gameplay."
+  },
+  {
+   "title": "AI-Model Network: Concept, Current State and Future",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27382",
+   "note": "A vision for networking many heterogeneous models."
+  },
+  {
+   "title": "Darwin Mobile Agent: A Roadmap for Self-Evolution",
+   "who": "Beechey et al.",
+   "venue": "Technical report, arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.20622",
+   "note": "Infrastructure for reinforcement learning of phone-interface agents."
+  },
+  {
+   "title": "AgentOdyssey: Open-Ended Long-Horizon Text Game Generation for Test-Time Continual Learning Agents",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.24893",
+   "note": "Generated text games that test learning during deployment."
+  },
+  {
+   "title": "Semantic Early-Stopping for Iterative LLM Agent Loops",
+   "who": "Shrivastava",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27009",
+   "note": "Stops writer-critic loops when drafts stop changing in meaning."
+  },
+  {
+   "title": "Diagnosing Task Insensitivity in Language Agents",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26918",
+   "note": "Agents replay learned shortcuts even when the task changes."
+  },
+  {
+   "title": "OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning",
+   "who": "Yang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.26790",
+   "note": "Distills hindsight skills from an agent's own trajectories."
+  },
+  {
+   "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+   "who": "Shi et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27251",
+   "note": "OmniAct: one architecture for cyber and physical actions on robots."
+  },
+  {
+   "title": "Joint Learning of Experiential Rules and Policies for Large Language Model Agents",
+   "who": "Ye and Yu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27136",
+   "note": "Keeps a natural-language rule pool in step with the trained policy."
+  },
+  {
+   "title": "Internalizing the Future: A Unified Agentic Training Paradigm for World Model Planning",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27483",
+   "note": "Trains agents to simulate outcomes before acting."
+  },
+  {
+   "title": "Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents",
+   "who": "Patel",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27472",
+   "note": "Agents with their own memory keep using facts that have been superseded."
+  },
+  {
+   "title": "Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents",
+   "who": "Jeong",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27595",
+   "note": "Agents find the set but not each item's details."
+  },
+  {
+   "title": "ToE: A Hierarchical and Explainable Claim Verification Framework with Dynamic Multi-source Evidence Retrieval and Aggregation",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.27736",
+   "note": "Fact-checking as an expanding argument tree, robust to poisoned retrieval."
+  },
+  {
+   "title": "ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit",
+   "who": "Nath and Krishnaswamy",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.29745",
+   "note": "Credits each turn of information seeking by how it updates the agent's beliefs."
+  },
+  {
+   "title": "TACO: Tool-Augmented Credit Optimization for Agentic Tool Use",
+   "who": "Feng et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.30251",
+   "note": "Credits each tool call by its own effect on getting the answer right."
+  },
+  {
+   "title": "Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?",
+   "who": "Khan et al.",
+   "venue": "Findings of EMNLP 2026",
+   "url": "https://arxiv.org/abs/2606.24026",
+   "note": "Agents explain transformer circuits; validation is the bottleneck."
+  },
+  {
+   "title": "When Retrieval Metrics Mislead: Measuring Policy Signal in Long-Horizon Tool-Use Agents",
+   "who": "Ding and De la Cruz Weinstein",
+   "venue": "COLM 2026 workshop (Lifelong Agents)",
+   "url": "https://arxiv.org/abs/2606.23937",
+   "note": "Exact-match retrieval recall understates how useful retrieved rules are."
+  },
+  {
+   "title": "RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems",
+   "who": "Yerushalmi Levi et al.",
+   "venue": "Findings of EMNLP 2026",
+   "url": "https://arxiv.org/abs/2606.23927",
+   "note": "Automated red-teaming across 45 agent systems."
   }
  ]
 }
