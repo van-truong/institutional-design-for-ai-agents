@@ -1,5 +1,5 @@
 SOURCE := manuscript.tex
-PDF := ../springer-lncs-proceedings.pdf
+PDF := ../manuscript.pdf
 BUILD_DIR := .build
 
 .PHONY: pdf figures clean
