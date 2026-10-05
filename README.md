@@ -14,7 +14,7 @@ Build the paper with:
 make pdf
 ```
 
-The build uses the submission-ready vector PDFs in `manuscript/figures/` and writes `springer-lncs-proceedings.pdf`. Run `make figures` only when intentionally regenerating those PDFs from the editable HTML files in `manuscript/figs/`. Inkscape is not required.
+The build uses the submission-ready vector PDFs in `manuscript/figures/` and writes `manuscript.pdf` at the repository root. Run `make figures` only when intentionally regenerating those PDFs from the editable HTML files in `manuscript/figs/`. Inkscape is not required.
 
 The review PDF shows flagged claims in red. The switches near the top of `manuscript.tex` can hide those flags for the final PDF or show named `\VAN{}`, `\ANG{}`, `\ERI{}`/`\ERIVAN{}`, and other inline author comments during editing.
 
@@ -89,7 +89,7 @@ Springer wants one ZIP per paper with actual copies (no links) of: all `.tex` fi
 | `manuscript.bbl` | `manuscript/manuscript.bbl` (`make pdf` keeps it in sync with `.build/`) |
 | `llncs.cls`, `splncs04.bst` | `manuscript/` |
 | `figures/*.pdf` | only the figures the paper includes (9 files) |
-| `manuscript.pdf` | the compiled PDF, `springer-lncs-proceedings.pdf` |
+| `manuscript.pdf` | the compiled PDF, `manuscript.pdf` at the repository root |
 | `LTP_308_Truong.pdf` | the signed LTP, renamed to a short name |
 
 From `manuscript/`, after the final `make pdf`:
@@ -99,7 +99,7 @@ PKG=OpenReview_308_Truong
 mkdir -p $PKG/figures
 cp manuscript.tex references.bib llncs.cls splncs04.bst $PKG/
 cp .build/manuscript.bbl $PKG/
-cp ../springer-lncs-proceedings.pdf $PKG/manuscript.pdf
+cp ../manuscript.pdf $PKG/manuscript.pdf
 grep -v '^[[:space:]]*%' manuscript.tex | grep -o 'includegraphics[^{]*{figures/[^}]*}' \
   | grep -o 'figures/[^}]*' | sort -u | xargs -I{} cp {} $PKG/figures/
 ls $PKG $PKG/figures
