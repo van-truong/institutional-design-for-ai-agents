@@ -401,7 +401,7 @@
   {
    "id": "gotsecret",
    "short": "Got a Secret?",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Got a Secret? LLM Agents Can't Keep It: Evaluating Privacy in Multi-Agent Systems",
    "who": "Priyanshu et al.",
@@ -417,7 +417,7 @@
   {
    "id": "harp",
    "short": "HARP",
-   "status": "related",
+   "status": "paper",
    "kind": "framework",
    "title": "HARP: Measuring Harm Amplification in Multi-Agent LLM Systems",
    "who": "Rahman et al.",
@@ -434,7 +434,7 @@
   {
    "id": "uniace",
    "short": "UniACE",
-   "status": "related",
+   "status": "paper",
    "kind": "framework",
    "title": "UniACE: A Unified Framework for Evaluating LLM Agentic Capabilities",
    "who": "Zhu et al.",
@@ -802,7 +802,7 @@
    "note": "A mentored project on failures that appear only when agents interact: collusion, conflict, and failed coordination. Mentees use the group's MASE experiment platform (not yet publicly released, as far as we can find), and the project aims to map such failures to the EU AI Act and ISO standards."
   },
   {
-   "status": "related",
+   "status": "paper",
    "id": "containment",
    "short": "The Containment Gap",
    "kind": "study",
@@ -834,7 +834,7 @@
    "note": "An attacker that chooses when to attack, and when to stop, is much harder for a monitor to catch: measured safety fell by 20 to 28 points. Monitoring evaluations that assume indiscriminate attackers may be too optimistic."
   },
   {
-   "status": "related",
+   "status": "paper",
    "id": "alem",
    "short": "alem",
    "kind": "testbed",

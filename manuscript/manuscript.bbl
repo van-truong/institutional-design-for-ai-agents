@@ -349,6 +349,12 @@ Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
   Societies}}. Science  \textbf{319}(5868),  1362--1367 (Mar 2008).
   \doi{10.1126/science.1153808}
 
+\bibitem{hossain2026containment}
+Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
+  deployed agentic {AI} frameworks fail public-facing safety requirements
+  (2026), \url{https://arxiv.org/abs/2606.12797}, iCML 2026 Workshop on
+  Trustworthy AI for Good (AI4GOOD)
+
 \bibitem{hota2025nomiclaw}
 Hota, A., Jokinen, J.P.P.: {NomicLaw}: Emergent trust and strategic
   argumentation in {LLMs} during collaborative law-making. In: Proceedings of
@@ -630,6 +636,16 @@ Premack, D., Woodruff, G.: Does the chimpanzee have a theory of mind?
   Behavioral and Brain Sciences  \textbf{1}(4),  515--526 (Dec 1978).
   \doi{10.1017/S0140525X00076512}
 
+\bibitem{priyanshu2026secret}
+Priyanshu, A., Vijay, S., Pahwa, E.: Got a secret? {LLM} agents can't keep it:
+  Evaluating privacy in multi-agent systems (2026),
+  \url{https://arxiv.org/abs/2605.27766}
+
+\bibitem{rahman2026harp}
+Rahman, M.H., Haider, Z., Mahfuz, T., Chakraborty, P.: {HARP}: Measuring harm
+  amplification in multi-agent {LLM} systems (2026),
+  \url{https://arxiv.org/abs/2605.27489}
+
 \bibitem{rehm2026selfgovernance}
 Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
   {LLM} agent societies (2026), \url{https://arxiv.org/abs/2609.22600}
@@ -710,6 +726,12 @@ Tang, X., Kim, K., Song, Y., Lothritz, C., Li, B., Ezzini, S., Tian, H., Klein,
   Language Processing}}. pp. 11279--11313. Association for Computational
   Linguistics, Miami, Florida, USA (Nov 2024).
   \doi{10.18653/v1/2024.emnlp-main.632}
+
+\bibitem{tessera2026alem}
+Tessera, K.a.A., Szecsenyi, A., Barker, C., Rutherford, A., Paglieri, D.,
+  Scannell, A., Gouk, H., Crowley, E.J., Rockt{\"a}schel, T., Storkey, A.:
+  Benchmarking open-ended multi-agent coordination in language agents (2026),
+  \url{https://arxiv.org/abs/2606.08340}
 
 \bibitem{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms}
 Tewolde, E., Zhang, X., Guzman~Piedrahita, D., Conitzer, V., Jin, Z.:
@@ -861,6 +883,11 @@ Zhu, K., Du, H., Hong, Z., Yang, X., Guo, S., Wang, Z., Wang, Z., Qian, C.,
   8580--8622. Association for Computational Linguistics, Vienna, Austria
   (2025). \doi{10.18653/v1/2025.acl-long.421},
   \url{https://aclanthology.org/2025.acl-long.421/}
+
+\bibitem{zhu2026uniace}
+Zhu, P., Li, L., Lyu, Y., Luo, Q., Yang, J., Liu, Y., Hui, T., Yuan, X., Sun,
+  L., Su, S., Shao, J.: {UniACE}: A unified framework for evaluating {LLM}
+  agentic capabilities (2026), \url{https://arxiv.org/abs/2605.27898}
 
 \bibitem{zhu2026talkjudgecooperategossipdriven}
 Zhu, S., Lin, Y., Kaistha, S., Li, W., Wang, B., Zha, H., Hadfield, G.K.,
