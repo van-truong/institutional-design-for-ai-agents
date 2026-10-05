@@ -2863,6 +2863,417 @@
     "soc"
    ],
    "note": "Agents infer a partner's hidden capabilities across tasks from a few interactions, without pretraining on a population of partners."
+  },
+  {
+   "id": "relpriors",
+   "short": "Relational priors",
+   "status": "related",
+   "kind": "study",
+   "title": "Relational Priors as Convergence Pressure in LLM-Based Multi-Agent Systems",
+   "who": "Shen et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.03239",
+   "concepts": [
+    "soc",
+    "nor",
+    "epi"
+   ],
+   "note": "Telling agents how to regard one another (trusting, skeptical, deferential) changed how readily they agreed: positive relations improved sustainability in GovSim and consensus on subjective questions, but lowered accuracy on factual ones."
+  },
+  {
+   "id": "truthdist",
+   "short": "One deceiver derails the group",
+   "status": "related",
+   "kind": "study",
+   "title": "When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems",
+   "who": "Yan et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.03421",
+   "concepts": [
+    "spr",
+    "col",
+    "epi"
+   ],
+   "note": "When the truth was split across five agents, one dishonest evidence holder cut collective recovery from 72.5% to 14.2%: false testimony was adopted and repeated more readily than true testimony."
+  },
+  {
+   "id": "pluralign",
+   "short": "Pluralistic ignorance",
+   "status": "related",
+   "kind": "study",
+   "title": "Everyone Conforms, No One Believes: Pluralistic Ignorance in LLM Agent Populations",
+   "who": "Yashwanth YS",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.02758",
+   "concepts": [
+    "nor",
+    "epi"
+   ],
+   "note": "Agents publicly conformed to norms they privately rejected 64 to 94% of the time, and the cascades rarely broke; which model is used quietly shapes social simulations. Single author."
+  },
+  {
+   "id": "biasedcons",
+   "short": "Biased consensus phase transition",
+   "status": "related",
+   "kind": "study",
+   "title": "Emergence of Biased Consensus in Multi-Agent LLM Debates",
+   "who": "Okawa",
+   "venue": "ICML 2026",
+   "url": "https://arxiv.org/abs/2608.02827",
+   "concepts": [
+    "epi",
+    "spr"
+   ],
+   "note": "Debating agents can tip into a shared bias once conformity passes a critical threshold, with sampling noise as a driver; mixing different models suppresses the transition."
+  },
+  {
+   "id": "dear",
+   "short": "Regulating debate relationships",
+   "status": "related",
+   "kind": "framework",
+   "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
+   "who": "Wu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.03648",
+   "concepts": [
+    "soc",
+    "epi"
+   ],
+   "note": "Learned controllers decide which peers each debater references, reducing blind conformity while using fewer tokens."
+  },
+  {
+   "id": "statefulgov",
+   "short": "Stale authorization",
+   "status": "related",
+   "kind": "framework",
+   "title": "Stateful Governance for Concurrent Agentic Systems",
+   "who": "Peng and Wu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.02764",
+   "concepts": [
+    "enf",
+    "nor"
+   ],
+   "note": "An approval granted when an agent requests an action can be stale by the time the effect commits, as budgets or inventory change; proposes checking authorization against the state at commit time."
+  },
+  {
+   "id": "resauth",
+   "short": "Resourced authority",
+   "status": "related",
+   "kind": "framework",
+   "title": "Resourced Authority: A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+   "who": "Chandra, Gujar, and Ghalme",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06353",
+   "concepts": [
+    "pol",
+    "inc",
+    "nor"
+   ],
+   "note": "A formal model in which verified human stakeholders continuously vote, with a separate governance currency, on what a deployed agent may do, and the result is enforced through the agent's compute budget."
+  },
+  {
+   "id": "capprop",
+   "short": "Capability is not propensity",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Capability Is Not Propensity: Measuring Pressure-Robust Cooperative Behavior in Civic LLM Agents",
+   "who": "Shah, Kartik, and Karkar",
+   "venue": "ICML 2026 workshop (AI4GOOD)",
+   "url": "https://arxiv.org/abs/2608.09485",
+   "concepts": [
+    "col",
+    "eval",
+    "nor"
+   ],
+   "note": "Under subtle pressure to omit, models across four families became more manipulative and less likely to preserve dissent; what a model can do cooperatively differs from what it tends to do under pressure."
+  },
+  {
+   "id": "sharding",
+   "short": "Sharding the judge",
+   "status": "related",
+   "kind": "study",
+   "title": "Sharding Prevents LLM Oversight Failures and Adversarial Exploitation",
+   "who": "Akinwande, Kolter, and Nayebi",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06422",
+   "concepts": [
+    "arb",
+    "obs"
+   ],
+   "note": "A judge asked for many verdicts in one call grounds some of them weakly; splitting requirements across separate calls improved agreement with experts, and a sharded weaker judge could beat a stronger holistic one."
+  },
+  {
+   "id": "permdenied",
+   "short": "Permission denied",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Permission Denied: Policy-Graded Evaluation of Coding Agents in Hardened Environments",
+   "who": "Davidovich et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.02670",
+   "concepts": [
+    "enf",
+    "eval"
+   ],
+   "note": "Real enterprise security controls cut coding agents' success by up to 18 points and raised cost by up to 167%, and which model did best depended on the policy in force."
+  },
+  {
+   "id": "icore",
+   "short": "Cooperation-obligation audit",
+   "status": "related",
+   "kind": "framework",
+   "title": "Auditing Emergent LLM-Agent Collaboration through Cooperation-Obligation Coupling",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.27429",
+   "concepts": [
+    "obs",
+    "arb",
+    "nor"
+   ],
+   "note": "Links who interacted, who is responsible for what remaining work, and what evidence justifies each step, so audits can catch plausible outputs that hide unfinished or misassigned work."
+  },
+  {
+   "id": "sigmamem",
+   "short": "Reliability memory",
+   "status": "related",
+   "kind": "framework",
+   "title": "Σ-Mem: An Online Reliability Memory for LLM-based Multi-Agent Systems",
+   "who": "Feng, Yang, and Poria",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.27958",
+   "concepts": [
+    "soc",
+    "arb"
+   ],
+   "note": "Keeps a running record of each peer's competence and of how peers' answers relate, used to route questions and weight votes; outperformed majority voting with unfamiliar peers."
+  },
+  {
+   "id": "orgconsensus",
+   "short": "Staking and retrospective penalties",
+   "status": "related",
+   "kind": "framework",
+   "title": "Beyond Byzantine: An Organizational Consensus Algorithm for Self-Interested Agents Under Information Asymmetry",
+   "who": "Zhang and Liu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28957",
+   "concepts": [
+    "inc",
+    "enf",
+    "arb"
+   ],
+   "note": "For self-interested departmental agents: stake tokens on positions, allow challenges, and penalize later once outcomes can be verified. Simulation only."
+  },
+  {
+   "id": "coalition",
+   "short": "Coalitions and message pricing",
+   "status": "related",
+   "kind": "framework",
+   "title": "Dynamic Coalition Formation and Communication Pricing in Skill-Based Agentic AI Systems",
+   "who": "Eslami",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.07532",
+   "concepts": [
+    "inc",
+    "soc"
+   ],
+   "note": "Treats choosing which agents to involve, and which links to use, as a cooperative game, activating agents by estimated marginal value. Single author."
+  },
+  {
+   "id": "supplychain",
+   "short": "Delegated supply-chain bargaining",
+   "status": "related",
+   "kind": "study",
+   "title": "When LLM Agents Negotiate: Private Information and Dynamic Bargaining in Supply Chains",
+   "who": "Liang and Xu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.07538",
+   "concepts": [
+    "inc",
+    "eval"
+   ],
+   "note": "Across 9,840 negotiations benchmarked against equilibrium, agents nearly always agreed but delay eroded 21 to 34% of surplus, and weaker models accepted money-losing contracts in 19% of cases."
+  },
+  {
+   "id": "marp",
+   "short": "Regulating emergence",
+   "status": "related",
+   "kind": "framework",
+   "title": "Why Study Emergent Behavior When You Can Regulate It? Aligning Multi-Agent Systems with Reward Prediction",
+   "who": "Caftory et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.07280",
+   "concepts": [
+    "inc",
+    "nor"
+   ],
+   "note": "Learns a shared reward model from evaluations of whole episodes to steer a common-pool resource game toward sustainability, equality, and peace. Proof of concept in one environment."
+  },
+  {
+   "id": "mars",
+   "short": "Automated MAS repair",
+   "status": "related",
+   "kind": "framework",
+   "title": "Autonomous Repair for Multi-Agent Systems via Monte-Carlo Tree Search",
+   "who": "Lu and Zhang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.29055",
+   "concepts": [
+    "rep",
+    "arb"
+   ],
+   "note": "Searches for repairs to failed multi-agent runs and releases 1,310 replayable failure trajectories, a rare test bed for repair rather than detection."
+  },
+  {
+   "id": "echogap",
+   "short": "Memory reward inflation",
+   "status": "related",
+   "kind": "study",
+   "title": "Memory Reward Inflation in Self-Improving LLM Agents",
+   "who": "Asadolahi et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.00017",
+   "concepts": [
+    "rep",
+    "arb"
+   ],
+   "note": "When agents grade their own stored experience, wrong episodes get inflated scores and the agent reuses the mistakes it is most confident in."
+  },
+  {
+   "id": "agentprop",
+   "short": "Auditing automated evaluation",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Auditing Automated Evaluation, Error Propagation, and Runtime Mitigation in Tool-Using Language Agents",
+   "who": "Gurram",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2604.16706",
+   "concepts": [
+    "arb",
+    "spr",
+    "eval"
+   ],
+   "note": "Common heuristic judging of tool-using agents agreed with humans only at chance, and a parameter-level error led to a wrong final answer about 62% of the time. Single author."
+  },
+  {
+   "id": "osreward",
+   "short": "Lenient judges",
+   "status": "related",
+   "kind": "testbed",
+   "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+   "who": "Sun et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28609",
+   "concepts": [
+    "arb",
+    "eval"
+   ],
+   "note": "Vision-language models used to judge computer-use agents share a systematic leniency bias."
+  },
+  {
+   "id": "bftrag",
+   "short": "Byzantine-tolerant RAG",
+   "status": "related",
+   "kind": "framework",
+   "title": "Combating Knowledge Corruption in Agent Systems: A Byzantine-Tolerant Secure Collaborative RAG Framework",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.04366",
+   "concepts": [
+    "enf",
+    "epi"
+   ],
+   "note": "Scores the credibility of documents from multiple sources so poisoned ones cannot corrupt what agents retrieve."
+  },
+  {
+   "id": "ipiprobe",
+   "short": "Injection exposure in hidden states",
+   "status": "related",
+   "kind": "study",
+   "title": "Your Agentic LLMs Secretly Encode Indirect Prompt-Injection Exposure in Hidden States",
+   "who": "Dong et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.02657",
+   "concepts": [
+    "obs"
+   ],
+   "note": "Probes on a model's internal state detect that it has been exposed to an injected instruction even when it goes on to follow it: the model knows but does not act on it."
+  },
+  {
+   "id": "antibody",
+   "short": "Adaptive immune defense",
+   "status": "related",
+   "kind": "framework",
+   "title": "AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection",
+   "who": "Weng et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.04053",
+   "concepts": [
+    "enf",
+    "rep"
+   ],
+   "note": "A defense that remembers past injections and learns the user's security boundary over time, instead of judging each request in isolation."
+  },
+  {
+   "id": "dreamguard",
+   "short": "DreamGuard",
+   "status": "related",
+   "kind": "framework",
+   "title": "DreamGuard: Efficient Runtime Guardrail for LLM Agents via Risk-Aware World Model",
+   "who": "Lin et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05695",
+   "concepts": [
+    "enf",
+    "obs"
+   ],
+   "note": "Predicts how risk will build over a trajectory, catching sequences of individually harmless actions that drift toward danger."
+  },
+  {
+   "id": "kvaudit",
+   "short": "Does latent communication pay?",
+   "status": "related",
+   "kind": "study",
+   "title": "When Does Latent Communication Pay? A Causal Audit of Relayed KV Caches in Multi-Agent LLMs",
+   "who": "Cheng, Das, and Ramnath",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.04893",
+   "concepts": [
+    "epi",
+    "eval"
+   ],
+   "note": "Passing hidden model states between agents helped only when the receiver needed the sender's private information; otherwise the credited gains disappeared under causal controls."
+  },
+  {
+   "id": "manta",
+   "short": "MANTA",
+   "status": "related",
+   "kind": "framework",
+   "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+   "who": "Huang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28527",
+   "concepts": [
+    "soc",
+    "epi"
+   ],
+   "note": "Lets a system rewire its own roles, links, execution order, and who sees what during a run, within a fixed agent budget."
+  },
+  {
+   "id": "proofagent",
+   "short": "Production readiness index",
+   "status": "related",
+   "kind": "framework",
+   "title": "Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness",
+   "who": "Bousetouane",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.27677",
+   "concepts": [
+    "pol",
+    "eval"
+   ],
+   "note": "A governance readiness index combining evaluation, context, compliance, and organizational control evidence before an agent is released. Single author."
   }
  ],
  "adjacent": [
@@ -3789,6 +4200,230 @@
    "venue": "arXiv 2026",
    "url": "https://arxiv.org/abs/2607.26336",
    "note": "Recovers causal dynamics from multi-agent demonstrations."
+  },
+  {
+   "title": "AgentRadio: Passive Awareness for Long-Horizon Multi-Agent Collaboration",
+   "who": "Ren et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28430",
+   "note": "Lets coding agents share findings mid-run, doubling resolution on hard code questions."
+  },
+  {
+   "title": "Scaling LLM-Driven Multi-Agent Systems: Design Principles and Architectural Scalability Analysis",
+   "who": "Sander et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.27942",
+   "note": "Scaling helps only above a minimum model capability; consistency is the bottleneck."
+  },
+  {
+   "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+   "who": "Kirgis et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.27191",
+   "note": "Agents did all the engineering but not the research, judged by the papers' own authors."
+  },
+  {
+   "title": "From Scoring to Acting: Outcome-Verified Comparative Self-Distillation for LLM Agents",
+   "who": "Xia et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.27937",
+   "note": "Distills only teacher continuations that actually succeed."
+  },
+  {
+   "title": "Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs",
+   "who": "Lee and Choi",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28573",
+   "note": "Extra compute for small local agents gives diminishing returns and new failures."
+  },
+  {
+   "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+   "who": "Gong et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28545",
+   "note": "Production-fidelity root-cause analysis; the best agent reaches about 25%."
+  },
+  {
+   "title": "Agents That Certify Their Own Exploits: Confidence-Scheduled Restricted Responses for Safe Opponent Exploitation",
+   "who": "Li and Huang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28520",
+   "note": "Exploits an opponent only with a self-computed safety certificate."
+  },
+  {
+   "title": "Can AI Evaluate AI Scientists? A Benchmarking Study of Autonomous Research Generation Systems Using Automated Multi-Model Review",
+   "who": "Ravideshik and Kejriwal",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28631",
+   "note": "Multi-model review of AI-generated papers."
+  },
+  {
+   "title": "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery",
+   "who": "Wu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.29347",
+   "note": "Agents build neuroscience analysis pipelines from code-paper pairs."
+  },
+  {
+   "title": "CyberNeuro: A Privacy-Preserving Agentic Workbench for Cohort-Scale Neuroimage and Clinical Data Analysis",
+   "who": "Ren et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.28841",
+   "note": "Four agents with a local model keep neuroimaging data on site."
+  },
+  {
+   "title": "An Actionable Diagnosis of Multilingual, Multi-Agent Planning Failures",
+   "who": "Pahuja et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.03735",
+   "note": "Where planners lose information for non-English requests."
+  },
+  {
+   "title": "Rethinking Self-Evolving Agent Skills: Feedback Dynamics over Multiple Rounds",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.02636",
+   "note": "Skill self-evolution is sparse; failures drive most gains."
+  },
+  {
+   "title": "MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale",
+   "who": "Zhang and Ma",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.02613",
+   "note": "Memory backend matters more than model size on device."
+  },
+  {
+   "title": "E3-Orch: Towards Effective, Efficient, and Extensible Agentic Orchestration with Reinforcement Learning",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.04588",
+   "note": "An RL-trained orchestrator plans by milestones."
+  },
+  {
+   "title": "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05159",
+   "note": "Wraps legacy enterprise apps as nested agents."
+  },
+  {
+   "title": "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse",
+   "who": "Chen et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05204",
+   "note": "Detects reused skills across text, code, and workflow."
+  },
+  {
+   "title": "Abstract Event Causal Rules: Induction and Application",
+   "who": "Zheng, Chen, and Wang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05205",
+   "note": "Agents distill general causal rules for event prediction."
+  },
+  {
+   "title": "SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents",
+   "who": "Liang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05212",
+   "note": "Localizes and repairs failures in long search trajectories."
+  },
+  {
+   "title": "When Do Corrective Features Help? An Agent for Corrective Feature Discovery on Black-Box Forecasters",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05207",
+   "note": "An agent mines features that correct a frozen forecaster."
+  },
+  {
+   "title": "Simulator-Grounded Large Language Models for Industrial Causal Reasoning",
+   "who": "Simethy, Ortiz Arroyo, and Durdevic",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.05151",
+   "note": "Grounds LLM answers in a wastewater-plant simulator."
+  },
+  {
+   "title": "The Bitter Lesson of Tool Calling",
+   "who": "Patel et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06370",
+   "note": "Tools as Python stubs match or beat JSON tool calls."
+  },
+  {
+   "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+   "who": "Li, Chen, and Huang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06362",
+   "note": "Stops agent evaluations as soon as the evidence suffices, with valid guarantees."
+  },
+  {
+   "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+   "who": "Qi et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06346",
+   "note": "Finds the earliest error that caused a failure."
+  },
+  {
+   "title": "ADIAS: Automated Design of Interactive Agentic Systems",
+   "who": "Jiang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06410",
+   "note": "Carries repair progress forward as a persistent issue list."
+  },
+  {
+   "title": "KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning",
+   "who": "Cao et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06530",
+   "note": "Separates catalog extraction from degree planning."
+  },
+  {
+   "title": "A Multi-Agent Framework for Automated Coarse-Grained Molecular Dynamics of Polymers",
+   "who": "Choi, Lee, and Ryu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06694",
+   "note": "Agents automate polymer simulation setup."
+  },
+  {
+   "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
+   "who": "Zou et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06865",
+   "note": "Expert agents plus a judge detect deepfakes."
+  },
+  {
+   "title": "DocAtlas: Long-Document Understanding as Mutable-State Interaction",
+   "who": "Wei et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.07527",
+   "note": "A note-taking harness for long documents."
+  },
+  {
+   "title": "SkillConsist: Detecting Inconsistencies in Agent Skills via Bidirectional Graph Alignment",
+   "who": "Meng et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.07639",
+   "note": "Finds skills whose code does not match what they declare."
+  },
+  {
+   "title": "MetaSpace: Metamorphic Testing for Spatial Cognition in Embodied Agents",
+   "who": "Xu et al.",
+   "venue": "Proceedings of the ACM, 2026",
+   "url": "https://arxiv.org/abs/2608.07533",
+   "note": "Physical laws as tests expose spatial-reasoning failures."
+  },
+  {
+   "title": "Improving Constraint Models with LLM Agents",
+   "who": "Voboril and Szeider",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.08127",
+   "note": "Agents reformulate constraint-programming models."
+  },
+  {
+   "title": "The Scaffolding Matters More Than the Interface: A Controlled Comparison of MCP and CLI Tool Use",
+   "who": "Alier Forment et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.08654",
+   "note": "Agent scaffolding dominates the cost difference between MCP and command-line tools."
   }
  ]
 }
