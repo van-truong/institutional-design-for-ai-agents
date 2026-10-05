@@ -216,7 +216,7 @@
   {
    "id": "polis",
    "short": "POLIS",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Multi-Agent AI Safety as an Institutional Design Problem",
    "who": "Abdullah X",
@@ -1485,7 +1485,7 @@
   {
    "id": "attestation",
    "short": "Institutional attestation",
-   "status": "paper",
+   "status": "related",
    "kind": "framework",
    "title": "Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems",
    "who": "Salfeld-Nebgen",
@@ -1608,7 +1608,7 @@
   {
    "id": "noisefloor",
    "short": "Coordination noise floor",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "How Much Coordination Gain Is Real? A Paired Noise-Floor Protocol for Multi-Agent LLM Benchmarks",
    "who": "Kaliyev and Maryanskyy",
@@ -1892,7 +1892,7 @@
   {
    "id": "persistattack",
    "short": "Gradual attacks across PRs",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Distributed Attacks in Persistent-State AI Control",
    "who": "Hills, Caspary, and Cooper Stickland",
@@ -1907,7 +1907,7 @@
   {
    "id": "otr",
    "short": "Public vs. off-the-record",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
    "who": "Ghaffarizadeh et al.",
@@ -2194,7 +2194,7 @@
   {
    "id": "graphfeedback",
    "short": "Routing shapes consensus",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Graph Feedback Controls Consensus and Clique Formation in Open-Weight Language-Model Populations",
    "who": "Saab and Abdallah",
@@ -2552,7 +2552,7 @@
   {
    "id": "channelguard",
    "short": "Safe models don't compose",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "ChannelGuard: Safe Models Do Not Compose into Safe Multi-Agent Systems",
    "who": "Hossain et al.",
@@ -2568,7 +2568,7 @@
   {
    "id": "moralhazard",
    "short": "Moral hazard among agents",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Moral Hazard in Multi-Agent Language Models",
    "who": "Malenfant",
@@ -2583,7 +2583,7 @@
   {
    "id": "agreeblind",
    "short": "Correlated agreement blindness",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Harnessing Disagreement: Detecting Correlated Agreement Blindness in Multi-Agent Triage",
    "who": "McDonnell et al.",
@@ -3278,7 +3278,7 @@
   {
    "id": "instvsintel",
    "short": "Institutions vs. intelligence",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "When Do Institutions Beat Intelligence?",
    "who": "Han",
@@ -3310,7 +3310,7 @@
   {
    "id": "ddr",
    "short": "Leaderboards rank specialization",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations",
    "who": "Srinivasan",
@@ -4224,7 +4224,7 @@
   {
    "id": "normsbehavior",
    "short": "Behavior is not norms",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Behavior is Not Enough: A Mechanism-Based Evaluation of Social Norm Emergence in LLM Societies",
    "who": "Muralidharan, Kwak, and An",

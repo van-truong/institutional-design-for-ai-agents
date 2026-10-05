@@ -87,6 +87,10 @@ Berman, G.E.: Market participants and the {May} 6 flash crash (Oct 2010),
   \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech by the
   U.S. Securities and Exchange Commission
 
+\bibitem{bicchieri2006grammar}
+Bicchieri, C.: The Grammar of Society: The Nature and Dynamics of Social Norms.
+  Cambridge University Press, Cambridge (2006). \doi{10.1017/CBO9780511616037}
+
 \bibitem{boella2006normative}
 Boella, G., van~der Torre, L., Verhagen, H.: Introduction to normative
   multiagent systems. Computational and Mathematical Organization Theory
@@ -143,6 +147,12 @@ Chan, A., Wei, K., Huang, S., Rajkumar, N., Perrier, E., Lazar, S., Hadfield,
 Chandra, P., Gujar, S., Ghalme, G.: Resourced authority: A mechanism-design
   model for participatory governance of deployed {AI} agents (2026),
   \url{https://arxiv.org/abs/2608.06353}
+
+\bibitem{cialdini1990focus}
+Cialdini, R.B., Reno, R.R., Kallgren, C.A.: A focus theory of normative
+  conduct: Recycling the concept of norms to reduce littering in public places.
+  Journal of Personality and Social Psychology  \textbf{58}(6),  1015--1026
+  (1990). \doi{10.1037/0022-3514.58.6.1015}
 
 \bibitem{coleman1990foundations}
 Coleman, J.S.: Foundations of Social Theory. Belknap Press of Harvard
@@ -258,12 +268,6 @@ Garcin, F., Faltings, B., Jurca, R.: Aggregating reputation feedback. In:
   Proceedings of the First International Conference on Reputation: Theory and
   Technology (ICORE 09) (2009), \url{https://infoscience.epfl.ch/record/140266}
 
-\bibitem{ghaffarizadeh2026otr}
-Ghaffarizadeh, A., Mohaddes, D., Izadkhah, A., Noroozizadeh, S.: What {LLM}
-  agents say when no one is watching: Social structure and latent objective
-  emergence in multi-agent debates (2026),
-  \url{https://arxiv.org/abs/2607.02507}
-
 \bibitem{gneezy2000fine}
 Gneezy, U., Rustichini, A.: A fine is a price. The Journal of Legal Studies
   \textbf{29}(1),  1--17 (2000). \doi{10.1086/468061},
@@ -351,10 +355,6 @@ Hammond, L., Chan, A., Clifton, J., Hoelscher-Obermaier, J., Khan, A., McLean,
   Lehman, J., Parkes, D.C., Piliouras, G., Rahwan, I.: Multi-agent risks from
   advanced {AI} (2025), \url{https://arxiv.org/abs/2502.14143}
 
-\bibitem{han2026institutions}
-Han, Z.: When do institutions beat intelligence? (2026),
-  \url{https://arxiv.org/abs/2608.11357}
-
 \bibitem{hardinTragedyCommons1968}
 Hardin, G.: The {{Tragedy}} of the {{Commons}}. Science  \textbf{162}(3859),
   1243--1248 (Dec 1968). \doi{10.1126/science.162.3859.1243}
@@ -383,19 +383,6 @@ He, J., Yu, D.: The honest quorum problem: Epistemic {Byzantine} fault
 Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
   Societies}}. Science  \textbf{319}(5868),  1362--1367 (Mar 2008).
   \doi{10.1126/science.1153808}
-
-\bibitem{hills2026persistent}
-Hills, J., Caspary, I., {Cooper Stickland}, A.: Distributed attacks in
-  persistent-state {AI} control (2026), \url{https://arxiv.org/abs/2607.02514}
-
-\bibitem{holmstrom1982moral}
-Holmstr{\"o}m, B.: Moral hazard in teams. The Bell Journal of Economics
-  \textbf{13}(2),  324--340 (1982). \doi{10.2307/3003457}
-
-\bibitem{hossain2026channelguard}
-Hossain, E., Nipu, M.M.H., Faria, F.T.J., Ornee, T.N., Sheikh, M.:
-  {ChannelGuard}: Safe models do not compose into safe multi-agent systems
-  (2026), \url{https://arxiv.org/abs/2607.19430}
 
 \bibitem{hossain2026containment}
 Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
@@ -453,11 +440,6 @@ Joshi, A., Finin, T., Joshi, K.P., Kagal, L.: Deontic policies for runtime
   governance of agentic {AI} systems (2026),
   \url{https://arxiv.org/abs/2606.19464}, to appear, 2026 IEEE Symposium on
   Agentic Services
-
-\bibitem{kaliyev2026noisefloor}
-Kaliyev, A.T., Maryanskyy, A.: How much coordination gain is real? {A} paired
-  noise-floor protocol for multi-agent {LLM} benchmarks (2026),
-  \url{https://arxiv.org/abs/2606.20695}
 
 \bibitem{kang2026govgaps}
 Kang, R., Diponegoro, Y.: Governance gaps in agent interoperability protocols:
@@ -595,10 +577,6 @@ Makins, O., Angelini, O., Shams, Z., Phuong, M.: Multi-agent {AI} control:
   Distributed attacks hamper per-instance monitors (2026),
   \url{https://arxiv.org/abs/2607.07368}
 
-\bibitem{malenfant2026moralhazard}
-Malenfant, D.: Moral hazard in multi-agent language models (2026),
-  \url{https://arxiv.org/abs/2607.23982}
-
 \bibitem{martinezpena2024coleman}
 Mart{\'i}nez-Pe{\~n}a, R., Ylikoski, P.: Coupling social and ecological
   mechanisms with the {Coleman} boat. Ecology and Society  \textbf{29}(4), ~6
@@ -623,11 +601,6 @@ McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
   autoregression show how large language models are shaped by the problem they
   are trained to solve. Proceedings of the National Academy of Sciences
   \textbf{121}(41),  e2322420121 (Oct 2024). \doi{10.1073/pnas.2322420121}
-
-\bibitem{mcdonnell2026agreement}
-McDonnell, S.S., Singh, A., Pham, Q.V., Havlik, V., O'Hare, G.M.P.: Harnessing
-  disagreement: Detecting correlated agreement blindness in multi-agent triage
-  (2026), \url{https://arxiv.org/abs/2607.19899}, pAAMS 2026
 
 \bibitem{mellstromCrowdingOutBlood2008}
 Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:
@@ -663,6 +636,11 @@ M{\"u}ller, B., Bohn, F., Dre{\ss}ler, G., Groeneveld, J., Klassert, C.,
   human decisions in agent-based models -- {ODD + D}, an extension of the {ODD}
   protocol. Environmental Modelling \& Software  \textbf{48},  37--48 (2013).
   \doi{10.1016/j.envsoft.2013.06.003}
+
+\bibitem{muralidharan2026norms}
+Muralidharan, R., Kwak, H., An, J.: Behavior is not enough: A mechanism-based
+  evaluation of social norm emergence in {LLM} societies (2026),
+  \url{https://arxiv.org/abs/2609.26481}
 
 \bibitem{myersonOptimalAuctionDesign1981}
 Myerson, R.B.: Optimal {{Auction Design}}. Mathematics of Operations Research
@@ -783,16 +761,6 @@ Ross, J., So, E., {De Simone}, Z., Pozniak, C., Lo, A.W.: Why better models can
   create riskier systems: Evidence from {LLM} agents in financial markets
   (2026), \url{https://arxiv.org/abs/2609.04373}
 
-\bibitem{saab2026graph}
-Saab, S., Abdallah, C.: Graph feedback controls consensus and clique formation
-  in open-weight language-model populations (2026),
-  \url{https://arxiv.org/abs/2607.12077}
-
-\bibitem{salfeldnebgen2026attestation}
-Salfeld-Nebgen, J.: Governing actions, not agents: Institutional attestation as
-  a governance model for autonomous {AI} systems (2026),
-  \url{https://arxiv.org/abs/2606.26298}
-
 \bibitem{schellingStrategyConflictNew1960}
 Schelling, T.C.: The Strategy of Conflict. Harvard University Press, Cambridge,
   MA (1960)
@@ -855,11 +823,6 @@ Sorensen, T., Moore, J., Fisher, J., Gordon, M.L., Mireshghallah, N., Rytting,
   Vienna, Austria, July 21-27, 2024. pp. 46280--46302. Proceedings of Machine
   Learning Research, {PMLR} / OpenReview.net (2024),
   \url{https://proceedings.mlr.press/v235/sorensen24a.html}
-
-\bibitem{srinivasan2026ddr}
-Srinivasan, V.: Deployment decision reliability: A generalizability-theory
-  framework for sizing long-horizon agent evaluations (2026),
-  \url{https://arxiv.org/abs/2608.11323}
 
 \bibitem{steinberger2026openclaw}
 Steinberger, P.: {OpenClaw}: Your own personal {AI} assistant.
@@ -1002,10 +965,6 @@ Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X.,
 Wu, Y., Liang, S., Zhang, C., Wang, Y., Zhang, Y., Guo, H., Tang, R., Liu, Y.:
   From {{Human Memory}} to {{AI Memory}}: {{A Survey}} on {{Memory Mechanisms}}
   in the {{Era}} of {{LLMs}} (Apr 2025). \doi{10.48550/arXiv.2504.15965}
-
-\bibitem{x2026polis}
-X, A.: Multi-agent {AI} safety as an institutional design problem (2026),
-  \url{https://arxiv.org/abs/2608.09828}
 
 \bibitem{yalimDynamicallyControllingSlurms2020}
 Yalim, J.: Toward {{Dynamically Controlling Slurm}}'s {{Classic Fairshare
