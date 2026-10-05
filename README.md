@@ -109,8 +109,13 @@ Full acknowledgments are in the paper.
 - [ ] Code the papers in `taxonomy/candidates_next_pass.csv` and the remaining new instances, then rerun the build scripts.
 - [ ] Consolidate the recently added citations (highlighted in the review PDF) before the camera-ready version.
 - [ ] Add DOI and volume details to the citation once the proceedings are published.
-- [ ] Choose and add a license for the code and data.
 - [ ] Add issue templates for suggesting papers and proposing alternative classifications.
+
+## License
+
+- **Code** (the website in `docs/`, and the scripts in `manuscript/scripts/` and `taxonomy/scripts/`): [MIT](LICENSE).
+- **Data and figures** (everything in `taxonomy/`, `docs/assets/*.json`, and the figure files in `manuscript/figs/` and `manuscript/figures/`): [CC BY 4.0](LICENSE-CC-BY-4.0). Please cite the paper when you reuse them.
+- **Not covered by either license:** the paper's text and PDF (`manuscript/manuscript.tex`, `manuscript.pdf`, and `archive/icml2026/`), whose reuse is governed by the publisher's terms; the Springer LNCS style files (`llncs.cls`, `splncs04.bst`), which keep their own license; and the author photographs in `docs/assets/`.
 
 ## Contact
 
