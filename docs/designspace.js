@@ -32,7 +32,7 @@
   const FAMS = {
     Normative: ["beliefs", "Imposes a deontic layer that prescribes which actions are permissible, independently of which are feasible or profitable."],
     Social: ["relationships", "Shapes the interaction structure: who is in the group, who interacts with whom, and whether agents can select or exclude partners."],
-    Epistemic: ["information", "Modifies the common prior or the information partition: what agents can observe or verify about one another."],
+    Epistemic: ["information", "Modifies the information available to agents, and hence their beliefs about one another's types, without necessarily changing the common prior: what agents can observe or verify about one another."],
     Incentive: ["payoffs", "Modifies each agent's payoff function, reshaping the payoff consequences of action profiles."],
     Constraint: ["access", "Modifies each agent's action set, restricting or expanding the actions that are feasible."],
     Restorative: ["repair", "Shapes what happens after a deviation: whether and how agents re-enter cooperative arrangements, make restitution, or receive corrective feedback."],
@@ -47,7 +47,7 @@
           text: "Functions that set what follows behavior, what actions are possible, who decides what happened, and how harm is corrected." },
       ] },
     { id: "fam", label: "MECHANISM FAMILIES", c: VIO,
-      text: "How an institution acts on agents. Three families correspond to components of a Bayesian game (actions, information, payoffs); three capture interaction structure over time (norms, relationships, repair).",
+      text: "How an institution acts on agents. Two families act directly on components of a Bayesian game (actions, payoffs) and a third on agents' information about it; three capture interaction structure over time (norms, relationships, repair).",
       groups: [
         { id: "soft", label: "Soft channels", c: VIO, leaves: ["Normative", "Social", "Epistemic"],
           text: "The normative, social, and epistemic families." },
@@ -70,7 +70,7 @@
   const ROOT_Y = 44, BAR1 = 84, SEC_Y = 110, BAR2 = 134, GRP_Y = 150, GRP_H = 42, LEAF0 = 238, PITCH = 52, LEAF_H = 42;
   // draft variant (stage data-variant="game"): badges naming the part of the Bayesian game each family changes
   const GAME = stage.dataset.variant === "game";
-  const BADGE = { Constraint: ["A\u1d62", true], Epistemic: ["p, \u0398", true], Incentive: ["u\u1d62", true],
+  const BADGE = { Constraint: ["A\u1d62", true], Epistemic: ["info. about \u0398", true, 11], Incentive: ["u\u1d62", true],
     Normative: ["deontic", false], Social: ["N, links", false], Restorative: ["ex post", false] };
   const H = LEAF0 + 3 * PITCH + LEAF_H / 2 + 16;  // the badge key lives in the paper's caption
 
@@ -150,13 +150,13 @@
         const lx = left + 32, lw = COLW - 32;
         el("rect", { x: lx, y: ly - LEAF_H / 2, width: lw, height: LEAF_H, rx: 12, fill: lc[2], stroke: lc[0], "stroke-width": 1.3 }, lg);
         if (fam && GAME) {
-          const [sym, inGame] = BADGE[name], bw = Math.max(40, sym.length * (inGame ? 8 : 7) + 18), bx = lx + lw - bw - 6;
+          const [sym, inGame, bfs] = BADGE[name], bw = bfs ? Math.round(sym.length * bfs * 0.6 + 20) : Math.max(40, sym.length * (inGame ? 8 : 7) + 18), bx = lx + lw - bw - 6;
           const tx = lx + (lw - bw - 6) / 2;
           text(tx, ly - 2, name, { "text-anchor": "middle", "font-size": 15.5, "font-weight": 700, fill: lc[1] }, lg);
           text(tx, ly + 14, fam[0], { "text-anchor": "middle", "font-size": 13, "font-style": "italic", fill: MUT }, lg);
           el("rect", { x: bx, y: ly - 12, width: bw, height: 24, rx: 12, fill: "#fff", stroke: lc[0], "stroke-width": 1.3,
             ...(inGame ? {} : { "stroke-dasharray": "4 3" }) }, lg);
-          text(bx + bw / 2, ly + 5, sym, { "text-anchor": "middle", "font-size": inGame ? 15 : 12, "font-style": "italic",
+          text(bx + bw / 2, ly + 5, sym, { "text-anchor": "middle", "font-size": bfs || (inGame ? 15 : 12), "font-style": "italic",
             "font-family": inGame ? "'Times New Roman', Times, serif" : FONT, "font-weight": inGame ? 400 : 600, fill: lc[1] }, lg);
         } else if (fam) {
           text(lx + lw / 2, ly - 2, name, { "text-anchor": "middle", "font-size": 16, "font-weight": 700, fill: lc[1] }, lg);

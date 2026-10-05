@@ -114,7 +114,7 @@ zip -r OpenReview_308_Truong.zip $PKG
 
 ## Website follow-up
 
-[Visit the interactive paper companion](https://www.vanquynh.com/institutional-design-for-ai-agents/). Hat tip to Angelo Huang and the [Prosocial Agents paper website](https://flecart.github.io/prosocial-agents/) for the inspiration. The archival paper stays fixed; this evidence map can evolve.
+[Visit the interactive paper companion](https://van-truong.github.io/institutional-design-for-ai-agents/). Hat tip to Angelo Huang and the [Prosocial Agents paper website](https://flecart.github.io/prosocial-agents/) for the inspiration. The archival paper stays fixed; this evidence map can evolve.
 
 - [x] ~~Launch the poster-inspired landing page with author photos and artwork.~~
 - [x] ~~Make Figure 5 interactive by hover, click, touch, and keyboard; rotate and highlight the selected branch.~~
