@@ -1091,7 +1091,7 @@
    "note": "Agents bid for tasks in an auction that rewards honest cost reports, with public reputation records, and beat a central LLM planner. Under that central allocator, one inserted preference nearly doubled a favored agent's share of tasks."
   },
   {
-   "status": "related",
+   "status": "paper",
    "id": "deontic",
    "short": "Deontic runtime policies",
    "kind": "framework",
@@ -1106,7 +1106,7 @@
    "note": "Governs agents' tool calls and messages to other agents with obligations, waivers, and rules for resolving policy conflicts, checked by a logic engine outside the LLM. Most of these cannot be written in today's permit-or-deny policy engines."
   },
   {
-   "status": "related",
+   "status": "paper",
    "id": "consensus2",
    "short": "Resilient consensus",
    "kind": "study",
@@ -1122,7 +1122,7 @@
    "note": "Prompted LLM agents failed to reach agreement that classical theory says is achievable, even with adversaries present. Wrapping them in classical resilient-consensus filters from control theory improved agreement."
   },
   {
-   "status": "related",
+   "status": "paper",
    "id": "guarddos",
    "short": "DoS on guardrails",
    "kind": "study",

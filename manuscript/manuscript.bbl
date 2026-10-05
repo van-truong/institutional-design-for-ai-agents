@@ -21,6 +21,10 @@ Amir, D., Ahl, R.E., Jordan, M.R., Bolotin, H., Bogese, M., Gonz{\'a}lez, G.T.,
   \textbf{12}(6),  eadw9995 (2026). \doi{10.1126/sciadv.adw9995},
   \url{https://www.science.org/doi/abs/10.1126/sciadv.adw9995}
 
+\bibitem{anand2026consensus}
+Anand, S.C., Pappas, G.J.: Resilient consensus in agentic {AI} (2026),
+  \url{https://arxiv.org/abs/2606.15024}
+
 \bibitem{andreoni1988why}
 Andreoni, J.: Why free ride? {S}trategies and learning in public goods
   experiments. Journal of Public Economics  \textbf{37}(3),  291--304 (1988).
@@ -399,6 +403,12 @@ Jaques, N., Lazaridou, A., Hughes, E., Gulcehre, C., Ortega, P., Strouse, D.,
   (eds.) Proceedings of the 36th International Conference on Machine Learning.
   Proceedings of Machine Learning Research, vol.~97, pp. 3040--3049. PMLR
   (09--15 Jun 2019), \url{https://proceedings.mlr.press/v97/jaques19a.html}
+
+\bibitem{joshi2026deontic}
+Joshi, A., Finin, T., Joshi, K.P., Kagal, L.: Deontic policies for runtime
+  governance of agentic {AI} systems (2026),
+  \url{https://arxiv.org/abs/2606.19464}, to appear, 2026 IEEE Symposium on
+  Agentic Services
 
 \bibitem{kirilenkoFlashCrashHighFrequency2017}
 Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
@@ -884,6 +894,11 @@ Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
 \bibitem{zhou2023ifeval}
 Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., Hou,
   L.: Instruction-following evaluation for large language models (2023)
+
+\bibitem{zhou2026guardrail}
+Zhou, Y., Wang, X., Ma, P., Xue, Z., Wang, Z., Wang, S.: From shield to target:
+  Denial-of-service attacks on {LLM}-based agent guardrails (2026),
+  \url{https://arxiv.org/abs/2606.14517}
 
 \bibitem{zhu2025multiagentbench}
 Zhu, K., Du, H., Hong, Z., Yang, X., Guo, S., Wang, Z., Wang, Z., Qian, C.,
