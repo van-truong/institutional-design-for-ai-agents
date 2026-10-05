@@ -471,6 +471,11 @@ Lin, S., Hilton, J., Evans, O.: {TruthfulQA}: Measuring how models mimic human
   Association for Computational Linguistics (2022).
   \doi{10.18653/v1/2022.acl-long.229}
 
+\bibitem{liu2026agentlance}
+Liu, X., Li, H., Li, S., Fang, H., Xu, F., Shi, F., Evans, J.: Markets, not
+  planners: Decentralized orchestration of {LLM} agents with private
+  information (2026), \url{https://arxiv.org/abs/2608.23867}
+
 \bibitem{liu2024agentbenchevaluatingllmsagents}
 Liu, X., Yu, H., Zhang, H., Xu, Y., Lei, X., Lai, H., Gu, Y., Ding, H., Men,
   K., Yang, K., Zhang, S., Deng, X., Zeng, A., Du, Z., Zhang, C., Shen, S.,
@@ -519,6 +524,11 @@ McCoy, R.T., Yao, S., Friedman, D., Hardy, M.D., Griffiths, T.L.: Embers of
 Mellstr{\"o}m, C., Johannesson, M.: Crowding {{Out}} in {{Blood Donation}}:
   {{Was Titmuss Right}}? Journal of the European Economic Association
   \textbf{6}(4),  845--863 (Jun 2008). \doi{10.1162/JEEA.2008.6.4.845}
+
+\bibitem{mendonca2023algorithmic}
+Mendon{\c{c}}a, R.F., Almeida, V., Filgueiras, F.: Algorithmic
+  Institutionalism: The Changing Rules of Social and Political Life. Oxford
+  University Press, Oxford (2023). \doi{10.1093/oso/9780192870070.001.0001}
 
 \bibitem{metr2026hfinvestigation}
 {METR}: Brief independent investigation of agents' behavior, reasoning and
