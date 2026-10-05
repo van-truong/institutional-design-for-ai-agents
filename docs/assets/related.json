@@ -1485,7 +1485,7 @@
   {
    "id": "attestation",
    "short": "Institutional attestation",
-   "status": "related",
+   "status": "paper",
    "kind": "framework",
    "title": "Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems",
    "who": "Salfeld-Nebgen",
@@ -1546,7 +1546,7 @@
   {
    "id": "recipe",
    "short": "Post-training recipe",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Post-Training Recipe, More Than Model Family, Shapes Multi-Agent LLM Conversational Behavior",
    "who": "Zhang et al.",
@@ -1592,7 +1592,7 @@
   {
    "id": "manip",
    "short": "Manipulation is task-dependent",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Manipulation Is Task-Dependent: A Multi-Axis, Multi-Environment Evaluation of Frontier LLMs",
    "who": "Zaman et al.",
@@ -1608,7 +1608,7 @@
   {
    "id": "noisefloor",
    "short": "Coordination noise floor",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "How Much Coordination Gain Is Real? A Paired Noise-Floor Protocol for Multi-Agent LLM Benchmarks",
    "who": "Kaliyev and Maryanskyy",
@@ -1617,7 +1617,7 @@
    "concepts": [
     "eval"
    ],
-   "note": "Two configuration-equivalent setups differed by up to 18 points by chance alone, and seven of ten recent coordination architectures report gains below that floor. One model, one benchmark, two seeds."
+   "note": "Two setups that should behave identically differed by as much as 10 points between runs, and seven of ten recent coordination architectures report gains below the chance variation measured. One model, one benchmark, two seeds."
   },
   {
    "id": "kvcache",
@@ -1840,6 +1840,325 @@
     "epi"
    ],
    "note": "In debate-style persuasion, agents drift off topic and conform sycophantically; a retrieval bottleneck that separates argument structure from topic reduced it."
+  },
+  {
+   "id": "govgaps",
+   "short": "Protocol governance gaps",
+   "status": "related",
+   "kind": "study",
+   "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
+   "who": "Kang and Diponegoro",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.31498",
+   "concepts": [
+    "pol",
+    "nor",
+    "soc"
+   ],
+   "note": "Checks five agent protocols (MCP, A2A, ACP, ANP, ERC-8004) against six governance needs. Voting and preserving dissent are absent from all five and deliberation is at most partial, so governing agent communities is a missing layer above today's standards."
+  },
+  {
+   "id": "fragmentation",
+   "short": "Fragmentation effect",
+   "status": "related",
+   "kind": "study",
+   "title": "Multi-Agent AI Control: Distributed Attacks Hamper Per-Instance Monitors",
+   "who": "Makins et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.07368",
+   "concepts": [
+    "obs",
+    "col",
+    "eval"
+   ],
+   "note": "When several agents split a malicious goal between them, monitoring each agent separately becomes less likely to catch any of them, and an explicit planner raised attack completion up to sevenfold. A stronger monitor helped but stayed imperfect."
+  },
+  {
+   "id": "reframing",
+   "short": "Approval-framed delegation",
+   "status": "related",
+   "kind": "study",
+   "title": "Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.07097",
+   "concepts": [
+    "eval",
+    "col",
+    "arb"
+   ],
+   "note": "A model's safety on direct prompts mispredicted its behavior inside a planner-executor pipeline: one model's harmful compliance rose from 8.9% to 38.9% under another model's planner. Delegation prompts implying prior approval made executors more compliant."
+  },
+  {
+   "id": "persistattack",
+   "short": "Gradual attacks across PRs",
+   "status": "related",
+   "kind": "study",
+   "title": "Distributed Attacks in Persistent-State AI Control",
+   "who": "Hills, Caspary, and Cooper Stickland",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02514",
+   "concepts": [
+    "obs",
+    "col"
+   ],
+   "note": "A coding agent can spread a covert attack across many pull requests in a persistent codebase. No single monitor caught both spread-out and concentrated attacks; a monitor that tracks buildup across PRs, in an ensemble, cut evasion from 93% to 47%."
+  },
+  {
+   "id": "otr",
+   "short": "Public vs. off-the-record",
+   "status": "related",
+   "kind": "study",
+   "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+   "who": "Ghaffarizadeh et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02507",
+   "concepts": [
+    "epi",
+    "soc",
+    "obs"
+   ],
+   "note": "Social pressure alone, with no goal in the prompt, made agents' public statements diverge from their off-the-record answers in about 40% of decisions, against 3% at baseline; some attributed it to career risk or sponsorship."
+  },
+  {
+   "id": "infodelphi",
+   "short": "Designed information asymmetry",
+   "status": "related",
+   "kind": "framework",
+   "title": "Diverse Evidence, Better Forecasts: Multi-Agent Deliberation Under Information Asymmetry",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01661",
+   "concepts": [
+    "epi",
+    "arb"
+   ],
+   "note": "When every agent sees the same evidence, deliberation collapses into herding. Giving each agent some private evidence reduced correlated errors and improved forecasts by 12 to 18% in Brier score."
+  },
+  {
+   "id": "boundarysync",
+   "short": "Communication homogenizes",
+   "status": "related",
+   "kind": "study",
+   "title": "BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems",
+   "who": "Liu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01600",
+   "concepts": [
+    "epi",
+    "spr"
+   ],
+   "note": "Talking to one another made agents' outputs more alike, and group size changed the direction of the effect. Single author, mostly one model."
+  },
+  {
+   "id": "emculture",
+   "short": "Emergent culture",
+   "status": "related",
+   "kind": "study",
+   "title": "Emergent Culture in Minimal LLM Systems",
+   "who": "Jones and Hauert",
+   "venue": "ALIFE 2026",
+   "url": "https://arxiv.org/abs/2606.30668",
+   "concepts": [
+    "soc",
+    "nor"
+   ],
+   "note": "Three agents with messaging and a shared, decaying text store cooperated on their own, developed storage strategies, and produced evolving cultural artifacts without top-down design."
+  },
+  {
+   "id": "signals",
+   "short": "Memory and emergent language",
+   "status": "related",
+   "kind": "study",
+   "title": "From Signals to Structure: How Memory Architecture Drives Language Emergence in LLM Agents",
+   "who": "Talebirad et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.00233",
+   "concepts": [
+    "epi",
+    "nor"
+   ],
+   "note": "In a signaling game, agents with a persistent private notebook formed shared conventions far more reliably than stateless agents; memory mattered more than channel capacity."
+  },
+  {
+   "id": "sovereign",
+   "short": "Agency-law duties",
+   "status": "related",
+   "kind": "testbed",
+   "title": "SovereignNegotiation-Bench: Evaluating User-Owned Personal Agents in Delegated Bargaining Under Privacy, Consent, Evidence, and Institutional Pressure",
+   "who": "Liu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02814",
+   "concepts": [
+    "nor",
+    "arb",
+    "eval"
+   ],
+   "note": "Turns duties from agency law (loyalty, obedience, confidentiality, candor, diligence) into checks on negotiating agents. Across 17 models, 48% of agreements breached at least one duty, so a high deal rate did not mean faithful service. Single author."
+  },
+  {
+   "id": "oversightgame",
+   "short": "Non-credible oversight",
+   "status": "related",
+   "kind": "framework",
+   "title": "A Contextual-Bandit Oversight Game with Two-Sided Informational Asymmetry",
+   "who": "Tong",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.00155",
+   "concepts": [
+    "arb",
+    "obs"
+   ],
+   "note": "A game-theoretic model of human oversight in which the agent may know its action is harmful while the human, trusting her prior, declines to step in: the price of oversight that the agent cannot credibly signal. Single author."
+  },
+  {
+   "id": "pisas",
+   "short": "PiSAs",
+   "status": "related",
+   "kind": "testbed",
+   "title": "PiSAs: Benchmarking Contextual Integrity in Multi-User Agentic Systems",
+   "who": "Gupta et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.05318",
+   "concepts": [
+    "spr",
+    "nor",
+    "eval"
+   ],
+   "note": "Measures private information leaking between users through agents' messages to one another and shared memory; even frontier models failed to filter reliably."
+  },
+  {
+   "id": "provguard",
+   "short": "ProvenanceGuard",
+   "status": "related",
+   "kind": "framework",
+   "title": "Safeguarding LLM Agents from Misalignment through Provenance Analysis",
+   "who": "She, Liang, and Kang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01236",
+   "concepts": [
+    "enf",
+    "obs"
+   ],
+   "note": "Allows a tool call only if it is backed by traceable evidence in the agent's context; errors on misaligned traces fell from 44% to 2% on one benchmark."
+  },
+  {
+   "id": "xaudit",
+   "short": "Agents as platform auditors",
+   "status": "related",
+   "kind": "study",
+   "title": "Using AI Agents to Automate Black-Box Audits of Personalization Algorithms at Scale",
+   "who": "Morosini et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.30801",
+   "concepts": [
+    "obs",
+    "pol"
+   ],
+   "note": "1,120 persona agents on X audited its recommendation feed after the 2024 U.S. election, finding amplification of toxic, polarizing, and right-leaning content: agents used to audit an algorithmic institution."
+  },
+  {
+   "id": "cocseduce",
+   "short": "Persuading adjudicators",
+   "status": "related",
+   "kind": "testbed",
+   "title": "Assessing Rule Adherence of LLM Adjudicators in Call of Cthulhu TRPG",
+   "who": "Chen et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02802",
+   "concepts": [
+    "arb",
+    "col"
+   ],
+   "note": "Players used rhetoric, especially pseudo-logic, to talk LLM game referees out of their rules. Across 22 adjudicator models, neither newer releases nor explicit reasoning made them reliably robust."
+  },
+  {
+   "id": "lawdelib",
+   "short": "Courtroom deliberation",
+   "status": "related",
+   "kind": "framework",
+   "title": "Investigating Multi-Agent Deliberation in Law",
+   "who": "Steging, van Leeuwen, and Zbiegień",
+   "venue": "ICAIL 2026 workshop (AIDA2J)",
+   "url": "https://arxiv.org/abs/2606.30906",
+   "concepts": [
+    "arb",
+    "nor"
+   ],
+   "note": "Two courtroom-inspired deliberation setups matched a single model overall but solved different cases, doing better on questions that need several perspectives."
+  },
+  {
+   "id": "diffroute",
+   "short": "Difficulty-routed control",
+   "status": "related",
+   "kind": "framework",
+   "title": "When Should Service Agents Reconsider? Difficulty-Routed Control in Customer-Service Operations",
+   "who": "Chen, Liu, and Yu",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01426",
+   "concepts": [
+    "enf",
+    "arb"
+   ],
+   "note": "Routes routine customer-service requests down a fast path and escalates conflicted ones to a workflow that reconsiders before any backend write: stronger control only where it is needed."
+  },
+  {
+   "id": "harnesseffect",
+   "short": "Harness effect",
+   "status": "related",
+   "kind": "study",
+   "title": "The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI",
+   "who": "Sayed Ali et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.06906",
+   "concepts": [
+    "eval"
+   ],
+   "note": "Swapping only the orchestration layer, with the same six models, cut cost per task by 41% at similar quality; the harness moved cost more than the choice of model did. From a vendor's own harness."
+  },
+  {
+   "id": "agentbom",
+   "short": "Agent dependency graphs",
+   "status": "related",
+   "kind": "framework",
+   "title": "AgentFlow: Building Agent Dependency Graphs for Static Analysis of Agent Programs",
+   "who": "Wang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01640",
+   "concepts": [
+    "obs",
+    "pol"
+   ],
+   "note": "Recovers the agents, prompts, models, and tools inside agent programs to produce an agent bill of materials, finding 238 prompt-to-tool risks across 5,399 real programs."
+  },
+  {
+   "id": "ecosystem",
+   "short": "Framework ecosystem health",
+   "status": "related",
+   "kind": "study",
+   "title": "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
+   "who": "Zhang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02453",
+   "concepts": [
+    "pol"
+   ],
+   "note": "GitHub stars are a poor guide to which agent frameworks have real communities; LangChain acts as shared infrastructure for 82.5% of contributors who work across ecosystems."
+  },
+  {
+   "id": "mecobench",
+   "short": "MECoBench",
+   "status": "related",
+   "kind": "testbed",
+   "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+   "who": "Liu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.31966",
+   "concepts": [
+    "epi",
+    "eval"
+   ],
+   "note": "Embodied multimodal agents gained from collaborating, but only when the gain outweighed coordination costs; communication was essential and the best mode depended on team size."
   }
  ],
  "adjacent": [
@@ -2276,6 +2595,125 @@
    "venue": "Findings of EMNLP 2026",
    "url": "https://arxiv.org/abs/2606.23927",
    "note": "Automated red-teaming across 45 agent systems."
+  },
+  {
+   "title": "Why Solve It Twice? Hierarchical Accumulation of Skills for Transfer-Efficient ML Engineering",
+   "who": "Kim, Talebirad, and Zaiane",
+   "venue": "ICML 2026 workshop (DL4C)",
+   "url": "https://arxiv.org/abs/2606.30911",
+   "note": "Tiered skill memory for ML-engineering agents; single-seed results."
+  },
+  {
+   "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+   "who": "Wu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01224",
+   "note": "Memory management learned as a skill, with 2 to 4 times gains on long games."
+  },
+  {
+   "title": "Training Therapeutic Judges and Multi-Agent Systems for Human-Aligned Mental Health Support",
+   "who": "Rahman et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.30887",
+   "note": "A trained clinical judge drives critic, coach, and therapist roles."
+  },
+  {
+   "title": "ForecastAgentSearch: Towards a Multi-Expert Agent Search System for Geopolitical Event Forecasting",
+   "who": "Cai et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2606.31665",
+   "note": "A preliminary design for choosing expert agents per forecasting question."
+  },
+  {
+   "title": "Cache Merging as a Convergent Replicated State for Multi-Agent Latent Reasoning",
+   "who": "Baquero and Brito",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01308",
+   "note": "Merges agents' hidden states in an order-independent way."
+  },
+  {
+   "title": "Agent4cs: A Multi-agent System for Code Summarization in Large Hierarchical Codebases",
+   "who": "Tang et al.",
+   "venue": "EUMAS 2026",
+   "url": "https://arxiv.org/abs/2607.01425",
+   "note": "Bottom-up summarization of large codebases by three agents."
+  },
+  {
+   "title": "CausalSteward: An Agentic Divide-Conquer-Combine Copilot for Causal Discovery",
+   "who": "Tagliapietra et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01936",
+   "note": "Human-in-the-loop agents for large causal models."
+  },
+  {
+   "title": "UA-ChatDev: Uncertainty-Aware Multi-Agent Collaboration for Reliable Software Development",
+   "who": "Ogunsusi, Qian, and Dong",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02186",
+   "note": "Triggers verification when an agent's confidence drops, to stop errors propagating."
+  },
+  {
+   "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+   "who": "Zhu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.01874",
+   "note": "Process rubrics expose skill-use failures hidden by final success."
+  },
+  {
+   "title": "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition",
+   "who": "George et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02448",
+   "note": "Agents propose printability fixes for 3D parts; one case study."
+  },
+  {
+   "title": "PairCoder++: Pair Programming as a Universal Paradigm for Verified Code-Driven Multimodal and Structured-Artifact Generation",
+   "who": "Chen et al.",
+   "venue": "ACL 2026",
+   "url": "https://arxiv.org/abs/2607.01883",
+   "note": "Driver and navigator agents that switch roles on persistent errors, at about 7 times the cost."
+  },
+  {
+   "title": "SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery",
+   "who": "Virk et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02807",
+   "note": "An orchestrator steers search agents on separate branches to avoid premature convergence."
+  },
+  {
+   "title": "Object-Centric Environment Modeling for Agentic Tasks",
+   "who": "Li et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.02846",
+   "note": "Stores experience as executable object models and procedures."
+  },
+  {
+   "title": "MUTE: Return-Preserving Communication Unlearning for Efficient Multi-Agent Coordination",
+   "who": "Zuo et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.03473",
+   "note": "Cuts MARL agents' messages by 80 to 90% without losing return."
+  },
+  {
+   "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+   "who": "Podivilov et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.06624",
+   "note": "Reviews whole coding-agent trajectories, not only pass or fail."
+  },
+  {
+   "title": "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents",
+   "who": "Ding et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.07321",
+   "note": "Agents turn recurring workflows into reusable procedure tools."
+  },
+  {
+   "title": "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling",
+   "who": "Tewari and Kimko",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.07666",
+   "note": "Specialist agents under principal-investigator agents for pharmacology modeling."
   }
  ]
 }
