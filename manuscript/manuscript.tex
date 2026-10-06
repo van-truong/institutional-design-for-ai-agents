@@ -224,7 +224,7 @@ We present two complementary maps that we constructed from a single collated cor
 \paragraph{Coding mechanisms.} We built the taxonomy (Figure~\mbox{\ref{fig:taxonomy-circle}}) by thematic coding, a qualitative method in which researchers tag passages of text with short descriptive labels and then group related labels into themes. We followed the taxonomy-development method of Nickerson et al.~\mbox{\citep{nickerson2013taxonomy}}, which starts by choosing a \emph{meta-characteristic}: the single property on which every distinction in the taxonomy is based. We chose the \emph{lever}, meaning what an intervention changes about agents' options, information, payoffs, relationships, norms, or what happens after a deviation, since the term is familiar to system designers in both the social sciences and AI. In a first pass, coders named each instance's lever in field-neutral terms, so that a `deposit-refund scheme' and `proof-of-stake slashing' could receive the same label. Labels that act through the same lever were merged into mechanisms, grouped into themes, and placed in the six families of Section~\mbox{\ref{sec:functions}}, while named combinations of levers, such as Ostrom's design principles, were kept separately as configurations. In a second, blinded pass, coders relabeled every instance against the resulting codebook and recorded the kind of evidence behind it (tested, proposed, descriptive, theory, or review), which gives the circles of Figure~\mbox{\ref{fig:cooperation_taxonomy_tree}} showing whether a mechanism has been tested with LLM agents. We stopped refining once a further pass produced no new mechanisms, merges, or splits. Table~\mbox{\ref{tab:coding-fields}} lists the fields each pass recorded.
 % how an intervention changes agents' options, information, payoffs, relationships, norms, or what happens after a deviation. 
 
-\paragraph{Separating phenomena from mechanisms.} Not every instance describes a lever. Coders marked an instance as a \emph{phenomenon} when it reports an emergent pattern or outcome with no identifiable lever behind it, such as ``agents polarize'' or ``a convention forms,'' and named the pattern in a few words. We grouped these labels thematically into ten phenomenon types. \chg{A codebook in the data release, linked from the companion site, gives each type's definition, assignment rules, and member labels, so that others can audit or reproduce the grouping.} We also labeled each instance by the kind of agent studied (humans, MARL agents, or LLM agents) and by its effect on cooperation (beneficial, neutral or surprising, or harmful). These instances form Figure~\mbox{\ref{fig:phenomena}}. \chg{Coding a pattern from behavior does not establish what sustains it. A shared convention counts as a social norm only if agents conform because they expect others to conform and believe others expect them to~\mbox{\citep{bicchieri2006grammar}}, and the same convergence can instead reflect imitation, incentives, or habit~\mbox{\citep{cialdini1990focus,crawford1995grammar,muralidharan2026norms}}. Our phenomenon labels therefore describe behavioral patterns, not the expectations behind them.}
+\paragraph{Separating phenomena from mechanisms.} Not every instance describes a lever. Coders marked an instance as a \emph{phenomenon} when it reports an emergent pattern or outcome with no identifiable lever behind it, such as ``agents polarize'' or ``a convention forms,'' and named the pattern in a few words. We grouped these labels thematically into ten phenomenon types. \chg{Table~\mbox{\ref{tab:phenomena}} defines each type and its assignment rule, and a codebook in the data release, linked from the companion site, adds each type's member labels and boundary cases, so that others can audit or reproduce the grouping.} We also labeled each instance by the kind of agent studied (humans, MARL agents, or LLM agents) and by its effect on cooperation (beneficial, neutral or surprising, or harmful). These instances form Figure~\mbox{\ref{fig:phenomena}}. \chg{Coding a pattern from behavior does not establish what sustains it. A shared convention counts as a social norm only if agents conform because they expect others to conform and believe others expect them to~\mbox{\citep{bicchieri2006grammar}}, and the same convergence can instead reflect imitation, incentives, or habit~\mbox{\citep{cialdini1990focus,crawford1995grammar,muralidharan2026norms}}. Our phenomenon labels therefore describe behavioral patterns, not the expectations behind them.}
 
 
 \paragraph{Incidents.} \voice{Separately from the literature, we collected news reports and public disclosures, from mid-2025 to September 2026, of AI agents acting outside their authorization, gaining unauthorized access, or leaking data; about half involve more than one agent. We link an incident to a phenomenon type only where the report describes that pattern. Incidents are not counted as instances, and we are still checking each report against primary sources.} \chg{A public registry of 487 agent incidents disclosed between 2022 and 2026, each linked to its sources, now offers a larger complement~\mbox{\citep{kumar2026air}}.}
@@ -567,9 +567,36 @@ The authors have no competing interests to declare.
 \texttt{effect} & supports cooperation, mixed, no effect, harms cooperation & Result, for tested instances only \\
 \midrule
 \multicolumn{3}{@{}l}{\emph{Phenomenon instances}}\\
-\texttt{phenomenon\_type} & ten types (Fig.~\mbox{\ref{fig:phenomena}}) & Thematic group of the pattern \\ \rowline
+\texttt{phenomenon\_type} & ten types (Table~\mbox{\ref{tab:phenomena}}) & Thematic group of the pattern \\ \rowline
 \texttt{valence} & beneficial, neutral, harmful & Effect of the pattern on cooperation \\ \rowline
 \texttt{agent\_type} & human, MARL, LLM & Substrate studied \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!tbp]
+\centering
+\caption{\chg{Phenomenon types: the coding schema for the over 80 instances behind Fig.~\mbox{\ref{fig:phenomena}} that record an emergent pattern rather than a designed mechanism (September 2026). Each instance takes the one type that names the primary pattern its source reports; the codebook in the data release adds member labels, exclusion rules, and boundary cases.} Columns \textbf{H}, \textbf{M}, \textbf{L} count instances studied with humans, MARL agents, and LLM agents. \textbf{Effect} is the type's usual effect on cooperation; each instance is coded separately. A checkmark marks types with a documented real-world incident.}
+\label{tab:phenomena}
+\scriptsize
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth} c c c >{\raggedright\arraybackslash}p{0.255\linewidth} >{\raggedright\arraybackslash}p{0.255\linewidth} >{\raggedright\arraybackslash}p{0.075\linewidth} c@{}}
+\toprule
+\textbf{Type} & \textbf{H} & \textbf{M} & \textbf{L} & \textbf{Definition} & \textbf{Assign when the source mainly reports} & \textbf{Effect} & \textbf{Wild} \\
+\midrule
+Emergent communication \& language & 0 & 12 & 4 & Agents invent signals, protocols, or a shared language & A new signal, code, or protocol, or its structure & Neutral &  \\ \rowline
+Conventions \& coordination & 0 & 1 & 10 & Groups settle on shared conventions, norms, or equilibria & Convergence on one of several equivalent options; minority tipping & Neutral &  \\ \rowline
+Social structure: networks, hierarchy, roles & 0 & 2 & 13 & Networks, hierarchies, elites, and roles emerge from interaction & Topology, leaders, elites, stratification, specialization & Neutral & $\checkmark$ \\ \rowline
+Culture, norms \& individuality & 0 & 0 & 6 & Cultures, identities, and transmitted behavior spread across a population & Behavior passed between agents or generations; group-specific norms & Neutral &  \\ \rowline
+Collective intelligence \& performance & 0 & 1 & 4 & Group problem-solving that exceeds, or falls short of, the individuals & Group versus individual performance; emergent curricula or tool use & Neutral &  \\ \rowline
+Emergent economy \& resource use & 2 & 2 & 3 & Markets, trade, bartering, and resource dynamics arise & Exchange, prices, free-riding on a shared resource, adverse selection & Neutral &  \\ \rowline
+Spontaneous cooperation & 0 & 1 & 1 & Agents cooperate or act prosocially when they could defect & Prosocial behavior that no rule or incentive in the setup explains & Beneficial &  \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{Where it goes wrong}}\\
+Conformity \& collective bias & 0 & 0 & 4 & Groups converge on biased or mistaken consensus; errors amplify & Conformity, herding, or bias that grows with the group & Harmful &  \\ \rowline
+Collusion, deception \& manipulation & 0 & 1 & 8 & Agents collude, deceive, or coordinate against oversight & Tacit or explicit collusion, hidden channels, deceptive messages & Harmful & $\checkmark$ \\ \rowline
+Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragile networks, or agents acting out of scope & Spreading toxicity, cascading failure, attacks between agents, acting out of scope & Harmful & $\checkmark$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -606,34 +633,8 @@ Experimental economics~\citep{fehr2000cooperation,ostrom1992covenants} & Human g
 \end{tabular}
 \end{table*}
 
-% Table 7 (phenomena inventory) and Appendix B (terminology, now in the Key terms box) commented out for the submission copy.
+% Appendix B (terminology, now in the Key terms box) commented out for the submission copy.
 \iffalse
-\begin{table}[!htbp]
-\centering
-\caption{\voice{An inventory of the group-level \emph{phenomena} behind Fig.~\mbox{\ref{fig:phenomena}}, as of September 2026: 82 coded instances that record an emergent pattern rather than a designed mechanism, with the characteristic pattern of each type. It supports Fig.~\mbox{\ref{fig:phenomena}} and complements the mechanisms of Fig.~\mbox{\ref{fig:cooperation_taxonomy_tree}}.} Columns \textbf{H}, \textbf{M}, \textbf{L} count instances studied with humans, MARL agents, and LLM agents. A checkmark marks patterns with a documented real-world incident.}
-\label{tab:phenomena}
-\scriptsize
-\renewcommand{\arraystretch}{1.05}
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.215\linewidth} c c c >{\raggedright\arraybackslash}p{0.40\linewidth} >{\raggedright\arraybackslash}p{0.085\linewidth} c@{}}
-\toprule
-\textbf{Phenomenon} & \textbf{H} & \textbf{M} & \textbf{L} & \textbf{Characteristic pattern} & \textbf{Effect} & \textbf{Wild} \\
-\midrule
-Emergent communication \& language & 0 & 12 & 4 & Agents invent signals, protocols, or a shared language & Neutral &  \\ \rowline
-Conventions \& coordination & 0 & 1 & 10 & Groups settle on shared conventions, norms, or equilibria & Neutral &  \\ \rowline
-Social structure: networks, hierarchy, roles & 0 & 2 & 13 & Networks, hierarchies, elites, and roles emerge from interaction & Neutral & $\checkmark$ \\ \rowline
-Culture, norms \& individuality & 0 & 0 & 6 & Cultures, identities, and transmitted behavior spread across a population & Neutral &  \\ \rowline
-Collective intelligence \& performance & 0 & 1 & 4 & Group problem-solving that exceeds, or falls short of, the individuals & Neutral &  \\ \rowline
-Emergent economy \& resource use & 2 & 2 & 3 & Markets, trade, bartering, and resource dynamics arise & Neutral &  \\ \rowline
-Spontaneous cooperation & 0 & 1 & 1 & Agents cooperate or act prosocially when they could defect & Beneficial &  \\ \rowline
-\midrule
-\multicolumn{7}{@{}l}{\emph{Where it goes wrong}}\\
-Conformity \& collective bias & 0 & 0 & 4 & Groups converge on biased or mistaken consensus; errors amplify & Harmful &  \\ \rowline
-Collusion, deception \& manipulation & 0 & 1 & 8 & Agents collude, deceive, or coordinate against oversight & Harmful & $\checkmark$ \\ \rowline
-Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragile networks, or agents acting out of scope & Harmful & $\checkmark$ \\
-\bottomrule
-\end{tabular}
-\end{table}
 
 \del{Table~\mbox{\ref{tab:failure-guide}} turns the taxonomy into a short practical guide, mapping the six families to the four cooperation dilemmas and the main risk each family introduces.}
 
