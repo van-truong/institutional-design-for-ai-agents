@@ -30,7 +30,7 @@
   };
   // Section 4: what each family modifies
   const FAMS = {
-    Normative: ["beliefs", "Says which actions are allowed, separately from which are possible or profitable."],
+    Normative: ["norms", "Says which actions are allowed, separately from which are possible or profitable."],
     Social: ["relationships", "Shapes the interaction structure: who is in the group, who interacts with whom, and whether agents can select or exclude partners."],
     Epistemic: ["information", "Changes what agents know about one another: what they can observe or verify."],
     Incentive: ["payoffs", "Modifies each agent's payoff function, reshaping the payoff consequences of action profiles."],
