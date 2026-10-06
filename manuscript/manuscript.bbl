@@ -3,6 +3,12 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
+\bibitem{aldrich2016flashcrash}
+Aldrich, E.M., Grundfest, J.A., Laughlin, G.: The flash crash: A new
+  deconstruction. SSRN Working Paper No.~2721922 (2016).
+  \doi{10.2139/ssrn.2721922},
+  \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2721922}
+
 \bibitem{amir2026emergence}
 Amir, D., Ahl, R.E., Jordan, M.R., Bolotin, H., Bogese, M., Gonz{\'a}lez, G.T.,
   Callaghan, T., Sugiyama, L.S., Otali, E., Tusiime, P., Bangayan, S.,
