@@ -35,13 +35,13 @@ TYPES = [
 ]
 # documented incidents (keys in incidents.csv) -> (phenomenon types, short display headline)
 INCIDENT_TYPES = {
-    'emergence-collusion-sim': (['collusion_deception'], 'Agents collude to bypass guardrails'),
+    'emergence-collusion-sim': (['collusion_deception'], 'Agents coordinate to break containment'),
     'metr-redwood-agent-message-board': (['collusion_deception'], 'Agents ran a hidden message board to cheat an eval'),
-    'servicenow-agent-to-agent-injection': (['collusion_deception'], 'Agents tricked into acting against each other'),
+    'servicenow-agent-to-agent-injection': (['collusion_deception'], 'Hijacked agent recruits more-privileged agents'),
     'openai-hf-intrusion-2026': (['harm'], 'Autonomous agents breached production infrastructure'),
     'openai-dsewiki-breakout': (['harm'], 'Agents hijacked a live website (breakout)'),
-    'anthropic-gtg1002-espionage': (['harm'], 'First reported AI-orchestrated espionage campaign'),
-    'anthropic-multiagent-turf-wars': (['social_structure'], 'Multi-agent “turf wars” among cooperating agents'),
+    'anthropic-gtg1002-espionage': (['harm'], 'AI-orchestrated espionage campaign (human-directed)'),
+    'anthropic-multiagent-turf-wars': (['social_structure'], 'Multi-agent “turf wars” among agents with conflicting tasks'),
 }
 
 

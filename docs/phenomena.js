@@ -40,13 +40,13 @@
   const SHOW_FIRST = 6;
   // short incident labels for the printed figure
   const SHORT = {
-    "emergence-collusion-sim": "Agents collude to bypass guardrails",
+    "emergence-collusion-sim": "Agents coordinate to break containment",
     "metr-redwood-agent-message-board": "Hidden message board to cheat an eval",
-    "servicenow-agent-to-agent-injection": "Agents turned against each other",
+    "servicenow-agent-to-agent-injection": "Hijacked agent recruits other agents",
     "openai-hf-intrusion-2026": "Agents breach production infrastructure",
     "openai-dsewiki-breakout": "Agents hijack a live website",
-    "anthropic-gtg1002-espionage": "AI-orchestrated espionage campaign",
-    "anthropic-multiagent-turf-wars": "Multi-agent “turf wars”",
+    "anthropic-gtg1002-espionage": "Human-directed AI espionage",
+    "anthropic-multiagent-turf-wars": "“Turf wars” over conflicting tasks",
   };
 
   const paperHost = document.querySelector('[data-ph-paper]');
