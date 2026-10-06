@@ -6,7 +6,7 @@ Van QT Truong, X. Angelo Huang, Erivan Inan, Ryan Faulkner, Joel N. Christoph, T
 
 ICML 2026 Workshop on Trustworthy AI for Good (AI4GOOD), Seoul · Springer LNCS proceedings (forthcoming)
 
-**[Interactive companion website](https://van-truong.github.io/institutional-design-for-ai-agents/)** · **[Paper (PDF)](manuscript.pdf)**
+**[Interactive companion website](https://van-truong.github.io/institutional-design-for-ai-agents/)** · **[Paper (PDF)](manuscript/manuscript.pdf)**
 
 ---
 
@@ -62,16 +62,13 @@ any counts. Entries are collected from a daily preprint digest and each is check
 Requires a TeX distribution with `latexmk` (TeX Live or MacTeX).
 
 ```bash
-make pdf        # builds manuscript.pdf at the repository root
+make pdf        # builds manuscript/manuscript.pdf
 ```
 
 The build uses the vector figure PDFs already in `manuscript/figures/`. Run `make figures` only to regenerate them
 from their editable sources: website-drawn figures come from `docs/*.js` through `manuscript/figs/*-paper.html` and
 `manuscript/scripts/gen_web_figs.py` (needs Chrome or Chromium and `pdfcrop`); the others come from the Python
 generators in `manuscript/scripts/`.
-
-Switches near the top of `manuscript.tex` control review markup. With `\showreviewflagstrue`, recent additions and
-open questions are highlighted; set `\showreviewflagsfalse` for a clean PDF.
 
 ## Viewing the website locally
 
@@ -115,7 +112,7 @@ Full acknowledgments are in the paper.
 
 - **Code** (the website in `docs/`, and the scripts in `manuscript/scripts/` and `taxonomy/scripts/`): [MIT](LICENSE).
 - **Data and figures** (everything in `taxonomy/`, `docs/assets/*.json`, and the figure files in `manuscript/figs/` and `manuscript/figures/`): [CC BY 4.0](LICENSE-CC-BY-4.0). Please cite the paper when you reuse them.
-- **Not covered by either license:** the paper's text and PDF (`manuscript/manuscript.tex`, `manuscript.pdf`, and `archive/icml2026/`), whose reuse is governed by the publisher's terms; the Springer LNCS style files (`llncs.cls`, `splncs04.bst`), which keep their own license; and the author photographs in `docs/assets/`.
+- **Not covered by either license:** the paper's text and PDF (`manuscript/manuscript.tex`, `manuscript/manuscript.pdf`, and `archive/icml2026/`), whose reuse is governed by the publisher's terms; the Springer LNCS style files (`llncs.cls`, `splncs04.bst`), which keep their own license; and the author photographs in `docs/assets/`.
 
 ## Contact
 
