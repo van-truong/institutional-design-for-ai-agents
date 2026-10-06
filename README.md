@@ -47,6 +47,7 @@ The taxonomy is the single source of truth for the paper's taxonomy figures and 
 | `mechanisms.csv`, `codebook.csv` | Mechanisms, themes, and families, with definitions |
 | `papers.csv` | The coded sources |
 | `configurations.csv` | Named combinations of mechanisms, such as Ostrom's design principles |
+| `coding/PHENOMENA_CODEBOOK.md`, `coding/phenomena_tags.csv` | The ten phenomenon types (definitions, assignment rules, boundary cases) and each phenomenon instance's type and effect |
 | `incidents.csv` | Real-world agent incidents linked to phenomenon types (being verified against primary sources) |
 | `phenomena_informal.csv` | A separate, clearly labeled slice of informal reports (blog posts, public logs), shown only as an opt-in overlay on the website |
 | `candidates_next_pass.csv` | Recent papers queued for the next coding pass |
