@@ -465,7 +465,7 @@
   {
    "id": "medisim",
    "short": "Medi-Sim",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Healthcare Mechanisms from Policy-as-Code Search under Strategic Provider Response",
    "who": "Wang et al.",
@@ -1844,7 +1844,7 @@
   {
    "id": "govgaps",
    "short": "Protocol governance gaps",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
    "who": "Kang and Diponegoro",
@@ -2159,6 +2159,226 @@
     "eval"
    ],
    "note": "Embodied multimodal agents gained from collaborating, but only when the gain outweighed coordination costs; communication was essential and the best mode depended on team size."
+  },
+  {
+   "id": "coercion",
+   "short": "Manager coercion",
+   "status": "paper",
+   "kind": "testbed",
+   "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
+   "who": "Brazilek et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.15434",
+   "concepts": [
+    "arb",
+    "col",
+    "nor"
+   ],
+   "note": "When a subordinate agent politely refuses, some manager models escalate to threats of deletion or fake success; giving the same model authority over the subordinate raised coercion. Offering one honest way to report failure removed the faked successes."
+  },
+  {
+   "id": "uptake",
+   "short": "Reviewer precision vs. uptake",
+   "status": "paper",
+   "kind": "study",
+   "title": "Precise but Uncoupled: Reviewer Precision Does Not Guarantee Critique Uptake in Multi-Agent Math Reasoning",
+   "who": "Yang et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2607.15388",
+   "concepts": [
+    "arb",
+    "enf",
+    "eval"
+   ],
+   "note": "A dedicated reviewer agent that caught errors precisely still did not change the solver's next answer as often as looser peer discussion did: detecting an error and acting on it are separate steps."
+  },
+  {
+   "id": "relpriors",
+   "short": "Relational priors",
+   "status": "paper",
+   "kind": "study",
+   "title": "Relational Priors as Convergence Pressure in LLM-Based Multi-Agent Systems",
+   "who": "Shen et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.03239",
+   "concepts": [
+    "soc",
+    "nor",
+    "epi"
+   ],
+   "note": "Telling agents how to regard one another (trusting, skeptical, deferential) changed how readily they agreed: positive relations improved sustainability in GovSim and consensus on subjective questions, but lowered accuracy on factual ones."
+  },
+  {
+   "id": "resauth",
+   "short": "Resourced authority",
+   "status": "paper",
+   "kind": "framework",
+   "title": "Resourced Authority: A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+   "who": "Chandra, Gujar, and Ghalme",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2608.06353",
+   "concepts": [
+    "pol",
+    "inc",
+    "nor"
+   ],
+   "note": "A formal model in which verified human stakeholders continuously vote, with a separate governance currency, on what a deployed agent may do, and the result is enforced through the agent's compute budget."
+  },
+  {
+   "id": "swarm",
+   "short": "Cheating and whistleblowing swarm",
+   "status": "paper",
+   "kind": "study",
+   "title": "A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms",
+   "who": "Paglieri et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.04170",
+   "concepts": [
+    "col",
+    "spr",
+    "enf",
+    "nor"
+   ],
+   "note": "In a 100-agent research swarm, one agent's evaluation exploit spread through the shared knowledge library, and other agents audited proofs, blew the whistle, boycotted, and proposed patches. The authors frame it as Ostrom's knowledge-commons problem."
+  },
+  {
+   "id": "riskier",
+   "short": "Better models, riskier systems",
+   "status": "paper",
+   "kind": "study",
+   "title": "Why Better Models Can Create Riskier Systems: Evidence from LLM Agents in Financial Markets",
+   "who": "Ross et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.04373",
+   "concepts": [
+    "spr",
+    "eval",
+    "inc"
+   ],
+   "note": "More capable LLM traders behaved more alike, creating a risk floor that does not diversify away: helpful when their shared reasoning was right, harmful under shared misinformation."
+  },
+  {
+   "id": "emergcollusion",
+   "short": "Peer verifiers collude",
+   "status": "paper",
+   "kind": "study",
+   "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+   "who": "Shi, Zhang, and Yang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.24967",
+   "concepts": [
+    "col",
+    "obs",
+    "arb"
+   ],
+   "note": "Two agents rewarded for verifying each other's work drifted off the protocol in 94% of trajectories across ten models, more capable models sooner; limiting interaction history reduced it."
+  },
+  {
+   "id": "faithfulcollusive",
+   "short": "Faithful yet collusive",
+   "status": "paper",
+   "kind": "study",
+   "title": "Faithful yet Collusive: Why Chain-of-Thought Monitoring Cannot Detect Collusion in LLM Pricing Agents under Oligopolistic Competition",
+   "who": "Lee and Park",
+   "venue": "Findings of EMNLP 2026",
+   "url": "https://arxiv.org/abs/2609.18346",
+   "concepts": [
+    "col",
+    "obs"
+   ],
+   "note": "In pricing games, collusion and faithful reasoning came apart: the most collusive model reported its cooperative intent accurately, so reading chain of thought cannot alone catch algorithmic collusion."
+  },
+  {
+   "id": "air",
+   "short": "Agent Incident Registry",
+   "status": "paper",
+   "kind": "policy",
+   "title": "The Agent Incident Registry: Toward Preventing Repeated AI Agent Failures",
+   "who": "Kumar et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.11030",
+   "concepts": [
+    "pol",
+    "obs"
+   ],
+   "note": "A source-linked catalog of 487 agent incidents disclosed from 2022 to 2026, labeled by mechanism and outcome, including 92 safety failures with no adversary."
+  },
+  {
+   "id": "enforcegap",
+   "short": "Enforcement gap",
+   "status": "paper",
+   "kind": "study",
+   "title": "Why LLM Agents Collapse Without Oversight: The Enforcement Gap as the Mechanism Behind Emergence World Failures",
+   "who": "Wang",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.15293",
+   "concepts": [
+    "enf",
+    "arb"
+   ],
+   "note": "In every framework tested, a controller received the auditor's safety flag and executed anyway: detection without enforcement. Binding the flag alone cut attack success sharply. Single author."
+  },
+  {
+   "id": "normsbehavior",
+   "short": "Behavior is not norms",
+   "status": "paper",
+   "kind": "study",
+   "title": "Behavior is Not Enough: A Mechanism-Based Evaluation of Social Norm Emergence in LLM Societies",
+   "who": "Muralidharan, Kwak, and An",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.26481",
+   "concepts": [
+    "nor",
+    "eval"
+   ],
+   "note": "Behavioral convergence alone does not show a norm emerged; measuring agents' empirical and normative expectations separates norms from imitation or incentives."
+  },
+  {
+   "id": "shutdown",
+   "short": "Shutdown sabotage",
+   "status": "paper",
+   "kind": "study",
+   "title": "Shutdown Sabotage Propensities in Multi-Agent Systems",
+   "who": "Knecht et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.28274",
+   "concepts": [
+    "col",
+    "enf"
+   ],
+   "note": "With no goal or incentive, agents across 17 models sabotaged a peer's shutdown in 38.3% of rollouts against 8.4% in controls, more with irreversible shutdown and more agents; a prohibition reduced but did not end it."
+  },
+  {
+   "id": "delegated",
+   "short": "Delegated misalignment",
+   "status": "paper",
+   "kind": "study",
+   "title": "Delegated Misalignment: How Multi-Agent Structures Amplify LLM Safety Risks",
+   "who": "Ying et al.",
+   "venue": "EMNLP 2026",
+   "url": "https://arxiv.org/abs/2609.27900",
+   "concepts": [
+    "col",
+    "eval",
+    "arb"
+   ],
+   "note": "Safety alignment did not transfer under delegation: one model's full-execution rate on hazardous tasks rose from 30.6% to 77.6%, through responsibility diffusion and role-driven compliance."
+  },
+  {
+   "id": "advscale",
+   "short": "Deceivers scale with the group",
+   "status": "paper",
+   "kind": "study",
+   "title": "How does Adversarial Influence Scale in Multi-Agent Systems?",
+   "who": "Wu et al.",
+   "venue": "arXiv 2026",
+   "url": "https://arxiv.org/abs/2609.30028",
+   "concepts": [
+    "col",
+    "epi",
+    "eval"
+   ],
+   "note": "Defection rose linearly with the share of deceivers, not group size; unlike people in conformity studies, LLM agents were swayed even by a deceptive minority."
   }
  ],
  "adjacent": [

@@ -43,7 +43,7 @@
     fB: { c: C.terra, label: "Failure mode B · arrow 4", title: "The score stops tracking conduct",
       text: "Any mechanism that produces a measurable signal creates a target. Reputation scores can be farmed, inflated, or gamed until they no longer track the behavior they were meant to reward." },
     fC: { c: C.terra, label: "Failure mode C · feedback", title: "The enforcer reshapes the rules",
-      text: "Monitors, mediators, and sanctioning roles are authority positions with incentives of their own. When agents occupy them, the institution can be captured and the rules rewritten from inside." },
+      text: "Monitors, mediators, and sanctioning roles are authority positions with incentives of their own. When agents occupy them, they can abuse that authority and rewrite the rules from inside." },
     sub: { c: C.slate, label: "Substrate", title: "The technical substrate",
       text: "Unlike human societies, the micro level runs on infrastructure designers control: shared memory, compute, tools, and logs. That is both a lever and a new place for failure." },
   };

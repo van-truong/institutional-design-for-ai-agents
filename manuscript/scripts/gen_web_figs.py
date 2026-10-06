@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """Paper figures drawn by the website's own scripts in paper mode, so the paper and the site share one drawing.
 
-  figure_nested-rings   docs/rings.js    via figs/rings-paper.html     -> Fig. 1
-  figure_coleman-boat   docs/coleman.js  via figs/coleman-paper.html   -> the Coleman boat
-  figure_failure-modes  docs/failures.js via figs/failures-paper.html  -> where mechanisms fail
-  figure_related-map    docs/related.js  via figs/related-paper.html   -> mind map of related efforts (Sec. 3)
+  figure_nested-rings          docs/rings.js       -> Fig. 1, nested systems around an agent
+  figure_agent-in-context-web  docs/context.js     -> Fig. 2, top-down and bottom-up institutions
+  figure_dilemmas              docs/dilemmas.js    -> Fig. 3, cooperation dilemmas
+  figure_taxonomy-circle       docs/taxcircle.js   -> Fig. 4, the taxonomy at a glance
+  figure_related-map           docs/related.js     -> Fig. 5, mind map of related efforts
+  figure_design-space-game     docs/designspace.js -> Fig. 6, the design space of agent institutions
+  figure_phenomena-map         docs/phenomena.js   -> Fig. 8, group-level phenomena
+  figure_coleman-boat          docs/coleman.js     -> Fig. 10, the Coleman boat
+Each is printed from its paper-mode page, manuscript/figs/*-paper.html. Figs. 7 and 9 come from render_figures.sh.
 
 Serves the repo on a local port, loads each page in headless Chrome, saves the <svg> the script draws to
 figures/<name>.svg, and prints the page to a vector PDF with Chrome (librsvg cannot draw curved textPath labels).
@@ -19,11 +24,9 @@ FIGURES = os.path.join(HERE, '..', 'figures')
 FIGS = {
     'figure_nested-rings': ('manuscript/figs/rings-paper.html', 'Macrosystem'),
     'figure_coleman-boat': ('manuscript/figs/coleman-paper.html', 'Institutional change'),
-    'figure_failure-modes': ('manuscript/figs/failures-paper.html', 'Paid, not obeyed'),
     'figure_agent-in-context-web': ('manuscript/figs/context-paper.html', 'Individual model'),
-    'figure_design-space-web': ('manuscript/figs/designspace-paper.html', 'Agent institution'),
     'figure_taxonomy-circle': ('manuscript/figs/taxcircle-paper.html', 'mechanisms'),
-    'figure_design-space-game': ('manuscript/figs/designspace-game-paper.html', 'deontic'),  # draft: Fig. 4 with game badges
+    'figure_design-space-game': ('manuscript/figs/designspace-game-paper.html', 'deontic'),
     'figure_dilemmas': ('manuscript/figs/dilemmas-paper.html', 'Extractive'),
     'figure_phenomena-map': ('manuscript/figs/phenomena-paper.html', 'Collusion'),
     'figure_related-map': ('manuscript/figs/related-paper.html', 'Mind map'),

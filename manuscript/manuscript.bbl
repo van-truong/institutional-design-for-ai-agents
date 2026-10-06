@@ -28,6 +28,10 @@ Anthis, J.R., Liu, R., Richardson, S.M., Kozlowski, A.C., Koch, B.,
   Research, vol.~267, pp. 81005--81034. PMLR (2025),
   \url{https://proceedings.mlr.press/v267/anthis25a.html}
 
+\bibitem{axelrod1986evolutionary}
+Axelrod, R.: An evolutionary approach to norms. American Political Science
+  Review  \textbf{80}(4),  1095–1111 (1986). \doi{10.2307/1960858}
+
 \bibitem{bacharachIndividualChoiceTeams2006}
 Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
   Theory}}. Princeton University Press (2006). \doi{10.2307/j.ctv346nwb},
@@ -35,12 +39,18 @@ Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
 
 \bibitem{secFlashCrash2010}
 Berman, G.E.: Market participants and the {May} 6 flash crash (Oct 2010),
-  \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech by the
-  U.S. Securities and Exchange Commission
+  \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech at the
+  11th Annual SIFMA Market Structure Conference, U.S. Securities and Exchange
+  Commission
 
 \bibitem{bicchieri2006grammar}
 Bicchieri, C.: The Grammar of Society: The Nature and Dynamics of Social Norms.
   Cambridge University Press, Cambridge (2006). \doi{10.1017/CBO9780511616037}
+
+\bibitem{bicchieri2017wild}
+Bicchieri, C.: Norms in the Wild: How to Diagnose, Measure, and Change Social
+  Norms. Oxford University Press, New York (2017).
+  \doi{10.1093/acprof:oso/9780190622046.001.0001}
 
 \bibitem{boella2006normative}
 Boella, G., van~der Torre, L., Verhagen, H.: Introduction to normative
@@ -62,6 +72,11 @@ Brazilek, J., Chaudhary, M., Lu, Z., Tidmarsh, M.: Coercion and deception in
 Bronfenbrenner, U.: The Ecology of Human Development: Experiments by Nature and
   Design. Harvard University Press, Cambridge, MA (1979).
   \doi{10.4159/9780674028845}
+
+\bibitem{caliskan2017semantics}
+Caliskan, A., Bryson, J.J., Narayanan, A.: Semantics derived automatically from
+  language corpora contain human-like biases. Science  \textbf{356}(6334),
+  183--186 (2017). \doi{10.1126/science.aal4230}
 
 \bibitem{chan2025infrastructure}
 Chan, A., Wei, K., Huang, S., Rajkumar, N., Perrier, E., Lazar, S., Hadfield,
@@ -132,6 +147,15 @@ Faulkner, R., Deshpande, A., Guzman~Piedrahita, D., Leibo, J.Z., Jin, Z.:
 Fehr, E., G{\"a}chter, S.: Cooperation and punishment in public goods
   experiments. American Economic Review  \textbf{90}(4),  980--994 (2000).
   \doi{10.1257/aer.90.4.980}
+
+\bibitem{fish2024algorithmic}
+Fish, S., Gonczarowski, Y.A., Shorrer, R.I.: Algorithmic collusion by large
+  language models (2024), \url{https://arxiv.org/abs/2404.00806}
+
+\bibitem{ashery2025conventions}
+Flint~Ashery, A., Aiello, L.M., Baronchelli, A.: Emergent social conventions
+  and collective bias in {LLM} populations. Science Advances  \textbf{11}(20),
+  eadu9368 (2025). \doi{10.1126/sciadv.adu9368}
 
 \bibitem{fudenbergFolkTheoremRepeated1986}
 Fudenberg, D., Maskin, E.: The {{Folk Theorem}} in {{Repeated Games}} with
@@ -218,16 +242,43 @@ Harsanyi, J.C.: Games with {{Incomplete Information Played}} by
   Management Science  \textbf{14}(3),  159--182 (Nov 1967).
   \doi{10.1287/mnsc.14.3.159}
 
+\bibitem{hayek1973law}
+Hayek, F.A.: Law, Legislation and Liberty, Volume 1: Rules and Order.
+  University of Chicago Press, Chicago (1973),
+  \url{https://press.uchicago.edu/ucp/books/book/chicago/L/bo26122880.html}
+
+\bibitem{henrich2006costly}
+Henrich, J., McElreath, R., Barr, A., Ensminger, J., Barrett, C., Bolyanatz,
+  A., Cardenas, J.C., Gurven, M., Gwako, E., Henrich, N., Lesorogol, C.,
+  Marlowe, F., Tracer, D., Ziker, J.: Costly punishment across human societies.
+  Science  \textbf{312}(5781),  1767--1770 (2006).
+  \doi{10.1126/science.1127333},
+  \url{https://www.science.org/doi/abs/10.1126/science.1127333}
+
 \bibitem{herrmannAntisocialPunishmentSocieties2008}
 Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
   Societies}}. Science  \textbf{319}(5868),  1362--1367 (Mar 2008).
   \doi{10.1126/science.1153808}
+
+\bibitem{horiguchi2024evolution}
+Horiguchi, I., Yoshida, T., Ikegami, T.: Evolution of social norms in {LLM}
+  agents using natural language (2024), \url{https://arxiv.org/abs/2409.00993}
+
+\bibitem{horne2002sanctioning}
+Horne, C., Cutlip, A.: Sanctioning costs and norm enforcement. Rationality and
+  Society  \textbf{14}(3),  285--307 (2002). \doi{10.1177/1043463102014003002}
 
 \bibitem{hossain2026containment}
 Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
   deployed agentic {AI} frameworks fail public-facing safety requirements
   (2026), \url{https://arxiv.org/abs/2606.12797}, iCML 2026 Workshop on
   Trustworthy AI for Good (AI4GOOD)
+
+\bibitem{hota2025nomiclaw}
+Hota, A., Jokinen, J.P.P.: {NomicLaw}: Emergent trust and strategic
+  argumentation in {LLMs} during collaborative law-making. In: Proceedings of
+  the AAAI/ACM Conference on AI, Ethics, and Society. vol.~8, pp. 1278--1289
+  (2025). \doi{10.1609/aies.v8i2.36629}
 
 \bibitem{huDissociativeIdentityLanguage2026}
 Hu, B.A., Rong, H., Kleek, M.V.: Dissociative {{Identity}}: {{Language Model
@@ -255,19 +306,15 @@ Huang, X.A., Tharas, C., Marro, S., Truong, V.Q., Schölkopf, B., Malfa, E.L.,
 
 \bibitem{joshi2026deontic}
 Joshi, A., Finin, T., Joshi, K.P., Kagal, L.: Deontic policies for runtime
-  governance of agentic {AI} systems (2026),
-  \url{https://arxiv.org/abs/2606.19464}, to appear, 2026 IEEE Symposium on
-  Agentic Services
-
-\bibitem{kang2026govgaps}
-Kang, R., Diponegoro, Y.: Governance gaps in agent interoperability protocols:
-  What {MCP}, {A2A}, and {ACP} cannot express (2026),
-  \url{https://arxiv.org/abs/2606.31498}
+  governance of agentic {AI} systems. In: 2026 IEEE International Conference on
+  Web Services (ICWS). pp. 1255--1264 (2026).
+  \doi{10.1109/ICWS72778.2026.00159}
 
 \bibitem{kirilenkoFlashCrashHighFrequency2017}
 Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
   {{High-Frequency Trading}} in an {{Electronic Market}}. The Journal of
-  Finance  \textbf{72}(3),  967--998 (2017). \doi{10.1111/jofi.12498}
+  Finance  \textbf{72}(3),  967--998 (2017). \doi{10.1111/jofi.12498},
+  \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1686004}
 
 \bibitem{knecht2026shutdown}
 Knecht, A., Schaller, U., Summerfield, C., Hagendorff, T.: Shutdown sabotage
@@ -295,6 +342,12 @@ Larcher, H., Carreira, A., G., R., Rannou, C.: Anatomy of a frontier lab agent
   intrusion: A technical timeline of the {July} 2026 incident.
   https://huggingface.co/blog/agent-intrusion-technical-timeline (Jul 2026)
 
+\bibitem{ucsc2016flashcrash}
+Lasnier, G.: New paper examines the details behind stock market `flash crash'.
+  UC Santa Cruz News (2016), \url{https://news.ucsc.edu/2016/03/flash-crash/},
+  march 3, 2016; on Aldrich, Grundfest and Laughlin, ``The Flash Crash: A New
+  Deconstruction''
+
 \bibitem{lee2026faithful}
 Lee, D., Park, H.: Faithful yet collusive: Why chain-of-thought monitoring
   cannot detect collusion in {LLM} pricing agents under oligopolistic
@@ -320,11 +373,6 @@ Leibo, J.Z., Vezhnevets, A.S., Diaz, M., Agapiou, J.P., Cunningham, W.A.,
 \bibitem{lewisConventionPhilosophicalStudy2008}
 Lewis, D.: Convention: {{A Philosophical Study}}. Wiley-Blackwell, Oxford, UK
   (2008)
-
-\bibitem{li2026vending}
-Li, Z., Petersson, L., Acquisti, A., Bakker, M.A.: Emergent misaligned
-  communication in long-horizon multi-agent {LLM} commerce (2026),
-  \url{https://arxiv.org/abs/2608.14825}
 
 \bibitem{liu2026reframing}
 Liu, L., Yu, H., Jiang, X., Wang, S., Qian, P., Chen, Y.: Operational reframing
@@ -461,6 +509,12 @@ Rahman, M.H., Haider, Z., Mahfuz, T., Chakraborty, P.: {HARP}: Measuring harm
   amplification in multi-agent {LLM} systems (2026),
   \url{https://arxiv.org/abs/2605.27489}
 
+\bibitem{rand2011dynamic}
+Rand, D.G., Arbesman, S., Christakis, N.A.: Dynamic social networks promote
+  cooperation in experiments with humans. Proceedings of the National Academy
+  of Sciences  \textbf{108}(48),  19193--19198 (2011).
+  \doi{10.1073/pnas.1108243108}
+
 \bibitem{rehm2026selfgovernance}
 Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
   {LLM} agent societies (2026), \url{https://arxiv.org/abs/2609.22600}
@@ -575,13 +629,6 @@ Vezhnevets, A.S., Agapiou, J.P., Aharon, A., Ziv, R., Matyas, J.,
   social, or digital space using {Concordia} (2023),
   \url{https://arxiv.org/abs/2312.03664}
 
-\bibitem{wangmdreplacehumans2025}
-Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
-  human participants can harmfully misportray and flatten identity groups. Nat.
-  Mac. Intell.  \textbf{7}(3),  400--411 (2025).
-  \doi{10.1038/S42256-025-00986-Z},
-  \url{https://doi.org/10.1038/s42256-025-00986-z}
-
 \bibitem{wang2026lawinsilico}
 Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
   Simulating legal society with {LLM}-based agents. In: Findings of the
@@ -589,6 +636,16 @@ Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
   Association for Computational Linguistics, San Diego, California, United
   States (2026). \doi{10.18653/v1/2026.findings-acl.396},
   \url{https://aclanthology.org/2026.findings-acl.396/}
+
+\bibitem{wang2026enforcementgap}
+Wang, Y.: Why {LLM} agents collapse without oversight: The enforcement gap as
+  the mechanism behind emergence world failures (2026),
+  \url{https://arxiv.org/abs/2609.15293}
+
+\bibitem{wang2026medisim}
+Wang, Z., Xu, X., Zha, H., Li, W.: Healthcare mechanisms from policy-as-code
+  search under strategic provider response (2026),
+  \url{https://arxiv.org/abs/2605.30680}
 
 \bibitem{weidinger2023sociotechnical}
 Weidinger, L., Rauh, M., Marchal, N., Manzini, A., Hendricks, L.A.,
@@ -642,6 +699,12 @@ Ying, Z., Yan, J., Luo, H., Zou, Q., Liu, A., Liu, X.: Delegated misalignment:
 Zaman, A., Nordby, E., Heiding, F.: Manipulation is task-dependent: A
   multi-axis, multi-environment evaluation of frontier {LLMs} (2026),
   \url{https://arxiv.org/abs/2606.25899}
+
+\bibitem{zhao2017menshopping}
+Zhao, J., Wang, T., Yatskar, M., Ordonez, V., Chang, K.W.: Men also like
+  shopping: Reducing gender bias amplification using corpus-level constraints.
+  In: Proceedings of the 2017 Conference on Empirical Methods in Natural
+  Language Processing. pp. 2979--2989 (2017). \doi{10.18653/v1/D17-1323}
 
 \bibitem{zheng2023judging}
 Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,

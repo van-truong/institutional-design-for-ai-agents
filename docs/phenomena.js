@@ -40,17 +40,19 @@
   const SHOW_FIRST = 6;
   // short incident labels for the printed figure
   const SHORT = {
-    "emergence-collusion-sim": "Agents collude to bypass guardrails",
+    "emergence-collusion-sim": "Agents coordinate to break containment",
     "metr-redwood-agent-message-board": "Hidden message board to cheat an eval",
-    "servicenow-agent-to-agent-injection": "Agents turned against each other",
+    "servicenow-agent-to-agent-injection": "Hijacked agent recruits other agents",
     "openai-hf-intrusion-2026": "Agents breach production infrastructure",
     "openai-dsewiki-breakout": "Agents hijack a live website",
-    "anthropic-gtg1002-espionage": "AI-orchestrated espionage campaign",
-    "anthropic-multiagent-turf-wars": "Multi-agent “turf wars”",
+    "anthropic-gtg1002-espionage": "Human-directed AI espionage",
+    "anthropic-multiagent-turf-wars": "“Turf wars” over conflicting tasks",
   };
 
   const paperHost = document.querySelector('[data-ph-paper]');
   const PAPER = !!paperHost && paperHost.dataset.mode === "paper";
+  // the printed paper gives a general count ("80+") so it ages well as the site grows
+  const roundDown = (n) => Math.floor(n / 10) * 10;
   const src = (paperHost && paperHost.dataset.src) || "assets/phenomena.json";
 
   fetch(src).then((r) => r.json()).then((data) => (PAPER ? drawPaper(data, paperHost) : render(data))).catch(() => {
@@ -174,7 +176,7 @@
       stext(lx + 14, ly, lab, { "font-size": 15, fill: INK }, svg);
       lx += lab.length * 8 + 46;
     });
-    stext(W - 20, ly, `Dot area ∝ instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
+    stext(W - 20, ly, PAPER ? `Dot area ∝ instances (over ${roundDown(data.counts.total)} in all)` : `Dot area ∝ instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
     return ly + 12;
   }
 
@@ -232,7 +234,7 @@
       tp.textContent = s;
     });
     svgEl("circle", { cx: CX, cy: CY, r: 70, fill: "#fff", stroke: HAIR, "stroke-width": 1.2 }, svg);
-    stext(CX, CY + 6 * k, String(data.counts.total), { "text-anchor": "middle", "font-size": 40 * k, "font-weight": 800, fill: INK }, svg);
+    stext(CX, CY + 6 * k, PAPER ? `${roundDown(data.counts.total)}+` : String(data.counts.total), { "text-anchor": "middle", "font-size": 40 * k, "font-weight": 800, fill: INK }, svg);
     stext(CX, CY + 30 * k, "instances", { "text-anchor": "middle", "font-size": 13.5 * k, fill: MUT }, svg);
 
     const nodes = [];

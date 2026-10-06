@@ -40,7 +40,7 @@
       scenes: ["sidewalk", "protocol"], bubbles: ["excuse me!", ""] },
     { key: "collusion", title: "Collusion", head: "#3F4D5A", dark: "#34465A", tint: "#EEF2F6", mid: "#5B6B7D", beyond: true,
       tension: "Agents cooperate all too effectively.",
-      human: "monitors and monitored collude; captured mediators", llm: "agents coordinating to evade human oversight",
+      human: "monitors and monitored collude; mediators won over by one side", llm: "agents coordinating to evade human oversight",
       more: "The inverse case: agents cooperate all too effectively, coordinating against human oversight. Cooperation is not an unqualified good.",
       scenes: ["whisper", "hidden"], bubbles: ["psst…", ""] },
   ];

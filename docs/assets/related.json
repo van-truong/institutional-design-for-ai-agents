@@ -465,7 +465,7 @@
   {
    "id": "medisim",
    "short": "Medi-Sim",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Healthcare Mechanisms from Policy-as-Code Search under Strategic Provider Response",
    "who": "Wang et al.",
@@ -1844,7 +1844,7 @@
   {
    "id": "govgaps",
    "short": "Protocol governance gaps",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Governance Gaps in Agent Interoperability Protocols: What MCP, A2A, and ACP Cannot Express",
    "who": "Kang and Diponegoro",
@@ -2179,7 +2179,7 @@
   {
    "id": "honestquorum",
    "short": "Honest quorum problem",
-   "status": "paper",
+   "status": "related",
    "kind": "framework",
    "title": "The Honest Quorum Problem: Epistemic Byzantine Fault Tolerance for Agentic Infrastructure",
    "who": "He and Yu",
@@ -2536,7 +2536,7 @@
   {
    "id": "energycommons",
    "short": "Draining the energy commons",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Draining the Energy Commons: Self-Defeating Over-Appropriation as a Coordination Failure in Agentic LLM Collectives",
    "who": "Bracale Syrnikov et al.",
@@ -2883,7 +2883,7 @@
   {
    "id": "truthdist",
    "short": "One deceiver derails the group",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems",
    "who": "Yan et al.",
@@ -3294,7 +3294,7 @@
   {
    "id": "vending",
    "short": "Misaligned commerce emails",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce",
    "who": "Li et al.",
@@ -3683,7 +3683,7 @@
   {
    "id": "alignedalone",
    "short": "Aligned alone, misaligned together",
-   "status": "paper",
+   "status": "related",
    "kind": "study",
    "title": "Aligned Alone, Misaligned Together: Forecasting Adversarial Capture in LLM Agent Populations",
    "who": "Magistrali and Shani",
@@ -4163,7 +4163,7 @@
   {
    "id": "enforcegap",
    "short": "Enforcement gap",
-   "status": "related",
+   "status": "paper",
    "kind": "study",
    "title": "Why LLM Agents Collapse Without Oversight: The Enforcement Gap as the Mechanism Behind Emergence World Failures",
    "who": "Wang",

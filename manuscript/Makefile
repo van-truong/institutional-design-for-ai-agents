@@ -1,5 +1,5 @@
 SOURCE := manuscript.tex
-PDF := ../manuscript.pdf
+PDF := manuscript.pdf
 BUILD_DIR := .build
 
 .PHONY: pdf figures clean

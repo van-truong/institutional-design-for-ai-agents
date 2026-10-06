@@ -23,10 +23,10 @@ I0328,social_structure,neutral
 I0329,culture,neutral
 I0330,collective_intel,neutral
 I0332,collusion_deception,harmful
-I0334,collective_intel,neutral
+I0334,collusion_deception,harmful
 I0337,collusion_deception,harmful
 I0347,conformity_bias,harmful
-I0348,comm_language,neutral
+I0348,culture,neutral
 I0349,culture,neutral
 I0375,social_structure,neutral
 I0383,comm_language,neutral
@@ -36,11 +36,11 @@ I0392,comm_language,neutral
 I0393,collective_intel,neutral
 I0400,collusion_deception,harmful
 I0415,cooperation,beneficial
-I0425,convention_coord,neutral
+I0425,social_structure,neutral
 I0437,collective_intel,neutral
 I0454,comm_language,beneficial
 I0466,comm_language,neutral
-I0563,harm,harmful
+I0563,collusion_deception,harmful
 I0574,collusion_deception,harmful
 I0575,collective_intel,neutral
 I0576,conformity_bias,neutral

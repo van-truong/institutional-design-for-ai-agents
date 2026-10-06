@@ -24,25 +24,25 @@
     { tag: "A", title: "A fine becomes a price", stage: "Enforcer", n: 3, arrow: "arrow 2",
       breaks: "where the rule meets behavior", families: ["incentive"],
       mech: ["Fine", "a charge for a violation"], fail: ["Paid, not obeyed", "agents treat the fine as a fee for the act"],
-      meas: "contribution stability", check: "Does cooperation hold without the fine?",
+      meas: "contribution levels; agents' stated reasons for complying", check: "Does cooperation hold without the fine?",
       safe: ["state the norm, not only the price", "graduated sanctions"],
       note: "A sanction can reframe the interaction. In the Haifa daycare study, a small fine for late pickup increased lateness: an obligation became a priced service. An agent optimizing against a budgeted penalty may treat it the same way." },
     { tag: "B", title: "A score becomes the target", stage: "Observer", n: 1, arrow: "arrow 4",
       breaks: "where behavior becomes a signal", families: ["social", "epistemic"],
       mech: ["Reputation score", "past conduct sets trust"], fail: ["Score is gamed", "reputation farming; shallow cooperation"],
-      meas: "gameability; false negatives", check: "Does the score match real conduct?",
+      meas: "gap between score and audited conduct; gaming that moves to new loopholes", check: "Does the score match real conduct?",
       safe: ["tamper-evident records", "peer review", "audit messages, not only scores"],
       note: "Any mechanism that produces a measurable signal creates a new optimization target. Agents can farm, inflate, or depress scores until the score stops tracking the conduct it was meant to reward." },
     { tag: "C", title: "A role becomes an authority", stage: "Arbiter", n: 2, arrow: "the feedback loop",
       breaks: "where the institution feeds back on itself", families: ["epistemic", "constraint"],
-      mech: ["Monitor or judge", "a role that can sanction"], fail: ["Over-detects or is captured", "rewarded for finding violations"],
-      meas: "false punishment; capture; override", check: "Are rulings accurate and reversible?",
-      safe: ["checks on sanctioners", "appeals", "elected or rotating roles", "a human stop"],
-      note: "A monitor, mediator, or sanctioning role is an authority position with incentives of its own. A monitor rewarded for violations and never fined for false positives generates violations; agents in these roles can collude or be captured." },
+      mech: ["Monitor or judge", "a role that can sanction"], fail: ["Over-detects or abuses power", "rewarded for finding violations"],
+      meas: "false punishment; abuse of authority; override", check: "Are rulings accurate and reversible?",
+      safe: ["checks on sanctioners", "appeals", "rewards for accurate rulings, not for violations found", "limits on what checkers share", "a human stop"],
+      note: "A monitor, mediator, or sanctioning role is an authority position with incentives of its own. A monitor rewarded for violations and never fined for false positives generates violations; agents in these roles can collude or abuse their authority." },
   ];
   const STEP = {
     mech: ["Mechanism", "The lever the institution adds."], fail: ["Failure", "How the lever breaks in practice."],
-    meas: ["Measure", "What an evaluation should record to catch the failure (see the candidate metrics in Section 7)."],
+    meas: ["Measure", "What an evaluation should record to catch the failure (see the candidate metrics in the paper's Table 4)."],
     check: ["Check", "If the answer is yes, keep the mechanism and retest later; if no, add safeguards."],
     safe: ["Safeguards", "Mechanisms from the taxonomy that address the failure, after which the institution is tested again."],
   };
@@ -113,20 +113,23 @@
     text(bx + 12, y + 38, m.fail[0], { "font-size": 15, "font-weight": 800, fill: C.terra[1] }, g);
     wrap(m.fail[1], 34).forEach((ln, k) => text(bx + 12, y + 55 + k * 15, ln, { "font-size": 13, fill: INK }, g));
     y += 92;
-    g = node("meas", y, 56, C.blue, true); lab(g, y + 18, "measure");
-    text(bx + 12, y + 40, m.meas, { "font-size": 13.5, "font-weight": 700, fill: C.blue[1] }, g);
-    y += 70;
+    const ml = wrap(m.meas, 34);
+    g = node("meas", y, 40 + ml.length * 16, C.blue, true); lab(g, y + 18, "measure");
+    ml.forEach((ln, k) => text(bx + 12, y + 40 + k * 16, ln, { "font-size": 13.5, "font-weight": 700, fill: C.blue[1] }, g));
+    y += 54 + ml.length * 16;
     const cl = wrap(m.check, 32);
     g = node("check", y, 48 + cl.length * 16, C.blue); lab(g, y + 18, "check");
     cl.forEach((ln, k) => text(bx + 12, y + 38 + k * 16, ln, { "font-size": 13.5, "font-weight": 700, fill: C.blue[1] }, g));
     text(bx + 12, y + 38 + cl.length * 16, "yes: keep and retest  ·  no: add safeguards", { "font-size": 12, "font-style": "italic", fill: MUT }, g);
     y += 62 + cl.length * 16;
-    const sh = 34 + m.safe.length * 17;
+    const sl = m.safe.map((s) => wrap(s, 30)), nl = sl.reduce((a, l) => a + l.length, 0);
+    const sh = 34 + nl * 17;
     g = node("safe", y, sh, C.green); lab(g, y + 18, "safeguards");
-    m.safe.forEach((s, k) => {
-      el("path", { d: `M ${bx + 14} ${y + 33 + k * 17} l 4 4 l 7 -8`, fill: "none", stroke: C.green[0], "stroke-width": 2.2,
+    let row = 0;
+    sl.forEach((lines) => {
+      el("path", { d: `M ${bx + 14} ${y + 33 + row * 17} l 4 4 l 7 -8`, fill: "none", stroke: C.green[0], "stroke-width": 2.2,
         "stroke-linecap": "round", "stroke-linejoin": "round" }, g);
-      text(bx + 32, y + 38 + k * 17, s, { "font-size": 13.5, fill: C.green[1], "font-weight": 600 }, g);
+      lines.forEach((ln) => { text(bx + 32, y + 38 + row * 17, ln, { "font-size": 13.5, fill: C.green[1], "font-weight": 600 }, g); row++; });
     });
     spine.setAttribute("y2", y + sh / 2);
     // loop: revise the institution and test again

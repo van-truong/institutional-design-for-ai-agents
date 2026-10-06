@@ -20,17 +20,17 @@
 
   // Table 1: question it answers, human analog, LLM-agent analog
   const FUNCS = {
-    "Norms & protocols": ["What behavior is expected?", "Social norms, professional rules, community guidelines", "System prompts, constitutions, shared task protocols"],
-    "Monitoring": ["What behavior is observable?", "Audits, inspections, peer review", "Logs, provenance traces, tool-use records, monitor agents"],
-    "Reputation": ["How does past behavior affect future trust?", "Gossip, prestige, trust networks", "Trust scores, agent reliability histories, routing preferences"],
-    "Sanctions": ["What consequences follow behavior?", "Warnings, fines, rewards, exclusion, restitution", "Budget changes, tool restrictions, repair tasks, temporary removal"],
-    "Constraints": ["What actions are possible?", "Quotas, access control, licensing", "Rate limits, permissions, sandboxing, context limits"],
-    "Adjudication & appeal": ["Who decides what happened?", "Courts, arbitration, mediation, appeals", "Mediator agents, voting protocols, rule-based checkers, human review"],
-    "Repair & reintegration": ["How is harm corrected?", "Restorative justice, apology, restitution, re-entry", "Memory cleanup, output correction, re-verification, restored privileges"],
+    "Norms & protocols": ["What behavior is expected?", "Social norms, professional rules, community guidelines", "System prompts, constitutions, deontic policy engines, agent-to-agent protocols"],
+    "Monitoring": ["What behavior is observable?", "Audits, inspections, peer review", "Activity logs, monitor agents, activation probes for collusion, signed receipts"],
+    "Reputation": ["How does past behavior affect future trust?", "Gossip, prestige, credit ratings, trust networks", "Trust scores, gossip between agents, verified credentials, reputation-weighted task routing"],
+    "Sanctions": ["What consequences follow behavior?", "Warnings, fines, rewards, exclusion, restitution", "Environment-enforced fines, budget cuts, stake slashing, tool restrictions, temporary removal"],
+    "Constraints": ["What actions are possible?", "Quotas, access control, licensing", "Rate limits, scoped permissions, signed spending mandates, sandboxing, runtime interception"],
+    "Adjudication & appeal": ["Who decides what happened?", "Courts, arbitration, mediation, appeals", "Mediator and judge agents, fault-tolerant voting, rule-based checkers, human review"],
+    "Repair & reintegration": ["How is harm corrected?", "Restorative justice, apology, restitution, re-entry", "Rollback of shared state, failure attribution, memory cleanup, restored privileges"],
   };
   // Section 4: what each family modifies
   const FAMS = {
-    Normative: ["beliefs", "Says which actions are allowed, separately from which are possible or profitable."],
+    Normative: ["norms", "Says which actions are allowed, separately from which are possible or profitable."],
     Social: ["relationships", "Shapes the interaction structure: who is in the group, who interacts with whom, and whether agents can select or exclude partners."],
     Epistemic: ["information", "Changes what agents know about one another: what they can observe or verify."],
     Incentive: ["payoffs", "Modifies each agent's payoff function, reshaping the payoff consequences of action profiles."],
