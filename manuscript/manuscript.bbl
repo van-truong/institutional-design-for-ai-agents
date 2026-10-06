@@ -627,6 +627,11 @@ Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
   States (2026). \doi{10.18653/v1/2026.findings-acl.396},
   \url{https://aclanthology.org/2026.findings-acl.396/}
 
+\bibitem{wang2026enforcementgap}
+Wang, Y.: Why {LLM} agents collapse without oversight: The enforcement gap as
+  the mechanism behind emergence world failures (2026),
+  \url{https://arxiv.org/abs/2609.15293}
+
 \bibitem{weidinger2023sociotechnical}
 Weidinger, L., Rauh, M., Marchal, N., Manzini, A., Hendricks, L.A.,
   Mateos-Garcia, J., Bergman, S., Kay, J., Griffin, C., Bariach, B., Gabriel,
