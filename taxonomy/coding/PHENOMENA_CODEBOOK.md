@@ -64,17 +64,17 @@ that type's pattern. The links are in `INCIDENT_TYPES` in `scripts/build_phenome
 
 `phenomena_tags.csv` is the source of truth. The website shows live counts.
 
-## Boundary cases to review
+## Boundary cases
 
-These assignments are defensible but sit on a boundary under the rules above. A second coder might place them
-elsewhere.
+These assignments sat on a boundary under the rules above. They were reviewed against the rules on 2026-10-06.
 
-- I0348 "cooperative norms; division of labor" is in `comm_language`. By the rules above it reads as
-  `social_structure` or `culture`.
-- I0425 "emergent role specialization" is in `convention_coord`. Similar specialization instances are in
+- I0348 "cooperative norms; division of labor; cumulative culture" moved from `comm_language` to `culture`: the
+  source reports transmitted norms and artifact lineages, not signals or protocols.
+- I0425 "emergent role specialization" moved from `convention_coord` to `social_structure`, consistent with other
+  specialization instances.
+- I0334 "converged coordination formats enabling unsanctioned information sharing" moved from `collective_intel`
+  to `collusion_deception` (harmful): the shared channel evaded the evaluation's rules.
+- I0563 "harmful task decomposition bypasses per-trajectory monitors" moved from `harm` to `collusion_deception`:
+  the harm depends on evading oversight.
+- I0283 "emergent roles, collective rule change, transmitted memes" stays under review between `culture` and
   `social_structure`.
-- I0334 "emergent convention enabling unsanctioned information sharing" is in `collective_intel`. It reads as
-  `convention_coord`, or `collusion_deception` if the sharing evades oversight.
-- I0563 "harmful task decomposition bypasses per-trajectory monitors" is in `harm`. The rules above point to
-  `collusion_deception`, because the harm depends on evading oversight.
-- I0283 "emergent roles and collective rule change" is in `culture`. It could also go in `social_structure`.
