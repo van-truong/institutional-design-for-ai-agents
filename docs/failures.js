@@ -35,10 +35,10 @@
       note: "Any mechanism that produces a measurable signal creates a new optimization target. Agents can farm, inflate, or depress scores until the score stops tracking the conduct it was meant to reward." },
     { tag: "C", title: "A role becomes an authority", stage: "Arbiter", n: 2, arrow: "the feedback loop",
       breaks: "where the institution feeds back on itself", families: ["epistemic", "constraint"],
-      mech: ["Monitor or judge", "a role that can sanction"], fail: ["Over-detects or is captured", "rewarded for finding violations"],
-      meas: "false punishment; capture; override", check: "Are rulings accurate and reversible?",
+      mech: ["Monitor or judge", "a role that can sanction"], fail: ["Over-detects or abuses its authority", "rewarded for finding violations"],
+      meas: "false punishment; abuse of authority; override", check: "Are rulings accurate and reversible?",
       safe: ["checks on sanctioners", "appeals", "elected or rotating roles", "a human stop"],
-      note: "A monitor, mediator, or sanctioning role is an authority position with incentives of its own. A monitor rewarded for violations and never fined for false positives generates violations; agents in these roles can collude or be captured." },
+      note: "A monitor, mediator, or sanctioning role is an authority position with incentives of its own. A monitor rewarded for violations and never fined for false positives generates violations; agents in these roles can collude or abuse their authority." },
   ];
   const STEP = {
     mech: ["Mechanism", "The lever the institution adds."], fail: ["Failure", "How the lever breaks in practice."],
