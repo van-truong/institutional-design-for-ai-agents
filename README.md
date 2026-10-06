@@ -106,9 +106,8 @@ Full acknowledgments are in the paper.
 
 ## Open items
 
-- [ ] Verify the incidents in `taxonomy/incidents.csv` against primary sources and record the result in the `verified` column.
-- [ ] Code the papers in `taxonomy/candidates_next_pass.csv` and the remaining new instances, then rerun the build scripts.
-- [ ] Consolidate the recently added citations (highlighted in the review PDF) before the camera-ready version.
+- [ ] Settle the remaining disagreements from the second coding pass of the newest instances, then rerun the build scripts.
+- [ ] Code the papers in `taxonomy/candidates_next_pass.csv`.
 - [ ] Add DOI and volume details to the citation once the proceedings are published.
 - [ ] Add issue templates for suggesting papers and proposing alternative classifications.
 

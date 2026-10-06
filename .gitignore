@@ -43,3 +43,12 @@ AI4GOOD2026SpringerLNCSFinalSubmissionChecklist.html
 
 # Private working notes (reviewer passes, editorial notes)
 manuscript/reviewer-pass-*.md
+
+# Local archive of superseded drafts, working notes, old submission packages, and private reading copies
+# (kept on disk, never published)
+_archive/
+
+# Local tooling and build outputs
+.claude/
+manuscript/manuscript.pdf
+manuscript/OpenReview_308_Truong*.zip
