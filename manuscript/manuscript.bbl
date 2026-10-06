@@ -271,6 +271,12 @@ Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
   (2026), \url{https://arxiv.org/abs/2606.12797}, iCML 2026 Workshop on
   Trustworthy AI for Good (AI4GOOD)
 
+\bibitem{hota2025nomiclaw}
+Hota, A., Jokinen, J.P.P.: {NomicLaw}: Emergent trust and strategic
+  argumentation in {LLMs} during collaborative law-making. In: Proceedings of
+  the AAAI/ACM Conference on AI, Ethics, and Society. vol.~8, pp. 1278--1289
+  (2025). \doi{10.1609/aies.v8i2.36629}
+
 \bibitem{huDissociativeIdentityLanguage2026}
 Hu, B.A., Rong, H., Kleek, M.V.: Dissociative {{Identity}}: {{Language Model
   Agents Lack Grounding}} for {{Reputation Mechanisms}}. In: Proceedings of the
