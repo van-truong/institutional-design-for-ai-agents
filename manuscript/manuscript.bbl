@@ -34,6 +34,10 @@ Anthis, J.R., Liu, R., Richardson, S.M., Kozlowski, A.C., Koch, B.,
   Research, vol.~267, pp. 81005--81034. PMLR (2025),
   \url{https://proceedings.mlr.press/v267/anthis25a.html}
 
+\bibitem{axelrod1986evolutionary}
+Axelrod, R.: An evolutionary approach to norms. American Political Science
+  Review  \textbf{80}(4),  1095–1111 (1986). \doi{10.2307/1960858}
+
 \bibitem{bacharachIndividualChoiceTeams2006}
 Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
   Theory}}. Princeton University Press (2006). \doi{10.2307/j.ctv346nwb},
@@ -244,6 +248,14 @@ Hayek, F.A.: Law, Legislation and Liberty, Volume 1: Rules and Order.
 Herrmann, B., Th{\"o}ni, C., G{\"a}chter, S.: Antisocial {{Punishment Across
   Societies}}. Science  \textbf{319}(5868),  1362--1367 (Mar 2008).
   \doi{10.1126/science.1153808}
+
+\bibitem{horiguchi2024evolution}
+Horiguchi, I., Yoshida, T., Ikegami, T.: Evolution of social norms in {LLM}
+  agents using natural language (2024), \url{https://arxiv.org/abs/2409.00993}
+
+\bibitem{horne2002sanctioning}
+Horne, C., Cutlip, A.: Sanctioning costs and norm enforcement. Rationality and
+  Society  \textbf{14}(3),  285--307 (2002). \doi{10.1177/1043463102014003002}
 
 \bibitem{hossain2026containment}
 Hossain, M.J., Hossain, M.A., Liu, W., Ansari, N.: The containment gap: How
