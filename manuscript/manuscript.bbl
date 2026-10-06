@@ -75,6 +75,11 @@ Bronfenbrenner, U.: The Ecology of Human Development: Experiments by Nature and
   Design. Harvard University Press, Cambridge, MA (1979).
   \doi{10.4159/9780674028845}
 
+\bibitem{caliskan2017semantics}
+Caliskan, A., Bryson, J.J., Narayanan, A.: Semantics derived automatically from
+  language corpora contain human-like biases. Science  \textbf{356}(6334),
+  183--186 (2017). \doi{10.1126/science.aal4230}
+
 \bibitem{chan2025infrastructure}
 Chan, A., Wei, K., Huang, S., Rajkumar, N., Perrier, E., Lazar, S., Hadfield,
   G.K., Anderljung, M.: Infrastructure for {AI} agents. Transactions on Machine
@@ -594,13 +599,6 @@ Vezhnevets, A.S., Agapiou, J.P., Aharon, A., Ziv, R., Matyas, J.,
   social, or digital space using {Concordia} (2023),
   \url{https://arxiv.org/abs/2312.03664}
 
-\bibitem{wangmdreplacehumans2025}
-Wang, A., Morgenstern, J., Dickerson, J.P.: Large language models that replace
-  human participants can harmfully misportray and flatten identity groups. Nat.
-  Mac. Intell.  \textbf{7}(3),  400--411 (2025).
-  \doi{10.1038/S42256-025-00986-Z},
-  \url{https://doi.org/10.1038/s42256-025-00986-z}
-
 \bibitem{wang2026lawinsilico}
 Wang, Y., Chen, Y., Meng, F., Chen, X., Yang, X., Zhang, M.: Law in silico:
   Simulating legal society with {LLM}-based agents. In: Findings of the
@@ -661,6 +659,12 @@ Ying, Z., Yan, J., Luo, H., Zou, Q., Liu, A., Liu, X.: Delegated misalignment:
 Zaman, A., Nordby, E., Heiding, F.: Manipulation is task-dependent: A
   multi-axis, multi-environment evaluation of frontier {LLMs} (2026),
   \url{https://arxiv.org/abs/2606.25899}
+
+\bibitem{zhao2017menshopping}
+Zhao, J., Wang, T., Yatskar, M., Ordonez, V., Chang, K.W.: Men also like
+  shopping: Reducing gender bias amplification using corpus-level constraints.
+  In: Proceedings of the 2017 Conference on Empirical Methods in Natural
+  Language Processing. pp. 2979--2989 (2017). \doi{10.18653/v1/D17-1323}
 
 \bibitem{zheng2023judging}
 Zheng, L., Chiang, W.L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y., Lin, Z.,
