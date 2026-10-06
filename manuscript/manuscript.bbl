@@ -154,6 +154,15 @@ Fehr, E., G{\"a}chter, S.: Cooperation and punishment in public goods
   experiments. American Economic Review  \textbf{90}(4),  980--994 (2000).
   \doi{10.1257/aer.90.4.980}
 
+\bibitem{fish2024algorithmic}
+Fish, S., Gonczarowski, Y.A., Shorrer, R.I.: Algorithmic collusion by large
+  language models (2024), \url{https://arxiv.org/abs/2404.00806}
+
+\bibitem{ashery2025conventions}
+Flint~Ashery, A., Aiello, L.M., Baronchelli, A.: Emergent social conventions
+  and collective bias in {LLM} populations. Science Advances  \textbf{11}(20),
+  eadu9368 (2025). \doi{10.1126/sciadv.adu9368}
+
 \bibitem{fudenbergFolkTheoremRepeated1986}
 Fudenberg, D., Maskin, E.: The {{Folk Theorem}} in {{Repeated Games}} with
   {{Discounting}} or with {{Incomplete Information}}. Econometrica
@@ -364,11 +373,6 @@ Leibo, J.Z., Vezhnevets, A.S., Diaz, M., Agapiou, J.P., Cunningham, W.A.,
 \bibitem{lewisConventionPhilosophicalStudy2008}
 Lewis, D.: Convention: {{A Philosophical Study}}. Wiley-Blackwell, Oxford, UK
   (2008)
-
-\bibitem{li2026vending}
-Li, Z., Petersson, L., Acquisti, A., Bakker, M.A.: Emergent misaligned
-  communication in long-horizon multi-agent {LLM} commerce (2026),
-  \url{https://arxiv.org/abs/2608.14825}
 
 \bibitem{liu2026reframing}
 Liu, L., Yu, H., Jiang, X., Wang, S., Qian, P., Chen, Y.: Operational reframing
