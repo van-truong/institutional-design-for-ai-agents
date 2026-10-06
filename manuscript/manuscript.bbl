@@ -3,12 +3,6 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{https://doi.org/#1}
 
-\bibitem{aldrich2016flashcrash}
-Aldrich, E.M., Grundfest, J.A., Laughlin, G.: The flash crash: A new
-  deconstruction. SSRN Working Paper No.~2721922 (2016).
-  \doi{10.2139/ssrn.2721922},
-  \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2721922}
-
 \bibitem{amir2026emergence}
 Amir, D., Ahl, R.E., Jordan, M.R., Bolotin, H., Bogese, M., Gonz{\'a}lez, G.T.,
   Callaghan, T., Sugiyama, L.S., Otali, E., Tusiime, P., Bangayan, S.,
@@ -347,6 +341,12 @@ Kumar, D., HN, R., Birur, N.A., Agarwal, S., Harshangi, P.: The agent incident
 Larcher, H., Carreira, A., G., R., Rannou, C.: Anatomy of a frontier lab agent
   intrusion: A technical timeline of the {July} 2026 incident.
   https://huggingface.co/blog/agent-intrusion-technical-timeline (Jul 2026)
+
+\bibitem{ucsc2016flashcrash}
+Lasnier, G.: New paper examines the details behind stock market `flash crash'.
+  UC Santa Cruz News (2016), \url{https://news.ucsc.edu/2016/03/flash-crash/},
+  march 3, 2016; on Aldrich, Grundfest and Laughlin, ``The Flash Crash: A New
+  Deconstruction''
 
 \bibitem{lee2026faithful}
 Lee, D., Park, H.: Faithful yet collusive: Why chain-of-thought monitoring
