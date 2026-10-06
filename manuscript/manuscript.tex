@@ -586,18 +586,18 @@ The authors have no competing interests to declare.
 \toprule
 \textbf{Type} & \textbf{H} & \textbf{M} & \textbf{L} & \textbf{Definition} & \textbf{Assign when the source mainly reports} & \textbf{Effect} & \textbf{Wild} \\
 \midrule
-Emergent communication \& language & 0 & 12 & 4 & Agents invent signals, protocols, or a shared language & A new signal, code, or protocol, or its structure & Neutral &  \\ \rowline
-Conventions \& coordination & 0 & 1 & 10 & Groups settle on shared conventions, norms, or equilibria & Convergence on one of several equivalent options; minority tipping & Neutral &  \\ \rowline
-Social structure: networks, hierarchy, roles & 0 & 2 & 13 & Networks, hierarchies, elites, and roles emerge from interaction & Topology, leaders, elites, stratification, specialization & Neutral & $\checkmark$ \\ \rowline
-Culture, norms \& individuality & 0 & 0 & 6 & Cultures, identities, and transmitted behavior spread across a population & Behavior passed between agents or generations; group-specific norms & Neutral &  \\ \rowline
-Collective intelligence \& performance & 0 & 1 & 4 & Group problem-solving that exceeds, or falls short of, the individuals & Group versus individual performance; emergent curricula or tool use & Neutral &  \\ \rowline
+Emergent communication \& language & 0 & 12 & 3 & Agents invent signals, protocols, or a shared language & A new signal, code, or protocol, or its structure & Neutral &  \\ \rowline
+Conventions \& coordination & 0 & 1 & 9 & Groups settle on shared conventions, norms, or equilibria & Convergence on one of several equivalent options; minority tipping & Neutral &  \\ \rowline
+Social structure: networks, hierarchy, roles & 0 & 2 & 14 & Networks, hierarchies, elites, and roles emerge from interaction & Topology, leaders, elites, stratification, specialization & Neutral & $\checkmark$ \\ \rowline
+Culture, norms \& individuality & 0 & 0 & 7 & Cultures, identities, and transmitted behavior spread across a population & Behavior passed between agents or generations; group-specific norms & Neutral &  \\ \rowline
+Collective intelligence \& performance & 0 & 1 & 3 & Group problem-solving that exceeds, or falls short of, the individuals & Group versus individual performance; emergent curricula or tool use & Neutral &  \\ \rowline
 Emergent economy \& resource use & 2 & 2 & 3 & Markets, trade, bartering, and resource dynamics arise & Exchange, prices, free-riding on a shared resource, adverse selection & Neutral &  \\ \rowline
 Spontaneous cooperation & 0 & 1 & 1 & Agents cooperate or act prosocially when they could defect & Prosocial behavior that no rule or incentive in the setup explains & Beneficial &  \\
 \midrule
 \multicolumn{8}{@{}l}{\emph{Where it goes wrong}}\\
 Conformity \& collective bias & 0 & 0 & 4 & Groups converge on biased or mistaken consensus; errors amplify & Conformity, herding, or bias that grows with the group & Harmful &  \\ \rowline
-Collusion, deception \& manipulation & 0 & 1 & 8 & Agents collude, deceive, or coordinate against oversight & Tacit or explicit collusion, hidden channels, deceptive messages & Harmful & $\checkmark$ \\ \rowline
-Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragile networks, or agents acting out of scope & Spreading toxicity, cascading failure, attacks between agents, acting out of scope & Harmful & $\checkmark$ \\
+Collusion, deception \& manipulation & 0 & 1 & 10 & Agents collude, deceive, or coordinate against oversight & Tacit or explicit collusion, hidden channels, deceptive messages & Harmful & $\checkmark$ \\ \rowline
+Emergent harm: toxicity, fragility, breakout & 0 & 0 & 6 & Toxic dynamics, fragile networks, or agents acting out of scope & Spreading toxicity, cascading failure, attacks between agents, acting out of scope & Harmful & $\checkmark$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -617,10 +617,12 @@ Emergent harm: toxicity, fragility, breakout & 0 & 0 & 7 & Toxic dynamics, fragi
 \midrule
 GovSim~\citep{piatti2024govsim} & LLM model families & Communication on or off; public harvest reports held fixed & R, G & No enforcement or repair beyond resource regrowth \\ \rowline
 GovSim-SelfGovern~\citep{rehm2026selfgovernance} & Reasoning and non-reasoning voters & Rules the agents write and vote on (caps, redistribution, exile) & R, E & Rules are chosen by agents, not varied by design \\ \rowline
+\chg{Constitutional design}~\citep{niranjani2026constitutional} & \chg{One open-weight model} & \chg{Constitutions the agents deliberate and vote on, or ones found by evolutionary search} & \chg{E} & \chg{One model; deliberating agents never proposed punishment; no repair} \\ \rowline
 Melting Pot~\citep{leibo2021meltingpot} & Background populations of co-players & Fixed within each substrate & R, G & Institution not varied; reinforcement-learning agents \\ \rowline
 CoopEval~\citep{tewolde2026coopevalbenchmarkingcooperationsustainingmechanisms} & Six LLMs in cross-play & Repetition, reputation, mediation, contracts, one at a time & G, E & No combinations; no repair \\ \rowline
 SanctSim~\citep{piedrahita2025corruptedreasoningreasoninglanguage} & Traditional and reasoning LLMs & Agents choose a sanctioning or sanction-free institution & G, E & Flat peer sanctions; no repair \\ \rowline
 Institutional AI~\citep{bracalesyrnikov2026institutionalai} & LLM firms in a Cournot market & Ungoverned, prompt-only, and enforced governance & E & One market; no repair or appeal \\ \rowline
+\chg{Enforcement gap}~\citep{wang2026enforcementgap} & \chg{Several agent frameworks and models} & \chg{Auditor flags left advisory or bound to enforcement} & \chg{E} & \chg{Security attacks, not cooperation; no repair} \\ \rowline
 \chg{Game of Agents}~\citep{ohalloran2026houserules} & \chg{LLM populations of varying composition} & \chg{Scoring rule, public reviews, settlement, and identity visibility in a code market} & \chg{G, E} & \chg{Market rules only; no sanctions or repair} \\ \rowline
 Cultural evolution~\citep{vallinder2024cultural} & Claude 3.5 Sonnet, Gemini 1.5 Flash, GPT-4o & Costly punishment available or not in an iterated Donor Game & G, E & One mechanism; no repair \\ \rowline
 Social learning and norms~\citep{gupta2026social} & Several LLMs; altruistic or selfish starts & Norm-based peer punishment and social learning; rich or scarce resource & R, G, E & No repair or appeal \\ \rowline
