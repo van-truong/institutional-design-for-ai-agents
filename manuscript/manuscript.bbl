@@ -642,6 +642,11 @@ Wang, Y.: Why {LLM} agents collapse without oversight: The enforcement gap as
   the mechanism behind emergence world failures (2026),
   \url{https://arxiv.org/abs/2609.15293}
 
+\bibitem{wang2026medisim}
+Wang, Z., Xu, X., Zha, H., Li, W.: Healthcare mechanisms from policy-as-code
+  search under strategic provider response (2026),
+  \url{https://arxiv.org/abs/2605.30680}
+
 \bibitem{weidinger2023sociotechnical}
 Weidinger, L., Rauh, M., Marchal, N., Manzini, A., Hendricks, L.A.,
   Mateos-Garcia, J., Bergman, S., Kay, J., Griffin, C., Bariach, B., Gabriel,
