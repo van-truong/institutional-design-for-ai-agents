@@ -35,12 +35,18 @@ Bacharach, M.: Beyond {{Individual Choice}}: {{Teams}} and {{Frames}} in {{Game
 
 \bibitem{secFlashCrash2010}
 Berman, G.E.: Market participants and the {May} 6 flash crash (Oct 2010),
-  \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech by the
-  U.S. Securities and Exchange Commission
+  \url{https://www.sec.gov/news/speech/2010/spch101310geb.htm}, speech at the
+  11th Annual SIFMA Market Structure Conference, U.S. Securities and Exchange
+  Commission
 
 \bibitem{bicchieri2006grammar}
 Bicchieri, C.: The Grammar of Society: The Nature and Dynamics of Social Norms.
   Cambridge University Press, Cambridge (2006). \doi{10.1017/CBO9780511616037}
+
+\bibitem{bicchieri2017wild}
+Bicchieri, C.: Norms in the Wild: How to Diagnose, Measure, and Change Social
+  Norms. Oxford University Press, New York (2017).
+  \doi{10.1093/acprof:oso/9780190622046.001.0001}
 
 \bibitem{boella2006normative}
 Boella, G., van~der Torre, L., Verhagen, H.: Introduction to normative
@@ -255,9 +261,9 @@ Huang, X.A., Tharas, C., Marro, S., Truong, V.Q., Schölkopf, B., Malfa, E.L.,
 
 \bibitem{joshi2026deontic}
 Joshi, A., Finin, T., Joshi, K.P., Kagal, L.: Deontic policies for runtime
-  governance of agentic {AI} systems (2026),
-  \url{https://arxiv.org/abs/2606.19464}, to appear, 2026 IEEE Symposium on
-  Agentic Services
+  governance of agentic {AI} systems. In: 2026 IEEE International Conference on
+  Web Services (ICWS). pp. 1255--1264 (2026).
+  \doi{10.1109/ICWS72778.2026.00159}
 
 \bibitem{kang2026govgaps}
 Kang, R., Diponegoro, Y.: Governance gaps in agent interoperability protocols:
@@ -267,7 +273,8 @@ Kang, R., Diponegoro, Y.: Governance gaps in agent interoperability protocols:
 \bibitem{kirilenkoFlashCrashHighFrequency2017}
 Kirilenko, A., Kyle, A.S., Samadi, M., Tuzun, T.: The {{Flash Crash}}:
   {{High-Frequency Trading}} in an {{Electronic Market}}. The Journal of
-  Finance  \textbf{72}(3),  967--998 (2017). \doi{10.1111/jofi.12498}
+  Finance  \textbf{72}(3),  967--998 (2017). \doi{10.1111/jofi.12498},
+  \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1686004}
 
 \bibitem{knecht2026shutdown}
 Knecht, A., Schaller, U., Summerfield, C., Hagendorff, T.: Shutdown sabotage
@@ -460,6 +467,12 @@ Priyanshu, A., Vijay, S., Pahwa, E.: Got a secret? {LLM} agents can't keep it:
 Rahman, M.H., Haider, Z., Mahfuz, T., Chakraborty, P.: {HARP}: Measuring harm
   amplification in multi-agent {LLM} systems (2026),
   \url{https://arxiv.org/abs/2605.27489}
+
+\bibitem{rand2011dynamic}
+Rand, D.G., Arbesman, S., Christakis, N.A.: Dynamic social networks promote
+  cooperation in experiments with humans. Proceedings of the National Academy
+  of Sciences  \textbf{108}(48),  19193--19198 (2011).
+  \doi{10.1073/pnas.1108243108}
 
 \bibitem{rehm2026selfgovernance}
 Rehm, G.B.: From certain doom to survival: Agent-driven self-governance in
