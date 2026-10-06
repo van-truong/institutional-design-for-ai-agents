@@ -12,8 +12,9 @@ ICML 2026 Workshop on Trustworthy AI for Good (AI4GOOD), Seoul · Springer LNCS 
 
 AI agents increasingly share tools, compute, memory, and decision authority, and their interactions can produce
 collective failures that evaluations of individual models do not catch. This position paper argues that AI safety
-research should evaluate agent societies as governed systems: the unit of design and evaluation should be the
-**model-in-institution**, not the model alone, with humans choosing which values those institutions enforce.
+research should evaluate agent societies as governed systems. Models should be designed and evaluated together with
+the institutions that govern their interactions, the **model-in-institution**, with humans choosing which values
+those institutions enforce.
 
 To ground the argument, we map how human and artificial groups have sustained cooperation:
 
@@ -31,7 +32,7 @@ The paper is fixed once published; the website and the data in this repository k
 
 | Folder | Contents |
 |---|---|
-| [`manuscript/`](manuscript/) | LaTeX source (`manuscript.tex`), bibliography, LNCS style files, figure PDFs, and the scripts that generate them |
+| [`manuscript/`](manuscript/) | The paper: LaTeX source (`manuscript.tex`, the version submitted to the proceedings), the built PDF (`manuscript.pdf`), bibliography, LNCS style files, figure PDFs, and the scripts and pages that generate the figures |
 | [`docs/`](docs/) | The companion website (plain HTML, CSS, and JavaScript, served by GitHub Pages) |
 | [`taxonomy/`](taxonomy/) | The coded dataset behind both maps, the coding protocol, and the scripts that build the website data |
 | [`archive/icml2026/`](archive/icml2026/) | The original ICML workshop camera-ready paper and poster materials |
@@ -65,10 +66,19 @@ Requires a TeX distribution with `latexmk` (TeX Live or MacTeX).
 make pdf        # builds manuscript/manuscript.pdf
 ```
 
-The build uses the vector figure PDFs already in `manuscript/figures/`. Run `make figures` only to regenerate them
-from their editable sources: website-drawn figures come from `docs/*.js` through `manuscript/figs/*-paper.html` and
-`manuscript/scripts/gen_web_figs.py` (needs Chrome or Chromium and `pdfcrop`); the others come from the Python
-generators in `manuscript/scripts/`.
+The build uses the vector figure PDFs already in `manuscript/figures/`, so you only need to regenerate figures after
+changing their sources. Most figures are drawn by the website's own scripts, so the paper and the site share one
+drawing:
+
+```bash
+cd manuscript
+python3 scripts/gen_web_figs.py                 # Figs. 1-6, 8, 10 from docs/*.js (needs Chrome or Chromium, pdfcrop)
+python3 scripts/gen_taxonomy.py && python3 scripts/gen_dimensions.py
+./render_figures.sh                             # Figs. 7 and 9 from manuscript/figs/*.html (needs rsvg-convert, pdfcrop)
+```
+
+The taxonomy and phenomena figures read the coded data, so rerun the build scripts in `taxonomy/scripts/` first
+when the data change.
 
 ## Viewing the website locally
 
