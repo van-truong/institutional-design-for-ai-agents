@@ -63,7 +63,7 @@
   const robot = (g, x, y, s, col) => {                           // (x, y) = base
     const r = el("g", { transform: `translate(${x} ${y}) scale(${s})` }, g);
     el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);   // antenna
-    el("circle", { cx: 0, cy: -35.5, r: 2.2, fill: col[0], stroke: col[1], "stroke-width": 0.8 }, r);
+    el("circle", { cx: 0, cy: -35.5, r: 2.4, fill: "#D7A738", stroke: col[1], "stroke-width": 0.8 }, r);   // gold knob, as in Fig. 10
     el("rect", { x: -12.6, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);                                    // ears
     el("rect", { x: 9.8, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);
     el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: col[0], stroke: col[1], "stroke-width": 1.6 }, r); // head
@@ -84,7 +84,11 @@
     el("circle", { cx: x, cy: y, r: 4, fill: col }, g);
     if (crossed) el("line", { x1: x - 14, y1: y - 9, x2: x + 14, y2: y + 9, stroke: "#C2662A", "stroke-width": 2, "stroke-linecap": "round" }, g);
   };
-  const ROBO = (c) => [c.mid, c.dark];
+  // robots wear the failure comics' palette (Fig. 10), one color each with ink outlines, so the agents read as
+  // individuals rather than as part of the card; each card starts at a different point in the palette
+  const BOT_FILLS = ["#F2A65A", "#5E9C8C", "#6FB3E0", "#A47DC9", "#8CC56B", "#E07A7A"];
+  let botIx = 0;
+  const ROBO = () => [BOT_FILLS[botIx++ % BOT_FILLS.length], INK];
 
   // each scene draws into a 140 x 104 panel (origin top-left)
   const SCENES = {
@@ -203,6 +207,7 @@
     el("rect", { x: 24, y: -7, width: 16, height: 16, rx: 3, fill: c.head, stroke: INK, "stroke-width": 1.4 }, g);
     text(48, 7.5, c.title, { "font-size": 19, "font-weight": 800, fill: INK }, g);
     wrap(c.tension, 30).forEach((ln, i) => text(CW / 2, 52 + i * 21, ln, { "text-anchor": "middle", "font-size": 17.5, "font-weight": 700, fill: c.dark }, g));
+    botIx = CARDS.indexOf(c) * 2;
     // the two scenes
     [["humans", 0], ["LLM agents", 1]].forEach(([lab, i]) => {
       const px = 14 + i * 152, py = 110;
