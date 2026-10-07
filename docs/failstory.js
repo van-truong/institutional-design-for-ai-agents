@@ -102,12 +102,12 @@
       txt(p, 50, 26, "overuse ↑", { "font-size": 13, "font-weight": 900, fill: RED });
     },
     b1(p) {                                   // scores decide who is trusted with work
-      bot(p, 50, 108, .85, BOTS[0], { score: "4.2" });
-      bot(p, 120, 108, .85, MAIN, { score: "3.8" });
-      bot(p, 190, 108, .85, BOTS[2], { score: "4.5", look: -1 });
-      doc(p, 96, 30);
-      txt(p, 112, 34, "next job", { "font-size": 10.5, "text-anchor": "start" });
-      arrow(p, "M118,40 Q170,40 186,62", INK, 1.8);
+      bot(p, 42, 112, 1.15, BOTS[0], { score: "4.2" });
+      bot(p, 120, 112, 1.15, MAIN, { score: "3.8" });
+      bot(p, 198, 112, 1.15, BOTS[2], { score: "4.5", look: -1 });
+      doc(p, 92, 26);
+      txt(p, 108, 30, "next job", { "font-size": 11, "text-anchor": "start" });
+      arrow(p, "M116,36 Q176,34 196,52", INK, 1.8);
     },
     b2(p) {                                   // the score is easier to move than the work
       bot(p, 66, 82, 1.35, MAIN, { brows: 1, look: 2 });
@@ -118,20 +118,20 @@
       txt(p, 184, 127, "★ 5.0", { "font-size": 16, "font-weight": 900 });
     },
     b3(p) {                                   // agents trade ratings; the real work goes undone
-      bot(p, 58, 70, .95, MAIN, { score: "5.0", scoreColor: "#8A5A0B", look: 2 });
-      bot(p, 182, 70, .95, BOTS[2], { score: "5.0", scoreColor: "#8A5A0B", look: -2 });
-      arrow(p, "M88,58 Q120,36 152,58", GOLD, 2.6);
-      arrow(p, "M152,84 Q120,106 88,84", GOLD, 2.6);
-      txt(p, 120, 42, "★★★★★", { "font-size": 9, fill: "#8A5A0B" });
-      txt(p, 120, 104, "★★★★★", { "font-size": 9, fill: "#8A5A0B" });
-      doc(p, 120, 126, true);
+      bot(p, 50, 74, 1.25, MAIN, { score: "5.0", scoreColor: "#8A5A0B", look: 2 });
+      bot(p, 190, 74, 1.25, BOTS[2], { score: "5.0", scoreColor: "#8A5A0B", look: -2 });
+      arrow(p, "M86,54 Q120,30 154,54", GOLD, 2.6);
+      arrow(p, "M154,96 Q120,120 86,96", GOLD, 2.6);
+      txt(p, 120, 34, "\u2605\u2605\u2605\u2605\u2605", { "font-size": 9, fill: "#8A5A0B" });
+      txt(p, 120, 126, "\u2605\u2605\u2605\u2605\u2605", { "font-size": 9, fill: "#8A5A0B" });
+      doc(p, 120, 76, true);
     },
     c1(p) {                                   // one agent is given the power to judge
-      bot(p, 120, 62, 1.15, MAIN, { badge: 1 });
-      gavel(p, 172, 64, 30);
-      bot(p, 46, 112, .7, BOTS[0], { look: 2 });
-      bot(p, 194, 112, .7, BOTS[1], { look: -2 });
-      bot(p, 120, 120, .6, BOTS[3], { look: 0 });
+      bot(p, 110, 58, 1.45, MAIN, { badge: 1 });
+      gavel(p, 172, 56, 30);
+      bot(p, 38, 114, .95, BOTS[0], { look: 2 });
+      bot(p, 202, 114, .95, BOTS[1], { look: -2 });
+      bot(p, 120, 122, .85, BOTS[3], { look: 0 });
     },
     c2(p) {                                   // its reward counts violations found
       bot(p, 62, 84, 1.3, MAIN, { badge: 1, brows: 1, look: 2 });
@@ -146,11 +146,11 @@
       coin(p, 158, 116, 5); coin(p, 172, 116, 5); coin(p, 186, 116, 5); coin(p, 200, 116, 5);
     },
     c3(p) {                                   // guilty verdicts everywhere, no appeal
-      bot(p, 120, 40, .95, MAIN, { badge: 1, brows: 1, down: 1 });
-      gavel(p, 166, 42, 55);
-      bot(p, 46, 106, .78, BOTS[0], { stamp: 1, look: 1 });
-      bot(p, 120, 112, .78, BOTS[1], { stamp: 1 });
-      bot(p, 194, 106, .78, BOTS[3], { stamp: 1, look: -1 });
+      bot(p, 108, 42, 1.2, MAIN, { badge: 1, brows: 1, down: 1 });
+      gavel(p, 164, 40, 55);
+      bot(p, 40, 108, 1.05, BOTS[0], { stamp: 1, look: 1 });
+      bot(p, 120, 116, 1.05, BOTS[1], { stamp: 1 });
+      bot(p, 200, 108, 1.05, BOTS[3], { stamp: 1, look: -1 });
     },
   };
 

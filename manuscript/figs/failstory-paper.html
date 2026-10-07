@@ -35,7 +35,9 @@ html, body { margin: 0; background: #fff; color: var(--ink); font-family: Arial,
 #fs-stage .fs-num { position: absolute; top: 10px; left: 10px; margin: 0; }
 #fs-stage .fs-think { margin: 0 0 4px 38px; }
 #fs-stage .fs-scene { max-width: none; margin: 6px 0 8px; }
-#fs-stage .fs-panel:not(:has(.fs-think)) .fs-scene { margin-top: 34px; }
+#fs-stage .fs-panel:not(:has(.fs-think)) { padding-top: 44px; }
+#fs-stage .fs-panel:not(:has(.fs-think)) .fs-scene { margin: auto 0; }
+#fs-stage .fs-panel:not(:has(.fs-think)) figcaption { margin-top: 8px; }
 #fs-stage .fs-panel figcaption { margin-top: auto; }
 </style></head>
 <body><div id="fs-stage" data-mode="paper"></div>
