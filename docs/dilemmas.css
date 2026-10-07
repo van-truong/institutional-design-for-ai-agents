@@ -1,12 +1,13 @@
 /* Cooperation dilemmas (paper Fig. 3), drawn by dilemmas.js: six independent cards in a responsive grid */
-.dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
-.dl-card { position: relative; border-radius: 18px; outline: none; cursor: pointer; transition: transform .25s ease, filter .25s ease; }
+.dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem 1.4rem; margin-top: 2.4rem; }
+.dl-card { position: relative; border-radius: 8px; outline: none; cursor: pointer; transition: transform .2s ease; }
 .dl-card svg { display: block; width: 100%; height: auto; overflow: visible; }
-.dl-card:hover, .dl-card:focus-visible, .dl-card.is-open { transform: translateY(-4px); filter: drop-shadow(0 8px 14px rgba(63, 77, 90, .18)); }
-.dl-card:focus-visible { box-shadow: 0 0 0 3px #4d87e8; }
-.dl-more { max-height: 0; overflow: hidden; margin: 0 .4rem; padding: 0 .9rem; border-left: 4px solid var(--c); background: var(--t); color: var(--d); font-size: .92rem; line-height: 1.4; border-radius: 0 0 10px 10px; transition: max-height .35s ease, padding .35s ease, margin .35s ease; }
-.dl-card:hover .dl-more, .dl-card:focus-visible .dl-more, .dl-card.is-open .dl-more { max-height: 12rem; padding: .7rem .9rem; margin-top: .3rem; }
+.dl-card:hover, .dl-card:focus-visible, .dl-card.is-open { transform: translate(-2px, -3px); }
+.dl-card:focus-visible { outline: 3px solid #4d87e8; outline-offset: 4px; }
+/* the paper's description pops out like a caption box, in the ink-and-shadow style of the cards */
+.dl-more { max-height: 0; overflow: hidden; margin: 0 .4rem; padding: 0 .9rem; border: 0 solid #2C2C2A; background: #FFF2C8; color: #2C2C2A; font-size: .92rem; line-height: 1.4; border-radius: 4px; transition: max-height .35s ease, padding .35s ease, margin .35s ease; }
+.dl-card:hover .dl-more, .dl-card:focus-visible .dl-more, .dl-card.is-open .dl-more { max-height: 12rem; padding: .7rem .9rem; margin-top: .7rem; border-width: 2px; box-shadow: 3px 3px 0 #2C2C2A; }
 .dl-divider { grid-column: 1 / -1; display: flex; align-items: center; gap: .8rem; margin: .6rem 0 -.2rem; color: #6B7787; font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.dl-divider::before, .dl-divider::after { content: ""; flex: 1; border-top: 2px dashed #B3BEC9; }
+.dl-divider::before, .dl-divider::after { content: ""; flex: 1; border-top: 2px dashed #2C2C2A; opacity: .45; }
 @media (min-width: 1100px) { .dl-grid { grid-template-columns: repeat(4, 1fr); } .dl-beyond { grid-column: span 1; } }
 @media (prefers-reduced-motion: reduce) { .dl-card, .dl-more { transition: none; } }
