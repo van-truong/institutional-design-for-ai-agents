@@ -1,4 +1,4 @@
-// Interactive taxonomy: a radial tree that unravels into the paper's list layout (Fig. 4).
+// Interactive taxonomy: a radial tree that unravels into the paper's list layout (Fig. 7).
 // Data: assets/taxonomy.json, built by taxonomy/scripts/build_site_data.py from the coded dataset.
 
 const SVG_NS = "http://www.w3.org/2000/svg";

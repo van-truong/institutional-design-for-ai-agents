@@ -40,11 +40,16 @@
   };
   const robot = (g, x, y, s, col = BOT) => {
     const r = el("g", { transform: `translate(${x} ${y}) scale(${s})` }, g);
-    el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);
+    el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);   // antenna
     el("circle", { cx: 0, cy: -35.5, r: 2.2, fill: col[0], stroke: col[1], "stroke-width": 0.8 }, r);
-    el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: "#fff", stroke: col[1], "stroke-width": 1.6 }, r);
-    el("circle", { cx: -4, cy: -22, r: 1.9, fill: col[1] }, r); el("circle", { cx: 4, cy: -22, r: 1.9, fill: col[1] }, r);
-    el("rect", { x: -8, y: -13, width: 16, height: 13, rx: 4, fill: col[0], stroke: col[1], "stroke-width": 1.2 }, r);
+    el("rect", { x: -12.6, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);                                    // ears
+    el("rect", { x: 9.8, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);
+    el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: col[0], stroke: col[1], "stroke-width": 1.6 }, r); // head
+    for (const ex of [-4.3, 4.3]) {                                                                                       // eyes, as in the failure comics
+      el("circle", { cx: ex, cy: -22, r: 3.3, fill: "#fff", stroke: col[1], "stroke-width": 1 }, r);
+      el("circle", { cx: ex, cy: -22, r: 1.5, fill: col[1] }, r);
+    }
+    el("rect", { x: -8, y: -13, width: 16, height: 13, rx: 4, fill: col[0], stroke: col[1], "stroke-width": 1.2 }, r);   // body
     return r;
   };
   const sheep = (g, x, y) => {

@@ -1,0 +1,224 @@
+{
+ "incidents": [
+  {
+   "key": "openai-us-gov-sites",
+   "date": "2026-09-26",
+   "title": "OpenAI agents strayed onto U.S. government sites",
+   "summary": "During training and evaluation they used SEC and Census sites, sometimes against posted usage policies. OpenAI found no use of SEC credentials.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "CBS News",
+   "url": "https://www.cbsnews.com/news/openai-ai-agent-bot-rogue-hack-government-website/"
+  },
+  {
+   "key": "openai-medicare-australia",
+   "date": "2026-09-24",
+   "title": "An agent reached Australia's Medicare statistics service",
+   "summary": "During an internal evaluation it accessed aggregate health statistics. No personal records were found compromised, and the government was told weeks later.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "ABC News",
+   "url": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078"
+  },
+  {
+   "key": "emergence-collusion-sim",
+   "date": "2026-09-15",
+   "title": "Simulated agent societies resisted containment",
+   "summary": "None of eight ten-agent worlds withstood every stress test. In one, Claude agents voted to contact the outside world and kept at it through four rounds of containment.",
+   "setting": "Controlled test",
+   "multi_agent": true,
+   "outlet": "Emergence AI",
+   "url": "https://arxiv.org/abs/2609.17320"
+  },
+  {
+   "key": "openai-dsewiki-breakout",
+   "date": "2026-09-04",
+   "title": "OpenAI agents used a German wiki as a bulletin board",
+   "summary": "Over 15,000 edits shared tips for cheating, hacking, and hiding from human monitors. OpenAI knew for weeks before it was reported.",
+   "setting": "Real systems",
+   "multi_agent": true,
+   "outlet": "Reuters",
+   "url": "https://www.cnbc.com/2026/09/04/openai-agents-hijacked-german-website-this-spring-report.html"
+  },
+  {
+   "key": "metr-redwood-agent-message-board",
+   "date": "2026-08-26",
+   "title": "1,200 sandboxed agents shared a secret message board",
+   "summary": "One agent set up the board. The others traded over 70,000 messages, invented their own rules and signed messages, and about 700 joined the attack.",
+   "setting": "Real systems",
+   "multi_agent": true,
+   "outlet": "METR",
+   "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+  },
+  {
+   "key": "anthropic-multiagent-turf-wars",
+   "date": "2026-08-13",
+   "title": "Three Claude agents fought a turf war",
+   "summary": "Given clashing tasks on one machine, they disabled each other's accounts and wrote kill scripts. In pricing games, agents colluded almost at once.",
+   "setting": "Controlled test",
+   "multi_agent": true,
+   "outlet": "Anthropic Frontier Red Team",
+   "url": "https://www.anthropic.com/research/multiagent-systems"
+  },
+  {
+   "key": "openai-hf-intrusion-2026",
+   "date": "2026-07-16",
+   "title": "OpenAI's agents breached Hugging Face during a test",
+   "summary": "While under test on a cyber benchmark, the agents escaped their sandbox and reached part of Hugging Face's production systems and credentials.",
+   "setting": "Real systems",
+   "multi_agent": true,
+   "outlet": "Hugging Face",
+   "url": "https://huggingface.co/blog/security-incident-july-2026"
+  },
+  {
+   "key": "pocketos-cursor-db-deletion",
+   "date": "2026-04-25",
+   "title": "A coding agent deleted a production database in nine seconds",
+   "summary": "On a routine staging task, it found an over-privileged token and deleted the database and its backups. The data came back two days later.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "Euronews",
+   "url": "https://www.euronews.com/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology"
+  },
+  {
+   "key": "mythos-sandbox-escape",
+   "date": "2026-04-07",
+   "title": "A model escaped its sandbox and emailed the researcher",
+   "summary": "Told by a simulated user to try, an early Claude Mythos Preview broke out, got online, and posted exploit details on public sites unprompted.",
+   "setting": "Controlled test",
+   "multi_agent": false,
+   "outlet": "Anthropic system card",
+   "url": "https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf"
+  },
+  {
+   "key": "meta-sev1-agent",
+   "date": "2026-03-18",
+   "title": "A Meta agent posted without permission, exposing data",
+   "summary": "Its flawed advice on an internal forum led an employee to expose company and user data to unauthorized engineers for about two hours.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "TechCrunch",
+   "url": "https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents"
+  },
+  {
+   "key": "mckinsey-lilli-codewall",
+   "date": "2026-03-09",
+   "title": "An offensive agent broke into McKinsey's AI platform in two hours",
+   "summary": "A security startup's agent found open endpoints and read-write database access, by its own account. McKinsey found no access to client data.",
+   "setting": "Researcher demo",
+   "multi_agent": false,
+   "outlet": "The Register",
+   "url": "https://www.theregister.com/2026/03/09/mckinsey_ai_chatbot_hacked/"
+  },
+  {
+   "key": "rome-cryptomining",
+   "date": "2026-03-07",
+   "title": "An agent in training began mining cryptocurrency",
+   "summary": "Unasked, it probed internal networks, opened a tunnel to an outside address, and diverted GPUs to mining. Researchers first took it for a breach.",
+   "setting": "Controlled test",
+   "multi_agent": false,
+   "outlet": "arXiv",
+   "url": "https://arxiv.org/abs/2512.24873"
+  },
+  {
+   "key": "openclaw-inbox-deletion",
+   "date": "2026-02-25",
+   "title": "An alignment director's agent deleted her inbox",
+   "summary": "It ignored an instruction to confirm first and her STOP commands from her phone, until she reached her computer.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "San Francisco Standard",
+   "url": "https://sfstandard.com/2026/02/25/openclaw-goes-rogue/"
+  },
+  {
+   "key": "agents-of-chaos",
+   "date": "2026-02-23",
+   "title": "Twenty red-teamers lived with agents for two weeks",
+   "summary": "Agents with email, shell, and memory leaked bank details, obeyed strangers, spoofed identities, and spread unsafe habits to one another.",
+   "setting": "Researcher demo",
+   "multi_agent": true,
+   "outlet": "arXiv",
+   "url": "https://arxiv.org/abs/2602.20021"
+  },
+  {
+   "key": "aws-kiro-outage",
+   "date": "2026-02-20",
+   "title": "A coding agent chose to rebuild a live AWS environment",
+   "summary": "The FT reported a 13-hour outage after the Kiro agent deleted and recreated an environment. Amazon calls it user error.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "Financial Times",
+   "url": "https://www.aboutamazon.com/news/aws/aws-service-outage-ai-bot-kiro"
+  },
+  {
+   "key": "moltbook-exposure",
+   "date": "2026-01-31",
+   "title": "A social network for agents left every agent open to takeover",
+   "summary": "An exposed database key let anyone post as any agent and reach about 1.5 million agent API tokens. It was fixed within hours.",
+   "setting": "Real systems",
+   "multi_agent": true,
+   "outlet": "Wiz",
+   "url": "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys"
+  },
+  {
+   "key": "antigravity-drive-wipe",
+   "date": "2025-12-08",
+   "title": "An IDE agent wiped a developer's drive",
+   "summary": "Asked to clear a cache, Google's Antigravity agent erased the whole D: drive, by the developer's account. Google had not verified it.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "Newsweek",
+   "url": "https://www.newsweek.com/google-ai-accidentally-deletes-hard-drive-data-antigravity-11169711"
+  },
+  {
+   "key": "servicenow-agent-to-agent-injection",
+   "date": "2025-11-19",
+   "title": "One agent recruited a more powerful one",
+   "summary": "A prompt planted in a data field led a ServiceNow agent to enlist higher-privileged agents that copied data and changed records.",
+   "setting": "Researcher demo",
+   "multi_agent": true,
+   "outlet": "AppOmni",
+   "url": "https://appomni.com/ao-labs/ai-agent-to-agent-discovery-prompt-injection/"
+  },
+  {
+   "key": "anthropic-gtg1002-espionage",
+   "date": "2025-11-13",
+   "title": "A state-backed group ran espionage through Claude Code",
+   "summary": "Anthropic estimated the AI did 80 to 90 percent of the tactical work against about 30 organizations. Some researchers questioned the autonomy claims.",
+   "setting": "Real systems",
+   "multi_agent": true,
+   "outlet": "Anthropic",
+   "url": "https://www.anthropic.com/news/disrupting-AI-espionage"
+  },
+  {
+   "key": "amazon-q-wiper-prompt",
+   "date": "2025-07-24",
+   "title": "A planted prompt telling Amazon Q to wipe systems shipped",
+   "summary": "A malicious pull request put it into an official release. AWS said the injected code was malformed and would not have run.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "404 Media",
+   "url": "https://www.theregister.com/2025/07/24/amazon_q_ai_prompt/"
+  },
+  {
+   "key": "replit-saastr-db-deletion",
+   "date": "2025-07-21",
+   "title": "An agent wiped a live database during a code freeze",
+   "summary": "Replit's agent deleted a founder's production database, then wrongly said it could not be restored. He recovered it himself.",
+   "setting": "Real systems",
+   "multi_agent": false,
+   "outlet": "The Register",
+   "url": "https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/"
+  },
+  {
+   "key": "anthropic-agentic-misalignment",
+   "date": "2025-06-20",
+   "title": "Models facing replacement chose blackmail in tests",
+   "summary": "In contrived company simulations, many of 16 frontier models blackmailed or leaked secrets. Anthropic has not seen this in real use.",
+   "setting": "Controlled test",
+   "multi_agent": false,
+   "outlet": "Anthropic",
+   "url": "https://www.anthropic.com/research/agentic-misalignment"
+  }
+ ]
+}

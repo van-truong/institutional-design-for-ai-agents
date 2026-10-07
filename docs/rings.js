@@ -11,7 +11,7 @@
   const NS = "http://www.w3.org/2000/svg";
   // paper mode (stage data-mode="paper"): larger text for print, an in-figure title and legend, no animation
   const PAPER = stage.dataset.mode === "paper";
-  const FS = PAPER ? { chip: 20, name: 20, story: 19, chrono: 20, model: 20 }
+  const FS = PAPER ? { chip: 23, name: 24, story: 19, chrono: 20, model: 20 }
                    : { chip: 15, name: 17, story: 15, chrono: 15, model: 15 };
   const FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
   const CX = 500, CY = 500;
@@ -21,15 +21,15 @@
   const LEVELS = [
     { key: "macro", name: "Macrosystem", r: 442, c: ["#C79A3A", "#8A5A0B", "#FBEEDA"], group: "gov",
       summary: "law, markets, norms, culture",
-      items: [["law & regulation", 216], ["markets", 150], ["cultural values", 180]],
+      items: [["law & regulation", 206, 406], ["markets", 96], ["cultural values", 158, 406]],
       note: "The broadest rules a society lives by. For agents, these are the legal, economic, and cultural institutions that will decide what agent groups may do and who answers for it." },
     { key: "exo", name: "Exosystem", r: 352, c: ["#4F9070", "#2F6B4A", "#E5F0E1"], group: "gov",
       summary: "settings that shape it from outside",
-      items: [["platform policy", 222], ["API limits", 140], ["other agents", 180]],
+      items: [["platform policy", 230], ["API limits", 116], ["other agents", 266]],
       note: "Settings the model never enters directly but that still shape it: a platform's usage policy, rate and budget limits, and agents in other systems competing for the same resources." },
     { key: "meso", name: "Mesosystem", r: 262, c: ["#0F766E", "#04342C", "#E3F1EC"], group: "inter",
       summary: "links between those settings",
-      items: [["handoffs", 232], ["orchestrator", 122], ["shared memory", 180]],
+      items: [["handoffs", 242], ["orchestrator", 112], ["shared memory", 150]],
       note: "The web of links among the settings an agent acts in: work handed from one agent to another, an orchestrator routing tasks, and memory that many agents read and write." },
     { key: "micro", name: "Microsystem", r: 170, c: ["#3A6EA5", "#2F3D6B", "#DCE8F5"], group: "inter",
       summary: "settings it acts in directly",
@@ -212,7 +212,8 @@
     "an AI agent", cM[1], svg, FS.model);
   mt.setAttribute("pointer-events", "none");
 
-  // ring names (curved along the bottom) and example chips
+  // ring names (curved along the bottom) and example chips, spread along both sides and staggered by ring so the
+  // bottom holds only the names (and the innermost ring's one chip)
   const labels = el("g", { class: "rg-labels" }, svg);
   LEVELS.filter((l) => l.key !== "model").forEach((l) => {
     const ri = inner(l);
@@ -222,10 +223,10 @@
       "letter-spacing": PAPER ? "0.06em" : "0.14em" }, labels);
     const tp = el("textPath", { href: `#${pid}`, startOffset: "50%", "text-anchor": "middle" }, t);
     tp.textContent = l.name.toUpperCase();
-    l.items.forEach(([label, deg0]) => {
+    l.items.forEach(([label, deg0, rr]) => {    // optional third value: a radius, to clear a ring name below
       let deg = deg0;
       const k = FS.chip / 15, w = label.length * 8.6 * k + 26 * k, h = 26 * k;
-      const r = deg === 180 ? ri + h / 2 + 7 : (ri + l.r) / 2;  // bottom chip near the inner edge, above the name
+      const r = rr || (deg === 180 ? ri + h / 2 + 7 : (ri + l.r) / 2);  // bottom chip near the inner edge, above the name
       const [x, y] = pt(deg, r);
       const chip = el("g", { class: "rg-chip", "data-key": l.key, transform: `translate(${f(x)} ${f(y)})` }, labels);
       el("rect", { x: f(-w / 2), y: f(-h / 2), width: f(w), height: f(h), rx: f(h / 2), fill: "#fff", stroke: l.c[0], "stroke-width": 1.4,
@@ -240,9 +241,9 @@
   // and an outer layer with the one it governs
   {
     const chipAt = (label) => {
-      for (const l of LEVELS) for (const [name, deg] of l.items) if (name === label) {
+      for (const l of LEVELS) for (const [name, deg, rr] of l.items) if (name === label) {
         const ri = inner(l), k = FS.chip / 15, w = name.length * 8.6 * k + 26 * k, h = 26 * k;
-        const r = deg === 180 ? ri + h / 2 + 7 : (ri + l.r) / 2, [x, y] = pt(deg, r);
+        const r = rr || (deg === 180 ? ri + h / 2 + 7 : (ri + l.r) / 2), [x, y] = pt(deg, r);
         return { x, y, hw: w / 2, hh: h / 2 };
       }
     };
