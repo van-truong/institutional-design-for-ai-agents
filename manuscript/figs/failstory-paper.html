@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Failure stories (paper export)</title>
+<!-- Paper version of the website's failure-mode comics. scripts/gen_web_figs.py prints this page with headless
+     Chrome and pdfcrop trims the empty space below. Edit docs/failstory.js, not this file. -->
+<link rel="stylesheet" href="../../docs/failstory.css">
+<style>
+@page { size: 1040px 1600px; margin: 0; }
+:root { --ink: #171717; --burgundy: #7c1948; --muted: #595959; --line: #c8c8c8; --blue: #4d87e8; }
+html, body { margin: 0; background: #fff; color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+#fs-stage { width: 1000px; padding: 20px; }
+.fsp-row + .fsp-row { margin-top: 26px; }
+.fsp-head { display: flex; align-items: center; gap: .6rem; margin: 0 0 10px; font-size: 25px; }
+.fsp-head .fs-tab-key { width: 30px; height: 30px; background: var(--burgundy); font-size: 17px; }
+.fsp-breaks { color: var(--muted); font-size: 20px; }
+.fs-panel { padding: 12px 12px 14px; }
+.fs-panel figcaption { font-size: 21px; line-height: 1.25; }
+.fs-think q { font-size: 17.5px; }
+.fs-num { width: 30px; height: 30px; font-size: 17px; }
+.fsp-head .fs-tab-key { color: #fff; }
+/* Chrome's print viewport can fall under the site's tablet breakpoint; keep three panels across */
+#fs-stage .fs-strip { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; }
+#fs-stage .fs-next { transform: none; justify-self: auto; font-size: 24px; }
+#fs-stage .fs-panel { display: flex; flex-direction: column; }
+#fs-stage .fs-num { position: absolute; top: 10px; left: 10px; margin: 0; }
+#fs-stage .fs-think { margin: 0 0 4px 38px; }
+#fs-stage .fs-scene { max-width: none; margin: 6px 0 8px; }
+#fs-stage .fs-panel:not(:has(.fs-think)) .fs-scene { margin-top: 34px; }
+#fs-stage .fs-panel figcaption { margin-top: auto; }
+</style></head>
+<body><div id="fs-stage" data-mode="paper"></div>
+<script src="../../docs/failstory.js"></script></body></html>

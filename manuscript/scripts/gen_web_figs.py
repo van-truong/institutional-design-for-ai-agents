@@ -8,7 +8,8 @@
   figure_related-map           docs/related.js     -> Fig. 5, mind map of related efforts
   figure_design-space-game     docs/designspace.js -> Fig. 6, the design space of agent institutions
   figure_phenomena-map         docs/phenomena.js   -> Fig. 8, group-level phenomena
-  figure_coleman-boat          docs/coleman.js     -> Fig. 10, the Coleman boat
+  figure_failure-stories       docs/failstory.js   -> Fig. 10, three ways a mechanism can fail (HTML panels, PDF only)
+  figure_coleman-boat          docs/coleman.js     -> Fig. 11, the Coleman boat
 Each is printed from its paper-mode page, manuscript/figs/*-paper.html. Figs. 7 and 9 come from render_figures.sh.
 
 Serves the repo on a local port, loads each page in headless Chrome, saves the <svg> the script draws to
@@ -30,7 +31,10 @@ FIGS = {
     'figure_dilemmas': ('manuscript/figs/dilemmas-paper.html', 'Extractive'),
     'figure_phenomena-map': ('manuscript/figs/phenomena-paper.html', 'Collusion'),
     'figure_related-map': ('manuscript/figs/related-paper.html', 'Mind map'),
+    'figure_failure-stories': ('manuscript/figs/failstory-paper.html', 'becomes a price'),
 }
+# figures laid out in HTML around several small drawings: printed to PDF only, with no single SVG to save
+HTML_ONLY = {'figure_failure-stories'}
 WIN_CHROME = '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
 
 
@@ -66,14 +70,15 @@ def chrome(b, page, *args):
 def export(b, name):
     page, check = FIGS[name]
     out_svg, out_pdf = os.path.join(FIGURES, name + '.svg'), os.path.join(FIGURES, name + '.pdf')
-    for _ in range(3):
-        m = re.search(r'<svg[\s\S]*</svg>', chrome(b, page, '--dump-dom'))
-        if m:
-            break
-    if not m:
-        sys.exit(f'{page} did not draw an SVG; check the browser console.')
-    svg = re.sub(r'\s(class|tabindex|role|aria-[a-z]+|data-key|style)="[^"]*"', '', m.group(0))  # web-only attributes
-    open(out_svg, 'w', encoding='utf-8').write(svg)
+    if name not in HTML_ONLY:
+        for _ in range(3):
+            m = re.search(r'<svg[\s\S]*</svg>', chrome(b, page, '--dump-dom'))
+            if m:
+                break
+        if not m:
+            sys.exit(f'{page} did not draw an SVG; check the browser console.')
+        svg = re.sub(r'\s(class|tabindex|role|aria-[a-z]+|data-key|style)="[^"]*"', '', m.group(0))  # web-only attributes
+        open(out_svg, 'w', encoding='utf-8').write(svg)
     pdf = os.path.abspath(out_pdf)
     if b.startswith('/mnt/'):  # Windows Chrome from WSL needs a Windows path
         pdf = subprocess.run(['wslpath', '-w', pdf], capture_output=True, text=True).stdout.strip()

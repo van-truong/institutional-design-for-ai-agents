@@ -122,7 +122,7 @@ Interactive maps: \url{https://van-truong.github.io/institutional-design-for-ai-
 \begin{figure}[!b]
     \centering
     \includegraphics[width=\linewidth]{figures/figure_nested-rings.pdf}
-    \caption{Nested systems around interacting agents, after Bronfenbrenner~\mbox{\citep{bronfenbrenner1979ecology}}. An AI agent sits at the center, inside the groups it interacts with and the platform, market, and legal institutions that govern it from outside. The cutaway wedge reads outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another. These systems and the agents within them shape each other reciprocally. Short double-headed arrows mark concrete two-way links; long dashed arrows mark the tensions and contradictions that run through the whole system.}
+    \caption{Nested systems around interacting agents, adapted from Bronfenbrenner~\mbox{\citep{bronfenbrenner1979ecology}}. An AI agent sits at the center, inside the groups it interacts with and the platform, market, and legal institutions that govern it from outside. The cutaway wedge reads outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another. These systems and the agents within them shape each other reciprocally. Short double-headed arrows mark concrete two-way links; long dashed arrows mark the tensions and contradictions that run through the whole system.}
     \label{fig:summary}
 \end{figure}
 
@@ -350,7 +350,14 @@ Institutional mechanisms cannot be evaluated in isolation and are not reliably a
 
 The same mechanism can also be enforced in very different ways. Human societies enforce rules informally among neighbors, through organizations and courts, through platforms, or through decentralized systems with no central authority. LLM-agent systems have counterparts to each. Agents can police one another, an orchestrator or platform can enforce rules centrally, a mediator agent, rule-based monitor, or human reviewer can settle disputes, and smart-contract-like protocols can apply rules automatically. Each arrangement carries its own risk. Peer enforcement can spiral into retaliation, platform rules can be rigid, mediators can become bottlenecks, and decentralized systems can be costly or easy to game.
 
-Beyond these failures of a single step, mechanisms can fail in three deeper ways, which we describe next. Together they make one methodological point: no general theory yet tells us when an institutional mechanism will help, so the institution itself has to be evaluated.
+Beyond these failures of a single step, mechanisms can fail in three deeper ways, which we describe next and illustrate in Figure~\mbox{\ref{fig:failure-stories}}. Together they make one methodological point: no general theory yet tells us when an institutional mechanism will help, so the institution itself has to be evaluated.
+
+\begin{figure}[!tbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/figure_failure-stories.pdf}
+  \caption{Three ways a cooperation mechanism can fail, each told in three panels. In (A), a fine becomes a price that agents pay while they keep overusing a shared resource. In (B), a reputation score becomes the target, and agents raise it without doing the work. In (C), a monitor rewarded for each violation it finds punishes freely, and no one can appeal. Thought bubbles are illustrative, not quotations. Table~\mbox{\ref{tab:failure-guide}} lists where each failure breaks, what to measure, and the safeguards.}
+  \label{fig:failure-stories}
+\end{figure}
 
 \textbf{Mechanisms can reframe the underlying interaction.} In a well-known study of daycare centers in Haifa, Gneezy and Rustichini introduced a small fine for parents who picked up their children late~\mbox{\citep{gneezy2000fine}}. Late pickups increased significantly in the centers with the fine rather than decreasing, and did not fall after the fine was removed twelve weeks later. The fine changed what late pickup meant to the parents: a social obligation became a service they could pay for. Related studies report incentive crowding-out in other settings, although its direction and magnitude depend on context~\citep{bowlesPoliciesDesignedSelfInterested2008}. The broader lesson is that adding an incentive on top of an existing norm can change behavior in ways designers did not intend.
 
@@ -443,7 +450,7 @@ Human override & Can humans intervene and correct the institution? & Success rat
 \begin{figure*}[!t]
   \centering
   \includegraphics[width=\linewidth]{figures/figure_coleman-boat.pdf}
-  \caption{A Coleman boat for agent institutions, after Coleman~\mbox{\citep{coleman1990foundations}} and the question-per-arrow form of Mart\'{i}nez-Pe\~{n}a and Ylikoski~\mbox{\citep{martinezpena2024coleman}}. An institutional change (A) alters what each agent faces (B; arrow~1); the model's behavior responds (C; arrow~2) and reshapes other agents' situations (arrow~3); and behavior adds up to group outcomes (D; arrow~4), which designers hope will follow directly from the change (dashed). Terracotta tags mark where the three failure modes of Table~\mbox{\ref{tab:failure-guide}} break.}
+  \caption{A Coleman boat for agent institutions, adapted from Coleman~\mbox{\citep{coleman1990foundations}} and the question-per-arrow form of Mart\'{i}nez-Pe\~{n}a and Ylikoski~\mbox{\citep{martinezpena2024coleman}}. An institutional change (A) alters what each agent faces (B; arrow~1); the model's behavior responds (C; arrow~2) and reshapes other agents' situations (arrow~3); and behavior adds up to group outcomes (D; arrow~4), which designers hope will follow directly from the change (dashed). Terracotta tags mark where the three failure modes of Table~\mbox{\ref{tab:failure-guide}} break.}
   \label{fig:model-in-institution}
 \end{figure*}
 
