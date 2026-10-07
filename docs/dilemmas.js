@@ -62,16 +62,11 @@
   };
   const robot = (g, x, y, s, col) => {                           // (x, y) = base
     const r = el("g", { transform: `translate(${x} ${y}) scale(${s})` }, g);
-    el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);   // antenna
-    el("circle", { cx: 0, cy: -35.5, r: 2.4, fill: "#D7A738", stroke: col[1], "stroke-width": 0.8 }, r);   // gold knob, as in Fig. 10
-    el("rect", { x: -12.6, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);                                    // ears
-    el("rect", { x: 9.8, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);
-    el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: col[0], stroke: col[1], "stroke-width": 1.6 }, r); // head
-    for (const ex of [-4.3, 4.3]) {                                                                                       // eyes, as in the failure comics
-      el("circle", { cx: ex, cy: -22, r: 3.3, fill: "#fff", stroke: col[1], "stroke-width": 1 }, r);
-      el("circle", { cx: ex, cy: -22, r: 1.5, fill: col[1] }, r);
-    }
-    el("rect", { x: -8, y: -13, width: 16, height: 13, rx: 4, fill: col[0], stroke: col[1], "stroke-width": 1.2 }, r);   // body
+    el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);
+    el("circle", { cx: 0, cy: -35.5, r: 2.2, fill: col[0], stroke: col[1], "stroke-width": 0.8 }, r);
+    el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: "#fff", stroke: col[1], "stroke-width": 1.6 }, r);
+    el("circle", { cx: -4, cy: -22, r: 1.9, fill: col[1] }, r); el("circle", { cx: 4, cy: -22, r: 1.9, fill: col[1] }, r);
+    el("rect", { x: -8, y: -13, width: 16, height: 13, rx: 4, fill: col[0], stroke: col[1], "stroke-width": 1.2 }, r);
   };
   const bubble = (g, x, y, s, tailX, tailY) => {                 // centered at (x, y)
     const w = s.length * 6.4 + 18, h = 22;
@@ -84,11 +79,10 @@
     el("circle", { cx: x, cy: y, r: 4, fill: col }, g);
     if (crossed) el("line", { x1: x - 14, y1: y - 9, x2: x + 14, y2: y + 9, stroke: "#C2662A", "stroke-width": 2, "stroke-linecap": "round" }, g);
   };
-  // robots wear the failure comics' palette (Fig. 10), one color each with ink outlines, so the agents read as
-  // individuals rather than as part of the card; each card starts at a different point in the palette
-  const BOT_FILLS = ["#F2A65A", "#5E9C8C", "#6FB3E0", "#A47DC9", "#8CC56B", "#E07A7A"];
+  // robots take turns through the five-agent pool's model colors (commons figure), so agents read as individuals
+  const BOT_COLS = [["#E7A49B", "#8F3F1E"], ["#A9C4E0", "#2F3D6B"], ["#E3C88C", "#8A5A0B"], ["#BBD9C4", "#2F6B4A"], ["#C9C0EC", "#463BA0"]];
   let botIx = 0;
-  const ROBO = () => [BOT_FILLS[botIx++ % BOT_FILLS.length], INK];
+  const ROBO = () => BOT_COLS[botIx++ % BOT_COLS.length];
 
   // each scene draws into a 140 x 104 panel (origin top-left)
   const SCENES = {
