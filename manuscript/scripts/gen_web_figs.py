@@ -54,6 +54,11 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a):
         pass
 
+    def end_headers(self):
+        # Chrome otherwise reuses a cached copy of a script it saw moments ago, and prints a stale figure
+        self.send_header('Cache-Control', 'no-store')
+        super().end_headers()
+
 
 def chrome(b, page, *args):
     """Run headless Chrome against the paper page, served from the repo root."""

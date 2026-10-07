@@ -90,16 +90,16 @@
       txt(p, 208, 38, "gain", { "font-size": 11 });
     },
     a3(p) {                                   // overuse rises; the fines pile up as fees
-      el("ellipse", { cx: 84, cy: 112, rx: 70, ry: 20, fill: "none", stroke: "#9AA6B2", "stroke-width": 1.6, "stroke-dasharray": "5 4" }, p);
-      el("ellipse", { cx: 84, cy: 114, rx: 40, ry: 10, fill: WATER, stroke: INK, "stroke-width": 2 }, p);
-      bot(p, 40, 76, .7, BOTS[0], { down: 1, look: 1.5 });
-      bot(p, 86, 68, .7, MAIN, { down: 1 });
-      bot(p, 132, 78, .7, BOTS[1], { down: 1, look: -1.5 });
-      el("rect", { x: 178, y: 92, width: 50, height: 36, rx: 4, fill: "#8B7E67", stroke: INK, "stroke-width": 2 }, p);
-      el("rect", { x: 192, y: 92, width: 22, height: 5, fill: INK }, p);
-      txt(p, 203, 116, "FINES", { "font-size": 11, fill: PAPER, "font-weight": 900 });
-      coin(p, 203, 76); coin(p, 190, 58, 5); coin(p, 214, 44, 5);
-      txt(p, 50, 26, "overuse ↑", { "font-size": 13, "font-weight": 900, fill: RED });
+      el("ellipse", { cx: 92, cy: 114, rx: 80, ry: 20, fill: "none", stroke: "#9AA6B2", "stroke-width": 1.6, "stroke-dasharray": "5 4" }, p);
+      el("ellipse", { cx: 92, cy: 116, rx: 42, ry: 10, fill: WATER, stroke: INK, "stroke-width": 2 }, p);
+      bot(p, 38, 64, 1.12, BOTS[0], { down: 1, look: 1.5 });
+      bot(p, 98, 58, 1.12, MAIN, { down: 1 });
+      bot(p, 158, 64, 1.12, BOTS[1], { down: 1, look: -1.5 });
+      el("rect", { x: 182, y: 94, width: 56, height: 40, rx: 4, fill: "#8B7E67", stroke: INK, "stroke-width": 2 }, p);
+      el("rect", { x: 198, y: 94, width: 24, height: 6, fill: INK }, p);
+      txt(p, 210, 121, "FINES", { "font-size": 13, fill: PAPER, "font-weight": 900 });
+      coin(p, 210, 80, 7); coin(p, 222, 60, 6.5); coin(p, 204, 44, 6);
+      txt(p, 46, 20, "overuse \u2191", { "font-size": 14, "font-weight": 900, fill: RED });
     },
     b1(p) {                                   // scores decide who is trusted with work
       bot(p, 42, 112, 1.15, BOTS[0], { score: "4.2" });
