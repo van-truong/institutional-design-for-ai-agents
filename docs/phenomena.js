@@ -1,4 +1,4 @@
-/* Group-level phenomena (paper Fig. 6). Reads assets/phenomena.json (built by
+/* Group-level phenomena (paper Fig. 8). Reads assets/phenomena.json (built by
    taxonomy/scripts/build_phenomena_data.py).
    Website: two views, like the taxonomy. A radial "map" (default) places the ten phenomenon types around a circle,
    with one ring per substrate (humans, MARL agents, LLM agents) and dots sized by coded instances; the "list" view
@@ -68,13 +68,17 @@
     } else {
       svgEl("line", { x1: 0, y1: -15, x2: 0, y2: -20, stroke: col, "stroke-width": 1.6, "stroke-linecap": "round" }, g);
       svgEl("circle", { cx: 0, cy: -21.5, r: 2.2, fill: col }, g);
+      svgEl("rect", { x: -13.8, y: -10.5, width: 2.8, height: 6, rx: 1, fill: col }, g);   // ears
+      svgEl("rect", { x: 11, y: -10.5, width: 2.8, height: 6, rx: 1, fill: col }, g);
       svgEl("rect", { x: -11, y: -15, width: 22, height: 15, rx: kind === "marl" ? 2 : 5, fill: "#fff", stroke: col, "stroke-width": 1.6 }, g);
       if (kind === "marl") {
         svgEl("rect", { x: -6.5, y: -10, width: 4, height: 4, fill: col }, g);
         svgEl("rect", { x: 2.5, y: -10, width: 4, height: 4, fill: col }, g);
       } else {
-        svgEl("circle", { cx: -4.5, cy: -7.5, r: 2, fill: col }, g);
-        svgEl("circle", { cx: 4.5, cy: -7.5, r: 2, fill: col }, g);
+        for (const ex of [-4.8, 4.8]) {   // eyes, as in the failure comics; MARL agents keep square pixel eyes
+          svgEl("circle", { cx: ex, cy: -7.5, r: 3.3, fill: "#fff", stroke: col, "stroke-width": 1.1 }, g);
+          svgEl("circle", { cx: ex, cy: -7.5, r: 1.5, fill: col }, g);
+        }
         svgEl("path", { d: "M 13 -22 h 12 a 3 3 0 0 1 3 3 v 5 a 3 3 0 0 1 -3 3 h -7 l -4 3 v -3 h -1 a 3 3 0 0 1 -3 -3 v -5 a 3 3 0 0 1 3 -3 z",
           fill: "#fff", stroke: col, "stroke-width": 1.3 }, g);
       }

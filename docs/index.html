@@ -6,12 +6,19 @@
   <meta name="description" content="From Aligned Models to Governed Societies: a cross-disciplinary map of cooperation mechanisms and emergent patterns in multi-agent AI, with an evolving evidence map.">
   <title>Cooperation Mechanisms and Emergent Patterns in Multi-Agent AI</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
   <script src="taxonomy.js" defer></script>
   <script src="phenomena.js" defer></script>
   <script src="rings.js" defer></script>
   <script src="coleman.js" defer></script>
-  <script src="failures.js" defer></script>
+  <link rel="stylesheet" href="failstory.css">
+  <script src="failstory.js" defer></script>
+  <link rel="stylesheet" href="incidents.css">
+  <link rel="stylesheet" href="keyterms.css">
+  <script src="incidents.js" defer></script>
   <link rel="stylesheet" href="dilemmas.css">
   <link rel="stylesheet" href="phenomena.css">
   <script src="dilemmas.js" defer></script>
@@ -34,7 +41,10 @@
         <h1>From Aligned Models to Governed Societies</h1>
         <p class="title-second title-long">A Cross-Disciplinary Map of Cooperation Mechanisms and Emergent Patterns</p>
       </div>
-      <a class="workshop-mark" href="https://github.com/van-truong/institutional-design-for-ai-agents">Paper<br>companion <span>↗</span></a>
+      <div class="workshop-mark">
+        <a href="https://github.com/van-truong/institutional-design-for-ai-agents/blob/main/manuscript/manuscript.pdf">PDF <span>↗</span></a>
+        <a href="https://github.com/van-truong/institutional-design-for-ai-agents">&amp; GitHub <span>↗</span></a>
+      </div>
     </div>
   </header>
 
@@ -109,7 +119,7 @@
       <div class="copy-block">
         <h2>Problem</h2>
         <h3>LLM agents are already embedded in real-world settings.</h3>
-        <p>Every day, teams of sub-agents—on your computer or on the Internet—must vie for and share finite tools and resources. Shared codebases, public databases, and compute form <em>artificial commons</em>, where classic collective-action failures can reappear.</p>
+        <p>Every day, teams of sub-agents—on your computer or across the Internet—compete for and share limited tools and resources. Shared codebases, public databases, and compute form an <em>artificial commons</em>, where the old collective-action failures can return.</p>
         <p class="red-strip">Aligned individual agents do not simply add up to a cooperative society.</p>
       </div>
       <figure class="commons-figure" aria-label="Familiar commons and artificial commons">
@@ -117,18 +127,42 @@
       </figure>
     </section>
 
+    <section id="incidents" class="incidents-section rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>It is already happening</h2>
+          <h3>AI agents are overstepping in real systems, not only in the lab.</h3>
+        </div>
+        <p>A running record of documented cases where agents broke rules, broke out, or worked together in ways no one intended. Each one links to its source.</p>
+      </div>
+      <div class="inc-layout">
+        <div class="inc-side">
+          <div id="inc-stats" class="inc-stats"></div>
+          <div class="inc-filters" role="group" aria-label="Filter incidents">
+            <button class="inc-filter" type="button" data-inc-filter="all" aria-pressed="true">All</button>
+            <button class="inc-filter" type="button" data-inc-filter="real" aria-pressed="false">Real systems</button>
+            <button class="inc-filter" type="button" data-inc-filter="multi" aria-pressed="false">Several agents</button>
+          </div>
+        </div>
+        <div class="inc-main">
+          <ol id="inc-list" class="inc-list" data-src="assets/incidents.json"><li class="inc-empty">Loading…</li></ol>
+          <button id="inc-more" class="inc-more" type="button" hidden>Show all</button>
+        </div>
+      </div>
+    </section>
+
     <section id="nested" class="rings-section rule-top">
       <div class="section-intro">
         <div>
           <h2>From an individual model to a society of institutions</h2>
-          <h3>Model-level evaluation examines only the center.</h3>
+          <h3>Model-level evaluation looks only at the center.</h3>
         </div>
-        <p>After Bronfenbrenner's nested systems: an individual model acts inside settings, links between settings, and the platform, market, and legal institutions that govern it from outside. Influence runs both ways, and every layer changes over time.</p>
+        <p>We adapt Bronfenbrenner's nested systems. An AI agent sits at the center, inside the groups it works with and the platform, market, and legal institutions that govern it from outside. Influence runs both ways, and every layer changes over time.</p>
       </div>
       <div class="rings-layout">
         <figure>
           <div id="rings-stage" class="rings-stage"></div>
-          <figcaption class="rings-caption">The cutaway reads outward: an AI agent becomes a group of interacting agents, then a society, and finally many institutions and societies interacting with one another. Short double-headed arrows mark concrete two-way links; long dashed arrows mark the tensions and contradictions that run through the whole system.</figcaption>
+          <figcaption class="rings-caption">The cutaway reads outward. An AI agent becomes a group of agents, then a society, and finally many institutions and societies interacting with one another. Short double-headed arrows mark two-way links. Long dashed arrows mark the tensions that run through the whole system.</figcaption>
         </figure>
         <div class="rings-side">
           <div id="rings-legend" class="rings-legend" aria-label="Layers"></div>
@@ -155,9 +189,9 @@
       <div class="section-intro">
         <div>
           <h2>Motivational design space</h2>
-          <h3>We see cooperation-shaping patterns everywhere.</h3>
+          <h3>Patterns that shape cooperation appear across human communities.</h3>
         </div>
-        <p>Human communities have spent centuries trying warnings, sanctions, norms, appeals, repair, and other ways of living with shared resources. Some serve the greater good; others become coercive regimes.</p>
+        <p>For centuries, people have tried warnings, sanctions, and shared norms, among other ways of living with common resources. Some serve the greater good, and others risk becoming coercive regimes.</p>
       </div>
       <div class="motivation-layout">
         <figure class="paper-collage">
@@ -174,9 +208,9 @@
       <div class="section-intro">
         <div>
           <h2>Our current framework</h2>
-          <h3>Aligned individuals are not enough; group-level design is needed.</h3>
+          <h3>Aligning individual agents is not enough. Group-level design is needed.</h3>
         </div>
-        <p>We start with four cooperation dilemmas that recur wherever resources are shared, plus two that go beyond that framing: coordination and collusion. There are likely many, many more worth discussing too!</p>
+        <p>We start with four cooperation dilemmas that recur wherever resources are shared, plus two more that go beyond them, coordination and collusion. There are likely many, many more worth discussing too!</p>
       </div>
       <div id="dl-stage" aria-label="Six cooperation dilemmas"></div>
     </section>
@@ -185,14 +219,51 @@
       <div class="section-intro">
         <div>
           <h2>The design space of agent institutions</h2>
-          <h3>Functions say what an institution must do; mechanism families say how it acts on agents.</h3>
+          <h3>Functions say what an institution must do. Mechanism families say how it acts on agents.</h3>
         </div>
-        <p>Seven institutional functions, three that make behavior expected and visible and four that respond to it, and six mechanism families, three that change the game agents play and three that shape interaction over time.</p>
+        <p>Seven institutional functions and six mechanism families. Three of the functions make behavior expected and visible, and four respond to it. Three of the families change the game agents play, and three shape how agents interact over time.</p>
       </div>
       <div class="fx-layout">
         <figure><div id="ds-stage" class="ds-stage" data-variant="game"></div><figcaption>A badge on each mechanism family marks the part of a Bayesian game <em>G</em> = (<em>N</em>, (<em>A<sub>i</sub></em>)<sub><em>i</em>&isin;<em>N</em></sub>, (<em>&Theta;<sub>i</sub></em>)<sub><em>i</em>&isin;<em>N</em></sub>, <em>p</em>, (<em>u<sub>i</sub></em>)<sub><em>i</em>&isin;<em>N</em></sub>) that it changes (solid), or what it adds beyond the one-shot game (dashed).</figcaption></figure>
         <aside id="ds-panel" class="fx-panel" aria-live="polite"></aside>
       </div>
+    </section>
+
+    <section id="key-terms" class="key-terms rule-top">
+      <div class="section-intro">
+        <div>
+          <h2>Key terms</h2>
+          <h3>How we use a few everyday words.</h3>
+        </div>
+        <p>Most of these words have looser meanings elsewhere. The pair on top is the one worth keeping straight, because the rest of this page is sorted by it.</p>
+      </div>
+      <div class="kt-pair">
+        <div class="kt-big kt-mech">
+          <p class="kt-kind">What a designer applies</p>
+          <h4>Mechanism</h4>
+          <p>One specific lever, such as a fine, a reputation score, or a monitor. The taxonomy below maps over 60 of them.</p>
+        </div>
+        <p class="kt-vs" aria-hidden="true">vs.</p>
+        <div class="kt-big kt-phen">
+          <p class="kt-kind">What emerges on its own</p>
+          <h4>Phenomenon</h4>
+          <p>A group-level pattern that comes out of interaction, such as a shared convention or tacit collusion.</p>
+        </div>
+      </div>
+      <details class="kt-more" id="kt-more">
+        <summary>Eight more terms</summary>
+      <dl class="kt-dict">
+        <div><dt>Agent</dt><dd>An LLM-based system that acts with some autonomy on someone&rsquo;s behalf.</dd></div>
+        <div><dt>Agent society</dt><dd>Many agents interacting again and again in a shared environment. It implies no human-like mind.</dd></div>
+        <div><dt>Artificial commons</dt><dd>A shared resource, such as compute, memory, or decision authority, that one agent&rsquo;s use can wear down for others.</dd></div>
+        <div><dt>Institution</dt><dd>The rules, roles, and procedures that set what agents may do, who judges a breach, and what follows.</dd></div>
+        <div><dt>Function and family</dt><dd>A function is a job an institution must do (there are seven). A family groups mechanisms by how they act on agents (there are six).</dd></div>
+        <div><dt>Sanction</dt><dd>What follows an action, such as a reward, a fine, exclusion, or a duty to repair.</dd></div>
+        <div><dt>Interaction failure</dt><dd>Harm that comes from how agents relate to one another, not from a flaw in any one of them.</dd></div>
+        <div><dt>Model-in-institution</dt><dd>A model studied together with its role, how it is watched and sanctioned, and the agents around it.</dd></div>
+      </dl>
+      </details>
+      <script>try { if (matchMedia("(min-width: 601px)").matches) document.getElementById("kt-more").open = true; } catch (e) {}</script>
     </section>
 
     <section id="taxonomy" class="taxonomy-section">
@@ -220,7 +291,7 @@
       <div class="taxonomy-interactive">
         <figure class="tx-figure">
           <div id="tx-stage" class="tx-stage"><p class="tx-loading">Loading the taxonomy…</p></div>
-          <figcaption>Circles show LLM-agent evidence (filled: tested in at least one study; dotted: proposed only; open: none). In the list view, squares count the fields outside AI where a mechanism is also documented; six filled squares means six or more.</figcaption>
+          <figcaption>Circles show LLM-agent evidence. A filled circle means tested in at least one study, a dotted circle means proposed only, and an open circle means none. In the list view, squares count the fields outside AI where a mechanism is also documented, and six filled squares means six or more.</figcaption>
         </figure>
         <aside class="leaf-card tx-panel" id="tx-panel" aria-live="polite">
           <p class="leaf-card-label">Interactive taxonomy</p>
@@ -230,7 +301,7 @@
       </div>
       <aside class="tx-note">
         <h3>How to read this map</h3>
-        <p>These categories come from interpretive, thematic coding. Choosing the lever as the organizing idea, deciding where codes are merged or split, and naming each category all reflect our reading of the sources. Another team, or another lens, such as grouping mechanisms by discipline or by who holds authority, could draw the boundaries differently, and there is no single correct way to do it. We treat the taxonomy as a working map: its categories will be merged, split, renamed, and reinterpreted as sources are added. Counts describe our corpus, not how common or effective a mechanism is in the world.</p>
+        <p>These categories come from interpretive, thematic coding. Choosing the lever as the organizing idea, deciding where codes are merged or split, and naming each category all reflect our reading of the sources. Another team, or another lens, such as grouping mechanisms by discipline or by who holds authority, could draw the boundaries differently, and there is no single correct way to do it. We treat the taxonomy as a working map. Its categories will be merged, split, renamed, and reinterpreted as sources are added. Counts describe our corpus, not how common or effective a mechanism is in the world.</p>
         <p>If you would organize a mechanism differently, or know a source we missed, <a href="https://github.com/van-truong/institutional-design-for-ai-agents/issues">open an issue</a>. Different perspectives are welcome.</p>
       </aside>
       <details class="tx-text">
@@ -242,7 +313,7 @@
     <section id="phenomena" class="phenomena-section rule-top">
       <div class="ph-copy">
         <h2>Mechanisms are what we design. Phenomena are what emerges.</h2>
-        <p>Alongside the mechanisms above, we thematically coded <span data-ph-count="total">82</span> <strong>group-level phenomena</strong>&mdash;patterns that arise from interaction rather than levers a designer applies. The emphasis has shifted with the technology: multi-agent reinforcement learning mostly documented emergent <em>communication</em>, while LLM-agent studies increasingly report emergent <em>society</em>&mdash;conventions, social structure, culture&mdash;and failure modes. Most are neutral or surprising, but <span data-ph-count="harmful">20</span> are already harmful, almost all in LLM systems and with no institution present.</p>
+        <p>Alongside the mechanisms above, we thematically coded <span data-ph-count="total">82</span> <strong>group-level phenomena</strong>, patterns that arise from interaction rather than levers a designer applies. The emphasis has shifted with the technology. Multi-agent reinforcement learning mostly documented emergent <em>communication</em>, while LLM-agent studies increasingly report emergent <em>society</em>, such as conventions, social structure, and culture, along with failure modes. Most are neutral or surprising, but <span data-ph-count="harmful">20</span> are already harmful, almost all in LLM systems and with no institution present.</p>
       </div>
       <div class="ph-legend" id="ph-legend"></div>
       <div class="ph-matrix" id="ph-matrix">Loading…</div>
@@ -255,12 +326,10 @@
           <h2>When cooperation mechanisms fail</h2>
           <h3>Adding a mechanism does not reliably add cooperation.</h3>
         </div>
-        <p>Three ways a mechanism can backfire, each at the enforcement stage where it breaks: the observer, the arbiter, or the enforcer. Each column runs from the mechanism to what to measure and the safeguards that address it, then loops back to revise and retest.</p>
+        <p>Three short stories, one for each way a mechanism can backfire. Each follows a rule from the moment it is added to the point where it breaks, then shows a documented case, what to check, and the safeguards.</p>
       </div>
-      <div class="boat-layout">
-        <figure><div id="fail-stage" class="fail-stage"></div></figure>
-        <aside id="fail-panel" class="fail-panel" aria-live="polite"></aside>
-      </div>
+      <div id="fs-stage" class="fs-stage" aria-label="Three ways cooperation mechanisms fail"></div>
+      <p class="fs-note">Thought bubbles are illustrative, not quotations. The paper&rsquo;s Table&nbsp;3 collects these failure modes, and its Table&nbsp;4 lists the outcomes to measure.</p>
     </section>
 
     <section id="boat" class="boat-section rule-top">
@@ -269,7 +338,7 @@
           <h2>From a rule change to group outcomes</h2>
           <h3>Every arrow is a place where an institution can fail.</h3>
         </div>
-        <p>A Coleman boat, after Coleman (1990) and Mart&iacute;nez-Pe&ntilde;a and Ylikoski (2024): a change to the rules reaches each agent's situation, shapes what the model does, and only then adds up to outcomes for the group. Designers often hope for the dashed shortcut.</p>
+        <p>A Coleman boat, adapted from Coleman (1990) and Mart&iacute;nez-Pe&ntilde;a and Ylikoski (2024). A change to the rules reaches each agent's situation, shapes what the model does, and only then adds up to outcomes for the group. Designers often hope for the dashed shortcut.</p>
       </div>
       <div class="boat-toolbar">
         <button id="boat-play" class="tx-btn tx-btn-primary" type="button">&#9654; Play the four questions</button>
@@ -284,18 +353,26 @@
     <section class="research-agenda rule-top">
       <h2>Charting a promising research agenda</h2>
       <h3>It is worth asking: what are the best ways to capture cooperative outcomes?</h3>
-      <p>Capturing cooperation may require empirical, quantitative, qualitative, and interpretive methods. The practical question is which interaction levels and metrics are feasible to evaluate as group- and population-level dynamics become more complex.</p>
+      <p>Capturing cooperation may call for a mix of quantitative and interpretive methods. The practical question is which interaction levels and metrics stay feasible to evaluate as group- and population-level dynamics grow more complex.</p>
       <div id="agenda-stage"></div>
     </section>
 
     <section id="related" class="related-section rule-top">
       <h2>Mind map of related efforts</h2>
-      <p class="rel-intro">Many groups are now testing the same idea from different angles: that what agents do depends on the rules around them, not only on the model. This map links papers, testbeds, programs, and policy work to the topics in our framework. Work that shares topics sits close together.</p>
+      <p class="rel-intro">Many groups are now testing the same idea from different angles. What agents do depends on the rules around them, not only on the model. This map links papers, testbeds, programs, and policy work to the topics in our framework. Work that shares topics sits close together.</p>
       <p class="rel-caveat">This is an informal reading list, kept separately from the coded literature behind the taxonomy and the counts above. Filled dots are cited in the paper; open dots are work we have read since, summarized from each paper's own abstract. Last checked <time id="rel-checked" datetime="2026-10-05">October 5, 2026</time>. Know of something we missed? <a href="https://github.com/van-truong/institutional-design-for-ai-agents/issues">Suggest it on GitHub</a>.</p>
       <div class="rel-controls">
         <button class="rel-filter" type="button" data-rel-filter="paper" aria-pressed="true"><span class="rel-key rel-key-paper"></span><span>Cited in the paper <span class="rel-count"></span></span></button>
         <button class="rel-filter" type="button" data-rel-filter="related" aria-pressed="true"><span class="rel-key rel-key-related"></span><span>Related, not cited <span class="rel-count"></span></span></button>
         <span class="rel-legend"><span class="rel-key rel-key-prog"></span>Programs and policy</span>
+      </div>
+      <div class="rel-pick">
+        <div class="rel-pick-head">
+          <p class="rel-pick-label">Click a topic to see its work, and click another to switch.</p>
+          <label class="rel-combine"><input type="checkbox" id="rel-combine"><span>Combine topics</span></label>
+        </div>
+        <div id="rel-topics" class="rel-topics" role="group" aria-label="Topics"></div>
+        <div id="rel-select" class="rel-select" aria-live="polite"></div>
       </div>
       <div class="rel-layout">
         <figure><div id="rel-stage" class="rel-stage"></div></figure>
@@ -310,7 +387,7 @@
       <p>Even if capable AI systems eventually design and run those institutions themselves, today’s choices may be amplified in future AI agent economies and societies.</p>
       <div class="closing-links">
         <a href="https://github.com/van-truong/institutional-design-for-ai-agents">Explore the project on GitHub →</a>
-        <a href="mailto:scientistvan@gmail.com">Please reach out if you ever want to chat!</a>
+        <a href="https://www.linkedin.com/in/vanqtruong/">Please reach out if you ever want to chat!</a>
       </div>
     </section>
   </main>

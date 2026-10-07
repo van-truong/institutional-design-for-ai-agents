@@ -1,0 +1,47 @@
+/* When cooperation mechanisms fail (failstory.js): tabs, a strip of numbered comic panels, and an evidence bar */
+.fs-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin: 2rem 0 1.2rem; }
+.fs-tab { display: inline-flex; align-items: center; gap: .55rem; padding: .5rem 1rem .5rem .5rem; border: 2px solid var(--ink); border-radius: 999px; background: #fff; color: var(--ink); font: inherit; font-size: .95rem; font-weight: 800; cursor: pointer; }
+.fs-tab-key { display: inline-grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--ink); color: #fff; font-size: .85rem; }
+.fs-tab[aria-selected="true"] { border-color: var(--burgundy); background: var(--burgundy); color: #fff; }
+.fs-tab[aria-selected="true"] .fs-tab-key { background: #fff; color: var(--burgundy); }
+.fs-tab:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+
+.fs-strip { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: .6rem; align-items: stretch; }
+.fs-next { align-self: center; color: var(--burgundy); font-size: 1.6rem; font-weight: 900; }
+.fs-panel { position: relative; display: flex; flex-direction: column; margin: 0; padding: 1rem 1rem 1.1rem; border: 2.5px solid var(--ink); border-radius: 16px; background: #fff; }
+.fs-num { position: absolute; top: .75rem; left: .75rem; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--burgundy); color: #fff; font-size: 1.05rem; font-weight: 900; }
+.fs-think { display: flex; align-items: flex-start; gap: .35rem; margin: 0 0 .2rem 2.5rem; }
+.fs-mini { flex: 0 0 38px; width: 38px; margin-top: .1rem; }
+.fs-think q { flex: 1; padding: .45rem .6rem; border: 2px solid var(--ink); border-radius: 10px; color: #2443C9; font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: .8rem; font-weight: 700; line-height: 1.35; quotes: "\201C" "\201D"; }
+.fs-scene { display: block; width: 100%; height: auto; margin: .3rem 0 .6rem; }
+.fs-panel:not(:has(.fs-think)) .fs-scene { margin-top: 1.4rem; }
+.fs-panel figcaption { margin-top: auto; color: var(--ink); text-align: left; font-size: .95rem; font-weight: 700; line-height: 1.38; }
+
+.fs-bar { margin-top: 1rem; border: 2.5px solid var(--ink); border-radius: 16px; overflow: hidden; }
+.fs-bar-head { margin: 0; padding: .7rem 1.2rem; background: var(--burgundy); color: #fff; font-size: 1rem; }
+.fs-bar-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr; }
+.fs-col { padding: .9rem 1.2rem 1rem; }
+.fs-col + .fs-col { border-left: 1px solid var(--line); }
+.fs-col p { margin: 0; font-size: .92rem; line-height: 1.45; }
+.fs-col a { color: var(--burgundy); font-weight: 700; }
+.fs-col .fs-col-label { margin-bottom: .3rem; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.fs-col .fs-check { font-size: 1.05rem; font-weight: 800; }
+.fs-note { margin: .8rem 0 0; color: var(--muted); font-size: .85rem; }
+
+@media (max-width: 900px) {
+  .fs-strip { grid-template-columns: 1fr; gap: .3rem; }
+  .fs-next { justify-self: center; transform: rotate(90deg); font-size: 1.3rem; }
+  .fs-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 1rem; align-items: center; }
+  .fs-num { position: static; grid-column: 1 / -1; margin-bottom: .3rem; }
+  .fs-think { grid-column: 1 / -1; margin-left: 0; }
+  .fs-scene, .fs-panel:not(:has(.fs-think)) .fs-scene { margin: 0; }
+  .fs-panel figcaption { margin: 0; }
+  .fs-bar-cols { grid-template-columns: 1fr; }
+  .fs-col + .fs-col { border-left: 0; border-top: 1px solid var(--line); }
+}
+@media (max-width: 600px) {
+  .fs-tab { font-size: .85rem; padding-right: .8rem; }
+  .fs-panel { grid-template-columns: 1fr; padding: .8rem; }
+  .fs-scene { max-width: 340px; justify-self: center; }
+  .fs-panel figcaption { font-size: .92rem; margin-top: .3rem; }
+}

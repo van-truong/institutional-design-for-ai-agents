@@ -1,0 +1,38 @@
+/* Key terms: the mechanism / phenomenon pair, then a compact two-column dictionary of the other terms */
+.kt-pair { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 1rem; align-items: center; margin: 2rem 0 1.6rem; }
+.kt-big { height: 100%; padding: 1.2rem 1.4rem; border: 2px solid; border-radius: 14px; }
+.kt-big h4 { margin: .1rem 0 .4rem; font-size: 1.5rem; font-weight: 950; letter-spacing: -.02em; text-transform: uppercase; }
+.kt-big p { margin: 0; font-size: .98rem; line-height: 1.45; }
+.kt-big .kt-kind { font-size: .74rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.kt-mech { border-color: var(--gold); background: var(--yellow); }
+.kt-mech h4, .kt-mech .kt-kind { color: #8a5a0b; }
+.kt-phen { border-color: var(--blue); background: var(--pale-blue); }
+.kt-phen h4, .kt-phen .kt-kind { color: #1f5aa6; }
+.kt-vs { margin: 0; color: var(--muted); font-size: 1.05rem; font-style: italic; font-weight: 700; }
+
+.kt-dict { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2.5rem; margin: 0; padding: .4rem 1.4rem; border: 1px solid var(--line); border-radius: 14px; }
+.kt-dict > div { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1rem; padding: .8rem 0; border-bottom: 1px solid #ececec; }
+.kt-dict > div:nth-last-child(-n+2) { border-bottom: 0; }
+.kt-dict dt { color: var(--burgundy); font-weight: 800; line-height: 1.35; }
+.kt-dict dd { margin: 0; color: #333; font-size: .92rem; line-height: 1.45; }
+
+@media (max-width: 900px) {
+  .kt-dict { grid-template-columns: 1fr; }
+  .kt-dict > div:nth-last-child(2) { border-bottom: 1px solid #ececec; }
+}
+@media (max-width: 600px) {
+  .kt-pair { grid-template-columns: 1fr; gap: .5rem; }
+  .kt-vs { text-align: center; }
+  .kt-big h4 { font-size: 1.25rem; }
+  .kt-dict { padding: .2rem 1rem; }
+  .kt-dict > div { grid-template-columns: 1fr; gap: .15rem; padding: .7rem 0; }
+}
+
+/* on a phone the eight terms fold under one line; wider screens open them on load (inline script in index.html) */
+.kt-more > summary { display: none; }
+@media (max-width: 600px) {
+  .kt-more > summary { display: block; width: fit-content; margin: 0 0 .8rem; padding: .45rem 1.1rem; border: 2px solid var(--burgundy); border-radius: 999px; color: var(--burgundy); font-weight: 800; font-size: .9rem; cursor: pointer; list-style: none; }
+  .kt-more > summary::-webkit-details-marker { display: none; }
+  .kt-more > summary::after { content: " \2193"; }
+  .kt-more[open] > summary::after { content: " \2191"; }
+}

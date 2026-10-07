@@ -130,16 +130,16 @@
     hubs.forEach((h) => {
       const g = el("g", { class: "rel-hub", tabindex: 0, role: "button", "aria-label": `${h.full}: show linked work` }, gHubs);
       const tw = h.hw * 2;
-      el("rect", { x: h.x - tw / 2, y: h.y - hh + 2, width: tw, height: 2 * hh - 4, rx: hh - 2, fill: "#fff", stroke: h.c, "stroke-width": 2 }, g);
+      const hubRect = el("rect", { x: h.x - tw / 2, y: h.y - hh + 2, width: tw, height: 2 * hh - 4, rx: hh - 2, fill: "#fff", stroke: h.c, "stroke-width": 2 }, g);
       const t = el("text", { x: h.x, y: h.y + FS.hub * 0.34, "text-anchor": "middle", "font-size": FS.hub, "font-weight": 800, fill: h.c }, g);
       t.textContent = h.label;
-      h.g = g;
+      h.g = g; h.rect = hubRect; h.text = t;
       g.addEventListener("mouseenter", () => focusHub(h));
       g.addEventListener("focus", () => focusHub(h));
       g.addEventListener("mouseleave", clearFocus);
       g.addEventListener("blur", clearFocus);
-      g.addEventListener("click", () => showHub(h));
-      g.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showHub(h); } });
+      g.addEventListener("click", () => toggleSelect(h));
+      g.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleSelect(h); } });
     });
     nodes.forEach((n) => {
       const it = n.it, col = dotColor(it), filled = it.status === "paper" || it.kind === "program" || it.kind === "policy";
@@ -185,11 +185,16 @@
       });
     }
 
-    // ---- highlighting
+    // ---- highlighting. The picked topics stay lit on the map; hovering previews something else, then springs back.
     const active = { paper: true, related: true };
     const visible = (it) => active[it.status];
-    function paint(onNodes, onHubs) {
+    const selected = new Set();
+    let mode = "any", combine = false;
+    const matches = (it) => mode === "any" ? it.concepts.some((k) => selected.has(k)) : [...selected].every((k) => it.concepts.includes(k));
+    const matchingItems = () => items.filter((it) => visible(it) && (!selected.size || matches(it)));
+    function paint(onNodes, onHubs, persist) {
       svg.classList.toggle("rel-dim", !!onNodes);
+      svg.classList.toggle("rel-persist", !!persist);   // a standing pick: keep its dots lit but name them only on hover
       nodes.forEach((n) => {
         const show = visible(n.it);
         n.g.style.display = show ? "" : "none";
@@ -205,7 +210,10 @@
     }
     function focusNode(n) { paint(new Set([n]), new Set(n.it.concepts)); }
     function focusHub(h) { paint(new Set(nodes.filter((n) => n.it.concepts.includes(h.id) && visible(n.it))), new Set([h.id])); }
-    function clearFocus() { paint(null, null); }
+    function clearFocus() {
+      if (!selected.size) { paint(null, null); return; }
+      paint(new Set(nodes.filter((n) => visible(n.it) && matches(n.it))), new Set(selected), true);
+    }
 
     // ---- detail panel
     function chips(ids) {
@@ -221,6 +229,12 @@
     }
     function showItem(it) {
       panel.replaceChildren();
+      if (selected.size) {                     // a way back to the picked topic's list
+        const back = html("button", "rel-p-back", "← Back to " + [...selected].map((id) => C[id].label).join(" + "));
+        back.type = "button";
+        back.addEventListener("click", showSelection);
+        panel.appendChild(back);
+      }
       panel.appendChild(badge(it));
       const h = html("h4", "rel-p-title");
       const a = html("a", "", it.title); a.href = it.url; a.target = "_blank"; a.rel = "noopener";
@@ -229,24 +243,9 @@
       panel.appendChild(html("p", "rel-p-note", it.note));
       panel.appendChild(chips(it.concepts));
     }
-    function showHub(h) {
-      panel.replaceChildren();
-      const t = html("h4", "rel-p-title", h.full); t.style.color = h.c; panel.appendChild(t);
-      const these = items.filter((it) => it.concepts.includes(h.id) && visible(it));
-      panel.appendChild(html("p", "rel-p-meta", `${these.length} linked ${these.length === 1 ? "entry" : "entries"}`));
-      const ul = html("ul", "rel-p-list");
-      these.forEach((it) => {
-        const li = html("li"); const b = html("button", "rel-linkbtn", it.short);
-        b.style.setProperty("--c", dotColor(it));
-        b.addEventListener("click", () => showItem(it));
-        li.appendChild(b); ul.appendChild(li);
-      });
-      panel.appendChild(ul);
-    }
     function resetPanel() {
-      panel.replaceChildren(html("p", "rel-p-hint", "Hover over or tap a dot to see what it is, or a topic to see everything linked to it."));
+      panel.replaceChildren(html("p", "rel-p-hint", "Hover over or tap a dot to see what it is. Click a topic, on the map or above it, to list its work."));
     }
-    resetPanel();
 
     // ---- filters
     document.querySelectorAll("[data-rel-filter]").forEach((b) => {
@@ -257,39 +256,188 @@
         active[k] = !active[k];
         if (!active.paper && !active.related) { active[k === "paper" ? "related" : "paper"] = true; }
         document.querySelectorAll("[data-rel-filter]").forEach((x) => x.setAttribute("aria-pressed", active[x.dataset.relFilter]));
-        clearFocus(); resetPanel();
+        refresh();
       });
     });
 
-    // ---- reading list
+    // ---- topic picker. A click shows one topic (click it again to clear); with "Combine topics" on, clicks add and
+    // remove topics instead. Buttons above the map are easy to tap on a phone and stay in sync with the map's topics.
+    const picker = document.getElementById("rel-topics");
+    const bar = document.getElementById("rel-select");
+    const combineBox = document.getElementById("rel-combine");
+    const topicBtns = {};
+    if (picker) {
+      data.concepts.forEach((c) => {
+        const b = html("button", "rel-topic", c.label);
+        b.type = "button"; b.title = c.full;
+        b.style.setProperty("--c", c.c);
+        b.setAttribute("aria-pressed", "false");
+        b.addEventListener("click", () => toggleSelect(H_[c.id]));
+        topicBtns[c.id] = b; picker.appendChild(b);
+      });
+    }
+    if (combineBox) combineBox.addEventListener("change", () => {
+      combine = combineBox.checked;
+      if (!combine && selected.size > 1) { const last = [...selected].pop(); selected.clear(); selected.add(last); }
+      refresh();
+    });
+    function toggleSelect(h) {
+      if (combine) {
+        if (selected.has(h.id)) selected.delete(h.id); else selected.add(h.id);
+      } else if (selected.size === 1 && selected.has(h.id)) {
+        selected.clear();
+      } else {
+        selected.clear(); selected.add(h.id);
+      }
+      refresh();
+    }
+    function refresh() {
+      hubs.forEach((h) => {
+        const on = selected.has(h.id);
+        h.rect.setAttribute("fill", on ? h.c : "#fff");
+        h.text.setAttribute("fill", on ? "#fff" : h.c);
+        h.g.classList.toggle("sel", on);
+        if (topicBtns[h.id]) topicBtns[h.id].setAttribute("aria-pressed", on);
+      });
+      clearFocus(); renderBar(); showSelection(); renderList();
+    }
+    function renderBar() {
+      if (!bar) return;
+      const m = matchingItems();
+      const info = html("div", "rel-sel-info");
+      info.appendChild(html("strong", "rel-sel-count", `${m.length} ${m.length === 1 ? "entry" : "entries"}`));
+      if (!selected.size) {
+        info.appendChild(html("span", "rel-sel-on", "in the whole map"));
+      } else if (selected.size === 1) {
+        info.appendChild(html("span", "rel-sel-on", "on " + C[[...selected][0]].full.toLowerCase()));
+      } else {
+        const seg = html("span", "rel-mode");
+        seg.setAttribute("role", "group"); seg.setAttribute("aria-label", "Match");
+        [["any", "on any picked topic"], ["all", "on every picked topic"]].forEach(([k, l]) => {
+          const b = html("button", "rel-mode-btn", l);
+          b.type = "button"; b.setAttribute("aria-pressed", mode === k);
+          b.addEventListener("click", () => { mode = k; refresh(); });
+          seg.appendChild(b);
+        });
+        info.appendChild(seg);
+      }
+      const btns = html("div", "rel-sel-actions");
+      const dl = html("button", "rel-sel-dl", "Download CSV");
+      dl.type = "button"; dl.disabled = !m.length;
+      dl.addEventListener("click", () => downloadCSV(matchingItems()));
+      btns.appendChild(dl);
+      if (selected.size) {
+        const clr = html("button", "rel-sel-clear", "Clear");
+        clr.type = "button";
+        clr.addEventListener("click", () => { selected.clear(); mode = "any"; refresh(); });
+        btns.appendChild(clr);
+      }
+      bar.replaceChildren(info, btns);
+    }
+    function showSelection() {
+      if (!selected.size) { resetPanel(); return; }
+      const m = matchingItems(), SHOW = 8;
+      panel.replaceChildren();
+      const t = html("h4", "rel-p-title", [...selected].map((id) => C[id].label).join(" + "));
+      if (selected.size === 1) t.style.color = C[[...selected][0]].c;
+      panel.appendChild(t);
+      panel.appendChild(html("p", "rel-p-meta", `${m.length} ${m.length === 1 ? "entry" : "entries"}` + (selected.size > 1 ? (mode === "any" ? " on any of these" : " on all of these") : "")));
+      const ul = html("ul", "rel-p-list");
+      m.slice(0, SHOW).forEach((it) => {
+        const li = html("li"); const b = html("button", "rel-linkbtn", it.short);
+        b.style.setProperty("--c", dotColor(it));
+        b.addEventListener("click", () => showItem(it));
+        li.appendChild(b); ul.appendChild(li);
+      });
+      panel.appendChild(ul);
+      if (m.length > SHOW && listDetails) {
+        const more = html("button", "rel-p-more", `See all ${m.length} in the list below`);
+        more.type = "button";
+        more.addEventListener("click", () => { listDetails.open = true; listDetails.scrollIntoView({ behavior: "smooth", block: "start" }); });
+        panel.appendChild(more);
+      }
+    }
+    const csvCell = (v) => { v = v == null ? "" : String(v); return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+    function downloadCSV(list) {
+      const cols = ["title", "authors", "venue", "status", "kind", "topics", "url", "note"];
+      const lines = [cols.join(",")];
+      list.forEach((it) => {
+        const topics = it.concepts.map((k) => C[k].full || C[k].label).join("; ");
+        const status = it.status === "paper" ? "cited in paper" : "related";
+        lines.push([it.title, it.who, it.venue, status, it.kind || "paper", topics, it.url, it.note].map(csvCell).join(","));
+      });
+      const blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });   // BOM so Excel reads UTF-8
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url; a.download = `related-efforts_${[...selected].join("-") || "all"}.csv`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1500);
+    }
+
+    // ---- reading list. Collapsed by default; when open it is a compact, scrollable list of titles (summaries on
+    // request), filtered to the picked topics, with a collapse button that stays in view while scrolling.
+    let listDetails = null, listSummary = null, listInner = null, listBody = null, withNotes = false;
     if (listHost) {
+      listDetails = html("details", "rel-list-details");
+      listSummary = html("summary", "rel-list-summary");
+      listInner = html("div", "rel-list-inner");
+      const tools = html("div", "rel-list-tools");
+      const notesBtn = html("button", "rel-list-tool", "Show summaries");
+      notesBtn.type = "button"; notesBtn.setAttribute("aria-pressed", "false");
+      notesBtn.addEventListener("click", () => {
+        withNotes = !withNotes;
+        notesBtn.setAttribute("aria-pressed", withNotes);
+        notesBtn.textContent = withNotes ? "Hide summaries" : "Show summaries";
+        renderList();
+      });
+      const close = html("button", "rel-list-tool rel-list-close", "Collapse list ↑");
+      close.type = "button";
+      close.addEventListener("click", () => { listDetails.open = false; listDetails.scrollIntoView({ block: "nearest" }); });
+      tools.append(notesBtn, close);
+      listBody = html("div", "rel-list-body");
+      listInner.append(tools, listBody);
+      listDetails.append(listSummary, listInner);
+      listHost.appendChild(listDetails);
+    }
+    function renderList() {
+      if (!listHost) return;
+      const pool = matchingItems();
+      listSummary.textContent = selected.size
+        ? `Browse the ${pool.length} matching ${pool.length === 1 ? "entry" : "entries"} as a list`
+        : `Browse all ${pool.length} entries as a list`;
+      listBody.replaceChildren();
       const groups = [
-        ["Related work we have read but not cited", items.filter((it) => it.status === "related" && it.kind !== "program" && it.kind !== "policy")],
-        ["Programs and policy", items.filter((it) => it.kind === "program" || it.kind === "policy")],
-        ["Cited in the paper", items.filter((it) => it.status === "paper")],
+        ["Related work we have read but not cited", pool.filter((it) => it.status === "related" && it.kind !== "program" && it.kind !== "policy")],
+        ["Programs and policy", pool.filter((it) => it.kind === "program" || it.kind === "policy")],
+        ["Cited in the paper", pool.filter((it) => it.status === "paper")],
       ];
       groups.forEach(([title, list]) => {
+        if (!list.length) return;
         const sec = html("div", "rel-group");
         sec.appendChild(html("h4", "rel-group-title", `${title} (${list.length})`));
-        const ul = html("ul", "rel-items");
-        list.forEach((it) => ul.appendChild(entry(it, true)));
-        sec.appendChild(ul); listHost.appendChild(sec);
+        const ul = html("ul", "rel-items" + (withNotes ? "" : " is-compact"));
+        list.forEach((it) => ul.appendChild(entry(it, withNotes)));
+        sec.appendChild(ul); listBody.appendChild(sec);
       });
+      if (selected.size) return;
       const det = html("details", "rel-adjacent");
       det.appendChild(html("summary", "", `Adjacent reading: agent capabilities and infrastructure (${data.adjacent.length})`));
       det.appendChild(html("p", "rel-adj-note", "Useful background on what single agents can do, but not about how groups of agents are governed. Not shown in the map."));
-      const ul = html("ul", "rel-items");
-      data.adjacent.forEach((it) => ul.appendChild(entry(it, false)));
-      det.appendChild(ul); listHost.appendChild(det);
+      const ul = html("ul", "rel-items" + (withNotes ? "" : " is-compact"));
+      data.adjacent.forEach((it) => ul.appendChild(entry(it, withNotes, true)));
+      det.appendChild(ul); listBody.appendChild(det);
     }
-    function entry(it, withChips) {
+    function entry(it, full, noChips) {
       const li = html("li", "rel-item");
       const a = html("a", "rel-item-title", it.title); a.href = it.url; a.target = "_blank"; a.rel = "noopener";
       li.appendChild(a);
       li.appendChild(html("span", "rel-item-meta", ` — ${it.who}, ${it.venue}`));
-      li.appendChild(html("p", "rel-item-note", it.note));
-      if (withChips) li.appendChild(chips(it.concepts));
+      if (full) {
+        li.appendChild(html("p", "rel-item-note", it.note));
+        if (!noChips && it.concepts) li.appendChild(chips(it.concepts));
+      }
       return li;
     }
+    refresh();
   }
 })();

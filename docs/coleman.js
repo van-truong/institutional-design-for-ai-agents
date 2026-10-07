@@ -1,4 +1,4 @@
-/* Interactive Coleman boat for agent institutions (paper Fig. 9), after Coleman (1990) and the question-per-arrow
+/* Interactive Coleman boat for agent institutions (paper Fig. 11), adapted from Coleman (1990) and the question-per-arrow
    form of Martinez-Pena and Ylikoski (2024). An institutional change (A) reaches each agent's action situation (B)
    through Ostrom's seven rule types; the model responds (C) and reshapes other agents' situations; behavior adds up
    to group outcomes (D). Hover or tab to any part, press Play to walk the arrows, or show where institutions fail. */

@@ -49,14 +49,14 @@ The taxonomy is the single source of truth for the paper's taxonomy figures and 
 | `papers.csv` | The coded sources |
 | `configurations.csv` | Named combinations of mechanisms, such as Ostrom's design principles |
 | `coding/PHENOMENA_CODEBOOK.md`, `coding/phenomena_tags.csv` | The ten phenomenon types (definitions, assignment rules, boundary cases) and each phenomenon instance's type and effect |
-| `incidents.csv` | Real-world agent incidents linked to phenomenon types (each checked against its primary sources) |
+| `incidents.csv` | Real-world agent incidents linked to phenomenon types (each checked against its primary sources). `taxonomy/scripts/build_incidents_data.py` turns it into the website's incident timeline |
 | `phenomena_informal.csv` | A separate, clearly labeled slice of informal reports (blog posts, public logs), shown only as an opt-in overlay on the website |
 | `candidates_next_pass.csv` | Recent papers queued for the next coding pass |
 | `search_log.csv`, `coding/` | Search queries and coding passes, for auditing |
 
 The website's **mind map of related efforts** (`docs/assets/related.json`) is a separate, informal reading list of
 new multi-agent studies, testbeds, programs, and policy work. It is not part of the coded corpus and does not feed
-any counts. Entries are collected from a daily preprint digest and each is checked against its paper's own abstract.
+any counts. Entries are collected from a daily preprint digest and each is checked against its paper's own abstract. Visitors can pick topics on the map and download the matching entries as a CSV.
 
 ## Building the paper
 
@@ -72,7 +72,7 @@ drawing:
 
 ```bash
 cd manuscript
-python3 scripts/gen_web_figs.py                 # Figs. 1-6, 8, 10 from docs/*.js (needs Chrome or Chromium, pdfcrop)
+python3 scripts/gen_web_figs.py                 # Figs. 1-6, 8, 10, 11 from docs/*.js (needs Chrome or Chromium, pdfcrop)
 python3 scripts/gen_taxonomy.py && python3 scripts/gen_dimensions.py
 ./render_figures.sh                             # Figs. 7 and 9 from manuscript/figs/*.html (needs rsvg-convert, pdfcrop)
 ```
