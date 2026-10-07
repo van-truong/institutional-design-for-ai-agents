@@ -46,7 +46,7 @@
   };
   const text = (x, y, s, attrs, parent) => { const t = el("text", { x, y, ...attrs }, parent); t.textContent = s; return t; };
 
-  const svg = el("svg", { viewBox: "0 0 900 540", xmlns: "http://www.w3.org/2000/svg", role: "img", class: "ctx-svg", "font-family": FONT,
+  const svg = el("svg", { viewBox: "-14 0 914 540",  /* left margin: the TOP-DOWN label box reaches x = -3 */ xmlns: "http://www.w3.org/2000/svg", role: "img", class: "ctx-svg", "font-family": FONT,
     "aria-labelledby": "ctx-title ctx-desc" }, stage);
   el("title", { id: "ctx-title" }, svg).textContent = "The agent in its institutional context";
   el("desc", { id: "ctx-desc" }, svg).textContent =
