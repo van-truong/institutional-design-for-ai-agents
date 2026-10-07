@@ -2,7 +2,7 @@
 // Data: assets/taxonomy.json, built by taxonomy/scripts/build_site_data.py from the coded dataset.
 
 const SVG_NS = "http://www.w3.org/2000/svg";
-const R = { hub: 52, fam: 135, theme: 215, leaf: 290 };
+const R = { hub: 74, fam: 135, theme: 215, leaf: 290 };
 const LIST = { colW: 470, colGap: 44, famRow: 42, themeRow: 31, leafRow: 26, themeGap: 9, famGap: 24 };
 // Text grows as the circle unravels, so the list reads at a comfortable size.
 const FONT = { leaf: [12.5, 15], theme: [13, 15.5], fam: [15, 17.5] };
@@ -96,9 +96,9 @@ function build() {
   const gNodes = el("g", { class: "tx-nodes" }, svg);
   const hub = el("g", { class: "tx-hub" }, gNodes);
   el("circle", { r: R.hub, class: "tx-hub-circle" }, hub);
-  const hubText = el("text", { class: "tx-hub-text", "text-anchor": "middle", y: -4 }, hub);
+  const hubText = el("text", { class: "tx-hub-text", "text-anchor": "middle", y: 2 }, hub);
   hubText.textContent = `${data.counts.mechanisms}`;
-  const hubSub = el("text", { class: "tx-hub-sub", "text-anchor": "middle", y: 14 }, hub);
+  const hubSub = el("text", { class: "tx-hub-sub", "text-anchor": "middle", y: 26 }, hub);
   hubSub.textContent = "mechanisms";
 
   const center = { x: 0, y: 0 };
