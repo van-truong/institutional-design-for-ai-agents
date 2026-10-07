@@ -79,7 +79,7 @@
   el("path", { d: "M 880 6 C 880 48, 860 50, 780 50 L 220 50 C 140 50, 120 48, 120 10", fill: "none", stroke: "#4F9070",
     "stroke-width": 2.2, "stroke-dasharray": "7 6", "marker-end": "url(#ag-ar)", class: "ag-loop-line", "vector-effect": "non-scaling-stroke" }, ls);
   loop.appendChild(ls);
-  loop.appendChild(html("p", "ag-loop-text", "↺ each reviewed correction or addition feeds back into the map"));
+  loop.appendChild(html("p", "ag-loop-text", "each reviewed correction or addition feeds back into the map"));
   wrap.appendChild(loop);
   stage.appendChild(wrap);
 

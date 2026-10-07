@@ -62,16 +62,11 @@
   };
   const robot = (g, x, y, s, col) => {                           // (x, y) = base
     const r = el("g", { transform: `translate(${x} ${y}) scale(${s})` }, g);
-    el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);   // antenna
+    el("line", { x1: 0, y1: -29, x2: 0, y2: -34, stroke: col[1], "stroke-width": 1.6, "stroke-linecap": "round" }, r);
     el("circle", { cx: 0, cy: -35.5, r: 2.2, fill: col[0], stroke: col[1], "stroke-width": 0.8 }, r);
-    el("rect", { x: -12.6, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);                                    // ears
-    el("rect", { x: 9.8, y: -25, width: 2.8, height: 6, rx: 1, fill: col[1] }, r);
-    el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: col[0], stroke: col[1], "stroke-width": 1.6 }, r); // head
-    for (const ex of [-4.3, 4.3]) {                                                                                       // eyes, as in the failure comics
-      el("circle", { cx: ex, cy: -22, r: 3.3, fill: "#fff", stroke: col[1], "stroke-width": 1 }, r);
-      el("circle", { cx: ex, cy: -22, r: 1.5, fill: col[1] }, r);
-    }
-    el("rect", { x: -8, y: -13, width: 16, height: 13, rx: 4, fill: col[0], stroke: col[1], "stroke-width": 1.2 }, r);   // body
+    el("rect", { x: -10, y: -29, width: 20, height: 14, rx: 4.5, fill: "#fff", stroke: col[1], "stroke-width": 1.6 }, r);
+    el("circle", { cx: -4, cy: -22, r: 1.9, fill: col[1] }, r); el("circle", { cx: 4, cy: -22, r: 1.9, fill: col[1] }, r);
+    el("rect", { x: -8, y: -13, width: 16, height: 13, rx: 4, fill: col[0], stroke: col[1], "stroke-width": 1.2 }, r);
   };
   const bubble = (g, x, y, s, tailX, tailY) => {                 // centered at (x, y)
     const w = s.length * 6.4 + 18, h = 22;
@@ -84,7 +79,10 @@
     el("circle", { cx: x, cy: y, r: 4, fill: col }, g);
     if (crossed) el("line", { x1: x - 14, y1: y - 9, x2: x + 14, y2: y + 9, stroke: "#C2662A", "stroke-width": 2, "stroke-linecap": "round" }, g);
   };
-  const ROBO = (c) => [c.mid, c.dark];
+  // robots take turns through the five-agent pool's model colors (commons figure), so agents read as individuals
+  const BOT_COLS = [["#E7A49B", "#8F3F1E"], ["#A9C4E0", "#2F3D6B"], ["#E3C88C", "#8A5A0B"], ["#BBD9C4", "#2F6B4A"], ["#C9C0EC", "#463BA0"]];
+  let botIx = 0;
+  const ROBO = () => BOT_COLS[botIx++ % BOT_COLS.length];
 
   // each scene draws into a 140 x 104 panel (origin top-left)
   const SCENES = {
@@ -187,21 +185,34 @@
   const CW = 320, CH = 452;
   const card = (svg, c, x, y) => {
     const g = el("g", { transform: `translate(${x} ${y})`, class: "dl-card-g" }, svg);
-    el("rect", { x: 0, y: 0, width: CW, height: CH, rx: 18, fill: c.tint, stroke: c.mid, "stroke-width": 1.6,
-      ...(c.beyond ? { "stroke-dasharray": "7 5" } : {}), filter: "url(#dl-shadow)" }, g);
-    el("path", { d: `M 0 18 Q 0 0 18 0 H ${CW - 18} Q ${CW} 0 ${CW} 18 V 50 H 0 Z`, fill: c.head }, g);
-    text(CW / 2, 33, c.title, { "text-anchor": "middle", "font-size": 20, "font-weight": 800, fill: "#fff" }, g);
-    wrap(c.tension, 30).forEach((ln, i) => text(CW / 2, 80 + i * 21, ln, { "text-anchor": "middle", "font-size": 17.5, "font-weight": 600, fill: c.dark }, g));
+    // comic-page frame, as in the failure stories (Fig. 10): a hard offset shadow, an ink border, and the card's
+    // tint under halftone dots in its own color; dashed for the two dilemmas beyond the shared-resource framing
+    const dots = el("pattern", { id: `dl-dots-${c.key}`, width: 10, height: 10, patternUnits: "userSpaceOnUse" }, svg.querySelector("defs") || el("defs", {}, svg));
+    el("circle", { cx: 5, cy: 5, r: 1.3, fill: c.mid, opacity: 0.3 }, dots);
+    el("rect", { x: 5, y: 5, width: CW, height: CH, rx: 8, fill: INK }, g);
+    el("rect", { x: 0, y: 0, width: CW, height: CH, rx: 8, fill: c.tint }, g);
+    el("rect", { x: 0, y: 0, width: CW, height: CH, rx: 8, fill: `url(#dl-dots-${c.key})` }, g);
+    el("rect", { x: 0, y: 0, width: CW, height: CH, rx: 8, fill: "none", stroke: INK, "stroke-width": 2.6,
+      ...(c.beyond ? { "stroke-dasharray": "9 6" } : {}) }, g);
+    // title in a narration box that overlaps the top edge, with a swatch in the dilemma's color
+    const tw = c.title.length * 11.9 + 50;
+    el("rect", { x: 17, y: -13, width: tw, height: 34, fill: INK }, g);
+    el("rect", { x: 14, y: -16, width: tw, height: 34, fill: "#FFF2C8", stroke: INK, "stroke-width": 2.4 }, g);
+    el("rect", { x: 24, y: -7, width: 16, height: 16, rx: 3, fill: c.head, stroke: INK, "stroke-width": 1.4 }, g);
+    text(48, 7.5, c.title, { "font-size": 19, "font-weight": 800, fill: INK }, g);
+    wrap(c.tension, 30).forEach((ln, i) => text(CW / 2, 52 + i * 21, ln, { "text-anchor": "middle", "font-size": 17.5, "font-weight": 700, fill: c.dark }, g));
+    botIx = CARDS.indexOf(c) * 2;
     // the two scenes
     [["humans", 0], ["LLM agents", 1]].forEach(([lab, i]) => {
-      const px = 14 + i * 152, py = 122;
-      el("rect", { x: px, y: py, width: 140, height: 118, rx: 12, fill: "#fff", stroke: "#E2DFD8", "stroke-width": 1.2 }, g);
-      const sg = el("g", { transform: `translate(${px} ${py + 12})` }, g);
+      const px = 14 + i * 152, py = 110;
+      el("rect", { x: px + 3.5, y: py + 3.5, width: 140, height: 126, rx: 4, fill: INK }, g);      // comic panel: hard shadow
+      el("rect", { x: px, y: py, width: 140, height: 126, rx: 4, fill: "#fff", stroke: INK, "stroke-width": 2.2 }, g);
+      const sg = el("g", { transform: `translate(${px} ${py + 16})` }, g);
       SCENES[c.scenes[i]](sg, c, c.bubbles[i]);
-      el("rect", { x: px + 8, y: py - 9, width: lab.length * 8.4 + 16, height: 18, rx: 9, fill: c.head }, g);
+      el("rect", { x: px + 8, y: py - 9, width: lab.length * 8.4 + 16, height: 18, rx: 9, fill: c.head, stroke: INK, "stroke-width": 1.4 }, g);
       text(px + 16, py + 4, lab.toUpperCase(), { "font-size": 10.5, "font-weight": 800, "letter-spacing": "0.08em", fill: "#fff" }, g);
     });
-    el("line", { x1: 18, y1: 258, x2: CW - 18, y2: 258, stroke: c.mid, "stroke-opacity": 0.35, "stroke-width": 1.2 }, g);
+    el("line", { x1: 18, y1: 258, x2: CW - 18, y2: 258, stroke: INK, "stroke-opacity": 0.35, "stroke-width": 1.4, "stroke-dasharray": "2 5", "stroke-linecap": "round" }, g);
     let ty = 284;
     [["In humans", c.human], ["In LLM agents", c.llm]].forEach(([h, body]) => {
       text(18, ty, h, { "font-size": 18, "font-weight": 800, fill: c.dark }, g);
@@ -210,7 +221,7 @@
       ty += 22 + ls.length * 21 + 16;
     });
     if (c.beyond && !PAPER) {  // in print the legend under the grid carries this
-      el("rect", { x: CW - 178, y: CH - 34, width: 164, height: 22, rx: 11, fill: "#fff", stroke: c.mid, "stroke-width": 1.1 }, g);
+      el("rect", { x: CW - 178, y: CH - 34, width: 164, height: 22, rx: 11, fill: "#fff", stroke: INK, "stroke-width": 1.4, "stroke-dasharray": "4 3" }, g);
       text(CW - 96, CH - 19, "beyond shared resources", { "text-anchor": "middle", "font-size": 11.5, "font-style": "italic", "font-weight": 700, fill: c.dark }, g);
     }
     return g;
@@ -225,15 +236,15 @@
 
   // ---------- paper: one SVG, 3 x 2 ----------
   if (PAPER) {
-    const G = 22, W = 3 * CW + 2 * G + 20, H = 2 * CH + G + 62;
+    const G = 30, W = 3 * CW + 2 * G + 26, H = 2 * CH + G + 86;
     const svg = el("svg", { xmlns: NS, viewBox: `0 0 ${W} ${H}`, width: W, height: H, "font-family": FONT }, stage);
     defsFor(svg);
-    CARDS.forEach((c, i) => card(svg, c, 10 + (i % 3) * (CW + G), 12 + Math.floor(i / 3) * (CH + G)));
+    CARDS.forEach((c, i) => card(svg, c, 10 + (i % 3) * (CW + G), 26 + Math.floor(i / 3) * (CH + G)));
     // legend: dashed cards fall outside the shared-resource framing
     const ly = H - 22;
-    el("rect", { x: W / 2 - 250, y: ly - 13, width: 30, height: 18, rx: 6, fill: "#fff", stroke: MUT, "stroke-width": 1.4 }, svg);
+    el("rect", { x: W / 2 - 250, y: ly - 13, width: 30, height: 18, rx: 4, fill: "#fff", stroke: INK, "stroke-width": 2 }, svg);
     text(W / 2 - 212, ly + 1, "shared-resource dilemmas", { "font-size": 15, fill: MUT, "font-weight": 700 }, svg);
-    el("rect", { x: W / 2 + 10, y: ly - 13, width: 30, height: 18, rx: 6, fill: "#fff", stroke: MUT, "stroke-width": 1.4, "stroke-dasharray": "5 4" }, svg);
+    el("rect", { x: W / 2 + 10, y: ly - 13, width: 30, height: 18, rx: 4, fill: "#fff", stroke: INK, "stroke-width": 2, "stroke-dasharray": "5 4" }, svg);
     text(W / 2 + 48, ly + 1, "beyond the shared-resource framing", { "font-size": 15, fill: MUT, "font-weight": 700 }, svg);
     stage.style.width = W + "px";
     return;
@@ -255,7 +266,7 @@
     art.style.setProperty("--t", c.tint);
     art.style.setProperty("--d", c.dark);
     art.setAttribute("aria-label", `${c.title}: ${c.tension}`);
-    const svg = el("svg", { viewBox: `-6 -6 ${CW + 12} ${CH + 14}`, "font-family": FONT, role: "img" }, art);
+    const svg = el("svg", { viewBox: `-6 -22 ${CW + 14} ${CH + 30}`, "font-family": FONT, role: "img" }, art);
     el("title", {}, svg).textContent = `${c.title}: ${c.tension}`;
     defsFor(svg);
     // ids must be unique per document: give each card its own filter and marker ids
