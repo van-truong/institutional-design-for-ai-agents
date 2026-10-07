@@ -22,7 +22,7 @@ PROPS=[("Timing","before or after harm?",["ex ante rate limits","vs.","ex post f
        ("Reversibility","can it be undone?",["warning","vs.","permanent exclusion"]),
        ("Adaptivity","does it escalate?",["graduated sanctions,","re-entry conditions"]),
        ("Observability","visible or hidden?",["tool logs","vs.","private reasoning"]),
-       ("Gameability","can it be exploited?",["reputation farming,","surface compliance"]),
+       ("Gameability","can it be exploited?",["reputation farming,","shallow compliance"]),
        ("Repair","does it restore?",["memory cleanup,","output correction"]),
        ("Scale","across many agents?",["local trust","vs.","platform-wide"])]
 
