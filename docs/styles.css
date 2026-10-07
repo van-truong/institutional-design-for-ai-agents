@@ -232,6 +232,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding-block
 
 /* Nested systems (paper Fig. 1), drawn by rings.js */
 .rings-section .section-intro h3 { max-width: 640px; }
+.rings-note { max-width: 760px; margin: 2rem 0 0; padding: .6rem .8rem; border-left: 4px solid var(--line); color: var(--muted); font-size: .9rem; }
 .rings-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; margin-top: 2rem; }
 .rings-stage { position: relative; max-width: 760px; margin-inline: auto; width: 100%; }
 .rg-svg { display: block; width: 100%; height: auto; overflow: visible; font-family: "Helvetica Neue", Arial, sans-serif; }

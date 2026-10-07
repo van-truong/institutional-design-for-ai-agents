@@ -38,6 +38,8 @@
   const SUBS = [["human", "Humans"], ["marl", "MARL agents"], ["llm", "LLM agents"]];
   const GROUPLAB = { llm: "LLM-agent studies", marl: "MARL studies", human: "Human studies" };
   const SHOW_FIRST = 6;
+  // incident settings other than live systems are named next to the incident
+  const SETTING = { controlled_evaluation: "controlled test", researcher_demo: "researcher demo" };
   // short incident labels for the printed figure
   const SHORT = {
     "emergence-collusion-sim": "Agents coordinate to break containment",
@@ -45,7 +47,6 @@
     "servicenow-agent-to-agent-injection": "Hijacked agent recruits other agents",
     "openai-hf-intrusion-2026": "Agents breach production infrastructure",
     "openai-dsewiki-breakout": "Agents hijack a live website",
-    "anthropic-gtg1002-espionage": "Human-directed AI espionage",
     "anthropic-multiagent-turf-wars": "“Turf wars” over conflicting tasks",
   };
 
@@ -105,7 +106,7 @@
     radialMap(ga, data, { fs: FS, idp: "pp-", ringKey: false, interactive: false });
     const yb = 50 + (RAD_BOT - RAD_TOP) * SA + 18;
     svgEl("line", { x1: 20, y1: yb - 10, x2: W - 20, y2: yb - 10, stroke: HAIR, "stroke-width": 1 }, svg);
-    panel(yb + 24, "B", "Phenomena with documented real-world incidents");
+    panel(yb + 24, "B", "Phenomena with documented incidents");
     const H = drawList(svg, data, yb + 40);
     svg.setAttribute("viewBox", `0 0 ${W} ${H.toFixed(0)}`);
     svg.setAttribute("width", W); svg.setAttribute("height", H.toFixed(0));
@@ -127,7 +128,7 @@
       stext(COL[i], y0 + 58, lab.split(" ")[0], { "text-anchor": "middle", "font-size": 15, "font-weight": 700, fill: INK }, svg);
     });
     flag(IX + 8, y0 + 52, 1.5, svg);
-    stext(IX + 24, y0 + 58, "Documented in the wild", { "font-size": 15.5, "font-weight": 700, fill: VC.harmful[1] }, svg);
+    stext(IX + 24, y0 + 58, "Documented incidents", { "font-size": 15.5, "font-weight": 700, fill: VC.harmful[1] }, svg);
     let y = y0 + 66;
     bands.forEach((b) => {
       // band pill and rule, as for the taxonomy's families
@@ -156,7 +157,9 @@
           const iy = mid - (incs.length - 1) * IP / 2 + k * IP;
           const label = (SHORT[inc.key] || inc.short) + (inc.year ? ` (${inc.year})` : "");
           const w = label.length * 6.9 + 34;
-          svgEl("rect", { x: IX, y: iy - 9.5, width: w, height: 19, rx: 9.5, fill: VC.harmful[2], stroke: VC.harmful[0], "stroke-width": 1.1 }, svg);
+          // filled tag: happened on a live system; outlined dashed tag: a controlled test or researcher demo
+          const live = inc.setting === "real_world";
+          svgEl("rect", { x: IX, y: iy - 9.5, width: w, height: 19, rx: 9.5, fill: live ? VC.harmful[2] : "#fff", stroke: VC.harmful[0], "stroke-width": 1.1, ...(live ? {} : { "stroke-dasharray": "4 3" }) }, svg);
           flag(IX + 14, iy, 0.9, svg);
           stext(IX + 26, iy + 5, label, { "font-size": 14, "font-weight": 600, fill: VC.harmful[1] }, svg);
         });
@@ -176,8 +179,15 @@
       stext(lx + 14, ly, lab, { "font-size": 15, fill: INK }, svg);
       lx += lab.length * 8 + 46;
     });
+    // second legend line: what the incident tags mean
+    const ly2 = ly + 28;
+    stext(20, ly2, "Incidents:", { "font-size": 15, "font-weight": 700, fill: INK }, svg);
+    svgEl("rect", { x: 112, y: ly2 - 14, width: 34, height: 19, rx: 9.5, fill: VC.harmful[2], stroke: VC.harmful[0], "stroke-width": 1.1 }, svg);
+    stext(154, ly2, "on a live system", { "font-size": 15, fill: INK }, svg);
+    svgEl("rect", { x: 300, y: ly2 - 14, width: 34, height: 19, rx: 9.5, fill: "#fff", stroke: VC.harmful[0], "stroke-width": 1.1, "stroke-dasharray": "4 3" }, svg);
+    stext(342, ly2, "in a controlled test or researcher demo", { "font-size": 15, fill: INK }, svg);
     stext(W - 20, ly, PAPER ? `Dot area ∝ instances (over ${roundDown(data.counts.total)} in all)` : `Dot area ∝ instances (${data.counts.total} in all)`, { "text-anchor": "end", "font-size": 15, "font-style": "italic", fill: MUT }, svg);
-    return ly + 12;
+    return ly2 + 12;
   }
 
   // ---------------------------------------------------------------- the radial "spoke" map, shared by the website
@@ -438,12 +448,13 @@
     const incs = (t.incidents || []).map((k) => incByKey[k]).filter(Boolean);
     if (incs.length) {
       const g = html("div", { class: "ph-group ph-wild" });
-      g.appendChild(html("h4", {}, "Documented in the wild"));
+      g.appendChild(html("h4", {}, "Documented incidents"));
       const ul = html("ul", { class: "ph-incidents" });
       incs.forEach((inc) => {
         const li = html("li");
         li.appendChild(inc.url ? html("a", { href: inc.url, target: "_blank", rel: "noopener" }, inc.short) : html("span", {}, inc.short));
-        if (inc.year) li.appendChild(html("span", { class: "ph-meta" }, inc.year));
+        const meta = [inc.year, SETTING[inc.setting]].filter(Boolean).join(" · ");
+        if (meta) li.appendChild(html("span", { class: "ph-meta" }, meta));
         ul.appendChild(li);
       });
       g.appendChild(ul);
@@ -485,7 +496,7 @@
       const sub = SUBS.map(([k, lab]) => `<span><strong>${t.counts[k]}</strong> ${lab}</span>`).join("");
       panel.innerHTML = `<p class="ph-plabel">${t.valence === "harmful" ? "Where it goes wrong" : "What agent groups build"}</p><h3>${t.label}</h3>` +
         `<p>${t.description}</p><p class="ph-rcounts">${sub}</p>` +
-        (incs.length ? `<p class="ph-rinc"><strong>In the wild:</strong> ${incs.map((i) => i.short).join("; ")}.</p>` : "");
+        (incs.length ? `<p class="ph-rinc"><strong>Documented incidents:</strong> ${incs.map((i) => i.short + (SETTING[i.setting] ? ` (${SETTING[i.setting]})` : "")).join("; ")}.</p>` : "");
       const open = html("button", { class: "tx-btn", type: "button" }, "Open the papers ›");
       open.addEventListener("click", () => openInList(t.key));
       panel.appendChild(open);

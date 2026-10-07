@@ -33,14 +33,15 @@ TYPES = [
     ('harm', 'Emergent harm: toxicity, fragility, breakout', 'harmful',
      'Toxic dynamics, fragile networks, or agents acting outside their intended scope.'),
 ]
-# documented incidents (keys in incidents.csv) -> (phenomenon types, short display headline)
+# documented incidents (keys in incidents.csv) -> (phenomenon types, short display headline). Each carries its
+# setting from incidents.csv (real_world, controlled_evaluation, researcher_demo) so the figure can tell live systems
+# from tests. Human-directed misuse (e.g. the GTG-1002 espionage case) is left out: it did not emerge among agents.
 INCIDENT_TYPES = {
     'emergence-collusion-sim': (['collusion_deception'], 'Agents coordinate to break containment'),
     'metr-redwood-agent-message-board': (['collusion_deception'], 'Agents ran a hidden message board to cheat an eval'),
     'servicenow-agent-to-agent-injection': (['collusion_deception'], 'Hijacked agent recruits more-privileged agents'),
     'openai-hf-intrusion-2026': (['harm'], 'Autonomous agents breached production infrastructure'),
     'openai-dsewiki-breakout': (['harm'], 'Agents hijacked a live website (breakout)'),
-    'anthropic-gtg1002-espionage': (['harm'], 'AI-orchestrated espionage campaign (human-directed)'),
     'anthropic-multiagent-turf-wars': (['social_structure'], 'Multi-agent “turf wars” among agents with conflicting tasks'),
 }
 
@@ -85,7 +86,8 @@ def main():
     for k, (tys, short) in INCIDENT_TYPES.items():
         r = incs.get(k, {})
         incidents.append(dict(key=k, short=short, year=(r.get('date', '') or '')[:4],
-                              url=link(r) or r.get('url', ''), category=r.get('category', ''), types=tys))
+                              url=link(r) or r.get('url', ''), category=r.get('category', ''),
+                              setting=r.get('setting', ''), types=tys))
 
     total = sum(t['total'] for t in types)
     data = dict(substrates=[['human', 'Humans'], ['marl', 'MARL agents'], ['llm', 'LLM agents']],
