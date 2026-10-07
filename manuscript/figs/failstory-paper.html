@@ -7,11 +7,22 @@
 @page { size: 1040px 1600px; margin: 0; }
 :root { --ink: #171717; --burgundy: #7c1948; --muted: #595959; --line: #c8c8c8; --blue: #4d87e8; }
 html, body { margin: 0; background: #fff; color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
-#fs-stage { width: 1000px; padding: 20px; }
-.fsp-row + .fsp-row { margin-top: 26px; }
-.fsp-head { display: flex; align-items: center; gap: .6rem; margin: 0 0 10px; font-size: 25px; }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+#fs-stage { width: 1000px; padding: 34px 20px 24px; }
+/* comic-page look: each story is one framed tier (its own tint, halftone dots, a narration box in the corner);
+   tight gutters inside a tier and wide gaps between tiers, so the eye reads across, then down */
+.fsp-row { position: relative; padding: 34px 16px 16px; border: 3px solid var(--ink); border-radius: 6px;
+  background-color: var(--tier); background-image: radial-gradient(var(--dot) 1.3px, transparent 1.6px); background-size: 11px 11px; }
+.fsp-row + .fsp-row { margin-top: 40px; }
+.fsp-a { --tier: #FCEFE2; --dot: #F3D9BF; }
+.fsp-b { --tier: #EAF1FB; --dot: #D2E0F3; }
+.fsp-c { --tier: #F1ECFA; --dot: #DDD2F1; }
+.fsp-head { position: absolute; top: -20px; left: 14px; display: flex; align-items: center; gap: .55rem; margin: 0; padding: 6px 14px 6px 8px;
+  border: 3px solid var(--ink); background: #FFF2C8; box-shadow: 4px 4px 0 var(--ink); font-size: 25px; }
 .fsp-head .fs-tab-key { width: 30px; height: 30px; background: var(--burgundy); font-size: 17px; }
 .fsp-breaks { color: var(--muted); font-size: 20px; }
+#fs-stage .fs-panel { border-width: 3px; border-radius: 4px; box-shadow: 4px 4px 0 var(--ink); }
+#fs-stage .fs-next { color: var(--ink); font-size: 30px; }
 .fs-panel { padding: 12px 12px 14px; }
 .fs-panel figcaption { font-size: 21px; line-height: 1.25; }
 .fs-think q { font-size: 17.5px; }
@@ -19,7 +30,7 @@ html, body { margin: 0; background: #fff; color: var(--ink); font-family: Arial,
 .fsp-head .fs-tab-key { color: #fff; }
 /* Chrome's print viewport can fall under the site's tablet breakpoint; keep three panels across */
 #fs-stage .fs-strip { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; }
-#fs-stage .fs-next { transform: none; justify-self: auto; font-size: 24px; }
+#fs-stage .fs-next { transform: none; justify-self: auto; }
 #fs-stage .fs-panel { display: flex; flex-direction: column; }
 #fs-stage .fs-num { position: absolute; top: 10px; left: 10px; margin: 0; }
 #fs-stage .fs-think { margin: 0 0 4px 38px; }

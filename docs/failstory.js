@@ -188,7 +188,7 @@
   // ---------- paper: all three stories as rows, shorter captions, no tabs or evidence bar (Table 3 carries those)
   if (host.dataset.mode === "paper") {
     STORIES.forEach((s) => {
-      const row = html("section", "fsp-row");
+      const row = html("section", "fsp-row fsp-" + s.key);
       const head = html("p", "fsp-head");
       head.append(html("span", "fs-tab-key", s.key.toUpperCase()), html("strong", "", s.tab),
         html("span", "fsp-breaks", "breaks at " + s.breaks.split(",")[0]));
